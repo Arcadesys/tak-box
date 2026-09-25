@@ -84,6 +84,16 @@ def poly_xy(points,height,z):
     return (cq.Workplane('XY').polyline(points).close().extrude(height)
             .translate((0,0,z)).val())
 
+def cat_face(cx,cy,t,z):
+    """Round, cute cat head: big circular face with two soft rounded ears."""
+    head=cq.Solid.makeCylinder(4.6,t,cq.Vector(cx,cy-0.5,z))
+    for sx in (-1,1):
+        ear=poly_xy([(cx+sx*0.6,cy+2.6),(cx+sx*4.7,cy+0.6),
+                     (cx+sx*3.9,cy+5.4)],t,z)
+        ear=cq.Workplane('XY').add(ear).edges('|Z').fillet(0.9).val()
+        head=head.fuse(ear)
+    return head.clean()
+
 def face_overlay(index,d=D):
     """Raised black border and 5 x 5 grid, split at the existing hinges."""
     if index not in (0,1,2): raise ValueError(index)
@@ -102,10 +112,7 @@ def face_overlay(index,d=D):
     # Every opening stays at least 2 mm from the border edges.
     for cx in (47.5,157.5):
         cy=7.5
-        cat=poly_xy([(cx-5,cy+5),(cx-5,cy-2),(cx-6,cy-5),
-                     (cx-2,cy-4),(cx,cy-1),(cx+2,cy-4),
-                     (cx+6,cy-5),(cx+5,cy-2),(cx+5,cy+5),
-                     (cx+3,cy+6),(cx-3,cy+6)],t,z)
+        cat=cat_face(cx,cy,t,z)
         accent=accent.cut(cat)
     cx,cy=102.5,7.5
     hat=poly_xy([(cx-5,cy+3),(cx,cy-5),(cx+5,cy+3)],t,z)
