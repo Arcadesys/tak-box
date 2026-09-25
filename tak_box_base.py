@@ -84,8 +84,8 @@ def poly_xy(points,height,z):
     return (cq.Workplane('XY').polyline(points).close().extrude(height)
             .translate((0,0,z)).val())
 
-def cat_face(cx,cy,t,z):
-    """Round, cute cat head: big circular face with two soft rounded ears."""
+def cat_head(cx,cy,t,z):
+    """Round cat head silhouette: circular face with two soft rounded ears."""
     head=cq.Solid.makeCylinder(4.6,t,cq.Vector(cx,cy-0.5,z))
     for sx in (-1,1):
         ear=poly_xy([(cx+sx*0.6,cy+2.6),(cx+sx*4.7,cy+0.6),
@@ -93,6 +93,22 @@ def cat_face(cx,cy,t,z):
         ear=cq.Workplane('XY').add(ear).edges('|Z').fillet(0.9).val()
         head=head.fuse(ear)
     return head.clean()
+
+def cat_face(cx,cy,t,z):
+    """Cutout for a black cat: white outline ring and white eyes.
+
+    The black face stays attached to the border by one 1.4 mm chin bridge, so
+    the overlay has no loose islands.
+    """
+    outer=cat_head(cx,cy,t,z)
+    inner=(cq.Workplane('XY').add(outer.faces('<Z').outerWire())
+           .toPending().offset2D(-0.9).extrude(t).val())
+    ring=outer.cut(inner)
+    for sx in (-1,1):
+        ring=ring.fuse(cq.Solid.makeCylinder(0.95,t,
+                       cq.Vector(cx+sx*1.9,cy-0.2,z)))
+    ring=ring.cut(box(1.4,3,t,cx-0.7,cy-6,z))
+    return ring.clean()
 
 def face_overlay(index,d=D):
     """Raised black border and 5 x 5 grid, split at the existing hinges."""
