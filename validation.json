@@ -1,0 +1,48 @@
+{
+  "status": "CAD prototype; physical fit and printability not established",
+  "storage": {
+    "wing_wells": 2,
+    "flats_per_well": 21,
+    "flat_well_inner_mm": [
+      152,
+      64,
+      19.1
+    ],
+    "keystone_recess_inner_mm": [
+      29,
+      24,
+      21.2
+    ],
+    "modeled_keystone_mm": [
+      19.8,
+      19.8,
+      25.4
+    ]
+  },
+  "parts": {
+    "shells": 3,
+    "playing_lids": 2,
+    "black_overlays": 3,
+    "main_hinge_pins": 2,
+    "lid_hinge_pins": 2
+  },
+  "clearance": {
+    "closed_core_gap_mm": 0.8,
+    "lid_open_sweep_deg": [
+      0,
+      110
+    ],
+    "main_fold_sweep_deg": [
+      0,
+      90
+    ],
+    "open_resting_plane_z_mm": -20.1
+  },
+  "step_solid_counts": {
+    "play": 12,
+    "access": 53,
+    "closed": 12
+  },
+  "stl_count": 10,
+  "physical_print_tested": false
+}

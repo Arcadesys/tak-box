@@ -1,0 +1,57 @@
+{
+  "tak-open-wells-v5-cc2-00-fit-coupon.3mf": {
+    "objects": 3,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      82.0,
+      84.5,
+      174.0,
+      171.5
+    ]
+  },
+  "tak-open-wells-v5-cc2-01-white-wing-a-center.3mf": {
+    "objects": 2,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      61.5,
+      230.5,
+      194.5
+    ]
+  },
+  "tak-open-wells-v5-cc2-02-white-wing-b-lid-a.3mf": {
+    "objects": 2,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      43.25,
+      230.5,
+      212.75
+    ]
+  },
+  "tak-open-wells-v5-cc2-03-white-lid-b-pins.3mf": {
+    "objects": 5,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      79.25,
+      230.5,
+      176.75
+    ]
+  },
+  "tak-open-wells-v5-cc2-04-black-raised-grid.3mf": {
+    "objects": 3,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      26.0,
+      230.5,
+      230.0
+    ]
+  }
+}
