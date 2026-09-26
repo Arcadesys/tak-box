@@ -125,3 +125,25 @@ Cut four pins of about 195 mm from filament. **Bores are confirmed by the printe
 **Reverted:** a center-row stiffening rib (the 205 mm center slab is only supported at its two extreme end feet, and visibly could sag). Any rib fused below the slab collides with the folded wings from 80-90 deg in the main fold sweep — that space is reserved for the wings' own thickness when the case closes, not just at the feet. A real fix would have to stiffen from the topside, under the removable black grid, which is out of scope for this pass.
 
 Digital checks (`export_validate_v6.py`): valid single solids, the shell/lid clear each other and the lid's own open sweep (0-110 deg), the main fold sweep (0-90 deg) stays collision-free between all three sections and both lids, and all 42 flats plus both keystones stay clear of the new well features. All six pass. `tak-v6-sketch-access.step` is the exported check model. Rendering a preview PNG needs a GPU/display VTK doesn't have in a headless container; `render_v6.py` mirrors `render_cad.py` for use on a machine with one.
+
+## v7 sketch: flush folded box and rubber feet
+
+`tak_case_v7.py` reshapes the filament-pin case so it folds into a cleaner rectangular box. Hinges, wells, lids and overlays are unchanged.
+
+- **No end lip:** the wing end walls now run out to x = 0 / 205. In v5/pin they stopped 2.5 mm short so the center row's flat end feet could fold in beside them, which left the 1 mm play-face plate overhanging along each wing end (the part the slicer tree-supported). Flat ceiling area within 3 mm of the wing ends drops from 397 to 103 mm²; what remains is the plate over the foot notches.
+- **Hinge-centred feet:** each center-row foot is now a 2.2 mm thick quarter disc centred on its seam's hinge axis (inner r 2.6 keeps the Ø4.4 filament feed channel open). It turns in place as the wing folds and lands in a matching quarter-disc notch in the wing's seam corner, so the folded end face is flush: 89% of the 49 × 89 mm end rectangle is solid 0.3 mm in from each end, against 35% for the pin case.
+- **Chamfers:** 1 mm 45° chamfers on the folded box's short edges (center-row and lid play-face ends, wing outer-wall ends).
+- **Rubber feet:** four Ø8.6 × 1.4 mm pockets per wing floor for Ø8 × 2.2 mm hemispherical stick-on bumpers (3M Bumpon SJ5302 size), 0.8 mm proud. Folded, the wing floors face each other across 0.8 mm, so the two wings' bumpers are staggered in x and each faces a Ø9.6 × 0.6 mm clearance pocket. With bumpers fitted, the center-row feet sit 0.8 mm above the table as a backstop.
+
+`export_validate_v7.py` reruns the pin case's checks on the v7 parts (filament paths, lid 0–110°, fold 0–90° in 5° steps, side A vs side B) plus fitted bumpers against the folded opposite side and the center row: all zero overlap. It writes print-pose STLs to `pin-board-v7/`. Renders: `v7-folded-cad.png`, `v7-open-cad.png`.
+
+Each bumper and clearance pocket prints sealed by one 0.2 mm first-layer skin, because the slicer otherwise grows build-plate tree supports into it even with bridge supports off. **Cut the skin out with a craft knife before sticking the bumper in** (the 0.6 mm clearance pockets can stay sealed or be cut; both clear when folded).
+
+`export_v7_3mf.py` packages three white plates with `profiles/process-board-pin-v7.json` (the pin profile with `bridge_no_support` on):
+
+- `tak-pin-board-v7-cc2-90-white-center-row-plugs.3mf`: v7 center row + 10 plugs, about 1 h 36 m, 37 g.
+- `tak-pin-board-v7-cc2-91-white-wing-a-lid-a.3mf`: about 8 h 28 m, 209 g.
+- `tak-pin-board-v7-cc2-92-white-wing-b-lid-b.3mf`: about 8 h 28 m, 209 g.
+- Black overlays are unchanged: use `tak-pin-board-cc2-83-black-raised-grid.3mf`.
+
+All three pass `validate_3mf.py` and slice from the ElegooSlicer CLI. Tree support on a wing plate drops from 7.2 m to 5.4 m of filament: the end-lip trees and pocket supports are gone; what remains is under the lid-hinge barrels and the seam-side plate edge (as before). Not yet printed: check the notch roofs over the folded feet, that each foot seats flush in its notch, and bumper grip.
