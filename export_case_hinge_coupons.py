@@ -67,7 +67,8 @@ for name,s in (('frame-slice',frame),('lid-base-slice',base_p),('lid-slice',lid_
 # pose the wing rims sit 3 mm above the bed and the open lid floats, so only the center plate
 # touches the bed directly; a raft bonds every part. Coupon only: it roughens the play face.
 pp=HERE/'profiles'/'process-coupon-raft.json'
-dest=HERE/'centauri-carbon-2-3mf'/'tak-case-hinge-coupon-cc2-30.3mf'
+dest=HERE/'print/archive/2-hinge-experiments'/'tak-case-hinge-coupon-cc2-30.3mf'
+dest.parent.mkdir(parents=True,exist_ok=True)
 cmd=[EXE,'--datadir',str(WORK/'config'),
      '--load-settings',f'{WORK/"profiles/machine.json"};{pp}',
      '--load-filaments',str(WORK/'profiles/filament-white.json'),

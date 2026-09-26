@@ -36,7 +36,8 @@ bb=plate.BoundingBox(); assert bb.xlen<250 and bb.ylen<250,(bb.xlen,bb.ylen)
 save(plate,'tuning-plate')
 models=[OUT/'tuning-plate.stl']
 
-dest=HERE/'centauri-carbon-2-3mf'/'tak-hinge-tuning-coupon-cc2-21.3mf'
+dest=HERE/'print/archive/2-hinge-experiments'/'tak-hinge-tuning-coupon-cc2-21.3mf'
+dest.parent.mkdir(parents=True,exist_ok=True)
 cmd=[EXE,'--datadir',str(WORK/'config'),
      '--load-settings',f'{WORK/"profiles/machine.json"};{HERE/"profiles/process-pieces.json"}',
      '--load-filaments',str(WORK/'profiles/filament-white.json'),

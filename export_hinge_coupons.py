@@ -21,7 +21,8 @@ save(sa,'snap-hinge-a-stubs'); save(sb,'snap-hinge-b-clip')
 cq.exporters.export(cq.Workplane().add(cq.Compound.makeCompound([pa,pb])),str(OUT/'pip-hinge-strip.step'))
 cq.exporters.export(cq.Workplane().add(cq.Compound.makeCompound([sa,sb])),str(OUT/'snap-hinge-assembled.step'))
 
-dest=HERE/'centauri-carbon-2-3mf'/'tak-hinge-coupons-cc2-20.3mf'
+dest=HERE/'print/archive/2-hinge-experiments'/'tak-hinge-coupons-cc2-20.3mf'
+dest.parent.mkdir(parents=True,exist_ok=True)
 models=[OUT/'pip-hinge-strip.stl',OUT/'snap-hinge-a-stubs.stl',OUT/'snap-hinge-b-clip.stl']
 cmd=[EXE,'--datadir',str(WORK/'config'),
      '--load-settings',f'{WORK/"profiles/machine.json"};{HERE/"profiles/process-pieces.json"}',

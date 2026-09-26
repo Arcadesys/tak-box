@@ -5,7 +5,7 @@ from xml.etree import ElementTree as ET
 import json,subprocess
 
 HERE=Path(__file__).resolve().parent
-PACK=HERE/'centauri-carbon-2-3mf'
+PACK=HERE/'print'
 NS={'m':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02',
     'p':'http://schemas.microsoft.com/3dmanufacturing/production/2015/06'}
 EXE='/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer'
@@ -16,7 +16,7 @@ def apply(v,trans):
     return (a*x+d*y+g*z+j,b*x+e*y+h*z+k,c*x+f*y+i*z+l)
 
 report={}
-for path in sorted(PACK.glob('*.3mf')):
+for path in sorted(PACK.rglob('*.3mf')):
     with ZipFile(path) as z:
         assert z.testzip() is None
         root=ET.fromstring(z.read('3D/3dmodel.model'))
@@ -49,7 +49,7 @@ for path in sorted(PACK.glob('*.3mf')):
     info=subprocess.run([EXE,'--info',str(path)],capture_output=True,
                         text=True,timeout=30)
     assert info.returncode==0 and info.stdout.count('manifold = yes')==len(boxes),path.name
-    report[path.name]={'objects':len(boxes),'manifold':True,
+    report[str(path.relative_to(PACK))]={'objects':len(boxes),'manifold':True,
                        'within_256_mm_bed':True,
                        'xy_bounds_mm':[round(min(b[0][0] for b in boxes),2),
                                        round(min(b[0][1] for b in boxes),2),

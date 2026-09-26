@@ -52,7 +52,8 @@ cq.exporters.export(cq.Workplane().add(plate),str(OUT/'joint-coupon-plate.stl'),
 for n,s in (('piece-A',A),('piece-B',B)):
     cq.exporters.export(cq.Workplane().add(s),str(OUT/f'{n}.stl'),tolerance=.02,angularTolerance=.1)
 
-dest=HERE/'centauri-carbon-2-3mf'/'tak-center-joint-coupon-cc2-50.3mf'
+dest=HERE/'print/archive/2-hinge-experiments'/'tak-center-joint-coupon-cc2-50.3mf'
+dest.parent.mkdir(parents=True,exist_ok=True)
 cmd=[EXE,'--datadir',str(WORK/'config'),
      '--load-settings',f'{WORK/"profiles/machine.json"};{HERE/"profiles/process-coupon-raft.json"}',
      '--load-filaments',str(WORK/'profiles/filament-white.json'),

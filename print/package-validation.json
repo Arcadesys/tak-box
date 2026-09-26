@@ -1,93 +1,5 @@
 {
-  "tak-case-half-A-cc2-40.3mf": {
-    "objects": 1,
-    "manifold": true,
-    "within_256_mm_bed": true,
-    "xy_bounds_mm": [
-      25.5,
-      35.0,
-      230.5,
-      221.0
-    ]
-  },
-  "tak-case-half-B-cc2-41.3mf": {
-    "objects": 1,
-    "manifold": true,
-    "within_256_mm_bed": true,
-    "xy_bounds_mm": [
-      25.5,
-      37.0,
-      230.5,
-      219.0
-    ]
-  },
-  "tak-case-hinge-coupon-cc2-30.3mf": {
-    "objects": 1,
-    "manifold": true,
-    "within_256_mm_bed": true,
-    "xy_bounds_mm": [
-      75.3,
-      65.8,
-      180.7,
-      190.2
-    ]
-  },
-  "tak-center-joint-coupon-cc2-50.3mf": {
-    "objects": 1,
-    "manifold": true,
-    "within_256_mm_bed": true,
-    "xy_bounds_mm": [
-      64.8,
-      99.65,
-      191.2,
-      156.35
-    ]
-  },
-  "tak-filament-pin-fit-coupon-cc2-70.3mf": {
-    "objects": 1,
-    "manifold": true,
-    "within_256_mm_bed": true,
-    "xy_bounds_mm": [
-      77.1,
-      59.5,
-      178.9,
-      196.5
-    ]
-  },
-  "tak-hinge-coupons-cc2-20.3mf": {
-    "objects": 3,
-    "manifold": true,
-    "within_256_mm_bed": true,
-    "xy_bounds_mm": [
-      82.3,
-      84.4,
-      173.7,
-      171.6
-    ]
-  },
-  "tak-hinge-tuning-coupon-cc2-21.3mf": {
-    "objects": 1,
-    "manifold": true,
-    "within_256_mm_bed": true,
-    "xy_bounds_mm": [
-      76.6,
-      33.5,
-      179.4,
-      222.5
-    ]
-  },
-  "tak-magnet-fit-test-cc2-60.3mf": {
-    "objects": 1,
-    "manifold": true,
-    "within_256_mm_bed": true,
-    "xy_bounds_mm": [
-      121.0,
-      105.0,
-      135.0,
-      151.0
-    ]
-  },
-  "tak-open-wells-v5-cc2-00-fit-coupon.3mf": {
+  "archive/1-v5-open-wells/tak-open-wells-v5-cc2-00-fit-coupon.3mf": {
     "objects": 3,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -98,7 +10,7 @@
       171.5
     ]
   },
-  "tak-open-wells-v5-cc2-01-white-wing-a-center.3mf": {
+  "archive/1-v5-open-wells/tak-open-wells-v5-cc2-01-white-wing-a-center.3mf": {
     "objects": 2,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -109,7 +21,7 @@
       194.5
     ]
   },
-  "tak-open-wells-v5-cc2-02-white-wing-b-lid-a.3mf": {
+  "archive/1-v5-open-wells/tak-open-wells-v5-cc2-02-white-wing-b-lid-a.3mf": {
     "objects": 2,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -120,7 +32,7 @@
       212.75
     ]
   },
-  "tak-open-wells-v5-cc2-03-white-lid-b-pins.3mf": {
+  "archive/1-v5-open-wells/tak-open-wells-v5-cc2-03-white-lid-b-pins.3mf": {
     "objects": 5,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -131,7 +43,7 @@
       176.75
     ]
   },
-  "tak-open-wells-v5-cc2-04-black-raised-grid.3mf": {
+  "archive/1-v5-open-wells/tak-open-wells-v5-cc2-04-black-raised-grid.3mf": {
     "objects": 3,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -142,29 +54,95 @@
       230.0
     ]
   },
-  "tak-pieces-cc2-10-cat-orange.3mf": {
-    "objects": 22,
+  "archive/2-hinge-experiments/tak-case-half-A-cc2-40.3mf": {
+    "objects": 1,
     "manifold": true,
     "within_256_mm_bed": true,
     "xy_bounds_mm": [
-      74.0,
-      74.0,
-      182.0,
-      182.0
+      25.5,
+      35.0,
+      230.5,
+      221.0
     ]
   },
-  "tak-pieces-cc2-11-witch-purple.3mf": {
-    "objects": 22,
+  "archive/2-hinge-experiments/tak-case-half-B-cc2-41.3mf": {
+    "objects": 1,
     "manifold": true,
     "within_256_mm_bed": true,
     "xy_bounds_mm": [
-      74.0,
-      74.0,
-      182.0,
-      182.0
+      25.5,
+      37.0,
+      230.5,
+      219.0
     ]
   },
-  "tak-pin-board-cc2-80-white-center-row-plugs.3mf": {
+  "archive/2-hinge-experiments/tak-case-hinge-coupon-cc2-30.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      75.3,
+      65.8,
+      180.7,
+      190.2
+    ]
+  },
+  "archive/2-hinge-experiments/tak-center-joint-coupon-cc2-50.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      64.8,
+      99.65,
+      191.2,
+      156.35
+    ]
+  },
+  "archive/2-hinge-experiments/tak-filament-pin-fit-coupon-cc2-70.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      77.1,
+      59.5,
+      178.9,
+      196.5
+    ]
+  },
+  "archive/2-hinge-experiments/tak-hinge-coupons-cc2-20.3mf": {
+    "objects": 3,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      82.3,
+      84.4,
+      173.7,
+      171.6
+    ]
+  },
+  "archive/2-hinge-experiments/tak-hinge-tuning-coupon-cc2-21.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      76.6,
+      33.5,
+      179.4,
+      222.5
+    ]
+  },
+  "archive/2-hinge-experiments/tak-magnet-fit-test-cc2-60.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      121.0,
+      105.0,
+      135.0,
+      151.0
+    ]
+  },
+  "archive/3-pin-board/tak-pin-board-cc2-80-white-center-row-plugs.3mf": {
     "objects": 11,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -175,7 +153,7 @@
       189.25
     ]
   },
-  "tak-pin-board-cc2-81-white-wing-a-lid-a.3mf": {
+  "archive/3-pin-board/tak-pin-board-cc2-81-white-wing-a-lid-a.3mf": {
     "objects": 2,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -186,7 +164,7 @@
       225.0
     ]
   },
-  "tak-pin-board-cc2-82-white-wing-b-lid-b.3mf": {
+  "archive/3-pin-board/tak-pin-board-cc2-82-white-wing-b-lid-b.3mf": {
     "objects": 2,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -197,7 +175,7 @@
       225.0
     ]
   },
-  "tak-pin-board-cc2-83-black-raised-grid.3mf": {
+  "archive/3-pin-board/tak-pin-board-cc2-83-black-raised-grid.3mf": {
     "objects": 3,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -208,7 +186,29 @@
       230.0
     ]
   },
-  "tak-pin-board-v7-cc2-90-white-center-row-plugs.3mf": {
+  "pieces/tak-pieces-1of2-cat-orange.3mf": {
+    "objects": 22,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      74.0,
+      74.0,
+      182.0,
+      182.0
+    ]
+  },
+  "pieces/tak-pieces-2of2-witch-purple.3mf": {
+    "objects": 22,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      74.0,
+      74.0,
+      182.0,
+      182.0
+    ]
+  },
+  "v7-board/tak-v7-board-1of4-white-center-row-plugs.3mf": {
     "objects": 11,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -219,7 +219,7 @@
       189.25
     ]
   },
-  "tak-pin-board-v7-cc2-91-white-wing-a-lid-a.3mf": {
+  "v7-board/tak-v7-board-2of4-white-wing-a-lid-a.3mf": {
     "objects": 2,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -230,7 +230,7 @@
       225.0
     ]
   },
-  "tak-pin-board-v7-cc2-92-white-wing-b-lid-b.3mf": {
+  "v7-board/tak-v7-board-3of4-white-wing-b-lid-b.3mf": {
     "objects": 2,
     "manifold": true,
     "within_256_mm_bed": true,
@@ -239,6 +239,17 @@
       31.0,
       230.5,
       225.0
+    ]
+  },
+  "v7-board/tak-v7-board-4of4-black-grid.3mf": {
+    "objects": 3,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      26.0,
+      230.5,
+      230.0
     ]
   }
 }

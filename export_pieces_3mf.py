@@ -14,13 +14,13 @@ HERE=Path(__file__).resolve().parent
 WORK=HERE.parents[1]/'work/tak-212-3mf'
 MACHINE=WORK/'profiles/machine.json'
 PROFILES=HERE/'profiles'
-OUT=HERE/'centauri-carbon-2-3mf'
-OUT.mkdir(exist_ok=True)
+OUT=HERE/'print/pieces'
+OUT.mkdir(parents=True,exist_ok=True)
 EXE='/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer'
 
 plates={
- 'tak-pieces-cc2-10-cat-orange':('cat','filament-orange.json','cat-capstone-meshy.stl'),
- 'tak-pieces-cc2-11-witch-purple':('witch','filament-purple.json','witch-capstone.stl'),
+ 'tak-pieces-1of2-cat-orange':('cat','filament-orange.json','cat-capstone-meshy.stl'),
+ 'tak-pieces-2of2-witch-purple':('witch','filament-purple.json','witch-capstone.stl'),
 }
 teams=set(sys.argv[1:]) or {'cat','witch'}
 for name,(team,filament,capstone) in plates.items():

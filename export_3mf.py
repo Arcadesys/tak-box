@@ -7,8 +7,8 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 WORK=ROOT/'work/tak-212-3mf'
 PROFILES=WORK/'profiles'
-OUT=HERE/'centauri-carbon-2-3mf'
-OUT.mkdir(exist_ok=True)
+OUT=HERE/'print/archive/1-v5-open-wells'  # superseded; kept reproducible
+OUT.mkdir(parents=True,exist_ok=True)
 EXE='/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer'
 
 groups={

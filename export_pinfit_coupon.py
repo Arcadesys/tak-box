@@ -28,7 +28,8 @@ plate=cq.Compound.makeCompound(parts); bb=plate.BoundingBox()
 print('plate %.0f x %.0f x %.1f mm'%(bb.xlen,bb.ylen,bb.zlen)); assert bb.xlen<250 and bb.ylen<250
 cq.exporters.export(cq.Workplane().add(plate),str(OUT/'pinfit-plate.stl'),tolerance=.01,angularTolerance=.1)
 
-dest=HERE/'centauri-carbon-2-3mf'/'tak-filament-pin-fit-coupon-cc2-70.3mf'
+dest=HERE/'print/archive/2-hinge-experiments'/'tak-filament-pin-fit-coupon-cc2-70.3mf'
+dest.parent.mkdir(parents=True,exist_ok=True)
 cmd=[EXE,'--datadir',str(WORK/'config'),
      '--load-settings',f'{WORK/"profiles/machine.json"};{HERE/"profiles/process-pinfit.json"}',
      '--load-filaments',str(WORK/'profiles/filament-white.json'),

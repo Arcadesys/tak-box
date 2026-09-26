@@ -69,7 +69,8 @@ plates={
 }
 for name,(process,filament,models) in plates.items():
     pp=HERE/'profiles'/process if process else WORK/'profiles/process-overlay.json'
-    dest=HERE/'centauri-carbon-2-3mf'/f'tak-pin-board-cc2-{name}.3mf'
+    dest=HERE/'print/archive/3-pin-board'/f'tak-pin-board-cc2-{name}.3mf'
+    dest.parent.mkdir(parents=True,exist_ok=True)
     cmd=[EXE,'--datadir',str(WORK/'config'),
          '--load-settings',f'{WORK/"profiles/machine.json"};{pp}',
          '--load-filaments',str(WORK/'profiles'/filament),

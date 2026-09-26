@@ -1,9 +1,9 @@
-"""Package the v7 case (tak_case_v7) as CC2 3MF plates.
+"""Package the v7 board (tak_case_v7) as the four CC2 plates in print/v7-board/.
 
-90  white  v7 center row (face down) + 10 press-in plugs
-91  white  v7 wing A (bottom down) + lid A (face down)
-92  white  v7 wing B (bottom down) + lid B (face down)
-The black raised-grid overlays are unchanged: print tak-pin-board-cc2-83.
+1of4  white  center row (face down) + 10 press-in plugs
+2of4  white  wing A (bottom down) + lid A (face down)
+3of4  white  wing B (bottom down) + lid B (face down)
+4of4  black  raised-grid overlays (unchanged since the pin board)
 
 Run export_validate_v7.py first; it writes pin-board-v7/*.stl.
 profiles/process-board-pin-v7.json is process-board-pin.json with
@@ -19,16 +19,21 @@ WORK=HERE.parents[1]/'work/tak-212-3mf'
 EXE='/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer'
 PROCESS=HERE/'profiles/process-board-pin-v7.json'
 
+PIN=HERE/'pin-board'
+OUT=HERE/'print/v7-board'; OUT.mkdir(parents=True,exist_ok=True)
+white=(PROCESS,WORK/'profiles/filament-white.json')
 plates={
- '90-white-center-row-plugs':[V7/'center-row.stl']+[HERE/'pin-board/plug.stl']*10,
- '91-white-wing-a-lid-a':[V7/'wing-a.stl',V7/'lid-a.stl'],
- '92-white-wing-b-lid-b':[V7/'wing-b.stl',V7/'lid-b.stl'],
+ '1of4-white-center-row-plugs':(*white,[V7/'center-row.stl']+[PIN/'plug.stl']*10),
+ '2of4-white-wing-a-lid-a':(*white,[V7/'wing-a.stl',V7/'lid-a.stl']),
+ '3of4-white-wing-b-lid-b':(*white,[V7/'wing-b.stl',V7/'lid-b.stl']),
+ '4of4-black-grid':(WORK/'profiles/process-overlay.json',WORK/'profiles/filament-black.json',
+                    [PIN/'black-grid-a.stl',PIN/'black-grid-center.stl',PIN/'black-grid-b.stl']),
 }
-for name,models in plates.items():
-    dest=HERE/'centauri-carbon-2-3mf'/f'tak-pin-board-v7-cc2-{name}.3mf'
+for name,(process,filament,models) in plates.items():
+    dest=OUT/f'tak-v7-board-{name}.3mf'
     cmd=[EXE,'--datadir',str(WORK/'config'),
-         '--load-settings',f'{WORK/"profiles/machine.json"};{PROCESS}',
-         '--load-filaments',str(WORK/'profiles/filament-white.json'),
+         '--load-settings',f'{WORK/"profiles/machine.json"};{process}',
+         '--load-filaments',str(filament),
          '--arrange','1','--ensure-on-bed','--export-3mf',str(dest),*map(str,models)]
     r=subprocess.run(cmd,text=True,capture_output=True,timeout=300)
     if r.returncode or not dest.exists(): raise RuntimeError(name+(r.stdout+r.stderr)[-1600:])

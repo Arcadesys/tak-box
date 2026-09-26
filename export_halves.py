@@ -39,7 +39,8 @@ for n,s in parts.items():
     cq.exporters.export(cq.Workplane().add(s),str(OUT/f'half-{n}.stl'),tolerance=.02,angularTolerance=.1)
 
 for n in 'AB':
-    dest=HERE/'centauri-carbon-2-3mf'/f'tak-case-half-{n}-cc2-4{"01"[n=="B"]}.3mf'
+    dest=HERE/'print/archive/2-hinge-experiments'/f'tak-case-half-{n}-cc2-4{"01"[n=="B"]}.3mf'
+    dest.parent.mkdir(parents=True,exist_ok=True)
     cmd=[EXE,'--datadir',str(WORK/'config'),
          '--load-settings',f'{WORK/"profiles/machine.json"};{HERE/"profiles/process-halves.json"}',
          '--load-filaments',str(WORK/'profiles/filament-white.json'),

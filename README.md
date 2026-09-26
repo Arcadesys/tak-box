@@ -1,5 +1,7 @@
 # Tak board with lift-up storage lids — CAD prototype
 
+> **Start here: what to print.** Everything printable is in [`print/`](print/README.md). The current board is **v7**, in `print/v7-board/`: four plates numbered `1of4` to `4of4`. The pieces are in `print/pieces/`. Everything in `print/archive/` is an earlier iteration or a test coupon; don't print it for the current board. The rest of this file is the design history, oldest first.
+
 **v5 level-base correction:** The former center end walls reached 40 mm below the playing face while the storage wings reached 20.1 mm. The center walls now reach 20.1 mm too, so all three structural sections contact the same plane when open. The printed v4 center row must not be combined with this set.
 
 ![Open-board support heights before and after the correction](center-support-comparison.png)
@@ -23,7 +25,7 @@ The white playing face has a black 5 × 5 grid and the existing cat, witch-hat, 
 - `tak-open-wells-v5-closed.step`: folded case.
 - `*-print.stl`: individual printable shells, lids, grid accents, and hinge pins.
 - `validation.json`: measured digital checks.
-- `centauri-carbon-2-3mf/`: five separate 3MF projects and `package-validation.json`.
+- `print/archive/1-v5-open-wells/`: the five v5 3MF projects (superseded). `print/package-validation.json` covers every 3MF in `print/`.
 
 ## Measured CAD layout
 
@@ -35,9 +37,9 @@ The white playing face has a black 5 × 5 grid and the existing cat, witch-hat, 
 - Inventory modeled: 21 flats of 20 × 20 × 8 mm and one keystone of Ø19.8 × 25.4 mm per side.
 - The hinge sweeps checked clear from 0–90° for the main fold and 0–110° for each playing lid, sampled every 5°.
 
-## Print order and assembly
+## Print order and assembly (v5, superseded: see `print/` for the current board)
 
-1. Open `centauri-carbon-2-3mf/tak-open-wells-v5-cc2-00-fit-coupon.3mf` in ElegooSlicer. It contains a real 45 mm wide section of the well end, playing lid, and lid hinge pin. Print this **first** in white PETG. Fit the actual keystone, seat a Ø4 × 2 mm magnet in each half, and check the hinge and magnetic lid closure by hand.
+1. Open `print/archive/1-v5-open-wells/tak-open-wells-v5-cc2-00-fit-coupon.3mf` in ElegooSlicer. It contains a real 45 mm wide section of the well end, playing lid, and lid hinge pin. Print this **first** in white PETG. Fit the actual keystone, seat a Ø4 × 2 mm magnet in each half, and check the hinge and magnetic lid closure by hand.
 2. If that fit works, print the three white structural projects `01`, `02`, `03`, then the black raised-grid project `04`. Each file is a separate plate. The black overlays are separate printed parts that attach to the white playing face after the hinges move freely.
 3. Install two main folding pins and two lid pins. Install **eight opposite-polarity magnet pairs** (16 Ø4 × 2 mm magnets total): four pairs retain the folded case and two pairs hold each playing lid down. Test polarity before bonding.
 4. Load 21 flats and one keystone in each side, close both lids, fold the case, and test normal carrying over a soft surface before trusting it with the full set.
@@ -52,7 +54,7 @@ Each team has 21 flat stones (20 × 20 × 8 mm, emblem recessed 0.6 mm on both f
 
 - `tak_pieces.py`: CadQuery model (`flat`, `cat_capstone`, `witch_capstone`; the old slab capstones remain as `*_slab`). `export_pieces.py` writes `pieces/*.stl`, `pieces/*.step` and the print plates; `render_pieces.py` writes the previews.
 - `build_cat_capstone_meshy.py`: cuts the `cat-b` head at its neck, scales it onto `pawn_base()`, adds a 45° chin support and traces its hair-thin face lines as 0.6 × 0.5 mm grooves. Writes `pieces/cat-capstone-meshy.stl` (mesh only, no STEP; D19.4 × 25.24 mm). Needs `trimesh manifold3d rtree` on top of the cadquery env.
-- `export_pieces_3mf.py` (optional team args, e.g. `cat`): builds `centauri-carbon-2-3mf/tak-pieces-cc2-10-cat-orange.3mf` and `...-11-witch-purple.3mf`, 21 flats plus the pawn each, one object per piece. Profiles are in `profiles/` (orange and purple PETG; `process-pieces.json`: 0.20 mm, 4 walls, **100% infill** so the pieces are solid and weigh about 4 g each, no supports). `validate_3mf.py` covers them too.
+- `export_pieces_3mf.py` (optional team args, e.g. `cat`): builds `print/pieces/tak-pieces-1of2-cat-orange.3mf` and `...-2of2-witch-purple.3mf`, 21 flats plus the pawn each, one object per piece. Profiles are in `profiles/` (orange and purple PETG; `process-pieces.json`: 0.20 mm, 4 walls, **100% infill** so the pieces are solid and weigh about 4 g each, no supports). `validate_3mf.py` covers them too.
 - Sliced in ElegooSlicer (CC2, 0.4 mm, PETG, textured PEI): about 80 g and 3 h per plate, no supports. The pawn bodies stay at or above 45° from the bed; only the 0.5 mm engraving roofs bridge. Not yet physically printed: check the ear and hat-tip detail and the pawn's fit in the keystone recess.
 - `meshy_output/` holds the Meshy variants; `variants/cat-b/model.stl` is an input to the cat capstone.
 
@@ -63,9 +65,9 @@ The v5 hinge bores are walled shut at both ends of every hinge (nothing is open 
 - **PIP (print-in-place):** each A knuckle grows a Ø3 pin with a 45° tip that sits in a conical socket in the neighbouring B knuckle (0.4 mm clearance). `hinge-coupons/pip-hinge-strip.stl` prints already hinged.
 - **Snap:** the A knuckles carry two Ø3 stub axles; B is a C-clip barrel (Ø3.4 bore, 2.5 mm mouth, lead-in flare, cut into three flexing fingers). `snap-hinge-a-stubs.stl` and `snap-hinge-b-clip.stl` print separately. Press B straight down onto the stubs, mouth toward the bed; it clicks on.
 
-`export_hinge_coupons.py` writes the STL/STEP files and `centauri-carbon-2-3mf/tak-hinge-coupons-cc2-20.3mf` (all three parts, one plate, about 45 min, 25 g). Digital checks: valid solids, zero A/B overlap folded 0–110° in 10° steps, manifold 3MF, and a clean ElegooSlicer slice. Nothing here has been printed; clearances and snap force are the things to feel out. The Ø6 barrels are larger than the v5 case's Ø4, so moving the full case to either hinge is a separate step.
+`export_hinge_coupons.py` writes the STL/STEP files and `print/archive/2-hinge-experiments/tak-hinge-coupons-cc2-20.3mf` (all three parts, one plate, about 45 min, 25 g). Digital checks: valid solids, zero A/B overlap folded 0–110° in 10° steps, manifold 3MF, and a clean ElegooSlicer slice. Nothing here has been printed; clearances and snap force are the things to feel out. The Ø6 barrels are larger than the v5 case's Ø4, so moving the full case to either hinge is a separate step.
 
-**Hinge tuning coupon:** `export_hinge_tuning.py` writes `centauri-carbon-2-3mf/tak-hinge-tuning-coupon-cc2-21.3mf`, one plate (about 1 h 36 m, 46 g, no supports) with three variants of each hinge in three columns: snap stubs, snap clip, and PIP strip. Dimples on the plate top identify the variant: 1 dimple = PIP clearance 0.3 mm / snap mouth 2.3 mm, 2 = 0.4 / 2.5, 3 = 0.5 / 2.7. STLs are in `hinge-coupons/tuning/`.
+**Hinge tuning coupon:** `export_hinge_tuning.py` writes `print/archive/2-hinge-experiments/tak-hinge-tuning-coupon-cc2-21.3mf`, one plate (about 1 h 36 m, 46 g, no supports) with three variants of each hinge in three columns: snap stubs, snap clip, and PIP strip. Dimples on the plate top identify the variant: 1 dimple = PIP clearance 0.3 mm / snap mouth 2.3 mm, 2 = 0.4 / 2.5, 3 = 0.5 / 2.7. STLs are in `hinge-coupons/tuning/`.
 
 ## Pin-free case hinges (real-geometry coupon)
 
@@ -73,7 +75,7 @@ The v5 hinge bores are walled shut at both ends of every hinge (nothing is open 
 
 Digital checks on the full parts: valid solids; zero overlap of each wing against the center row for folds 0–90° (10° steps); zero overlap of each lid against its wing for 0–110°.
 
-`export_case_hinge_coupons.py` crops a 58 mm slice (knuckles 2–4) and writes `centauri-carbon-2-3mf/tak-case-hinge-coupon-cc2-30.3mf` (one plate, about 2 h 40 m, 59 g, auto tree supports):
+`export_case_hinge_coupons.py` crops a 58 mm slice (knuckles 2–4) and writes `print/archive/2-hinge-experiments/tak-case-hinge-coupon-cc2-30.3mf` (one plate, about 2 h 40 m, 59 g, auto tree supports):
 
 - **Frame slice:** center row plus both wing edges with the print-in-place seams, printed **face down**. The wells become bridged roofs, so the slicer fills them with supports; they are reachable through the open well because the lid is a separate part. The play face lands on the textured PEI.
 - **Lid slice:** wing edge with stubs (printed face up) and the matching lid (face down). Press the lid straight down onto the stubs, C-clip mouth toward the wing.
@@ -82,7 +84,7 @@ Why not one closed print? With lids in place each well is a sealed cavity with a
 
 ## Flat print halves, print-in-place everywhere
 
-The v5 case in `tak_case_pip.py` now prints as **two flat halves** that come off the bed already hinged (`export_halves.py`, output in `halves/` and `centauri-carbon-2-3mf/tak-case-half-A-cc2-40.3mf`, `...-half-B-cc2-41.3mf`):
+The v5 case in `tak_case_pip.py` now prints as **two flat halves** that come off the bed already hinged (`export_halves.py`, output in `halves/` and `print/archive/2-hinge-experiments/tak-case-half-A-cc2-40.3mf`, `...-half-B-cc2-41.3mf`):
 
 - **Half A:** lid 0 (opened 180°, lying flat) + wing 0 + front half of the center row. **Half B:** back half of the center row + wing 2 + lid 2 (opened 180°).
 - Both print **face down** (play face on the textured PEI), about 205 × 186 × 24 mm, roughly **203 g and 7 h 15 m each**, slicer profile `profiles/process-halves.json` (0.20 mm, 4 walls, 35% gyroid, *normal* auto supports with `bridge_no_support` on).
@@ -91,7 +93,7 @@ The v5 case in `tak_case_pip.py` now prints as **two flat halves** that come off
 - **Wells:** the tile well is now three lanes (20.6 mm wide, one row of 7 flats each) split by 1.6 mm dividers and 10.7 mm deep (was one 19.2 mm-deep pocket, 101 cm³ vs 187 cm³). Each lane roof spans about 21 mm and bridges without support; the underside below the wells is an open pan. The keystone pocket has a semicircular bottom (Ø21.2) for the pawn, which prints as a self-supporting arch.
 - Digital checks: all solids valid; wings against their own center half, folds 0–90°, zero overlap; lids 0–180°, zero overlap; center halves and nipples clear (0 mm³). Not yet printed.
 
-**Center-joint coupon:** `export_joint_coupon.py` writes `centauri-carbon-2-3mf/tak-center-joint-coupon-cc2-50.3mf` (about 1 h 31 m, 42 g, same profile as the halves): piece A (wing 0 edge with a bridged lane, pan and print-in-place seam, plus the front center half with its nipple) and piece B (back center half with the hole, plus the wing 2 edge). Glue A to B at the center seam, play faces down on a flat surface, then fold both seams. The few support strips it shows are at the cropped lane ends only; the real halves close those lanes with end walls.
+**Center-joint coupon:** `export_joint_coupon.py` writes `print/archive/2-hinge-experiments/tak-center-joint-coupon-cc2-50.3mf` (about 1 h 31 m, 42 g, same profile as the halves): piece A (wing 0 edge with a bridged lane, pan and print-in-place seam, plus the front center half with its nipple) and piece B (back center half with the hole, plus the wing 2 edge). Glue A to B at the center seam, play faces down on a flat surface, then fold both seams. The few support strips it shows are at the cropped lane ends only; the real halves close those lanes with end walls.
 
 **Coupon adhesion (fix):** in the face-down pose only the center plate touches the bed; wing rims sit 3 mm above it and an opened lid floats, so wings and lids depend on their support. The first hinge coupon used tree supports (about 170 mm of thin lines on the first layer) and its wing slices were cropped through a lane divider, leaving a one-sided shelf that the slicer held up with a thin support wall. Both are fixed: the coupons now crop on the outer faces of full dividers (lane roofs are anchored on both sides and print as real bridges) and print on a 3-layer raft (`profiles/process-coupon-raft.json`, coupon only: it roughens the underside). The real halves keep the dense normal supports; if they need a firmer bond, options are a lip-and-rebate rim or printing one wing first as a test.
 
@@ -99,13 +101,13 @@ The v5 case in `tak_case_pip.py` now prints as **two flat halves** that come off
 
 Print-in-place hinges are off the table, so the hinge pin is a length of **1.75 mm filament**, never printed: snug (friction) in one part's knuckles, free-turning in the other's, with a small press-in plug at each end. Consequences: the wings, lids and center row print as separate parts (no flat halves, no glued center split), and the v5 bores must be open at the ends with a lead-in (v5's were walled shut).
 
-`export_pinfit_coupon.py` (`tak_pinfit.py`) writes `centauri-carbon-2-3mf/tak-filament-pin-fit-coupon-cc2-70.3mf`: two bore ladders (round and teardrop, Ø1.70 to 2.30 mm, small end = notched corner), three hinge strips with real 19 mm knuckles (1 dimple: fixed 1.80 / free 2.10, 2 dimples: 1.90 / 2.20, 3 dimples: 2.00 / 2.30) and four press-in plugs (filament hole 1.60 / 1.70 / 1.75 / 1.80). Push real filament through and report which bore is snug and which turns freely.
+`export_pinfit_coupon.py` (`tak_pinfit.py`) writes `print/archive/2-hinge-experiments/tak-filament-pin-fit-coupon-cc2-70.3mf`: two bore ladders (round and teardrop, Ø1.70 to 2.30 mm, small end = notched corner), three hinge strips with real 19 mm knuckles (1 dimple: fixed 1.80 / free 2.10, 2 dimples: 1.90 / 2.20, 3 dimples: 2.00 / 2.30) and four press-in plugs (filament hole 1.60 / 1.70 / 1.75 / 1.80). Push real filament through and report which bore is snug and which turns freely.
 
 ### Full board with filament pins
 
 `tak_case_pin.py` is the v5 case rebuilt for 1.75 mm filament pins: separate center row, two wings and two lids. The center row holds the pin snugly on the main seams, and the wing holds it snugly on the lid hinges. Both board edges have a Ø4.4 feed channel, and the outer knuckles have a Ø3.2 × 1.5 counterbore for a press-in plug. The wells use the three-lane layout. The underside pan is dropped because the wings now print bottom down, with their wells open upward.
 
-`export_pin_board.py` writes `pin-board/*.stl` and four plates in `centauri-carbon-2-3mf/` (profile `profiles/process-board-pin.json`: tree supports on the build plate only, so no support grows inside a bore):
+`export_pin_board.py` writes `pin-board/*.stl` and four plates in `print/archive/3-pin-board/` (superseded by v7) (profile `profiles/process-board-pin.json`: tree supports on the build plate only, so no support grows inside a bore):
 
 - `tak-pin-board-cc2-80-white-center-row-plugs.3mf`: center row (face down) and 10 plugs. About 1 h 35 m, 38 g.
 - `...-81-white-wing-a-lid-a.3mf` / `...-82-white-wing-b-lid-b.3mf`: wing bottom down and lid face down. About 8 h 27 m, 207 g each. Supports appear only under the hinge barrels that hang past the walls.
@@ -139,11 +141,11 @@ Digital checks (`export_validate_v6.py`): valid single solids, the shell/lid cle
 
 Each bumper and clearance pocket prints sealed by one 0.2 mm first-layer skin, because the slicer otherwise grows build-plate tree supports into it even with bridge supports off. **Cut the skin out with a craft knife before sticking the bumper in** (the 0.6 mm clearance pockets can stay sealed or be cut; both clear when folded).
 
-`export_v7_3mf.py` packages three white plates with `profiles/process-board-pin-v7.json` (the pin profile with `bridge_no_support` on):
+`export_v7_3mf.py` packages the four v7 plates into `print/v7-board/`, the white ones with `profiles/process-board-pin-v7.json` (the pin profile with `bridge_no_support` on):
 
-- `tak-pin-board-v7-cc2-90-white-center-row-plugs.3mf`: v7 center row + 10 plugs, about 1 h 36 m, 37 g.
-- `tak-pin-board-v7-cc2-91-white-wing-a-lid-a.3mf`: about 8 h 28 m, 209 g.
-- `tak-pin-board-v7-cc2-92-white-wing-b-lid-b.3mf`: about 8 h 28 m, 209 g.
-- Black overlays are unchanged: use `tak-pin-board-cc2-83-black-raised-grid.3mf`.
+- `tak-v7-board-1of4-white-center-row-plugs.3mf`: v7 center row + 10 plugs, about 1 h 36 m, 37 g.
+- `tak-v7-board-2of4-white-wing-a-lid-a.3mf`: about 8 h 28 m, 209 g.
+- `tak-v7-board-3of4-white-wing-b-lid-b.3mf`: about 8 h 28 m, 209 g.
+- `tak-v7-board-4of4-black-grid.3mf`: the black overlays, unchanged since the pin board (same geometry as its plate 83). About 38 m, 14 g.
 
 All three pass `validate_3mf.py` and slice from the ElegooSlicer CLI. Tree support on a wing plate drops from 7.2 m to 5.4 m of filament: the end-lip trees and pocket supports are gone; what remains is under the lid-hinge barrels and the seam-side plate edge (as before). Not yet printed: check the notch roofs over the folded feet, that each foot seats flush in its notch, and bumper grip.

@@ -24,7 +24,8 @@ for n,(d,depth) in enumerate(((4.1,2.1),(4.2,2.2),(4.3,2.3)),1):
         tab=tab.cut(cq.Solid.makeCylinder(0.7,0.7,cq.Vector(dx,11.5,3.3),cq.Vector(0,0,1)))
 assert tab.isValid()
 cq.exporters.export(cq.Workplane().add(tab),str(OUT/'magnet-fit-tab.stl'),tolerance=.01,angularTolerance=.1)
-dest=HERE/'centauri-carbon-2-3mf'/'tak-magnet-fit-test-cc2-60.3mf'
+dest=HERE/'print/archive/2-hinge-experiments'/'tak-magnet-fit-test-cc2-60.3mf'
+dest.parent.mkdir(parents=True,exist_ok=True)
 cmd=[EXE,'--datadir',str(WORK/'config'),
      '--load-settings',f'{WORK/"profiles/machine.json"};{HERE/"profiles/process-pieces.json"}',
      '--load-filaments',str(WORK/'profiles/filament-white.json'),
