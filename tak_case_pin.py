@@ -62,11 +62,18 @@ def shell(index,d=D):
     if index not in (0,1,2):raise ValueError(index)
     if index==1:
         part=box(205,41,4,0,82,0)
-        for x in (0,203):part=part.fuse(box(2,37,20.1,x,84,-20.1))
+        for x in (0,203):
+            # Round the skirt corners beside the wing's swept end. Keep the
+            # full-width middle of each foot for support on the table.
+            skirt=box(2,37,20.1,x,84,-20.1)
+            skirt=cq.Workplane().add(skirt).edges('|Z').fillet(0.75).val()
+            part=part.fuse(skirt)
     else:
         y0=wing_y(index)
         part=box(205,82,1,0,y0,0)
-        part=part.fuse(box(200,74,21.1,2.5,y0+4,-20.1))
+        # Center skirts end at x=2 / start at x=203. Leave 1.5 mm nominal
+        # end clearance for real printed parts throughout the fold.
+        part=part.fuse(box(198,74,21.1,3.5,y0+4,-20.1))
         outer_y=y0 if index==0 else y0+78
         part=part.fuse(box(200,4,21.1,2.5,outer_y,-20.1))
         fixed_y=y0+79.5 if index==0 else y0
