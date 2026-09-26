@@ -1,4 +1,92 @@
 {
+  "tak-case-half-A-cc2-40.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      35.0,
+      230.5,
+      221.0
+    ]
+  },
+  "tak-case-half-B-cc2-41.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      37.0,
+      230.5,
+      219.0
+    ]
+  },
+  "tak-case-hinge-coupon-cc2-30.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      75.3,
+      65.8,
+      180.7,
+      190.2
+    ]
+  },
+  "tak-center-joint-coupon-cc2-50.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      64.8,
+      99.65,
+      191.2,
+      156.35
+    ]
+  },
+  "tak-filament-pin-fit-coupon-cc2-70.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      77.1,
+      59.5,
+      178.9,
+      196.5
+    ]
+  },
+  "tak-hinge-coupons-cc2-20.3mf": {
+    "objects": 3,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      82.3,
+      84.4,
+      173.7,
+      171.6
+    ]
+  },
+  "tak-hinge-tuning-coupon-cc2-21.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      76.6,
+      33.5,
+      179.4,
+      222.5
+    ]
+  },
+  "tak-magnet-fit-test-cc2-60.3mf": {
+    "objects": 1,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      121.0,
+      105.0,
+      135.0,
+      151.0
+    ]
+  },
   "tak-open-wells-v5-cc2-00-fit-coupon.3mf": {
     "objects": 3,
     "manifold": true,
@@ -52,6 +140,28 @@
       26.0,
       230.5,
       230.0
+    ]
+  },
+  "tak-pieces-cc2-10-cat-orange.3mf": {
+    "objects": 22,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      74.0,
+      74.0,
+      182.0,
+      182.0
+    ]
+  },
+  "tak-pieces-cc2-11-witch-purple.3mf": {
+    "objects": 22,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      74.0,
+      74.0,
+      182.0,
+      182.0
     ]
   }
 }
