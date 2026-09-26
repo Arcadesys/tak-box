@@ -99,3 +99,15 @@ The v5 case in `tak_case_pip.py` now prints as **two flat halves** that come off
 Print-in-place hinges are off the table, so the hinge pin is a length of **1.75 mm filament**, never printed: snug (friction) in one part's knuckles, free-turning in the other's, with a small press-in plug at each end. Consequences: the wings, lids and center row print as separate parts (no flat halves, no glued center split), and the v5 bores must be open at the ends with a lead-in (v5's were walled shut).
 
 `export_pinfit_coupon.py` (`tak_pinfit.py`) writes `centauri-carbon-2-3mf/tak-filament-pin-fit-coupon-cc2-70.3mf`: two bore ladders (round and teardrop, Ø1.70 to 2.30 mm, small end = notched corner), three hinge strips with real 19 mm knuckles (1 dimple: fixed 1.80 / free 2.10, 2 dimples: 1.90 / 2.20, 3 dimples: 2.00 / 2.30) and four press-in plugs (filament hole 1.60 / 1.70 / 1.75 / 1.80). Push real filament through and report which bore is snug and which turns freely.
+
+### Full board with filament pins
+
+`tak_case_pin.py` is the v5 case rebuilt for 1.75 mm filament pins: separate center row, two wings and two lids. The center row holds the pin snugly on the main seams, and the wing holds it snugly on the lid hinges. Both board edges have a Ø4.4 feed channel, and the outer knuckles have a Ø3.2 × 1.5 counterbore for a press-in plug. The wells use the three-lane layout. The underside pan is dropped because the wings now print bottom down, with their wells open upward.
+
+`export_pin_board.py` writes `pin-board/*.stl` and four plates in `centauri-carbon-2-3mf/` (profile `profiles/process-board-pin.json`: tree supports on the build plate only, so no support grows inside a bore):
+
+- `tak-pin-board-cc2-80-white-center-row-plugs.3mf`: center row (face down) and 10 plugs. About 1 h 35 m, 38 g.
+- `...-81-white-wing-a-lid-a.3mf` / `...-82-white-wing-b-lid-b.3mf`: wing bottom down and lid face down. About 8 h 27 m, 207 g each. Supports appear only under the hinge barrels that hang past the walls.
+- `...-83-black-raised-grid.3mf`: v5 overlays, with the lid pieces notched clear of the wing's lid knuckles. About 38 m, 14 g.
+
+Cut four pins of about 195 mm from filament. **Bores are confirmed by the printed pin-fit coupon:** strip 2 (fixed Ø1.90 / free Ø2.20) fit correctly, and the plates use those values. The Ø1.70 plug hole also grips best on the coupon. Digital checks: every part is a single valid solid, and each filament runs through all ten knuckles and both channels without touching anything. Zero overlap for lids opening 0–110° (including overlays), wings plus lids folding 0–90°, and both sides folded together. Sliced in the ElegooSlicer CLI; the full board is not yet printed.
