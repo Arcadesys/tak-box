@@ -10,7 +10,7 @@ for team in ('cat','witch'):
     for name,obj in (('flat',p.flat(team)),('capstone',p.capstone(team))):
         assert obj.val().isValid()
         bb=obj.val().BoundingBox()
-        if name=='capstone': assert bb.xlen<=19.8 and bb.ylen<=19.8 and bb.zlen<=25.4,bb
+        if name=='capstone': assert bb.xlen<=19.8 and bb.ylen<=19.8 and bb.zlen<=25.41,bb  # D19.8 x 25.4 keystone
         cq.exporters.export(obj,str(OUT/f'{team}-{name}.stl'),tolerance=.02,angularTolerance=.1)
         cq.exporters.export(obj,str(OUT/f'{team}-{name}.step'))
     stones,cap=p.team_plate(team)
