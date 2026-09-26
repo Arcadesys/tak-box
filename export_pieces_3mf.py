@@ -3,10 +3,12 @@
 One project per team: 21 flat stones plus the pawn capstone, each a separate
 object so the slicer can arrange them and any one can be deselected.
 Machine profile and slicer come from the same local setup as export_3mf.py.
+Team Cat uses the Meshy-headed pawn from build_cat_capstone_meshy.py.
+Pass team names (cat, witch) to rebuild only those plates.
 """
 from pathlib import Path
 from zipfile import ZipFile
-import json,os,subprocess
+import json,os,subprocess,sys
 
 HERE=Path(__file__).resolve().parent
 WORK=HERE.parents[1]/'work/tak-212-3mf'
@@ -17,12 +19,14 @@ OUT.mkdir(exist_ok=True)
 EXE='/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer'
 
 plates={
- 'tak-pieces-cc2-10-cat-orange':('cat','filament-orange.json'),
- 'tak-pieces-cc2-11-witch-purple':('witch','filament-purple.json'),
+ 'tak-pieces-cc2-10-cat-orange':('cat','filament-orange.json','cat-capstone-meshy.stl'),
+ 'tak-pieces-cc2-11-witch-purple':('witch','filament-purple.json','witch-capstone.stl'),
 }
-for name,(team,filament) in plates.items():
+teams=set(sys.argv[1:]) or {'cat','witch'}
+for name,(team,filament,capstone) in plates.items():
+    if team not in teams:continue
     dest=OUT/f'{name}.3mf'
-    models=[HERE/'pieces'/f'{team}-flat.stl']*21+[HERE/'pieces'/f'{team}-capstone.stl']
+    models=[HERE/'pieces'/f'{team}-flat.stl']*21+[HERE/'pieces'/capstone]
     cmd=[EXE,'--datadir',str(WORK/'config'),
          '--load-settings',f'{MACHINE};{PROFILES/"process-pieces.json"}',
          '--load-filaments',str(PROFILES/filament),

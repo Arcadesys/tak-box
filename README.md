@@ -48,12 +48,13 @@ The exports have passed CAD solid and collision checks, including the level rest
 
 ## Team Cat / Team Witch pieces
 
-Each team has 21 flat stones (20 × 20 × 8 mm, emblem recessed 0.6 mm on both faces) and one **pawn capstone**: a revolved chess-pawn silhouette (foot, waist, collar, head) that fits the Ø19.8 × 25.4 mm keystone envelope in any roll. The cat pawn has a round head with two conical ears and an engraved sleepy face; the witch pawn's waist flares into a 45° brim under a tall crown with a bent tip, with an engraved band and star.
+Each team has 21 flat stones (20 × 20 × 8 mm, emblem recessed 0.6 mm on both faces) and one **pawn capstone**: a revolved chess-pawn silhouette (foot, waist, collar, head) that fits the Ø19.8 × 25.4 mm keystone envelope in any roll. The cat pawn that ships in the print plate has the Meshy `cat-b` head (curved ears, raised muzzle, sleepy smiling face) on the CadQuery pawn foot; the all-CadQuery cat with conical ears is kept as `cat_capstone`; the witch pawn's waist flares into a 45° brim under a tall crown with a bent tip, with an engraved band and star.
 
 - `tak_pieces.py`: CadQuery model (`flat`, `cat_capstone`, `witch_capstone`; the old slab capstones remain as `*_slab`). `export_pieces.py` writes `pieces/*.stl`, `pieces/*.step` and the print plates; `render_pieces.py` writes the previews.
-- `export_pieces_3mf.py`: builds `centauri-carbon-2-3mf/tak-pieces-cc2-10-cat-orange.3mf` and `...-11-witch-purple.3mf`, 21 flats plus the pawn each, one object per piece. Profiles are in `profiles/` (orange and purple PETG; `process-pieces.json`: 0.20 mm, 4 walls, **100% infill** so the pieces are solid and weigh about 4 g each, no supports). `validate_3mf.py` covers them too.
+- `build_cat_capstone_meshy.py`: cuts the `cat-b` head at its neck, scales it onto `pawn_base()`, adds a 45° chin support and traces its hair-thin face lines as 0.6 × 0.5 mm grooves. Writes `pieces/cat-capstone-meshy.stl` (mesh only, no STEP; D19.4 × 25.24 mm). Needs `trimesh manifold3d rtree` on top of the cadquery env.
+- `export_pieces_3mf.py` (optional team args, e.g. `cat`): builds `centauri-carbon-2-3mf/tak-pieces-cc2-10-cat-orange.3mf` and `...-11-witch-purple.3mf`, 21 flats plus the pawn each, one object per piece. Profiles are in `profiles/` (orange and purple PETG; `process-pieces.json`: 0.20 mm, 4 walls, **100% infill** so the pieces are solid and weigh about 4 g each, no supports). `validate_3mf.py` covers them too.
 - Sliced in ElegooSlicer (CC2, 0.4 mm, PETG, textured PEI): about 80 g and 3 h per plate, no supports. The pawn bodies stay at or above 45° from the bed; only the 0.5 mm engraving roofs bridge. Not yet physically printed: check the ear and hat-tip detail and the pawn's fit in the keystone recess.
-- `meshy_output/` holds the Meshy reference variants used for the pawn look (not needed to build anything).
+- `meshy_output/` holds the Meshy variants; `variants/cat-b/model.stl` is an input to the cat capstone.
 
 ## Hinge alternatives (test strips)
 
