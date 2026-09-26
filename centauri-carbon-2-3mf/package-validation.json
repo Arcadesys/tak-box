@@ -163,5 +163,49 @@
       182.0,
       182.0
     ]
+  },
+  "tak-pin-board-cc2-80-white-center-row-plugs.3mf": {
+    "objects": 11,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      66.75,
+      230.5,
+      189.25
+    ]
+  },
+  "tak-pin-board-cc2-81-white-wing-a-lid-a.3mf": {
+    "objects": 2,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      31.0,
+      230.5,
+      225.0
+    ]
+  },
+  "tak-pin-board-cc2-82-white-wing-b-lid-b.3mf": {
+    "objects": 2,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      31.0,
+      230.5,
+      225.0
+    ]
+  },
+  "tak-pin-board-cc2-83-black-raised-grid.3mf": {
+    "objects": 3,
+    "manifold": true,
+    "within_256_mm_bed": true,
+    "xy_bounds_mm": [
+      25.5,
+      26.0,
+      230.5,
+      230.0
+    ]
   }
 }
