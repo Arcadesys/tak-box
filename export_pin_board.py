@@ -42,6 +42,17 @@ sweep('lid A open 0-110',[(w0,lambda d:m.lid_open(l0,0,d))],range(0,111,10))
 sweep('lid B open 0-110',[(w2,lambda d:m.lid_open(l2,2,d))],range(0,111,10))
 sweep('lid A overlay open 0-110',[(w0,lambda d:m.lid_open(overlays[0],0,d))],range(0,111,10))
 sweep('lid B overlay open 0-110',[(w2,lambda d:m.lid_open(overlays[2],2,d))],range(0,111,10))
+# The center's two end skirts sit beside the heavy wing bodies throughout
+# the fold. An intersection test alone accepts a zero or hairline gap here.
+# Require enough end clearance for both real printed edges.
+for wing_i,wing in ((0,w0),(2,w2)):
+    for x in (0,203):
+        skirt=center.intersect(m.box(2,37,20.1,x,84,-20.1))
+        gap=min(skirt.distance(m.posed(wing,wing_i,angle))
+                for angle in range(0,91,5))
+        print('wing %d skirt x=%d min gap %.3f mm'%(wing_i,x,gap))
+        assert gap >= 1.2,(wing_i,x,gap)
+
 sweep('wing A + lid fold 0-90',[(center,lambda d:m.posed(w0,0,d)),(center,lambda d:m.posed(l0,0,d))],range(0,91,10))
 sweep('wing B + lid fold 0-90',[(center,lambda d:m.posed(w2,2,d)),(center,lambda d:m.posed(l2,2,d))],range(0,91,10))
 side=lambda w,l,i,d:m.posed(w,i,d).fuse(m.posed(l,i,d))
