@@ -111,3 +111,16 @@ Print-in-place hinges are off the table, so the hinge pin is a length of **1.75 
 - `...-83-black-raised-grid.3mf`: v5 overlays, with the lid pieces notched clear of the wing's lid knuckles. About 38 m, 14 g.
 
 Cut four pins of about 195 mm from filament. **Bores are confirmed by the printed pin-fit coupon:** strip 2 (fixed Ø1.90 / free Ø2.20) fit correctly, and the plates use those values. The Ø1.70 plug hole also grips best on the coupon. Digital checks: every part is a single valid solid, and each filament runs through all ten knuckles and both channels without touching anything. Zero overlap for lids opening 0–110° (including overlays), wings plus lids folding 0–90°, and both sides folded together. Sliced in the ElegooSlicer CLI; the full board is not yet printed.
+
+## v6 design sketch: corners, lid lip, finger scoop, stone stop
+
+`tak_case_v6.py` layers four small refinements onto v5's shell/lid geometry, digitally checked by `export_validate_v6.py` but not yet sliced or printed. The hinge mechanism itself is untouched (a separate thread, above).
+
+- **Corner radius (3 mm):** the four true outer corners of the closed case (where a wing shell and its lid meet at the board's real edge) are rounded by subtracting a corner wedge, not by filleting the fused solid — robust regardless of how complex the boolean history is.
+- **Lid registration lip:** a 1.2 mm ridge fused to each wing shell along both long (x = 0 / x = 205) edges, with a matching 0.7 mm groove cut into the lid's underside. Self-centers the lid and hides the seam line. Kept 1.5 mm clear of the center row's end feet (x < 2 mm / x > 203 mm) on purpose: that strip is where the folded wing has to pass, and an X-disjoint ridge can never collide with it at any fold angle since the fold rotates only in Y/Z.
+- **Finger scoop:** a Ø4 mm rounded bite into the well wall next to each lid's thumb notch, so a fingertip can curl under the stone stack once the lid is off.
+- **Stone stop:** a low 0.8 × 1.5 mm ridge on the well floor next to the main-hinge wall, corralling the stones away from that edge. Sized to fit inside the 1 mm margin before the first row of flats, so it can't touch a stone at rest.
+
+**Reverted:** a center-row stiffening rib (the 205 mm center slab is only supported at its two extreme end feet, and visibly could sag). Any rib fused below the slab collides with the folded wings from 80-90 deg in the main fold sweep — that space is reserved for the wings' own thickness when the case closes, not just at the feet. A real fix would have to stiffen from the topside, under the removable black grid, which is out of scope for this pass.
+
+Digital checks (`export_validate_v6.py`): valid single solids, the shell/lid clear each other and the lid's own open sweep (0-110 deg), the main fold sweep (0-90 deg) stays collision-free between all three sections and both lids, and all 42 flats plus both keystones stay clear of the new well features. All six pass. `tak-v6-sketch-access.step` is the exported check model. Rendering a preview PNG needs a GPU/display VTK doesn't have in a headless container; `render_v6.py` mirrors `render_cad.py` for use on a machine with one.
