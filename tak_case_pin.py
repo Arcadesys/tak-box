@@ -34,6 +34,30 @@ CHANNEL_R=2.2                 # Ø4.4 feed channel through the 5.7 mm margins
 LEAD=0.5                      # 45 degree lead-in on free-knuckle faces
 PIN_LEN=knuckle_x(COUNT-1)+L-knuckle_x(0)+1.0   # knuckle span + both plug flanges
 
+# Fill the closed gap above the unchanged wings' bodies (4 mm below the
+# hinge axes). The skirt follows the existing circular barrel relief, rather
+# than putting a square corner into the rotating barrel's path.
+CENTER_CLEARANCE=0.4
+CENTER_SKIN_DEPTH=4.0-CENTER_CLEARANCE
+CENTER_END_T=2.5-CENTER_CLEARANCE  # wing body starts at x=2.5 / ends at 202.5
+
+def center_outer_skirt(d=D):
+    """Underside skin and two end feet; all dimensions are in the open pose.
+
+    The end feet retain the -20.1 mm table plane. Hinge-concentric relief
+    leaves 0.4 mm around the existing 2.5 mm barrels at every fold angle.
+    The playing slab, knuckles, pin bores and feed channels are built below
+    by the original shell code.
+    """
+    y0,y1=d.seam_y
+    width=y1-y0-2*CENTER_CLEARANCE
+    skirt=box(205,width,CENTER_SKIN_DEPTH,0,y0+CENTER_CLEARANCE,-CENTER_SKIN_DEPTH)
+    for x in (0,205-CENTER_END_T):
+        skirt=skirt.fuse(box(CENTER_END_T,width,20.1,x,y0+CENTER_CLEARANCE,-20.1))
+    for y in d.seam_y:
+        skirt=skirt.cut(cylinder(SEAM_R+CENTER_CLEARANCE,205.2,-0.1,y,d.hinge_z))
+    return skirt.clean()
+
 def cone_x(r0,r1,x0,d,y,z):
     return cq.Solid.makeCone(r0,r1,abs(r0-r1),cq.Vector(x0,y,z),cq.Vector(d,0,0))
 
@@ -62,7 +86,7 @@ def shell(index,d=D):
     if index not in (0,1,2):raise ValueError(index)
     if index==1:
         part=box(205,41,4,0,82,0)
-        for x in (0,203):part=part.fuse(box(2,37,20.1,x,84,-20.1))
+        part=part.fuse(center_outer_skirt(d))
     else:
         y0=wing_y(index)
         part=box(205,82,1,0,y0,0)

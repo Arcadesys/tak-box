@@ -1,0 +1,17 @@
+test_alternating_knuckles_keep_round_relief (test_center_leaf_fit.CenterLeafFitTest.test_alternating_knuckles_keep_round_relief) ... ok
+test_closed_roof_fills_former_four_mm_gap (test_center_leaf_fit.CenterLeafFitTest.test_closed_roof_fills_former_four_mm_gap) ... ok
+test_coupon_is_real_geometry_with_both_hinges (test_center_leaf_fit.CenterLeafFitTest.test_coupon_is_real_geometry_with_both_hinges) ... ok
+test_end_skirts_fill_side_interfaces (test_center_leaf_fit.CenterLeafFitTest.test_end_skirts_fill_side_interfaces) ... ok
+test_full_fold_and_skirt_clearance (test_center_leaf_fit.CenterLeafFitTest.test_full_fold_and_skirt_clearance) ... ok
+test_round_skirt_profile_tracks_barrel_cutouts (test_center_leaf_fit.CenterLeafFitTest.test_round_skirt_profile_tracks_barrel_cutouts) ... ok
+test_valid_solids_and_common_resting_plane (test_center_leaf_fit.CenterLeafFitTest.test_valid_solids_and_common_resting_plane) ... ok
+test_validated_pin_axes_and_actual_bore_sizes (test_center_leaf_fit.CenterLeafFitTest.test_validated_pin_axes_and_actual_bore_sizes) ... <cadquery-env>/lib/python3.12/site-packages/cadquery/selectors.py:865: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse_result = _expression_grammar.parseString(selectorString, parseAll=True)
+<cadquery-env>/lib/python3.12/site-packages/pyparsing/util.py:466: PyparsingDeprecationWarning: 'parseAll' argument is deprecated, use 'parse_all'
+  return fn(self, *args, **kwargs)
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.682s
+
+OK

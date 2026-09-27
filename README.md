@@ -1,5 +1,14 @@
 # Tak board with lift-up storage lids — CAD prototype
 
+**Filament-pin center shell correction (2026-09-26):** The center now fills the
+4 mm closed roof gap with a 3.6 mm underside skin, leaving 0.4 mm clearance.
+Wider end skirts use hinge-concentric round relief. Wings, lids, playing face,
+hinge centers and validated 1.90 / 2.20 / 1.70 mm holes are unchanged. Start with
+the [30 mm closure coupon and revised center](center-closure-coupon/README.md).
+The older `pin-board/center-row.stl` and plate `80` below remain historical
+exports; use `center-closure-coupon/center-row-revised.stl` for this correction.
+Digital checks pass; physical fit is pending.
+
 **v5 level-base correction:** The former center end walls reached 40 mm below the playing face while the storage wings reached 20.1 mm. The center walls now reach 20.1 mm too, so all three structural sections contact the same plane when open. The printed v4 center row must not be combined with this set.
 
 ![Open-board support heights before and after the correction](center-support-comparison.png)
