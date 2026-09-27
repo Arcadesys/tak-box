@@ -1,0 +1,24 @@
+{
+  "0": {
+    "old_overlap_mm3_and_angle": [
+      319.6196837083712,
+      90
+    ],
+    "new_max_overlap_mm3": 0,
+    "new_skirt_min_gap_and_angle": [
+      0.39999999999994884,
+      14
+    ]
+  },
+  "2": {
+    "old_overlap_mm3_and_angle": [
+      319.61968370833847,
+      90
+    ],
+    "new_max_overlap_mm3": 0,
+    "new_skirt_min_gap_and_angle": [
+      0.39999999999994884,
+      14
+    ]
+  }
+}

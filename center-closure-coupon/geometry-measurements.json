@@ -1,0 +1,92 @@
+{
+  "physical_print_tested": false,
+  "clearance_mm": 0.4,
+  "underside_skin_depth_mm": 3.6,
+  "center_end_thickness_mm": 2.1,
+  "resting_plane_z_mm": -20.1,
+  "hinge_axes_yz_mm": {
+    "seam0": [
+      82.0,
+      0.0
+    ],
+    "seam1": [
+      123.0,
+      0.0
+    ],
+    "lid0": [
+      0,
+      1.0
+    ],
+    "lid2": [
+      205,
+      1.0
+    ]
+  },
+  "bores_mm": {
+    "fixed": 1.9,
+    "free": 2.2,
+    "plug": 1.7
+  },
+  "coupon_length_mm": 30.0,
+  "coupon_solid_volume_mm3": 36717.16860264371,
+  "closed_skirt_to_wing_gap_mm": {
+    "0": 0.3999999999999939,
+    "2": 0.3999999999997925
+  },
+  "exports": {
+    "center-row-revised": {
+      "single_valid_solid": true,
+      "volume_mm3": 64689.85843501428,
+      "size_mm": [
+        205.0017689367711,
+        46.00085450000218,
+        24.100000200000107
+      ]
+    },
+    "coupon-center": {
+      "single_valid_solid": true,
+      "volume_mm3": 10395.4970522027,
+      "size_mm": [
+        30.002106093281753,
+        46.00085450000218,
+        24.100000200000107
+      ]
+    },
+    "coupon-wing-0": {
+      "single_valid_solid": true,
+      "volume_mm3": 10975.54388309723,
+      "size_mm": [
+        30.00155069250886,
+        32.50042735000112,
+        24.100000200000032
+      ]
+    },
+    "coupon-lid-0": {
+      "single_valid_solid": true,
+      "volume_mm3": 2305.3539967061506,
+      "size_mm": [
+        30.00000020000003,
+        27.50186510799512,
+        3.003730015990208
+      ]
+    },
+    "coupon-wing-2": {
+      "single_valid_solid": true,
+      "volume_mm3": 10735.419673931474,
+      "size_mm": [
+        30.00143168638827,
+        32.500427350001104,
+        24.10000020000004
+      ]
+    },
+    "coupon-lid-2": {
+      "single_valid_solid": true,
+      "volume_mm3": 2305.3539967061515,
+      "size_mm": [
+        30.00000020000001,
+        27.50186510799511,
+        3.0037300159902114
+      ]
+    }
+  }
+}

@@ -10,7 +10,7 @@ tree supports on the build plate only, so nothing grows inside the pin bores.
 """
 from pathlib import Path
 from zipfile import ZipFile
-import json,os,subprocess
+import json,os,subprocess,sys
 import cadquery as cq
 import tak_case_pin as m
 import tak_pinfit as f
@@ -47,6 +47,10 @@ sweep('wing B + lid fold 0-90',[(center,lambda d:m.posed(w2,2,d)),(center,lambda
 side=lambda w,l,i,d:m.posed(w,i,d).fuse(m.posed(l,i,d))
 worst=max(clear(side(w0,l0,0,d),side(w2,l2,2,d)) for d in range(0,91,10))
 print('%-28s max overlap %.4f mm3'%('side A vs side B fold 0-90',worst)); assert worst<1e-3
+
+# Validate CAD without requiring the machine-specific slicer paths below.
+if '--check-only' in sys.argv:
+    sys.exit(0)
 
 def pose(s,mode):
     if mode=='face_down': s=s.rotate(cq.Vector(0,0,0),cq.Vector(1,0,0),180)

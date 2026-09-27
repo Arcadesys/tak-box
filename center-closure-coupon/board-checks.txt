@@ -1,0 +1,11 @@
+filament seam0               max overlap 0.0000 mm3
+filament seam1               max overlap 0.0000 mm3
+filament lid0                max overlap 0.0000 mm3
+filament lid2                max overlap 0.0000 mm3
+lid A open 0-110             max overlap 0.0000 mm3
+lid B open 0-110             max overlap 0.0000 mm3
+lid A overlay open 0-110     max overlap 0.0000 mm3
+lid B overlay open 0-110     max overlap 0.0000 mm3
+wing A + lid fold 0-90       max overlap 0.0000 mm3
+wing B + lid fold 0-90       max overlap 0.0000 mm3
+side A vs side B fold 0-90   max overlap 0.0000 mm3

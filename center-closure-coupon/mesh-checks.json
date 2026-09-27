@@ -1,0 +1,38 @@
+{
+  "coupon-wing-0.stl": {
+    "triangles": 2448,
+    "every_edge_has_two_faces": true,
+    "positive_volume_mm3": 10975.4870034298,
+    "on_bed": true
+  },
+  "coupon-wing-2.stl": {
+    "triangles": 1700,
+    "every_edge_has_two_faces": true,
+    "positive_volume_mm3": 10735.452854577961,
+    "on_bed": true
+  },
+  "center-row-revised.stl": {
+    "triangles": 13300,
+    "every_edge_has_two_faces": true,
+    "positive_volume_mm3": 64690.511466657714,
+    "on_bed": true
+  },
+  "coupon-center.stl": {
+    "triangles": 3700,
+    "every_edge_has_two_faces": true,
+    "positive_volume_mm3": 10395.612876553078,
+    "on_bed": true
+  },
+  "coupon-lid-2.stl": {
+    "triangles": 268,
+    "every_edge_has_two_faces": true,
+    "positive_volume_mm3": 2305.4243002541243,
+    "on_bed": true
+  },
+  "coupon-lid-0.stl": {
+    "triangles": 268,
+    "every_edge_has_two_faces": true,
+    "positive_volume_mm3": 2305.4242972449456,
+    "on_bed": true
+  }
+}

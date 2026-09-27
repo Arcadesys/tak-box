@@ -1,0 +1,17 @@
+{
+  "wing_a": {
+    "actual_3mf_matches_original_stl": true,
+    "mesh_volume_mm3": 228765.20345698702,
+    "checked_cad_volume_mm3": 228762.72816927359
+  },
+  "wing_b": {
+    "actual_3mf_matches_original_stl": true,
+    "mesh_volume_mm3": 228765.16575716887,
+    "checked_cad_volume_mm3": 228762.7281696388
+  },
+  "center": {
+    "mesh_matches_checked_center": true,
+    "closed_mesh": true,
+    "settings_match_live_pla_project": true
+  }
+}

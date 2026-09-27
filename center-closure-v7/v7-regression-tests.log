@@ -1,0 +1,9 @@
+test_circular_feet_fit_v7_through_entire_fold (test_center_v7_fit.V7CenterFitTest.test_circular_feet_fit_v7_through_entire_fold) ... ok
+test_feet_fill_circular_cutouts_and_roof_still_fills_gap (test_center_v7_fit.V7CenterFitTest.test_feet_fill_circular_cutouts_and_roof_still_fills_gap) ... ok
+test_hinges_and_bores_unchanged (test_center_v7_fit.V7CenterFitTest.test_hinges_and_bores_unchanged) ... ok
+test_previous_rectangular_skirts_reproduce_physical_catch (test_center_v7_fit.V7CenterFitTest.test_previous_rectangular_skirts_reproduce_physical_catch) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 19.406s
+
+OK

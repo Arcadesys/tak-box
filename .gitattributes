@@ -1,0 +1,5 @@
+# Generated CAD solids are reviewed via their source and rendered section.
+center-closure-coupon/*.step binary linguist-generated=true
+center-closure-coupon/*.stl linguist-generated=true
+center-closure-v7/*.step binary linguist-generated=true
+center-closure-v7/*.stl linguist-generated=true

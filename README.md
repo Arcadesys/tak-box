@@ -1,5 +1,18 @@
 # Tak board with lift-up storage lids — CAD prototype
 
+**Current center replacement: printed v7 wings, PLA.** Use
+[`center-closure-v7/tak-center-v7-rounded-PLA.3mf`](center-closure-v7/tak-center-v7-rounded-PLA.3mf).
+The earlier rectangular-skirt correction below was checked against v5 wings
+and catches inside the actual v7 end walls. The corrected center has R20.1
+circular feet matching the v7 R20.5 cutouts and an inset underside skin.
+It keeps 0.4 mm minimum clearance through the sampled fold. Hinges and the
+validated 1.90 / 2.20 / 1.70 mm holes are unchanged.
+See [v7 checks and reproduction](center-closure-v7/README.md).
+The file uses the active ElegooSlicer PLA settings (210°C nozzle, 60°C textured
+PEI, 0.20 mm layers), and was opened and successfully sliced in ElegooSlicer.
+Physical fit remains unverified. `center-closure-coupon/` is the historical
+v5-only correction; do not use it with v7 wings.
+
 **v5 level-base correction:** The former center end walls reached 40 mm below the playing face while the storage wings reached 20.1 mm. The center walls now reach 20.1 mm too, so all three structural sections contact the same plane when open. The printed v4 center row must not be combined with this set.
 
 ![Open-board support heights before and after the correction](center-support-comparison.png)

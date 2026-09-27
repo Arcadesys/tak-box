@@ -1,0 +1,15 @@
+{
+  "unchanged_geometry": {
+    "wing_0_difference_mm3": 0.0,
+    "lid_0_difference_mm3": 0.0,
+    "wing_2_difference_mm3": 0.0,
+    "lid_2_difference_mm3": 0.0,
+    "playing_slab_difference_mm3": 0.0,
+    "hinge_0_difference_mm3": 0.0,
+    "hinge_1_difference_mm3": 0.0
+  },
+  "old_geometry_rejected": {
+    "test_closed_roof_fills_former_four_mm_gap": "0.0 != -3.6 within 6 places (3.6 difference)",
+    "test_end_skirts_fill_side_interfaces": "2.0 != 2.1 within 6 places (0.10000000000000009 difference)"
+  }
+}
