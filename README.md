@@ -1,13 +1,17 @@
 # Tak board with lift-up storage lids — CAD prototype
 
-**Filament-pin center shell correction (2026-09-26):** The center now fills the
-4 mm closed roof gap with a 3.6 mm underside skin, leaving 0.4 mm clearance.
-Wider end skirts use hinge-concentric round relief. Wings, lids, playing face,
-hinge centers and validated 1.90 / 2.20 / 1.70 mm holes are unchanged. Start with
-the [30 mm closure coupon and revised center](center-closure-coupon/README.md).
-The older `pin-board/center-row.stl` and plate `80` below remain historical
-exports; use `center-closure-coupon/center-row-revised.stl` for this correction.
-Digital checks pass; physical fit is pending.
+**Current center replacement: printed v7 wings, PLA.** Use
+[`center-closure-v7/tak-center-v7-rounded-PLA.3mf`](center-closure-v7/tak-center-v7-rounded-PLA.3mf).
+The earlier rectangular-skirt correction below was checked against v5 wings
+and catches inside the actual v7 end walls. The corrected center has R20.1
+circular feet matching the v7 R20.5 cutouts and an inset underside skin.
+It keeps 0.4 mm minimum clearance through the sampled fold. Hinges and the
+validated 1.90 / 2.20 / 1.70 mm holes are unchanged.
+See [v7 checks and reproduction](center-closure-v7/README.md).
+The file uses the active ElegooSlicer PLA settings (210°C nozzle, 60°C textured
+PEI, 0.20 mm layers), and was opened and successfully sliced in ElegooSlicer.
+Physical fit remains unverified. `center-closure-coupon/` is the historical
+v5-only correction; do not use it with v7 wings.
 
 **v5 level-base correction:** The former center end walls reached 40 mm below the playing face while the storage wings reached 20.1 mm. The center walls now reach 20.1 mm too, so all three structural sections contact the same plane when open. The printed v4 center row must not be combined with this set.
 

@@ -37,10 +37,19 @@ def print_pose(shape, face_down=False):
     return shape.translate((-bb.xmin, -bb.ymin, -bb.zmin))
 
 
-def export(out):
+def export(out, v7=False):
     out.mkdir(parents=True, exist_ok=True)
-    center = case.shell(1)
-    sides = {i: case.lid_pair(i) for i in (0, 2)}
+    if v7:
+        import tak_case_v7 as model
+        center = model.center_row()
+        skirt = model.center_closure_skirt()
+        end_thickness = model.FOOT_T
+    else:
+        model = case
+        center = case.shell(1)
+        skirt = case.center_outer_skirt()
+        end_thickness = case.CENTER_END_T
+    sides = {i: model.lid_pair(i) for i in (0, 2)}
     parts = coupon_parts(center, sides)
     printable = {'center-row-revised': print_pose(center, True)}
     printable.update({f'coupon-{name}': print_pose(shape, not name.startswith('wing'))
@@ -59,16 +68,17 @@ def export(out):
     cq.exporters.export(center, str(out / 'center-row-revised.step'))
     report = {
         'physical_print_tested': False,
+        'wing_version': 'v7' if v7 else 'v5-pin',
         'clearance_mm': case.CENTER_CLEARANCE,
         'underside_skin_depth_mm': case.CENTER_SKIN_DEPTH,
-        'center_end_thickness_mm': case.CENTER_END_T,
+        'center_end_thickness_mm': end_thickness,
         'resting_plane_z_mm': center.BoundingBox().zmin,
         'hinge_axes_yz_mm': {name: case.pin_axis(name) for name in ('seam0', 'seam1', 'lid0', 'lid2')},
         'bores_mm': {'fixed': case.D_FIXED, 'free': case.D_FREE, 'plug': case.PLUG_HOLE},
         'coupon_length_mm': COUPON_LENGTH,
         'coupon_solid_volume_mm3': sum(s.Volume() for s in parts.values()),
         'closed_skirt_to_wing_gap_mm': {
-            str(i): case.center_outer_skirt().distance(case.posed(side[0], i, 90))
+            str(i): skirt.distance(case.posed(side[0], i, 90))
             for i, side in sides.items()
         },
         'exports': {name: {'single_valid_solid': shape.isValid() and len(shape.Solids()) == 1,
@@ -83,4 +93,6 @@ def export(out):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output-dir', type=Path, default=Path(__file__).parent / 'center-closure-coupon')
-    export(parser.parse_args().output_dir)
+    parser.add_argument('--v7', action='store_true', help='Match the extended end walls and circular notches of the printed v7 wings')
+    args = parser.parse_args()
+    export(args.output_dir, args.v7)

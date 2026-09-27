@@ -1,4 +1,6 @@
-# Center shell correction — print the coupon first
+# Historical v5-only center correction
+
+**Not compatible with the printed v7 wings. Use [the v7 replacement](../center-closure-v7/README.md), which has circular feet and the active PLA settings.**
 
 The revised center fills the closed case above the existing wing bodies. Only the center's outer shell changes. This package targets the filament-pin board on `main` at `7bc9059`; it does not include the wing narrowing proposed in the separate PR #5.
 
