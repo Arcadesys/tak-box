@@ -1,0 +1,6 @@
+{
+  "passed": {},
+  "failed": {
+    "full-length-guarded-key-frame-trial.stl": "('full-length-guarded-key-frame-trial.stl', 1890, 'degenerate triangle')"
+  }
+}

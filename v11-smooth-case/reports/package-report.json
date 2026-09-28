@@ -1,0 +1,738 @@
+{
+  "plates": {
+    "01-full-size-smooth-tray-trial": {
+      "3mf": "plates/plate01-full-size-smooth-tray-trial.3mf",
+      "gcode": "gcode/plate01-full-size-smooth-tray-trial.gcode",
+      "geometry": {
+        "object_count": 2,
+        "mesh_matches": [
+          {
+            "source": "full-length-guarded-key-frame-trial.stl",
+            "triangle_count": 10594,
+            "bounds_mm": [
+              9.999999406318238e-08,
+              -4.440892098500626e-16,
+              1.0012438167450455e-07,
+              245.8000030517578,
+              77.19999694824219,
+              27.600000381469727
+            ]
+          },
+          {
+            "source": "full-length-tray-a-trial.stl",
+            "triangle_count": 412,
+            "bounds_mm": [
+              0.0,
+              0.0,
+              1.7763568394002505e-15,
+              221.0,
+              80.0,
+              19.600000381469727
+            ]
+          }
+        ],
+        "object_transforms_and_bounds": [
+          {
+            "path": "/3D/Objects/full-length-guarded-key-frame-trial.stl_1.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              122.900002,
+              38.5999985,
+              13.8000002
+            ],
+            "build_item_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              5.1,
+              25.0,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              5.1,
+              25.0,
+              0.0,
+              250.900004,
+              102.199997,
+              27.6000004
+            ]
+          },
+          {
+            "path": "/3D/Objects/full-length-tray-a-trial.stl_2.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              110.5,
+              40.0,
+              9.80000019
+            ],
+            "build_item_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              17.5,
+              125.0,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              17.5,
+              125.0,
+              0.0,
+              238.5,
+              205.0,
+              19.60000038
+            ]
+          }
+        ],
+        "plate_bounds_mm": [
+          5.1,
+          25.0,
+          0.0,
+          250.900004,
+          205.0,
+          27.6000004
+        ],
+        "bed": "Textured PEI Plate",
+        "process_file": "process-v11-trials-pla.json",
+        "filament_file": "filament-pla-cc2.json"
+      },
+      "toolpath": {
+        "layers": 138,
+        "estimated_time": "3h 15m 7s",
+        "filament_g": 97.7,
+        "filament_mm": 32496.12,
+        "filament_cm3": 78.16,
+        "first_layer_bed_c": 60,
+        "first_layer_nozzle_c": 210,
+        "wall_loops": 4,
+        "layer_height_mm": 0.2,
+        "supports": "0",
+        "support_buildplate_only": "1"
+      },
+      "slicer_log": "/Users/arcades/Documents/Codex/2026-09-28/i/work/v11-smooth-case/slicer-logs/plate01-full-size-smooth-tray-trial.log",
+      "slicer_exit_code": 0
+    },
+    "00-smooth-case-fit-trial": {
+      "3mf": "plates/plate00-smooth-case-fit-trial.3mf",
+      "gcode": "gcode/plate00-smooth-case-fit-trial.gcode",
+      "geometry": {
+        "object_count": 10,
+        "mesh_matches": [
+          {
+            "source": "fit-protected-hinge-frame.stl",
+            "triangle_count": 17024,
+            "bounds_mm": [
+              9.999999406318238e-08,
+              0.0,
+              1.0000288597211693e-07,
+              50.400001525878906,
+              209.39999389648438,
+              27.600000381469727
+            ]
+          },
+          {
+            "source": "fit-stop-shoe-left.stl",
+            "triangle_count": 12,
+            "bounds_mm": [
+              0.0,
+              0.0,
+              0.0,
+              5.0,
+              41.400001525878906,
+              1.2000000476837158
+            ]
+          },
+          {
+            "source": "fit-key-wing.stl",
+            "triangle_count": 116,
+            "bounds_mm": [
+              0.0,
+              0.0,
+              0.0,
+              24.100000381469727,
+              14.0,
+              8.0
+            ]
+          },
+          {
+            "source": "fit-key-tray-A.stl",
+            "triangle_count": 132,
+            "bounds_mm": [
+              0.0,
+              0.0,
+              0.0,
+              24.0,
+              14.0,
+              19.600000381469727
+            ]
+          },
+          {
+            "source": "fit-key-tray-B.stl",
+            "triangle_count": 1666,
+            "bounds_mm": [
+              0.0,
+              1.0000000116860974e-07,
+              0.0,
+              24.0,
+              14.0,
+              19.600000381469727
+            ]
+          },
+          {
+            "source": "fit-key-tray-C.stl",
+            "triangle_count": 1304,
+            "bounds_mm": [
+              0.0,
+              1.0000000116860974e-07,
+              0.0,
+              24.0,
+              14.0,
+              19.600000381469727
+            ]
+          },
+          {
+            "source": "fit-recessed-catch-A.stl",
+            "triangle_count": 1172,
+            "bounds_mm": [
+              0.0,
+              0.0,
+              1.6390908092538364e-15,
+              17.399999618530273,
+              24.0,
+              27.600000381469727
+            ]
+          },
+          {
+            "source": "fit-recessed-catch-B.stl",
+            "triangle_count": 2706,
+            "bounds_mm": [
+              9.999999406318238e-08,
+              1.0000000116860974e-07,
+              1.6390908092538364e-15,
+              17.399999618530273,
+              24.0,
+              27.600000381469727
+            ]
+          },
+          {
+            "source": "fit-recessed-catch-C.stl",
+            "triangle_count": 2346,
+            "bounds_mm": [
+              9.999999406318238e-08,
+              1.0000000116860974e-07,
+              1.6390908092538364e-15,
+              17.399999618530273,
+              24.0,
+              27.600000381469727
+            ]
+          },
+          {
+            "source": "fit-recessed-receiver.stl",
+            "triangle_count": 52,
+            "bounds_mm": [
+              0.0,
+              0.0,
+              0.0,
+              17.399999618530273,
+              22.0,
+              25.0
+            ]
+          }
+        ],
+        "object_transforms_and_bounds": [
+          {
+            "path": "/3D/Objects/fit-protected-hinge-frame.stl_1.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              25.2000008,
+              104.699997,
+              13.8000002
+            ],
+            "build_item_matrix": [
+              -2.22044605e-16,
+              -1.0,
+              0.0,
+              1.0,
+              -2.22044605e-16,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              23.300004,
+              180.599998,
+              -5.0001443e-08
+            ],
+            "composed_bounds_mm": [
+              23.30000399999999,
+              130.19999639999995,
+              -5.0001443e-08,
+              232.699998,
+              180.599998,
+              27.600000349998556
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-recessed-catch-A.stl_2.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              8.69999981,
+              12.0,
+              13.8000002
+            ],
+            "build_item_matrix": [
+              2.22044605e-16,
+              1.0,
+              0.0,
+              -1.0,
+              2.22044605e-16,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              138.818295,
+              110.8,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              114.818295,
+              110.8,
+              0.0,
+              138.818295,
+              128.19999962,
+              27.6000004
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-recessed-catch-B.stl_3.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              8.69999986,
+              12.0000001,
+              13.8000002
+            ],
+            "build_item_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              95.418297,
+              104.199998,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              95.41829704999999,
+              104.19999809999999,
+              0.0,
+              112.81829667,
+              128.1999981,
+              27.6000004
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-recessed-catch-C.stl_4.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              8.69999986,
+              12.0000001,
+              13.8000002
+            ],
+            "build_item_matrix": [
+              2.22044605e-16,
+              1.0,
+              0.0,
+              -1.0,
+              2.22044605e-16,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              138.818295,
+              91.400002,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              114.81829490000001,
+              91.40000205,
+              0.0,
+              138.8182949,
+              108.80000167,
+              27.6000004
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-recessed-receiver.stl_5.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              8.69999981,
+              11.0,
+              12.5
+            ],
+            "build_item_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              140.818295,
+              106.199998,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              140.818295,
+              106.199998,
+              0.0,
+              158.21829462,
+              128.199998,
+              25.0
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-key-wing.stl_6.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              12.0500002,
+              7.0,
+              4.0
+            ],
+            "build_item_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              88.718294,
+              88.199998,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              88.718294,
+              88.199998,
+              0.0,
+              112.8182944,
+              102.199998,
+              8.0
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-key-tray-A.stl_7.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              12.0,
+              7.0,
+              9.80000019
+            ],
+            "build_item_matrix": [
+              -1.0,
+              1.2246468e-16,
+              0.0,
+              -1.2246468e-16,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              164.818295,
+              104.199998,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              140.818295,
+              90.199998,
+              0.0,
+              164.818295,
+              104.199998,
+              19.60000038
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-key-tray-B.stl_8.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              12.0,
+              7.00000005,
+              9.80000019
+            ],
+            "build_item_matrix": [
+              -1.0,
+              1.2246468e-16,
+              0.0,
+              -1.2246468e-16,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              138.818295,
+              89.400002,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              114.818295,
+              75.40000195,
+              0.0,
+              138.818295,
+              89.40000195,
+              19.60000038
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-key-tray-C.stl_9.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              12.0,
+              7.00000005,
+              9.80000019
+            ],
+            "build_item_matrix": [
+              -1.0,
+              1.2246468e-16,
+              0.0,
+              -1.2246468e-16,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              93.418297,
+              128.199998,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              69.418297,
+              114.19999795,
+              0.0,
+              93.418297,
+              128.19999795,
+              19.60000038
+            ]
+          },
+          {
+            "path": "/3D/Objects/fit-stop-shoe-left.stl_10.model",
+            "component_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "component_translation_mm": [
+              2.5,
+              20.7000008,
+              0.600000024
+            ],
+            "build_item_matrix": [
+              2.22044605e-16,
+              1.0,
+              0.0,
+              -1.0,
+              2.22044605e-16,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "build_item_translation_mm": [
+              112.818294,
+              81.199998,
+              0.0
+            ],
+            "composed_bounds_mm": [
+              71.41829239999998,
+              81.199998,
+              0.0,
+              112.818294,
+              86.19999800000001,
+              1.200000048
+            ]
+          }
+        ],
+        "plate_bounds_mm": [
+          23.30000399999999,
+          75.40000195,
+          -5.0001443e-08,
+          232.699998,
+          180.599998,
+          27.6000004
+        ],
+        "bed": "Textured PEI Plate",
+        "process_file": "process-v11-trials-pla.json",
+        "filament_file": "filament-pla-cc2.json"
+      },
+      "toolpath": {
+        "layers": 138,
+        "estimated_time": "2h 40m 21s",
+        "filament_g": 63.97,
+        "filament_mm": 21277.76,
+        "filament_cm3": 51.18,
+        "first_layer_bed_c": 60,
+        "first_layer_nozzle_c": 210,
+        "wall_loops": 4,
+        "layer_height_mm": 0.2,
+        "supports": "0",
+        "support_buildplate_only": "1"
+      },
+      "slicer_log": "/Users/arcades/Documents/Codex/2026-09-28/i/work/v11-smooth-case/slicer-logs/plate00-smooth-case-fit-trial.log",
+      "slicer_exit_code": 0
+    }
+  }
+}

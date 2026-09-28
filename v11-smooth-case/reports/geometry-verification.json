@@ -1,0 +1,1391 @@
+{
+  "design": "fixed rounded end cheeks, recessed board catches, and face-mounted lift-off trays",
+  "physical_fit_accepted": false,
+  "purse_smoothness_physically_accepted": false,
+  "loose_piece_gravity_retention_proven": false,
+  "full_board_print_files_released": false,
+  "failed_checks": [],
+  "sampled_pose_limitations": [
+    "A 256 mm CAD bound does not prove slicer placement, brim clearance, support removal, or print success. Rounded pocket lips and exposed seams require rendered and physical snag inspection.",
+    "Tray lift is checked at seven Z positions. Key-pad contact volume is a digital interference, not measured grip force or ease of removal.",
+    "Fold collision checks sample 10 degree increments with symmetric and one-wing-first angles; unsampled angles are unverified.",
+    "Loaded fold uses conservative STL bounding boxes at seven inward angles. Gravity-driven movement of loose pieces needs a physical upright-spine/shake trial.",
+    "Tongue movement is a rigid geometric displacement of an integral cantilever; printed thumb force, retention under carrying, fatigue, and wear need physical tests.",
+    "A 256 mm CAD bound does not prove slicer placement, brim clearance, support removal, or print success. Rounded pocket lips and exposed seams require rendered and physical snag inspection.",
+    "Fold collision checks sample 10 degree increments with symmetric and one-wing-first angles; unsampled angles are unverified.",
+    "Tongue movement is a rigid geometric displacement of an integral cantilever; printed thumb force, retention under carrying, fatigue, and wear need physical tests.",
+    "A 256 mm CAD bound does not prove slicer placement, brim clearance, support removal, or print success. Rounded pocket lips and exposed seams require rendered and physical snag inspection.",
+    "Tray lift is checked at seven Z positions. Key-pad contact volume is a digital interference, not measured grip force or ease of removal.",
+    "Fold collision checks sample 10 degree increments with symmetric and one-wing-first angles; unsampled angles are unverified.",
+    "Tongue movement is a rigid geometric displacement of an integral cantilever; printed thumb force, retention under carrying, fatigue, and wear need physical tests."
+  ],
+  "table_plane": {
+    "panels": {
+      "wing-a": {
+        "bounds_mm": [
+          -20.4000001,
+          225.4000001,
+          -2.2000000000000006,
+          87.2,
+          -1.0012439815844089e-07,
+          27.6
+        ],
+        "table_contact_z_mm": -1.0012439815844089e-07,
+        "broad_contact_patches": [
+          {
+            "x_mm": 25,
+            "y_mm": 20,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 25,
+            "y_mm": 62,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 180,
+            "y_mm": 20,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 180,
+            "y_mm": 62,
+            "contact_mm3": 3.6359999999999997
+          }
+        ]
+      },
+      "center": {
+        "bounds_mm": [
+          -20.40000000000001,
+          225.4,
+          76.8,
+          128.2,
+          -8.659739592076221e-15,
+          14.0
+        ],
+        "table_contact_z_mm": -8.659739592076221e-15,
+        "broad_contact_patches": [
+          {
+            "x_mm": 25,
+            "y_mm": 92,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 25,
+            "y_mm": 113,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 180,
+            "y_mm": 92,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 180,
+            "y_mm": 113,
+            "contact_mm3": 3.6359999999999997
+          }
+        ]
+      },
+      "wing-b": {
+        "bounds_mm": [
+          -20.4,
+          225.4,
+          117.8,
+          207.20000000000002,
+          -1.263659177297427e-10,
+          25.000000000000007
+        ],
+        "table_contact_z_mm": -1.263659177297427e-10,
+        "broad_contact_patches": [
+          {
+            "x_mm": 25,
+            "y_mm": 143,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 25,
+            "y_mm": 185,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 180,
+            "y_mm": 143,
+            "contact_mm3": 3.6359999999999997
+          },
+          {
+            "x_mm": 180,
+            "y_mm": 185,
+            "contact_mm3": 3.6359999999999997
+          }
+        ]
+      }
+    },
+    "stop_shoes": {
+      "left": [
+        0.0,
+        5.0,
+        81.8,
+        123.2,
+        0.0,
+        1.2
+      ],
+      "right": [
+        200.0,
+        205.0,
+        81.8,
+        123.2,
+        0.0,
+        1.2
+      ]
+    }
+  },
+  "fixed_hardware_above_field_mm3": {
+    "wing-a": 0.0,
+    "center": 0.0,
+    "wing-b": 0.0
+  },
+  "protected_shell": {
+    "part_bounds_mm": {
+      "wing-a": [
+        -20.4000001,
+        225.4000001,
+        -2.2000000000000006,
+        87.2,
+        -1.0012439815844089e-07,
+        27.6
+      ],
+      "wing-b": [
+        -20.4,
+        225.4,
+        117.8,
+        207.20000000000002,
+        -1.263659177297427e-10,
+        25.000000000000007
+      ],
+      "center_guard": [
+        -20.40000000000001,
+        225.4,
+        76.8,
+        128.2,
+        -8.659739592076221e-15,
+        14.0
+      ]
+    },
+    "press_access": {
+      "opening_y_mm": 18.0,
+      "opening_z_mm": 12.5,
+      "right_outer_skin_x_mm": 225.4,
+      "right_tongue_outer_x_mm": 223.75,
+      "recess_from_outer_skin_mm": 1.6500000000000057
+    },
+    "hinge_outer_profile_radius_mm": 5.2,
+    "hinge_bearing_core_radius_mm": 3.0,
+    "x_end_covering": "Wing cheeks occupy local y 0..72 / 133..205; rounded center guards span y76.8..128.2. The fused hinge barrel has one R5.2 outer profile. Check rendered seam and pocket edges separately."
+  },
+  "cc2_256mm_nominal_envelope": {
+    "wing-a": {
+      "print_bounds_mm": [
+        5.024759320581304e-16,
+        245.8000002,
+        -1.8586008965500402e-16,
+        89.4,
+        -5.2635580254447884e-17,
+        27.6000001001244
+      ],
+      "dimensions_mm": [
+        245.8000002,
+        89.4,
+        27.6000001001244
+      ]
+    },
+    "center": {
+      "print_bounds_mm": [
+        1.1148710520999948e-15,
+        245.8,
+        -2.1724448728381276e-15,
+        51.400000000000006,
+        0.0,
+        14.000000000000009
+      ],
+      "dimensions_mm": [
+        245.8,
+        51.400000000000006,
+        14.000000000000009
+      ]
+    },
+    "wing-b": {
+      "print_bounds_mm": [
+        -6.661338147750939e-16,
+        245.8,
+        2.6645352591003757e-15,
+        89.4,
+        0.0,
+        25.000000000126374
+      ],
+      "dimensions_mm": [
+        245.8,
+        89.4,
+        25.000000000126374
+      ]
+    },
+    "tray-a": {
+      "print_bounds_mm": [
+        0.0,
+        221.0,
+        0.0,
+        80.0,
+        0.0,
+        19.6
+      ],
+      "dimensions_mm": [
+        221.0,
+        80.0,
+        19.6
+      ]
+    },
+    "tray-b": {
+      "print_bounds_mm": [
+        0.0,
+        221.0,
+        0.0,
+        80.0,
+        0.0,
+        19.6
+      ],
+      "dimensions_mm": [
+        221.0,
+        80.0,
+        19.6
+      ]
+    },
+    "grid-a": {
+      "print_bounds_mm": [
+        0.0,
+        205.0,
+        0.0,
+        79.5,
+        0.0,
+        0.8000000000000003
+      ],
+      "dimensions_mm": [
+        205.0,
+        79.5,
+        0.8000000000000003
+      ]
+    },
+    "grid-center": {
+      "print_bounds_mm": [
+        0.0,
+        205.0,
+        0.0,
+        41.0,
+        0.0,
+        0.7999999999999998
+      ],
+      "dimensions_mm": [
+        205.0,
+        41.0,
+        0.7999999999999998
+      ]
+    },
+    "grid-b": {
+      "print_bounds_mm": [
+        0.0,
+        205.0,
+        0.0,
+        79.5,
+        0.0,
+        0.7999999999999998
+      ],
+      "dimensions_mm": [
+        205.0,
+        79.5,
+        0.7999999999999998
+      ]
+    },
+    "stop-shoe-left": {
+      "print_bounds_mm": [
+        0.0,
+        5.0,
+        0.0,
+        41.400000000000006,
+        0.0,
+        1.2
+      ],
+      "dimensions_mm": [
+        5.0,
+        41.400000000000006,
+        1.2
+      ]
+    },
+    "stop-shoe-right": {
+      "print_bounds_mm": [
+        0.0,
+        5.0,
+        0.0,
+        41.400000000000006,
+        0.0,
+        1.2
+      ],
+      "dimensions_mm": [
+        5.0,
+        41.400000000000006,
+        1.2
+      ]
+    },
+    "pip-board-engineering": {
+      "print_bounds_mm": [
+        5.024759320581304e-16,
+        245.8000002,
+        -1.8586008965500402e-16,
+        209.4,
+        -5.2635580254447884e-17,
+        27.6000001001244
+      ],
+      "dimensions_mm": [
+        245.8000002,
+        209.4,
+        27.6000001001244
+      ]
+    }
+  },
+  "playing_decoration_clearance_mm": {
+    "a": 0.6000000000000005,
+    "b": 0.6000000000000005
+  },
+  "rail_lift_checks": {
+    "a-A": [
+      {
+        "lift_mm": 0,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 0.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 1,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 2,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 3,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 4.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 8.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      }
+    ],
+    "a-B": [
+      {
+        "lift_mm": 0,
+        "contact_mm3": 0.47999999999998316,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 0.5,
+        "contact_mm3": 0.47999999999998316,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 1,
+        "contact_mm3": 0.47999999999998333,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 2,
+        "contact_mm3": 0.239999999999979,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 3,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 4.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 8.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      }
+    ],
+    "a-C": [
+      {
+        "lift_mm": 0,
+        "contact_mm3": 1.4400000000000155,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 0.5,
+        "contact_mm3": 1.4400000000000155,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 1,
+        "contact_mm3": 1.4400000000000162,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 2,
+        "contact_mm3": 0.7200000000000135,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 3,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 4.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 8.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      }
+    ],
+    "b-A": [
+      {
+        "lift_mm": 0,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 0.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 1,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 2,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 3,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 4.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 8.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      }
+    ],
+    "b-B": [
+      {
+        "lift_mm": 0,
+        "contact_mm3": 0.47999999999985876,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 0.5,
+        "contact_mm3": 0.4799999999998588,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 1,
+        "contact_mm3": 0.479999999999859,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 2,
+        "contact_mm3": 0.23999999999991217,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 3,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 4.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 8.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      }
+    ],
+    "b-C": [
+      {
+        "lift_mm": 0,
+        "contact_mm3": 1.4399999999997688,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 0.5,
+        "contact_mm3": 1.439999999999769,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 1,
+        "contact_mm3": 1.4399999999997695,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 2,
+        "contact_mm3": 0.719999999999891,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 3,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 4.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      },
+      {
+        "lift_mm": 8.5,
+        "contact_mm3": 0,
+        "unintended_overlap_mm3": 0
+      }
+    ]
+  },
+  "new_open_stops": {
+    "a-left": {
+      "flat_overlap_mm3": 0.0,
+      "overopen_half_degree_overlap_mm3": 0.24081585696206925,
+      "inward_five_degree_overlap_mm3": 0.0
+    },
+    "a-right": {
+      "flat_overlap_mm3": 0.0,
+      "overopen_half_degree_overlap_mm3": 0.24081585696206922,
+      "inward_five_degree_overlap_mm3": 0.0
+    },
+    "b-left": {
+      "flat_overlap_mm3": 0.0,
+      "overopen_half_degree_overlap_mm3": 0.240815856961984,
+      "inward_five_degree_overlap_mm3": 0.0
+    },
+    "b-right": {
+      "flat_overlap_mm3": 0.0,
+      "overopen_half_degree_overlap_mm3": 0.24081585696198396,
+      "inward_five_degree_overlap_mm3": 0.0
+    }
+  },
+  "pieces": {
+    "cat": {
+      "flat_count": 21,
+      "flat_dimensions_mm": [
+        19.5,
+        19.5,
+        8.0
+      ],
+      "flat_source_triangles": 3180,
+      "capstone_source_triangles": 155322,
+      "capstone_sideways_bounds_mm": [
+        172.0,
+        197.0,
+        32.731804847717285,
+        48.268195152282715,
+        7.0,
+        22.542068481445312
+      ],
+      "flat_rim_gap_mm": 10.0,
+      "capstone_rim_gap_mm": 2.4579315185546875,
+      "seated_contacts_mm3": {
+        "own_tray": 0.0,
+        "own_wing": 0.0,
+        "own_grid": 0.0
+      }
+    },
+    "witch": {
+      "flat_count": 21,
+      "flat_dimensions_mm": [
+        19.5,
+        19.5,
+        8.0
+      ],
+      "flat_source_triangles": 1900,
+      "capstone_source_triangles": 116480,
+      "capstone_sideways_bounds_mm": [
+        172.0,
+        197.0,
+        155.9470558166504,
+        173.0529441833496,
+        7.0,
+        24.28754234313965
+      ],
+      "flat_rim_gap_mm": 10.0,
+      "capstone_rim_gap_mm": 0.7124576568603516,
+      "seated_contacts_mm3": {
+        "own_tray": 0.0,
+        "own_wing": 0.0,
+        "own_grid": 0.0
+      }
+    }
+  },
+  "inward_fold_checks": [
+    {
+      "angles_degrees": [
+        -90,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        -80
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        -70
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        -60
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        -50
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        -40
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        -30
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        -20
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        -10
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -90,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -80,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -80,
+        -80
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -80,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -70,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -70,
+        -70
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -70,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -60,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -60,
+        -60
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -60,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -50,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -50,
+        -50
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -50,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -40,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -40,
+        -40
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -40,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -30,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -30,
+        -30
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -30,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -20,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -20,
+        -20
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -20,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -10,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -10,
+        -10
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        -10,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -90
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -80
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -70
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -60
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -50
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -40
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -30
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -20
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        -10
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angles_degrees": [
+        0,
+        0
+      ],
+      "rigid_overlap_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "loaded_fold_checks": [
+    {
+      "angle_degrees": 0,
+      "piece_pair_overlap_mm3": 0.0,
+      "opposing_hardware_overlap_mm3": 0.0
+    },
+    {
+      "angle_degrees": -30,
+      "piece_pair_overlap_mm3": 0.0,
+      "opposing_hardware_overlap_mm3": 0.0
+    },
+    {
+      "angle_degrees": -60,
+      "piece_pair_overlap_mm3": 0.0,
+      "opposing_hardware_overlap_mm3": 0.0
+    },
+    {
+      "angle_degrees": -80,
+      "piece_pair_overlap_mm3": 0.0,
+      "opposing_hardware_overlap_mm3": 0.0
+    },
+    {
+      "angle_degrees": -85,
+      "piece_pair_overlap_mm3": 0.0,
+      "opposing_hardware_overlap_mm3": 0.0
+    },
+    {
+      "angle_degrees": -88,
+      "piece_pair_overlap_mm3": 0.0,
+      "opposing_hardware_overlap_mm3": 0.0
+    },
+    {
+      "angle_degrees": -90,
+      "piece_pair_overlap_mm3": 0.0,
+      "opposing_hardware_overlap_mm3": 0.0
+    }
+  ],
+  "recessed_board_catch_checks": {
+    "A": {
+      "samples": [
+        {
+          "angle_degrees": -80,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -85,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -87,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -88,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89.5,
+          "wing_contact_mm3": 0.12001827937776746,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89.9,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -90,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        }
+      ],
+      "released_overlap_mm3": {
+        "0.4": 0.0,
+        "0.8": 0.0
+      },
+      "stop_overlap_at_limit_mm3": 0.0,
+      "stop_overlap_past_limit_mm3": 15.599999999999113
+    },
+    "B": {
+      "samples": [
+        {
+          "angle_degrees": -80,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -85,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -87,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -88,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89.5,
+          "wing_contact_mm3": 0.48007311745780945,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89.9,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -90,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        }
+      ],
+      "released_overlap_mm3": {
+        "0.4": 0.0,
+        "0.8": 0.0
+      },
+      "stop_overlap_at_limit_mm3": 0.0,
+      "stop_overlap_past_limit_mm3": 15.599999999999113
+    },
+    "C": {
+      "samples": [
+        {
+          "angle_degrees": -80,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -85,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -87,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -88,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89.5,
+          "wing_contact_mm3": 1.0754430916707953,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -89.9,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        },
+        {
+          "angle_degrees": -90,
+          "wing_contact_mm3": 0.0,
+          "noncatch_contact_mm3": 0.0
+        }
+      ],
+      "released_overlap_mm3": {
+        "0.4": 0.0,
+        "0.8": 0.0
+      },
+      "stop_overlap_at_limit_mm3": 0.0,
+      "stop_overlap_past_limit_mm3": 15.599999999999113
+    }
+  },
+  "provenance_sha256": {
+    "source": {
+      "tak_drawers.py": "3aabc10317516395e49b0690375b5802ef77b70210e1b4386bfa9b0142beca44",
+      "build_models.py": "b4ffacf47fb125a913897e308a750d54b687152bf39a7a27642af0c9f1e975c2",
+      "verify_geometry.py": "5a66fcc6c095a2a00038295997bd020f72d21310acb2a9591c0b53b60f85b6b8",
+      "verify_meshes.py": "22d5d6930ef240a10dff08a886da1b36ffb009ff4c9a404ba87ce569a9c7151f"
+    },
+    "models": {
+      "assembly-access.step": "91ff091df5f91e8ce1be9a39e701c59ee0bac1cf16b6f5e4448ecafb3501a3ad",
+      "assembly-closed-loaded-envelope.step": "fdb1b9e940c096ec9d5009307471b84be184810f99c84cf7a2bfe30edd349b60",
+      "assembly-closed.step": "480a6fcf56921c8b11e962ab36dcf025bf766633b3aa9a53cbd75d1c782fed8f",
+      "assembly-lifted.step": "71393d41e0bcc3d7983e7317632a863bbc3e7f3e82ff254f12c222e86a94d8cc",
+      "assembly-open.step": "ce2a01ed4d1d07156aae9e255ac0f7ed1af933f915a26c55d4888d87ca2991b7",
+      "center.step": "ae7fdb9fd3b6d890a4dcb6be6460e6dfc6872d371774e7530b613f04695eb57f",
+      "fit-key-tray-A.step": "fcdb7373017b7b99c3f79dd074f8aebd3220e4fe6b82dbc7b4eca3138d29be42",
+      "fit-key-tray-A.stl": "d5a96bf6703e4972dcde562aaa46c6ed6eb2e20913617a73f9409ffb9da2a37d",
+      "fit-key-tray-B.step": "e2986ec72155273bf81028ec8ae0e1da6016813c5956d3cd5ec305dec504aa5b",
+      "fit-key-tray-B.stl": "2f358236eb705bba2e3cf32224cd27bc86ff363e302ff94e8ee801be3dd77fdb",
+      "fit-key-tray-C.step": "c3c7aba9d501ac8bfa25fc87f1fabab34cf698d184f36fbf7a37602a732d5500",
+      "fit-key-tray-C.stl": "21e0bd6d949d26ba709a0f99f0616aa70f97bc8810230c1a4bba3de7dd25c0ad",
+      "fit-key-wing.step": "d7de9038939701c602c5ef74c5cc3b41b8dc823a168b3dadaadbc0a574a6b6d9",
+      "fit-key-wing.stl": "72cfad72f714e8783cbe550db3ca38dbaa5d38fb9ceabd16c52dd45f09c6fdd7",
+      "fit-protected-hinge-frame.step": "d43dc82bb786872dea3e2ef984a1a4d2fbc3f9e5331cb39374bdd2987b9d35f0",
+      "fit-protected-hinge-frame.stl": "b37e3075e58d7e16e2c014d50840c8fcb78ef3ad9fe14432924ee6532eec7f85",
+      "fit-recessed-catch-A.step": "5f209fc3dbda5e6372fdbe3fdd687d388ba1fb845cae3106026f60c3d6922730",
+      "fit-recessed-catch-A.stl": "39de94b66e0485b7b1739606a723541967440c0e04d5e9ce375d1007f60732ee",
+      "fit-recessed-catch-B.step": "440e63fead37a064aaf74dbef610a621515eb42899e48e02c338907d72d04ca6",
+      "fit-recessed-catch-B.stl": "4b5e37e8c6c677d9eeb9c7e38835284ea5e6f0e462f0aeb301c838cf91af003f",
+      "fit-recessed-catch-C.step": "80cd5e21fafea018dc5eaa48b686996bee2221edaf73b029600c9433c43d369e",
+      "fit-recessed-catch-C.stl": "50cbd0d11297a50372c82cc035bd55fd8bf3cea813e1103ff184d50efd39d7b6",
+      "fit-recessed-receiver.step": "817326211d6c10debc9e71fb4286a8653755afda191ff3e5fb9d32020ec24a08",
+      "fit-recessed-receiver.stl": "865dd1b548b75af3c8fb90f7f6b4dcdf6eef56d30f626016cc727932eeeddd34",
+      "fit-stop-shoe-left.step": "544f9cdf7a89ca659ae87a2f32c0710bcac24e4b64b2cd8cf3d2c9b08f794493",
+      "fit-stop-shoe-left.stl": "86c097349a7d9551551fc67ba40318258415d3d924b2084d7bc11560de88c639",
+      "full-length-guarded-key-frame-trial.step": "fc08c8e04bdf002b52c69ce9377518023eea4be54fc3c92b13d95e0d3764cfd2",
+      "full-length-guarded-key-frame-trial.stl": "4c1bd18bb6ea69f7f92c05b877a1fe451dbff4b125a076a2d8edea071ef3f6f9",
+      "full-length-tray-a-trial.step": "f6f0dcddd03bb1cec6f6f68bba18fc884821cd5fdfac89592dc794466f5ddafe",
+      "full-length-tray-a-trial.stl": "8a611ce46d0db585b1f6d58fd73794ea8082d2375a160a298e5e9e4cc7675081",
+      "full-length-tray-b-trial.step": "845424d65c6f80865e2505726e0a1fd0c9758c1927fd3a8e5b43ec467d4ff37f",
+      "full-length-tray-b-trial.stl": "66ce7c33a2af1ea9f603a2791a1e739bce17f15ab70dfd68f335f84a1a1cbb8b",
+      "grid-a.step": "205bb68df8f1c5ef56e8861d38e1531e7367dbe4c24f2c42f1932f9d60689523",
+      "grid-b.step": "91e352d20849270c0357b3fc7cd3a4e797126e210d5c7d2bc503ffc220b5f01e",
+      "grid-center.step": "b5aefc921e5b8a6f465047a1738ab0c4112654f435f1e5352069d78ba76f0aed",
+      "pip-board-engineering.step": "816a66c061f68409ac9baa15de27d21f9f9b2e72a8f03ea1b8fa8b9936db1dd7",
+      "stop-shoe-left.step": "85bab619b2564ce3725efb43aabad1cc3e14b7b6063f593c05b5dc07ac0fdc5c",
+      "stop-shoe-right.step": "f47281a8938a6c470c38a24d6cbc4c3d6511cb9b874941cb1a9aecf11803d90b",
+      "tray-a.step": "678bd4010b09cd826178ee09d94a5b3565051334e4e8850310e26fa7db75a5bb",
+      "tray-b.step": "0156f877d6a710d24ef1f4823d609e60d8142b4a1c89d2493ca6cc63eb85df35",
+      "wing-a.step": "0eff8c760aadb3c33bb765e76095337a717b6e36f91d28805aad164d080353a5",
+      "wing-b.step": "fdb8d522944aa8ddfdf7e65a0e3086818d3adb9f405b05027b4169c0a4b77a9c"
+    }
+  },
+  "reused_unchanged_checks": {
+    "prior_source_sha256": "9fe6a8804433d0b27ed6e606c3a1df43eaa5f3c1988b87b71adf593c5b2f9eaf",
+    "sections": [
+      "pieces",
+      "loaded_fold_checks"
+    ],
+    "basis": "Final heel/backing changes are external to the 205 mm piece wells. Piece layout and conservative loaded envelopes are retained; fold, stops, tray lift, field, closure, shell, table, and CC2 checks are rerun.",
+    "original_piece_and_loaded_evidence_source_sha256": "a7b287a28ed78fb6d3f7b0c05cec57c00ffc770c522a75856fffc1cc794fe06e"
+  }
+}

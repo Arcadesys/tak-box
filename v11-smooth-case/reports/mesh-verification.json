@@ -1,0 +1,176 @@
+{
+  "passed": {
+    "fit-key-tray-A.stl": {
+      "triangles": 132,
+      "vertices": 66,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        820.4962332407362
+      ],
+      "stl_sha256": "d5a96bf6703e4972dcde562aaa46c6ed6eb2e20913617a73f9409ffb9da2a37d",
+      "matching_step_sha256": "fcdb7373017b7b99c3f79dd074f8aebd3220e4fe6b82dbc7b4eca3138d29be42"
+    },
+    "fit-key-tray-B.stl": {
+      "triangles": 1666,
+      "vertices": 833,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        819.8308090481036
+      ],
+      "stl_sha256": "2f358236eb705bba2e3cf32224cd27bc86ff363e302ff94e8ee801be3dd77fdb",
+      "matching_step_sha256": "e2986ec72155273bf81028ec8ae0e1da6016813c5956d3cd5ec305dec504aa5b"
+    },
+    "fit-key-tray-C.stl": {
+      "triangles": 1304,
+      "vertices": 652,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        821.2790219509103
+      ],
+      "stl_sha256": "21e0bd6d949d26ba709a0f99f0616aa70f97bc8810230c1a4bba3de7dd25c0ad",
+      "matching_step_sha256": "c3c7aba9d501ac8bfa25fc87f1fabab34cf698d184f36fbf7a37602a732d5500"
+    },
+    "fit-key-wing.stl": {
+      "triangles": 116,
+      "vertices": 60,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        1552.1500259511936
+      ],
+      "stl_sha256": "72cfad72f714e8783cbe550db3ca38dbaa5d38fb9ceabd16c52dd45f09c6fdd7",
+      "matching_step_sha256": "d7de9038939701c602c5ef74c5cc3b41b8dc823a168b3dadaadbc0a574a6b6d9"
+    },
+    "fit-protected-hinge-frame.stl": {
+      "triangles": 17024,
+      "vertices": 8512,
+      "closed_oriented_components": 3,
+      "expected_components": 3,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        23307.286949520076,
+        8958.243189094454,
+        23084.748912737854
+      ],
+      "stl_sha256": "b37e3075e58d7e16e2c014d50840c8fcb78ef3ad9fe14432924ee6532eec7f85",
+      "matching_step_sha256": "d43dc82bb786872dea3e2ef984a1a4d2fbc3f9e5331cb39374bdd2987b9d35f0"
+    },
+    "fit-recessed-catch-A.stl": {
+      "triangles": 1172,
+      "vertices": 586,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        2881.4804822195974
+      ],
+      "stl_sha256": "39de94b66e0485b7b1739606a723541967440c0e04d5e9ce375d1007f60732ee",
+      "matching_step_sha256": "5f209fc3dbda5e6372fdbe3fdd687d388ba1fb845cae3106026f60c3d6922730"
+    },
+    "fit-recessed-catch-B.stl": {
+      "triangles": 2706,
+      "vertices": 1353,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        2881.4447634369576
+      ],
+      "stl_sha256": "4b5e37e8c6c677d9eeb9c7e38835284ea5e6f0e462f0aeb301c838cf91af003f",
+      "matching_step_sha256": "440e63fead37a064aaf74dbef610a621515eb42899e48e02c338907d72d04ca6"
+    },
+    "fit-recessed-catch-C.stl": {
+      "triangles": 2346,
+      "vertices": 1173,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        2883.5230339955697
+      ],
+      "stl_sha256": "50cbd0d11297a50372c82cc035bd55fd8bf3cea813e1103ff184d50efd39d7b6",
+      "matching_step_sha256": "80cd5e21fafea018dc5eaa48b686996bee2221edaf73b029600c9433c43d369e"
+    },
+    "fit-recessed-receiver.stl": {
+      "triangles": 52,
+      "vertices": 28,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        2436.1149379006038
+      ],
+      "stl_sha256": "865dd1b548b75af3c8fb90f7f6b4dcdf6eef56d30f626016cc727932eeeddd34",
+      "matching_step_sha256": "817326211d6c10debc9e71fb4286a8653755afda191ff3e5fb9d32020ec24a08"
+    },
+    "fit-stop-shoe-left.stl": {
+      "triangles": 12,
+      "vertices": 8,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        248.40001902580295
+      ],
+      "stl_sha256": "86c097349a7d9551551fc67ba40318258415d3d924b2084d7bc11560de88c639",
+      "matching_step_sha256": "544f9cdf7a89ca659ae87a2f32c0710bcac24e4b64b2cd8cf3d2c9b08f794493"
+    },
+    "full-length-guarded-key-frame-trial.stl": {
+      "triangles": 10594,
+      "vertices": 5289,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        53822.45399403034
+      ],
+      "stl_sha256": "4c1bd18bb6ea69f7f92c05b877a1fe451dbff4b125a076a2d8edea071ef3f6f9",
+      "matching_step_sha256": "fc08c8e04bdf002b52c69ce9377518023eea4be54fc3c92b13d95e0d3764cfd2"
+    },
+    "full-length-tray-a-trial.stl": {
+      "triangles": 412,
+      "vertices": 200,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        40002.07189248584
+      ],
+      "stl_sha256": "8a611ce46d0db585b1f6d58fd73794ea8082d2375a160a298e5e9e4cc7675081",
+      "matching_step_sha256": "f6f0dcddd03bb1cec6f6f68bba18fc884821cd5fdfac89592dc794466f5ddafe"
+    },
+    "full-length-tray-b-trial.stl": {
+      "triangles": 412,
+      "vertices": 200,
+      "closed_oriented_components": 1,
+      "expected_components": 1,
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "component_volumes_mm3": [
+        40002.071892485954
+      ],
+      "stl_sha256": "66ce7c33a2af1ea9f603a2791a1e739bce17f15ab70dfd68f335f84a1a1cbb8b",
+      "matching_step_sha256": "845424d65c6f80865e2505726e0a1fd0c9758c1927fd3a8e5b43ec467d4ff37f"
+    }
+  },
+  "failed": {}
+}

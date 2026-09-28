@@ -1,0 +1,96 @@
+{
+  "01-full-size-smooth-tray-trial": {
+    "plate_sha256": "45aa5ac80361c2ddedadf7a8a2680ee4a89523d92bca789e5d0415a4d51f4da1",
+    "meshes": [
+      {
+        "source": "full-length-guarded-key-frame-trial.stl",
+        "source_sha256": "4c1bd18bb6ea69f7f92c05b877a1fe451dbff4b125a076a2d8edea071ef3f6f9",
+        "triangles": 10594,
+        "max_vertex_error_mm": 4.956856189593363e-06,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "full-length-tray-a-trial.stl",
+        "source_sha256": "8a611ce46d0db585b1f6d58fd73794ea8082d2375a160a298e5e9e4cc7675081",
+        "triangles": 412,
+        "max_vertex_error_mm": 2.988079165202956e-06,
+        "triangle_topology_matches": true
+      }
+    ]
+  },
+  "00-smooth-case-fit-trial": {
+    "plate_sha256": "2eb459cc88571bc46756f05ad3687428f190ebba51fa951ee9e2a6b6cdb74c2a",
+    "meshes": [
+      {
+        "source": "fit-protected-hinge-frame.stl",
+        "source_sha256": "b37e3075e58d7e16e2c014d50840c8fcb78ef3ad9fe14432924ee6532eec7f85",
+        "triangles": 17024,
+        "max_vertex_error_mm": 4.356299776181928e-06,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-stop-shoe-left.stl",
+        "source_sha256": "86c097349a7d9551551fc67ba40318258415d3d924b2084d7bc11560de88c639",
+        "triangles": 12,
+        "max_vertex_error_mm": 7.412177162492657e-08,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-key-wing.stl",
+        "source_sha256": "72cfad72f714e8783cbe550db3ca38dbaa5d38fb9ceabd16c52dd45f09c6fdd7",
+        "triangles": 116,
+        "max_vertex_error_mm": 4.173348693088071e-07,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-key-tray-A.stl",
+        "source_sha256": "d5a96bf6703e4972dcde562aaa46c6ed6eb2e20913617a73f9409ffb9da2a37d",
+        "triangles": 132,
+        "max_vertex_error_mm": 3.561866579563706e-07,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-key-tray-B.stl",
+        "source_sha256": "2f358236eb705bba2e3cf32224cd27bc86ff363e302ff94e8ee801be3dd77fdb",
+        "triangles": 1666,
+        "max_vertex_error_mm": 3.7134703869271805e-07,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-key-tray-C.stl",
+        "source_sha256": "21e0bd6d949d26ba709a0f99f0616aa70f97bc8810230c1a4bba3de7dd25c0ad",
+        "triangles": 1304,
+        "max_vertex_error_mm": 3.713379344601506e-07,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-recessed-catch-A.stl",
+        "source_sha256": "39de94b66e0485b7b1739606a723541967440c0e04d5e9ce375d1007f60732ee",
+        "triangles": 1172,
+        "max_vertex_error_mm": 5.588772742526115e-07,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-recessed-catch-B.stl",
+        "source_sha256": "4b5e37e8c6c677d9eeb9c7e38835284ea5e6f0e462f0aeb301c838cf91af003f",
+        "triangles": 2706,
+        "max_vertex_error_mm": 7.758967777391829e-07,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-recessed-catch-C.stl",
+        "source_sha256": "50cbd0d11297a50372c82cc035bd55fd8bf3cea813e1103ff184d50efd39d7b6",
+        "triangles": 2346,
+        "max_vertex_error_mm": 7.902484355476487e-07,
+        "triangle_topology_matches": true
+      },
+      {
+        "source": "fit-recessed-receiver.stl",
+        "source_sha256": "865dd1b548b75af3c8fb90f7f6b4dcdf6eef56d30f626016cc727932eeeddd34",
+        "triangles": 52,
+        "max_vertex_error_mm": 4.059631257080839e-07,
+        "triangle_topology_matches": true
+      }
+    ]
+  }
+}

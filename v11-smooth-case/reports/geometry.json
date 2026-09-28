@@ -1,0 +1,560 @@
+{
+  "design": "guarded-inward-fold-face-trays-recessed-board-catch",
+  "units": "mm",
+  "physical_fit_accepted": false,
+  "full_board_print_files_released": false,
+  "key_fit_selected": "B",
+  "closure_fit_selected": "B",
+  "case_x_bounds": [
+    -20.4,
+    225.4
+  ],
+  "parts": {
+    "wing-a": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -20.4,
+        225.4,
+        -2.2,
+        87.2,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 102004.336312
+    },
+    "center": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -20.4,
+        225.4,
+        76.8,
+        128.2,
+        -0.0,
+        14.0
+      ],
+      "volume_mm3": 41465.375719
+    },
+    "wing-b": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -20.4,
+        225.4,
+        117.8,
+        207.2,
+        -0.0,
+        25.0
+      ],
+      "volume_mm3": 101559.310447
+    },
+    "tray-a": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -8.0,
+        213.0,
+        1.0,
+        81.0,
+        5.4,
+        25.0
+      ],
+      "volume_mm3": 40002.088
+    },
+    "tray-b": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -8.0,
+        213.0,
+        124.0,
+        204.0,
+        5.4,
+        25.0
+      ],
+      "volume_mm3": 40002.088
+    },
+    "grid-a": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        0.0,
+        205.0,
+        0.0,
+        79.5,
+        4.0,
+        4.8
+      ],
+      "volume_mm3": 4578.052838
+    },
+    "grid-center": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        0.0,
+        205.0,
+        82.0,
+        123.0,
+        4.0,
+        4.8
+      ],
+      "volume_mm3": 1934.016
+    },
+    "grid-b": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        0.0,
+        205.0,
+        125.5,
+        205.0,
+        4.0,
+        4.8
+      ],
+      "volume_mm3": 4611.565082
+    },
+    "stop-shoe-left": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        0.0,
+        5.0,
+        81.8,
+        123.2,
+        0.0,
+        1.2
+      ],
+      "volume_mm3": 248.4
+    },
+    "stop-shoe-right": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        200.0,
+        205.0,
+        81.8,
+        123.2,
+        0.0,
+        1.2
+      ],
+      "volume_mm3": 248.4
+    },
+    "pip-board-engineering": {
+      "valid": true,
+      "solids": 3,
+      "bounds": [
+        -20.4,
+        225.4,
+        -2.2,
+        207.2,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 245029.003827
+    },
+    "fit-protected-hinge-frame": {
+      "valid": true,
+      "solids": 3,
+      "bounds": [
+        -20.4,
+        30.0,
+        -2.2,
+        207.2,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 55351.228886,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        50.4,
+        0.0,
+        209.4,
+        -0.0,
+        27.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-stop-shoe-left": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        0.0,
+        5.0,
+        81.8,
+        123.2,
+        0.0,
+        1.2
+      ],
+      "volume_mm3": 248.4,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        5.0,
+        0.0,
+        41.4,
+        0.0,
+        1.2
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-key-wing": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -8.1,
+        16.0,
+        6.0,
+        20.0,
+        0.0,
+        8.0
+      ],
+      "volume_mm3": 1552.15,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        24.1,
+        0.0,
+        14.0,
+        0.0,
+        8.0
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-key-tray-A": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -8.0,
+        16.0,
+        6.0,
+        20.0,
+        5.4,
+        25.0
+      ],
+      "volume_mm3": 820.496289,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        24.0,
+        0.0,
+        14.0,
+        0.0,
+        19.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-key-tray-B": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -8.0,
+        16.0,
+        6.0,
+        20.0,
+        5.4,
+        25.0
+      ],
+      "volume_mm3": 819.828699,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        24.0,
+        0.0,
+        14.0,
+        0.0,
+        19.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-key-tray-C": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -8.0,
+        16.0,
+        6.0,
+        20.0,
+        5.4,
+        25.0
+      ],
+      "volume_mm3": 821.279023,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        24.0,
+        0.0,
+        14.0,
+        0.0,
+        19.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-recessed-catch-A": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        208.0,
+        225.4,
+        30.0,
+        54.0,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 2881.47342,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        17.4,
+        0.0,
+        24.0,
+        0.0,
+        27.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-recessed-catch-B": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        208.0,
+        225.4,
+        30.0,
+        54.0,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 2881.43583,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        -0.0,
+        17.4,
+        0.0,
+        24.0,
+        0.0,
+        27.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-recessed-catch-C": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        208.0,
+        225.4,
+        30.0,
+        54.0,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 2883.51617,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        -0.0,
+        17.4,
+        0.0,
+        24.0,
+        0.0,
+        27.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "fit-recessed-receiver": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        208.0,
+        225.4,
+        151.0,
+        173.0,
+        -0.0,
+        25.0
+      ],
+      "volume_mm3": 2436.115,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        17.4,
+        0.0,
+        22.0,
+        -0.0,
+        25.0
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "full-length-guarded-key-frame-trial": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -20.4,
+        225.4,
+        -2.2,
+        75.0,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 53822.451328,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        245.8,
+        -0.0,
+        77.2,
+        -0.0,
+        27.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "full-length-tray-a-trial": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -8.0,
+        213.0,
+        1.0,
+        81.0,
+        5.4,
+        25.0
+      ],
+      "volume_mm3": 40002.088,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        221.0,
+        0.0,
+        80.0,
+        0.0,
+        19.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "full-length-tray-b-trial": {
+      "valid": true,
+      "solids": 1,
+      "bounds": [
+        -8.0,
+        213.0,
+        124.0,
+        204.0,
+        5.4,
+        25.0
+      ],
+      "volume_mm3": 40002.088,
+      "print_pose": "panel_flat_back_or_tray_floor_down",
+      "print_bounds": [
+        0.0,
+        221.0,
+        0.0,
+        80.0,
+        0.0,
+        19.6
+      ],
+      "stl_weld": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      }
+    },
+    "assembly-open": {
+      "valid": true,
+      "solids": 10,
+      "bounds": [
+        -20.4,
+        225.4,
+        -2.2,
+        207.2,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 336653.614027
+    },
+    "assembly-closed": {
+      "valid": true,
+      "solids": 10,
+      "bounds": [
+        -20.4,
+        225.4,
+        76.8,
+        128.2,
+        -0.0,
+        89.4
+      ],
+      "volume_mm3": 336653.63077
+    },
+    "assembly-access": {
+      "valid": true,
+      "solids": 8,
+      "bounds": [
+        -20.4,
+        225.4,
+        -2.2,
+        207.2,
+        -0.0,
+        27.6
+      ],
+      "volume_mm3": 256649.43858
+    },
+    "assembly-lifted": {
+      "valid": true,
+      "solids": 10,
+      "bounds": [
+        -20.4,
+        225.4,
+        -2.2,
+        207.2,
+        -0.0,
+        29.5
+      ],
+      "volume_mm3": 336653.614021
+    },
+    "assembly-closed-loaded-envelope": {
+      "valid": true,
+      "solids": 54,
+      "bounds": [
+        -20.4,
+        225.4,
+        76.8,
+        128.2,
+        -0.0,
+        89.4
+      ],
+      "volume_mm3": 477847.291343
+    }
+  }
+}

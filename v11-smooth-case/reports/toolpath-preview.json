@@ -1,0 +1,51 @@
+{
+  "gcode_sha256": "a3445bf13ce0b7fce3e277bebcd1c253b5b3f6755875e3a4444fe2e98186cdba",
+  "support_extrusion_segments": 0,
+  "views": [
+    {
+      "source": "fit-protected-hinge-frame",
+      "layer_mm": 5.4,
+      "crop_printer_xy_mm": [
+        101.500004,
+        113.500004,
+        159.199998,
+        181.199998
+      ],
+      "visible_segments": 149
+    },
+    {
+      "source": "fit-recessed-catch-B",
+      "layer_mm": 15.0,
+      "crop_printer_xy_mm": [
+        104.41829704999999,
+        114.41829704999999,
+        104.19999809999999,
+        129.1999981
+      ],
+      "visible_segments": 29
+    },
+    {
+      "source": "fit-recessed-catch-B",
+      "layer_mm": 24.6,
+      "crop_printer_xy_mm": [
+        104.41829704999999,
+        114.41829704999999,
+        104.19999809999999,
+        129.1999981
+      ],
+      "visible_segments": 16
+    },
+    {
+      "source": "fit-recessed-catch-B",
+      "layer_mm": 27.2,
+      "crop_printer_xy_mm": [
+        104.41829704999999,
+        114.41829704999999,
+        104.19999809999999,
+        129.1999981
+      ],
+      "visible_segments": 22
+    }
+  ],
+  "physical_acceptance": false
+}
