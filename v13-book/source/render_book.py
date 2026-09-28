@@ -53,9 +53,9 @@ def scene(angle,pulls=(0,0),pieces=False,clasp_angle=None):
     return items
 
 cx,cy=c.WX/2,c.WY/2
-render('01-closed.png','Tak v13 - closed book','71 x 141 x 44 mm. Board folded inside; M3 clasp on the back.',
+render('01-closed.png','Tak v13 - closed book','71 x 141 x 45 mm. Board folded inside; M3 clasp on the back.',
        scene(180),(cx-260,cy+330,260),(35,70,22),120)
-render('02-open-board.png','Tak v13 - open: board folds out flat','136 x 141 x 25 mm open. The 5 x 5 board, 24 mm pitch, folds along the middle.',
+render('02-open-board.png','Tak v13 - open: board folds out flat','136 x 141 x 26 mm open. The 5 x 5 board, 24 mm pitch, folds along the middle.',
        scene(0),(cx+120,-300,340),(cx,cy,10),120)
 render('03-trays-out.png','Tak v13 - slide out the piece trays','One tray under each half. Each holds 21 flats (two-high) and its capstone.',
        scene(0,(95,95),True),(cx+150,-330,300),(cx,cy-45,10),140)

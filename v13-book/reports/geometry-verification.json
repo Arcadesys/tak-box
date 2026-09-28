@@ -66,15 +66,16 @@
   "pass": true,
   "detail": {
    "-1": 0.0,
-   "-2": 257.165,
-   "-4": 1273.043
+   "-2": 277.644,
+   "-4": 1337.313
   }
  },
  "closed-board-inside": {
   "pass": true,
   "detail": {
-   "closed_height_mm": 44.4,
-   "faces_meet_at_z": 22.2,
+   "closed_height_mm": 45.2,
+   "raised_grids_meet_at_z": 22.599999999999998,
+   "face_gap_mm": 0.8,
    "board_faces_exposed": false
   }
  },
@@ -87,7 +88,7 @@
  "closed-clasp-holds-leaf-B": {
   "pass": true,
   "detail": {
-   "overlap_if_B_opens_1deg": 5.963
+   "overlap_if_B_opens_1deg": 5.99
   }
  },
  "clasp-swing-0-90-clear": {
@@ -169,12 +170,12 @@
    "open_xyz": [
     136.0,
     141.4,
-    25.2
+    25.6
    ],
    "closed_xyz": [
     71.0,
     141.4,
-    44.4
+    45.2
    ],
    "pitch": 24.0,
    "field": 120.0
@@ -186,7 +187,7 @@
    "hinged-bases": [
     136.0,
     141.4,
-    25.2
+    25.6
    ],
    "plate": [
     67.8,
@@ -201,7 +202,7 @@
    "clasp": [
     8.0,
     2.6,
-    32.6
+    33.4
    ]
   }
  }

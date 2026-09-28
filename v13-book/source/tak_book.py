@@ -2,8 +2,9 @@
 piece tray slides out from under each half.
 
 Units: mm. Open, the book lies flat: leaf A at x 0..67.8, leaf B at
-x 68.2..136, faces up at z=FACE. The fold axis runs along y at (x=68, z=FACE),
-so closing rotates B 180 degrees onto A, face to face. Each leaf is a base
+x 68.2..136, faces up at z=FACE. The grid lines stand LINE_RAISE proud of the face in a
+second colour. The fold axis runs along y at (x=68, z=AXZ), the top of the
+lines, so closing rotates B 180 degrees onto A and the raised grids meet. Each leaf is a base
 (floor, fore wall, seam wall, back wall), a glued face plate carrying half the
 5 x 5 board, and a tray that slides out of the front end (y=0). Hinge knuckles
 print in place at both ends of the spine. A clasp on the back face of leaf A,
@@ -31,6 +32,8 @@ DR_TOP=DR_Z0+DR_FLOOR+DR_INNER      # 19.8
 PLATE_Z=DR_TOP+.4                   # 20.2
 PLATE=2.0
 FACE=PLATE_Z+PLATE                  # 22.2
+LINE_RAISE=.4                       # grid stands proud of the face
+AXZ=FACE+LINE_RAISE                 # fold axis at the top of the grid lines
 
 # ---- leaf A walls and tray
 LEAF_X1=SEAM-HG
@@ -59,7 +62,7 @@ KNUCKLE_A=((4.7,9.0),(WY-9.0,WY-4.7))    # inner, carry sockets
 
 # ---- clasp
 PIVOT=(10.0,10.0)                        # x,z on leaf A back face
-STUD=(10.0,2*FACE-10.0)                  # closed-pose x,z of the stud on B
+STUD=(10.0,2*AXZ-10.0)                  # closed-pose x,z of the stud on B
 STUD_R=1.8
 CLASP_T=2.6
 CLASP_GAP=.3
@@ -84,7 +87,7 @@ def mirror_b(s):
 
 def fold(s,angle):
     """Rotate a leaf-B shape about the spine. 0 = open flat, 180 = closed."""
-    return s.rotate((SEAM,0,FACE),(SEAM,1,FACE),-angle)
+    return s.rotate((SEAM,0,AXZ),(SEAM,1,AXZ),-angle)
 
 
 # ================================================================== base
@@ -102,13 +105,13 @@ def _base_body():
 
 def _pin(face_y,d):
     end=face_y+d*2.5
-    return cyly(PIN_R,min(face_y,end),max(face_y,end),SEAM,FACE).fuse(
-        coney(PIN_R,.3,end,end+d*1.2,SEAM,FACE))
+    return cyly(PIN_R,min(face_y,end),max(face_y,end),SEAM,AXZ).fuse(
+        coney(PIN_R,.3,end,end+d*1.2,SEAM,AXZ))
 
 def _socket(mouth_y,d):
     end=mouth_y+d*2.8
-    s=cyly(PIN_R+PIN_CLR,min(mouth_y-d*.05,end),max(mouth_y-d*.05,end),SEAM,FACE)
-    return s.fuse(coney(PIN_R+PIN_CLR,.1,end,end+d*1.3,SEAM,FACE))
+    s=cyly(PIN_R+PIN_CLR,min(mouth_y-d*.05,end),max(mouth_y-d*.05,end),SEAM,AXZ)
+    return s.fuse(coney(PIN_R+PIN_CLR,.1,end,end+d*1.3,SEAM,AXZ))
 
 @lru_cache(None)
 def base(side):
@@ -119,15 +122,15 @@ def base(side):
         p=p.cut(cyly(M3_PILOT,WY-M3_DEPTH,WY+.1,x,z))
     else:
         p=mirror_b(p)
-        ox,oz=2*SEAM-STUD[0],2*FACE-STUD[1]
+        ox,oz=2*SEAM-STUD[0],2*AXZ-STUD[1]
         stud=cyly(STUD_R,WY-.01,WY+CLASP_GAP+CLASP_T+.5,ox,oz)
         stud=cq.Workplane(obj=stud).faces('>Y').edges().chamfer(.4).val()
         p=p.fuse(stud)
     own,other=(KNUCKLE_A,KNUCKLE_B) if side=='A' else (KNUCKLE_B,KNUCKLE_A)
     for y0,y1 in other:
-        p=p.cut(cyly(RELIEF,y0-.4,y1+.4,SEAM,FACE))
+        p=p.cut(cyly(RELIEF,y0-.4,y1+.4,SEAM,AXZ))
     for y0,y1 in own:
-        p=p.fuse(cyly(KR,y0,y1,SEAM,FACE))
+        p=p.fuse(cyly(KR,y0,y1,SEAM,AXZ))
     if side=='B':
         p=p.fuse(_pin(KNUCKLE_B[0][1],1)).fuse(_pin(KNUCKLE_B[1][0],-1))
     else:
@@ -140,19 +143,19 @@ def _lines():
     out=[]
     for i in range(6):
         y=FY0+P*i
-        out.append(box(FX0-LINE_W/2,LEAF_X1,y-LINE_W/2,y+LINE_W/2,FACE-LINE_D,FACE))
+        out.append(box(FX0-LINE_W/2,LEAF_X1,y-LINE_W/2,y+LINE_W/2,FACE-LINE_D,FACE+LINE_RAISE))
     for i in range(3):
         x=FX0+P*i
-        out.append(box(x-LINE_W/2,x+LINE_W/2,FY0-LINE_W/2,FY0+5*P+LINE_W/2,FACE-LINE_D,FACE))
+        out.append(box(x-LINE_W/2,x+LINE_W/2,FY0-LINE_W/2,FY0+5*P+LINE_W/2,FACE-LINE_D,FACE+LINE_RAISE))
     s=out[0]
     for o in out[1:]:s=s.fuse(o)
     return s.clean()
 
-def _plate_body():
-    p=box(0,LEAF_X1,0,WY,PLATE_Z,FACE)
+def _plate_body(top=FACE):
+    p=box(0,LEAF_X1,0,WY,PLATE_Z,top)
     p=cq.Workplane(obj=p).edges('|Z and <X').fillet(CORNER_R).val()
     for y0,y1 in ((-.1,FY0+.3),(WY-FY0-.3,WY+.1)):
-        p=p.cut(box(SEAM-RELIEF-.3,SEAM,y0,y1,PLATE_Z-.1,FACE+.1))
+        p=p.cut(box(SEAM-RELIEF-.3,SEAM,y0,y1,PLATE_Z-.1,top+.1))
     return p.clean()
 
 @lru_cache(None)
@@ -162,7 +165,7 @@ def plate(side):
 
 @lru_cache(None)
 def inlay(side):
-    g=_lines().intersect(_plate_body()).clean()
+    g=_lines().intersect(_plate_body(FACE+LINE_RAISE)).clean()
     return g if side=='A' else mirror_b(g)
 
 

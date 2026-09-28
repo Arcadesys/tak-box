@@ -25,3 +25,5 @@
 ## Board
 - [ ] Plates glue flat; the open board is flat across the seam (straightedge).
 - [ ] Stones sit stably on the seam cells.
+- [ ] Raised grid reads clearly in black on white; stones slide across lines without catching.
+- [ ] Closed, the two raised grids meet without marking each other.

@@ -28,8 +28,8 @@ def save(name,s,folder=None,pose='as modelled'):
     report['parts'][('stl/' if folder else 'step/')+name]=row
     print(name,'ok',flush=True)
 
-named={'plate-a':(c.plate('A'),'flip'),'plate-b':(c.plate('B'),'flip'),
-       'grid-inlay-a':(c.inlay('A'),'flip'),'grid-inlay-b':(c.inlay('B'),'flip'),
+named={'plate-a':(c.plate('A'),'as modelled'),'plate-b':(c.plate('B'),'as modelled'),
+       'grid-inlay-a':(c.inlay('A'),'as modelled'),'grid-inlay-b':(c.inlay('B'),'as modelled'),
        'tray':(c.tray_a(),'as modelled'),'clasp':(c.clasp_flat(),'clasp')}
 for n,(s_,pose) in named.items():
     save(n,s_);save(n,s_,FULL,pose)
@@ -46,7 +46,7 @@ for n,a_ in (('assembly-closed',c.assembly(180)),('assembly-open',c.assembly(0))
     cq.exporters.export(a_,str(MODELS/(n+'.step')));print(n,'exported',flush=True)
 
 # Trials: spine-end hinge pair, clasp corner pair plus clasp, detent corner.
-hc=c.box(c.SEAM-14,c.SEAM+14,-.5,16,-.1,c.FACE+3.2)
+hc=c.box(c.SEAM-14,c.SEAM+14,-.5,16,-.1,c.AXZ+3.2)
 ht=cq.Compound.makeCompound([c.base('A').intersect(hc),c.base('B').intersect(hc)])
 p=c.print_pose(ht)
 report['parts']['stl/trial-hinge-pair']={'solids':2,'stl_weld':export_stl(p,TRIALS/'trial-hinge-pair.stl')}

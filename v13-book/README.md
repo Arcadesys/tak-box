@@ -12,8 +12,8 @@ The board folds in half like a book, with the playing face inside. There is a pi
 
 | | mm |
 |---|---|
-| Closed | 71 × 141 × 44 (68 × 138 body, plus the spine knuckles and clasp) |
-| Open | 136 × 141 × 25 |
+| Closed | 71 × 141 × 45 (68 × 138 body, plus the spine knuckles and clasp) |
+| Open | 136 × 141 × 26 |
 | Board | 5 × 5 at 24 mm pitch (120 mm field) for 19.5 mm flats |
 
 Two things set the size:
@@ -22,8 +22,8 @@ Two things set the size:
 
 ## How it works
 
-- **Leaves:** each half is a base (floor, fore wall, seam wall, back wall) plus a glued 2 mm face plate. The plate holds half the board with a 0.8 mm inlaid grid for a second colour.
-- **Fold:** the fold line runs down the middle of the centre column, so those five cells each have a 0.4 mm seam through them.
+- **Leaves:** each half is a base (floor, fore wall, seam wall, back wall) plus a glued 2 mm face plate. The plate holds half the board. The grid lines are 0.8 mm wide, set 0.6 mm into the plate and raised 0.4 mm above it, in a second colour (print white plate, black grid).
+- **Fold:** the hinge axis sits at the top of the raised grid, so when closed the two grids meet and the faces are 0.8 mm apart. The fold line runs down the middle of the centre column, so those five cells each have a 0.4 mm seam through them.
 - **Hinge:** print-in-place knuckles sit at both ends of the spine (Ø3 cone pins, 0.4 mm clearance, same approach as v11). Each end has two small hinge barrels in the border, 3 mm proud of the board. The seam walls give an open stop at about 1–2° past flat.
 - **Trays:** 62 × 132 × 18.6 mm each. They slide out of the front end (y = 0) with a finger notch in the front. A side detent on the fore wall holds each tray in either orientation. It needs about 0.4 mm of wall flex, which matters because leaf B's tray is upside down when the book is closed. Each tray holds 21 flats as 11 two-high stacks, plus the capstone lying down, with 0.9 mm clearance under the board.
 - **Clasp:** an M3 × 8 button-head screw goes into a 2.6 mm pilot in leaf A's back wall. The clasp swings up and hooks a stud on leaf B, and swings down to rest flat along the back face.
@@ -33,7 +33,7 @@ Two things set the size:
 | File | Orientation | Qty |
 |---|---|---|
 | `bases-hinged-print-in-place.stl` | as exported: both bases open flat, hinge in place | 1 |
-| `plate-a.stl`, `plate-b.stl` + `grid-inlay-a/b.stl` | face down; inlays as a second colour | 1 each |
+| `plate-a.stl`, `plate-b.stl` + `grid-inlay-a/b.stl` | face up (the grid is raised); plate white, grid black | 1 each |
 | `tray.stl` | upright | 2 |
 | `clasp.stl` | flat | 1 |
 | M3 × 8 button-head screw | — | 1 |
@@ -69,5 +69,5 @@ Then complete [ACCEPTANCE.md](ACCEPTANCE.md).
 - **Seam through the centre column:** five cells have the fold seam through them.
 - **Hinge barrels:** 3 mm bumps at the spine ends, in the border.
 - **Clasp:** stands about 3 mm proud of the back face.
-- **Grid:** the sketch's "internal raised grid" is not modelled. The grid here is a flush inlay.
+- **Raised grid:** 0.4 mm proud. Stones slide over it; check that they don't catch during play.
 - **Rebuild:** `python source/build_models.py`, `verify_book.py`, `verify_meshes.py`, `render_book.py`. The source is [tak_book.py](source/tak_book.py).

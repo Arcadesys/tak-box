@@ -35,8 +35,8 @@ record('open-stop-engages-by-2deg',over[-2]>TOL,over)
 
 closed=A+c.leaf_b(180)
 top=max(p.BoundingBox().zmax for p in closed)
-record('closed-board-inside',abs(top-2*c.FACE)<3.1,
-       {'closed_height_mm':round(top,2),'faces_meet_at_z':c.FACE,
+record('closed-board-inside',abs(top-2*c.AXZ)<3.1,
+       {'closed_height_mm':round(top,2),'raised_grids_meet_at_z':c.AXZ,'face_gap_mm':round(2*c.LINE_RAISE,2),
         'board_faces_exposed':False})
 k=c.clasp(0)
 record('closed-clasp-locked-clear',worst([k],closed)<TOL,{'max_mm3':round(worst([k],closed),4)})

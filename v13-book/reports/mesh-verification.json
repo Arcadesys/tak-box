@@ -1,19 +1,19 @@
 {
  "stl/full/bases-hinged-print-in-place.stl": {
-  "triangles": 10236,
-  "volume_mm3": 60834.17
+  "triangles": 10280,
+  "volume_mm3": 60864.5
  },
  "stl/full/clasp.stl": {
   "triangles": 1260,
-  "volume_mm3": 558.64
+  "volume_mm3": 575.28
  },
  "stl/full/grid-inlay-a.stl": {
   "triangles": 308,
-  "volume_mm3": 337.48
+  "volume_mm3": 562.46
  },
  "stl/full/grid-inlay-b.stl": {
   "triangles": 308,
-  "volume_mm3": 337.48
+  "volume_mm3": 562.46
  },
  "stl/full/plate-a.stl": {
   "triangles": 540,
@@ -37,7 +37,7 @@
  },
  "stl/trials/trial-clasp.stl": {
   "triangles": 1260,
-  "volume_mm3": 558.64
+  "volume_mm3": 575.28
  },
  "stl/trials/trial-detent-base.stl": {
   "triangles": 798,
@@ -48,7 +48,7 @@
   "volume_mm3": 1207.96
  },
  "stl/trials/trial-hinge-pair.stl": {
-  "triangles": 3852,
-  "volume_mm3": 1978.71
+  "triangles": 3884,
+  "volume_mm3": 1993.63
  }
 }
