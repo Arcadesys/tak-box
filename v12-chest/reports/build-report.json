@@ -1,0 +1,1022 @@
+{
+ "design": "jumanji-style-hinged-chest-board-inside-two-lift-out-lidded-trays",
+ "units": "mm",
+ "physical_fit_accepted": false,
+ "fit_selected": "B",
+ "parts": {
+  "step/base-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -33.6,
+    82.0,
+    -5.0,
+    218.0,
+    -0.0,
+    33.0
+   ],
+   "volume_mm3": 548681.526
+  },
+  "step/lid-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -33.6,
+    82.0,
+    -5.0,
+    218.0,
+    25.0,
+    39.7
+   ],
+   "volume_mm3": 117039.737
+  },
+  "step/grid-0-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    0.0,
+    82.0,
+    0.0,
+    79.5,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 1894.091
+  },
+  "step/grid-1-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    0.0,
+    82.0,
+    82.0,
+    123.0,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 818.784
+  },
+  "step/grid-2-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    0.0,
+    82.0,
+    125.5,
+    205.0,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 1894.847
+  },
+  "step/base-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    238.6,
+    -5.0,
+    218.0,
+    -0.0,
+    33.0
+   ],
+   "volume_mm3": 790465.271
+  },
+  "step/lid-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    78.5,
+    238.6,
+    -5.0,
+    218.0,
+    25.0,
+    39.7
+   ],
+   "volume_mm3": 159565.097
+  },
+  "step/grid-0-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    205.0,
+    0.0,
+    79.5,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 2683.962
+  },
+  "step/grid-1-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    205.0,
+    82.0,
+    123.0,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 1115.232
+  },
+  "step/grid-2-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    205.0,
+    125.5,
+    205.0,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 2716.718
+  },
+  "step/tray": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -0.4,
+    25.6,
+    -1.2,
+    206.2,
+    0.0,
+    25.6
+   ],
+   "volume_mm3": 37339.736
+  },
+  "step/tray-lid": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    1.7,
+    23.5,
+    2.6,
+    205.0,
+    22.7,
+    23.9
+   ],
+   "volume_mm3": 5294.784
+  },
+  "stl/base-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -33.6,
+    82.0,
+    -5.0,
+    218.0,
+    -0.0,
+    33.0
+   ],
+   "volume_mm3": 548681.526,
+   "print_bounds": [
+    0.0,
+    115.6,
+    0.0,
+    223.0,
+    0.0,
+    33.0
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/lid-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -33.6,
+    82.0,
+    -5.0,
+    218.0,
+    25.0,
+    39.7
+   ],
+   "volume_mm3": 117039.737,
+   "print_bounds": [
+    0.0,
+    115.6,
+    0.0,
+    223.0,
+    -0.0,
+    14.7
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/grid-0-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    0.0,
+    82.0,
+    0.0,
+    79.5,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 1894.091,
+   "print_bounds": [
+    0.0,
+    82.0,
+    0.0,
+    79.5,
+    -0.0,
+    0.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/grid-1-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    0.0,
+    82.0,
+    82.0,
+    123.0,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 818.784,
+   "print_bounds": [
+    0.0,
+    82.0,
+    0.0,
+    41.0,
+    0.0,
+    0.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/grid-2-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    0.0,
+    82.0,
+    125.5,
+    205.0,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 1894.847,
+   "print_bounds": [
+    0.0,
+    82.0,
+    0.0,
+    79.5,
+    0.0,
+    0.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/base-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    238.6,
+    -5.0,
+    218.0,
+    -0.0,
+    33.0
+   ],
+   "volume_mm3": 790465.271,
+   "print_bounds": [
+    0.0,
+    156.6,
+    0.0,
+    223.0,
+    0.0,
+    33.0
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/lid-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    78.5,
+    238.6,
+    -5.0,
+    218.0,
+    25.0,
+    39.7
+   ],
+   "volume_mm3": 159565.097,
+   "print_bounds": [
+    0.0,
+    160.1,
+    0.0,
+    223.0,
+    -0.0,
+    14.7
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/grid-0-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    205.0,
+    0.0,
+    79.5,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 2683.962,
+   "print_bounds": [
+    0.0,
+    123.0,
+    0.0,
+    79.5,
+    -0.0,
+    0.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/grid-1-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    205.0,
+    82.0,
+    123.0,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 1115.232,
+   "print_bounds": [
+    0.0,
+    123.0,
+    0.0,
+    41.0,
+    0.0,
+    0.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/grid-2-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    205.0,
+    125.5,
+    205.0,
+    26.7,
+    27.5
+   ],
+   "volume_mm3": 2716.718,
+   "print_bounds": [
+    0.0,
+    123.0,
+    0.0,
+    79.5,
+    0.0,
+    0.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/tray-A": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -0.3,
+    25.5,
+    -1.2,
+    206.2,
+    0.0,
+    25.6
+   ],
+   "volume_mm3": 37336.538,
+   "print_bounds": [
+    -0.0,
+    25.8,
+    0.0,
+    207.4,
+    0.0,
+    25.6
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/tray-lid-A": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    1.6,
+    23.6,
+    2.6,
+    205.0,
+    22.7,
+    23.9
+   ],
+   "volume_mm3": 5343.36,
+   "print_bounds": [
+    0.0,
+    22.0,
+    -0.0,
+    202.4,
+    0.0,
+    1.2
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/tray-B": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -0.4,
+    25.6,
+    -1.2,
+    206.2,
+    0.0,
+    25.6
+   ],
+   "volume_mm3": 37339.736,
+   "print_bounds": [
+    0.0,
+    26.0,
+    0.0,
+    207.4,
+    0.0,
+    25.6
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/tray-lid-B": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    1.7,
+    23.5,
+    2.6,
+    205.0,
+    22.7,
+    23.9
+   ],
+   "volume_mm3": 5294.784,
+   "print_bounds": [
+    0.0,
+    21.8,
+    -0.0,
+    202.4,
+    0.0,
+    1.2
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/tray-C": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -0.5,
+    25.7,
+    -1.2,
+    206.2,
+    0.0,
+    25.6
+   ],
+   "volume_mm3": 37342.934,
+   "print_bounds": [
+    -0.0,
+    26.2,
+    0.0,
+    207.4,
+    0.0,
+    25.6
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/tray-lid-C": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    1.8,
+    23.4,
+    2.6,
+    205.0,
+    22.7,
+    23.9
+   ],
+   "volume_mm3": 5246.208,
+   "print_bounds": [
+    0.0,
+    21.6,
+    -0.0,
+    202.4,
+    0.0,
+    1.2
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/seam-key-base-1": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    72.0,
+    92.0,
+    33.0,
+    47.0,
+    0.0,
+    18.0
+   ],
+   "volume_mm3": 3960.0,
+   "print_bounds": [
+    0.0,
+    20.0,
+    0.0,
+    14.0,
+    0.0,
+    18.0
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/seam-key-base-2": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    72.0,
+    92.0,
+    95.5,
+    109.5,
+    0.0,
+    18.0
+   ],
+   "volume_mm3": 3960.0,
+   "print_bounds": [
+    0.0,
+    20.0,
+    0.0,
+    14.0,
+    0.0,
+    18.0
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/seam-key-base-3": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    72.0,
+    92.0,
+    158.0,
+    172.0,
+    0.0,
+    18.0
+   ],
+   "volume_mm3": 3960.0,
+   "print_bounds": [
+    0.0,
+    20.0,
+    0.0,
+    14.0,
+    0.0,
+    18.0
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/seam-key-lid-1": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    72.0,
+    92.0,
+    23.0,
+    37.0,
+    34.4,
+    36.2
+   ],
+   "volume_mm3": 396.0,
+   "print_bounds": [
+    0.0,
+    20.0,
+    0.0,
+    14.0,
+    0.0,
+    1.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/seam-key-lid-2": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    72.0,
+    92.0,
+    95.5,
+    109.5,
+    34.4,
+    36.2
+   ],
+   "volume_mm3": 396.0,
+   "print_bounds": [
+    0.0,
+    20.0,
+    0.0,
+    14.0,
+    0.0,
+    1.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/seam-key-lid-3": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    72.0,
+    92.0,
+    168.0,
+    182.0,
+    34.4,
+    36.2
+   ],
+   "volume_mm3": 396.0,
+   "print_bounds": [
+    0.0,
+    20.0,
+    0.0,
+    14.0,
+    0.0,
+    1.8
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-tray-end-A": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -0.3,
+    25.5,
+    120.0,
+    206.2,
+    0.0,
+    25.6
+   ],
+   "volume_mm3": 15899.277,
+   "print_bounds": [
+    -0.0,
+    25.8,
+    0.0,
+    86.2,
+    0.0,
+    25.6
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-tray-lid-A": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    1.6,
+    23.6,
+    120.0,
+    205.0,
+    22.7,
+    23.9
+   ],
+   "volume_mm3": 2240.696,
+   "print_bounds": [
+    0.0,
+    22.0,
+    -0.0,
+    85.0,
+    0.0,
+    1.2
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-tray-end-B": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -0.4,
+    25.6,
+    120.0,
+    206.2,
+    0.0,
+    25.6
+   ],
+   "volume_mm3": 15899.969,
+   "print_bounds": [
+    0.0,
+    26.0,
+    -0.0,
+    86.2,
+    0.0,
+    25.6
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-tray-lid-B": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    1.7,
+    23.5,
+    120.0,
+    205.0,
+    22.7,
+    23.9
+   ],
+   "volume_mm3": 2219.389,
+   "print_bounds": [
+    0.0,
+    21.8,
+    -0.0,
+    85.0,
+    0.0,
+    1.2
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-tray-end-C": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -0.5,
+    25.7,
+    120.0,
+    206.2,
+    0.0,
+    25.6
+   ],
+   "volume_mm3": 15902.778,
+   "print_bounds": [
+    -0.0,
+    26.2,
+    -0.0,
+    86.2,
+    0.0,
+    25.6
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-tray-lid-C": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    1.8,
+    23.4,
+    120.0,
+    205.0,
+    22.7,
+    23.9
+   ],
+   "volume_mm3": 2200.199,
+   "print_bounds": [
+    0.0,
+    21.6,
+    -0.0,
+    85.0,
+    0.0,
+    1.2
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-bay-hinge-base": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -33.6,
+    14.0,
+    120.0,
+    218.0,
+    0.0,
+    33.0
+   ],
+   "volume_mm3": 64895.7,
+   "print_bounds": [
+    0.0,
+    47.6,
+    0.0,
+    98.0,
+    0.0,
+    33.0
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-bay-hinge-lid": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    -33.6,
+    14.0,
+    120.0,
+    218.0,
+    28.5,
+    39.7
+   ],
+   "volume_mm3": 21479.093,
+   "print_bounds": [
+    -0.0,
+    47.6,
+    0.0,
+    98.0,
+    -0.0,
+    11.2
+   ],
+   "print_orientation": "top face down",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-seam-base-left": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    60.0,
+    82.0,
+    20.0,
+    60.0,
+    -0.0,
+    27.5
+   ],
+   "volume_mm3": 22036.01,
+   "print_bounds": [
+    0.0,
+    22.0,
+    0.0,
+    40.0,
+    0.0,
+    27.5
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-seam-base-right": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    82.0,
+    104.0,
+    20.0,
+    60.0,
+    -0.0,
+    27.5
+   ],
+   "volume_mm3": 21963.818,
+   "print_bounds": [
+    -0.0,
+    22.0,
+    0.0,
+    40.0,
+    0.0,
+    27.5
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-seam-key": {
+   "valid": true,
+   "solids": 1,
+   "bounds": [
+    72.0,
+    92.0,
+    33.0,
+    47.0,
+    0.0,
+    18.0
+   ],
+   "volume_mm3": 3960.0,
+   "print_bounds": [
+    0.0,
+    20.0,
+    0.0,
+    14.0,
+    0.0,
+    18.0
+   ],
+   "print_orientation": "as modelled",
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  }
+ }
+}

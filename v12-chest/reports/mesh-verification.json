@@ -1,0 +1,134 @@
+{
+ "stl/full/base-left.stl": {
+  "triangles": 13576,
+  "volume_mm3": 548680.52
+ },
+ "stl/full/base-right.stl": {
+  "triangles": 13550,
+  "volume_mm3": 790464.19
+ },
+ "stl/full/grid-0-left.stl": {
+  "triangles": 3152,
+  "volume_mm3": 1894.16
+ },
+ "stl/full/grid-0-right.stl": {
+  "triangles": 3048,
+  "volume_mm3": 2684.04
+ },
+ "stl/full/grid-1-left.stl": {
+  "triangles": 96,
+  "volume_mm3": 818.78
+ },
+ "stl/full/grid-1-right.stl": {
+  "triangles": 200,
+  "volume_mm3": 1115.23
+ },
+ "stl/full/grid-2-left.stl": {
+  "triangles": 1052,
+  "volume_mm3": 1894.92
+ },
+ "stl/full/grid-2-right.stl": {
+  "triangles": 952,
+  "volume_mm3": 2716.79
+ },
+ "stl/full/lid-left.stl": {
+  "triangles": 8776,
+  "volume_mm3": 117039.03
+ },
+ "stl/full/lid-right.stl": {
+  "triangles": 11820,
+  "volume_mm3": 159564.04
+ },
+ "stl/full/seam-key-base-1.stl": {
+  "triangles": 20,
+  "volume_mm3": 3960.0
+ },
+ "stl/full/seam-key-base-2.stl": {
+  "triangles": 20,
+  "volume_mm3": 3960.0
+ },
+ "stl/full/seam-key-base-3.stl": {
+  "triangles": 20,
+  "volume_mm3": 3960.0
+ },
+ "stl/full/seam-key-lid-1.stl": {
+  "triangles": 20,
+  "volume_mm3": 396.0
+ },
+ "stl/full/seam-key-lid-2.stl": {
+  "triangles": 20,
+  "volume_mm3": 396.0
+ },
+ "stl/full/seam-key-lid-3.stl": {
+  "triangles": 20,
+  "volume_mm3": 396.0
+ },
+ "stl/full/tray-A.stl": {
+  "triangles": 172,
+  "volume_mm3": 37336.53
+ },
+ "stl/full/tray-B.stl": {
+  "triangles": 172,
+  "volume_mm3": 37339.73
+ },
+ "stl/full/tray-C.stl": {
+  "triangles": 172,
+  "volume_mm3": 37342.94
+ },
+ "stl/full/tray-lid-A.stl": {
+  "triangles": 12,
+  "volume_mm3": 5343.36
+ },
+ "stl/full/tray-lid-B.stl": {
+  "triangles": 12,
+  "volume_mm3": 5294.78
+ },
+ "stl/full/tray-lid-C.stl": {
+  "triangles": 12,
+  "volume_mm3": 5246.21
+ },
+ "stl/trials/trial-bay-hinge-base.stl": {
+  "triangles": 3220,
+  "volume_mm3": 64895.33
+ },
+ "stl/trials/trial-bay-hinge-lid.stl": {
+  "triangles": 2648,
+  "volume_mm3": 21478.97
+ },
+ "stl/trials/trial-seam-base-left.stl": {
+  "triangles": 44,
+  "volume_mm3": 22036.01
+ },
+ "stl/trials/trial-seam-base-right.stl": {
+  "triangles": 76,
+  "volume_mm3": 21963.82
+ },
+ "stl/trials/trial-seam-key.stl": {
+  "triangles": 20,
+  "volume_mm3": 3960.0
+ },
+ "stl/trials/trial-tray-end-A.stl": {
+  "triangles": 176,
+  "volume_mm3": 15899.28
+ },
+ "stl/trials/trial-tray-end-B.stl": {
+  "triangles": 1714,
+  "volume_mm3": 15899.97
+ },
+ "stl/trials/trial-tray-end-C.stl": {
+  "triangles": 1346,
+  "volume_mm3": 15902.78
+ },
+ "stl/trials/trial-tray-lid-A.stl": {
+  "triangles": 56,
+  "volume_mm3": 2240.7
+ },
+ "stl/trials/trial-tray-lid-B.stl": {
+  "triangles": 1596,
+  "volume_mm3": 2219.39
+ },
+ "stl/trials/trial-tray-lid-C.stl": {
+  "triangles": 1224,
+  "volume_mm3": 2200.2
+ }
+}

@@ -1,0 +1,159 @@
+{
+ "checks": {
+  "valid-solids": {
+   "pass": true,
+   "detail": {
+    "multi_solid_parts": {}
+   }
+  },
+  "closed-no-overlap": {
+   "pass": true,
+   "detail": {
+    "base-halves": 0.0,
+    "lid-halves": 0.0,
+    "lid-left/base-left": 0.0,
+    "lid-left/base-right": 0.0,
+    "lid-right/base-left": 0.0,
+    "lid-right/base-right": 0.0
+   }
+  },
+  "tray-fit-no-overlap-except-ribs": {
+   "pass": true,
+   "detail": {
+    "left": {
+     "body_vs_base": 0.0,
+     "lid_vs_base": 0.0,
+     "lid_vs_tray": 0.0
+    },
+    "right": {
+     "body_vs_base": 0.0,
+     "lid_vs_base": 0.0,
+     "lid_vs_tray": 0.0
+    }
+   }
+  },
+  "rib-volume-designed-crush": {
+   "pass": true,
+   "detail": {
+    "rib_volume_mm3": 204.49
+   }
+  },
+  "lift-path-clear": {
+   "pass": true,
+   "detail": {
+    "max_overlap_mm3": 0,
+    "steps_mm": "0..60 by 5"
+   }
+  },
+  "lid-sweep-clear": {
+   "pass": true,
+   "detail": {
+    "max_overlap_by_angle": {
+     "0": 0,
+     "5": 0,
+     "10": 0,
+     "15": 0,
+     "20": 0,
+     "25": 0,
+     "30": 0,
+     "35": 0,
+     "40": 0,
+     "45": 0,
+     "50": 0,
+     "55": 0,
+     "60": 0,
+     "65": 0,
+     "70": 0,
+     "75": 0,
+     "80": 0,
+     "85": 0,
+     "90": 0,
+     "95": 0,
+     "100": 0,
+     "105": 0,
+     "110": 0
+    }
+   }
+  },
+  "pieces-fit-tray": {
+   "pass": true,
+   "detail": {
+    "left": {
+     "pieces_vs_tray": 0.0,
+     "pieces_vs_lid": 0.0,
+     "min_clearance_under_lid_mm": 0.8
+    },
+    "right": {
+     "pieces_vs_tray": 0.0,
+     "pieces_vs_lid": 0.0,
+     "min_clearance_under_lid_mm": 0.8
+    }
+   }
+  },
+  "closed-clearances": {
+   "pass": true,
+   "detail": {
+    "lid_to_board_mm": 1.5,
+    "lid_to_tray_top_mm": 1.0,
+    "closed_envelope_xyz": [
+     272.2,
+     215.0,
+     38.0
+    ],
+    "with_hinge_y_extent": 223.0
+   }
+  },
+  "base-keys-clear": {
+   "pass": true,
+   "detail": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "lid-keys-clear": {
+   "pass": true,
+   "detail": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "parts-fit-256-bed": {
+   "pass": true,
+   "detail": {
+    "tray": [
+     26.0,
+     207.4,
+     25.6
+    ],
+    "tray-lid": [
+     21.8,
+     202.4,
+     1.2
+    ],
+    "base-left": [
+     115.6,
+     223.0,
+     33.0
+    ],
+    "base-right": [
+     156.6,
+     223.0,
+     33.0
+    ],
+    "lid-left": [
+     115.6,
+     223.0,
+     14.7
+    ],
+    "lid-right": [
+     160.1,
+     223.0,
+     14.7
+    ]
+   }
+  }
+ },
+ "sampled": {}
+}
