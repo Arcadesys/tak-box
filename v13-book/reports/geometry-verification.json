@@ -106,39 +106,72 @@
    "90": 0.0
   }
  },
- "tray-removable-only-detent": {
+ "tray-latch-locks-and-releases": {
   "pass": true,
   "detail": {
    "A": {
-    "0": 0.0,
-    "1": 0.0,
-    "2": 1.727,
-    "4": 1.803,
-    "6": 1.803,
-    "8": 1.803,
-    "10": 0.0,
-    "20": 0.0,
-    "60": 0.0,
-    "100": 0.0,
-    "132": 0.0,
-    "detent_depth_mm": 0.7,
-    "wall_flex_needed_mm": 0.4
+    "locked_overlap_if_pulled": {
+     "0": 0.0,
+     "0.3": 1.127,
+     "1": 10.481,
+     "5": 59.846
+    },
+    "released_overlap_if_pulled": {
+     "0": 0.0,
+     "0.3": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "5": 0.0,
+     "10": 0.0,
+     "20": 0.0,
+     "40": 0.0,
+     "60": 0.0,
+     "100": 0.0,
+     "132": 0.0
+    }
    },
    "B": {
-    "0": 0.0,
-    "1": 0.0,
-    "2": 1.727,
-    "4": 1.803,
-    "6": 1.803,
-    "8": 1.803,
-    "10": 0.0,
-    "20": 0.0,
-    "60": 0.0,
-    "100": 0.0,
-    "132": 0.0,
-    "detent_depth_mm": 0.7,
-    "wall_flex_needed_mm": 0.4
+    "locked_overlap_if_pulled": {
+     "0": 0.0,
+     "0.3": 1.127,
+     "1": 10.481,
+     "5": 59.846
+    },
+    "released_overlap_if_pulled": {
+     "0": 0.0,
+     "0.3": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "5": 0.0,
+     "10": 0.0,
+     "20": 0.0,
+     "40": 0.0,
+     "60": 0.0,
+     "100": 0.0,
+     "132": 0.0
+    }
    }
+  }
+ },
+ "latch-geometry": {
+  "pass": true,
+  "detail": {
+   "button_recess_below_side_face_mm": 1.6,
+   "finger_dish_mm": [
+    16.0,
+    1.5
+   ],
+   "press_travel_to_release_mm": 1.45,
+   "catch_engagement_mm": 1.35,
+   "arm_len_to_button_mm": 18.7,
+   "peak_bending_strain": 0.0075
+  }
+ },
+ "pieces-clear-of-pressed-arm": {
+  "pass": true,
+  "detail": {
+   "max_mm3": 0.0,
+   "arm_rotation_deg": 4.44
   }
  },
  "trays-clear-in-closed-book": {
@@ -195,7 +228,7 @@
     2.0
    ],
    "tray": [
-    62.0,
+    63.7,
     131.7,
     18.6
    ],

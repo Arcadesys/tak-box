@@ -48,12 +48,26 @@ record('clasp-swing-0-90-clear',all(v<TOL for v in cs.values()),cs)
 tr={}
 for side in 'AB':
     fixed=[c.base(side),c.plate(side)]
-    row={p:round(worst([c.tray(side,p)],fixed),3) for p in (0,1,2,4,6,8,10,20,60,100,132)}
-    row['detent_depth_mm']=c.DETENT_H
-    row['wall_flex_needed_mm']=round(c.DETENT_H-c.CLR-.0,2)
-    tr[side]=row
-ok=all(r[0]<TOL and all(r[p]<TOL for p in (10,20,60,100,132)) for r in tr.values())
-record('tray-removable-only-detent',ok,tr)
+    locked={p:round(worst([c.tray(side,p)],fixed),3) for p in (0,.3,1,5)}
+    free={p:round(worst([c.tray(side,p,released=True)],fixed),4) for p in (0,.3,1,2,5,10,20,40,60,100,132)}
+    tr[side]={'locked_overlap_if_pulled':locked,'released_overlap_if_pulled':free}
+ok=all(r['locked_overlap_if_pulled'][0]<TOL and r['locked_overlap_if_pulled'][1]>TOL
+       and all(v<TOL for v in r['released_overlap_if_pulled'].values()) for r in tr.values())
+record('tray-latch-locks-and-releases',ok,tr)
+# Latch geometry: button depth below the side face, travel, arm strain.
+L=c.ARM_Y[1]-sum(c.BTN_Y)/2
+strain=3*c.DR_WALL*c.RELEASE/(2*L*L)
+record('latch-geometry',strain<.01,{'button_recess_below_side_face_mm':c.BTN_TIP_X,
+    'finger_dish_mm':[2*c.DISH_R,c.DISH_D],'press_travel_to_release_mm':round(c.RELEASE,2),
+    'catch_engagement_mm':round(c.FORE-c.BTN_TIP_X-.05-c.DISH_D+1.5,2),
+    'arm_len_to_button_mm':round(L,1),'peak_bending_strain':round(strain,4)})
+# Pieces beside the pressed arm: arm pivots about its root by the release angle.
+import math
+t=c.tray_a();r=c._arm_region();x0=c.DR_X[0]
+theta=math.degrees(c.RELEASE/L)
+bent=t.intersect(r).rotate((x0,c.ARM_Y[1],0),(x0,c.ARM_Y[1],1),theta)
+pr=max(ov(p,bent) for p in c.piece_boxes('A'))
+record('pieces-clear-of-pressed-arm',pr<TOL,{'max_mm3':round(pr,4),'arm_rotation_deg':round(theta,2)})
 # A tray in the closed book (leaf B upside down) must still be captured.
 res={}
 for side,leaf in (('A',A),('B',c.leaf_b(180))):

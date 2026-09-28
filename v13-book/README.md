@@ -25,7 +25,7 @@ Two things set the size:
 - **Leaves:** each half is a base (floor, fore wall, seam wall, back wall) plus a glued 2 mm face plate. The plate holds half the board. The grid lines are 0.8 mm wide, set 0.6 mm into the plate and raised 0.4 mm above it, in a second colour (print white plate, black grid).
 - **Fold:** the hinge axis sits at the top of the raised grid, so when closed the two grids meet and the faces are 0.8 mm apart. The fold line runs down the middle of the centre column, so those five cells each have a 0.4 mm seam through them.
 - **Hinge:** print-in-place knuckles sit at both ends of the spine (Ø3 cone pins, 0.4 mm clearance, same approach as v11). Each end has two small hinge barrels in the border, 3 mm proud of the board. The seam walls give an open stop at about 1–2° past flat.
-- **Trays:** 62 × 132 × 18.6 mm each. They slide out of the front end (y = 0) with a finger notch in the front. A side detent on the fore wall holds each tray in either orientation. It needs about 0.4 mm of wall flex, which matters because leaf B's tray is upside down when the book is closed. Each tray holds 21 flats as 11 two-high stacks, plus the capstone lying down, with 0.9 mm clearance under the board.
+- **Trays:** 62 × 132 × 18.6 mm each. They slide out of the front end (y = 0) with a finger notch in the front. Each tray **snaps in and locks**. A flexible arm in the tray's outer wall carries a square-faced button that sits in a window in the book's side. A ramp on the back of the button makes the tray snap in when pushed home. To release it, press the button in (1.45 mm of travel) through the 16 mm finger dish on the book's side and pull. The button face sits 1.6 mm below the side surface, so knocks in a bag shouldn't press it. The lock works either way up, which matters because leaf B's tray is upside down when closed. Each tray holds 21 flats as 11 two-high stacks, plus the capstone lying down, with 0.9 mm clearance under the board. The capstone sits next to the latch arm so the arm has room to flex.
 - **Clasp:** an M3 × 8 button-head screw goes into a 2.6 mm pilot in leaf A's back wall. The clasp swings up and hooks a stud on leaf B, and swings down to rest flat along the back face.
 
 ## Print pieces ([stl/full](stl/full))
@@ -43,7 +43,7 @@ Glue each plate onto its base after freeing the hinge. Keep glue away from the k
 ## Trial prints first ([stl/trials](stl/trials))
 
 1. `trial-hinge-pair`: one spine end, print-in-place. Free it and check the swing.
-2. `trial-detent-base` + `trial-detent-tray`: the back corner with the side detent.
+2. `trial-latch-base` + `trial-latch-tray`: the front corner with the push-button latch. Check that it snaps in, holds against a firm pull, and releases with a fingertip.
 3. `trial-clasp-base-a`, `trial-clasp-base-b`, `trial-clasp`: pilot hole, stud and hook.
 
 Then complete [ACCEPTANCE.md](ACCEPTANCE.md).
@@ -57,7 +57,7 @@ Then complete [ACCEPTANCE.md](ACCEPTANCE.md).
 - **Open stop:** engages by 2° past flat.
 - **Closed:** faces meet with the board inside.
 - **Clasp:** locked clear, holding leaf B, and it swings clear from 0 to 90°.
-- **Trays:** removable, interfering only at the detent (first 2–8 mm of pull).
+- **Trays:** locked trays can't be pulled out. Pressed trays slide fully out. Arm bending strain is 0.75% at full press.
 - **Pieces:** fit each tray.
 - **Bed:** every part fits a 256 mm bed.
 

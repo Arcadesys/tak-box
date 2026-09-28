@@ -12,10 +12,13 @@
 - [ ] Hinge barrels do not catch stones in the border.
 
 ## Trays
-- [ ] Each tray slides out and back with light pull; detent clicks at the closed position.
+- [ ] Each tray snaps in when pushed home; the button clicks into its window.
+- [ ] A locked tray cannot be pulled out by the finger notch.
+- [ ] Pressing the button with a fingertip releases it; no tool needed.
+- [ ] A bag's contents pressed against the side do not release it.
 - [ ] 11 two-high stacks and the capstone fit; stacks can be picked out.
 - [ ] Closed book held upside down and shaken: neither tray slides out.
-- [ ] 50 tray cycles: no shaving or loosening of the detent.
+- [ ] 50 tray cycles: arm does not crack, whiten or lose its snap.
 
 ## Clasp
 - [ ] M3 screw bites the pilot; clasp pivots without wobble.
