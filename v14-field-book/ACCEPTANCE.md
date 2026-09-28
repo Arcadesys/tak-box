@@ -27,6 +27,7 @@
 - [ ] 50 tray cycles: no cracking or whitening of the tray arm.
 
 ## Board and case
-- [ ] The raised black grid reads clearly; stones slide over the lines without catching.
+- [ ] The raised white grid reads clearly on black; stones slide over the lines and inlays without catching.
+- [ ] Stars, galaxies and vines print crisp with no colour bleed.
 - [ ] The open board is flat across the seam (straightedge).
 - [ ] The case has no sharp edges or snag points; carry it in a bag for a week.
