@@ -28,7 +28,7 @@ A tough little brick for a bag. The board folds in half with its face inside, an
 - **Tougher shell:**
   - The floor skin is 2 mm, up from 1.
   - Plan corners have a 6 mm radius, and every bottom edge has a 2 mm fillet.
-  - The back wall is 10 mm deep, to house the snap arms.
+  - The back wall is 10 mm deep, to house the buckle.
 - **Cover:** a debossed **TAK** on the cover, 0.7 mm deep.
 - **Renders:** plain matte charcoal and white.
 
