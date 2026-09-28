@@ -1,0 +1,50 @@
+{
+ "stl/full/bases-hinged-print-in-place.stl": {
+  "triangles": 19480,
+  "volume_mm3": 88587.11
+ },
+ "stl/full/grid-inlay-a.stl": {
+  "triangles": 300,
+  "volume_mm3": 564.91
+ },
+ "stl/full/grid-inlay-b.stl": {
+  "triangles": 300,
+  "volume_mm3": 564.91
+ },
+ "stl/full/plate-a.stl": {
+  "triangles": 5858,
+  "volume_mm3": 18835.66
+ },
+ "stl/full/plate-b.stl": {
+  "triangles": 1598,
+  "volume_mm3": 18531.78
+ },
+ "stl/full/tray.stl": {
+  "triangles": 320,
+  "volume_mm3": 17052.98
+ },
+ "stl/trials/trial-hinge-pair.stl": {
+  "triangles": 4292,
+  "volume_mm3": 2392.93
+ },
+ "stl/trials/trial-latch-base.stl": {
+  "triangles": 2906,
+  "volume_mm3": 3737.95
+ },
+ "stl/trials/trial-latch-tray.stl": {
+  "triangles": 154,
+  "volume_mm3": 2892.18
+ },
+ "stl/trials/trial-snap-post-plate.stl": {
+  "triangles": 2710,
+  "volume_mm3": 717.69
+ },
+ "stl/trials/trial-snap-socket-base.stl": {
+  "triangles": 1604,
+  "volume_mm3": 4919.51
+ },
+ "stl/trials/trial-snap-socket-plate.stl": {
+  "triangles": 580,
+  "volume_mm3": 660.31
+ }
+}
