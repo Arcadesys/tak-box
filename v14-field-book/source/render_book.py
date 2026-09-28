@@ -51,11 +51,13 @@ def scene(angle,pulls=(0,0),pieces=False):
     return items
 
 cx,cy=c.WX/2,c.WY/2
-render('01-closed.png','v14 closed','71 x 142 x 47 mm. No hardware. Two slabs and a seam.',
+render('01-closed.png','v14 closed','71 x 142 x 47 mm. No hardware. Press the side near the far corner to open.',
        scene(180),(cx-260,cy-330,260),(35,70,24),120)
 render('02-open-board.png','v14 open','136 x 142 mm open. Raised black grid on white.',
        scene(0),(cx+120,-300,340),(cx,cy,10),120)
 render('03-trays-out.png','v14 trays out','Press the side button, slide the tray out.',
        scene(0,(95,95),True),(cx+150,-330,300),(cx,cy-45,10),140)
-render('04-half-open.png','v14 folding','Two posts on the back border snap into the other half.',
+render('04-half-open.png','v14 folding','A tab at the far corner pushes into a slot and clicks shut.',
        scene(110),(cx+60,-320,200),(cx,cy,40),125)
+render('05-press-to-open.png','v14 press to open','Squeeze the panel between the two slits near the far corner, then lift.',
+       scene(180),(-260,330,180),(0,125,30),60)

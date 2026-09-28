@@ -1,5 +1,5 @@
 {
- "design": "v14-field-book-hidden-snaps-snap-in-trays-no-hardware",
+ "design": "v14-field-book-far-edge-buckle-snap-in-trays-no-hardware",
  "units": "mm",
  "physical_fit_accepted": false,
  "parts": {
@@ -10,9 +10,9 @@
     -0.0,
     142.0,
     21.2,
-    30.99
+    34.0
    ],
-   "volume_mm3": 18835.795
+   "volume_mm3": 18759.071
   },
   "stl/plate-a": {
    "bounds": [
@@ -21,9 +21,9 @@
     -0.0,
     142.0,
     21.2,
-    30.99
+    34.0
    ],
-   "volume_mm3": 18835.795,
+   "volume_mm3": 18759.071,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
@@ -31,7 +31,7 @@
     0.0,
     142.0,
     0.0,
-    9.79
+    12.8
    ],
    "stl_weld": {
     "reused_vertex_occurrences": 0,
@@ -47,7 +47,7 @@
     21.2,
     23.2
    ],
-   "volume_mm3": 18531.786
+   "volume_mm3": 18621.203
   },
   "stl/plate-b": {
    "bounds": [
@@ -58,7 +58,7 @@
     21.2,
     23.2
    ],
-   "volume_mm3": 18531.786,
+   "volume_mm3": 18621.203,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
@@ -198,7 +198,7 @@
     -0.0,
     26.6
    ],
-   "volume_mm3": 44095.459
+   "volume_mm3": 44066.31
   },
   "stl/bases-hinged-print-in-place": {
    "solids": 2,
@@ -222,70 +222,70 @@
     "maximum_position_change_mm": 0.0
    }
   },
-  "stl/trial-snap-post-plate": {
+  "stl/trial-buckle-tab-plate": {
    "bounds": [
-    4.0,
-    24.0,
-    126.0,
+    -0.0,
+    16.0,
+    120.0,
     142.0,
     21.2,
-    30.99
+    34.0
    ],
-   "volume_mm3": 717.744,
+   "volume_mm3": 767.948,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    16.0,
+    0.0,
+    22.0,
+    0.0,
+    12.8
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-buckle-socket-base": {
+   "bounds": [
+    108.0,
+    136.0,
+    110.0,
+    142.0,
+    -0.0,
+    21.2
+   ],
+   "volume_mm3": 7777.833,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    28.0,
+    0.0,
+    32.0,
+    0.0,
+    21.2
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-buckle-socket-plate": {
+   "bounds": [
+    116.0,
+    136.0,
+    120.0,
+    142.0,
+    21.2,
+    23.2
+   ],
+   "volume_mm3": 804.16,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
     20.0,
     0.0,
-    16.0,
-    0.0,
-    9.79
-   ],
-   "stl_weld": {
-    "reused_vertex_occurrences": 0,
-    "maximum_position_change_mm": 0.0
-   }
-  },
-  "stl/trial-snap-socket-base": {
-   "bounds": [
-    109.0,
-    132.0,
-    126.0,
-    142.0,
-    -0.0,
-    21.2
-   ],
-   "volume_mm3": 4919.553,
-   "print_orientation": "as modelled",
-   "print_bounds": [
-    0.0,
-    23.0,
-    -0.0,
-    16.0,
-    -0.0,
-    21.2
-   ],
-   "stl_weld": {
-    "reused_vertex_occurrences": 0,
-    "maximum_position_change_mm": 0.0
-   }
-  },
-  "stl/trial-snap-socket-plate": {
-   "bounds": [
-    109.0,
-    132.0,
-    126.0,
-    142.0,
-    21.2,
-    23.2
-   ],
-   "volume_mm3": 660.299,
-   "print_orientation": "as modelled",
-   "print_bounds": [
-    0.0,
-    23.0,
-    0.0,
-    16.0,
+    22.0,
     0.0,
     2.0
    ],

@@ -11,10 +11,11 @@ glued face plate carrying half the board, and a tray that slides out of the
 front end (y=0). A tray locks with a button on a flexible arm in its outer wall
 and is released by pressing the button in from the book's side.
 
-The book closes on two hidden snaps: posts on leaf A's back border enter holes
-in leaf B, where a flexible arm inside B's back wall springs into a neck on
-each post. Every flexing member bends within the print layers. A groove along
-the fore edge lets a thumb pry the halves apart. Hinge knuckles print in place
+The book closes with a buckle at the far edge: a tab on leaf A pushes into a
+slot in leaf B's back corner and clicks under a catch. The catch hangs on a
+spring panel cut into the outer skin of B's fore wall; pressing that side of
+the case pulls the catch clear so the halves lift apart. Flexing members bend
+within the print layers. A groove along the fore edge gives the thumb a grip. Hinge knuckles print in place
 at both ends of the spine.
 """
 from functools import lru_cache
@@ -78,23 +79,28 @@ PIN_CLR=.4
 KNUCKLE_B=((0.0,4.3),(WY-4.3,WY))        # outer, carry pins
 KNUCKLE_A=((4.7,9.0),(WY-9.0,WY-4.7))    # inner, carry sockets
 
-# ---- hidden closure snaps (post on A's plate, spring arm inside B's back wall)
-SNAP_XA=(14.0,40.0)
-SNAP_Y=WY-5.0
-POST_R=2.1
-NECK_R=1.6
-POST_H=7.8
-NECK_Z=(3.4,5.4)            # above FACE; 0.2 mm axial play around the arm
-SHOULDER=.29                # 60-degree retaining shoulder above the neck
-TIP_Z=6.6
-HOLE_R=2.25
-HOLE_SLACK=1.8              # hole is obround in x for the fold arc
-ARM_FACE=1.7                # arm face distance from the hole axis
-ARM_T=.9
-ARM_FLEX=.7
-ARM_HALF_H=.8
-ARM_LEN=(10.0,6.4)           # root side (-x), free side (+x) from hole axis
-SNAP_ZC=FACE+(NECK_Z[0]+NECK_Z[1])/2
+# ---- far-edge buckle: tab on leaf A pushes into a slot in leaf B's back
+# corner; a catch ring on a spring panel in B's fore wall grips a notch in the
+# tab. Pressing that panel (the side of the case) pulls the catch clear.
+# All buckle geometry is given in leaf B's open frame.
+TAB_X=(130.2,132.6)
+TAB_Y=(134.5,138.9)
+TAB_TIP=13.2
+TAB_NOTCH_X=1.0             # catch engagement depth
+TAB_NOTCH_Z=(15.1,17.5)
+SLOT_CLR=.3
+SLOT_ARC=1.2
+TOOTH_X=(128.8,TAB_X[0]+TAB_NOTCH_X-.2)
+TOOTH_Z=(15.3,17.3)
+RING_X=(127.4,134.3)
+RING_Y=(133.5,139.9)
+RING_BAR=.7
+RING_Z=(14.8,17.8)
+PANEL_X=(134.2,136.2)
+PANEL_Y=(115.0,140.2)       # root at 115, free end at the back corner
+PANEL_Z=(9.3,19.3)
+PANEL_SLIT=.6
+PRESS=1.4                   # panel travel that frees the catch
 
 
 def box(x0,x1,y0,y1,z0,z1):
@@ -146,8 +152,7 @@ def base(side):
     p=_base_body()
     if side=='B':
         p=mirror_b(p)
-        for xa in SNAP_XA:
-            p=_snap_socket(p,2*SEAM-xa)
+        p=_buckle_socket(p)
         p=p.cut(_deboss())
     own,other=(KNUCKLE_A,KNUCKLE_B) if side=='A' else (KNUCKLE_B,KNUCKLE_A)
     for y0,y1 in other:
@@ -189,11 +194,9 @@ def plate(side):
             .close().extrude(-(WY+.2)).translate((0,-.1,0)).val())
     p=p.cut(groove)
     if side=='A':
-        for xa in SNAP_XA:p=p.fuse(_post(xa))
-        return p.clean()
+        return p.fuse(tab()).clean()
     p=mirror_b(p.clean())
-    for xa in SNAP_XA:p=p.cut(_hole(2*SEAM-xa))
-    return p.clean()
+    return p.cut(_slot()).clean()
 
 @lru_cache(None)
 def inlay(side):
@@ -201,38 +204,54 @@ def inlay(side):
     return g if side=='A' else mirror_b(g)
 
 
-# ================================================================= snaps
-def _post(x):
-    """Closure post on leaf A's plate, revolved from its radius profile."""
-    n0,n1=NECK_Z;d=POST_R-NECK_R
-    pts=[(0,0),(POST_R,0),(POST_R,n0-d),(NECK_R,n0),(NECK_R,n1),(POST_R,n1+SHOULDER),
-         (POST_R,TIP_Z),(1.2,POST_H),(0,POST_H)]
-    prof=cq.Workplane('XZ').polyline(pts).close().revolve(360,(0,0,0),(0,1,0)).val()
-    return prof.translate((x,SNAP_Y,FACE-.01))
+# ================================================================ buckle
+def _tab_b():
+    """Tab in leaf B's frame at the closed pose."""
+    top=2*AXZ-FACE+.01
+    t=box(*TAB_X,*TAB_Y,TAB_TIP,top)
+    t=t.cut(box(TAB_X[0]-.1,TAB_X[0]+TAB_NOTCH_X,TAB_Y[0]-.1,TAB_Y[1]+.1,*TAB_NOTCH_Z))
+    # Lead-in on the tip's inner edge cams the catch aside.
+    cam=(cq.Workplane('XZ').polyline([(TAB_X[0]-.1,TAB_TIP-.1),(TAB_X[0]+1.5,TAB_TIP-.1),(TAB_X[0]-.1,TAB_TIP+1.6)])
+         .close().extrude(-(TAB_Y[1]-TAB_Y[0]+.2)).translate((0,TAB_Y[0]-.1,0)).val())
+    return t.cut(cam)
 
-def _hole(xb):
-    """Obround clearance hole in leaf B (B frame) for a post."""
-    top=FACE+.1;bot=2*AXZ-(FACE+POST_H)-.4
-    h=box(xb-HOLE_SLACK,xb+HOLE_SLACK,SNAP_Y-HOLE_R,SNAP_Y+HOLE_R,bot,top)
-    for dx in (-HOLE_SLACK,HOLE_SLACK):
-        h=h.fuse(cq.Solid.makeCylinder(HOLE_R,top-bot,cq.Vector(xb+dx,SNAP_Y,bot),cq.Vector(0,0,1)))
-    return h
+@lru_cache(None)
+def tab():
+    """The tab on leaf A's plate (world frame)."""
+    return fold(_tab_b(),180).clean()
 
-def _snap_arm_zc():
-    return 2*AXZ-SNAP_ZC
+def _slot():
+    # Wider on the outer side: the tab swings out along its arc as it enters.
+    return box(TAB_X[0]-SLOT_CLR,TAB_X[1]+SLOT_ARC,TAB_Y[0]-SLOT_CLR,TAB_Y[1]+SLOT_CLR,TAB_TIP-SLOT_CLR,FACE+.2)
 
-def _snap_socket(p,xb):
-    zc=_snap_arm_zc();y0=SNAP_Y+ARM_FACE
-    p=p.cut(_hole(xb))
-    r,f=ARM_LEN
-    p=p.cut(box(xb-r,xb+f+.6,SNAP_Y+HOLE_R-.6,y0+ARM_T+ARM_FLEX,zc-ARM_HALF_H-.35,zc+ARM_HALF_H+.35))
-    arm=box(xb-r-.05,xb+f,y0,y0+ARM_T,zc-ARM_HALF_H,zc+ARM_HALF_H)
-    arm=cq.Workplane(obj=arm).edges('|X and <Y').chamfer(.3).val()
-    return p.fuse(arm)
+@lru_cache(None)
+def catch_ring():
+    x0,x1=RING_X;y0,y1=RING_Y;z0,z1=RING_Z;b=RING_BAR
+    r=box(x0,x0+1.4,y0,y1,z0,z1)
+    r=r.fuse(box(x0,x1,y0,y0+b,z0,z1)).fuse(box(x0,x1,y1-b,y1,z0,z1))
+    tooth=box(x0+1.39,TOOTH_X[1],TAB_Y[0]+.1,TAB_Y[1]-.1,*TOOTH_Z)
+    tooth=cq.Workplane(obj=tooth).edges('|Y and >Z and >X').chamfer(1.0).val()
+    return r.fuse(tooth).clean()
 
-def snap_arm_region(xb):
-    zc=_snap_arm_zc();y0=SNAP_Y+ARM_FACE;r,f=ARM_LEN
-    return box(xb-r+.5,xb+f+.01,y0-.01,y0+ARM_T+.01,zc-ARM_HALF_H-.01,zc+ARM_HALF_H+.01)
+def _buckle_socket(p):
+    x0,x1=PANEL_X;y0,y1=PANEL_Y;z0,z1=PANEL_Z;s=PANEL_SLIT
+    # Free the panel: behind, above, below and at its free end.
+    p=p.cut(box(x0-s,x0,y0,y1+s,z0-s,z1+s))
+    p=p.cut(box(x0-s,x1,y0,y1+s,z1,z1+s)).cut(box(x0-s,x1,y0,y1+s,z0-s,z0))
+    p=p.cut(box(x0-s,x1,y1,y1+s,z0-s,z1+s))
+    # Cavity for the catch ring's travel, and the tab slot.
+    p=p.cut(box(RING_X[0]-PRESS-.3,x0,RING_Y[0]-.3,RING_Y[1]+.3,RING_Z[0]-.3,RING_Z[1]+.3))
+    p=p.cut(_slot())
+    return p.fuse(catch_ring())
+
+def panel_region():
+    x0,x1=PANEL_X;y0,y1=PANEL_Y;z0,z1=PANEL_Z
+    return box(x0,x1,y0+.01,y1,z0,z1)
+
+def pressed_parts():
+    """Catch ring and panel free end, moved in by PRESS (translation; conservative)."""
+    return [catch_ring().translate((-PRESS,0,0))]
+
 
 def _deboss():
     """TAK in leaf B's floor, mirrored so it reads correctly on the closed cover."""

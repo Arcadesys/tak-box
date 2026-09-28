@@ -27,22 +27,19 @@ allp=A+B
 m=max(ov(a,b) for i,a in enumerate(allp) for b in allp[i+1:])
 record('open-flat-no-overlap',m<TOL,{'max_mm3':round(m,4)})
 
-# Fold sweep. Only the snap arms inside leaf B may touch the posts, and only
-# in the last few degrees; everything else must stay clear.
-arms=[c.snap_arm_region(2*c.SEAM-x) for x in c.SNAP_XA]
-Bna=[c.base('B')]
-for r in arms:Bna=[Bna[0].cut(r)]
+# Fold sweep. Only the catch ring in leaf B may touch the tab, and only in
+# the last few degrees; everything else must stay clear.
+ring=c.catch_ring()
+Bnr=c.base('B').cut(ring)
 sweep={};snap={}
 for a in list(range(0,171,5))+[172,174,176,178,179,180]:
     Bt=c.leaf_b(a)
-    rest=[c.fold(Bna[0],a)]+Bt[1:]
-    sweep[a]=round(worst(A,rest),4)
-    snap[a]=round(worst(A,[c.fold(r,a) for r in arms]),3)
-record('fold-sweep-0-180-clear-except-snap-arms',all(v<TOL for v in sweep.values()),{'max_by_angle':sweep})
+    sweep[a]=round(worst(A,[c.fold(Bnr,a)]+Bt[1:]),4)
+    snap[a]=round(ov(c.tab(),c.fold(ring,a)),3)
+record('fold-sweep-0-180-clear-except-catch',all(v<TOL for v in sweep.values()),{'max_by_angle':sweep})
 first=min([a for a,v in snap.items() if v>TOL],default=None)
-record('snap-engages-only-at-closing',first is not None and first>=170 and snap[180]<TOL,
-       {'arm_contact_from_deg':first,'arm_overlap_by_angle':{a:v for a,v in snap.items() if a>=170}})
-
+record('buckle-engages-only-at-closing',first is not None and first>=170 and snap[180]<TOL,
+       {'catch_contact_from_deg':first,'catch_overlap_by_angle':{a:v for a,v in snap.items() if a>=170}})
 over={a:round(worst([c.base('A')],[c.fold(c.base('B'),a)]),3) for a in (-1,-2,-4)}
 record('open-stop-engages-by-2deg',over[-2]>TOL,over)
 
@@ -51,16 +48,22 @@ top=max(p.BoundingBox().zmax for p in closed)
 record('closed-board-inside',abs(top-2*c.AXZ)<3.1,
        {'closed_height_mm':round(top,2),'raised_grids_meet_at_z':c.AXZ,'face_gap_mm':round(2*c.LINE_RAISE,2),
         'board_faces_exposed':False})
-posts=[p for p in [c.plate('A')]]
-Bc=c.leaf_b(180)
-held=max(ov(c.plate('A'),c.fold(r,180).translate((0,0,.5))) for r in arms)
-record('closed-snaps-hold',held>TOL,{'arm_vs_post_overlap_if_halves_part_0.5mm':round(held,3),
-       'post_r':c.POST_R,'neck_r':c.NECK_R,'arm_face_r':c.ARM_FACE,'retaining_shoulder_deg':60})
-L_arm=sum(c.ARM_LEN)
-defl=c.POST_R-c.ARM_FACE
-st=3*c.ARM_T*defl/(2*c.ARM_LEN[0]**2)
-record('snap-arm-strain',st<.01,{'deflection_mm':round(defl,2),'arm_len_to_hole_mm':c.ARM_LEN[0],'peak_bending_strain':round(st,4),
-       'flex_plane':'within print layers'})
+held=ov(c.tab(),c.fold(ring,180).translate((0,0,.5)))
+record('closed-buckle-holds',held>TOL,{'catch_vs_tab_overlap_if_halves_part_0.5mm':round(held,3),
+       'engagement_mm':c.TAB_NOTCH_X-.2})
+rel={}
+pr=c.fold(c.pressed_parts()[0],180)
+pan=c.fold(c.base('B').intersect(c.panel_region()).translate((-c.PRESS,0,0)),180)
+for dz in (0,.5,1,2,4,8,12):
+    rel[dz]=round(max(ov(c.tab(),pr.translate((0,0,dz))),ov(c.tab(),pan.translate((0,0,dz)))),4)
+record('pressing-side-panel-releases',all(v<TOL for v in rel.values()),
+       {'press_travel_mm':c.PRESS,'overlap_while_lifting':rel})
+L=c.PANEL_Y[1]-c.PANEL_Y[0];t=c.PANEL_X[1]-c.PANEL_X[0]-.2;h=c.PANEL_Z[1]-c.PANEL_Z[0]
+F=3*3500*(h*t**3/12)*c.PRESS/L**3
+st=3*t*c.PRESS/(2*L*L)
+record('press-panel-stiffness',st<.01 and 2<F<15,{'panel_mm':[round(L,1),round(t,1),round(h,1)],
+       'press_force_N_est':round(F,1),'peak_bending_strain':round(st,4),'flex_plane':'within print layers',
+       'note':'pressing alone does not open it; the halves must also be pulled apart'})
 tr={}
 for side in 'AB':
     fixed=[c.base(side),c.plate(side)]

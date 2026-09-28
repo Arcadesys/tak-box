@@ -8,7 +8,7 @@ from mesh_export import export_stl
 OUT=Path(sys.argv[1]) if len(sys.argv)>1 else Path(__file__).resolve().parent.parent
 MODELS=OUT/'models';FULL=OUT/'stl'/'full';TRIALS=OUT/'stl'/'trials';REPORTS=OUT/'reports'
 for d in (MODELS,FULL,TRIALS,REPORTS):d.mkdir(parents=True,exist_ok=True)
-report={'design':'v14-field-book-hidden-snaps-snap-in-trays-no-hardware',
+report={'design':'v14-field-book-far-edge-buckle-snap-in-trays-no-hardware',
         'units':'mm','physical_fit_accepted':False,'parts':{}}
 
 def bounds(s):
@@ -45,16 +45,17 @@ for n,a_ in (('assembly-closed',c.assembly(180)),('assembly-open',c.assembly(0))
              ('assembly-trays-out',c.assembly(0,(70,70)))):
     cq.exporters.export(a_,str(MODELS/(n+'.step')));print(n,'exported',flush=True)
 
-# Trials: spine-end hinge pair, closure snap, tray latch.
+# Trials: spine-end hinge pair, far-edge buckle, tray latch.
 hc=c.box(c.SEAM-14,c.SEAM+14,-.5,16,-.1,c.AXZ+3.2)
 ht=cq.Compound.makeCompound([c.base('A').intersect(hc),c.base('B').intersect(hc)])
 p=c.print_pose(ht)
 report['parts']['stl/trial-hinge-pair']={'solids':2,'stl_weld':export_stl(p,TRIALS/'trial-hinge-pair.stl')}
-# Closure snap: plate-A corner with a post, and the matching B back-wall socket.
-xa=c.SNAP_XA[0];xb=2*c.SEAM-xa
-save('trial-snap-post-plate',c.plate('A').intersect(c.box(xa-10,xa+10,c.WY-16,c.WY+.1,c.PLATE_Z-.1,c.FACE+c.POST_H+.1)),TRIALS)
-save('trial-snap-socket-base',c.base('B').intersect(c.box(xb-13,xb+10,c.WY-16,c.WY+.1,-.1,c.PLATE_Z+.1)),TRIALS)
-save('trial-snap-socket-plate',c.plate('B').intersect(c.box(xb-13,xb+10,c.WY-16,c.WY+.1,c.PLATE_Z-.1,c.FACE+.1)),TRIALS)
+# Buckle: plate-A corner with the tab, and leaf B's back corner with the
+# spring panel, catch ring and slot (base and plate).
+bx=c.box(108,c.WX+.1,110,c.WY+.1,-.1,c.PLATE_Z+.1)
+save('trial-buckle-tab-plate',c.plate('A').intersect(c.box(-.1,16,120,c.WY+.1,c.PLATE_Z-.1,c.FACE+12)),TRIALS)
+save('trial-buckle-socket-base',c.base('B').intersect(bx),TRIALS)
+save('trial-buckle-socket-plate',c.plate('B').intersect(c.box(116,c.WX+.1,120,c.WY+.1,c.PLATE_Z-.1,c.FACE+.1)),TRIALS)
 # Latch: front fore corner of a base and the matching front of a tray.
 lc=c.box(-.1,26,-.1,40,-.1,c.PLATE_Z+.1)
 save('trial-latch-base',c.base('A').intersect(lc),TRIALS)

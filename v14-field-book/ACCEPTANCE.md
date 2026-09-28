@@ -10,11 +10,13 @@
 - [ ] The print-in-place hinge frees without cracked pins.
 - [ ] Folds closed with the raised grids meeting; opens flat and stops just past flat.
 
-## Closure snaps
-- [ ] Both snaps click shut with a firm squeeze.
+## Far-edge buckle
+- [ ] The tab clicks into the slot when the book is closed.
+- [ ] The closed book can't be pulled open without squeezing the side panel.
+- [ ] Squeezing the panel near the far corner releases it one-handed, with no tool.
+- [ ] Bag contents pressed against the panel don't open the book.
 - [ ] The closed book survives shaking and a drop onto a padded floor without opening.
-- [ ] Opens by hand at the thumb groove, with no tool.
-- [ ] 50 open/close cycles: the arms don't crack or lose their click; the posts don't shear.
+- [ ] 50 open/close cycles: the panel doesn't crack or whiten; the tab doesn't shear.
 
 ## Trays
 - [ ] Each tray snaps in when pushed home.

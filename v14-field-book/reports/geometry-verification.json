@@ -17,7 +17,7 @@
    "max_mm3": 0.0
   }
  },
- "fold-sweep-0-180-clear-except-snap-arms": {
+ "fold-sweep-0-180-clear-except-catch": {
   "pass": true,
   "detail": {
    "max_by_angle": {
@@ -65,17 +65,17 @@
    }
   }
  },
- "snap-engages-only-at-closing": {
+ "buckle-engages-only-at-closing": {
   "pass": true,
   "detail": {
-   "arm_contact_from_deg": 174,
-   "arm_overlap_by_angle": {
+   "catch_contact_from_deg": 179,
+   "catch_overlap_by_angle": {
     "170": 0.0,
     "172": 0.0,
-    "174": 0.177,
-    "176": 0.835,
-    "178": 0.846,
-    "179": 0.394,
+    "174": 0.0,
+    "176": 0.0,
+    "178": 0.0,
+    "179": 1.985,
     "180": 0.0
    }
   }
@@ -97,23 +97,40 @@
    "board_faces_exposed": false
   }
  },
- "closed-snaps-hold": {
+ "closed-buckle-holds": {
   "pass": true,
   "detail": {
-   "arm_vs_post_overlap_if_halves_part_0.5mm": 0.086,
-   "post_r": 2.1,
-   "neck_r": 1.6,
-   "arm_face_r": 1.7,
-   "retaining_shoulder_deg": 60
+   "catch_vs_tab_overlap_if_halves_part_0.5mm": 1.008,
+   "engagement_mm": 0.8
   }
  },
- "snap-arm-strain": {
+ "pressing-side-panel-releases": {
   "pass": true,
   "detail": {
-   "deflection_mm": 0.4,
-   "arm_len_to_hole_mm": 10.0,
-   "peak_bending_strain": 0.0054,
-   "flex_plane": "within print layers"
+   "press_travel_mm": 1.4,
+   "overlap_while_lifting": {
+    "0": 0.0,
+    "0.5": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "4": 0.0,
+    "8": 0.0,
+    "12": 0.0
+   }
+  }
+ },
+ "press-panel-stiffness": {
+  "pass": true,
+  "detail": {
+   "panel_mm": [
+    25.2,
+    1.8,
+    10.0
+   ],
+   "press_force_N_est": 4.5,
+   "peak_bending_strain": 0.006,
+   "flex_plane": "within print layers",
+   "note": "pressing alone does not open it; the halves must also be pulled apart"
   }
  },
  "tray-latch-locks-and-releases": {
@@ -213,7 +230,7 @@
    "open_xyz": [
     136.0,
     142.0,
-    31.0
+    34.0
    ],
    "closed_xyz": [
     71.0,
@@ -235,7 +252,7 @@
    "plate": [
     67.8,
     142.0,
-    9.8
+    12.8
    ],
    "tray": [
     63.7,
