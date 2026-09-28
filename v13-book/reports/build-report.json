@@ -1,0 +1,381 @@
+{
+ "design": "fold-in-half-book-board-inside-two-slide-out-trays-m3-clasp",
+ "units": "mm",
+ "physical_fit_accepted": false,
+ "parts": {
+  "step/plate-a": {
+   "bounds": [
+    -0.0,
+    67.8,
+    -0.0,
+    138.0,
+    20.2,
+    22.2
+   ],
+   "volume_mm3": 18237.398
+  },
+  "stl/plate-a": {
+   "bounds": [
+    -0.0,
+    67.8,
+    -0.0,
+    138.0,
+    20.2,
+    22.2
+   ],
+   "volume_mm3": 18237.398,
+   "print_orientation": "flip",
+   "print_bounds": [
+    0.0,
+    67.8,
+    -0.0,
+    138.0,
+    -0.0,
+    2.0
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "step/plate-b": {
+   "bounds": [
+    68.2,
+    136.0,
+    -0.0,
+    138.0,
+    20.2,
+    22.2
+   ],
+   "volume_mm3": 18237.398
+  },
+  "stl/plate-b": {
+   "bounds": [
+    68.2,
+    136.0,
+    -0.0,
+    138.0,
+    20.2,
+    22.2
+   ],
+   "volume_mm3": 18237.398,
+   "print_orientation": "flip",
+   "print_bounds": [
+    0.0,
+    67.8,
+    -0.0,
+    138.0,
+    -0.0,
+    2.0
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "step/grid-inlay-a": {
+   "bounds": [
+    7.6,
+    67.8,
+    8.6,
+    129.4,
+    21.6,
+    22.2
+   ],
+   "volume_mm3": 337.476
+  },
+  "stl/grid-inlay-a": {
+   "bounds": [
+    7.6,
+    67.8,
+    8.6,
+    129.4,
+    21.6,
+    22.2
+   ],
+   "volume_mm3": 337.476,
+   "print_orientation": "flip",
+   "print_bounds": [
+    0.0,
+    60.2,
+    -0.0,
+    120.8,
+    0.0,
+    0.6
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "step/grid-inlay-b": {
+   "bounds": [
+    68.2,
+    128.4,
+    8.6,
+    129.4,
+    21.6,
+    22.2
+   ],
+   "volume_mm3": 337.476
+  },
+  "stl/grid-inlay-b": {
+   "bounds": [
+    68.2,
+    128.4,
+    8.6,
+    129.4,
+    21.6,
+    22.2
+   ],
+   "volume_mm3": 337.476,
+   "print_orientation": "flip",
+   "print_bounds": [
+    0.0,
+    60.2,
+    -0.0,
+    120.8,
+    0.0,
+    0.6
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "step/tray": {
+   "bounds": [
+    3.3,
+    65.3,
+    -0.0,
+    131.7,
+    1.2,
+    19.8
+   ],
+   "volume_mm3": 16932.936
+  },
+  "stl/tray": {
+   "bounds": [
+    3.3,
+    65.3,
+    -0.0,
+    131.7,
+    1.2,
+    19.8
+   ],
+   "volume_mm3": 16932.936,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    62.0,
+    0.0,
+    131.7,
+    0.0,
+    18.6
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "step/clasp": {
+   "bounds": [
+    -4.0,
+    4.0,
+    0.0,
+    2.6,
+    -4.0,
+    28.65
+   ],
+   "volume_mm3": 558.667
+  },
+  "stl/clasp": {
+   "bounds": [
+    -4.0,
+    4.0,
+    0.0,
+    2.6,
+    -4.0,
+    28.65
+   ],
+   "volume_mm3": 558.667,
+   "print_orientation": "clasp",
+   "print_bounds": [
+    0.0,
+    8.0,
+    0.0,
+    32.65,
+    0.0,
+    2.6
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "step/base-a": {
+   "bounds": [
+    -0.0,
+    71.0,
+    -0.0,
+    138.0,
+    -0.0,
+    25.2
+   ],
+   "volume_mm3": 30328.475
+  },
+  "step/base-b": {
+   "bounds": [
+    65.0,
+    136.0,
+    -0.0,
+    141.4,
+    -0.0,
+    25.2
+   ],
+   "volume_mm3": 30506.038
+  },
+  "stl/bases-hinged-print-in-place": {
+   "solids": 2,
+   "bounds": [
+    0.0,
+    136.0,
+    -0.0,
+    141.4,
+    0.0,
+    25.2
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-hinge-pair": {
+   "solids": 2,
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-clasp-base-a": {
+   "bounds": [
+    -0.0,
+    24.0,
+    124.0,
+    138.0,
+    -0.0,
+    20.2
+   ],
+   "volume_mm3": 3488.828,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    24.0,
+    0.0,
+    14.0,
+    0.0,
+    20.2
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-clasp-base-b": {
+   "bounds": [
+    112.0,
+    136.0,
+    124.0,
+    141.4,
+    -0.0,
+    20.2
+   ],
+   "volume_mm3": 3551.799,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    24.0,
+    0.0,
+    17.4,
+    0.0,
+    20.2
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-clasp": {
+   "bounds": [
+    -4.0,
+    4.0,
+    0.0,
+    2.6,
+    -4.0,
+    28.65
+   ],
+   "volume_mm3": 558.667,
+   "print_orientation": "clasp",
+   "print_bounds": [
+    0.0,
+    8.0,
+    0.0,
+    32.65,
+    0.0,
+    2.6
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-detent-base": {
+   "bounds": [
+    -0.0,
+    22.0,
+    110.0,
+    138.0,
+    -0.0,
+    20.2
+   ],
+   "volume_mm3": 4348.849,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    22.0,
+    0.0,
+    28.0,
+    0.0,
+    20.2
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/trial-detent-tray": {
+   "bounds": [
+    3.3,
+    22.0,
+    110.0,
+    131.7,
+    1.2,
+    19.8
+   ],
+   "volume_mm3": 1207.955,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    -0.0,
+    18.7,
+    0.0,
+    21.7,
+    -0.0,
+    18.6
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  }
+ }
+}

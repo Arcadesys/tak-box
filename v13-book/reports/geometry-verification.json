@@ -1,0 +1,208 @@
+{
+ "valid-single-solids": {
+  "pass": true,
+  "detail": {
+   "base-A": 1,
+   "base-B": 1,
+   "plate-A": 1,
+   "plate-B": 1,
+   "inlay-A": 1,
+   "inlay-B": 1,
+   "tray": 1,
+   "clasp": 1
+  }
+ },
+ "open-flat-no-overlap": {
+  "pass": true,
+  "detail": {
+   "max_mm3": 0.0
+  }
+ },
+ "fold-sweep-0-180-clear": {
+  "pass": true,
+  "detail": {
+   "max_by_angle": {
+    "0": 0.0,
+    "5": 0.0,
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.0,
+    "25": 0.0,
+    "30": 0.0,
+    "35": 0.0,
+    "40": 0.0,
+    "45": 0.0,
+    "50": 0.0,
+    "55": 0.0,
+    "60": 0.0,
+    "65": 0.0,
+    "70": 0.0,
+    "75": 0.0,
+    "80": 0.0,
+    "85": 0.0,
+    "90": 0.0,
+    "95": 0.0,
+    "100": 0.0,
+    "105": 0.0,
+    "110": 0.0,
+    "115": 0.0,
+    "120": 0.0,
+    "125": 0.0,
+    "130": 0.0,
+    "135": 0.0,
+    "140": 0.0,
+    "145": 0.0,
+    "150": 0.0,
+    "155": 0.0,
+    "160": 0.0,
+    "165": 0.0,
+    "170": 0.0,
+    "175": 0.0,
+    "180": 0.0
+   }
+  }
+ },
+ "open-stop-engages-by-2deg": {
+  "pass": true,
+  "detail": {
+   "-1": 0.0,
+   "-2": 257.165,
+   "-4": 1273.043
+  }
+ },
+ "closed-board-inside": {
+  "pass": true,
+  "detail": {
+   "closed_height_mm": 44.4,
+   "faces_meet_at_z": 22.2,
+   "board_faces_exposed": false
+  }
+ },
+ "closed-clasp-locked-clear": {
+  "pass": true,
+  "detail": {
+   "max_mm3": 0.0
+  }
+ },
+ "closed-clasp-holds-leaf-B": {
+  "pass": true,
+  "detail": {
+   "overlap_if_B_opens_1deg": 5.963
+  }
+ },
+ "clasp-swing-0-90-clear": {
+  "pass": true,
+  "detail": {
+   "0": 0.0,
+   "10": 0.0,
+   "20": 0.0,
+   "30": 0.0,
+   "40": 0.0,
+   "50": 0.0,
+   "60": 0.0,
+   "70": 0.0,
+   "80": 0.0,
+   "90": 0.0
+  }
+ },
+ "tray-removable-only-detent": {
+  "pass": true,
+  "detail": {
+   "A": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 1.727,
+    "4": 1.803,
+    "6": 1.803,
+    "8": 1.803,
+    "10": 0.0,
+    "20": 0.0,
+    "60": 0.0,
+    "100": 0.0,
+    "132": 0.0,
+    "detent_depth_mm": 0.7,
+    "wall_flex_needed_mm": 0.4
+   },
+   "B": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 1.727,
+    "4": 1.803,
+    "6": 1.803,
+    "8": 1.803,
+    "10": 0.0,
+    "20": 0.0,
+    "60": 0.0,
+    "100": 0.0,
+    "132": 0.0,
+    "detent_depth_mm": 0.7,
+    "wall_flex_needed_mm": 0.4
+   }
+  }
+ },
+ "trays-clear-in-closed-book": {
+  "pass": true,
+  "detail": {
+   "A": 0.0,
+   "B": 0.0
+  }
+ },
+ "pieces-fit-each-tray": {
+  "pass": true,
+  "detail": {
+   "per_tray": "21 flats as 11 two-high stacks + capstone lying down",
+   "A": {
+    "vs_tray": 0.0,
+    "between": 0.0,
+    "under_plate_mm": 0.89
+   },
+   "B": {
+    "vs_tray": 0.0,
+    "between": 0.0,
+    "under_plate_mm": 0.89
+   }
+  }
+ },
+ "sizes": {
+  "pass": true,
+  "detail": {
+   "open_xyz": [
+    136.0,
+    141.4,
+    25.2
+   ],
+   "closed_xyz": [
+    71.0,
+    141.4,
+    44.4
+   ],
+   "pitch": 24.0,
+   "field": 120.0
+  }
+ },
+ "fits-256-bed": {
+  "pass": true,
+  "detail": {
+   "hinged-bases": [
+    136.0,
+    141.4,
+    25.2
+   ],
+   "plate": [
+    67.8,
+    138.0,
+    2.0
+   ],
+   "tray": [
+    62.0,
+    131.7,
+    18.6
+   ],
+   "clasp": [
+    8.0,
+    2.6,
+    32.6
+   ]
+  }
+ }
+}
