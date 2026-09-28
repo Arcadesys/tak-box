@@ -30,6 +30,7 @@ HG=.2
 FX0,FY0=8.0,10.0
 LINE_W=.8
 LINE_D=.6
+LINE_CLR=.1                 # groove clearance per side for a separately printed grid
 
 # ---- heights
 FLOOR=2.0
@@ -57,7 +58,7 @@ DR_Y1=WY-BACK-CLR
 # ---- push-button tray latch (fore side of each tray)
 ARM_Y=(2.6,28.5)          # cantilever in the outer wall, beside the capstone; root at 28.5
 ARM_Z=(3.5,16.5)
-ARM_SLOT=.6
+ARM_SLOT=.8
 BTN_Y=(5.0,14.6)
 BTN_Z=(5.1,14.9)
 BTN_TIP_X=1.6             # button face sits 1.6 mm inside the book's side face
@@ -99,7 +100,8 @@ RING_Z=(14.8,17.8)
 PANEL_X=(134.2,136.2)
 PANEL_Y=(115.0,140.2)       # root at 115, free end at the back corner
 PANEL_Z=(9.3,19.3)
-PANEL_SLIT=.6
+PANEL_SLIT=.8                # wide enough that the 25 mm bridge over it can't fuse
+RING_DROP=2.5                # open space under the catch ring so its first layer can sag freely
 PRESS=1.4                   # panel travel that frees the catch
 
 
@@ -167,14 +169,15 @@ def base(side):
 
 
 # ============================================================ face plate
-def _lines():
+def _lines(clr=0.0):
     out=[]
+    w=LINE_W/2+clr
     for i in range(6):
         y=FY0+P*i
-        out.append(box(FX0-LINE_W/2,LEAF_X1,y-LINE_W/2,y+LINE_W/2,FACE-LINE_D,FACE+LINE_RAISE))
+        out.append(box(FX0-w,LEAF_X1,y-w,y+w,FACE-LINE_D-clr,FACE+LINE_RAISE))
     for i in range(3):
         x=FX0+P*i
-        out.append(box(x-LINE_W/2,x+LINE_W/2,FY0-LINE_W/2,FY0+5*P+LINE_W/2,FACE-LINE_D,FACE+LINE_RAISE))
+        out.append(box(x-w,x+w,FY0-w,FY0+5*P+w,FACE-LINE_D-clr,FACE+LINE_RAISE))
     s=out[0]
     for o in out[1:]:s=s.fuse(o)
     return s.clean()
@@ -188,7 +191,7 @@ def _plate_body(top=FACE):
 
 @lru_cache(None)
 def plate(side):
-    p=_plate_body().cut(_lines())
+    p=_plate_body().cut(_lines(LINE_CLR))
     # Thumb groove: the fore edges of the two plates form a V when closed.
     groove=(cq.Workplane('XZ').polyline([(-.1,FACE+.1),(THUMB,FACE+.1),(-.1,FACE-THUMB)])
             .close().extrude(-(WY+.2)).translate((0,-.1,0)).val())
@@ -240,7 +243,7 @@ def _buckle_socket(p):
     p=p.cut(box(x0-s,x1,y0,y1+s,z1,z1+s)).cut(box(x0-s,x1,y0,y1+s,z0-s,z0))
     p=p.cut(box(x0-s,x1,y1,y1+s,z0-s,z1+s))
     # Cavity for the catch ring's travel, and the tab slot.
-    p=p.cut(box(RING_X[0]-PRESS-.3,x0,RING_Y[0]-.3,RING_Y[1]+.3,RING_Z[0]-.3,RING_Z[1]+.3))
+    p=p.cut(box(RING_X[0]-PRESS-.3,x0,RING_Y[0]-.3,RING_Y[1]+.3,RING_Z[0]-RING_DROP,RING_Z[1]+.3))
     p=p.cut(_slot())
     return p.fuse(catch_ring())
 

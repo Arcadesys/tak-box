@@ -1,7 +1,7 @@
 {
  "stl/full/bases-hinged-print-in-place.stl": {
-  "triangles": 18404,
-  "volume_mm3": 88557.92
+  "triangles": 18392,
+  "volume_mm3": 88392.78
  },
  "stl/full/grid-inlay-a.stl": {
   "triangles": 300,
@@ -13,27 +13,27 @@
  },
  "stl/full/plate-a.stl": {
   "triangles": 602,
-  "volume_mm3": 18759.04
+  "volume_mm3": 18605.19
  },
  "stl/full/plate-b.stl": {
   "triangles": 586,
-  "volume_mm3": 18621.17
+  "volume_mm3": 18467.32
  },
  "stl/full/tray.stl": {
-  "triangles": 320,
-  "volume_mm3": 17052.98
+  "triangles": 324,
+  "volume_mm3": 17035.94
  },
  "stl/trials/trial-buckle-socket-base.stl": {
-  "triangles": 2658,
-  "volume_mm3": 7777.55
+  "triangles": 2646,
+  "volume_mm3": 7612.41
  },
  "stl/trials/trial-buckle-socket-plate.stl": {
   "triangles": 198,
-  "volume_mm3": 804.14
+  "volume_mm3": 799.3
  },
  "stl/trials/trial-buckle-tab-plate.stl": {
   "triangles": 214,
-  "volume_mm3": 767.93
+  "volume_mm3": 763.97
  },
  "stl/trials/trial-hinge-pair.stl": {
   "triangles": 4292,
@@ -44,7 +44,7 @@
   "volume_mm3": 3737.95
  },
  "stl/trials/trial-latch-tray.stl": {
-  "triangles": 154,
-  "volume_mm3": 2892.18
+  "triangles": 158,
+  "volume_mm3": 2875.13
  }
 }

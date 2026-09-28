@@ -1,6 +1,6 @@
 # Tak v14 — field book
 
-**Prototype. Verified in CAD only; nothing has been sliced, printed or physically tested.**
+**Prototype. Verified in CAD and sliced; nothing has been printed or physically tested.**
 
 A tough little brick for a bag. The board folds in half with its face inside, and there's a snap-in piece tray under each half. It uses no screws, magnets or other hardware. Closed, it's two dark slabs meeting at a seam.
 
@@ -40,16 +40,25 @@ A tough little brick for a bag. The board folds in half with its face inside, an
 - **Pieces:** each tray holds 21 flats as 11 two-high stacks plus the capstone, with 0.9 mm under the board.
 - **Hinge:** print-in-place knuckles at both ends of the spine.
 
-## Print pieces ([stl/full](stl/full))
+## Print plates ([plates](plates))
 
-| File | Orientation | Qty |
-|---|---|---|
-| `bases-hinged-print-in-place.stl` | as exported: both bases open flat, hinge in place | 1 |
-| `plate-a.stl` (with the buckle tab), `plate-b.stl` | face up | 1 each |
-| `grid-inlay-a.stl`, `grid-inlay-b.stl` | with their plates, in black | 1 each |
-| `tray.stl` | upright | 2 |
+The projects are ready-to-open 3MFs for the Elegoo Centauri Carbon 2, with G-code alongside in [gcode](gcode). Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports**, textured PEI, 210 °C / 60 °C. Each plate is one colour, and parts keep their exported print orientation.
 
-Free the hinge first, then glue each plate on. Keep glue out of the knuckle notches and the buckle slot.
+| Plate | Contents | Colour | Time | PLA |
+|---|---|---|---|---|
+| [00](plates/plate00-fit-trials-charcoal.3mf) | Fit trials: hinge pair, buckle (tab, socket base, socket plate), tray latch (base, tray) | charcoal | 53 min | 19 g |
+| [01](plates/plate01-hinged-bases-charcoal.3mf) | Both bases, open flat, hinge printed in place | charcoal | 2 h 43 min | 89 g |
+| [02](plates/plate02-trays-charcoal.3mf) | Two trays | charcoal | 1 h 17 min | 40 g |
+| [03](plates/plate03-board-plates-white.3mf) | Board plates A (with buckle tab) and B, face up | white | 1 h 18 min | 44 g |
+| [04](plates/plate04-grid-inlays-black.3mf) | Two raised grid inlays | black | 7 min | 2 g |
+
+The full set (01–04) takes about 5 h 25 min and 176 g. Print **plate 00 first**. The times are slicer estimates.
+
+**Assembly**
+1. Free the print-in-place hinge on the bases.
+2. Press each black grid into its plate's grooves. The grooves have 0.1 mm clearance per side; add a drop of CA glue if they're loose.
+3. Glue each plate onto its base. Keep glue out of the knuckle notches and the buckle slot.
+4. Slide the trays in until they click.
 
 ## Trial prints first ([stl/trials](stl/trials))
 
@@ -77,6 +86,5 @@ Then complete [ACCEPTANCE.md](ACCEPTANCE.md).
 - **Buckle tab:** when open, the tab (2.4 × 4.4 × 10.8 mm) stands up at leaf A's far back corner.
 - **Centre column:** the fold seam runs through its cells.
 - **Squeeze force:** about 4.5 N, from beam theory. It's a guess until the trial is printed.
-- **Not built yet:** no slicing, G-code or print-time estimate.
 
-Rebuild with `python source/build_models.py`, `verify_book.py`, `verify_meshes.py` and `render_book.py`. The source is [tak_book.py](source/tak_book.py).
+Rebuild with `python source/build_models.py`, `verify_book.py`, `verify_meshes.py`, `render_book.py`, then `package_plates.py` (needs ElegooSlicer). The source is [tak_book.py](source/tak_book.py).
