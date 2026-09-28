@@ -6,8 +6,8 @@ import tak_book as c
 
 OUT=Path(__file__).resolve().parent.parent
 PREV=OUT/'previews';PREV.mkdir(exist_ok=True)
-SHELL=(.2,.21,.22);PLATE=(.93,.93,.91);GRID=(.05,.05,.06);TRAY=(.3,.31,.33)
-CAT=(.93,.93,.91);WITCH=(.08,.08,.09);BG=(.62,.63,.64)
+SHELL=(.1,.1,.11);PLATE=(.07,.07,.08);GRID=(.93,.93,.9);TRAY=(.12,.12,.13)
+ORANGE=(.95,.46,.12);PURPLE=(.5,.27,.78);CAT=ORANGE;WITCH=PURPLE;BG=(.62,.63,.64)
 
 def actor(shape,color):
     verts,tris=shape.tessellate(.06,.2)
@@ -42,18 +42,25 @@ def render(name,title,caption,items,cam,focal,scale,up=(0,0,1)):
     print(name,flush=True)
 
 def scene(angle,pulls=(0,0),pieces=False):
-    cols=[SHELL,PLATE,GRID,TRAY]
-    items=list(zip(c.leaf_a(pulls[0]),cols))+list(zip(c.leaf_b(angle,pulls[1]),cols))
-    if pieces:
-        for side,col,p in (('A',CAT,pulls[0]),('B',WITCH,pulls[1])):
-            for b in c.piece_boxes(side,p):
-                items.append((b if side=='A' else c.fold(b,angle) if angle else b,col))
+    items=[]
+    for side,pull in (('A',pulls[0]),('B',pulls[1])):
+        pose=(lambda s:s) if side=='A' else (lambda s,a=angle:c.fold(s,a))
+        acc=ORANGE if side=='A' else PURPLE
+        colour='orange' if side=='A' else 'purple'
+        for s,col in ((c.base(side),SHELL),(c.plate(side),PLATE),(c.inlay(side),GRID),
+                      (c.decor(side,'orange'),ORANGE),(c.decor(side,'purple'),PURPLE),
+                      (c.tray_body(side).translate((0,-pull,0)),TRAY),
+                      (c.tray_swirl(side).translate((0,-pull,0)),acc)):
+            items.append((pose(s),col))
+        if pieces:
+            for b in c.piece_boxes(side,pull):
+                items.append((pose(b),acc))
     return items
 
 cx,cy=c.WX/2,c.WY/2
 render('01-closed.png','v14 closed','71 x 142 x 47 mm. No hardware. Press the side near the far corner to open.',
        scene(180),(cx-260,cy-330,260),(35,70,24),120)
-render('02-open-board.png','v14 open','136 x 142 mm open. Raised black grid on white.',
+render('02-open-board.png','v14 open','Black board, raised white grid, star dots and small galaxies; orange and purple border vines.',
        scene(0),(cx+120,-300,340),(cx,cy,10),120)
 render('03-trays-out.png','v14 trays out','Press the side button, slide the tray out.',
        scene(0,(95,95),True),(cx+150,-330,300),(cx,cy-45,10),140)

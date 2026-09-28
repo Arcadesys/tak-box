@@ -6,8 +6,8 @@
    "base-B": 1,
    "plate-A": 1,
    "plate-B": 1,
-   "inlay-A": 1,
-   "inlay-B": 1,
+   "inlay-A": 11,
+   "inlay-B": 11,
    "tray": 1
   }
  },
@@ -222,6 +222,39 @@
     "between": 0.0,
     "under_plate_mm": 0.89
    }
+  }
+ },
+ "board-decoration-clear": {
+  "pass": true,
+  "detail": {
+   "A": {
+    "orange_vs_purple": 0.0,
+    "colour_vs_stars": 0.0,
+    "vs_grid_lines_plus_0.35": 0.0,
+    "vs_hinge_notches": 0.0,
+    "vs_buckle": 0.0,
+    "outside_plate_margin": 0.0
+   },
+   "B": {
+    "orange_vs_purple": 0.0,
+    "colour_vs_stars": 0.0,
+    "vs_grid_lines_plus_0.35": 0.0,
+    "vs_hinge_notches": 0.0,
+    "vs_buckle": 0.0,
+    "outside_plate_margin": 0.0
+   }
+  }
+ },
+ "tray-swirl-clear": {
+  "pass": true,
+  "detail": {
+   "bounds_xz": [
+    8.9,
+    59.7,
+    6.8,
+    9.6
+   ],
+   "depth": 0.6
   }
  },
  "sizes": {

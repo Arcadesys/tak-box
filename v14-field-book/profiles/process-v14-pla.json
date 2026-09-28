@@ -145,5 +145,11 @@
     "min_width_top_surface": "50%",
     "independent_support_layer_height": "0",
     "top_solid_infill_flow_ratio": "1.09",
-    "brim_type": "no_brim"
+    "brim_type": "no_brim",
+    "wipe_tower_x": [
+        "212"
+    ],
+    "wipe_tower_y": [
+        "212"
+    ]
 }

@@ -19,7 +19,9 @@ within the print layers. A groove along the fore edge gives the thumb a grip. Hi
 at both ends of the spine.
 """
 from functools import lru_cache
+import math
 import cadquery as cq
+import decor as dc
 
 # ---- board
 P=24.0
@@ -30,7 +32,7 @@ HG=.2
 FX0,FY0=8.0,10.0
 LINE_W=.8
 LINE_D=.6
-LINE_CLR=.1                 # groove clearance per side for a separately printed grid
+LINE_CLR=0.0                # 0: grid is fused in a multi-colour print
 
 # ---- heights
 FLOOR=2.0
@@ -189,22 +191,65 @@ def _plate_body(top=FACE):
         p=p.cut(box(SEAM-RELIEF-.3,SEAM,y0,y1,PLATE_Z-.1,top+.1))
     return p.clean()
 
+# ============================================================ decoration
+STARS={'A':[(13.5,15.2),(27.1,40.3),(38.6,54.8),(49.9,31.4),(15.8,64.7),(29.3,109.9),
+            (45.2,121.8),(62.8,99.3),(40.8,77.6),(21.9,124.9)],
+       'B':[(74.2,19.5),(90.6,49.2),(115.3,28.7),(98.4,68.9),(121.9,77.3),(84.7,95.8),
+            (110.6,112.4),(73.9,121.6),(119.6,54.1),(94.4,38.1)]}
+GALAXIES={'A':[(18.5,88.5,'purple',.6),(61.5,24.0,'orange',2.2)],
+          'B':[(86.0,113.5,'orange',1.3),(116.5,44.5,'purple',3.9)]}
+LEAF_COLOUR={'A':'orange','B':'purple'}
+
+def _vines_a(z0,z1):
+    """Border vines on leaf A in the front, back and fore borders."""
+    lines=[]
+    lines+=dc.vine(8.0,60.0,4.9,3.3,lambda u,v:(u,v))                       # front
+    lines+=dc.vine(11.0,60.0,136.2,4.0,lambda u,v:(u,v),phase=math.pi)     # back
+    lines+=dc.vine(15.0,126.0,4.3,2.1,lambda u,v:(v,u),curl_every=18.0)    # fore
+    return dc.union([dc.stroke(l,z0,z1) for l in lines])
+
+@lru_cache(None)
+def decor(side,colour):
+    """Flush inlay solid of one accent colour on one leaf (world/open frame)."""
+    z0,z1=FACE-dc.DEPTH,FACE
+    parts=[]
+    if colour==LEAF_COLOUR[side]:
+        v=_vines_a(z0,z1)
+        parts.append(v if side=='A' else mirror_b(v))
+    for x,y,c,rot in GALAXIES[side]:
+        if c!=colour:continue
+        arms,(cx,cy,r)=dc.galaxy(x,y,rot=rot)
+        parts+= [dc.stroke(a,z0,z1,.7) for a in arms]+[dc.dot(cx,cy,r,z0,z1)]
+    return dc.union(parts)
+
+@lru_cache(None)
+def stars(side):
+    z0,z1=FACE-dc.DEPTH,FACE
+    return dc.union([dc.dot(x,y,dc.STAR_R,z0,z1) for x,y in STARS[side]])
+
 @lru_cache(None)
 def plate(side):
-    p=_plate_body().cut(_lines(LINE_CLR))
+    p=_plate_body() if side=='A' else mirror_b(_plate_body())
+    p=p.cut(_lines(LINE_CLR) if side=='A' else mirror_b(_lines(LINE_CLR)))
+    for c in ('orange','purple'):p=p.cut(decor(side,c))
+    p=p.cut(stars(side))
+    return _plate_finish(p,side)
+
+def _plate_finish(p,side):
+    """Thumb groove, and the buckle tab (A) or slot (B), in the open frame."""
     # Thumb groove: the fore edges of the two plates form a V when closed.
     groove=(cq.Workplane('XZ').polyline([(-.1,FACE+.1),(THUMB,FACE+.1),(-.1,FACE-THUMB)])
             .close().extrude(-(WY+.2)).translate((0,-.1,0)).val())
-    p=p.cut(groove)
     if side=='A':
-        return p.fuse(tab()).clean()
-    p=mirror_b(p.clean())
-    return p.cut(_slot()).clean()
+        return p.cut(groove).fuse(tab()).clean()
+    return p.cut(mirror_b(groove)).cut(_slot()).clean()
 
 @lru_cache(None)
 def inlay(side):
+    """White parts: the raised grid plus the star dots."""
     g=_lines().intersect(_plate_body(FACE+LINE_RAISE)).clean()
-    return g if side=='A' else mirror_b(g)
+    g=g if side=='A' else mirror_b(g)
+    return g.fuse(stars(side)).clean()
 
 
 # ================================================================ buckle
@@ -305,6 +350,31 @@ def tray_released():
 def tray(side,pull=0.0,shift=0.0,released=False):
     t=(tray_released() if released else tray_a()).translate((shift,-pull,0))
     return t if side=='A' else mirror_b(t)
+
+TRAY_VINE_Z=(8.2,2.1)       # centre and half-height of the vine band on the tray front
+
+@lru_cache(None)
+def _tray_swirl_a():
+    """A low vine across tray A's front (y 0..DEPTH), matching the board's side vines.
+
+    Kept to a ~4 mm band so a multi-colour print needs few filament swaps.
+    """
+    x0,x1=DR_X
+    zc,half=TRAY_VINE_Z
+    lines=dc.vine(x0+6.0,x1-6.0,zc,half,lambda u,v:(u,v),curl_every=18.0)
+    flat=dc.union([dc.stroke(l,0,dc.DEPTH) for l in lines])
+    # Drawn in XY as (x, z); stand it up on the front face.
+    return flat.rotate((0,0,0),(1,0,0),90).translate((0,dc.DEPTH,0)).clean()
+
+@lru_cache(None)
+def tray_body(side):
+    t=tray_a().cut(_tray_swirl_a()).clean()
+    return t if side=='A' else mirror_b(t)
+
+@lru_cache(None)
+def tray_swirl(side):
+    s=_tray_swirl_a()
+    return s if side=='A' else mirror_b(s)
 
 
 # ============================================================= assemblies

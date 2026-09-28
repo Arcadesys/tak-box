@@ -1,4 +1,9 @@
-"""STEP models, full-size STLs and fit-trial STLs for the v13 book."""
+"""STEP models, full-size STLs and fit-trial STLs for the v14 field book.
+
+Multi-colour parts are written as one STL per colour, all moved by the same
+translation, so the slicer can reassemble them exactly:
+stl/full/<part>.<colour>.stl
+"""
 from pathlib import Path
 import json,sys
 import cadquery as cq
@@ -28,11 +33,27 @@ def save(name,s,folder=None,pose='as modelled'):
     report['parts'][('stl/' if folder else 'step/')+name]=row
     print(name,'ok',flush=True)
 
-named={'plate-a':(c.plate('A'),'as modelled'),'plate-b':(c.plate('B'),'as modelled'),
-       'grid-inlay-a':(c.inlay('A'),'as modelled'),'grid-inlay-b':(c.inlay('B'),'as modelled'),
-       'tray':(c.tray_a(),'as modelled')}
-for n,(s_,pose) in named.items():
-    save(n,s_);save(n,s_,FULL,pose)
+def save_group(name,parts):
+    """parts: {colour: shape}. The black body sets the shared print translation."""
+    body=parts['black'];bb=body.BoundingBox()
+    for s in parts.values():
+        sb=s.BoundingBox();assert sb.zmin>=bb.zmin-1e-6,(name,'part below body')
+    t=(-bb.xmin,-bb.ymin,-bb.zmin)
+    row={}
+    for col,s in parts.items():
+        assert s.isValid(),(name,col)
+        cq.exporters.export(s,str(MODELS/f'{name}.{col}.step'))
+        p=s.translate(t)
+        row[col]={'solids':len(s.Solids()),'volume_mm3':round(s.Volume(),3),'print_bounds':bounds(p),
+                  'stl_weld':export_stl(p,FULL/f'{name}.{col}.stl')}
+    report['parts']['stl/'+name]=row
+    print(name,'ok',list(parts),flush=True)
+
+for s_ in 'AB':
+    save_group(f'board-plate-{s_.lower()}',{'black':c.plate(s_),'white':c.inlay(s_),
+               'orange':c.decor(s_,'orange'),'purple':c.decor(s_,'purple')})
+save_group('tray-a',{'black':c.tray_body('A'),'orange':c.tray_swirl('A')})
+save_group('tray-b',{'black':c.tray_body('B'),'purple':c.tray_swirl('B')})
 save('base-a',c.base('A'));save('base-b',c.base('B'))
 # The two bases print together, open flat, with the hinge in place.
 hinged=cq.Compound.makeCompound([c.base('A'),c.base('B')])

@@ -19,7 +19,7 @@ def record(name,ok,detail):
 
 parts={'base-A':c.base('A'),'base-B':c.base('B'),'plate-A':c.plate('A'),'plate-B':c.plate('B'),
        'inlay-A':c.inlay('A'),'inlay-B':c.inlay('B'),'tray':c.tray_a()}
-record('valid-single-solids',all(p.isValid() and len(p.Solids())==1 for p in parts.values()),
+record('valid-single-solids',all(p.isValid() and (len(p.Solids())==1 or k.startswith('inlay')) for k,p in parts.items()),
        {k:len(p.Solids()) for k,p in parts.items()})
 
 A=c.leaf_a();B=c.leaf_b(0)
@@ -102,6 +102,28 @@ for side in 'AB':
 record('pieces-fit-each-tray',all(r['vs_tray']<TOL and r['between']<TOL and r['under_plate_mm']>=.3 for r in res.values()),
        {'per_tray':'21 flats as 11 two-high stacks + capstone lying down',**res})
 
+# Decoration: colours don't overlap, stay clear of grid lines, the fold seam,
+# hinge notches, buckle and thumb groove, and stay inside the plates.
+dec={}
+for s in 'AB':
+    o,u,w=c.decor(s,'orange'),c.decor(s,'purple'),c.stars(s)
+    grid=c._lines(.35) if s=='A' else c.mirror_b(c._lines(.35))
+    keep=c.box(1.6,c.LEAF_X1-.4,1.2,c.WY-1.2,0,40) if s=='A' else c.mirror_b(c.box(1.6,c.LEAF_X1-.4,1.2,c.WY-1.2,0,40))
+    notch=[c.box(c.SEAM-c.RELIEF-.8,c.SEAM+c.RELIEF+.8,-1,c.FY0+.8,0,40),c.box(c.SEAM-c.RELIEF-.8,c.SEAM+c.RELIEF+.8,c.WY-c.FY0-.8,c.WY+1,0,40)]
+    buckle=c.box(c.TAB_X[0]-1,c.TAB_X[1]+c.SLOT_ARC+1,c.TAB_Y[0]-1,c.TAB_Y[1]+1,0,40)
+    buckle=c.fold(buckle,180) if s=='A' else buckle
+    row={'orange_vs_purple':ov(o,u),'colour_vs_stars':max(ov(o,w),ov(u,w)),
+         'vs_grid_lines_plus_0.35':max(ov(o,grid),ov(u,grid),ov(w,grid)),
+         'vs_hinge_notches':max(ov(x,n) for x in (o,u,w) for n in notch),
+         'vs_buckle':max(ov(x,buckle.translate((0,0,0))) for x in (o,u)),
+         'outside_plate_margin':max(x.Volume()-ov(x,keep) for x in (o,u,w))}
+    dec[s]={k:round(v_,4) for k,v_ in row.items()}
+record('board-decoration-clear',all(v_<TOL for r in dec.values() for v_ in r.values()),dec)
+x0,x1=c.DR_X;cx=(x0+x1)/2
+notch=cq.Solid.makeCylinder(7.8,3,cq.Vector(cx,-.5,c.DR_TOP+2.0),cq.Vector(0,1,0))
+ts=c.tray_swirl('A');b=ts.BoundingBox()
+record('tray-swirl-clear',ov(ts,notch)<TOL and b.xmin>x0+2 and b.xmax<x1-2 and b.zmin>c.DR_Z0+1 and b.ymax<=c.DR_FRONT-1,
+       {'bounds_xz':[round(b.xmin,1),round(b.xmax,1),round(b.zmin,1),round(b.zmax,1)],'depth':round(b.ymax,2)})
 bo=cq.Compound.makeCompound(A+B).BoundingBox()
 bc=cq.Compound.makeCompound(closed).BoundingBox()
 record('sizes',True,{'open_xyz':[round(bo.xlen,1),round(bo.ylen,1),round(bo.zlen,1)],

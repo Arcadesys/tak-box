@@ -3,37 +3,65 @@
   "triangles": 18392,
   "volume_mm3": 88392.78
  },
- "stl/full/grid-inlay-a.stl": {
-  "triangles": 300,
-  "volume_mm3": 564.91
+ "stl/full/board-plate-a.black.stl": {
+  "triangles": 18174,
+  "volume_mm3": 18610.98
  },
- "stl/full/grid-inlay-b.stl": {
-  "triangles": 300,
-  "volume_mm3": 564.91
+ "stl/full/board-plate-a.orange.stl": {
+  "triangles": 10806,
+  "volume_mm3": 135.26
  },
- "stl/full/plate-a.stl": {
-  "triangles": 602,
-  "volume_mm3": 18605.19
+ "stl/full/board-plate-a.purple.stl": {
+  "triangles": 1748,
+  "volume_mm3": 8.99
  },
- "stl/full/plate-b.stl": {
-  "triangles": 586,
-  "volume_mm3": 18467.32
+ "stl/full/board-plate-a.white.stl": {
+  "triangles": 5300,
+  "volume_mm3": 568.73
  },
- "stl/full/tray.stl": {
-  "triangles": 324,
-  "volume_mm3": 17035.94
+ "stl/full/board-plate-b.black.stl": {
+  "triangles": 18158,
+  "volume_mm3": 18473.11
+ },
+ "stl/full/board-plate-b.orange.stl": {
+  "triangles": 1748,
+  "volume_mm3": 8.99
+ },
+ "stl/full/board-plate-b.purple.stl": {
+  "triangles": 10806,
+  "volume_mm3": 135.26
+ },
+ "stl/full/board-plate-b.white.stl": {
+  "triangles": 5300,
+  "volume_mm3": 568.73
+ },
+ "stl/full/tray-a.black.stl": {
+  "triangles": 2224,
+  "volume_mm3": 17006.92
+ },
+ "stl/full/tray-a.orange.stl": {
+  "triangles": 1914,
+  "volume_mm3": 29.02
+ },
+ "stl/full/tray-b.black.stl": {
+  "triangles": 2224,
+  "volume_mm3": 17006.92
+ },
+ "stl/full/tray-b.purple.stl": {
+  "triangles": 1914,
+  "volume_mm3": 29.02
  },
  "stl/trials/trial-buckle-socket-base.stl": {
   "triangles": 2646,
   "volume_mm3": 7612.41
  },
  "stl/trials/trial-buckle-socket-plate.stl": {
-  "triangles": 198,
-  "volume_mm3": 799.3
+  "triangles": 1020,
+  "volume_mm3": 796.6
  },
  "stl/trials/trial-buckle-tab-plate.stl": {
-  "triangles": 214,
-  "volume_mm3": 763.97
+  "triangles": 954,
+  "volume_mm3": 762.31
  },
  "stl/trials/trial-hinge-pair.stl": {
   "triangles": 4292,

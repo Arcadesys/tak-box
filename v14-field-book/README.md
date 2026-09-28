@@ -30,35 +30,54 @@ A tough little brick for a bag. The board folds in half with its face inside, an
   - Plan corners have a 6 mm radius, and every bottom edge has a 2 mm fillet.
   - The back wall is 10 mm deep, to house the buckle.
 - **Cover:** a debossed **TAK** on the cover, 0.7 mm deep.
-- **Renders:** plain matte charcoal and white.
+- **Renders:** plain matte black with the white grid and orange and purple accents.
 
 ## Carried over from v13
 
-- **Board:** the grid is 0.6 mm inlaid plus 0.4 mm raised, in a second colour. Print a white plate with a black grid.
+- **Board:** the grid is 0.6 mm inlaid plus 0.4 mm raised, in a second colour.
 - **Fold:** the axis sits at the top of the grid, so when closed the two grids meet with the faces 0.8 mm apart.
 - **Trays:** a push-button latch in each tray's outer wall. Push the tray in to snap it. To release, press the button 1.45 mm into a 16 mm finger dish in the book's side. The button sits 1.6 mm below the surface.
 - **Pieces:** each tray holds 21 flats as 11 two-high stacks plus the capstone, with 0.9 mm under the board.
 - **Hinge:** print-in-place knuckles at both ends of the spine.
 
+## Colours
+
+- **Board:** black, with a **raised white grid** (0.6 mm inlaid + 0.4 mm proud).
+- **Cells:** a sparse field of white star dots and four small two-arm **galaxies**, two orange and two purple.
+- **Borders:** a flush **magic-swirl vine**: orange on leaf A (cat), purple on leaf B (witch).
+- **Trays:** each front carries a matching low vine, orange on tray A and purple on tray B.
+- **Case:** black.
+
+All decorations are flush 0.6 mm inlays with 0.8 mm strokes, so stones slide over them. They stay at least 0.35 mm clear of the grid, fold seam, hinge notches, buckle and thumb groove. `verify_book.py` checks this.
+
 ## Print plates ([plates](plates))
 
-The projects are ready-to-open 3MFs for the Elegoo Centauri Carbon 2, with G-code alongside in [gcode](gcode). Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports**, textured PEI, 210 °C / 60 °C. Each plate is one colour, and parts keep their exported print orientation.
+Four ready-to-open 3MFs for the Elegoo Centauri Carbon 2 with its **4-colour filament system**, with G-code in [gcode](gcode). Every project uses the same filament slots:
 
-| Plate | Contents | Colour | Time | PLA |
-|---|---|---|---|---|
-| [00](plates/plate00-fit-trials-charcoal.3mf) | Fit trials: hinge pair, buckle (tab, socket base, socket plate), tray latch (base, tray) | charcoal | 53 min | 19 g |
-| [01](plates/plate01-hinged-bases-charcoal.3mf) | Both bases, open flat, hinge printed in place | charcoal | 2 h 43 min | 89 g |
-| [02](plates/plate02-trays-charcoal.3mf) | Two trays | charcoal | 1 h 17 min | 40 g |
-| [03](plates/plate03-board-plates-white.3mf) | Board plates A (with buckle tab) and B, face up | white | 1 h 18 min | 44 g |
-| [04](plates/plate04-grid-inlays-black.3mf) | Two raised grid inlays | black | 7 min | 2 g |
+| Slot | Colour |
+|---|---|
+| 1 | black |
+| 2 | white |
+| 3 | orange |
+| 4 | purple |
 
-The full set (01–04) takes about 5 h 25 min and 176 g. Print **plate 00 first**. The times are slicer estimates.
+Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports**, textured PEI, 210 °C / 60 °C. The prime tower sits in the back-right corner.
+
+| Plate | Contents | Colours | Time | PLA | Colour changes |
+|---|---|---|---|---|---|
+| [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle, tray latch | black | 54 min | 19 g | 0 |
+| [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 2 h 43 min | 89 g | 0 |
+| [02](plates/plate02-trays-4colour.3mf) | Trays A and B with front vines | black, orange, purple | 2 h 11 min | 55 g | 28 |
+| [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with grid, stars, galaxies and vines | all four | 1 h 45 min | 52 g | 12 |
+
+The full set (01–03) takes about 6 h 40 min and 196 g, including purge. Print **plate 00 first**. The times are slicer estimates.
 
 **Assembly**
 1. Free the print-in-place hinge on the bases.
-2. Press each black grid into its plate's grooves. The grooves have 0.1 mm clearance per side; add a drop of CA glue if they're loose.
-3. Glue each plate onto its base. Keep glue out of the knuckle notches and the buckle slot.
-4. Slide the trays in until they click.
+2. Glue each board plate onto its base. Keep glue out of the knuckle notches and the buckle slot.
+3. Slide the trays in until they click: orange tray under the orange half, purple under purple.
+
+Multi-colour parts are exported as one STL per colour ([stl/full](stl/full), `<part>.<colour>.stl`), all in the same frame, and `package_plates.py` reassembles them.
 
 ## Trial prints first ([stl/trials](stl/trials))
 
