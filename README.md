@@ -8,7 +8,7 @@ A 3D-printed travel case for a 5 × 5 game of Tak, plus the Team Cat / Team Witc
 
 The board folds in half with its face inside, and there's a snap-in piece tray under each half.
 - **Closing:** a buckle at the far edge. Squeeze the side of the case to open it.
-- **Board:** 5 × 5 at 28 mm cells, black with a raised white grid and subtle star, comet and galaxy inlays. A raised lip protects paint.
+- **Board:** 5 × 5 at 28 mm cells, black with a raised white grid and subtle star, galaxy, planet, moon and comet inlays. A raised lip protects paint.
 - **Assembly:** the board plates drop onto locating pegs and glue into shallow wells, so they line up without a jig.
 - **Size:** 81 × 162 × 48 mm closed.
 

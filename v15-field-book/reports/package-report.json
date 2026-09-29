@@ -29,15 +29,15 @@
           1
         ]
       ],
-      "estimated_time": "54m 8s",
+      "estimated_time": "54m 17s",
       "layers": 136,
       "filament_g": {
-        "black": 19.63,
+        "black": 19.62,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 19.63,
+      "total_g": 19.62,
       "colour_changes": 0,
       "supports": "0"
     },
@@ -49,7 +49,7 @@
           1
         ]
       ],
-      "estimated_time": "3h 13m 25s",
+      "estimated_time": "3h 13m 24s",
       "layers": 136,
       "filament_g": {
         "black": 109.53,
@@ -105,13 +105,13 @@
           4
         ]
       ],
-      "estimated_time": "2h 7m 22s",
+      "estimated_time": "2h 7m 28s",
       "layers": 70,
       "filament_g": {
         "black": 59.4,
-        "white": 5.81,
-        "orange": 0.94,
-        "purple": 1.04
+        "white": 5.79,
+        "orange": 0.96,
+        "purple": 1.06
       },
       "total_g": 67.2,
       "colour_changes": 12,

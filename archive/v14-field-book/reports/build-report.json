@@ -6,7 +6,7 @@
   "stl/board-plate-a": {
    "black": {
     "solids": 1,
-    "volume_mm3": 19170.646,
+    "volume_mm3": 19142.849,
     "print_bounds": [
      0.0,
      67.8,
@@ -21,8 +21,8 @@
     }
    },
    "white": {
-    "solids": 11,
-    "volume_mm3": 568.727,
+    "solids": 8,
+    "volume_mm3": 567.582,
     "print_bounds": [
      7.6,
      67.8,
@@ -37,13 +37,13 @@
     }
    },
    "orange": {
-    "solids": 1,
-    "volume_mm3": 8.989,
+    "solids": 6,
+    "volume_mm3": 27.725,
     "print_bounds": [
-     58.7437,
+     16.2853,
      64.2563,
      20.7092,
-     27.2908,
+     96.2011,
      1.4,
      2.0
     ],
@@ -53,13 +53,13 @@
     }
    },
    "purple": {
-    "solids": 1,
-    "volume_mm3": 8.989,
+    "solids": 5,
+    "volume_mm3": 19.196,
     "print_bounds": [
-     15.1925,
-     21.8075,
-     85.8149,
-     91.1851,
+     12.9,
+     63.4,
+     14.6,
+     99.9,
      1.4,
      2.0
     ],
@@ -72,7 +72,7 @@
   "stl/board-plate-b": {
    "black": {
     "solids": 1,
-    "volume_mm3": 19020.037,
+    "volume_mm3": 18992.24,
     "print_bounds": [
      0.0,
      67.8,
@@ -87,8 +87,8 @@
     }
    },
    "white": {
-    "solids": 11,
-    "volume_mm3": 568.727,
+    "solids": 8,
+    "volume_mm3": 567.582,
     "print_bounds": [
      0.0,
      60.2,
@@ -103,12 +103,12 @@
     }
    },
    "orange": {
-    "solids": 1,
-    "volume_mm3": 8.989,
+    "solids": 5,
+    "volume_mm3": 19.196,
     "print_bounds": [
      14.9557,
-     20.6443,
-     109.772,
+     50.222,
+     19.413,
      117.228,
      1.4,
      2.0
@@ -119,13 +119,13 @@
     }
    },
    "purple": {
-    "solids": 1,
-    "volume_mm3": 8.989,
+    "solids": 6,
+    "volume_mm3": 27.725,
     "print_bounds": [
-     45.0961,
-     51.5039,
+     5.1,
+     56.3574,
      41.4543,
-     47.5457,
+     125.2401,
      1.4,
      2.0
     ],
@@ -336,7 +336,7 @@
     21.2,
     23.3
    ],
-   "volume_mm3": 820.725,
+   "volume_mm3": 813.077,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,

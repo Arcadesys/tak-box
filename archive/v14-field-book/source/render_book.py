@@ -61,7 +61,7 @@ def scene(angle,pulls=(0,0),pieces=False):
 cx,cy=c.WX/2,c.WY/2
 render('01-closed.png','v14 closed','71 x 142 x 47 mm. No hardware. Press the side near the far corner to open.',
        scene(180),(cx-260,cy-330,260),(35,70,24),120)
-render('02-open-board.png','v14 open','Black board, raised white grid, star dots and small orange and purple galaxies. Raised lip for paint.',
+render('02-open-board.png','v14 open','Black board, raised white grid, star dots and small orange and purple symbols. Raised lip for paint.',
        scene(0),(cx+120,-300,340),(cx,cy,10),120)
 render('03-trays-out.png','v14 trays out','Press the side button, slide the tray out.',
        scene(0,(95,95),True),(cx+150,-330,300),(cx,cy-45,10),140)

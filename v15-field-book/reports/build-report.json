@@ -6,7 +6,7 @@
   "stl/board-plate-a": {
    "black": {
     "solids": 1,
-    "volume_mm3": 24995.131,
+    "volume_mm3": 24991.162,
     "print_bounds": [
      0.0,
      77.8,
@@ -21,8 +21,8 @@
     }
    },
    "white": {
-    "solids": 15,
-    "volume_mm3": 673.812,
+    "solids": 8,
+    "volume_mm3": 663.372,
     "print_bounds": [
      7.6,
      77.8,
@@ -37,13 +37,13 @@
     }
    },
    "orange": {
-    "solids": 3,
-    "volume_mm3": 23.522,
+    "solids": 6,
+    "volume_mm3": 27.725,
     "print_bounds": [
-     48.9743,
+     18.6187,
      73.173,
      23.0425,
-     117.5555,
+     110.2011,
      1.4,
      2.0
     ],
@@ -53,13 +53,13 @@
     }
    },
    "purple": {
-    "solids": 1,
-    "volume_mm3": 8.989,
+    "solids": 5,
+    "volume_mm3": 19.196,
     "print_bounds": [
-     16.9425,
-     23.5575,
-     98.8982,
-     104.2685,
+     13.8167,
+     72.5333,
+     15.4667,
+     114.7833,
      1.4,
      2.0
     ],
@@ -72,7 +72,7 @@
   "stl/board-plate-b": {
    "black": {
     "solids": 1,
-    "volume_mm3": 24844.522,
+    "volume_mm3": 24840.553,
     "print_bounds": [
      0.0,
      77.8,
@@ -87,8 +87,8 @@
     }
    },
    "white": {
-    "solids": 15,
-    "volume_mm3": 673.812,
+    "solids": 8,
+    "volume_mm3": 663.372,
     "print_bounds": [
      0.0,
      70.2,
@@ -103,12 +103,12 @@
     }
    },
    "orange": {
-    "solids": 1,
-    "volume_mm3": 8.989,
+    "solids": 5,
+    "volume_mm3": 19.196,
     "print_bounds": [
      17.9557,
-     23.6443,
-     127.022,
+     58.222,
+     21.413,
      134.478,
      1.4,
      2.0
@@ -119,13 +119,13 @@
     }
    },
    "purple": {
-    "solids": 3,
-    "volume_mm3": 23.522,
+    "solids": 6,
+    "volume_mm3": 27.725,
     "print_bounds": [
-     25.509,
-     59.5872,
+     6.0833,
+     64.8574,
      47.2043,
-     89.8794,
+     143.7401,
      1.4,
      2.0
     ],
@@ -336,12 +336,12 @@
     21.2,
     23.3
    ],
-   "volume_mm3": 813.854,
+   "volume_mm3": 808.319,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
     20.0,
-    0.0,
+    -0.0,
     22.0,
     0.0,
     2.1

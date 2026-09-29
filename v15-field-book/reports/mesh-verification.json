@@ -4,36 +4,36 @@
   "volume_mm3": 108143.27
  },
  "stl/full/board-plate-a.black.stl": {
-  "triangles": 11412,
-  "volume_mm3": 24995.11
+  "triangles": 14156,
+  "volume_mm3": 24991.14
  },
  "stl/full/board-plate-a.orange.stl": {
-  "triangles": 2284,
-  "volume_mm3": 23.52
+  "triangles": 5156,
+  "volume_mm3": 27.72
  },
  "stl/full/board-plate-a.purple.stl": {
-  "triangles": 1748,
-  "volume_mm3": 8.99
+  "triangles": 3396,
+  "volume_mm3": 19.19
  },
  "stl/full/board-plate-a.white.stl": {
-  "triangles": 5884,
-  "volume_mm3": 673.81
+  "triangles": 3800,
+  "volume_mm3": 663.37
  },
  "stl/full/board-plate-b.black.stl": {
-  "triangles": 11402,
-  "volume_mm3": 24844.5
+  "triangles": 14158,
+  "volume_mm3": 24840.53
  },
  "stl/full/board-plate-b.orange.stl": {
-  "triangles": 1748,
-  "volume_mm3": 8.99
+  "triangles": 3396,
+  "volume_mm3": 19.19
  },
  "stl/full/board-plate-b.purple.stl": {
-  "triangles": 2284,
-  "volume_mm3": 23.52
+  "triangles": 5168,
+  "volume_mm3": 27.72
  },
  "stl/full/board-plate-b.white.stl": {
-  "triangles": 5884,
-  "volume_mm3": 673.81
+  "triangles": 3800,
+  "volume_mm3": 663.37
  },
  "stl/full/tray-a.black.stl": {
   "triangles": 2164,
@@ -64,8 +64,8 @@
   "volume_mm3": 7612.86
  },
  "stl/trials/trial-buckle-socket-plate.stl": {
-  "triangles": 830,
-  "volume_mm3": 813.84
+  "triangles": 1722,
+  "volume_mm3": 808.3
  },
  "stl/trials/trial-buckle-tab-plate.stl": {
   "triangles": 618,

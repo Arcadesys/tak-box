@@ -61,7 +61,7 @@ def scene(angle,pulls=(0,0),pieces=False):
 cx,cy=c.WX/2,c.WY/2
 render('01-closed.png','v15 closed',f'{c.SEAM+3:.0f} x {c.WY:.0f} x 48 mm. No hardware. Press the side near the far corner to open.',
        scene(180),(cx-260,cy-330,260),(35,70,24),120)
-render('02-open-board.png','v15 open','Black board, raised white grid, white stars, comets and small orange and purple galaxies. Raised lip for paint.',
+render('02-open-board.png','v15 open','Black board, raised white grid, star dots and small orange and purple symbols. Raised lip for paint.',
        scene(0),(cx+120,-300,340),(cx,cy,10),120)
 render('03-trays-out.png','v15 trays out','Press the side button, slide the tray out.',
        scene(0,(95,95),True),(cx+150,-330,300),(cx,cy-45,10),140)
@@ -74,3 +74,9 @@ for s_,acc in (('A',ORANGE),('B',PURPLE)):
     _trays+=[(c.tray_body(s_),TRAY),(c.tray_swirl(s_),acc),(c.tray_sparkles(s_),GRID)]
 render('06-tray-art.png','v15 tray floors','A crescent moon in the player colour and white sparkles in each tray floor.',
        _trays,(cx,c.DR_Y1/2,300),(cx,c.DR_Y1/2,0),84*c.WY/142,up=(0,1,0))
+_board=[]
+for s_ in 'AB':
+    _board+=[(c.plate(s_),PLATE),(c.inlay(s_),GRID)]
+    _board+=[(d,col) for d,col in ((c.decor(s_,'orange'),ORANGE),(c.decor(s_,'purple'),PURPLE)) if d is not None]
+render('07-board-symbols-top.png','v15 board from above','Star dots and one small symbol per cell at most: galaxies, planets, moons, sparkles and comets.',
+       _board,(cx,cy,300),(cx,cy,0),c.WY/2+22,up=(0,1,0))

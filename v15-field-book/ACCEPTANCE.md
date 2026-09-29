@@ -34,6 +34,6 @@
 
 ## Board and case
 - [ ] The raised white grid reads clearly on black; stones slide over the lines and inlays without catching.
-- [ ] Stars, galaxies and vines print crisp with no colour bleed.
+- [ ] Stars, galaxies, planets, moons, sparkles and comets print crisp with no colour bleed.
 - [ ] The open board is flat across the seam (straightedge).
 - [ ] The case has no sharp edges or snag points; carry it in a bag for a week.

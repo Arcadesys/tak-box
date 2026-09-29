@@ -5,8 +5,7 @@ Everything here is a 2D stroke or dot extruded DEPTH into a face. Strokes are
 so a 0.4 mm nozzle can reproduce them.
 
 - Galaxies: small two-arm spirals, sparse, inside the black cells.
-- Comets: a white head with a tapered tail and a side streak in orange or purple.
-- Stars: 0.9 mm white dots and a few white four-point sparkles in the cells.
+- Stars: 0.9 mm white dots scattered through the cells.
 - Tray floors: a crescent moon in the player colour and white sparkles.
 """
 import math
@@ -60,26 +59,25 @@ def galaxy(cx,cy,r=3.4,rot=0.0):
     return arms,(cx,cy,1.05)   # overlaps the arm roots; a tangent join makes knife edges
 
 
-def comet(x,y,ang,r=1.3,L=14.0,bend=.10):
-    """(head circle, tail outline, streak outline) for a comet whose tail points along ang.
+def planet(cx,cy,z0,z1,r=1.9,rx=4.4,ry=1.5,tilt=-.4,gap=.5):
+    """Ringed planet: a disc with a tilted elliptical ring passing behind it,
+    broken GAP short of the disc on both sides so the two read apart."""
+    h=z1-z0
+    def ell(a,b):
+        return (cq.Workplane('XY',origin=(0,0,z0)).ellipse(a,b).extrude(h).val()
+                .rotate(cq.Vector(0,0,0),cq.Vector(0,0,1),math.degrees(tilt))
+                .translate(cq.Vector(cx,cy,0)))
+    ring=ell(rx,ry).cut(ell(rx-W,ry-W))
+    ring=ring.cut(cq.Solid.makeCylinder(r+gap,h+.2,cq.Vector(cx,cy,z0-.1),cq.Vector(0,0,1)))
+    return ring.fuse(dot(cx,cy,r,z0,z1)).clean()
 
-    The tail tapers from just under the head's width to 0.8 mm and curves
-    slightly; a 0.8 mm streak runs beside it, 0.9 mm clear of the head. Same
-    maths as tak-open-wells-v5's tak_symbols.comet.
-    """
-    dx,dy=math.cos(ang),math.sin(ang);px,py=-dy,dx
-    def centre(t,off=0.0):
-        s=L*t;b=bend*L*t*t
-        return x+dx*s+px*(b+off),y+dy*s+py*(b+off)
-    def band(t0,t1,hw,off=0.0,n=24):
-        left=[];right=[]
-        for k in range(n+1):
-            t=t0+(t1-t0)*k/n;cx,cy=centre(t,off);w=hw(t)
-            left.append((cx+px*w,cy+py*w));right.append((cx-px*w,cy-py*w))
-        return left+right[::-1]
-    tail=band(0,1,lambda t:.85*r*(1-t)+.4*t)
-    streak=band(.15,.65,lambda t:.4,off=r+.9)
-    return (x,y,r),tail,streak
+def comet(cx,cy,ang,z0,z1,head=1.1,tail=6.5,spread=.38):
+    """Comet: a round head and a three-stroke tail fanning out behind it."""
+    parts=[dot(cx,cy,head,z0,z1)]
+    for da,L in ((0,tail),(spread,tail*.7),(-spread,tail*.7)):
+        a=ang+math.pi+da
+        parts.append(stroke([(cx+t*L*math.cos(a),cy+t*L*math.sin(a)) for t in (0,.5,1)],z0,z1,.7))
+    return union(parts)
 
 
 # ------------------------------------------------------- moons and sparkles

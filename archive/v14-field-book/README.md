@@ -45,7 +45,9 @@ A tough little brick for a bag. The board folds in half with its face inside, an
 Orange and purple are used sparingly, about 1 g of each per print plus purge.
 
 - **Board:** black, with a **raised white grid** (0.6 mm inlaid + 0.4 mm proud).
-- **Cells:** kept subtle. A sparse field of white star dots and four small two-arm galaxies, two orange and two purple.
+- **Cells:** kept subtle. A sparse field of star dots (a few in orange and purple) and one small symbol per cell at most: two-arm galaxies, ringed planets, crescent moons, four-point sparkles and comets, split evenly between orange and purple.
+
+![Board symbols](previews/07-board-symbols-top.png)
 - **Tray floors:** a crescent moon in the player colour (orange for the cat tray A, purple for the witch tray B) and a scatter of white four-point sparkles.
 - **Tray fronts and case:** plain black.
 
@@ -79,9 +81,9 @@ Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports*
 | [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle, tray latch | black | 53 min | 20 g | 0 |
 | [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 2 h 43 min | 89 g | 0 |
 | [02](plates/plate02-trays-4colour.3mf) | Trays A and B with moon and sparkle floors | black, white, orange, purple | 1 h 44 min | 46 g | 9 |
-| [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with lip, grid, stars and galaxies | all four | 1 h 43 min | 54 g | 12 |
+| [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with lip, grid, stars and symbols | all four | 1 h 46 min | 54 g | 12 |
 
-The full set (01–03) takes about 6 h 10 min and 189 g, including purge: 1.9 g orange and 1.9 g purple. Print **plate 00 first**. The times are slicer estimates.
+The full set (01–03) takes about 6 h 14 min and 189 g, including purge: 1.9 g orange and 1.9 g purple. Print **plate 00 first**. The times are slicer estimates.
 
 **Assembly**
 1. Free the print-in-place hinge on the bases.
