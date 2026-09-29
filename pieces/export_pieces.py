@@ -3,7 +3,7 @@ from pathlib import Path
 import cadquery as cq
 import tak_pieces as p
 
-OUT=Path(__file__).resolve().parent/'pieces'
+OUT=Path(__file__).resolve().parent
 OUT.mkdir(exist_ok=True)
 
 for team in ('cat','witch'):

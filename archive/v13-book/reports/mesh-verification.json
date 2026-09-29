@@ -1,0 +1,54 @@
+{
+ "stl/full/bases-hinged-print-in-place.stl": {
+  "triangles": 11392,
+  "volume_mm3": 59928.86
+ },
+ "stl/full/clasp.stl": {
+  "triangles": 1260,
+  "volume_mm3": 575.28
+ },
+ "stl/full/grid-inlay-a.stl": {
+  "triangles": 308,
+  "volume_mm3": 562.46
+ },
+ "stl/full/grid-inlay-b.stl": {
+  "triangles": 308,
+  "volume_mm3": 562.46
+ },
+ "stl/full/plate-a.stl": {
+  "triangles": 540,
+  "volume_mm3": 18237.39
+ },
+ "stl/full/plate-b.stl": {
+  "triangles": 540,
+  "volume_mm3": 18237.39
+ },
+ "stl/full/tray.stl": {
+  "triangles": 316,
+  "volume_mm3": 17053.78
+ },
+ "stl/trials/trial-clasp-base-a.stl": {
+  "triangles": 786,
+  "volume_mm3": 3488.78
+ },
+ "stl/trials/trial-clasp-base-b.stl": {
+  "triangles": 1290,
+  "volume_mm3": 3551.72
+ },
+ "stl/trials/trial-clasp.stl": {
+  "triangles": 1260,
+  "volume_mm3": 575.28
+ },
+ "stl/trials/trial-hinge-pair.stl": {
+  "triangles": 3884,
+  "volume_mm3": 1993.63
+ },
+ "stl/trials/trial-latch-base.stl": {
+  "triangles": 844,
+  "volume_mm3": 2834.57
+ },
+ "stl/trials/trial-latch-tray.stl": {
+  "triangles": 150,
+  "volume_mm3": 2892.97
+ }
+}
