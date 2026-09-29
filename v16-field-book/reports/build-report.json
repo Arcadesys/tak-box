@@ -244,7 +244,7 @@
     -0.0,
     28.6
    ],
-   "volume_mm3": 79156.463
+   "volume_mm3": 83734.607
   },
   "step/base-b": {
    "bounds": [
@@ -255,7 +255,7 @@
     -0.0,
     28.6
    ],
-   "volume_mm3": 78483.7
+   "volume_mm3": 83061.844
   },
   "stl/bases-hinged-print-in-place": {
    "solids": 2,
@@ -312,7 +312,7 @@
     -0.0,
     22.7
    ],
-   "volume_mm3": 8059.679,
+   "volume_mm3": 8368.679,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
