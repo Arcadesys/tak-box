@@ -1,0 +1,327 @@
+{
+ "valid-single-solids": {
+  "pass": true,
+  "detail": {
+   "base-A": 1,
+   "base-B": 1,
+   "plate-A": 1,
+   "plate-B": 1,
+   "inlay-A": 15,
+   "inlay-B": 15,
+   "tray": 1
+  }
+ },
+ "open-flat-no-overlap": {
+  "pass": true,
+  "detail": {
+   "max_mm3": 0.0
+  }
+ },
+ "fold-sweep-0-180-clear-except-catch": {
+  "pass": true,
+  "detail": {
+   "max_by_angle": {
+    "0": 0.0,
+    "5": 0.0,
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.0,
+    "25": 0.0,
+    "30": 0.0,
+    "35": 0.0,
+    "40": 0.0,
+    "45": 0.0,
+    "50": 0.0,
+    "55": 0.0,
+    "60": 0.0,
+    "65": 0.0,
+    "70": 0.0,
+    "75": 0.0,
+    "80": 0.0,
+    "85": 0.0,
+    "90": 0.0,
+    "95": 0.0,
+    "100": 0.0,
+    "105": 0.0,
+    "110": 0.0,
+    "115": 0.0,
+    "120": 0.0,
+    "125": 0.0,
+    "130": 0.0,
+    "135": 0.0,
+    "140": 0.0,
+    "145": 0.0,
+    "150": 0.0,
+    "155": 0.0,
+    "160": 0.0,
+    "165": 0.0,
+    "170": 0.0,
+    "172": 0.0012,
+    "174": 0.0,
+    "176": 0.0,
+    "178": 0.0,
+    "179": 0.0,
+    "180": 0.0
+   }
+  }
+ },
+ "buckle-engages-only-at-closing": {
+  "pass": true,
+  "detail": {
+   "catch_contact_from_deg": 179,
+   "catch_overlap_by_angle": {
+    "170": 0.0,
+    "172": 0.0,
+    "174": 0.0,
+    "176": 0.0,
+    "178": 0.0,
+    "179": 2.008,
+    "180": 0.0
+   }
+  }
+ },
+ "open-stop-engages-by-2deg": {
+  "pass": true,
+  "detail": {
+   "-1": 0.0,
+   "-2": 362.95,
+   "-4": 1726.466
+  }
+ },
+ "closed-board-inside": {
+  "pass": true,
+  "detail": {
+   "closed_height_mm": 48.4,
+   "lips_meet_at_z": 24.2,
+   "face_gap_mm": 2.0,
+   "grid_gap_mm": 1.2,
+   "board_faces_exposed": false
+  }
+ },
+ "closed-buckle-holds": {
+  "pass": true,
+  "detail": {
+   "catch_vs_tab_overlap_if_halves_part_0.5mm": 1.008,
+   "engagement_mm": 0.8
+  }
+ },
+ "pressing-side-panel-releases": {
+  "pass": true,
+  "detail": {
+   "press_travel_mm": 1.4,
+   "overlap_while_lifting": {
+    "0": 0.0,
+    "0.5": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "4": 0.0,
+    "8": 0.0,
+    "12": 0.0
+   }
+  }
+ },
+ "press-panel-stiffness": {
+  "pass": true,
+  "detail": {
+   "panel_mm": [
+    25.2,
+    1.8,
+    10.0
+   ],
+   "press_force_N_est": 4.5,
+   "peak_bending_strain": 0.006,
+   "flex_plane": "within print layers",
+   "note": "pressing alone does not open it; the halves must also be pulled apart"
+  }
+ },
+ "tray-latch-locks-and-releases": {
+  "pass": true,
+  "detail": {
+   "A": {
+    "locked_overlap_if_pulled": {
+     "0": 0.0,
+     "0.3": 1.127,
+     "1": 10.481,
+     "5": 47.583
+    },
+    "released_overlap_if_pulled": {
+     "0": 0.0,
+     "0.3": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "5": 0.0,
+     "10": 0.0,
+     "20": 0.0,
+     "40": 0.0,
+     "60": 0.0,
+     "100": 0.0,
+     "152": 0.0
+    }
+   },
+   "B": {
+    "locked_overlap_if_pulled": {
+     "0": 0.0,
+     "0.3": 1.127,
+     "1": 10.481,
+     "5": 47.583
+    },
+    "released_overlap_if_pulled": {
+     "0": 0.0,
+     "0.3": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "5": 0.0,
+     "10": 0.0,
+     "20": 0.0,
+     "40": 0.0,
+     "60": 0.0,
+     "100": 0.0,
+     "152": 0.0
+    }
+   }
+  }
+ },
+ "latch-geometry": {
+  "pass": true,
+  "detail": {
+   "button_recess_below_side_face_mm": 1.6,
+   "finger_dish_mm": [
+    16.0,
+    1.5
+   ],
+   "press_travel_to_release_mm": 1.45,
+   "catch_engagement_mm": 1.35,
+   "arm_len_to_button_mm": 18.7,
+   "peak_bending_strain": 0.0075
+  }
+ },
+ "pieces-clear-of-pressed-arm": {
+  "pass": true,
+  "detail": {
+   "max_mm3": 0.0,
+   "arm_rotation_deg": 4.44
+  }
+ },
+ "trays-clear-in-closed-book": {
+  "pass": true,
+  "detail": {
+   "A": 0.0,
+   "B": 0.0
+  }
+ },
+ "pieces-fit-each-tray": {
+  "pass": true,
+  "detail": {
+   "per_tray": "21 flats as 11 two-high stacks + capstone lying down",
+   "A": {
+    "vs_tray": 0.0,
+    "between": 0.0,
+    "under_plate_mm": 0.89
+   },
+   "B": {
+    "vs_tray": 0.0,
+    "between": 0.0,
+    "under_plate_mm": 0.89
+   }
+  }
+ },
+ "board-decoration-clear": {
+  "pass": true,
+  "detail": {
+   "A": {
+    "orange_vs_purple": 0.0,
+    "colour_vs_stars": 0.0,
+    "vs_grid_lines_plus_0.35": 0.0,
+    "vs_hinge_notches": 0.0,
+    "vs_buckle": 0.0,
+    "outside_plate_margin": 0.0
+   },
+   "B": {
+    "orange_vs_purple": 0.0,
+    "colour_vs_stars": 0.0,
+    "vs_grid_lines_plus_0.35": 0.0,
+    "vs_hinge_notches": 0.0,
+    "vs_buckle": 0.0,
+    "outside_plate_margin": 0.0
+   }
+  }
+ },
+ "tray-art-clear": {
+  "pass": true,
+  "detail": {
+   "accent_vs_white": 0.0,
+   "outside_floor_or_front_zone": 0.0,
+   "front_vs_finger_notch": 0.0,
+   "vs_latch_arm": 0.0,
+   "accent_mm3": 15.3,
+   "sparkles": 38
+  }
+ },
+ "sizes": {
+  "pass": true,
+  "detail": {
+   "open_xyz": [
+    156.0,
+    162.0,
+    35.2
+   ],
+   "closed_xyz": [
+    81.0,
+    162.0,
+    48.4
+   ],
+   "pitch": 28.0,
+   "field": 140.0
+  }
+ },
+ "plates-register-for-gluing": {
+  "pass": true,
+  "detail": {
+   "plate-A": {
+    "nominal": 0.0,
+    "x+0.3": 0.273,
+    "x-0.3": 0.273,
+    "y+0.3": 0.198,
+    "y-0.3": 0.198,
+    "twist+0.3deg": 4.733,
+    "twist-0.3deg": 0.546
+   },
+   "plate-B": {
+    "nominal": 0.0,
+    "x+0.3": 0.273,
+    "x-0.3": 0.273,
+    "y+0.3": 0.198,
+    "y-0.3": 0.198,
+    "twist+0.3deg": 0.546,
+    "twist-0.3deg": 5.454
+   },
+   "glue_well_land_missing_mm3": 0.0,
+   "peg_mm": {
+    "back_d": 2.4,
+    "fore_d": 1.6,
+    "height": 1.0,
+    "clearance": 0.15
+   }
+  }
+ },
+ "fits-256-bed": {
+  "pass": true,
+  "detail": {
+   "hinged-bases": [
+    156.0,
+    162.0,
+    27.2
+   ],
+   "plate": [
+    77.8,
+    162.0,
+    14.0
+   ],
+   "tray": [
+    73.7,
+    151.7,
+    18.6
+   ]
+  }
+ }
+}
