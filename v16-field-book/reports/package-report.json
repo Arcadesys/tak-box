@@ -1,0 +1,121 @@
+{
+  "filaments": {
+    "black": 1,
+    "white": 2,
+    "orange": 3,
+    "purple": 4
+  },
+  "plates": {
+    "00-fit-trials-black": {
+      "3mf": "plates/plate00-fit-trials-black.3mf",
+      "gcode": "gcode/plate00-fit-trials-black.gcode",
+      "objects_filaments": [
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "estimated_time": "56m 53s",
+      "layers": 143,
+      "filament_g": {
+        "black": 20.4,
+        "white": 0.0,
+        "orange": 0.0,
+        "purple": 0.0
+      },
+      "total_g": 20.4,
+      "colour_changes": 0,
+      "supports": "0"
+    },
+    "01-hinged-bases-black": {
+      "3mf": "plates/plate01-hinged-bases-black.3mf",
+      "gcode": "gcode/plate01-hinged-bases-black.gcode",
+      "objects_filaments": [
+        [
+          1
+        ]
+      ],
+      "estimated_time": "4h 28m 48s",
+      "layers": 143,
+      "filament_g": {
+        "black": 160.19,
+        "white": 0.0,
+        "orange": 0.0,
+        "purple": 0.0
+      },
+      "total_g": 160.19,
+      "colour_changes": 0,
+      "supports": "0"
+    },
+    "02-trays-4colour": {
+      "3mf": "plates/plate02-trays-4colour.3mf",
+      "gcode": "gcode/plate02-trays-4colour.gcode",
+      "objects_filaments": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "estimated_time": "2h 13m 38s",
+      "layers": 100,
+      "filament_g": {
+        "black": 56.59,
+        "white": 3.2,
+        "orange": 0.92,
+        "purple": 0.83
+      },
+      "total_g": 61.55,
+      "colour_changes": 9,
+      "supports": "0"
+    },
+    "03-board-plates-4colour": {
+      "3mf": "plates/plate03-board-plates-4colour.3mf",
+      "gcode": "gcode/plate03-board-plates-4colour.gcode",
+      "objects_filaments": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "estimated_time": "2h 41m 51s",
+      "layers": 77,
+      "filament_g": {
+        "black": 91.43,
+        "white": 4.23,
+        "orange": 0.96,
+        "purple": 0.87
+      },
+      "total_g": 97.49,
+      "colour_changes": 9,
+      "supports": "0"
+    }
+  }
+}
