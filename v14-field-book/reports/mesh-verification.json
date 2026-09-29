@@ -1,15 +1,15 @@
 {
  "stl/full/bases-hinged-print-in-place.stl": {
-  "triangles": 18392,
-  "volume_mm3": 88392.78
+  "triangles": 18032,
+  "volume_mm3": 88496.67
  },
  "stl/full/board-plate-a.black.stl": {
-  "triangles": 18174,
-  "volume_mm3": 18610.98
+  "triangles": 23924,
+  "volume_mm3": 19013.32
  },
  "stl/full/board-plate-a.orange.stl": {
-  "triangles": 10806,
-  "volume_mm3": 135.26
+  "triangles": 16228,
+  "volume_mm3": 166.29
  },
  "stl/full/board-plate-a.purple.stl": {
   "triangles": 1748,
@@ -20,52 +20,60 @@
   "volume_mm3": 568.73
  },
  "stl/full/board-plate-b.black.stl": {
-  "triangles": 18158,
-  "volume_mm3": 18473.11
+  "triangles": 23914,
+  "volume_mm3": 18862.71
  },
  "stl/full/board-plate-b.orange.stl": {
   "triangles": 1748,
   "volume_mm3": 8.99
  },
  "stl/full/board-plate-b.purple.stl": {
-  "triangles": 10806,
-  "volume_mm3": 135.26
+  "triangles": 16228,
+  "volume_mm3": 166.29
  },
  "stl/full/board-plate-b.white.stl": {
   "triangles": 5300,
   "volume_mm3": 568.73
  },
  "stl/full/tray-a.black.stl": {
-  "triangles": 2224,
-  "volume_mm3": 17006.92
+  "triangles": 17788,
+  "volume_mm3": 16651.6
  },
  "stl/full/tray-a.orange.stl": {
-  "triangles": 1914,
-  "volume_mm3": 29.02
+  "triangles": 16384,
+  "volume_mm3": 331.24
+ },
+ "stl/full/tray-a.white.stl": {
+  "triangles": 924,
+  "volume_mm3": 53.1
  },
  "stl/full/tray-b.black.stl": {
-  "triangles": 2224,
-  "volume_mm3": 17006.92
+  "triangles": 17788,
+  "volume_mm3": 16651.6
  },
  "stl/full/tray-b.purple.stl": {
-  "triangles": 1914,
-  "volume_mm3": 29.02
+  "triangles": 16384,
+  "volume_mm3": 331.24
+ },
+ "stl/full/tray-b.white.stl": {
+  "triangles": 924,
+  "volume_mm3": 53.1
  },
  "stl/trials/trial-buckle-socket-base.stl": {
   "triangles": 2646,
   "volume_mm3": 7612.41
  },
  "stl/trials/trial-buckle-socket-plate.stl": {
-  "triangles": 1020,
-  "volume_mm3": 796.6
+  "triangles": 1630,
+  "volume_mm3": 809.06
  },
  "stl/trials/trial-buckle-tab-plate.stl": {
-  "triangles": 954,
-  "volume_mm3": 762.31
+  "triangles": 1570,
+  "volume_mm3": 826.09
  },
  "stl/trials/trial-hinge-pair.stl": {
-  "triangles": 4292,
-  "volume_mm3": 2392.93
+  "triangles": 4116,
+  "volume_mm3": 2445.99
  },
  "stl/trials/trial-latch-base.stl": {
   "triangles": 2906,

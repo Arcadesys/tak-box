@@ -44,7 +44,9 @@ PLATE_Z=DR_TOP+.4                   # 21.2
 PLATE=2.0
 FACE=PLATE_Z+PLATE                  # 23.2
 LINE_RAISE=.4                       # grid stands proud of the face
-AXZ=FACE+LINE_RAISE                 # fold axis at the top of the grid lines
+LIP=1.0                             # outer lip above the face; protects painted surfaces
+LIP_W=1.6
+AXZ=FACE+LIP                        # fold axis at the top of the lips, which meet when closed
 
 # ---- leaf A walls and tray
 LEAF_X1=SEAM-HG
@@ -163,6 +165,10 @@ def base(side):
         p=p.cut(cyly(RELIEF,y0-.4,y1+.4,SEAM,AXZ))
     for y0,y1 in own:
         p=p.fuse(cyly(KR,y0,y1,SEAM,AXZ))
+        # Root the knuckle down into the base. The block stays on this leaf's
+        # side below the axis, a quadrant the other leaf never sweeps through.
+        xs=(SEAM-RELIEF-.3,LEAF_X1) if side=='A' else (SEAM+HG,SEAM+RELIEF+.3)
+        p=p.fuse(box(*xs,y0,y1,PLATE_Z-.2,AXZ))
     if side=='B':
         p=p.fuse(_pin(KNUCKLE_B[0][1],1)).fuse(_pin(KNUCKLE_B[1][0],-1))
     else:
@@ -191,6 +197,17 @@ def _plate_body(top=FACE):
         p=p.cut(box(SEAM-RELIEF-.3,SEAM,y0,y1,PLATE_Z-.1,top+.1))
     return p.clean()
 
+def _lip():
+    """Raised rim on leaf A's fore, front and back edges (not across the fold)."""
+    outer=box(0,LEAF_X1,0,WY,FACE-.01,FACE+LIP)
+    outer=cq.Workplane(obj=outer).edges('|Z and <X').fillet(CORNER_R).val()
+    inner=box(LIP_W,LEAF_X1+.1,LIP_W,WY-LIP_W,FACE-.1,FACE+LIP+.1)
+    inner=cq.Workplane(obj=inner).edges('|Z and <X').fillet(CORNER_R-LIP_W).val()
+    lip=outer.cut(inner)
+    for y0,y1 in ((-.1,FY0+.3),(WY-FY0-.3,WY+.1)):
+        lip=lip.cut(box(SEAM-RELIEF-.3,SEAM,y0,y1,FACE-.2,FACE+LIP+.1))
+    return lip.clean()
+
 # ============================================================ decoration
 STARS={'A':[(13.5,15.2),(27.1,40.3),(38.6,54.8),(49.9,31.4),(15.8,64.7),(29.3,109.9),
             (45.2,121.8),(62.8,99.3),(40.8,77.6),(21.9,124.9)],
@@ -201,12 +218,16 @@ GALAXIES={'A':[(18.5,88.5,'purple',.6),(61.5,24.0,'orange',2.2)],
 LEAF_COLOUR={'A':'orange','B':'purple'}
 
 def _vines_a(z0,z1):
-    """Border vines on leaf A in the front, back and fore borders."""
-    lines=[]
-    lines+=dc.vine(8.0,60.0,4.9,3.3,lambda u,v:(u,v))                       # front
-    lines+=dc.vine(11.0,60.0,136.2,4.0,lambda u,v:(u,v),phase=math.pi)     # back
-    lines+=dc.vine(15.0,126.0,4.3,2.1,lambda u,v:(v,u),curl_every=18.0)    # fore
-    return dc.union([dc.stroke(l,z0,z1) for l in lines])
+    """Leafy border vines on leaf A in the front, back and fore borders."""
+    parts=[]
+    for (u0,u1,v0,v1,f,seed) in ((8.0,60.0,2.3,8.2,lambda u,v:(u,v),0.0),        # front
+                                 (11.0,60.0,132.2,139.7,lambda u,v:(u,v),1.95),   # back
+                                 (15.0,126.0,2.3,6.85,lambda u,v:(v,u),3.1)):    # fore
+        vine,_=dc.cosmic_vine(u0,u1,v0,v1,f,z0,z1,stem_w=1.0,seed=seed,moons=False,leaf_len=4.0,amp_frac=.2)
+        (xa,ya),(xb,yb)=f(u0-2,v0),f(u1+2,v1)
+        clip=box(min(xa,xb),max(xa,xb),min(ya,yb),max(ya,yb),z0-.1,z1+.1)
+        parts.append(vine.intersect(clip))
+    return dc.union(parts)
 
 @lru_cache(None)
 def decor(side,colour):
@@ -229,7 +250,8 @@ def stars(side):
 
 @lru_cache(None)
 def plate(side):
-    p=_plate_body() if side=='A' else mirror_b(_plate_body())
+    body=_plate_body().fuse(_lip())
+    p=body if side=='A' else mirror_b(body)
     p=p.cut(_lines(LINE_CLR) if side=='A' else mirror_b(_lines(LINE_CLR)))
     for c in ('orange','purple'):p=p.cut(decor(side,c))
     p=p.cut(stars(side))
@@ -237,8 +259,9 @@ def plate(side):
 
 def _plate_finish(p,side):
     """Thumb groove, and the buckle tab (A) or slot (B), in the open frame."""
-    # Thumb groove: the fore edges of the two plates form a V when closed.
-    groove=(cq.Workplane('XZ').polyline([(-.1,FACE+.1),(THUMB,FACE+.1),(-.1,FACE-THUMB)])
+    # Thumb groove: the fore edges of the two lips form a V when closed.
+    top=FACE+LIP
+    groove=(cq.Workplane('XZ').polyline([(-.1,top+.1),(THUMB,top+.1),(-.1,top-THUMB)])
             .close().extrude(-(WY+.2)).translate((0,-.1,0)).val())
     if side=='A':
         return p.cut(groove).fuse(tab()).clean()
@@ -351,25 +374,46 @@ def tray(side,pull=0.0,shift=0.0,released=False):
     t=(tray_released() if released else tray_a()).translate((shift,-pull,0))
     return t if side=='A' else mirror_b(t)
 
-TRAY_VINE_Z=(8.2,2.1)       # centre and half-height of the vine band on the tray front
+TRAY_FRONT_Z=(6.0,11.6)     # vine band on the tray front (below the finger notch)
+
+@lru_cache(None)
+def _tray_art_a():
+    """Cosmic vine art for tray A: (accent solid, white sparkle solid).
+
+    The floor carries the big piece: a leafy vine with tendrils and crescent
+    moons in the player colour and white sparkles in the gaps. Being horizontal,
+    it only occupies the floor's top three layers. The front carries a smaller
+    vine in the accent colour only, to keep filament swaps down.
+    """
+    x0,x1=DR_X
+    fz=DR_Z0+DR_FLOOR
+    z0,z1=fz-dc.DEPTH,fz
+    fx0,fx1=x0+DR_WALL+1.2,x1-DR_WALL-1.2
+    fy0,fy1=DR_FRONT+1.2,DR_Y1-DR_WALL-1.2
+    to=lambda u,v:(v,u)
+    floor,keep=dc.cosmic_vine(fy0+2,fy1-2,fx0,fx1,to,z0,z1,stem_w=1.4,seed=.9,leaf_len=7.5)
+    floor=floor.intersect(box(fx0,fx1,fy0,fy1,z0-.1,z1+.1))
+    white=dc.sparkles_in_gaps(fy0,fy1,fx0,fx1,to,keep,z0,z1,R=2.1,clear=1.3,every=14.0,seed=3)
+    zc0,zc1=TRAY_FRONT_Z
+    front,_=dc.cosmic_vine(x0+5.0,x1-5.0,zc0,zc1,lambda u,v:(u,v),0,dc.DEPTH,stem_w=1.1,seed=2.3,moons=False,leaf_len=4.6,amp_frac=.22)
+    front=front.intersect(box(x0+2.5,x1-2.5,zc0,zc1,-.1,dc.DEPTH+.1))
+    front=front.rotate((0,0,0),(1,0,0),90).translate((0,dc.DEPTH,0))
+    return floor.fuse(front).clean(),white
 
 @lru_cache(None)
 def _tray_swirl_a():
-    """A low vine across tray A's front (y 0..DEPTH), matching the board's side vines.
-
-    Kept to a ~4 mm band so a multi-colour print needs few filament swaps.
-    """
-    x0,x1=DR_X
-    zc,half=TRAY_VINE_Z
-    lines=dc.vine(x0+6.0,x1-6.0,zc,half,lambda u,v:(u,v),curl_every=18.0)
-    flat=dc.union([dc.stroke(l,0,dc.DEPTH) for l in lines])
-    # Drawn in XY as (x, z); stand it up on the front face.
-    return flat.rotate((0,0,0),(1,0,0),90).translate((0,dc.DEPTH,0)).clean()
+    return _tray_art_a()[0]
 
 @lru_cache(None)
 def tray_body(side):
-    t=tray_a().cut(_tray_swirl_a()).clean()
+    acc,white=_tray_art_a()
+    t=tray_a().cut(acc).cut(white).clean()
     return t if side=='A' else mirror_b(t)
+
+@lru_cache(None)
+def tray_sparkles(side):
+    w=_tray_art_a()[1]
+    return w if side=='A' else mirror_b(w)
 
 @lru_cache(None)
 def tray_swirl(side):

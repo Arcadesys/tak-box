@@ -56,7 +56,7 @@
     "160": 0.0,
     "165": 0.0,
     "170": 0.0,
-    "172": 0.0,
+    "172": 0.0001,
     "174": 0.0,
     "176": 0.0,
     "178": 0.0,
@@ -75,7 +75,7 @@
     "174": 0.0,
     "176": 0.0,
     "178": 0.0,
-    "179": 1.985,
+    "179": 1.946,
     "180": 0.0
    }
   }
@@ -84,16 +84,17 @@
   "pass": true,
   "detail": {
    "-1": 0.0,
-   "-2": 284.507,
-   "-4": 1408.488
+   "-2": 318.14,
+   "-4": 1513.288
   }
  },
  "closed-board-inside": {
   "pass": true,
   "detail": {
-   "closed_height_mm": 47.2,
-   "raised_grids_meet_at_z": 23.599999999999998,
-   "face_gap_mm": 0.8,
+   "closed_height_mm": 48.4,
+   "lips_meet_at_z": 24.2,
+   "face_gap_mm": 2.0,
+   "grid_gap_mm": 1.2,
    "board_faces_exposed": false
   }
  },
@@ -245,16 +246,15 @@
    }
   }
  },
- "tray-swirl-clear": {
+ "tray-art-clear": {
   "pass": true,
   "detail": {
-   "bounds_xz": [
-    8.9,
-    59.7,
-    6.8,
-    9.6
-   ],
-   "depth": 0.6
+   "accent_vs_white": 0.0,
+   "outside_floor_or_front_zone": 0.0,
+   "front_vs_finger_notch": 0.0,
+   "vs_latch_arm": 0.0,
+   "accent_mm3": 331.2,
+   "sparkles": 33
   }
  },
  "sizes": {
@@ -263,12 +263,12 @@
    "open_xyz": [
     136.0,
     142.0,
-    34.0
+    35.2
    ],
    "closed_xyz": [
     71.0,
     142.0,
-    47.2
+    48.4
    ],
    "pitch": 24.0,
    "field": 120.0
@@ -280,12 +280,12 @@
    "hinged-bases": [
     136.0,
     142.0,
-    26.6
+    27.2
    ],
    "plate": [
     67.8,
     142.0,
-    12.8
+    14.0
    ],
    "tray": [
     63.7,

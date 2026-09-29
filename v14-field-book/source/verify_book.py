@@ -46,7 +46,7 @@ record('open-stop-engages-by-2deg',over[-2]>TOL,over)
 closed=A+c.leaf_b(180)
 top=max(p.BoundingBox().zmax for p in closed)
 record('closed-board-inside',abs(top-2*c.AXZ)<3.1,
-       {'closed_height_mm':round(top,2),'raised_grids_meet_at_z':c.AXZ,'face_gap_mm':round(2*c.LINE_RAISE,2),
+       {'closed_height_mm':round(top,2),'lips_meet_at_z':c.AXZ,'face_gap_mm':round(2*c.LIP,2),'grid_gap_mm':round(2*(c.LIP-c.LINE_RAISE),2),
         'board_faces_exposed':False})
 held=ov(c.tab(),c.fold(ring,180).translate((0,0,.5)))
 record('closed-buckle-holds',held>TOL,{'catch_vs_tab_overlap_if_halves_part_0.5mm':round(held,3),
@@ -108,7 +108,7 @@ dec={}
 for s in 'AB':
     o,u,w=c.decor(s,'orange'),c.decor(s,'purple'),c.stars(s)
     grid=c._lines(.35) if s=='A' else c.mirror_b(c._lines(.35))
-    keep=c.box(1.6,c.LEAF_X1-.4,1.2,c.WY-1.2,0,40) if s=='A' else c.mirror_b(c.box(1.6,c.LEAF_X1-.4,1.2,c.WY-1.2,0,40))
+    keep=c.box(c.LIP_W+.35,c.LEAF_X1-.4,c.LIP_W+.35,c.WY-c.LIP_W-.35,0,40) if s=='A' else c.mirror_b(c.box(c.LIP_W+.35,c.LEAF_X1-.4,c.LIP_W+.35,c.WY-c.LIP_W-.35,0,40))
     notch=[c.box(c.SEAM-c.RELIEF-.8,c.SEAM+c.RELIEF+.8,-1,c.FY0+.8,0,40),c.box(c.SEAM-c.RELIEF-.8,c.SEAM+c.RELIEF+.8,c.WY-c.FY0-.8,c.WY+1,0,40)]
     buckle=c.box(c.TAB_X[0]-1,c.TAB_X[1]+c.SLOT_ARC+1,c.TAB_Y[0]-1,c.TAB_Y[1]+1,0,40)
     buckle=c.fold(buckle,180) if s=='A' else buckle
@@ -121,9 +121,16 @@ for s in 'AB':
 record('board-decoration-clear',all(v_<TOL for r in dec.values() for v_ in r.values()),dec)
 x0,x1=c.DR_X;cx=(x0+x1)/2
 notch=cq.Solid.makeCylinder(7.8,3,cq.Vector(cx,-.5,c.DR_TOP+2.0),cq.Vector(0,1,0))
-ts=c.tray_swirl('A');b=ts.BoundingBox()
-record('tray-swirl-clear',ov(ts,notch)<TOL and b.xmin>x0+2 and b.xmax<x1-2 and b.zmin>c.DR_Z0+1 and b.ymax<=c.DR_FRONT-1,
-       {'bounds_xz':[round(b.xmin,1),round(b.xmax,1),round(b.zmin,1),round(b.zmax,1)],'depth':round(b.ymax,2)})
+acc,wht=c.tray_swirl('A'),c.tray_sparkles('A')
+fz=c.DR_Z0+c.DR_FLOOR
+floor_zone=c.box(x0+c.DR_WALL+1.0,x1-c.DR_WALL-1.0,c.DR_FRONT+1.0,c.DR_Y1-c.DR_WALL-1.0,fz-1,fz+.01)
+front_zone=c.box(x0+2.0,x1-2.0,-.01,c.DR_FRONT-1.0,c.DR_Z0+1.0,c.DR_TOP-1.0)
+stray=sum(x.Volume() for x in (acc,wht))-sum(ov(x,z) for x in (acc,wht) for z in (floor_zone,front_zone))
+arm=c._arm_region()
+rt={'accent_vs_white':round(ov(acc,wht),4),'outside_floor_or_front_zone':round(stray,4),
+    'front_vs_finger_notch':round(ov(acc,notch),4),'vs_latch_arm':round(max(ov(acc,arm),ov(wht,arm)),4),
+    'accent_mm3':round(acc.Volume(),1),'sparkles':len(wht.Solids())}
+record('tray-art-clear',all(rt[k]<TOL for k in ('accent_vs_white','outside_floor_or_front_zone','front_vs_finger_notch','vs_latch_arm')),rt)
 bo=cq.Compound.makeCompound(A+B).BoundingBox()
 bc=cq.Compound.makeCompound(closed).BoundingBox()
 record('sizes',True,{'open_xyz':[round(bo.xlen,1),round(bo.ylen,1),round(bo.zlen,1)],

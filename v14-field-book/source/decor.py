@@ -98,3 +98,107 @@ def galaxy(cx,cy,r=3.4,rot=0.0):
             pts.append((cx+rr*math.cos(a),cy+rr*math.sin(a)))
         arms.append(pts)
     return arms,(cx,cy,1.05)   # overlaps the arm roots; a tangent join makes knife edges
+
+
+# ------------------------------------------------------- cosmic witchy vine
+def poly(pts,z0,z1):
+    return cq.Workplane('XY',origin=(0,0,z0)).polyline(pts).close().extrude(z1-z0).val()
+
+def leaf(x,y,ang,L=6.0,Wd=2.4,n=16):
+    """Pointed almond leaf with its base at (x,y), pointing along ang."""
+    ca,sa=math.cos(ang),math.sin(ang)
+    side=[];other=[]
+    for k in range(n+1):
+        t=k/n;s=t*L;w=Wd/2*math.sin(math.pi*t)**.8
+        side.append((x+s*ca-w*sa,y+s*sa+w*ca))
+        other.append((x+s*ca+w*sa,y+s*sa-w*ca))
+    return side+other[::-1][1:-1]
+
+def sparkle(x,y,R=2.0,rot=0.0):
+    """Four-point star."""
+    pts=[]
+    for k in range(8):
+        r=R if k%2==0 else R*.3
+        a=rot+k*math.pi/4
+        pts.append((x+r*math.cos(a),y+r*math.sin(a)))
+    return pts
+
+def crescent(x,y,r,ang,z0,z1):
+    """Crescent moon opening toward ang."""
+    outer=cq.Solid.makeCylinder(r,z1-z0,cq.Vector(x,y,z0),cq.Vector(0,0,1))
+    cut=cq.Solid.makeCylinder(r*.82,z1-z0+.2,cq.Vector(x+.48*r*math.cos(ang),y+.48*r*math.sin(ang),z0-.1),cq.Vector(0,0,1))
+    return outer.cut(cut).clean()
+
+def cosmic_vine(u0,u1,v0,v1,to_xy,z0,z1,stem_w=1.2,seed=0.0,moons=True,leaf_len=6.0,amp_frac=.42):
+    """A leafy vine meandering along u inside the band v0..v1.
+
+    Returns (accent_solid, sparkle_polygons_xy). Sparkles are placed later,
+    in the gaps, in a second colour.
+    """
+    vc=(v0+v1)/2;half=(v1-v0)/2
+    amp=half*amp_frac
+    def stem_v(u):
+        p=(u-u0)
+        return vc+amp*(math.sin(p/9.0+seed)*.75+math.sin(p/4.1+2*seed)*.25)
+    n=int((u1-u0)/.35)
+    stem=[(u0+(u1-u0)*k/n,) for k in range(n+1)]
+    stem=[(u,stem_v(u)) for (u,) in stem]
+    shapes=[stroke([to_xy(u,v) for u,v in stem],z0,z1,stem_w)]
+    keep=[to_xy(u,v) for u,v in stem]           # occupied points for sparkle spacing
+    # Leaves every ~6.5 mm, alternating sides, swept back along the stem.
+    u=u0+3.0;side=1;k=0
+    while u<u1-3:
+        v=stem_v(u);dv=(stem_v(u+.3)-stem_v(u-.3))/.6
+        base=math.atan2(dv,1.0)
+        ang=base+side*math.radians(48)
+        # Leaves stay inside the band: size them to the room left beside the stem.
+        L=min(leaf_len,(half-abs(v-vc)-stem_w/2-.3)/math.sin(math.radians(60)))
+        # Every third leaf trades for a curling tendril in wide bands.
+        if not (k%3==2 and half>5) and L>=2.0:
+            pts=leaf(u,v,ang,L,max(L*.4,1.0))
+            xy=[to_xy(a,b) for a,b in pts]
+            shapes.append(poly(xy,z0,z1));keep+=xy
+        elif L<2.0:
+            # Too narrow for leaves: a berry budding off the stem instead.
+            r=.7;d=stem_w/2+r-.25
+            bv=v+side*d
+            if v0+r+.1<bv<v1-r-.1:
+                x,y=to_xy(u,bv)
+                shapes.append(dot(x,y,r,z0,z1));keep.append((x,y))
+        if k%3==2 and half>5:
+            r=min(3.2,half*.45)
+            cx,cy=u+.6,v+side*(r+1.2)
+            sp=spiral(cx,cy,r,.7,1.35,-side*math.pi/2,hand=side)
+            spxy=[to_xy(a,b) for a,b in sp]
+            shapes.append(stroke(spxy,z0,z1,.9));keep+=spxy
+        u+=6.5;side=-side;k+=1
+    if moons and half>6:
+        for frac,sd in ((.3,1),(.72,-1)):
+            mu=u0+(u1-u0)*frac
+            # Midway between the stem and the band edge, never against the wall.
+            edge=v1-3.4 if sd>0 else v0+3.4
+            mv=(stem_v(mu)+edge)/2
+            mv=min(max(mv,v0+3.4),v1-3.4)
+            x,y=to_xy(mu,mv)
+            if any(math.hypot(x-a,y-b)<3.6 for a,b in keep):continue
+            shapes.append(crescent(x,y,2.6,math.pi*(.25 if sd>0 else 1.25),z0,z1))
+            keep+=[(x+2.6*math.cos(a),y+2.6*math.sin(a)) for a in [i*math.pi/6 for i in range(12)]]+[(x,y)]
+    return union(shapes),keep
+
+def sparkles_in_gaps(u0,u1,v0,v1,to_xy,keep,z0,z1,R=1.9,clear=1.2,every=9.0,seed=1):
+    """Place sparkles on a jittered lattice wherever they clear the vine."""
+    import random
+    rnd=random.Random(seed)
+    out=[]
+    u=u0+R+1
+    while u<u1-R-1:
+        v=v0+R+1+rnd.random()*2
+        while v<v1-R-1:
+            x,y=to_xy(u+rnd.uniform(-1.5,1.5),v)
+            if all(math.hypot(x-a,y-b)>R+clear for a,b in keep):
+                rr=R*rnd.uniform(.7,1.0)
+                out.append(poly(sparkle(x,y,rr,rnd.uniform(0,.4)),z0,z1))
+                keep=keep+[(x,y)]
+            v+=every*rnd.uniform(.8,1.2)
+        u+=every*.8
+    return union(out) if out else None

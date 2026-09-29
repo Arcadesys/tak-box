@@ -13,8 +13,8 @@ A tough little brick for a bag. The board folds in half with its face inside, an
 
 | | mm |
 |---|---|
-| Closed | 71 × 142 × 47 |
-| Open | 136 × 142 × 24, plus the closure tab |
+| Closed | 71 × 142 × 48 |
+| Open | 136 × 142 × 25, plus the closure tab |
 | Board | 5 × 5 at 24 mm pitch (120 mm field), for 19.5 mm flats |
 
 ## What changed from v13
@@ -40,15 +40,26 @@ A tough little brick for a bag. The board folds in half with its face inside, an
 - **Pieces:** each tray holds 21 flats as 11 two-high stacks plus the capstone, with 0.9 mm under the board.
 - **Hinge:** print-in-place knuckles at both ends of the spine.
 
-## Colours
+## Colours and art
 
 - **Board:** black, with a **raised white grid** (0.6 mm inlaid + 0.4 mm proud).
-- **Cells:** a sparse field of white star dots and four small two-arm **galaxies**, two orange and two purple.
-- **Borders:** a flush **magic-swirl vine**: orange on leaf A (cat), purple on leaf B (witch).
-- **Trays:** each front carries a matching low vine, orange on tray A and purple on tray B.
+- **Cells:** kept subtle. A sparse field of white star dots and four small two-arm galaxies, two orange and two purple.
+- **Borders:** a flush leafy vine, orange on leaf A (cat) and purple on leaf B (witch). The narrow side borders carry berries instead of leaves.
+- **Tray floors (the big piece):** a bold meandering vine with pointed leaves, curling tendrils and a crescent moon in the player colour, with white four-point sparkles in the gaps. Tray A is orange, tray B purple.
+- **Tray fronts:** a smaller matching vine.
 - **Case:** black.
 
-All decorations are flush 0.6 mm inlays with 0.8 mm strokes, so stones slide over them. They stay at least 0.35 mm clear of the grid, fold seam, hinge notches, buckle and thumb groove. `verify_book.py` checks this.
+All art is flush 0.6 mm inlay with strokes of at least 0.8 mm, so stones slide over it. It stays clear of the grid, fold seam, hinge notches, buckle, lip, thumb groove, finger notch and tray latch. `verify_book.py` checks this.
+
+![Tray floors](previews/06-tray-art.png)
+
+## Protective lip (for paint)
+
+Each board half has a **1.0 mm raised lip** on its three outer edges, 1.6 mm wide and not across the fold. The hinge axis sits at the top of the lip, so when the book closes the lips meet and nothing else does:
+- **Painted faces:** 2.0 mm apart.
+- **Raised grids:** 1.2 mm apart.
+
+Keep acrylic paint (and any varnish) below the lip top. The thumb groove is cut into the lip edge.
 
 ## Print plates ([plates](plates))
 
@@ -65,12 +76,12 @@ Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports*
 
 | Plate | Contents | Colours | Time | PLA | Colour changes |
 |---|---|---|---|---|---|
-| [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle, tray latch | black | 54 min | 19 g | 0 |
+| [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle, tray latch | black | 54 min | 20 g | 0 |
 | [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 2 h 43 min | 89 g | 0 |
-| [02](plates/plate02-trays-4colour.3mf) | Trays A and B with front vines | black, orange, purple | 2 h 11 min | 55 g | 28 |
-| [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with grid, stars, galaxies and vines | all four | 1 h 45 min | 52 g | 12 |
+| [02](plates/plate02-trays-4colour.3mf) | Trays A and B with floor and front art | all four | 3 h 12 min | 67 g | 51 |
+| [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with lip, grid, stars, galaxies and vines | all four | 1 h 48 min | 53 g | 12 |
 
-The full set (01–03) takes about 6 h 40 min and 196 g, including purge. Print **plate 00 first**. The times are slicer estimates.
+The full set (01–03) takes about 7 h 45 min and 210 g, including purge. Print **plate 00 first**. The times are slicer estimates.
 
 **Assembly**
 1. Free the print-in-place hinge on the bases.

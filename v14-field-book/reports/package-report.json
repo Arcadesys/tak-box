@@ -29,15 +29,15 @@
           1
         ]
       ],
-      "estimated_time": "53m 40s",
-      "layers": 133,
+      "estimated_time": "54m 25s",
+      "layers": 136,
       "filament_g": {
-        "black": 19.46,
+        "black": 19.61,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 19.46,
+      "total_g": 19.61,
       "colour_changes": 0,
       "supports": "0"
     },
@@ -49,15 +49,15 @@
           1
         ]
       ],
-      "estimated_time": "2h 43m 13s",
-      "layers": 133,
+      "estimated_time": "2h 43m 28s",
+      "layers": 136,
       "filament_g": {
-        "black": 88.89,
+        "black": 89.01,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 88.89,
+      "total_g": 89.01,
       "colour_changes": 0,
       "supports": "0"
     },
@@ -67,23 +67,25 @@
       "objects_filaments": [
         [
           1,
+          2,
           3
         ],
         [
           1,
+          2,
           4
         ]
       ],
-      "estimated_time": "2h 11m 0s",
+      "estimated_time": "3h 12m 19s",
       "layers": 93,
       "filament_g": {
-        "black": 45.33,
-        "white": 0.0,
-        "orange": 6.03,
-        "purple": 3.87
+        "black": 47.26,
+        "white": 3.18,
+        "orange": 9.67,
+        "purple": 7.17
       },
-      "total_g": 55.24,
-      "colour_changes": 28,
+      "total_g": 67.29,
+      "colour_changes": 51,
       "supports": "0"
     },
     "03-board-plates-4colour": {
@@ -103,15 +105,15 @@
           4
         ]
       ],
-      "estimated_time": "1h 45m 11s",
-      "layers": 64,
+      "estimated_time": "1h 48m 28s",
+      "layers": 70,
       "filament_g": {
-        "black": 44.65,
+        "black": 45.55,
         "white": 5.57,
-        "orange": 1.07,
-        "purple": 1.17
+        "orange": 1.1,
+        "purple": 1.2
       },
-      "total_g": 52.46,
+      "total_g": 53.43,
       "colour_changes": 12,
       "supports": "0"
     }
