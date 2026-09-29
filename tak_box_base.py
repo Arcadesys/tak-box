@@ -179,7 +179,8 @@ def board_section(index,d=D):
     y0=(0,2*d.pitch,3*d.pitch)[index]
     depth=(2*d.pitch,d.pitch,2*d.pitch)[index]
     panel=box(d.board_size,depth,d.board_skin,0,y0,0)
-    # The white structure stays flat; black grid/border parts attach above it.
+    # The white structure stays flat; black grid/border parts are glued on above it
+    # permanently. Nothing here is designed to come off.
     # This preserves the support-free face-down print orientation.
     # Structural cores on the backs of the wings fill most of the closed
     # volume. Each has a pitched, close-fitting piece passage. The core

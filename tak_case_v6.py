@@ -144,7 +144,7 @@ def center_row(d=D):
     reverted: the space under the center row is reserved for the folded
     wings' own thickness, and the rib collided with them from 80-90 deg in
     the main fold sweep. A center stiffener would need to sit above the
-    slab (under the removable black grid, z 4-4.8mm) or is out of scope."""
+    slab (under the permanently glued black grid, z 4-4.8mm) or is out of scope."""
     return base.shell(1, d)
 
 

@@ -40,7 +40,7 @@ The white playing face has a black 5 × 5 grid and the existing cat, witch-hat, 
 ## Print order and assembly (v5, superseded: see `print/` for the current board)
 
 1. Open `print/archive/1-v5-open-wells/tak-open-wells-v5-cc2-00-fit-coupon.3mf` in ElegooSlicer. It contains a real 45 mm wide section of the well end, playing lid, and lid hinge pin. Print this **first** in white PETG. Fit the actual keystone, seat a Ø4 × 2 mm magnet in each half, and check the hinge and magnetic lid closure by hand.
-2. If that fit works, print the three white structural projects `01`, `02`, `03`, then the black raised-grid project `04`. Each file is a separate plate. The black overlays are separate printed parts that attach to the white playing face after the hinges move freely.
+2. If that fit works, print the three white structural projects `01`, `02`, `03`, then the black raised-grid project `04`. Each file is a separate plate. The black overlays are separate printed parts that are glued permanently to the white playing face (not removable) once a dry fit confirms the hinges move freely and everything clears; see `print/README.md` step 7.
 3. Install two main folding pins and two lid pins. Install **eight opposite-polarity magnet pairs** (16 Ø4 × 2 mm magnets total): four pairs retain the folded case and two pairs hold each playing lid down. Test polarity before bonding.
 4. Load 21 flats and one keystone in each side, close both lids, fold the case, and test normal carrying over a soft surface before trusting it with the full set.
 
@@ -124,7 +124,7 @@ Cut four pins of about 195 mm from filament. **Bores are confirmed by the printe
 - **Finger scoop:** a Ø4 mm rounded bite into the well wall next to each lid's thumb notch, so a fingertip can curl under the stone stack once the lid is off.
 - **Stone stop:** a low 0.8 × 1.5 mm ridge on the well floor next to the main-hinge wall, corralling the stones away from that edge. Sized to fit inside the 1 mm margin before the first row of flats, so it can't touch a stone at rest.
 
-**Reverted:** a center-row stiffening rib (the 205 mm center slab is only supported at its two extreme end feet, and visibly could sag). Any rib fused below the slab collides with the folded wings from 80-90 deg in the main fold sweep — that space is reserved for the wings' own thickness when the case closes, not just at the feet. A real fix would have to stiffen from the topside, under the removable black grid, which is out of scope for this pass.
+**Reverted:** a center-row stiffening rib (the 205 mm center slab is only supported at its two extreme end feet, and visibly could sag). Any rib fused below the slab collides with the folded wings from 80-90 deg in the main fold sweep — that space is reserved for the wings' own thickness when the case closes, not just at the feet. A real fix would have to stiffen from the topside, under the black grid, which is out of scope for this pass. The grid is glued on permanently, so it also stiffens the slab a little as a bonded skin.
 
 Digital checks (`export_validate_v6.py`): valid single solids, the shell/lid clear each other and the lid's own open sweep (0-110 deg), the main fold sweep (0-90 deg) stays collision-free between all three sections and both lids, and all 42 flats plus both keystones stay clear of the new well features. All six pass. `tak-v6-sketch-access.step` is the exported check model. Rendering a preview PNG needs a GPU/display VTK doesn't have in a headless container; `render_v6.py` mirrors `render_cad.py` for use on a machine with one.
 

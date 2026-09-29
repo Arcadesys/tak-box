@@ -38,7 +38,7 @@ Each plate is 21 flat stones plus one capstone, solid infill, no supports.
 4. Fold both wings under: each center-row foot should drop flush into its corner notch. Sand the foot's curved edge if it rubs.
 5. Check magnet polarity, then glue the pairs in so each pair attracts across the fold or lid.
 6. Stick a bumper in each of the Ø8.6 mm pockets.
-7. Attach the black grid pieces to the play face once the hinges move freely.
+7. Glue the black grid pieces to the play face **permanently**. Dry-fit each piece first and check that the hinges move freely and the seams and lids clear the grid, because it cannot come off afterwards. Scuff the grid's underside and the white face with 220 grit, wipe with isopropyl alcohol, then bond the full face with a thin coat of two-part epoxy (or CA gel). Line it up against the board edges, press flat under weight until cured, and wipe off squeeze-out at once. Keep glue out of the hinge knuckles and the lid registration groove.
 8. Load 21 stones and a capstone per side, close the lids, fold, and test-carry over something soft.
 
 v7 has not been physically printed yet.
