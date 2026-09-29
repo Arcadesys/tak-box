@@ -29,15 +29,15 @@
           1
         ]
       ],
-      "estimated_time": "54m 25s",
+      "estimated_time": "53m 47s",
       "layers": 136,
       "filament_g": {
-        "black": 19.61,
+        "black": 19.63,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 19.61,
+      "total_g": 19.63,
       "colour_changes": 0,
       "supports": "0"
     },
@@ -76,16 +76,16 @@
           4
         ]
       ],
-      "estimated_time": "3h 12m 19s",
+      "estimated_time": "1h 44m 37s",
       "layers": 93,
       "filament_g": {
-        "black": 47.26,
-        "white": 3.18,
-        "orange": 9.67,
-        "purple": 7.17
+        "black": 41.28,
+        "white": 3.15,
+        "orange": 0.92,
+        "purple": 0.83
       },
-      "total_g": 67.29,
-      "colour_changes": 51,
+      "total_g": 46.18,
+      "colour_changes": 9,
       "supports": "0"
     },
     "03-board-plates-4colour": {
@@ -105,15 +105,15 @@
           4
         ]
       ],
-      "estimated_time": "1h 48m 28s",
+      "estimated_time": "1h 43m 27s",
       "layers": 70,
       "filament_g": {
-        "black": 45.55,
+        "black": 45.99,
         "white": 5.57,
-        "orange": 1.1,
-        "purple": 1.2
+        "orange": 0.93,
+        "purple": 1.02
       },
-      "total_g": 53.43,
+      "total_g": 53.51,
       "colour_changes": 12,
       "supports": "0"
     }

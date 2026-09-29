@@ -61,9 +61,9 @@ def scene(angle,pulls=(0,0),pieces=False):
 cx,cy=c.WX/2,c.WY/2
 render('01-closed.png','v14 closed','71 x 142 x 47 mm. No hardware. Press the side near the far corner to open.',
        scene(180),(cx-260,cy-330,260),(35,70,24),120)
-render('02-open-board.png','v14 open','Black board, raised white grid, star dots and small galaxies; orange and purple border vines.',
+render('02-open-board.png','v14 open','Black board, raised white grid, star dots and small orange and purple galaxies. Raised lip for paint.',
        scene(0),(cx+120,-300,340),(cx,cy,10),120)
-render('03-trays-out.png','v14 trays out','Press the side button, slide the tray out. Cosmic vines inside, player colour per tray.',
+render('03-trays-out.png','v14 trays out','Press the side button, slide the tray out.',
        scene(0,(95,95),True),(cx+150,-330,300),(cx,cy-45,10),140)
 render('04-half-open.png','v14 folding','A tab at the far corner pushes into a slot and clicks shut.',
        scene(110),(cx+60,-320,200),(cx,cy,40),125)
@@ -72,5 +72,5 @@ render('05-press-to-open.png','v14 press to open','Squeeze the panel between the
 _trays=[]
 for s_,acc in (('A',ORANGE),('B',PURPLE)):
     _trays+=[(c.tray_body(s_),TRAY),(c.tray_swirl(s_),acc),(c.tray_sparkles(s_),GRID)]
-render('06-tray-art.png','v14 tray floors','Cosmic vines, moons and sparkles inlaid in each tray floor. Orange for the cat, purple for the witch.',
-       _trays,(68,66,300),(68,66,0),78,up=(0,1,0))
+render('06-tray-art.png','v14 tray floors','A crescent moon in the player colour and white sparkles in each tray floor.',
+       _trays,(68,62,300),(68,62,0),84,up=(0,1,0))

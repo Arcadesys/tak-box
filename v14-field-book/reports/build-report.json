@@ -6,7 +6,7 @@
   "stl/board-plate-a": {
    "black": {
     "solids": 1,
-    "volume_mm3": 19013.341,
+    "volume_mm3": 19170.646,
     "print_bounds": [
      0.0,
      67.8,
@@ -37,13 +37,13 @@
     }
    },
    "orange": {
-    "solids": 4,
-    "volume_mm3": 166.295,
+    "solids": 1,
+    "volume_mm3": 8.989,
     "print_bounds": [
-     2.5298,
+     58.7437,
      64.2563,
-     3.1558,
-     138.6472,
+     20.7092,
+     27.2908,
      1.4,
      2.0
     ],
@@ -72,7 +72,7 @@
   "stl/board-plate-b": {
    "black": {
     "solids": 1,
-    "volume_mm3": 18862.732,
+    "volume_mm3": 19020.037,
     "print_bounds": [
      0.0,
      67.8,
@@ -119,13 +119,13 @@
     }
    },
    "purple": {
-    "solids": 4,
-    "volume_mm3": 166.295,
+    "solids": 1,
+    "volume_mm3": 8.989,
     "print_bounds": [
-     7.3,
-     65.2702,
-     3.1558,
-     138.6472,
+     45.0961,
+     51.5039,
+     41.4543,
+     47.5457,
      1.4,
      2.0
     ],
@@ -138,7 +138,7 @@
   "stl/tray-a": {
    "black": {
     "solids": 1,
-    "volume_mm3": 16651.543,
+    "volume_mm3": 16983.383,
     "print_bounds": [
      0.0,
      63.7,
@@ -153,15 +153,15 @@
     }
    },
    "orange": {
-    "solids": 6,
-    "volume_mm3": 331.242,
+    "solids": 1,
+    "volume_mm3": 15.264,
     "print_bounds": [
-     6.15,
-     59.25,
-     0.0,
-     128.0,
+     30.2,
+     38.5429,
+     81.8,
+     90.1429,
      0.4,
-     8.7089
+     1.0
     ],
     "stl_weld": {
      "reused_vertex_occurrences": 0,
@@ -169,13 +169,13 @@
     }
    },
    "white": {
-    "solids": 33,
-    "volume_mm3": 53.102,
+    "solids": 24,
+    "volume_mm3": 37.24,
     "print_bounds": [
-     5.7438,
-     58.8674,
-     3.4427,
-     120.1197,
+     5.671,
+     52.7372,
+     3.9207,
+     117.8946,
      0.4,
      1.0
     ],
@@ -188,7 +188,7 @@
   "stl/tray-b": {
    "black": {
     "solids": 1,
-    "volume_mm3": 16651.543,
+    "volume_mm3": 16983.383,
     "print_bounds": [
      0.0,
      63.7,
@@ -203,15 +203,15 @@
     }
    },
    "purple": {
-    "solids": 6,
-    "volume_mm3": 331.242,
+    "solids": 1,
+    "volume_mm3": 15.264,
     "print_bounds": [
-     4.45,
-     57.55,
-     0.0,
-     128.0,
+     25.1571,
+     33.5,
+     81.8,
+     90.1429,
      0.4,
-     8.7089
+     1.0
     ],
     "stl_weld": {
      "reused_vertex_occurrences": 0,
@@ -219,13 +219,13 @@
     }
    },
    "white": {
-    "solids": 33,
-    "volume_mm3": 53.102,
+    "solids": 24,
+    "volume_mm3": 37.24,
     "print_bounds": [
-     4.8326,
-     57.9562,
-     3.4427,
-     120.1197,
+     10.9628,
+     58.029,
+     3.9207,
+     117.8946,
      0.4,
      1.0
     ],
@@ -288,12 +288,12 @@
     21.2,
     35.2
    ],
-   "volume_mm3": 826.111,
+   "volume_mm3": 835.289,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
     16.0,
-    -0.0,
+    0.0,
     22.0,
     0.0,
     14.0
@@ -336,12 +336,12 @@
     21.2,
     23.3
    ],
-   "volume_mm3": 809.082,
+   "volume_mm3": 820.725,
    "print_orientation": "as modelled",
    "print_bounds": [
-    -0.0,
+    0.0,
     20.0,
-    -0.0,
+    0.0,
     22.0,
     0.0,
     2.1

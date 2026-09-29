@@ -215,33 +215,17 @@ STARS={'A':[(13.5,15.2),(27.1,40.3),(38.6,54.8),(49.9,31.4),(15.8,64.7),(29.3,10
             (110.6,112.4),(73.9,121.6),(119.6,54.1),(94.4,38.1)]}
 GALAXIES={'A':[(18.5,88.5,'purple',.6),(61.5,24.0,'orange',2.2)],
           'B':[(86.0,113.5,'orange',1.3),(116.5,44.5,'purple',3.9)]}
-LEAF_COLOUR={'A':'orange','B':'purple'}
-
-def _vines_a(z0,z1):
-    """Leafy border vines on leaf A in the front, back and fore borders."""
-    parts=[]
-    for (u0,u1,v0,v1,f,seed) in ((8.0,60.0,2.3,8.2,lambda u,v:(u,v),0.0),        # front
-                                 (11.0,60.0,132.2,139.7,lambda u,v:(u,v),1.95),   # back
-                                 (15.0,126.0,2.3,6.85,lambda u,v:(v,u),3.1)):    # fore
-        vine,_=dc.cosmic_vine(u0,u1,v0,v1,f,z0,z1,stem_w=1.0,seed=seed,moons=False,leaf_len=4.0,amp_frac=.2)
-        (xa,ya),(xb,yb)=f(u0-2,v0),f(u1+2,v1)
-        clip=box(min(xa,xb),max(xa,xb),min(ya,yb),max(ya,yb),z0-.1,z1+.1)
-        parts.append(vine.intersect(clip))
-    return dc.union(parts)
 
 @lru_cache(None)
 def decor(side,colour):
     """Flush inlay solid of one accent colour on one leaf (world/open frame)."""
     z0,z1=FACE-dc.DEPTH,FACE
     parts=[]
-    if colour==LEAF_COLOUR[side]:
-        v=_vines_a(z0,z1)
-        parts.append(v if side=='A' else mirror_b(v))
     for x,y,c,rot in GALAXIES[side]:
         if c!=colour:continue
         arms,(cx,cy,r)=dc.galaxy(x,y,rot=rot)
         parts+= [dc.stroke(a,z0,z1,.7) for a in arms]+[dc.dot(cx,cy,r,z0,z1)]
-    return dc.union(parts)
+    return dc.union(parts) if parts else None
 
 @lru_cache(None)
 def stars(side):
@@ -253,7 +237,8 @@ def plate(side):
     body=_plate_body().fuse(_lip())
     p=body if side=='A' else mirror_b(body)
     p=p.cut(_lines(LINE_CLR) if side=='A' else mirror_b(_lines(LINE_CLR)))
-    for c in ('orange','purple'):p=p.cut(decor(side,c))
+    for c in ('orange','purple'):
+        if decor(side,c) is not None:p=p.cut(decor(side,c))
     p=p.cut(stars(side))
     return _plate_finish(p,side)
 
@@ -374,31 +359,25 @@ def tray(side,pull=0.0,shift=0.0,released=False):
     t=(tray_released() if released else tray_a()).translate((shift,-pull,0))
     return t if side=='A' else mirror_b(t)
 
-TRAY_FRONT_Z=(6.0,11.6)     # vine band on the tray front (below the finger notch)
+TRAY_MOON=(36.0,86.0,4.2)   # crescent on tray A's floor: x, y, radius
 
 @lru_cache(None)
 def _tray_art_a():
-    """Cosmic vine art for tray A: (accent solid, white sparkle solid).
+    """Tray A floor art: (player-colour crescent moon, white sparkles).
 
-    The floor carries the big piece: a leafy vine with tendrils and crescent
-    moons in the player colour and white sparkles in the gaps. Being horizontal,
-    it only occupies the floor's top three layers. The front carries a smaller
-    vine in the accent colour only, to keep filament swaps down.
+    Both sit in the floor's top three layers, so colour swaps stay few and
+    the orange/purple filament use is about a gram.
     """
     x0,x1=DR_X
     fz=DR_Z0+DR_FLOOR
     z0,z1=fz-dc.DEPTH,fz
     fx0,fx1=x0+DR_WALL+1.2,x1-DR_WALL-1.2
     fy0,fy1=DR_FRONT+1.2,DR_Y1-DR_WALL-1.2
-    to=lambda u,v:(v,u)
-    floor,keep=dc.cosmic_vine(fy0+2,fy1-2,fx0,fx1,to,z0,z1,stem_w=1.4,seed=.9,leaf_len=7.5)
-    floor=floor.intersect(box(fx0,fx1,fy0,fy1,z0-.1,z1+.1))
-    white=dc.sparkles_in_gaps(fy0,fy1,fx0,fx1,to,keep,z0,z1,R=2.1,clear=1.3,every=14.0,seed=3)
-    zc0,zc1=TRAY_FRONT_Z
-    front,_=dc.cosmic_vine(x0+5.0,x1-5.0,zc0,zc1,lambda u,v:(u,v),0,dc.DEPTH,stem_w=1.1,seed=2.3,moons=False,leaf_len=4.6,amp_frac=.22)
-    front=front.intersect(box(x0+2.5,x1-2.5,zc0,zc1,-.1,dc.DEPTH+.1))
-    front=front.rotate((0,0,0),(1,0,0),90).translate((0,dc.DEPTH,0))
-    return floor.fuse(front).clean(),white
+    mx,my,mr=TRAY_MOON
+    moon=dc.crescent(mx,my,mr,math.pi*.25,z0,z1)
+    keep=[(mx+mr*math.cos(a),my+mr*math.sin(a)) for a in [i*math.pi/8 for i in range(16)]]+[(mx,my)]
+    white=dc.sparkles_in_gaps(fy0,fy1,fx0,fx1,lambda u,v:(v,u),keep,z0,z1,R=2.1,clear=2.5,every=19.0,seed=7,jitter=5.0)
+    return moon,white
 
 @lru_cache(None)
 def _tray_swirl_a():

@@ -4,12 +4,12 @@
   "volume_mm3": 88496.67
  },
  "stl/full/board-plate-a.black.stl": {
-  "triangles": 23924,
-  "volume_mm3": 19013.32
+  "triangles": 9432,
+  "volume_mm3": 19170.62
  },
  "stl/full/board-plate-a.orange.stl": {
-  "triangles": 16228,
-  "volume_mm3": 166.29
+  "triangles": 1748,
+  "volume_mm3": 8.99
  },
  "stl/full/board-plate-a.purple.stl": {
   "triangles": 1748,
@@ -20,56 +20,56 @@
   "volume_mm3": 568.73
  },
  "stl/full/board-plate-b.black.stl": {
-  "triangles": 23914,
-  "volume_mm3": 18862.71
+  "triangles": 9422,
+  "volume_mm3": 19020.01
  },
  "stl/full/board-plate-b.orange.stl": {
   "triangles": 1748,
   "volume_mm3": 8.99
  },
  "stl/full/board-plate-b.purple.stl": {
-  "triangles": 16228,
-  "volume_mm3": 166.29
+  "triangles": 1748,
+  "volume_mm3": 8.99
  },
  "stl/full/board-plate-b.white.stl": {
   "triangles": 5300,
   "volume_mm3": 568.73
  },
  "stl/full/tray-a.black.stl": {
-  "triangles": 17788,
-  "volume_mm3": 16651.6
+  "triangles": 1716,
+  "volume_mm3": 16983.44
  },
  "stl/full/tray-a.orange.stl": {
-  "triangles": 16384,
-  "volume_mm3": 331.24
+  "triangles": 620,
+  "volume_mm3": 15.26
  },
  "stl/full/tray-a.white.stl": {
-  "triangles": 924,
-  "volume_mm3": 53.1
+  "triangles": 672,
+  "volume_mm3": 37.24
  },
  "stl/full/tray-b.black.stl": {
-  "triangles": 17788,
-  "volume_mm3": 16651.6
+  "triangles": 1716,
+  "volume_mm3": 16983.44
  },
  "stl/full/tray-b.purple.stl": {
-  "triangles": 16384,
-  "volume_mm3": 331.24
+  "triangles": 620,
+  "volume_mm3": 15.26
  },
  "stl/full/tray-b.white.stl": {
-  "triangles": 924,
-  "volume_mm3": 53.1
+  "triangles": 672,
+  "volume_mm3": 37.24
  },
  "stl/trials/trial-buckle-socket-base.stl": {
   "triangles": 2646,
   "volume_mm3": 7612.41
  },
  "stl/trials/trial-buckle-socket-plate.stl": {
-  "triangles": 1630,
-  "volume_mm3": 809.06
+  "triangles": 326,
+  "volume_mm3": 820.71
  },
  "stl/trials/trial-buckle-tab-plate.stl": {
-  "triangles": 1570,
-  "volume_mm3": 826.09
+  "triangles": 362,
+  "volume_mm3": 835.27
  },
  "stl/trials/trial-hinge-pair.stl": {
   "triangles": 4116,
