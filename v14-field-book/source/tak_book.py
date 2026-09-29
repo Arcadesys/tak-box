@@ -215,6 +215,23 @@ STARS={'A':[(13.5,15.2),(27.1,40.3),(38.6,54.8),(49.9,31.4),(15.8,64.7),(29.3,10
             (110.6,112.4),(73.9,121.6),(119.6,54.1),(94.4,38.1)]}
 GALAXIES={'A':[(18.5,88.5,'purple',.6),(61.5,24.0,'orange',2.2)],
           'B':[(86.0,113.5,'orange',1.3),(116.5,44.5,'purple',3.9)]}
+# One of each small symbol per leaf, in cells the galaxies leave empty; each
+# leaf gets two orange and two purple.  (kind, x, y, colour, angle)
+SYMBOLS={'A':[('planet',44.0,94.0,'orange',-.4),('crescent',42.0,19.0,'purple',2.4),
+              ('sparkle',60.0,70.0,'purple',.3),('comet',22.0,49.0,'orange',-.6)],
+         'B':[('crescent',116.0,94.0,'orange',.7),('planet',89.0,74.0,'purple',.35),
+              ('sparkle',90.0,22.0,'orange',.1),('comet',119.0,121.0,'purple',-2.5)]}
+# A few star dots take an accent colour, a little larger so they read on black.
+COLOUR_STARS={'A':{(38.6,54.8):'orange',(13.5,15.2):'purple',(62.8,99.3):'purple'},
+              'B':{(115.3,28.7):'orange',(84.7,95.8):'orange',(73.9,121.6):'purple'}}
+COLOUR_STAR_R=.6
+
+def _symbol(kind,x,y,ang,z0,z1):
+    if kind=='planet':return dc.planet(x,y,z0,z1,tilt=ang)
+    if kind=='crescent':return dc.crescent(x,y,2.5,ang,z0,z1)
+    if kind=='sparkle':return dc.poly(dc.sparkle(x,y,2.6,ang),z0,z1)
+    if kind=='comet':return dc.comet(x,y,ang,z0,z1)
+    raise ValueError(kind)
 
 @lru_cache(None)
 def decor(side,colour):
@@ -225,12 +242,15 @@ def decor(side,colour):
         if c!=colour:continue
         arms,(cx,cy,r)=dc.galaxy(x,y,rot=rot)
         parts+= [dc.stroke(a,z0,z1,.7) for a in arms]+[dc.dot(cx,cy,r,z0,z1)]
+    parts+=[_symbol(k,x,y,a,z0,z1) for k,x,y,c,a in SYMBOLS[side] if c==colour]
+    parts+=[dc.dot(x,y,COLOUR_STAR_R,z0,z1) for (x,y),c in COLOUR_STARS[side].items() if c==colour]
     return dc.union(parts) if parts else None
 
 @lru_cache(None)
 def stars(side):
     z0,z1=FACE-dc.DEPTH,FACE
-    return dc.union([dc.dot(x,y,dc.STAR_R,z0,z1) for x,y in STARS[side]])
+    return dc.union([dc.dot(x,y,dc.STAR_R,z0,z1) for x,y in STARS[side]
+                     if (x,y) not in COLOUR_STARS[side]])
 
 @lru_cache(None)
 def plate(side):
