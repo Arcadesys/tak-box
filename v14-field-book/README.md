@@ -81,7 +81,7 @@ Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports*
 | [02](plates/plate02-trays-4colour.3mf) | Trays A and B with moon and sparkle floors | black, white, orange, purple | 1 h 44 min | 46 g | 9 |
 | [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with lip, grid, stars and galaxies | all four | 1 h 43 min | 54 g | 12 |
 
-The full set (01–03) takes about 6 h 20 min and 189 g, including purge: 1.9 g orange and 1.9 g purple. Print **plate 00 first**. The times are slicer estimates.
+The full set (01–03) takes about 6 h 10 min and 189 g, including purge: 1.9 g orange and 1.9 g purple. Print **plate 00 first**. The times are slicer estimates.
 
 **Assembly**
 1. Free the print-in-place hinge on the bases.
