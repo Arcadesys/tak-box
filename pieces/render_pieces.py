@@ -3,7 +3,7 @@ from pathlib import Path
 import vtk
 import tak_pieces as p
 
-OUT=Path(__file__).resolve().parent/'pieces'
+OUT=Path(__file__).resolve().parent
 def actor(shape,color):
     verts,triangles=shape.tessellate(.7,.3)
     points=vtk.vtkPoints()

@@ -2,17 +2,17 @@
 
 One project per team: 21 flat stones plus the pawn capstone, each a separate
 object so the slicer can arrange them and any one can be deselected.
-Machine profile and slicer come from the same local setup as export_3mf.py.
+Uses the CC2 machine profile in profiles/ and a local .slicer-work data dir.
 """
 from pathlib import Path
 from zipfile import ZipFile
 import json,os,subprocess
 
 HERE=Path(__file__).resolve().parent
-WORK=HERE.parents[1]/'work/tak-212-3mf'
-MACHINE=WORK/'profiles/machine.json'
+WORK=HERE/'.slicer-work'
+MACHINE=HERE/'profiles/machine.json'
 PROFILES=HERE/'profiles'
-OUT=HERE/'centauri-carbon-2-3mf'
+OUT=HERE/'plates'
 OUT.mkdir(exist_ok=True)
 EXE='/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer'
 
@@ -22,7 +22,7 @@ plates={
 }
 for name,(team,filament) in plates.items():
     dest=OUT/f'{name}.3mf'
-    models=[HERE/'pieces'/f'{team}-flat.stl']*21+[HERE/'pieces'/f'{team}-capstone.stl']
+    models=[HERE/f'{team}-flat.stl']*21+[HERE/f'{team}-capstone.stl']
     cmd=[EXE,'--datadir',str(WORK/'config'),
          '--load-settings',f'{MACHINE};{PROFILES/"process-pieces.json"}',
          '--load-filaments',str(PROFILES/filament),
