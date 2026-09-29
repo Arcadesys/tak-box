@@ -1,0 +1,137 @@
+# Tak v15 — field book
+
+**Prototype. Verified in CAD and sliced; nothing has been printed or physically tested.**
+
+A tough little brick for a bag. The board folds in half with its face inside, and there's a snap-in piece tray under each half. It uses no screws, magnets or other hardware. Closed, it's two dark slabs meeting at a seam.
+
+![Closed](previews/01-closed.png)
+![Open](previews/02-open-board.png)
+![Trays out](previews/03-trays-out.png)
+![Press to open](previews/05-press-to-open.png)
+
+## Size
+
+| | mm |
+|---|---|
+| Closed | 81 × 162 × 48 |
+| Open | 156 × 162 × 25, plus the closure tab |
+| Board | 5 × 5 at 28 mm pitch (140 mm field), for 19.5 mm flats: 8.5 mm between neighbouring stones |
+
+## What changed from v14
+
+- **Bigger board.** The cells grew from 24 mm to **28 mm** after a paper play test showed 24 mm was cramped.
+  - Neighbouring stones are now 8.5 mm apart, up from 4.5 mm.
+  - The book is 10 mm wider and 20 mm longer. The trays grew with it and now have spare room around the stones.
+  - The art keeps its place in each cell, and the buckle and spring panel keep their place at the far corner.
+- **Self-locating board plates.** The plates now drop into place on their bases, so gluing is accurate without a jig.
+  - **Pegs:** two on each base's wall tops. A 2.4 mm round peg on the back wall, and a 1.6 mm peg on the fore wall near the front that sits in a short slot. Together they fix position and rotation to about ±0.15 mm.
+  - **Glue wells:** eight shallow wells (0.4 mm deep) in each plate's underside. The plate sits plastic-on-plastic, so glue can't lift it and stop the lips meeting.
+  - **Printing:** the pegs print upward with the bases and the sockets open onto the plate's bed face, so neither needs supports.
+- **Board art (from v14's last update):** each half keeps its two galaxies and adds a ringed planet, a crescent moon, a sparkle and a comet, plus a few orange and purple star dots.
+
+## Carried over from v14
+
+- **Closure:** a **buckle at the far edge**, opposite the hinge. No hardware.
+  - **Closing:** a tab on leaf A's back corner pushes into a slot in leaf B and clicks under a catch.
+  - **Opening:** the catch hangs on a spring panel cut into B's outer side wall, near the far corner. Squeeze that panel (about 4.5 N, 1.4 mm of travel) and lift.
+  - **On the case:** the panel shows only as two fine slits on the side.
+  - **Purse-proof:** pressing alone doesn't open it; the halves also have to be pulled apart.
+  - **Print strength:** every flexing part bends within the print layers, not across them.
+- **Shell:** a 2 mm floor skin, 6 mm plan corners, 2 mm bottom fillets, and a 10 mm back wall that houses the buckle.
+- **Cover:** a debossed **TAK**, 0.7 mm deep.
+- **Board:** the grid is 0.6 mm inlaid plus 0.4 mm raised, in a second colour.
+- **Fold:** the lips meet exactly at the hinge axis when closed.
+- **Trays:** a push-button latch in each tray's outer wall. Push the tray in to snap it. To release, press the button 1.45 mm into a 16 mm finger dish in the book's side. The button sits 1.6 mm below the surface.
+- **Pieces:** each tray holds 21 flats as 11 two-high stacks plus the capstone, with 0.9 mm under the board.
+- **Hinge:** print-in-place knuckles at both ends of the spine.
+
+## Colours and art
+
+Orange and purple are used sparingly, about 1 g of each per print plus purge.
+
+- **Board:** black, with a **raised white grid** (0.6 mm inlaid + 0.4 mm proud).
+- **Cells:** kept subtle. A sparse field of star dots (a few in orange and purple) and one small symbol per cell at most: two-arm galaxies, ringed planets, crescent moons, four-point sparkles and comets, split evenly between orange and purple.
+
+![Board symbols](previews/07-board-symbols-top.png)
+- **Tray floors:** a crescent moon in the player colour (orange for the cat tray A, purple for the witch tray B) and a scatter of white four-point sparkles.
+- **Tray fronts and case:** plain black.
+
+All art is flush 0.6 mm inlay with strokes of at least 0.8 mm, so stones slide over it. It stays clear of the grid, fold seam, hinge notches, buckle, lip, thumb groove and tray latch. `verify_book.py` checks this.
+
+![Tray floors](previews/06-tray-art.png)
+
+## Protective lip (for paint)
+
+Each board half has a **1.0 mm raised lip** on its three outer edges, 1.6 mm wide and not across the fold. The hinge axis sits at the top of the lip, so when the book closes the lips meet and nothing else does:
+- **Painted faces:** 2.0 mm apart.
+- **Raised grids:** 1.2 mm apart.
+
+Keep acrylic paint (and any varnish) below the lip top. The thumb groove is cut into the lip edge.
+
+## Print plates ([plates](plates))
+
+Four ready-to-open 3MFs for the Elegoo Centauri Carbon 2 with its **4-colour filament system**, with G-code in [gcode](gcode). Every project uses the same filament slots:
+
+| Slot | Colour |
+|---|---|
+| 1 | black |
+| 2 | white |
+| 3 | orange |
+| 4 | purple |
+
+Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports**, textured PEI, 210 °C / 60 °C. The prime tower sits in the back-right corner.
+
+| Plate | Contents | Colours | Time | PLA | Colour changes |
+|---|---|---|---|---|---|
+| [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle (with a plate peg and socket), tray latch | black | 54 min | 20 g | 0 |
+| [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 3 h 13 min | 110 g | 0 |
+| [02](plates/plate02-trays-4colour.3mf) | Trays A and B with moon and sparkle floors | black, white, orange, purple | 2 h 3 min | 56 g | 9 |
+| [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with lip, grid, stars and symbols | all four | 2 h 7 min | 67 g | 12 |
+
+The full set (01–03) takes about 7 h 24 min and 233 g, including purge: 1.9 g orange and 1.9 g purple. Print **plate 00 first**. The times are slicer estimates.
+
+**Assembly**
+1. Free the print-in-place hinge on the bases.
+2. Glue the board plates on (see **Gluing the board**
+
+The lips meet exactly at the hinge axis, so any glue *under* a plate would hold the book open. Each plate therefore sits plastic-on-plastic on the wall tops, located by two pegs, and the glue goes in eight shallow wells in its underside.
+
+Use **CA gel or 5-minute epoxy**. Don't use the original polyurethane Gorilla Glue: it foams and will lift the plate and glue the tray shut.
+
+1. Lie the book open flat and take the trays out.
+2. **Dry fit first.** Drop both plates onto their pegs. They should sit flat without forcing and not slide or rock. Close the book: the lips should meet flush and the tab should click.
+3. Lift plate A off and put a thin bead of gel into each well, about half full. Keep glue off the pegs and out of the knuckle notches and the buckle slot.
+4. Drop plate A back onto its pegs and weight it flat with a book or board across the whole plate.
+5. Do plate B the same way.
+
+Multi-colour parts are exported as one STL per colour ([stl/full](stl/full), `<part>.<colour>.stl`), all in the same frame, and `package_plates.py` reassembles them.
+
+## Trial prints first ([stl/trials](stl/trials))
+
+1. `trial-hinge-pair`: a spine end, printed in place.
+2. `trial-buckle-tab-plate` with `trial-buckle-socket-base` + `trial-buckle-socket-plate`: check that the tab clicks in, can't be pulled out, and releases when you squeeze the panel. The socket pair also carries plate B's back peg and socket: the plate piece should drop on without forcing and not rock.
+3. `trial-latch-base` + `trial-latch-tray`: the tray latch.
+
+Then complete [ACCEPTANCE.md](ACCEPTANCE.md).
+
+## Digital checks ([reports](reports))
+
+`source/verify_book.py` passes all of these:
+- **Fold sweep:** 0–180° is clear. Only the catch touches the tab, in the last 1° of closing.
+- **Buckle:** it holds with 0.8 mm engagement when the halves are pulled apart. Squeezing the side panel frees the tab through a 12 mm lift.
+- **Strain:** panel strain is 0.6%, and tray-arm strain is 0.75%.
+- **Trays:** a locked tray can't be pulled out, and a released tray slides fully out.
+- **Pieces:** they fit each tray and clear the pressed arm.
+- **Glue-up:** each plate sits clear on its pegs, and a 0.3 mm shift or a 0.3° twist is blocked. Every glue well sits over solid wall.
+- **Bed:** every part fits a 256 mm bed.
+
+`source/verify_meshes.py` confirms all 21 STLs are closed and correctly oriented.
+
+## Known limits
+
+- **Hinge barrels:** they still sit about 3 mm proud at the spine ends. Hiding them inside the outline would need a ridge across the middle of the board.
+- **Buckle tab:** when open, the tab (2.4 × 4.4 × 10.8 mm) stands up at leaf A's far back corner.
+- **Centre column:** the fold seam runs through its cells.
+- **Squeeze force:** about 4.5 N, from beam theory. It's a guess until the trial is printed.
+
+Rebuild with `python source/build_models.py`, `verify_book.py`, `verify_meshes.py`, `render_book.py`, then `package_plates.py` (needs ElegooSlicer). The source is [tak_book.py](source/tak_book.py).
