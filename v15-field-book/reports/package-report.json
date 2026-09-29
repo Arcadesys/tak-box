@@ -29,15 +29,15 @@
           1
         ]
       ],
-      "estimated_time": "54m 17s",
+      "estimated_time": "54m 20s",
       "layers": 136,
       "filament_g": {
-        "black": 19.62,
+        "black": 19.61,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 19.62,
+      "total_g": 19.61,
       "colour_changes": 0,
       "supports": "0"
     },
@@ -49,15 +49,15 @@
           1
         ]
       ],
-      "estimated_time": "3h 13m 24s",
+      "estimated_time": "3h 13m 38s",
       "layers": 136,
       "filament_g": {
-        "black": 109.53,
+        "black": 109.55,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 109.53,
+      "total_g": 109.55,
       "colour_changes": 0,
       "supports": "0"
     },
@@ -105,15 +105,15 @@
           4
         ]
       ],
-      "estimated_time": "2h 7m 28s",
+      "estimated_time": "2h 7m 42s",
       "layers": 70,
       "filament_g": {
-        "black": 59.4,
+        "black": 59.36,
         "white": 5.79,
         "orange": 0.96,
         "purple": 1.06
       },
-      "total_g": 67.2,
+      "total_g": 67.17,
       "colour_changes": 12,
       "supports": "0"
     }

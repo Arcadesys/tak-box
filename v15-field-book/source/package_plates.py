@@ -97,12 +97,14 @@ def main():
     for name,(objects,arrange) in PLATES.items():
         plate=ROOT/'plates'/f'plate{name}.3mf';gcode=ROOT/'gcode'/f'plate{name}.gcode'
         lst=assemble_list(name,objects,arrange)
+        print(name,'exporting 3mf',flush=True)
         r=run(common()+['--load-assemble-list',str(lst),'--export-3mf',str(plate)])
         if r.returncode or not plate.exists():raise RuntimeError(f'{name} export: {r.stdout[-800:]}{r.stderr[-800:]}')
         set_bed(plate)
         parts=check_project(plate,objects)
         out=WORK/'out';out.mkdir(exist_ok=True)
         for f in out.glob('*.gcode'):f.unlink()
+        print(name,'slicing',flush=True)
         r=run(common()+['--slice','0','--outputdir',str(out),str(plate)])
         raw=out/'plate_1.gcode'
         if r.returncode or not raw.exists():raise RuntimeError(f'{name} slice exit {r.returncode}: {r.stdout[-800:]}')

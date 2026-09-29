@@ -115,11 +115,11 @@ PRESS=1.4                   # panel travel that frees the catch
 # front, in a slot along y (rotation). The pegs print upward with the base; the
 # sockets open onto the plate's bed face. Leaf A frame throughout.
 FIT=.3                      # plate notch clearance around the knuckle blocks
-PEG_H=1.0
+PEG_H=1.4                   # socket leaves 0.4 mm (two layers) of plate over it
 PEG_CLR=.15                 # radial / per-side socket clearance
 SOCKET_D=PEG_H+.2
-PEG_BACK=(16.0,WY-BACK/2,1.2)       # x, y, radius: clear of leaf B's buckle
-PEG_FORE=(FORE/2,24.0,.8)           # on the 3 mm fore wall
+PEG_BACK=(16.0,WY-BACK/2,1.5)       # x, y, radius: clear of leaf B's buckle
+PEG_FORE=(FORE/2,24.0,1.0)          # on the 3 mm fore wall
 PEG_SLOT=3.0                        # extra socket length along y at the fore peg
 WELL_D=.4
 WELL_W=1.2

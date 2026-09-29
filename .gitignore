@@ -3,3 +3,4 @@ __pycache__/
 meshy_output/
 00000.log
 .slicer-work/
+logs/

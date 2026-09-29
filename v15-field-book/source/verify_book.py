@@ -158,11 +158,19 @@ for s_ in 'AB':
         pr=pr if s_=='A' else c.mirror_b(pr)
         land.append(round(pr.Volume()-ov(pr,c.base(s_)),4))
 reg['glue_well_land_missing_mm3']=max(land)
+# The plate over each socket must be solid up to the face: no grid or art cut into its roof.
+roof=[]
+for s_ in 'AB':
+    k=c.sockets().translate((0,0,c.SOCKET_D+.1)).intersect(c.box(-1,c.WX+1,-1,c.WY+1,c.PLATE_Z,c.FACE))
+    k=k if s_=='A' else c.mirror_b(k)
+    roof.append(round(k.Volume()-ov(k,c.plate(s_)),4))
+reg['socket_roof_mm']=round(c.FACE-c.PLATE_Z-c.SOCKET_D,2)
+reg['socket_roof_missing_mm3']=max(roof)
 reg['peg_mm']={'back_d':2*c.PEG_BACK[2],'fore_d':2*c.PEG_FORE[2],'height':c.PEG_H,'clearance':c.PEG_CLR}
 record('plates-register-for-gluing',
        all(r['nominal']<TOL and all(v>TOL for k_,v in r.items() if k_!='nominal')
            for k_,r in reg.items() if k_.startswith('plate'))
-       and max(land)<TOL,reg)
+       and max(land)<TOL and max(roof)<TOL and reg['socket_roof_mm']>=.4,reg)
 
 hinged=cq.Compound.makeCompound([c.base('A'),c.base('B')])
 def ext(s):b=s.BoundingBox();return [round(b.xlen,1),round(b.ylen,1),round(b.zlen,1)]

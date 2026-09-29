@@ -24,7 +24,7 @@ A tough little brick for a bag. The board folds in half with its face inside, an
   - The book is 10 mm wider and 20 mm longer. The trays grew with it and now have spare room around the stones.
   - The art keeps its place in each cell, and the buckle and spring panel keep their place at the far corner.
 - **Self-locating board plates.** The plates now drop into place on their bases, so gluing is accurate without a jig.
-  - **Pegs:** two on each base's wall tops. A 2.4 mm round peg on the back wall, and a 1.6 mm peg on the fore wall near the front that sits in a short slot. Together they fix position and rotation to about ±0.15 mm.
+  - **Pegs:** two on each base's wall tops. A 3.0 mm round peg on the back wall, and a 2.0 mm peg on the fore wall near the front that sits in a short slot. Both stand 1.4 mm tall; the sockets leave 0.4 mm of plate above them. Together they fix position and rotation to about ±0.15 mm.
   - **Glue wells:** eight shallow wells (0.4 mm deep) in each plate's underside. The plate sits plastic-on-plastic, so glue can't lift it and stop the lips meeting.
   - **Printing:** the pegs print upward with the bases and the sockets open onto the plate's bed face, so neither needs supports.
 - **Board art (from v14's last update):** each half keeps its two galaxies and adds a ringed planet, a crescent moon, a sparkle and a comet, plus a few orange and purple star dots.
@@ -134,4 +134,4 @@ Then complete [ACCEPTANCE.md](ACCEPTANCE.md).
 - **Centre column:** the fold seam runs through its cells.
 - **Squeeze force:** about 4.5 N, from beam theory. It's a guess until the trial is printed.
 
-Rebuild with `python source/build_models.py`, `verify_book.py`, `verify_meshes.py`, `render_book.py`, then `package_plates.py` (needs ElegooSlicer). The source is [tak_book.py](source/tak_book.py).
+Rebuild with `python source/build_all.py` (needs ElegooSlicer for the last step). It runs `build_models.py`, `verify_book.py`, `verify_meshes.py`, `render_book.py` and `package_plates.py` in order, timestamps every line, writes a copy to `logs/build-<time>.log`, and stops at the first failure. Use `--from <step>` to resume or `--only <step>` for one step. The source is [tak_book.py](source/tak_book.py).
