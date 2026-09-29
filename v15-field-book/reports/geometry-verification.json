@@ -279,27 +279,29 @@
   "detail": {
    "plate-A": {
     "nominal": 0.0,
-    "x+0.3": 0.273,
-    "x-0.3": 0.273,
-    "y+0.3": 0.198,
-    "y-0.3": 0.198,
-    "twist+0.3deg": 4.733,
-    "twist-0.3deg": 0.546
+    "x+0.3": 0.498,
+    "x-0.3": 0.498,
+    "y+0.3": 0.374,
+    "y-0.3": 0.374,
+    "twist+0.3deg": 4.89,
+    "twist-0.3deg": 0.89
    },
    "plate-B": {
     "nominal": 0.0,
-    "x+0.3": 0.273,
-    "x-0.3": 0.273,
-    "y+0.3": 0.198,
-    "y-0.3": 0.198,
-    "twist+0.3deg": 0.546,
-    "twist-0.3deg": 5.454
+    "x+0.3": 0.498,
+    "x-0.3": 0.498,
+    "y+0.3": 0.374,
+    "y-0.3": 0.374,
+    "twist+0.3deg": 0.89,
+    "twist-0.3deg": 5.611
    },
    "glue_well_land_missing_mm3": 0.0,
+   "socket_roof_mm": 0.4,
+   "socket_roof_missing_mm3": 0.0,
    "peg_mm": {
-    "back_d": 2.4,
-    "fore_d": 1.6,
-    "height": 1.0,
+    "back_d": 3.0,
+    "fore_d": 2.0,
+    "height": 1.4,
     "clearance": 0.15
    }
   }

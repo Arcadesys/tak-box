@@ -30,6 +30,7 @@ def text(r,msg,x,y,size,bold=False):
     r.AddViewProp(t)
 
 def render(name,title,caption,items,cam,focal,scale,up=(0,0,1)):
+    print(name,'drawing',flush=True)
     w=vtk.vtkRenderWindow();w.SetOffScreenRendering(1);w.SetSize(1500,1000);w.SetMultiSamples(8)
     r=vtk.vtkRenderer();r.SetBackground(*BG);w.AddRenderer(r)
     for s,col in items:r.AddActor(actor(s,col))
@@ -39,7 +40,7 @@ def render(name,title,caption,items,cam,focal,scale,up=(0,0,1)):
     text(r,'CAD / pieces are envelopes / not yet printed',40,25,20)
     w.Render();f=vtk.vtkWindowToImageFilter();f.SetInput(w);f.Update()
     pw=vtk.vtkPNGWriter();pw.SetFileName(str(PREV/name));pw.SetInputConnection(f.GetOutputPort());pw.Write()
-    print(name,flush=True)
+    print(name,'written',flush=True)
 
 def scene(angle,pulls=(0,0),pieces=False):
     items=[]

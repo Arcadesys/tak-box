@@ -6,7 +6,7 @@
   "stl/board-plate-a": {
    "black": {
     "solids": 1,
-    "volume_mm3": 24991.162,
+    "volume_mm3": 24976.902,
     "print_bounds": [
      0.0,
      77.8,
@@ -72,7 +72,7 @@
   "stl/board-plate-b": {
    "black": {
     "solids": 1,
-    "volume_mm3": 24840.553,
+    "volume_mm3": 24826.293,
     "print_bounds": [
      0.0,
      77.8,
@@ -244,7 +244,7 @@
     -0.0,
     27.2
    ],
-   "volume_mm3": 54367.871
+   "volume_mm3": 54375.45
   },
   "step/base-b": {
    "bounds": [
@@ -255,7 +255,7 @@
     -0.0,
     27.2
    ],
-   "volume_mm3": 53776.906
+   "volume_mm3": 53784.485
   },
   "stl/bases-hinged-print-in-place": {
    "solids": 2,
@@ -288,7 +288,7 @@
     21.2,
     35.2
    ],
-   "volume_mm3": 831.853,
+   "volume_mm3": 828.446,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
@@ -312,7 +312,7 @@
     -0.0,
     21.3
    ],
-   "volume_mm3": 7613.14,
+   "volume_mm3": 7613.394,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
@@ -336,7 +336,7 @@
     21.2,
     23.3
    ],
-   "volume_mm3": 808.319,
+   "volume_mm3": 801.505,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
@@ -360,7 +360,7 @@
     -0.0,
     21.3
    ],
-   "volume_mm3": 3738.254,
+   "volume_mm3": 3738.367,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
