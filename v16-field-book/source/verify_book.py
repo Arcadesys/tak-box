@@ -219,13 +219,19 @@ record('plates-register-for-gluing',
 
 # Cross ribs behind the tray: clear of the fully inserted tray and of leaf B's
 # buckle panel and its slits, and they reach the plate seat so the plate rests on them.
-rib_lo=min(c.RIB_Y)-c.RIB_T/2;rib_hi=max(c.RIB_Y)+c.RIB_T/2
+rib_lo=c.BULK_Y-c.RIB_T/2;rib_hi=max(c.RIB_Y)+c.RIB_T/2
 ribs={'tray_clear_mm':round(rib_lo-c.DR_Y1,2),
       'panel_clear_mm':round(c.PANEL_Y[0]-c.PANEL_SLIT-rib_hi,2),
       'tray_overlap_mm3':round(max(ov(c.tray(s_),c.base(s_)) for s_ in 'AB'),4)}
 seat=c.box(c.FORE+1,c.LEAF_X1-c.SEAM_WALL-1,rib_lo,rib_hi,c.PLATE_Z-.05,c.PLATE_Z)
 ribs['seat_mm3']=round(ov(seat,c.base('A')),3)
-record('cross-ribs',ribs['tray_clear_mm']>=5 and ribs['panel_clear_mm']>=2
+spine=c.box((c.FORE+c.LEAF_X1-c.SEAM_WALL)/2-c.SPINE_W/2+.1,(c.FORE+c.LEAF_X1-c.SEAM_WALL)/2+c.SPINE_W/2-.1,c.SPINE_Y[0]+1,c.SPINE_Y[1]-1,c.PLATE_Z-.05,c.PLATE_Z)
+ribs['spine_seat_mm3']=round(ov(spine,c.base('A')),3)
+_rz=(c.PLATE_Z-.2,c.PLATE_Z+c.WELL_D+.1)
+_newribs=c.box(c.FORE,c.LEAF_X1-c.SEAM_WALL,c.BULK_Y-c.RIB_T/2,c.BULK_Y+c.RIB_T/2,*_rz).fuse(
+    c.box((c.FORE+c.LEAF_X1-c.SEAM_WALL)/2-c.SPINE_W/2,(c.FORE+c.LEAF_X1-c.SEAM_WALL)/2+c.SPINE_W/2,c.SPINE_Y[0],c.SPINE_Y[1],*_rz))
+ribs['new_ribs_vs_plate_sockets_and_glue_wells_mm3']=round(ov(_newribs,c.sockets())+ov(_newribs,c.glue_wells()),4)
+record('cross-ribs',ribs['tray_clear_mm']>=1.5 and ribs['spine_seat_mm3']>0 and ribs['new_ribs_vs_plate_sockets_and_glue_wells_mm3']<TOL and ribs['panel_clear_mm']>=2
        and ribs['tray_overlap_mm3']<TOL and ribs['seat_mm3']>0,ribs)
 
 

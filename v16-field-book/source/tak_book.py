@@ -67,6 +67,12 @@ DR_Y1=TRAY_LEN
 # the tray (ends at 132) and of leaf B's buckle panel (starts at y=175).
 RIB_T=1.2
 RIB_Y=(152.0,170.0)         # rib centre lines
+# The bulkhead closes the box section at the tray's end (fore wall to seam wall,
+# floor to plate seat), and a spine rib ties it to the cross ribs. Base only: the
+# trays, plates, pegs and glue wells are printed and do not change.
+BULK_Y=DR_Y1+2.2            # bulkhead centre line: 1.6 mm behind the tray's end
+SPINE_W=1.2
+SPINE_Y=(BULK_Y,170.0)
 
 # ---- push-button tray latch (fore side of each tray)
 ARM_Y=(2.6,28.5)          # cantilever in the outer wall, beside the capstone; root at 28.5
@@ -163,6 +169,9 @@ def _base_body():
     p=p.cut(box(FORE,LEAF_X1-SEAM_WALL,-.1,WY-BACK,FLOOR,PLATE_Z+.1))
     for y in RIB_Y:
         p=p.fuse(box(FORE-.01,LEAF_X1-SEAM_WALL+.01,y-RIB_T/2,y+RIB_T/2,FLOOR-.01,PLATE_Z))
+    p=p.fuse(box(FORE-.01,LEAF_X1-SEAM_WALL+.01,BULK_Y-RIB_T/2,BULK_Y+RIB_T/2,FLOOR-.01,PLATE_Z))
+    xm=(FORE+LEAF_X1-SEAM_WALL)/2
+    p=p.fuse(box(xm-SPINE_W/2,xm+SPINE_W/2,SPINE_Y[0],SPINE_Y[1],FLOOR-.01,PLATE_Z))
     # Latch window through the fore wall, inside a shallow finger dish.
     p=p.cut(box(DISH_D-.01,FORE+.1,*WIN_Y,*WIN_Z))
     cy,cz=sum(WIN_Y)/2,sum(WIN_Z)/2

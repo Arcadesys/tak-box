@@ -1,7 +1,7 @@
 {
  "stl/full/bases-hinged-print-in-place.stl": {
-  "triangles": 22128,
-  "volume_mm3": 166794.76
+  "triangles": 22224,
+  "volume_mm3": 173024.19
  },
  "stl/full/board-plate-a.black.stl": {
   "triangles": 14204,

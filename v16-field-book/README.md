@@ -82,6 +82,16 @@ The trays are already printed, so the insert is a separate part that drops onto 
 
 `verify_book.py` checks 19.5 mm stacks (packed to the front and to the back of every channel) and the real pawn against the insert (`tray-insert-fits`). `FLAT` in `tak_book.py` stays 20.0 on purpose: the printed tray's cradle position is derived from it.
 
+## Stiffer base (for the case print; trays and plates unchanged)
+
+The board plates that were printed came out warped. Only the bases had not been printed yet, so the stiffening is all in the base and nothing about the trays, plates, pegs, glue wells or plate seat height changed. `stl/full` for every printed part is byte-identical to before.
+
+- **Tray end bulkhead:** a 1.2 mm wall 1.6 mm behind the tray's end, from the fore wall to the seam wall and from the floor up to the plate seat. With the walls and floor it closes the box section behind the tray, so the two long walls can't spread or twist.
+- **Spine rib:** a 1.2 mm rib down the middle of the chamber behind the tray, tying the bulkhead to the two cross ribs. The plate's bays behind the tray drop from about 92 mm wide to about 46 mm.
+- **Clear of everything:** the tray still slides fully home with 1.6 mm to spare, leaf B's buckle panel keeps its 3.6 mm, and the new ribs sit clear of the plate's glue wells and peg sockets, so no glue can get under a rib. All are checked in `cross-ribs`.
+- **Cost:** plate 01 grows from about 4 h 58 min and 171 g to 5 h 20 min and 178 g.
+- **Not possible:** the tray channel itself (the first 132 mm). The tray sits 0.2 mm off the floor and 0.3 mm off each wall, so nothing can be added there, and the printed plates have no other seats to glue to.
+
 ## Print plates ([plates](plates))
 
 Four ready-to-open 3MFs for the Elegoo Centauri Carbon 2 with its **4-colour filament system**, with G-code in [gcode](gcode). Every project uses the same filament slots:
@@ -98,7 +108,7 @@ Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports*
 | Plate | Contents | Colours | Time | PLA | Colour changes |
 |---|---|---|---|---|---|
 | [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle (with a plate peg and socket), tray latch | black | 58 min | 21 g | 0 |
-| [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 4 h 58 min | 171 g | 0 |
+| [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 5 h 20 min | 178 g | 0 |
 | [02](plates/plate02-trays-4colour.3mf) | Trays A and B with moon and sparkle floors | black, white, orange, purple | 2 h 14 min | 62 g | 9 |
 | [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with lip, grid, stars and symbols | all four | 2 h 42 min | 97 g | 9 |
 
