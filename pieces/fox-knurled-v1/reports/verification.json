@@ -1,0 +1,101 @@
+{
+  "units": "mm",
+  "exact_dimensions_mm": [
+    19.5,
+    19.5,
+    8.0
+  ],
+  "mesh": {
+    "watertight": true,
+    "winding_consistent": true,
+    "solids": 1,
+    "volume_mm3": 2860.3346683333925,
+    "triangles": 4016,
+    "sha256": "6fdd7330e767d923903222914f9e622fe76e22aba6b83f64c6fa2c7f93615858",
+    "vertex_weld": {
+      "reused_vertex_occurrences": 0,
+      "maximum_position_change_mm": 0.0
+    }
+  },
+  "knurl": {
+    "depth_mm": 0.4,
+    "groove_width_mm": 0.8,
+    "horizontal_pitch_mm": 2.4,
+    "z_band_mm": [
+      1.4,
+      6.6
+    ]
+  },
+  "stack_overlap_mm3": 0.0,
+  "wall_envelopes_mm": [
+    [
+      19.5,
+      8.000000000000004,
+      19.5
+    ],
+    [
+      19.500000000000004,
+      8.000000000000004,
+      19.500000000000007
+    ],
+    [
+      19.500000000000004,
+      8.000000000000004,
+      19.500000000000007
+    ],
+    [
+      19.500000000000004,
+      8.000000000000004,
+      19.500000000000007
+    ]
+  ],
+  "tray": {
+    "placed_stones": 21,
+    "source": "v16-field-book/source/tak_book.py",
+    "source_sha256": "924a819968fa1e8445d79cd4eab2e5ffe09766d0b16c2792372544fb8a5c2a3e",
+    "lane_width_mm": 20.0,
+    "lane_length_mm": 98.0,
+    "side_clearance_mm": 0.25,
+    "five_stone_end_slack_mm": 0.5,
+    "obstacle_overlap_mm3": {
+      "insert": 0.0,
+      "tray": 0.0,
+      "closed_board_plate": 0.0
+    }
+  },
+  "plates": {
+    "sample": {
+      "objects": 1,
+      "bounds_mm": [
+        [
+          8.25,
+          8.25,
+          0.0
+        ],
+        [
+          27.75,
+          27.75,
+          8.0
+        ]
+      ],
+      "sha256": "5534bbaaab7811c9b90b0ba2795241c1e737df2f633a7a57497696cfdbe8b9cf"
+    },
+    "set": {
+      "objects": 21,
+      "bounds_mm": [
+        [
+          8.25,
+          8.25,
+          0.0
+        ],
+        [
+          177.75,
+          77.75,
+          8.0
+        ]
+      ],
+      "sha256": "9ad79c4d6f7998d07c5163a2093658dfa5175750cbaed722ef044757f8659d2b"
+    }
+  },
+  "physical_acceptance": "not printed or tested"
+}
