@@ -1,0 +1,928 @@
+{
+  "units": "mm",
+  "assembled_size_mm": [
+    20,
+    20,
+    6
+  ],
+  "floor_side_clearance_mm": 0.2,
+  "shoulder_glue_gap_mm": 0.19999999999999996,
+  "cavity_side_wall_mm": 1.5999999999999996,
+  "roof_under_emblem_mm": 0.8000000000000002,
+  "physical_acceptance": "not printed or tested",
+  "teams": {
+    "cat": {
+      "body_volume_mm3": 931.8962106624413,
+      "floor_volume_mm3": 470.4012033114729,
+      "fill_to_1_9mm_volume_ml": 0.8169027959650628,
+      "body_floor_overlap_mm3": 0.0,
+      "stack_overlap_mm3": 0.0,
+      "standing_wall_envelope_mm": [
+        20.000000000000004,
+        6.000000000000003,
+        20.0
+      ]
+    },
+    "witch": {
+      "body_volume_mm3": 941.9822533443455,
+      "floor_volume_mm3": 470.4012033114729,
+      "fill_to_1_9mm_volume_ml": 0.8169027959650628,
+      "body_floor_overlap_mm3": 0.0,
+      "stack_overlap_mm3": 0.0,
+      "standing_wall_envelope_mm": [
+        20.000000000000004,
+        6.000000000000003,
+        20.0
+      ]
+    }
+  },
+  "plates": {
+    "cat": {
+      "objects": 43,
+      "bounds_mm": [
+        [
+          8.0,
+          8.0,
+          -1.0838859115588234e-15
+        ],
+        [
+          214.39999961853027,
+          158.80000019073486,
+          25.263620376586914
+        ]
+      ],
+      "parts": [
+        {
+          "label": "cat-body",
+          "position_mm": [
+            18,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            43,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            68,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            93,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            118,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            143,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            168,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            18,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            43,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            68,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            93,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            118,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            143,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            168,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            18,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            43,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            68,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            93,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            118,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            143,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "cat-body",
+          "position_mm": [
+            168,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            18,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            43,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            68,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            93,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            118,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            143,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            168,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            18,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            43,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            68,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            93,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            118,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            143,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            168,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            18,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            43,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            68,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            93,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            118,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            143,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            168,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "cat-existing-capstone",
+          "position_mm": [
+            195,
+            18,
+            0
+          ]
+        }
+      ]
+    },
+    "witch": {
+      "objects": 43,
+      "bounds_mm": [
+        [
+          8.0,
+          8.0,
+          -1.0838859115588234e-15
+        ],
+        [
+          214.39999961853027,
+          158.80000019073486,
+          25.399999618530273
+        ]
+      ],
+      "parts": [
+        {
+          "label": "witch-body",
+          "position_mm": [
+            18,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            43,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            68,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            93,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            118,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            143,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            168,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            18,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            43,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            68,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            93,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            118,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            143,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            168,
+            43,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            18,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            43,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            68,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            93,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            118,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            143,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "witch-body",
+          "position_mm": [
+            168,
+            68,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            18,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            43,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            68,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            93,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            118,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            143,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            168,
+            100,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            18,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            43,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            68,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            93,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            118,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            143,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            168,
+            125,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            18,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            43,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            68,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            93,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            118,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            143,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "floor",
+          "position_mm": [
+            168,
+            150,
+            0
+          ]
+        },
+        {
+          "label": "witch-existing-capstone",
+          "position_mm": [
+            195,
+            18,
+            0
+          ]
+        }
+      ]
+    },
+    "coupon": {
+      "objects": 6,
+      "bounds_mm": [
+        [
+          8.0,
+          8.0,
+          -1.0838859115588234e-15
+        ],
+        [
+          84.0,
+          56.85000038146973,
+          6.0
+        ]
+      ],
+      "parts": [
+        {
+          "label": "body-for-floor-1",
+          "position_mm": [
+            18,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "floor-1-0.15mm",
+          "position_mm": [
+            18,
+            48,
+            0
+          ]
+        },
+        {
+          "label": "body-for-floor-2",
+          "position_mm": [
+            46,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "floor-2-0.20mm",
+          "position_mm": [
+            46,
+            48,
+            0
+          ]
+        },
+        {
+          "label": "body-for-floor-3",
+          "position_mm": [
+            74,
+            18,
+            0
+          ]
+        },
+        {
+          "label": "floor-3-0.25mm",
+          "position_mm": [
+            74,
+            48,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "meshes": {
+    "cat-body-print.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "solids": 1,
+      "volume_mm3": 931.8739289765009,
+      "dimensions_mm": [
+        20.0,
+        20.0,
+        6.000000000000001
+      ]
+    },
+    "cat-capstone.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "solids": 1,
+      "volume_mm3": 3334.567743748956,
+      "dimensions_mm": [
+        19.399999618530273,
+        19.393970489501953,
+        25.263620376586914
+      ]
+    },
+    "coupon-floor-1.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "solids": 1,
+      "volume_mm3": 475.60717973130903,
+      "dimensions_mm": [
+        17.700000762939453,
+        17.700000762939453,
+        1.600000023841858
+      ]
+    },
+    "coupon-floor-2.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "solids": 1,
+      "volume_mm3": 470.071165394792,
+      "dimensions_mm": [
+        17.600000381469727,
+        17.600000381469727,
+        1.600000023841858
+      ]
+    },
+    "coupon-floor-3.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "solids": 1,
+      "volume_mm3": 464.70985774794894,
+      "dimensions_mm": [
+        17.5,
+        17.5,
+        1.600000023841858
+      ]
+    },
+    "stone-floor.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "solids": 1,
+      "volume_mm3": 470.40013407452125,
+      "dimensions_mm": [
+        17.600000381469727,
+        17.600000381469727,
+        1.600000023841858
+      ]
+    },
+    "witch-body-print.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "solids": 1,
+      "volume_mm3": 941.9518655474345,
+      "dimensions_mm": [
+        20.0,
+        20.0,
+        6.000000000000001
+      ]
+    },
+    "witch-capstone.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "solids": 1,
+      "volume_mm3": 2659.2445189080577,
+      "dimensions_mm": [
+        19.399999618530273,
+        19.393970489501953,
+        25.399999618530273
+      ]
+    }
+  },
+  "zero_area_triangles_removed": {
+    "stone-floor": 0,
+    "cat-body-print": 0,
+    "cat-capstone": 1,
+    "witch-body-print": 0,
+    "witch-capstone": 0,
+    "coupon-floor-1": 0,
+    "coupon-floor-2": 0,
+    "coupon-floor-3": 0
+  }
+}
