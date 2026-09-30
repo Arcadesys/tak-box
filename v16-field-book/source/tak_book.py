@@ -6,7 +6,8 @@ x SEAM+HG..WX, faces up at z=FACE. The grid is inlaid flush with the face in
 a second colour. The fold axis runs along y at (x=68, z=AXZ), the top of the
 lines, so closing rotates B 180 degrees onto A and the lips meet.
 
-Each leaf is a base (2 mm floor skin, fore wall, seam wall, 10 mm back wall), a
+Each leaf is a base (2 mm floor skin, fore wall, seam wall, 10 mm back wall,
+two cross ribs behind the tray), a
 glued face plate carrying half the board, and a tray that slides out of the
 front end (y=0). A tray locks with a button on a flexible arm in its outer wall
 and is released by pressing the button in from the book's side.
@@ -61,6 +62,11 @@ DR_FRONT=2.0
 DR_X=(FORE+CLR,LEAF_X1-SEAM_WALL-CLR)
 TRAY_LEN=132.0              # the tray needs only the pieces' length; the cavity behind it stays empty
 DR_Y1=TRAY_LEN
+# Cross ribs in the empty chamber behind the tray, floor to plate seat: they tie
+# the floor skin to the plate and cut its 92 mm span into ~20 mm bays. Clear of
+# the tray (ends at 132) and of leaf B's buckle panel (starts at y=175).
+RIB_T=1.2
+RIB_Y=(152.0,170.0)         # rib centre lines
 
 # ---- push-button tray latch (fore side of each tray)
 ARM_Y=(2.6,28.5)          # cantilever in the outer wall, beside the capstone; root at 28.5
@@ -155,6 +161,8 @@ def _base_body():
     p=cq.Workplane(obj=p).edges('|Z and <X').fillet(CORNER_R).val()
     p=cq.Workplane(obj=p).faces('<Z').edges().fillet(EDGE_R).val()
     p=p.cut(box(FORE,LEAF_X1-SEAM_WALL,-.1,WY-BACK,FLOOR,PLATE_Z+.1))
+    for y in RIB_Y:
+        p=p.fuse(box(FORE-.01,LEAF_X1-SEAM_WALL+.01,y-RIB_T/2,y+RIB_T/2,FLOOR-.01,PLATE_Z))
     # Latch window through the fore wall, inside a shallow finger dish.
     p=p.cut(box(DISH_D-.01,FORE+.1,*WIN_Y,*WIN_Z))
     cy,cz=sum(WIN_Y)/2,sum(WIN_Z)/2

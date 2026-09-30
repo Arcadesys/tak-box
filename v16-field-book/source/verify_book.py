@@ -217,6 +217,17 @@ record('plates-register-for-gluing',
            for k_,r in reg.items() if k_.startswith('plate'))
        and max(land)<TOL and max(roof)<TOL and reg['socket_roof_mm']>=.4,reg)
 
+# Cross ribs behind the tray: clear of the fully inserted tray and of leaf B's
+# buckle panel and its slits, and they reach the plate seat so the plate rests on them.
+rib_lo=min(c.RIB_Y)-c.RIB_T/2;rib_hi=max(c.RIB_Y)+c.RIB_T/2
+ribs={'tray_clear_mm':round(rib_lo-c.DR_Y1,2),
+      'panel_clear_mm':round(c.PANEL_Y[0]-c.PANEL_SLIT-rib_hi,2),
+      'tray_overlap_mm3':round(max(ov(c.tray(s_),c.base(s_)) for s_ in 'AB'),4)}
+seat=c.box(c.FORE+1,c.LEAF_X1-c.SEAM_WALL-1,rib_lo,rib_hi,c.PLATE_Z-.05,c.PLATE_Z)
+ribs['seat_mm3']=round(ov(seat,c.base('A')),3)
+record('cross-ribs',ribs['tray_clear_mm']>=5 and ribs['panel_clear_mm']>=2
+       and ribs['tray_overlap_mm3']<TOL and ribs['seat_mm3']>0,ribs)
+
 hinged=cq.Compound.makeCompound([c.base('A'),c.base('B')])
 def ext(s):b=s.BoundingBox();return [round(b.xlen,1),round(b.ylen,1),round(b.zlen,1)]
 beds={'hinged-bases':ext(hinged),'plate':ext(c.plate('A')),'tray':ext(c.tray_a())}

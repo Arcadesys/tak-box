@@ -25,8 +25,9 @@ v15 was too small to play on: with 8.5 mm between stones you couldn't get finger
   - The book is 20 mm wider and 40 mm longer. The board art keeps its place in each cell; the symbols are the same size, so they look smaller on the bigger cells.
 - **Capstone cradle.** The real pawn capstones (Ø19.4 mm, which can't get lower than 19.4 mm in any pose) did not fit v15's trays; the model used a stale envelope. Each tray floor now has a 0.4 mm cradle groove that holds the pawn on its side, and the trays are 1.4 mm taller. The closed book is 51 mm thick. `verify_book.py` now fits the real STEP pieces, not envelopes: the pawn sits 0.4 mm under the plate. The flats are the real 20 mm, not 19.5 mm.
 - **Roomier trays.** The stacks stand at least 12 mm apart, so you can pinch one out. The trays are 132 mm long instead of full length, which leaves the back of each cavity empty and saves plastic.
+- **Cross ribs:** two 1.2 mm ribs (y = 152 and 170 mm) span each chamber behind the tray, from the floor up to the plate seat. The plate rests on them, and they break the 92 mm floor and plate spans into bays about 20 mm long. They stay clear of the tray and of leaf B's buckle panel. The board plates did not change, so plates already printed still fit; only plate 01 (the bases) needs reprinting.
 - **Glue wells:** one more along each wall to cover the longer walls. The pegs are unchanged.
-- **Plates:** re-positioned for the bigger parts and the prime tower; all four still fit the 256 mm bed. Plate 01 is now about 4 h 29 min and 160 g.
+- **Plates:** re-positioned for the bigger parts and the prime tower; all four still fit the 256 mm bed. Plate 01 is now about 4 h 58 min and 171 g, with the ribs.
 
 ## Carried over from v15
 
@@ -36,7 +37,7 @@ v15 was too small to play on: with 8.5 mm between stones you couldn't get finger
   - **On the case:** the panel shows only as two fine slits on the side.
   - **Purse-proof:** pressing alone doesn't open it; the halves also have to be pulled apart.
   - **Print strength:** every flexing part bends within the print layers, not across them.
-- **Shell:** a 2 mm floor skin, 6 mm plan corners, 2 mm bottom fillets, and a 10 mm back wall that houses the buckle.
+- **Shell:** a 2 mm floor skin, two cross ribs behind each tray, 6 mm plan corners, 2 mm bottom fillets, and a 10 mm back wall that houses the buckle.
 - **Cover:** a debossed **TAK**, 0.7 mm deep.
 - **Board:** the grid is a 0.6 mm inlay flush with the face, in a second colour.
 - **Fold:** the lips meet exactly at the hinge axis when closed.
@@ -82,12 +83,12 @@ Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports*
 
 | Plate | Contents | Colours | Time | PLA | Colour changes |
 |---|---|---|---|---|---|
-| [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle (with a plate peg and socket), tray latch | black | 56 min | 20 g | 0 |
-| [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 4 h 29 min | 160 g | 0 |
+| [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle (with a plate peg and socket), tray latch | black | 58 min | 21 g | 0 |
+| [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 4 h 58 min | 171 g | 0 |
 | [02](plates/plate02-trays-4colour.3mf) | Trays A and B with moon and sparkle floors | black, white, orange, purple | 2 h 14 min | 62 g | 9 |
 | [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with lip, grid, stars and symbols | all four | 2 h 42 min | 97 g | 9 |
 
-The full set (01–03) takes about 9 h 24 min and 319 g, including purge: 1.9 g orange and 1.8 g purple. Print **plate 00 first**. The times are slicer estimates.
+The full set (01–03) takes about 9 h 54 min and 330 g, including purge: 1.9 g orange and 1.8 g purple. Print **plate 00 first**. The times are slicer estimates.
 
 **Assembly**
 1. Free the print-in-place hinge on the bases.
@@ -121,6 +122,7 @@ Then complete [ACCEPTANCE.md](ACCEPTANCE.md).
 - **Strain:** panel strain is 0.6%, and tray-arm strain is 0.75%.
 - **Trays:** a locked tray can't be pulled out, and a released tray slides fully out.
 - **Pieces:** they fit each tray and clear the pressed arm.
+- **Cross ribs:** they clear the tray and the buckle panel, and they reach the plate seat.
 - **Glue-up:** each plate sits clear on its pegs, and a 0.3 mm shift or a 0.3° twist is blocked. Every glue well sits over solid wall.
 - **Bed:** every part fits a 256 mm bed.
 

@@ -343,6 +343,15 @@
    }
   }
  },
+ "cross-ribs": {
+  "pass": true,
+  "detail": {
+   "tray_clear_mm": 19.4,
+   "panel_clear_mm": 3.6,
+   "tray_overlap_mm3": 0.0,
+   "seat_mm3": 10.872
+  }
+ },
  "fits-256-bed": {
   "pass": true,
   "detail": {
