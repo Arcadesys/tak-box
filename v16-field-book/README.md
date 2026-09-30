@@ -70,17 +70,16 @@ Keep acrylic paint (and any varnish) below the lip top. The thumb groove is cut 
 
 ## Tray insert (add-on, printed after the trays)
 
-The trays are already printed, so the insert is a separate part that drops onto each tray floor. Nothing about the tray, bases or plates changed.
+The trays are already printed, so the insert is a separate part that drops onto each tray floor. Nothing about the tray, bases or plates changed. It is built for how the flats are actually loaded: **lying flat in one layer, 4 across and 5 deep**, with the pawn and the 21st flat in the front strip.
 
-- **Channels:** three slots along the tray, one per column of stacks, each 20.0 mm wide with 1.2 mm rails 5 mm tall. The printed flats are 19.5 mm (0.5 mm under the real 20 mm for fit), so a stack has 0.25 mm each side. Drop a stack in anywhere along a channel and slide it up against the last one; nothing has to line up in two directions. The rails' inner top edges have a 0.6 mm lead-in.
-- **Snug ends:** each channel is only as long as its stacks plus 0.5 mm (3 stacks beside the pawn, 4 in each full column), so a full tray can't rattle along its length. The back of the tray stays empty, as it already was.
-- **Pawn:** the capstone stays in the tray's own cradle. A 9 mm stop wall 0.4 mm past its end keeps it from sliding out, and closes the front of the pawn-side channel.
-- **Finger room:** the channels are joined by 0.6 mm straps and are 11 mm apart. Rails are low, so you pinch the upper flat from the side.
-- **Fit:** 0.15 mm off each tray wall, drops in with no force. It clears the tray latch arm when pressed and sits 10 mm under the board plate.
+- **Four lanes:** each is 20.0 mm wide and 98 mm long (5 flats plus 0.5 mm). The printed flats are 19.5 mm (0.5 mm under the real 20 mm for fit), so a flat has 0.25 mm each side. Drop a flat in anywhere along its lane and slide it up to the last one. The walls are 3.5 mm tall (under half a flat, so you can pinch one out) with a lead-in chamfer, 1.2 mm outside and 1.6 mm dividers between lanes.
+- **Pawn saddle:** the capstone stays in the tray's own cradle groove, with a 9 mm stop wall behind it and a 6 mm side wall along each side (0.35 mm clear of its widest point). The left wall starts 16 mm back: the pressed latch arm swings out to 6.5 mm from the wall at the front and would hit it.
+- **21st flat:** its own four-wall pocket beside the pawn, sharing the saddle's right wall.
+- **Fit:** 0.15 mm off each tray wall, drops in with no force. It sits 10 mm under the board plate, so a second layer of flats still fits on top of the lanes.
 - **Two inserts:** A and B are mirror images (the pawn cradle is off-centre), so print one of each.
-- **Print:** [plate 04](plates/plate04-tray-inserts-black.3mf), one slot-1 filament (any colour works; a light one makes the stacks easy to see), about 3.7 g each (7.4 g and 23 min for the pair), no supports.
+- **Print:** [plate 04](plates/plate04-tray-inserts-black.3mf), one slot-1 filament (any colour works; a light one shows the flats well), about 4 g each, no supports.
 
-`verify_book.py` checks 19.5 mm stacks (packed to the front and to the back of every channel) and the real pawn against the insert (`tray-insert-fits`). `FLAT` in `tak_book.py` stays 20.0 on purpose: the printed tray's cradle position is derived from it.
+`verify_book.py` checks 21 flats of 19.5 x 19.5 x 8 mm (packed to the front and to the back of every lane) and the real pawn against the insert (`tray-insert-fits`). `FLAT` in `tak_book.py` stays 20.0 on purpose: the printed tray's cradle position is derived from it. The earlier tray notes above describe 11 two-high standing stacks; that is a capacity figure, not how it is loaded.
 
 ## Stiffer base (for the case print; trays and plates unchanged)
 

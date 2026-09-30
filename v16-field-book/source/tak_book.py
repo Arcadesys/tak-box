@@ -559,60 +559,79 @@ def piece_boxes(side='A',pull=0.0):
 
 # ============================================================ tray insert
 # Added after the trays were printed, so it does not touch the tray: a separate
-# part that drops onto the tray floor. Three channels run along y, one per
-# column of stacks. Stacks drop in anywhere along a channel and slide up
-# against each other, so nothing has to be lined up in two axes.
+# part that drops onto the tray floor. The flats lie flat in a single layer
+# (4 across, 5 deep), so the insert is four lanes 20.0 mm wide and 5 flats long
+# behind a pawn saddle, with one more pocket beside the pawn for the 21st flat.
+# A flat drops in anywhere along its lane and slides up to the last one.
 # FLAT above stays 20.0 because the tray's cradle position is derived from it.
 FLAT_PRINTED=19.5           # the printed flats are 0.5 mm under the real 20 mm
-CHANNEL=20.0                # channel inside width: 0.25 mm each side of a printed flat
-RAIL=1.2                    # rail thickness (three perimeters)
-RAIL_FLARE=.6               # lead-in chamfer on the rails' inner top edges
-INS_H=5.0                   # rail height; a stack is 16 mm
+FLAT_T=8.0                  # flat thickness
+LANE=20.0                   # lane inside width: 0.25 mm each side of a printed flat
+LANES=4
+LANE_FLATS=5
+LANE_SLACK=.5               # end play along a full lane
+OUT_W=1.2                   # outer lane walls (three perimeters)
+DIV_W=1.6                   # shared dividers between lanes
+RAIL_H=3.5                  # lane walls: under half a flat, so a flat is easy to pinch out
+RAIL_FLARE=.4               # lead-in chamfer on the inner top edges
 INS_CLR=.15                 # gap to the tray walls, so it drops in
-INS_WALL=.8                 # end walls
+INS_WALL=.8                 # end walls and saddle
 STRAP_W=4.0
-STRAP_T=.6
 STOP_H=9.0                  # end stop that keeps the pawn from sliding out of its cradle
 STOP_GAP=.4                 # from the pawn's end to the stop
-STACK_SLACK=.5              # end play along a full channel
-STACKS=(3,4,4)              # stacks per channel: beside the pawn, then two full columns
+SADDLE_GAP=.35              # each side of the pawn's widest point
+SADDLE_H=6.0                # saddle wall height, hugging the pawn's lower body
+SADDLE_L_Y0=16.0            # left wall starts here: the pressed latch arm swings out to x=6.5 at the front
 
 def _ins_layout():
-    """Channels as (outer x0, outer x1, stack zone y0, y1) plus the pawn stop, in tray A."""
-    o=CHANNEL+2*RAIL
+    """Everything the checks need, in tray A: lane boxes (x0,x1,y0,y1) inside the walls,
+    the 21st-flat pocket inside box, the pawn stop and the saddle wall x positions."""
     bx0=DR_X[0]+DR_WALL+INS_CLR;bx1=DR_X[1]-DR_WALL-INS_CLR
-    cols=[bx0+i*(bx1-bx0-o)/2 for i in range(3)]
+    total=LANES*LANE+2*OUT_W+(LANES-1)*DIV_W
+    x=bx0+(bx1-bx0-total)/2+OUT_W
     cx,ya,yb=cap_slot()
     stop=(cx-CAP[1]/2,cx+CAP[1]/2,yb+STOP_GAP,yb+STOP_GAP+INS_WALL)
-    ch=[]
-    for i,n in enumerate(STACKS):
-        y0=stop[3] if i==0 else DR_FRONT+INS_CLR
-        ch.append((cols[i],cols[i]+o,y0,y0+n*FLAT_PRINTED+STACK_SLACK))
-    return ch,stop
+    ly0=stop[3];ly1=ly0+LANE_FLATS*FLAT_PRINTED+LANE_SLACK
+    lanes=[]
+    for i in range(LANES):
+        lanes.append((x,x+LANE,ly0,ly1));x+=LANE+DIV_W
+    xr=stop[1]+SADDLE_GAP+INS_WALL
+    sy0=DR_FRONT+INS_CLR
+    pocket=(xr,xr+LANE,sy0+INS_WALL,sy0+INS_WALL+LANE)
+    return lanes,pocket,stop
 
 @lru_cache(None)
 def tray_insert_a():
     z0=DR_Z0+DR_FLOOR
-    ch,stop=_ins_layout()
-    def rail(xo,xi,y0,y1):
-        """One rail from outer face xo to inner face xi, flared at the top inner edge."""
-        d=1 if xi>xo else -1
-        pts=[(xo,z0),(xi,z0),(xi,z0+INS_H-RAIL_FLARE),(xi-d*RAIL_FLARE,z0+INS_H),(xo,z0+INS_H)]
+    lanes,pocket,stop=_ins_layout()
+    def wall(xa,xb,y0,y1,h=RAIL_H,fl=RAIL_FLARE,left=True,right=True):
+        """A wall from x=xa to xb along y, with a lead-in chamfer on the chosen top edges."""
+        fa=fl if left else 0;fb=fl if right else 0
+        pts=[(xa,z0),(xb,z0),(xb,z0+h-fb),(xb-fb,z0+h),(xa+fa,z0+h),(xa,z0+h-fa)]
+        pts=[q for i,q in enumerate(pts) if q!=pts[i-1]]      # no flare on a side: drop the repeated corner
         return cq.Workplane('XZ',origin=(0,y0,0)).polyline(pts).close().extrude(-(y1-y0)).val()
     ins=[]
-    for i,(x0,x1,y0,y1) in enumerate(ch):
-        yb=y1+INS_WALL
-        if i==0:
-            # the pawn stop is also this channel's front end wall, full channel width
-            ins.append(box(x0,x1,stop[2],stop[3],z0,z0+STOP_H))
-            y0=stop[2]
-        ins.append(rail(x0,x0+RAIL,y0,yb));ins.append(rail(x1,x1-RAIL,y0,yb))
-        ins.append(box(x0,x1,y1,yb,z0,z0+INS_H))
-    # straps across the finger gaps between channels, over the length they share
-    lo=max(c_[2] for c_ in ch);hi=min(c_[3] for c_ in ch)
-    for ym in (lo+(hi-lo)*.25,lo+(hi-lo)*.75):
-        for a,b in zip(ch,ch[1:]):
-            ins.append(box(a[1]-RAIL,b[0]+RAIL,ym-STRAP_W/2,ym+STRAP_W/2,z0,z0+STRAP_T))
+    ly0,ly1=lanes[0][2],lanes[0][3]
+    yb=ly1+INS_WALL
+    # lane walls: outer walls flared inward only, dividers flared both sides
+    ins.append(wall(lanes[0][0]-OUT_W,lanes[0][0],stop[2],yb,left=False))
+    for a,b in zip(lanes,lanes[1:]):
+        ins.append(wall(a[1],b[0],stop[2],yb))
+    ins.append(wall(lanes[-1][1],lanes[-1][1]+OUT_W,stop[2],yb,right=False))
+    xl0=lanes[0][0]-OUT_W;xl1=lanes[-1][1]+OUT_W
+    ins.append(box(xl0,xl1,stop[2],stop[3],z0,z0+RAIL_H))      # front bar across the lanes
+    ins.append(box(xl0,xl1,ly1,yb,z0,z0+RAIL_H))               # back bar
+    # pawn saddle: stop wall behind it, and side walls hugging its body
+    sy0=DR_FRONT+INS_CLR
+    xl=stop[0]-SADDLE_GAP;xr=stop[1]+SADDLE_GAP
+    ins.append(box(min(stop[0],xl-INS_WALL),xr+INS_WALL,stop[2],stop[3],z0,z0+STOP_H))
+    ins.append(wall(xl-INS_WALL,xl,SADDLE_L_Y0,stop[3],SADDLE_H,.4,left=False))
+    ins.append(wall(xr,xr+INS_WALL,sy0,stop[3],SADDLE_H,.4,right=False))
+    # pocket for the 21st flat, sharing the saddle's right wall
+    px0,px1,py0,py1=pocket
+    ins.append(wall(px1,px1+INS_WALL,sy0,py1+INS_WALL,left=True,right=False))
+    ins.append(box(xr,px1+INS_WALL,sy0,sy0+INS_WALL,z0,z0+RAIL_H))
+    ins.append(box(xr,px1+INS_WALL,py1,py1+INS_WALL,z0,z0+RAIL_H))
     r=ins[0]
     for x in ins[1:]:r=r.fuse(x)
     return r.clean()

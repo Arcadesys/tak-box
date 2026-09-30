@@ -235,24 +235,25 @@ record('cross-ribs',ribs['tray_clear_mm']>=1.5 and ribs['spine_seat_mm3']>0 and 
        and ribs['tray_overlap_mm3']<TOL and ribs['seat_mm3']>0,ribs)
 
 
-# Tray insert (added after the trays were printed): three channels that drop
-# onto the printed tray and hold each printed 19.5 mm stack, sliding end to end.
-# Stacks are checked packed to the front and to the back of every channel.
+# Tray insert (added after the trays were printed). The flats lie flat, 4 across
+# and 5 deep, in four lanes; the 21st flat has its own pocket; the pawn lies in
+# a saddle. Flats are checked packed to the front and to the back of every lane.
 ins={}
-ch,stop=c._ins_layout()
+lanes,pocket,stop=c._ins_layout()
 for side,team in (('A','cat'),('B','witch')):
     I=c.tray_insert(side);t=c.tray(side)
     z=c.DR_Z0+c.DR_FLOOR;h=c.FLAT_PRINTED
-    def stacks(back):
+    def flats(back):
         out=[]
-        for (x0,x1,y0,y1),n in zip(ch,c.STACKS):
+        for x0,x1,y0,y1 in lanes:
             cx_=(x0+x1)/2
-            for j in range(n):
-                y=(y1-n*h+j*h) if back else (y0+j*h)
-                for k in (0,1):
-                    out.append(c.box(cx_-h/2,cx_+h/2,y,y+h,z+8*k,z+8*k+8))
+            for j in range(c.LANE_FLATS):
+                y=(y1-c.LANE_FLATS*h+j*h) if back else (y0+j*h)
+                out.append(c.box(cx_-h/2,cx_+h/2,y,y+h,z,z+c.FLAT_T))
+        px0,px1,py0,py1=pocket;cx_,cy_=(px0+px1)/2,(py0+py1)/2
+        out.append(c.box(cx_-h/2,cx_+h/2,cy_-h/2,cy_+h/2,z,z+c.FLAT_T))
         return out
-    S=stacks(False)+stacks(True)
+    S=flats(False)+flats(True)
     capst=_upright(_load(f'{team}-capstone')).rotate((0,0,0),(1,0,0),-90)
     b=capst.BoundingBox();x,ya,yb=c.cap_slot()
     capst=capst.translate((x-(b.xmin+b.xmax)/2,ya-b.ymin,z-c.CRADLE_D-b.zmin))
@@ -261,17 +262,18 @@ for side,team in (('A','cat'),('B','witch')):
     ins[side]={'solids':len(I.Solids()),'valid':I.isValid(),
         'vs_tray':round(ov(I,t),4),'vs_pressed_arm':round(ov(I,bent if side=='A' else c.mirror_b(bent)),4),
         'vs_plate_and_base':round(worst([I],[c.plate(side),c.base(side)]),4),
-        'stacks_vs_insert':round(max(ov(s_,I) for s_ in S),4),
+        'flats_vs_insert':round(max(ov(s_,I) for s_ in S),4),
         'capstone_vs_insert':round(ov(capst,I),4),
+        'flats_vs_tray':round(max(ov(s_,t) for s_ in S),4),
         'top_under_plate_mm':round(c.PLATE_Z-ib.zmax,2),
-        'channel_clearance_per_side_mm':round((c.CHANNEL-c.FLAT_PRINTED)/2,3),
+        'lane_clearance_per_side_mm':round((c.LANE-c.FLAT_PRINTED)/2,3),
         'wall_gap_to_tray_mm':c.INS_CLR,'mass_g_pla':round(I.Volume()*1.24e-3,1)}
-ins['min_gap_between_channels_mm']=round(min(b_[0]-a_[1] for a_,b_ in zip(ch,ch[1:])),1)
-ins['channel_stack_zone_mm']=[round(c_[3]-c_[2],1) for c_ in ch]
+ins['lane_length_mm']=round(lanes[0][3]-lanes[0][2],1)
+ins['flats_held']=c.LANES*c.LANE_FLATS+1
 record('tray-insert-fits',all(r['solids']==1 and r['valid'] and r['vs_tray']<TOL and r['vs_pressed_arm']<TOL
-       and r['vs_plate_and_base']<TOL and r['stacks_vs_insert']<TOL and r['capstone_vs_insert']<TOL
-       and r['top_under_plate_mm']>=1 for k_,r in ins.items() if k_ in 'AB')
-       and ins['min_gap_between_channels_mm']>=10,ins)
+       and r['vs_plate_and_base']<TOL and r['flats_vs_insert']<TOL and r['capstone_vs_insert']<TOL
+       and r['flats_vs_tray']<TOL and r['top_under_plate_mm']>=1 for k_,r in ins.items() if k_ in 'AB')
+       and ins['flats_held']==21,ins)
 
 hinged=cq.Compound.makeCompound([c.base('A'),c.base('B')])
 def ext(s):b=s.BoundingBox();return [round(b.xlen,1),round(b.ylen,1),round(b.zlen,1)]

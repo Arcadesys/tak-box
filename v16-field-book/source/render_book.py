@@ -86,5 +86,5 @@ render('07-board-symbols-top.png','v16 board from above','Star dots and one smal
 _ins=[]
 for s_,acc in (('A',ORANGE),('B',PURPLE)):
     _ins+=[(c.tray_body(s_),TRAY),(c.tray_swirl(s_),acc),(c.tray_sparkles(s_),GRID),(c.tray_insert(s_),(.85,.85,.82))]
-render('08-tray-insert.png','v16 tray inserts','Drop-in channels: a 20.0 mm slot per column of stacks, and a stop that keeps the pawn in its cradle.',
+render('08-tray-insert.png','v16 tray inserts','Four 5-flat lanes, a pocket for the 21st flat, and a saddle for the pawn.',
        _ins,(cx,c.DR_Y1/2,300),(cx,c.DR_Y1/2,0),max(c.DR_Y1,c.WX/1.5)/2*1.25,up=(0,1,0))

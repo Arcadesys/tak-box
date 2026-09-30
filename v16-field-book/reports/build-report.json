@@ -237,21 +237,21 @@
   },
   "stl/tray-insert-a": {
    "bounds": [
-    4.65,
-    93.95,
+    5.7,
+    92.9,
     2.15,
-    88.9,
+    127.9,
     3.2,
     12.2
    ],
-   "volume_mm3": 3050.4,
+   "volume_mm3": 3343.044,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
-    89.3,
+    87.2,
     0.0,
-    86.75,
-    -0.0,
+    125.75,
+    0.0,
     9.0
    ],
    "stl_weld": {
@@ -261,21 +261,21 @@
   },
   "stl/tray-insert-b": {
    "bounds": [
-    102.05,
-    191.35,
+    103.1,
+    190.3,
     2.15,
-    88.9,
+    127.9,
     3.2,
     12.2
    ],
-   "volume_mm3": 3050.4,
+   "volume_mm3": 3343.044,
    "print_orientation": "as modelled",
    "print_bounds": [
     0.0,
-    89.3,
+    87.2,
     0.0,
-    86.75,
-    -0.0,
+    125.75,
+    0.0,
     9.0
    ],
    "stl_weld": {
