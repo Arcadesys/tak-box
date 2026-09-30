@@ -198,7 +198,6 @@ def base(side):
     if side=='B':
         p=mirror_b(p)
         p=_buckle_socket(p)
-        p=p.cut(_deboss())
     own,other=(KNUCKLE_A,KNUCKLE_B) if side=='A' else (KNUCKLE_B,KNUCKLE_A)
     for y0,y1 in other:
         p=p.cut(cyly(RELIEF,y0-.4,y1+.4,SEAM,AXZ))
@@ -409,15 +408,6 @@ def panel_region():
 def pressed_parts():
     """Catch ring and panel free end, moved in by PRESS (translation; conservative)."""
     return [catch_ring().translate((-PRESS,0,0))]
-
-
-def _deboss():
-    """TAK in leaf B's floor, mirrored so it reads correctly on the closed cover."""
-    t=cq.Workplane('XY').text('TAK',20,.7,font='Arial',kind='bold',combine=True).val()
-    b=t.BoundingBox()
-    t=t.translate((-(b.xmin+b.xmax)/2,-(b.ymin+b.ymax)/2,-.1))
-    t=t.mirror('YZ',(0,0,0))
-    return t.translate((SEAM+LEAF_X1/2+HG,WY/2,0))
 
 
 # ================================================================== trays

@@ -29,7 +29,7 @@
           1
         ]
       ],
-      "estimated_time": "58m 20s",
+      "estimated_time": "58m 21s",
       "layers": 143,
       "filament_g": {
         "black": 20.86,
@@ -49,15 +49,15 @@
           1
         ]
       ],
-      "estimated_time": "5h 20m 2s",
+      "estimated_time": "5h 17m 33s",
       "layers": 143,
       "filament_g": {
-        "black": 177.62,
+        "black": 177.72,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 177.62,
+      "total_g": 177.72,
       "colour_changes": 0,
       "supports": "0"
     },
@@ -128,7 +128,7 @@
           1
         ]
       ],
-      "estimated_time": "52m 36s",
+      "estimated_time": "52m 35s",
       "layers": 80,
       "filament_g": {
         "black": 25.98,
