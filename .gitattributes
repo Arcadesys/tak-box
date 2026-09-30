@@ -7,3 +7,7 @@ pieces/weighted-v1/models/*.step binary linguist-generated=true
 pieces/weighted-v1/models/*.stl binary linguist-generated=true
 pieces/weighted-v1/plates/*.3mf binary linguist-generated=true
 pieces/weighted-tak-v1.zip binary linguist-generated=true
+pieces/fox-knurled-v1/models/*.step binary linguist-generated=true
+pieces/fox-knurled-v1/models/*.stl binary linguist-generated=true
+pieces/fox-knurled-v1/plates/*.3mf binary linguist-generated=true
+pieces/fox-knurled-v1.zip binary linguist-generated=true

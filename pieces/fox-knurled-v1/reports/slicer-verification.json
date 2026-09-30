@@ -1,0 +1,32 @@
+{
+  "slicer": "ElegooSlicer",
+  "machine": "Elegoo Centauri Carbon 2",
+  "filament": "PETG from existing project profiles",
+  "nozzle_mm": 0.4,
+  "layer_mm": 0.2,
+  "printed": false,
+  "plates": {
+    "fox-sample-first": {
+      "exit_code": 0,
+      "objects": 1,
+      "outside_bed": false,
+      "support_used": "false",
+      "estimated_seconds": 720,
+      "estimated_print_material_g": 3.93,
+      "gcode_bytes": 426804,
+      "gcode_sha256": "85bcc8b096262b768345b1713d6a26fd2705cdc3c0f630c8ce0514af81f23a34",
+      "file_sha256": "a7345ac24279262d4ce3cf296a2d989cbd3c141793346acbb2712b7b21d51fe9"
+    },
+    "fox-21-flats": {
+      "exit_code": 0,
+      "objects": 21,
+      "outside_bed": false,
+      "support_used": "false",
+      "estimated_seconds": 9424,
+      "estimated_print_material_g": 71.9,
+      "gcode_bytes": 8175727,
+      "gcode_sha256": "69b03111885a306c1f86e0a058803f1064f05cea89802d635f348d69e8b1935f",
+      "file_sha256": "f62a98f50b0d438675dff33585160ac0a4a5b35b002abd4b2c4e9a2a54e3e26e"
+    }
+  }
+}
