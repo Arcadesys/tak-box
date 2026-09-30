@@ -235,6 +235,54 @@
     }
    }
   },
+  "stl/tray-insert-a": {
+   "bounds": [
+    5.7,
+    92.9,
+    2.15,
+    129.5,
+    3.2,
+    19.2
+   ],
+   "volume_mm3": 10620.339,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    87.2,
+    0.0,
+    127.35,
+    0.0,
+    16.0
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/tray-insert-b": {
+   "bounds": [
+    103.1,
+    190.3,
+    2.15,
+    129.5,
+    3.2,
+    19.2
+   ],
+   "volume_mm3": 10620.339,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    87.2,
+    0.0,
+    127.35,
+    0.0,
+    16.0
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
   "step/base-a": {
    "bounds": [
     -0.0,
@@ -244,7 +292,7 @@
     -0.0,
     28.6
    ],
-   "volume_mm3": 83734.607
+   "volume_mm3": 86849.327
   },
   "step/base-b": {
    "bounds": [
@@ -255,7 +303,7 @@
     -0.0,
     28.6
    ],
-   "volume_mm3": 83061.844
+   "volume_mm3": 86327.947
   },
   "stl/bases-hinged-print-in-place": {
    "solids": 2,

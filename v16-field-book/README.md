@@ -38,7 +38,7 @@ v15 was too small to play on: with 8.5 mm between stones you couldn't get finger
   - **Purse-proof:** pressing alone doesn't open it; the halves also have to be pulled apart.
   - **Print strength:** every flexing part bends within the print layers, not across them.
 - **Shell:** a 2 mm floor skin, two cross ribs behind each tray, 6 mm plan corners, 2 mm bottom fillets, and a 10 mm back wall that houses the buckle.
-- **Cover:** a debossed **TAK**, 0.7 mm deep.
+- **Cover:** plain. The debossed TAK was cut: its 0.7 mm text caused print problems.
 - **Board:** the grid is a 0.6 mm inlay flush with the face, in a second colour.
 - **Fold:** the lips meet exactly at the hinge axis when closed.
 - **Trays:** a push-button latch in each tray's outer wall. Push the tray in to snap it. To release, press the button 1.45 mm into a 16 mm finger dish in the book's side. The button sits 1.6 mm below the surface.
@@ -68,6 +68,30 @@ Each board half has a **1.0 mm raised lip** on its three outer edges, 1.6 mm wid
 
 Keep acrylic paint (and any varnish) below the lip top. The thumb groove is cut into the lip edge.
 
+## Tray insert (add-on, printed after the trays)
+
+The trays are already printed, so the insert is a separate part that drops onto each tray floor. Nothing about the tray, bases or plates changed. It is built for how the flats are actually loaded: **lying flat in one layer, 4 across and 5 deep**, with the pawn and the 21st flat in the front strip.
+
+- **Four lanes:** each is 20.0 mm wide and 98 mm long (5 flats plus 0.5 mm). The printed flats are 19.5 mm (0.5 mm under the real 20 mm for fit), so a flat has 0.25 mm each side. Drop a flat in anywhere along its lane and slide it up to the last one. The walls are 3.5 mm tall (under half a flat, so you can pinch one out) with a lead-in chamfer, 1.2 mm outside and 1.6 mm dividers between lanes.
+- **Pawn saddle:** the capstone stays in the tray's own cradle groove, with a 9 mm stop wall behind it and a 6 mm side wall along each side (0.35 mm clear of its widest point). The left wall starts 16 mm back: the pressed latch arm swings out to 6.5 mm from the wall at the front and would hit it.
+- **21st flat:** its own four-wall pocket beside the pawn, sharing the saddle's right wall.
+- **Lifts out for play:** a 0.8 mm floor under the lanes and the 21st-flat pocket, plus a 16 mm lift tab at the back with a finger hole. Slide the tray out, hook a finger in the tab and lift: the insert comes out with all 21 flats and can sit beside the board as a play tray. The pawn stays in the tray's own groove (it has only about 0.1 mm of headroom under the plate, so it can't ride on a floor); take it out separately. To put away, drop the insert back in and the flats are already loaded.
+- **Fit:** 0.15 mm off each tray wall, drops in with no force. It sits 10 mm under the board plate, so a second layer of flats still fits on top of the lanes.
+- **Two inserts:** A and B are mirror images (the pawn cradle is off-centre), so print one of each.
+- **Print:** [plate 04](plates/plate04-tray-inserts-black.3mf), one slot-1 filament (any colour works; a light one shows the flats well), about 13 g each, no supports (the tab's finger hole is a teardrop).
+
+`verify_book.py` checks 21 flats of 19.5 x 19.5 x 8 mm (packed to the front and to the back of every lane) and the real pawn against the insert (`tray-insert-fits`). `FLAT` in `tak_book.py` stays 20.0 on purpose: the printed tray's cradle position is derived from it. The earlier tray notes above describe 11 two-high standing stacks; that is a capacity figure, not how it is loaded.
+
+## Stiffer base (for the case print; trays and plates unchanged)
+
+The board plates that were printed came out warped. Only the bases had not been printed yet, so the stiffening is all in the base and nothing about the trays, plates, pegs, glue wells or plate seat height changed. `stl/full` for every printed part is byte-identical to before.
+
+- **Tray end bulkhead:** a 1.2 mm wall 1.6 mm behind the tray's end, from the fore wall to the seam wall and from the floor up to the plate seat. With the walls and floor it closes the box section behind the tray, so the two long walls can't spread or twist.
+- **Spine rib:** a 1.2 mm rib down the middle of the chamber behind the tray, tying the bulkhead to the two cross ribs. The plate's bays behind the tray drop from about 92 mm wide to about 46 mm.
+- **Clear of everything:** the tray still slides fully home with 1.6 mm to spare, leaf B's buckle panel keeps its 3.6 mm, and the new ribs sit clear of the plate's glue wells and peg sockets, so no glue can get under a rib. All are checked in `cross-ribs`.
+- **Cost:** plate 01 grows from about 4 h 58 min and 171 g to 5 h 18 min and 178 g.
+- **Not possible:** the tray channel itself (the first 132 mm). The tray sits 0.2 mm off the floor and 0.3 mm off each wall, so nothing can be added there, and the printed plates have no other seats to glue to.
+
 ## Print plates ([plates](plates))
 
 Four ready-to-open 3MFs for the Elegoo Centauri Carbon 2 with its **4-colour filament system**, with G-code in [gcode](gcode). Every project uses the same filament slots:
@@ -84,7 +108,7 @@ Settings: PLA, 0.4 mm nozzle, 0.2 mm layers, 4 walls, 20% infill, **no supports*
 | Plate | Contents | Colours | Time | PLA | Colour changes |
 |---|---|---|---|---|---|
 | [00](plates/plate00-fit-trials-black.3mf) | Fit trials: hinge pair, buckle (with a plate peg and socket), tray latch | black | 58 min | 21 g | 0 |
-| [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 4 h 58 min | 171 g | 0 |
+| [01](plates/plate01-hinged-bases-black.3mf) | Both bases, open flat, hinge printed in place | black | 5 h 18 min | 178 g | 0 |
 | [02](plates/plate02-trays-4colour.3mf) | Trays A and B with moon and sparkle floors | black, white, orange, purple | 2 h 14 min | 62 g | 9 |
 | [03](plates/plate03-board-plates-4colour.3mf) | Board plates A and B, face up, with lip, grid, stars and symbols | all four | 2 h 42 min | 97 g | 9 |
 

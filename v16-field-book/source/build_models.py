@@ -54,6 +54,7 @@ for s_ in 'AB':
                'orange':c.decor(s_,'orange'),'purple':c.decor(s_,'purple')})
 save_group('tray-a',{'black':c.tray_body('A'),'orange':c.tray_swirl('A'),'white':c.tray_sparkles('A')})
 save_group('tray-b',{'black':c.tray_body('B'),'purple':c.tray_swirl('B'),'white':c.tray_sparkles('B')})
+save('tray-insert-a',c.tray_insert('A'),FULL);save('tray-insert-b',c.tray_insert('B'),FULL)
 save('base-a',c.base('A'));save('base-b',c.base('B'))
 # The two bases print together, open flat, with the hinge in place.
 hinged=cq.Compound.makeCompound([c.base('A'),c.base('B')])

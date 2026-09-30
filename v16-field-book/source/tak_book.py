@@ -67,6 +67,12 @@ DR_Y1=TRAY_LEN
 # the tray (ends at 132) and of leaf B's buckle panel (starts at y=175).
 RIB_T=1.2
 RIB_Y=(152.0,170.0)         # rib centre lines
+# The bulkhead closes the box section at the tray's end (fore wall to seam wall,
+# floor to plate seat), and a spine rib ties it to the cross ribs. Base only: the
+# trays, plates, pegs and glue wells are printed and do not change.
+BULK_Y=DR_Y1+2.2            # bulkhead centre line: 1.6 mm behind the tray's end
+SPINE_W=1.2
+SPINE_Y=(BULK_Y,170.0)
 
 # ---- push-button tray latch (fore side of each tray)
 ARM_Y=(2.6,28.5)          # cantilever in the outer wall, beside the capstone; root at 28.5
@@ -163,6 +169,9 @@ def _base_body():
     p=p.cut(box(FORE,LEAF_X1-SEAM_WALL,-.1,WY-BACK,FLOOR,PLATE_Z+.1))
     for y in RIB_Y:
         p=p.fuse(box(FORE-.01,LEAF_X1-SEAM_WALL+.01,y-RIB_T/2,y+RIB_T/2,FLOOR-.01,PLATE_Z))
+    p=p.fuse(box(FORE-.01,LEAF_X1-SEAM_WALL+.01,BULK_Y-RIB_T/2,BULK_Y+RIB_T/2,FLOOR-.01,PLATE_Z))
+    xm=(FORE+LEAF_X1-SEAM_WALL)/2
+    p=p.fuse(box(xm-SPINE_W/2,xm+SPINE_W/2,SPINE_Y[0],SPINE_Y[1],FLOOR-.01,PLATE_Z))
     # Latch window through the fore wall, inside a shallow finger dish.
     p=p.cut(box(DISH_D-.01,FORE+.1,*WIN_Y,*WIN_Z))
     cy,cz=sum(WIN_Y)/2,sum(WIN_Z)/2
@@ -189,7 +198,6 @@ def base(side):
     if side=='B':
         p=mirror_b(p)
         p=_buckle_socket(p)
-        p=p.cut(_deboss())
     own,other=(KNUCKLE_A,KNUCKLE_B) if side=='A' else (KNUCKLE_B,KNUCKLE_A)
     for y0,y1 in other:
         p=p.cut(cyly(RELIEF,y0-.4,y1+.4,SEAM,AXZ))
@@ -402,15 +410,6 @@ def pressed_parts():
     return [catch_ring().translate((-PRESS,0,0))]
 
 
-def _deboss():
-    """TAK in leaf B's floor, mirrored so it reads correctly on the closed cover."""
-    t=cq.Workplane('XY').text('TAK',20,.7,font='Arial',kind='bold',combine=True).val()
-    b=t.BoundingBox()
-    t=t.translate((-(b.xmin+b.xmax)/2,-(b.ymin+b.ymax)/2,-.1))
-    t=t.mirror('YZ',(0,0,0))
-    return t.translate((SEAM+LEAF_X1/2+HG,WY/2,0))
-
-
 # ================================================================== trays
 @lru_cache(None)
 def tray_a():
@@ -547,6 +546,106 @@ def piece_boxes(side='A',pull=0.0):
             out.append(box(colx[i],colx[i]+FLAT,y,y+FLAT,z,z+STACK_H))
     out=[b.translate((0,-pull,0)) for b in out]
     return out if side=='A' else [mirror_b(b) for b in out]
+
+# ============================================================ tray insert
+# Added after the trays were printed, so it does not touch the tray: a separate
+# part that drops onto the tray floor. The flats lie flat in a single layer
+# (4 across, 5 deep), so the insert is four lanes 20.0 mm wide and 5 flats long
+# behind a pawn saddle, with one more pocket beside the pawn for the 21st flat.
+# A flat drops in anywhere along its lane and slides up to the last one.
+# FLAT above stays 20.0 because the tray's cradle position is derived from it.
+FLAT_PRINTED=19.5           # the printed flats are 0.5 mm under the real 20 mm
+FLAT_T=8.0                  # flat thickness
+LANE=20.0                   # lane inside width: 0.25 mm each side of a printed flat
+LANES=4
+LANE_FLATS=5
+LANE_SLACK=.5               # end play along a full lane
+OUT_W=1.2                   # outer lane walls (three perimeters)
+DIV_W=1.6                   # shared dividers between lanes
+RAIL_H=3.5                  # lane walls: under half a flat, so a flat is easy to pinch out
+RAIL_FLARE=.4               # lead-in chamfer on the inner top edges
+INS_CLR=.15                 # gap to the tray walls, so it drops in
+INS_WALL=.8                 # end walls and saddle
+INS_FLOOR=.8                # floor under the lanes and the 21st-flat pocket, so the insert lifts out with its flats
+TAB_W=30.0                  # lift tab at the back: a plate with a finger hole
+TAB_T=1.6
+TAB_H=16.0
+TAB_HOLE_R=4.0
+STOP_H=9.0                  # end stop that keeps the pawn from sliding out of its cradle
+STOP_GAP=.4                 # from the pawn's end to the stop
+SADDLE_GAP=.35              # each side of the pawn's widest point
+SADDLE_H=6.0                # saddle wall height, hugging the pawn's lower body
+SADDLE_L_Y0=16.0            # left wall starts here: the pressed latch arm swings out to x=6.5 at the front
+
+def _ins_layout():
+    """Everything the checks need, in tray A: lane boxes (x0,x1,y0,y1) inside the walls,
+    the 21st-flat pocket inside box, the pawn stop and the saddle wall x positions."""
+    bx0=DR_X[0]+DR_WALL+INS_CLR;bx1=DR_X[1]-DR_WALL-INS_CLR
+    total=LANES*LANE+2*OUT_W+(LANES-1)*DIV_W
+    x=bx0+(bx1-bx0-total)/2+OUT_W
+    cx,ya,yb=cap_slot()
+    stop=(cx-CAP[1]/2,cx+CAP[1]/2,yb+STOP_GAP,yb+STOP_GAP+INS_WALL)
+    ly0=stop[3];ly1=ly0+LANE_FLATS*FLAT_PRINTED+LANE_SLACK
+    lanes=[]
+    for i in range(LANES):
+        lanes.append((x,x+LANE,ly0,ly1));x+=LANE+DIV_W
+    xr=stop[1]+SADDLE_GAP+INS_WALL
+    sy0=DR_FRONT+INS_CLR
+    pocket=(xr,xr+LANE,sy0+INS_WALL,sy0+INS_WALL+LANE)
+    return lanes,pocket,stop
+
+@lru_cache(None)
+def tray_insert_a():
+    z0=DR_Z0+DR_FLOOR
+    lanes,pocket,stop=_ins_layout()
+    def wall(xa,xb,y0,y1,h=RAIL_H,fl=RAIL_FLARE,left=True,right=True):
+        """A wall from x=xa to xb along y, with a lead-in chamfer on the chosen top edges."""
+        fa=fl if left else 0;fb=fl if right else 0
+        pts=[(xa,z0),(xb,z0),(xb,z0+h-fb),(xb-fb,z0+h),(xa+fa,z0+h),(xa,z0+h-fa)]
+        pts=[q for i,q in enumerate(pts) if q!=pts[i-1]]      # no flare on a side: drop the repeated corner
+        return cq.Workplane('XZ',origin=(0,y0,0)).polyline(pts).close().extrude(-(y1-y0)).val()
+    ins=[]
+    ly0,ly1=lanes[0][2],lanes[0][3]
+    yb=ly1+INS_WALL
+    # lane walls: outer walls flared inward only, dividers flared both sides
+    ins.append(wall(lanes[0][0]-OUT_W,lanes[0][0],stop[2],yb,left=False))
+    for a,b in zip(lanes,lanes[1:]):
+        ins.append(wall(a[1],b[0],stop[2],yb))
+    ins.append(wall(lanes[-1][1],lanes[-1][1]+OUT_W,stop[2],yb,right=False))
+    xl0=lanes[0][0]-OUT_W;xl1=lanes[-1][1]+OUT_W
+    ins.append(box(xl0,xl1,stop[2],stop[3],z0,z0+RAIL_H))      # front bar across the lanes
+    ins.append(box(xl0,xl1,ly1,yb,z0,z0+RAIL_H))               # back bar
+    # pawn saddle: stop wall behind it, and side walls hugging its body
+    sy0=DR_FRONT+INS_CLR
+    xl=stop[0]-SADDLE_GAP;xr=stop[1]+SADDLE_GAP
+    ins.append(box(min(stop[0],xl-INS_WALL),xr+INS_WALL,stop[2],stop[3],z0,z0+STOP_H))
+    ins.append(wall(xl-INS_WALL,xl,SADDLE_L_Y0,stop[3],SADDLE_H,.4,left=False))
+    ins.append(wall(xr,xr+INS_WALL,sy0,stop[3],SADDLE_H,.4,right=False))
+    # pocket for the 21st flat, sharing the saddle's right wall
+    px0,px1,py0,py1=pocket
+    ins.append(wall(px1,px1+INS_WALL,sy0,py1+INS_WALL,left=True,right=False))
+    ins.append(box(xr,px1+INS_WALL,sy0,sy0+INS_WALL,z0,z0+RAIL_H))
+    ins.append(box(xr,px1+INS_WALL,py1,py1+INS_WALL,z0,z0+RAIL_H))
+    # Floor under the lanes and the pocket. None under the pawn: it has only
+    # about 0.1 mm of headroom under the plate, so it stays in the tray's groove.
+    ins.append(box(xl0,xl1,stop[2],yb,z0,z0+INS_FLOOR))
+    ins.append(box(xr,px1+INS_WALL,sy0,py1+INS_WALL,z0,z0+INS_FLOOR))
+    # Lift tab behind the lanes, with a teardrop finger hole (prints without support).
+    tx=(xl0+xl1)/2
+    tab=box(tx-TAB_W/2,tx+TAB_W/2,yb-.01,yb+TAB_T,z0,z0+TAB_H)
+    hz=z0+TAB_H*.5
+    hole=cq.Solid.makeCylinder(TAB_HOLE_R,TAB_T+1,cq.Vector(tx,yb-.5,hz),cq.Vector(0,1,0))
+    tri=(cq.Workplane('XZ',origin=(0,yb-.5,0))
+         .polyline([(tx-TAB_HOLE_R*.7071,hz+TAB_HOLE_R*.7071),(tx,hz+TAB_HOLE_R*1.4142),(tx+TAB_HOLE_R*.7071,hz+TAB_HOLE_R*.7071)])
+         .close().extrude(-(TAB_T+1)).val())
+    ins.append(tab.cut(hole).cut(tri))
+    r=ins[0]
+    for x in ins[1:]:r=r.fuse(x)
+    return r.clean()
+
+def tray_insert(side):
+    t=tray_insert_a()
+    return t if side=='A' else mirror_b(t)
 
 def print_pose(shape,flip=False):
     if flip:shape=shape.rotate((0,0,0),(1,0,0),180)

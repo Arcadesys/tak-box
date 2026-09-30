@@ -219,18 +219,65 @@ record('plates-register-for-gluing',
 
 # Cross ribs behind the tray: clear of the fully inserted tray and of leaf B's
 # buckle panel and its slits, and they reach the plate seat so the plate rests on them.
-rib_lo=min(c.RIB_Y)-c.RIB_T/2;rib_hi=max(c.RIB_Y)+c.RIB_T/2
+rib_lo=c.BULK_Y-c.RIB_T/2;rib_hi=max(c.RIB_Y)+c.RIB_T/2
 ribs={'tray_clear_mm':round(rib_lo-c.DR_Y1,2),
       'panel_clear_mm':round(c.PANEL_Y[0]-c.PANEL_SLIT-rib_hi,2),
       'tray_overlap_mm3':round(max(ov(c.tray(s_),c.base(s_)) for s_ in 'AB'),4)}
 seat=c.box(c.FORE+1,c.LEAF_X1-c.SEAM_WALL-1,rib_lo,rib_hi,c.PLATE_Z-.05,c.PLATE_Z)
 ribs['seat_mm3']=round(ov(seat,c.base('A')),3)
-record('cross-ribs',ribs['tray_clear_mm']>=5 and ribs['panel_clear_mm']>=2
+spine=c.box((c.FORE+c.LEAF_X1-c.SEAM_WALL)/2-c.SPINE_W/2+.1,(c.FORE+c.LEAF_X1-c.SEAM_WALL)/2+c.SPINE_W/2-.1,c.SPINE_Y[0]+1,c.SPINE_Y[1]-1,c.PLATE_Z-.05,c.PLATE_Z)
+ribs['spine_seat_mm3']=round(ov(spine,c.base('A')),3)
+_rz=(c.PLATE_Z-.2,c.PLATE_Z+c.WELL_D+.1)
+_newribs=c.box(c.FORE,c.LEAF_X1-c.SEAM_WALL,c.BULK_Y-c.RIB_T/2,c.BULK_Y+c.RIB_T/2,*_rz).fuse(
+    c.box((c.FORE+c.LEAF_X1-c.SEAM_WALL)/2-c.SPINE_W/2,(c.FORE+c.LEAF_X1-c.SEAM_WALL)/2+c.SPINE_W/2,c.SPINE_Y[0],c.SPINE_Y[1],*_rz))
+ribs['new_ribs_vs_plate_sockets_and_glue_wells_mm3']=round(ov(_newribs,c.sockets())+ov(_newribs,c.glue_wells()),4)
+record('cross-ribs',ribs['tray_clear_mm']>=1.5 and ribs['spine_seat_mm3']>0 and ribs['new_ribs_vs_plate_sockets_and_glue_wells_mm3']<TOL and ribs['panel_clear_mm']>=2
        and ribs['tray_overlap_mm3']<TOL and ribs['seat_mm3']>0,ribs)
+
+
+# Tray insert (added after the trays were printed). The flats lie flat, 4 across
+# and 5 deep, in four lanes; the 21st flat has its own pocket; the pawn lies in
+# a saddle. Flats are checked packed to the front and to the back of every lane.
+ins={}
+lanes,pocket,stop=c._ins_layout()
+for side,team in (('A','cat'),('B','witch')):
+    I=c.tray_insert(side);t=c.tray(side)
+    z=c.DR_Z0+c.DR_FLOOR+c.INS_FLOOR;h=c.FLAT_PRINTED     # flats rest on the insert floor
+    def flats(back):
+        out=[]
+        for x0,x1,y0,y1 in lanes:
+            cx_=(x0+x1)/2
+            for j in range(c.LANE_FLATS):
+                y=(y1-c.LANE_FLATS*h+j*h) if back else (y0+j*h)
+                out.append(c.box(cx_-h/2,cx_+h/2,y,y+h,z,z+c.FLAT_T))
+        px0,px1,py0,py1=pocket;cx_,cy_=(px0+px1)/2,(py0+py1)/2
+        out.append(c.box(cx_-h/2,cx_+h/2,cy_-h/2,cy_+h/2,z,z+c.FLAT_T))
+        return out
+    S=flats(False)+flats(True)
+    capst=_upright(_load(f'{team}-capstone')).rotate((0,0,0),(1,0,0),-90)
+    b=capst.BoundingBox();x,ya,yb=c.cap_slot()
+    capst=capst.translate((x-(b.xmin+b.xmax)/2,ya-b.ymin,c.DR_Z0+c.DR_FLOOR-c.CRADLE_D-b.zmin))
+    if side=='B':S=[c.mirror_b(s_) for s_ in S];capst=c.mirror_b(capst)
+    ib=I.BoundingBox()
+    ins[side]={'solids':len(I.Solids()),'valid':I.isValid(),
+        'vs_tray':round(ov(I,t),4),'vs_pressed_arm':round(ov(I,bent if side=='A' else c.mirror_b(bent)),4),
+        'vs_plate_and_base':round(worst([I],[c.plate(side),c.base(side)]),4),
+        'flats_vs_insert':round(max(ov(s_,I) for s_ in S),4),
+        'capstone_vs_insert':round(ov(capst,I),4),
+        'flats_vs_tray':round(max(ov(s_,t) for s_ in S),4),
+        'top_under_plate_mm':round(c.PLATE_Z-ib.zmax,2),
+        'lane_clearance_per_side_mm':round((c.LANE-c.FLAT_PRINTED)/2,3),
+        'wall_gap_to_tray_mm':c.INS_CLR,'mass_g_pla':round(I.Volume()*1.24e-3,1)}
+ins['lane_length_mm']=round(lanes[0][3]-lanes[0][2],1)
+ins['flats_held']=c.LANES*c.LANE_FLATS+1
+record('tray-insert-fits',all(r['solids']==1 and r['valid'] and r['vs_tray']<TOL and r['vs_pressed_arm']<TOL
+       and r['vs_plate_and_base']<TOL and r['flats_vs_insert']<TOL and r['capstone_vs_insert']<TOL
+       and r['flats_vs_tray']<TOL and r['top_under_plate_mm']>=1 for k_,r in ins.items() if k_ in 'AB')
+       and ins['flats_held']==21,ins)
 
 hinged=cq.Compound.makeCompound([c.base('A'),c.base('B')])
 def ext(s):b=s.BoundingBox();return [round(b.xlen,1),round(b.ylen,1),round(b.zlen,1)]
-beds={'hinged-bases':ext(hinged),'plate':ext(c.plate('A')),'tray':ext(c.tray_a())}
+beds={'hinged-bases':ext(hinged),'plate':ext(c.plate('A')),'tray':ext(c.tray_a()),'tray-insert':ext(c.tray_insert_a())}
 record('fits-256-bed',all(max(v)<=250 for v in beds.values()),beds)
 json.dump(report,open(OUT/'reports'/'geometry-verification.json','w'),indent=1)
 print('ALL PASS')

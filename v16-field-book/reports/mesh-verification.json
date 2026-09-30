@@ -1,7 +1,7 @@
 {
  "stl/full/bases-hinged-print-in-place.stl": {
-  "triangles": 22128,
-  "volume_mm3": 166794.76
+  "triangles": 22100,
+  "volume_mm3": 173175.57
  },
  "stl/full/board-plate-a.black.stl": {
   "triangles": 14204,
@@ -58,6 +58,14 @@
  "stl/full/tray-b.white.stl": {
   "triangles": 1092,
   "volume_mm3": 60.83
+ },
+ "stl/full/tray-insert-a.stl": {
+  "triangles": 612,
+  "volume_mm3": 10620.36
+ },
+ "stl/full/tray-insert-b.stl": {
+  "triangles": 612,
+  "volume_mm3": 10620.36
  },
  "stl/trials/trial-buckle-socket-base.stl": {
   "triangles": 3154,

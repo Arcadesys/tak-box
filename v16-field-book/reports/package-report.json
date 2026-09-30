@@ -29,7 +29,7 @@
           1
         ]
       ],
-      "estimated_time": "58m 20s",
+      "estimated_time": "58m 21s",
       "layers": 143,
       "filament_g": {
         "black": 20.86,
@@ -49,15 +49,15 @@
           1
         ]
       ],
-      "estimated_time": "4h 58m 23s",
+      "estimated_time": "5h 17m 33s",
       "layers": 143,
       "filament_g": {
-        "black": 170.55,
+        "black": 177.72,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 170.55,
+      "total_g": 177.72,
       "colour_changes": 0,
       "supports": "0"
     },
@@ -115,6 +115,29 @@
       },
       "total_g": 97.49,
       "colour_changes": 9,
+      "supports": "0"
+    },
+    "04-tray-inserts-black": {
+      "3mf": "plates/plate04-tray-inserts-black.3mf",
+      "gcode": "gcode/plate04-tray-inserts-black.gcode",
+      "objects_filaments": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "estimated_time": "52m 35s",
+      "layers": 80,
+      "filament_g": {
+        "black": 25.98,
+        "white": 0.0,
+        "orange": 0.0,
+        "purple": 0.0
+      },
+      "total_g": 25.98,
+      "colour_changes": 0,
       "supports": "0"
     }
   }
