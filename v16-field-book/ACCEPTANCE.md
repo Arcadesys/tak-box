@@ -34,10 +34,10 @@
 - [ ] The tray latch still snaps and releases with the insert in.
 
 ## Lift-out play tray
-- [ ] With the tray slid out, one finger in the tab lifts the whole insert, flats included, without spilling.
+- [ ] With the tray slid out, two fingers in the back-wall slot lift the whole insert, flats included, without spilling.
 - [ ] Set down beside the board, the flats can be picked from the lanes with the insert flat on the table.
 - [ ] The insert drops back into the tray and the tray still snaps home.
-- [ ] The tab's finger hole printed cleanly.
+- [ ] The finger slot printed cleanly, and the pan is rigid when lifted by it (no flexing at the pocket or saddle).
 
 ## Board glue-up
 - [ ] Each plate sits flat on its base dry, with no rocking.

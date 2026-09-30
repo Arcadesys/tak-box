@@ -549,10 +549,11 @@ def piece_boxes(side='A',pull=0.0):
 
 # ============================================================ tray insert
 # Added after the trays were printed, so it does not touch the tray: a separate
-# part that drops onto the tray floor. The flats lie flat in a single layer
-# (4 across, 5 deep), so the insert is four lanes 20.0 mm wide and 5 flats long
-# behind a pawn saddle, with one more pocket beside the pawn for the 21st flat.
-# A flat drops in anywhere along its lane and slides up to the last one.
+# pan that drops onto the tray floor and lifts out with its flats. The flats lie
+# flat in a single layer (4 across, 5 deep): four 20.0 mm lanes behind a pawn
+# saddle, and one more pocket beside the pawn for the 21st flat. One floor runs
+# under all of it except the pawn, and every wall is fused to that floor or to a
+# thick neighbour, so nothing hangs by a thin wall.
 # FLAT above stays 20.0 because the tray's cradle position is derived from it.
 FLAT_PRINTED=19.5           # the printed flats are 0.5 mm under the real 20 mm
 FLAT_T=8.0                  # flat thickness
@@ -560,38 +561,42 @@ LANE=20.0                   # lane inside width: 0.25 mm each side of a printed 
 LANES=4
 LANE_FLATS=5
 LANE_SLACK=.5               # end play along a full lane
-OUT_W=1.2                   # outer lane walls (three perimeters)
+OUT_W=1.2                   # outer walls (three perimeters)
 DIV_W=1.6                   # shared dividers between lanes
 RAIL_H=3.5                  # lane walls: under half a flat, so a flat is easy to pinch out
 RAIL_FLARE=.4               # lead-in chamfer on the inner top edges
 INS_CLR=.15                 # gap to the tray walls, so it drops in
-INS_WALL=.8                 # end walls and saddle
-INS_FLOOR=.8                # floor under the lanes and the 21st-flat pocket, so the insert lifts out with its flats
-TAB_W=30.0                  # lift tab at the back: a plate with a finger hole
-TAB_T=1.6
-TAB_H=16.0
-TAB_HOLE_R=4.0
-STOP_H=9.0                  # end stop that keeps the pawn from sliding out of its cradle
+INS_FLOOR=.8                # the pan floor
+FRONT_W=1.2                 # front wall of the front strip
+POCKET_W=.8                 # 21st-flat pocket walls (fused to the floor)
+STOP_T=1.6                  # pawn stop wall, which also fronts the lanes
+STOP_H=9.0
 STOP_GAP=.4                 # from the pawn's end to the stop
 SADDLE_GAP=.35              # each side of the pawn's widest point
+SADDLE_L_W=1.2              # saddle walls: thick, because nothing but the stop holds them up
+SADDLE_R_W=1.6
 SADDLE_H=6.0                # saddle wall height, hugging the pawn's lower body
-SADDLE_L_Y0=16.0            # left wall starts here: the pressed latch arm swings out to x=6.5 at the front
+SADDLE_L_Y0=17.0            # left wall starts here: the pressed latch arm swings out to x=6.5 at the front
+BACK_T=2.0                  # back wall, which is also the lift handle
+BACK_H=16.0
+SLOT_W=28.0                 # finger slot: 28 mm wide at the bottom, 45 degree sides, 10 mm flat top
+SLOT_Z=4.0                  # slot starts this high, leaving a solid strip to the floor
 
 def _ins_layout():
     """Everything the checks need, in tray A: lane boxes (x0,x1,y0,y1) inside the walls,
-    the 21st-flat pocket inside box, the pawn stop and the saddle wall x positions."""
+    the 21st-flat pocket inside box, and the pawn stop."""
     bx0=DR_X[0]+DR_WALL+INS_CLR;bx1=DR_X[1]-DR_WALL-INS_CLR
     total=LANES*LANE+2*OUT_W+(LANES-1)*DIV_W
     x=bx0+(bx1-bx0-total)/2+OUT_W
     cx,ya,yb=cap_slot()
-    stop=(cx-CAP[1]/2,cx+CAP[1]/2,yb+STOP_GAP,yb+STOP_GAP+INS_WALL)
+    stop=(cx-CAP[1]/2,cx+CAP[1]/2,yb+STOP_GAP,yb+STOP_GAP+STOP_T)
     ly0=stop[3];ly1=ly0+LANE_FLATS*FLAT_PRINTED+LANE_SLACK
     lanes=[]
     for i in range(LANES):
         lanes.append((x,x+LANE,ly0,ly1));x+=LANE+DIV_W
-    xr=stop[1]+SADDLE_GAP+INS_WALL
+    xr=stop[1]+SADDLE_GAP
     sy0=DR_FRONT+INS_CLR
-    pocket=(xr,xr+LANE,sy0+INS_WALL,sy0+INS_WALL+LANE)
+    pocket=(xr+SADDLE_R_W,xr+SADDLE_R_W+LANE,sy0+FRONT_W,sy0+FRONT_W+LANE)
     return lanes,pocket,stop
 
 @lru_cache(None)
@@ -605,40 +610,34 @@ def tray_insert_a():
         pts=[q for i,q in enumerate(pts) if q!=pts[i-1]]      # no flare on a side: drop the repeated corner
         return cq.Workplane('XZ',origin=(0,y0,0)).polyline(pts).close().extrude(-(y1-y0)).val()
     ins=[]
-    ly0,ly1=lanes[0][2],lanes[0][3]
-    yb=ly1+INS_WALL
-    # lane walls: outer walls flared inward only, dividers flared both sides
-    ins.append(wall(lanes[0][0]-OUT_W,lanes[0][0],stop[2],yb,left=False))
-    for a,b in zip(lanes,lanes[1:]):
-        ins.append(wall(a[1],b[0],stop[2],yb))
-    ins.append(wall(lanes[-1][1],lanes[-1][1]+OUT_W,stop[2],yb,right=False))
+    ly1=lanes[0][3];yb=ly1+BACK_T
     xl0=lanes[0][0]-OUT_W;xl1=lanes[-1][1]+OUT_W
-    ins.append(box(xl0,xl1,stop[2],stop[3],z0,z0+RAIL_H))      # front bar across the lanes
-    ins.append(box(xl0,xl1,ly1,yb,z0,z0+RAIL_H))               # back bar
-    # pawn saddle: stop wall behind it, and side walls hugging its body
     sy0=DR_FRONT+INS_CLR
     xl=stop[0]-SADDLE_GAP;xr=stop[1]+SADDLE_GAP
-    ins.append(box(min(stop[0],xl-INS_WALL),xr+INS_WALL,stop[2],stop[3],z0,z0+STOP_H))
-    ins.append(wall(xl-INS_WALL,xl,SADDLE_L_Y0,stop[3],SADDLE_H,.4,left=False))
-    ins.append(wall(xr,xr+INS_WALL,sy0,stop[3],SADDLE_H,.4,right=False))
-    # pocket for the 21st flat, sharing the saddle's right wall
     px0,px1,py0,py1=pocket
-    ins.append(wall(px1,px1+INS_WALL,sy0,py1+INS_WALL,left=True,right=False))
-    ins.append(box(xr,px1+INS_WALL,sy0,sy0+INS_WALL,z0,z0+RAIL_H))
-    ins.append(box(xr,px1+INS_WALL,py1,py1+INS_WALL,z0,z0+RAIL_H))
-    # Floor under the lanes and the pocket. None under the pawn: it has only
-    # about 0.1 mm of headroom under the plate, so it stays in the tray's groove.
+    # ---- floor: lanes and the whole front strip beside the pawn, none under the pawn
     ins.append(box(xl0,xl1,stop[2],yb,z0,z0+INS_FLOOR))
-    ins.append(box(xr,px1+INS_WALL,sy0,py1+INS_WALL,z0,z0+INS_FLOOR))
-    # Lift tab behind the lanes, with a teardrop finger hole (prints without support).
-    tx=(xl0+xl1)/2
-    tab=box(tx-TAB_W/2,tx+TAB_W/2,yb-.01,yb+TAB_T,z0,z0+TAB_H)
-    hz=z0+TAB_H*.5
-    hole=cq.Solid.makeCylinder(TAB_HOLE_R,TAB_T+1,cq.Vector(tx,yb-.5,hz),cq.Vector(0,1,0))
-    tri=(cq.Workplane('XZ',origin=(0,yb-.5,0))
-         .polyline([(tx-TAB_HOLE_R*.7071,hz+TAB_HOLE_R*.7071),(tx,hz+TAB_HOLE_R*1.4142),(tx+TAB_HOLE_R*.7071,hz+TAB_HOLE_R*.7071)])
-         .close().extrude(-(TAB_T+1)).val())
-    ins.append(tab.cut(hole).cut(tri))
+    ins.append(box(xr,xl1,sy0,stop[2]+.01,z0,z0+INS_FLOOR))
+    # ---- lanes: outer walls flared inward only, dividers flared both sides
+    ins.append(wall(xl0,lanes[0][0],stop[2],yb,left=False))
+    for a,b in zip(lanes,lanes[1:]):
+        ins.append(wall(a[1],b[0],stop[2],yb))
+    ins.append(wall(xl1-OUT_W,xl1,sy0,yb,right=False))          # right wall runs the full length of the pan
+    # ---- back wall and lift handle: full width, with a finger slot
+    back=box(xl0,xl1,ly1,yb,z0,z0+BACK_H)
+    tx=(xl0+xl1)/2;st=SLOT_W/2;sz=z0+SLOT_Z;top=SLOT_W/2-(BACK_H-SLOT_Z-3)   # half-width of the flat top
+    slot=(cq.Workplane('XZ',origin=(0,ly1-.5,0))
+          .polyline([(tx-st,sz),(tx+st,sz),(tx+top,z0+BACK_H-3),(tx-top,z0+BACK_H-3)])
+          .close().extrude(-(BACK_T+1)).val())
+    ins.append(back.cut(slot))
+    # ---- pawn saddle: thick stop wall behind it, thick side walls along it
+    ins.append(box(min(stop[0],xl-SADDLE_L_W)-0,xr+SADDLE_R_W,stop[2],stop[3],z0,z0+STOP_H))
+    ins.append(wall(xl-SADDLE_L_W,xl,SADDLE_L_Y0,stop[3],SADDLE_H,.4,left=False))
+    ins.append(wall(xr,xr+SADDLE_R_W,sy0,stop[3],SADDLE_H,.4,right=False))
+    # ---- front strip: front wall, and the 21st-flat pocket sharing the saddle's right wall
+    ins.append(box(xr,xl1,sy0,sy0+FRONT_W,z0,z0+RAIL_H))
+    ins.append(wall(px1,px1+POCKET_W,sy0,py1+POCKET_W,left=True,right=False))
+    ins.append(box(xr,px1+POCKET_W,py1,py1+POCKET_W,z0,z0+RAIL_H))
     r=ins[0]
     for x in ins[1:]:r=r.fuse(x)
     return r.clean()

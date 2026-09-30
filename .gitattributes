@@ -3,3 +3,7 @@ center-closure-coupon/*.step binary linguist-generated=true
 center-closure-coupon/*.stl linguist-generated=true
 center-closure-v7/*.step binary linguist-generated=true
 center-closure-v7/*.stl linguist-generated=true
+pieces/weighted-v1/models/*.step binary linguist-generated=true
+pieces/weighted-v1/models/*.stl binary linguist-generated=true
+pieces/weighted-v1/plates/*.3mf binary linguist-generated=true
+pieces/weighted-tak-v1.zip binary linguist-generated=true

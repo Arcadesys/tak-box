@@ -18,6 +18,8 @@ It has four multi-colour print plates and has not been printed yet. See the [v16
 
 The Cat and Witch flats and capstones, with CAD source, STLs and one CC2 print plate per team in [pieces/plates](pieces/plates).
 
+The [weighted stone prototype](pieces/weighted-v1/README.md) adds 20 × 20 × 6 mm two-part stones for post-print ballast and epoxied floors, with a three-clearance fit coupon and one complete geometry plate per team. Physical fit and feel remain untested.
+
 ## Archive
 
 - [archive/v15-field-book](archive/v15-field-book): 28 mm cells. Too small to play on: you couldn't grab a stack once the board filled up.

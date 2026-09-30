@@ -1,0 +1,43 @@
+{
+  "slicer": "ElegooSlicer",
+  "machine": "Elegoo Centauri Carbon 2",
+  "filament": "PETG from existing project profiles",
+  "nozzle_mm": 0.4,
+  "layer_mm": 0.2,
+  "printed": false,
+  "plates": {
+    "fit-coupon-first": {
+      "exit_code": 0,
+      "objects": 6,
+      "outside_bed": false,
+      "support_used": "false",
+      "estimated_seconds": 1053,
+      "estimated_print_material_g": 5.51,
+      "gcode_bytes": 933666,
+      "gcode_sha256": "3c54718e0a3076bfebbfd9b20b29132656f3ecf13b772a6b7ff76f18672cd4cf",
+      "file_sha256": "20b6be35e6d189731e55d0114f2c3e2b824ccb700029181fee617840ded0d34a"
+    },
+    "cat-complete-set": {
+      "exit_code": 0,
+      "objects": 43,
+      "outside_bed": false,
+      "support_used": "false",
+      "estimated_seconds": 7299,
+      "estimated_print_material_g": 39.38,
+      "gcode_bytes": 7531835,
+      "gcode_sha256": "8f5b31bff509a6314b7dcabbbe7b88e78937dac715b5e94f89f7dbcc6a8dc272",
+      "file_sha256": "078708736e3cfb23e102586b1e59ca1648e1c552bdaf6fe86912be9ac7999d06"
+    },
+    "witch-complete-set": {
+      "exit_code": 0,
+      "objects": 43,
+      "outside_bed": false,
+      "support_used": "false",
+      "estimated_seconds": 7012,
+      "estimated_print_material_g": 38.81,
+      "gcode_bytes": 6748006,
+      "gcode_sha256": "5ac46ac88a4c22cc01058acc287f33f00c330feb8e7107fc002031ac3f83c3c1",
+      "file_sha256": "bcb2e428898fb906fb830a1dc280f57ce36bab7f7b23a9961b1f8d98575a20a7"
+    }
+  }
+}
