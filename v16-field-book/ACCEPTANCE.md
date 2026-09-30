@@ -26,6 +26,13 @@
 - [ ] 11 two-high stacks and the capstone fit and can be picked out.
 - [ ] 50 tray cycles: no cracking or whitening of the tray arm.
 
+## Tray inserts
+- [ ] Each insert drops into its printed tray without forcing and sits flat.
+- [ ] All 11 stacks of 19.5 mm flats go into their pockets and lift out with a pinch.
+- [ ] The pawn sits in its cradle and can't slide out past the stop.
+- [ ] Shake the closed book: nothing rattles loose or tips over.
+- [ ] The tray latch still snaps and releases with the insert in.
+
 ## Board glue-up
 - [ ] Each plate sits flat on its base dry, with no rocking.
 - [ ] Each plate drops onto its two pegs without forcing and can't slide or twist.

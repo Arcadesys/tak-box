@@ -235,6 +235,54 @@
     }
    }
   },
+  "stl/tray-insert-a": {
+   "bounds": [
+    4.65,
+    93.95,
+    2.15,
+    130.65,
+    3.2,
+    12.2
+   ],
+   "volume_mm3": 4296.56,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    89.3,
+    0.0,
+    128.5,
+    0.0,
+    9.0
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
+  "stl/tray-insert-b": {
+   "bounds": [
+    102.05,
+    191.35,
+    2.15,
+    130.65,
+    3.2,
+    12.2
+   ],
+   "volume_mm3": 4296.56,
+   "print_orientation": "as modelled",
+   "print_bounds": [
+    0.0,
+    89.3,
+    0.0,
+    128.5,
+    0.0,
+    9.0
+   ],
+   "stl_weld": {
+    "reused_vertex_occurrences": 0,
+    "maximum_position_change_mm": 0.0
+   }
+  },
   "step/base-a": {
    "bounds": [
     -0.0,

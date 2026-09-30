@@ -548,6 +548,70 @@ def piece_boxes(side='A',pull=0.0):
     out=[b.translate((0,-pull,0)) for b in out]
     return out if side=='A' else [mirror_b(b) for b in out]
 
+# ============================================================ tray insert
+# Added after the trays were printed, so it does not touch the tray: a separate
+# lattice that drops onto the tray floor and holds every stack upright.
+# FLAT above stays 20.0 because the tray's cradle position is derived from it.
+FLAT_PRINTED=19.5           # the printed flats are 0.5 mm under the real 20 mm
+POCKET=20.0                 # pocket inside width: 0.25 mm each side of a printed flat
+INS_WALL=.8                 # two perimeters
+INS_H=5.0                   # pocket wall height; a stack is 16 mm
+INS_CLR=.15                 # gap to the tray walls, so it drops in
+STRAP_W=4.0
+STRAP_T=.6
+STOP_H=9.0                  # end stop that keeps the pawn from sliding out of its cradle
+STOP_GAP=.4                 # from the pawn's end to the stop
+
+def _ins_layout():
+    """Pocket outer boxes (x0,x1,y0,y1) and the capstone stop, in leaf A / tray A."""
+    o=POCKET+2*INS_WALL
+    bx0=DR_X[0]+DR_WALL+INS_CLR;bx1=DR_X[1]-DR_WALL-INS_CLR
+    by0=DR_FRONT+INS_CLR;by1=DR_Y1-DR_WALL-INS_CLR
+    cols=[bx0+i*(bx1-bx0-o)/2 for i in range(3)]
+    cx,ya,yb=cap_slot()
+    stop=(cx-CAP[1]/2,cx+CAP[1]/2,yb+STOP_GAP,yb+STOP_GAP+INS_WALL)
+    rows0=[];g=(by1-stop[3]-3*o)/3
+    for j in range(3):rows0.append(stop[3]+g+j*(o+g))
+    rows12=[];g=(by1-by0-4*o)/3
+    for j in range(4):rows12.append(by0+j*(o+g))
+    pk=[(cols[0],cols[0]+o,y,y+o) for y in rows0]
+    for i in (1,2):pk+=[(cols[i],cols[i]+o,y,y+o) for y in rows12]
+    return pk,stop
+
+@lru_cache(None)
+def tray_insert_a():
+    z0=DR_Z0+DR_FLOOR
+    pk,stop=_ins_layout()
+    def strap(x0,x1,y0,y1):return box(x0,x1,y0,y1,z0,z0+STRAP_T)
+    ins=[]
+    for x0,x1,y0,y1 in pk:
+        w=box(x0,x1,y0,y1,z0,z0+INS_H).cut(box(x0+INS_WALL,x1-INS_WALL,y0+INS_WALL,y1-INS_WALL,z0-.1,z0+INS_H+.1))
+        ins.append(w)
+    ins.append(box(stop[0],stop[1],stop[2],stop[3],z0,z0+STOP_H))
+    # Straps: down each column (stop wall to first pocket to last), and across
+    # between columns at every pocket that has a neighbour beside it.
+    cols=sorted({p[0] for p in pk})
+    for c_ in cols:
+        col=sorted([p for p in pk if p[0]==c_],key=lambda p:p[2])
+        xm=(col[0][0]+col[0][1])/2
+        if c_==cols[0]:
+            ins.append(strap(xm-STRAP_W/2,xm+STRAP_W/2,stop[2],col[0][2]+INS_WALL))
+        for a,b in zip(col,col[1:]):
+            ins.append(strap(xm-STRAP_W/2,xm+STRAP_W/2,a[3]-INS_WALL,b[2]+INS_WALL))
+    for c0,c1 in zip(cols,cols[1:]):
+        L=[p for p in pk if p[0]==c0];R=[p for p in pk if p[0]==c1]
+        for a in L:
+            best=max(R,key=lambda b:min(a[3],b[3])-max(a[2],b[2]))
+            ym=(max(a[2],best[2])+min(a[3],best[3]))/2
+            ins.append(strap(a[1]-INS_WALL,best[0]+INS_WALL,ym-STRAP_W/2,ym+STRAP_W/2))
+    r=ins[0]
+    for x in ins[1:]:r=r.fuse(x)
+    return r.clean()
+
+def tray_insert(side):
+    t=tray_insert_a()
+    return t if side=='A' else mirror_b(t)
+
 def print_pose(shape,flip=False):
     if flip:shape=shape.rotate((0,0,0),(1,0,0),180)
     b=shape.BoundingBox()

@@ -35,6 +35,7 @@ PLATES={
  '01-hinged-bases-black':([single(FULL/'bases-hinged-print-in-place.stl')],True),
  '02-trays-4colour':([group('tray-a',(6,10)),group('tray-b',(106,10))],False),
  '03-board-plates-4colour':([group('board-plate-a',(5,5)),group('board-plate-b',(108,5))],False),
+ '04-tray-inserts-black':([single(FULL/'tray-insert-a.stl',(6,10)),single(FULL/'tray-insert-b.stl',(106,10))],False),
 }
 
 def run(cmd):

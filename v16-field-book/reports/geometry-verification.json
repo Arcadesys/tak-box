@@ -352,6 +352,38 @@
    "seat_mm3": 10.872
   }
  },
+ "tray-insert-fits": {
+  "pass": true,
+  "detail": {
+   "A": {
+    "solids": 1,
+    "valid": true,
+    "vs_tray": 0.0,
+    "vs_pressed_arm": 0.0,
+    "vs_plate_and_base": 0.0,
+    "stacks_vs_insert": 0.0,
+    "capstone_vs_insert": 0.0,
+    "top_under_plate_mm": 10.4,
+    "pocket_clearance_per_side_mm": 0.25,
+    "wall_gap_to_tray_mm": 0.15,
+    "mass_g_pla": 5.3
+   },
+   "B": {
+    "solids": 1,
+    "valid": true,
+    "vs_tray": 0.0,
+    "vs_pressed_arm": 0.0,
+    "vs_plate_and_base": 0.0,
+    "stacks_vs_insert": 0.0,
+    "capstone_vs_insert": 0.0,
+    "top_under_plate_mm": 10.4,
+    "pocket_clearance_per_side_mm": 0.25,
+    "wall_gap_to_tray_mm": 0.15,
+    "mass_g_pla": 5.3
+   },
+   "min_gap_between_pockets_mm": 12.2
+  }
+ },
  "fits-256-bed": {
   "pass": true,
   "detail": {
@@ -369,6 +401,11 @@
     93.7,
     132.0,
     20.0
+   ],
+   "tray-insert": [
+    89.3,
+    128.5,
+    9.0
    ]
   }
  }

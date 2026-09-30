@@ -82,3 +82,9 @@ for s_ in 'AB':
     _board+=[(d,col) for d,col in ((c.decor(s_,'orange'),ORANGE),(c.decor(s_,'purple'),PURPLE)) if d is not None]
 render('07-board-symbols-top.png','v16 board from above','Star dots and one small symbol per cell at most: galaxies, planets, moons, sparkles and comets.',
        _board,(cx,cy,300),(cx,cy,0),c.WY/2+22,up=(0,1,0))
+
+_ins=[]
+for s_,acc in (('A',ORANGE),('B',PURPLE)):
+    _ins+=[(c.tray_body(s_),TRAY),(c.tray_swirl(s_),acc),(c.tray_sparkles(s_),GRID),(c.tray_insert(s_),(.85,.85,.82))]
+render('08-tray-insert.png','v16 tray inserts','Print-and-drop lattice: a 20.0 mm pocket for every stack and a stop that keeps the pawn in its cradle.',
+       _ins,(cx,c.DR_Y1/2,300),(cx,c.DR_Y1/2,0),max(c.DR_Y1,c.WX/1.5)/2*1.25,up=(0,1,0))

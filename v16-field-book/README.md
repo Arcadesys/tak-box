@@ -68,6 +68,19 @@ Each board half has a **1.0 mm raised lip** on its three outer edges, 1.6 mm wid
 
 Keep acrylic paint (and any varnish) below the lip top. The thumb groove is cut into the lip edge.
 
+## Tray insert (add-on, printed after the trays)
+
+The trays are already printed, so the insert is a separate part that drops onto each tray floor. Nothing about the tray, bases or plates changed.
+
+- **Pockets:** a 20.0 mm square pocket for each of the 11 stacks, 0.8 mm walls, 5 mm tall. The printed flats are 19.5 mm (0.5 mm under the real 20 mm for fit), so each stack has 0.25 mm per side: it can't slide, and tipping is stopped by the wall.
+- **Pawn:** the capstone stays in the tray's own cradle. A 9 mm stop wall 0.4 mm past its end keeps it from sliding out.
+- **Lattice, not a sheet:** the pockets are joined by 0.6 mm straps, so the moon and sparkle floor art still shows and the finger gaps stay at 12.2 mm or more.
+- **Fit:** 0.15 mm off each tray wall, drops in with no force. It clears the tray latch arm when pressed and sits 10 mm under the board plate.
+- **Two inserts:** A and B are mirror images (the pawn cradle is off-centre), so print one of each.
+- **Print:** [plate 04](plates/plate04-tray-inserts-black.3mf), one slot-1 filament (any colour works; a light one makes the stacks easy to see), about 5 g each (10.3 g and 41 min for the pair), no supports.
+
+`verify_book.py` checks the 19.5 mm stacks and the real pawn against the insert (`tray-insert-fits`). `FLAT` in `tak_book.py` stays 20.0 on purpose: the printed tray's cradle position is derived from it.
+
 ## Print plates ([plates](plates))
 
 Four ready-to-open 3MFs for the Elegoo Centauri Carbon 2 with its **4-colour filament system**, with G-code in [gcode](gcode). Every project uses the same filament slots:
