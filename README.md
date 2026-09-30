@@ -24,6 +24,8 @@ The [weighted stone prototype](pieces/weighted-v1/README.md) adds 20 × 20 × 6 
 
 The [fox knurled flats](pieces/fox-knurled-v1/README.md) add 21 fox-themed 19.5 × 19.5 × 8 mm stones with recessed face emblems and diamond-textured sides. Sample and full-set CC2 plates are included. Geometry fits the current tray insert; physical fit and grip await a sample print.
 
+The [reference-based Fox and Cat capstones](pieces/fox-cat-capstones-v4/README.md) follow a continuous carved nose-to-tail curl. This package contains the fuller Fox tail and the Cat's corrected neck/shoulder, printable STLs, a labeled two-object 3MF, retained reconstruction sources and large labeled previews. Digital v16 compatibility and dry slicing pass; physical fit and tactile acceptance remain untested.
+
 ## Archive
 
 - [archive/v15-field-book](archive/v15-field-book): 28 mm cells. Too small to play on: you couldn't grab a stack once the board filled up.

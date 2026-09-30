@@ -1,0 +1,23 @@
+{
+  "provider": "Meshy",
+  "model": "meshy-7",
+  "generation_report": "meshy-v2-generation.json",
+  "original_reference_crop_report": "../references/provenance.json",
+  "raw_inputs": {
+    "fox": "../raw/fox.obj",
+    "cat": "../raw/cat.obj"
+  },
+  "final_stages": {
+    "fox": [
+      "Meshy v2 finishing",
+      "v3 tail fullness"
+    ],
+    "cat": [
+      "Meshy v2 finishing",
+      "archival v3 intermediate fairing",
+      "v4 neck/shoulder reshape and bounded jaw cleanup"
+    ]
+  },
+  "archival_intermediate": "raw/cat-v3.stl is reference-only for before/after and protected geometry; not the printable final Cat",
+  "new_credits_for_rebuild": 0
+}

@@ -1,0 +1,23 @@
+{
+  "cat_protected_regions": {
+    "base_and_tail": {
+      "vertices": 22940,
+      "max_distance_mm": 6.76978629326853e-07
+    },
+    "upper_head_and_ears": {
+      "vertices": 13452,
+      "max_distance_mm": 1.0115243642614567e-06
+    },
+    "far_cheek": {
+      "vertices": 9243,
+      "max_distance_mm": 1.0115243642614567e-06
+    },
+    "muzzle": {
+      "vertices": 1975,
+      "max_distance_mm": 9.615579727233456e-07
+    }
+  },
+  "tolerance_mm": 2e-06,
+  "fox_sha256": "5d6658021c501752d945a1277eb337af4e6745bce471e6caf8e3517131de83bf",
+  "fox_byte_identical_to_v3": true
+}

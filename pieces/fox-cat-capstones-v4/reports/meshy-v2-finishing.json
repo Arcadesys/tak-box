@@ -1,0 +1,40 @@
+{
+  "fox": {
+    "raw_sha256": "dfa33f68e32de443b5891d2d2123f04f04672d3288abb173b3bcbc3765e6968b",
+    "raw_faces": 30048,
+    "repair_method": "MeshFix seam weld, join components, remove tiny islands, close holes",
+    "repair_to_source_distance_mm": {
+      "sample_count": 3688,
+      "p95": 2.9823563179196854e-07,
+      "max": 4.871433965410387e-07
+    },
+    "base_trim_before_final_scale_mm": 0.35,
+    "uniform_scale_total": 13.010412368213048,
+    "dimensions_mm": [
+      15.698129260609932,
+      16.52718009502931,
+      24.399999999999995
+    ],
+    "faces": 28852,
+    "volume_mm3": 2085.3961208375645
+  },
+  "cat": {
+    "raw_sha256": "8737c4ff4ad2886de6cd7b746dfc92286a0db263c6bbe10823626f260c636d75",
+    "raw_faces": 30728,
+    "repair_method": "MeshFix seam weld, join components, remove tiny islands, close holes",
+    "repair_to_source_distance_mm": {
+      "sample_count": 3053,
+      "p95": 3.1229812443442015e-07,
+      "max": 4.837446736712412e-07
+    },
+    "base_trim_before_final_scale_mm": 0.35,
+    "uniform_scale_total": 12.843620681869464,
+    "dimensions_mm": [
+      15.518933822148853,
+      17.809479196703624,
+      24.084473684239533
+    ],
+    "faces": 29886,
+    "volume_mm3": 2321.295865198395
+  }
+}
