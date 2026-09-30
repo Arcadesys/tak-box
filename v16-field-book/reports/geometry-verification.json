@@ -369,7 +369,7 @@
     "top_under_plate_mm": 3.4,
     "lane_clearance_per_side_mm": 0.25,
     "wall_gap_to_tray_mm": 0.15,
-    "mass_g_pla": 13.2
+    "mass_g_pla": 16.9
    },
    "B": {
     "solids": 1,
@@ -383,7 +383,7 @@
     "top_under_plate_mm": 3.4,
     "lane_clearance_per_side_mm": 0.25,
     "wall_gap_to_tray_mm": 0.15,
-    "mass_g_pla": 13.2
+    "mass_g_pla": 16.9
    },
    "lane_length_mm": 98.0,
    "flats_held": 21
@@ -409,7 +409,7 @@
    ],
    "tray-insert": [
     87.2,
-    127.3,
+    127.8,
     16.0
    ]
   }
