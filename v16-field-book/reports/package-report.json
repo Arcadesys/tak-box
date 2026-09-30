@@ -128,15 +128,15 @@
           1
         ]
       ],
-      "estimated_time": "25m 41s",
-      "layers": 45,
+      "estimated_time": "52m 36s",
+      "layers": 80,
       "filament_g": {
-        "black": 8.27,
+        "black": 25.98,
         "white": 0.0,
         "orange": 0.0,
         "purple": 0.0
       },
-      "total_g": 8.27,
+      "total_g": 25.98,
       "colour_changes": 0,
       "supports": "0"
     }

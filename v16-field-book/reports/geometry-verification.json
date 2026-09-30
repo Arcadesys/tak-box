@@ -366,10 +366,10 @@
     "flats_vs_insert": 0.0,
     "capstone_vs_insert": 0.0,
     "flats_vs_tray": 0.0,
-    "top_under_plate_mm": 10.4,
+    "top_under_plate_mm": 3.4,
     "lane_clearance_per_side_mm": 0.25,
     "wall_gap_to_tray_mm": 0.15,
-    "mass_g_pla": 4.1
+    "mass_g_pla": 13.2
    },
    "B": {
     "solids": 1,
@@ -380,10 +380,10 @@
     "flats_vs_insert": 0.0,
     "capstone_vs_insert": 0.0,
     "flats_vs_tray": 0.0,
-    "top_under_plate_mm": 10.4,
+    "top_under_plate_mm": 3.4,
     "lane_clearance_per_side_mm": 0.25,
     "wall_gap_to_tray_mm": 0.15,
-    "mass_g_pla": 4.1
+    "mass_g_pla": 13.2
    },
    "lane_length_mm": 98.0,
    "flats_held": 21
@@ -409,8 +409,8 @@
    ],
    "tray-insert": [
     87.2,
-    125.8,
-    9.0
+    127.3,
+    16.0
    ]
   }
  }

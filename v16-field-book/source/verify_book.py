@@ -242,7 +242,7 @@ ins={}
 lanes,pocket,stop=c._ins_layout()
 for side,team in (('A','cat'),('B','witch')):
     I=c.tray_insert(side);t=c.tray(side)
-    z=c.DR_Z0+c.DR_FLOOR;h=c.FLAT_PRINTED
+    z=c.DR_Z0+c.DR_FLOOR+c.INS_FLOOR;h=c.FLAT_PRINTED     # flats rest on the insert floor
     def flats(back):
         out=[]
         for x0,x1,y0,y1 in lanes:
@@ -256,7 +256,7 @@ for side,team in (('A','cat'),('B','witch')):
     S=flats(False)+flats(True)
     capst=_upright(_load(f'{team}-capstone')).rotate((0,0,0),(1,0,0),-90)
     b=capst.BoundingBox();x,ya,yb=c.cap_slot()
-    capst=capst.translate((x-(b.xmin+b.xmax)/2,ya-b.ymin,z-c.CRADLE_D-b.zmin))
+    capst=capst.translate((x-(b.xmin+b.xmax)/2,ya-b.ymin,c.DR_Z0+c.DR_FLOOR-c.CRADLE_D-b.zmin))
     if side=='B':S=[c.mirror_b(s_) for s_ in S];capst=c.mirror_b(capst)
     ib=I.BoundingBox()
     ins[side]={'solids':len(I.Solids()),'valid':I.isValid(),

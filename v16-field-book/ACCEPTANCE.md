@@ -33,6 +33,12 @@
 - [ ] Shake the closed book: nothing rattles loose or tips over.
 - [ ] The tray latch still snaps and releases with the insert in.
 
+## Lift-out play tray
+- [ ] With the tray slid out, one finger in the tab lifts the whole insert, flats included, without spilling.
+- [ ] Set down beside the board, the flats can be picked from the lanes with the insert flat on the table.
+- [ ] The insert drops back into the tray and the tray still snaps home.
+- [ ] The tab's finger hole printed cleanly.
+
 ## Board glue-up
 - [ ] Each plate sits flat on its base dry, with no rocking.
 - [ ] Each plate drops onto its two pegs without forcing and can't slide or twist.

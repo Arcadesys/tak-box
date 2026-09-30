@@ -576,7 +576,11 @@ RAIL_H=3.5                  # lane walls: under half a flat, so a flat is easy t
 RAIL_FLARE=.4               # lead-in chamfer on the inner top edges
 INS_CLR=.15                 # gap to the tray walls, so it drops in
 INS_WALL=.8                 # end walls and saddle
-STRAP_W=4.0
+INS_FLOOR=.8                # floor under the lanes and the 21st-flat pocket, so the insert lifts out with its flats
+TAB_W=30.0                  # lift tab at the back: a plate with a finger hole
+TAB_T=1.6
+TAB_H=16.0
+TAB_HOLE_R=4.0
 STOP_H=9.0                  # end stop that keeps the pawn from sliding out of its cradle
 STOP_GAP=.4                 # from the pawn's end to the stop
 SADDLE_GAP=.35              # each side of the pawn's widest point
@@ -632,6 +636,19 @@ def tray_insert_a():
     ins.append(wall(px1,px1+INS_WALL,sy0,py1+INS_WALL,left=True,right=False))
     ins.append(box(xr,px1+INS_WALL,sy0,sy0+INS_WALL,z0,z0+RAIL_H))
     ins.append(box(xr,px1+INS_WALL,py1,py1+INS_WALL,z0,z0+RAIL_H))
+    # Floor under the lanes and the pocket. None under the pawn: it has only
+    # about 0.1 mm of headroom under the plate, so it stays in the tray's groove.
+    ins.append(box(xl0,xl1,stop[2],yb,z0,z0+INS_FLOOR))
+    ins.append(box(xr,px1+INS_WALL,sy0,py1+INS_WALL,z0,z0+INS_FLOOR))
+    # Lift tab behind the lanes, with a teardrop finger hole (prints without support).
+    tx=(xl0+xl1)/2
+    tab=box(tx-TAB_W/2,tx+TAB_W/2,yb-.01,yb+TAB_T,z0,z0+TAB_H)
+    hz=z0+TAB_H*.5
+    hole=cq.Solid.makeCylinder(TAB_HOLE_R,TAB_T+1,cq.Vector(tx,yb-.5,hz),cq.Vector(0,1,0))
+    tri=(cq.Workplane('XZ',origin=(0,yb-.5,0))
+         .polyline([(tx-TAB_HOLE_R*.7071,hz+TAB_HOLE_R*.7071),(tx,hz+TAB_HOLE_R*1.4142),(tx+TAB_HOLE_R*.7071,hz+TAB_HOLE_R*.7071)])
+         .close().extrude(-(TAB_T+1)).val())
+    ins.append(tab.cut(hole).cut(tri))
     r=ins[0]
     for x in ins[1:]:r=r.fuse(x)
     return r.clean()
