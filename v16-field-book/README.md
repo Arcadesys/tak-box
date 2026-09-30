@@ -83,6 +83,8 @@ The trays are already printed, so the insert is a separate part: a **pan** that 
 
 `verify_book.py` checks 21 flats of 19.5 x 19.5 x 8 mm (packed to the front and to the back of every lane) and the real pawn against the insert (`tray-insert-fits`). `FLAT` in `tak_book.py` stays 20.0 on purpose: the printed tray's cradle position is derived from it. The earlier tray notes above describe 11 two-high standing stacks; that is a capacity figure, not how it is loaded.
 
+The [weighted stone prototype](../pieces/weighted-v1/README.md) uses 20 mm flats. Five need 100 mm before clearance, so they do not fit this insert's 98 mm lanes. This pan remains for the existing 19.5 mm printed flats; the weighted set needs a matching insert revision.
+
 ## Stiffer base (for the case print; trays and plates unchanged)
 
 The board plates that were printed came out warped. Only the bases had not been printed yet, so the stiffening is all in the base and nothing about the trays, plates, pegs, glue wells or plate seat height changed. `stl/full` for every printed part is byte-identical to before.
