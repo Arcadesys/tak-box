@@ -60,12 +60,12 @@
   "volume_mm3": 60.83
  },
  "stl/full/tray-insert-a.stl": {
-  "triangles": 684,
-  "volume_mm3": 4296.56
+  "triangles": 200,
+  "volume_mm3": 3050.4
  },
  "stl/full/tray-insert-b.stl": {
-  "triangles": 684,
-  "volume_mm3": 4296.56
+  "triangles": 200,
+  "volume_mm3": 3050.4
  },
  "stl/trials/trial-buckle-socket-base.stl": {
   "triangles": 3154,

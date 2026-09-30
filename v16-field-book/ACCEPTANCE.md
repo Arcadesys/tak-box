@@ -28,7 +28,7 @@
 
 ## Tray inserts
 - [ ] Each insert drops into its printed tray without forcing and sits flat.
-- [ ] All 11 stacks of 19.5 mm flats go into their pockets and lift out with a pinch.
+- [ ] All 11 stacks of 19.5 mm flats drop into the channels, slide together, and lift out with a pinch.
 - [ ] The pawn sits in its cradle and can't slide out past the stop.
 - [ ] Shake the closed book: nothing rattles loose or tips over.
 - [ ] The tray latch still snaps and releases with the insert in.

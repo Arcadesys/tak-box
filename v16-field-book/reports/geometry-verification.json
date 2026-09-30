@@ -364,9 +364,9 @@
     "stacks_vs_insert": 0.0,
     "capstone_vs_insert": 0.0,
     "top_under_plate_mm": 10.4,
-    "pocket_clearance_per_side_mm": 0.25,
+    "channel_clearance_per_side_mm": 0.25,
     "wall_gap_to_tray_mm": 0.15,
-    "mass_g_pla": 5.3
+    "mass_g_pla": 3.8
    },
    "B": {
     "solids": 1,
@@ -377,11 +377,16 @@
     "stacks_vs_insert": 0.0,
     "capstone_vs_insert": 0.0,
     "top_under_plate_mm": 10.4,
-    "pocket_clearance_per_side_mm": 0.25,
+    "channel_clearance_per_side_mm": 0.25,
     "wall_gap_to_tray_mm": 0.15,
-    "mass_g_pla": 5.3
+    "mass_g_pla": 3.8
    },
-   "min_gap_between_pockets_mm": 12.2
+   "min_gap_between_channels_mm": 11.0,
+   "channel_stack_zone_mm": [
+    59.0,
+    78.5,
+    78.5
+   ]
   }
  },
  "fits-256-bed": {
@@ -404,7 +409,7 @@
    ],
    "tray-insert": [
     89.3,
-    128.5,
+    86.7,
     9.0
    ]
   }
