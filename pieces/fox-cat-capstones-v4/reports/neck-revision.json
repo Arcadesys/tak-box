@@ -1,0 +1,16 @@
+{
+  "method": "Fill full neck/shoulder grooves to sectional convex outlines, then area-weighted spatial fairing",
+  "source_sha256": "f889b163195a0e41167064ad6ed0c96d73930d0399e75a0521e6b40e6bc205ad",
+  "max_vertex_displacement_mm": 1.8871064040497765,
+  "jaw_junction_cleanup_max_mm": 0.35,
+  "changed_vertices": 13285,
+  "protected_vertices": 46487,
+  "protected_vertex_max_change_mm": 0.0,
+  "dimensions_mm": [
+    15.51893424987793,
+    17.809478759765625,
+    24.08447456956764
+  ],
+  "volume_mm3": 2294.871626227127,
+  "new_credits": 0
+}

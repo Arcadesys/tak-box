@@ -1,0 +1,14 @@
+.slicer-work/
+__pycache__/
+.build-work/
+# Generated alternate formats and storage diagnostic meshes stay local.
+models/*.obj
+models/*-storage-pose.stl
+# Compose before/after sheets; retain only the useful combined sheets.
+previews/cat-front-before.png
+previews/cat-front-after.png
+previews/cat-three-quarter-before.png
+previews/cat-three-quarter-after.png
+previews/fox-before.png
+previews/fox-after.png
+reports/*.log

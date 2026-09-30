@@ -1,0 +1,25 @@
+{
+  "units": "millimeter",
+  "objects": [
+    {
+      "name": "Fox capstone",
+      "dimensions_mm": [
+        15.820656776,
+        17.276481628,
+        24.399999625
+      ],
+      "volume_mm3": 2143.700697972306,
+      "stl_match": true
+    },
+    {
+      "name": "Cat capstone",
+      "dimensions_mm": [
+        15.518934250000001,
+        17.809478759999998,
+        24.08447457
+      ],
+      "volume_mm3": 2294.8716264819595,
+      "stl_match": true
+    }
+  ]
+}

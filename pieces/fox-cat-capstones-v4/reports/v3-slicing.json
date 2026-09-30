@@ -1,0 +1,34 @@
+{
+  "fox": {
+    "exit_code": 0,
+    "layer_height_mm": 0.12,
+    "tree_supports_enabled": true,
+    "build_plate_only_supports": false,
+    "printer_profile": "Repository Centauri Carbon 2 / 0.4 mm nozzle / PLA / Textured PEI",
+    "gcode_generated": true,
+    "gcode_bytes": 1753624,
+    "layers": 203,
+    "support_toolpath_mentions": 0,
+    "summary_comments": [
+      "; total filament used [g] = 2.43",
+      "; total layers count = 203",
+      "; estimated printing time (normal mode) = 39m 22s"
+    ]
+  },
+  "cat": {
+    "exit_code": 0,
+    "layer_height_mm": 0.12,
+    "tree_supports_enabled": true,
+    "build_plate_only_supports": false,
+    "printer_profile": "Repository Centauri Carbon 2 / 0.4 mm nozzle / PLA / Textured PEI",
+    "gcode_generated": true,
+    "gcode_bytes": 2512897,
+    "layers": 200,
+    "support_toolpath_mentions": 136,
+    "summary_comments": [
+      "; total filament used [g] = 2.87",
+      "; total layers count = 200",
+      "; estimated printing time (normal mode) = 39m 32s"
+    ]
+  }
+}

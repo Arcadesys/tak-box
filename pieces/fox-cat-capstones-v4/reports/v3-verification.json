@@ -1,0 +1,261 @@
+{
+  "box_source_sha256": "924a819968fa1e8445d79cd4eab2e5ffe09766d0b16c2792372544fb8a5c2a3e",
+  "closed_box_mm": [
+    101.0,
+    202.0,
+    51.199999999999996
+  ],
+  "physical_acceptance": "UNTESTED",
+  "species": {
+    "fox": {
+      "dimensions_mm": [
+        15.820656776428223,
+        17.27648162841797,
+        24.399999624577482
+      ],
+      "bounds_mm": [
+        [
+          -7.849064826965332,
+          -9.01289176940918,
+          -6.047207179449288e-09
+        ],
+        [
+          7.971591949462891,
+          8.263589859008789,
+          24.399999618530273
+        ]
+      ],
+      "faces": 115408,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 2143.7006979735484,
+      "planar_base_area_mm2": 115.09774337041834,
+      "center_of_mass_mm": [
+        -0.39997824569041435,
+        0.17730770575515087,
+        8.60802228915998
+      ],
+      "COM_to_base_hull_margin_mm": 3.135613726453428,
+      "estimated_PLA_mass_g": 2.6581888654872,
+      "storage": {
+        "rotation": "-90 degrees about X; upright Z becomes tray +Y",
+        "placement_bounds_mm": [
+          [
+            9.039671611785888,
+            2.9,
+            3.1999999999999993
+          ],
+          [
+            24.86032838821411,
+            27.29999962457748,
+            20.476481628417968
+          ]
+        ],
+        "plate_clearance_mm": 2.12351837158203,
+        "saddle_clearance_left_mm": 2.1396716117858876,
+        "saddle_clearance_right_mm": 2.1396716117858894,
+        "front_clearance_mm": 0.8999999999999999,
+        "stop_clearance_mm": 1.0000003754225162,
+        "method": "Actual exported vertex bounds enclosed by exact OCC solid; no reliance on old pawn model",
+        "floor": "Bounds placed on unrecessed floor at z=3.2 mm; actual sculpture may settle into shallow cradle"
+      },
+      "envelope_overlap_mm3": {
+        "A": {
+          "tray": 0.0,
+          "insert": 0.0,
+          "plate": 0.0,
+          "base": 0.0,
+          "translated_pressed_tray": 0.0,
+          "rotated_pressed_arm": 0.0
+        },
+        "B": {
+          "tray": 0.0,
+          "insert": 0.0,
+          "plate": 0.0,
+          "base": 0.0,
+          "translated_pressed_tray": 0.0,
+          "rotated_pressed_arm": 0.0
+        }
+      },
+      "closed_box_envelope_overlap_mm3": {
+        "other_capstone": 0.0,
+        "A_vs_B_base": 0.0,
+        "A_vs_B_plate": 0.0,
+        "B_vs_A_base": 0.0,
+        "B_vs_A_plate": 0.0
+      },
+      "tray_with_capstone_slide_mm3": {
+        "0": 0.0,
+        "10": 0.0,
+        "30": 0.0,
+        "60": 0.0,
+        "100": 0.0,
+        "132": 0.0,
+        "160": 0.0
+      },
+      "lift_out_with_tray_removed_mm3": {
+        "0": 0.0,
+        "1": 0.0,
+        "3": 0.0,
+        "6": 0.0,
+        "9": 0.0,
+        "12": 0.0,
+        "20": 0.0,
+        "30": 0.0
+      },
+      "actual_mesh_overlap_mm3": {
+        "tray": 0.0,
+        "insert": 0.0,
+        "plate": 0.0,
+        "pressed_arm": 0.0
+      },
+      "all_axial_rolls_cylindrical_bound": {
+        "diameter_mm": 18.049864146437802,
+        "headroom_mm": 1.3501358535621968,
+        "saddle_clearance_per_side_mm": 1.025067926781098,
+        "overlap_mm3": {
+          "tray": 0.0,
+          "insert": 0.0,
+          "plate": 0.0,
+          "base": 0.0,
+          "pressed_arm": 0.0
+        },
+        "method": "Exact enclosing cylinder bounds every roll about the storage longitudinal axis. Bounding cylinder does not establish self-settling or retention."
+      },
+      "removal_access": {
+        "procedure": "Slide tray fully out, then grasp body/tail and lift vertically",
+        "insert_wall_height_mm": 6.0,
+        "exposed_height_above_side_wall_mm": 11.276481628417969,
+        "limitation": "Nominal gaps are not fingertip slots. Grasp, tactile identity, release, rolling and transport need physical tests."
+      },
+      "digital_pass": true
+    },
+    "cat": {
+      "dimensions_mm": [
+        15.51893424987793,
+        17.809478759765625,
+        24.08447456956764
+      ],
+      "bounds_mm": [
+        [
+          -7.759467124938965,
+          -8.904739379882812,
+          -5.96900839866521e-09
+        ],
+        [
+          7.759467124938965,
+          8.904739379882812,
+          24.084474563598633
+        ]
+      ],
+      "faces": 29886,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "connected_components": 1,
+      "volume_mm3": 2321.664918429909,
+      "planar_base_area_mm2": 152.0841580148051,
+      "center_of_mass_mm": [
+        -0.1935166117024435,
+        0.10413417824415021,
+        7.979644467094591
+      ],
+      "COM_to_base_hull_margin_mm": 5.209803364613849,
+      "estimated_PLA_mass_g": 2.8788644988530874,
+      "storage": {
+        "rotation": "-90 degrees about X; upright Z becomes tray +Y",
+        "placement_bounds_mm": [
+          [
+            9.190532875061034,
+            2.9,
+            3.1999999999999993
+          ],
+          [
+            24.709467124938964,
+            26.98447456956764,
+            21.009478759765624
+          ]
+        ],
+        "plate_clearance_mm": 1.5905212402343736,
+        "saddle_clearance_left_mm": 2.290532875061034,
+        "saddle_clearance_right_mm": 2.290532875061036,
+        "front_clearance_mm": 0.8999999999999999,
+        "stop_clearance_mm": 1.3155254304323556,
+        "method": "Actual exported vertex bounds enclosed by exact OCC solid; no reliance on old pawn model",
+        "floor": "Bounds placed on unrecessed floor at z=3.2 mm; actual sculpture may settle into shallow cradle"
+      },
+      "envelope_overlap_mm3": {
+        "A": {
+          "tray": 0.0,
+          "insert": 0.0,
+          "plate": 0.0,
+          "base": 0.0,
+          "translated_pressed_tray": 0.0,
+          "rotated_pressed_arm": 0.0
+        },
+        "B": {
+          "tray": 0.0,
+          "insert": 0.0,
+          "plate": 0.0,
+          "base": 0.0,
+          "translated_pressed_tray": 0.0,
+          "rotated_pressed_arm": 0.0
+        }
+      },
+      "closed_box_envelope_overlap_mm3": {
+        "other_capstone": 0.0,
+        "A_vs_B_base": 0.0,
+        "A_vs_B_plate": 0.0,
+        "B_vs_A_base": 0.0,
+        "B_vs_A_plate": 0.0
+      },
+      "tray_with_capstone_slide_mm3": {
+        "0": 0.0,
+        "10": 0.0,
+        "30": 0.0,
+        "60": 0.0,
+        "100": 0.0,
+        "132": 0.0,
+        "160": 0.0
+      },
+      "lift_out_with_tray_removed_mm3": {
+        "0": 0.0,
+        "1": 0.0,
+        "3": 0.0,
+        "6": 0.0,
+        "9": 0.0,
+        "12": 0.0,
+        "20": 0.0,
+        "30": 0.0
+      },
+      "actual_mesh_overlap_mm3": {
+        "tray": 0.0,
+        "insert": 0.0,
+        "plate": 0.0,
+        "pressed_arm": 0.0
+      },
+      "all_axial_rolls_cylindrical_bound": {
+        "diameter_mm": 18.599999165455735,
+        "headroom_mm": 0.8000008345442637,
+        "saddle_clearance_per_side_mm": 0.7500004172721315,
+        "overlap_mm3": {
+          "tray": 0.0,
+          "insert": 0.0,
+          "plate": 0.0,
+          "base": 0.0,
+          "pressed_arm": 0.0
+        },
+        "method": "Exact enclosing cylinder bounds every roll about the storage longitudinal axis. Bounding cylinder does not establish self-settling or retention."
+      },
+      "removal_access": {
+        "procedure": "Slide tray fully out, then grasp body/tail and lift vertically",
+        "insert_wall_height_mm": 6.0,
+        "exposed_height_above_side_wall_mm": 11.809478759765625,
+        "limitation": "Nominal gaps are not fingertip slots. Grasp, tactile identity, release, rolling and transport need physical tests."
+      },
+      "digital_pass": true
+    }
+  }
+}

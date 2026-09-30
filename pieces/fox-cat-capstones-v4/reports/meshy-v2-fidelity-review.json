@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-30",
+  "review_method": "Actual untextured reconstruction renders compared to original large reference image and sheet silhouettes before finishing",
+  "creator_acceptance": "UNTESTED",
+  "fox": {
+    "status": "VISUAL REVIEW PASSED",
+    "views_reviewed": [
+      "front",
+      "left",
+      "right",
+      "back",
+      "three-quarter"
+    ],
+    "observed": [
+      "long pointed muzzle directed back over shoulder",
+      "compact upright curled torso",
+      "continuous neck/body/tail sweep",
+      "broad tapered curled tail with pointed end and angular carved planes",
+      "no separate tail band or exposed forelegs"
+    ],
+    "limitations": [
+      "inferred hidden surfaces from single image",
+      "wood grain absent in untextured geometry",
+      "creator and physical tactile acceptance pending"
+    ],
+    "final_mesh_review": "Final exported STL reviewed after minimal repair, base trim and uniform sizing; source flow retained"
+  },
+  "cat": {
+    "status": "VISUAL REVIEW PASSED",
+    "views_reviewed": [
+      "front",
+      "left",
+      "right",
+      "back",
+      "three-quarter"
+    ],
+    "observed": [
+      "shorter feline muzzle and head turned back over shoulder",
+      "compact curled torso without front paws",
+      "slender rounded tail emerging continuously around haunch",
+      "whole mass follows the reference nose-to-tail flow"
+    ],
+    "limitations": [
+      "inferred hidden surfaces from single image",
+      "fine surface texture absent",
+      "creator and physical tactile acceptance pending"
+    ],
+    "final_mesh_review": "Final exported STL reviewed after minimal repair, base trim and uniform sizing; source flow retained"
+  },
+  "prior_package": "v1 Fox tail band and v1 forward-facing Cat are rejected artistic history, not current deliverables",
+  "package_status": "BOTH PRINTABLE MODELS PASS DIGITAL MESH, V16 FIT AND SLICING CHECKS; CREATOR AND PHYSICAL ACCEPTANCE UNTESTED"
+}

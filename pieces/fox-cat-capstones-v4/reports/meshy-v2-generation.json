@@ -1,0 +1,28 @@
+{
+  "provider": "Meshy",
+  "model": "meshy-7",
+  "method": "image-to-3d",
+  "input_views": {
+    "fox": "references/fox-hero.png",
+    "cat": "references/cat-hero.png"
+  },
+  "should_texture": false,
+  "should_remesh": true,
+  "target_polycount": 30000,
+  "topology": "triangle",
+  "target_formats": [
+    "obj"
+  ],
+  "tasks": {
+    "fox": "01a0f3d9-5429-7124-a2cc-6e1646d73e14",
+    "cat": "01a0f3d9-a2a5-756d-93d3-a9c039ca77c7"
+  },
+  "additional_credits_approved": 40,
+  "prior_credits_consumed": 40,
+  "cumulative_credits_authorized": 80,
+  "status": "BOTH SUCCEEDED",
+  "art_direction": "One continuous carved mass and nose-to-tail sweep; no local additive tail band",
+  "date": "2026-09-30",
+  "additional_credits_consumed": 40,
+  "cumulative_credits_consumed": 80
+}
