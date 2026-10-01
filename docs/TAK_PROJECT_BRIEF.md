@@ -1,0 +1,70 @@
+# Tak project brief
+
+Updated September 30, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+
+## Project and collaboration
+
+- Repository: https://github.com/Arcadesys/tak-box (private, main branch).
+- Research Page: https://chatgpt.com/space/page_1a04af571ecc8191817d9c547cde56ff
+- Tak Space hub: https://chatgpt.com/space/page_6abdc060969481918381b94ad91155e8
+- Read AGENTS.md, this brief, and the affected package README before changing geometry.
+- Existing code is parametric Python/CadQuery with exported STEP, STL, 3MF, previews, verification and slicer reports. Keep reproducible source with its deliverables.
+
+## Two design directions
+
+### Existing travel prototype
+
+The current main-branch baseline is v16-field-book: a 5×5 board, 36 mm pitch, 180 mm field, folding face inward with a snap-in tray beneath each half. README dimensions are 101×202×51 mm closed. It is designed for the Elegoo Centauri Carbon 2, 256 mm bed. The board has a flush white grid on black, sparse orange/purple astronomical inlays, a protective paint lip and a far-edge squeeze-release buckle.
+
+Issue #18 contains newer physical observations: the board feels too thin and pieces rattle in slightly oversized tray cavities. v16 documentation still has an opening statement that nothing has been printed; later sections discuss printed trays/plates, warping and a stiffened base. Treat physical status as mixed and component-specific; the unchecked acceptance sheet is not a complete print history. Start by recording exactly which revision and parts were printed.
+
+### Crafted luxury concept
+
+Latest conversation direction: a compact square closed object that opens into a rectangular arrangement with a central 5×5 playing board and piece wells on both sides. Desired feel is a beautiful crafted cigar box or heirloom case.
+
+Austen's latest mechanism idea is hinged piece boards/trays that fold outward, followed by removal of a lid for play. Exact lid order, hinge axes, dimensions and the retention method remain unresolved. Do not silently replace the field-book baseline with this concept. Prototype separately and first demonstrate a spill-free opening sequence: pieces must remain supported or enclosed while anything rotates.
+
+Walnut/maple, brass accents and felt-like lining in generated imagery are visual directions, not selected construction materials or verified mechanisms. Prior render feedback explicitly rejected an opening motion that would spill pieces.
+
+## Pieces and tactile goals
+
+- Goal: satisfying weight, grip, stacking and sound; plain plastic feels underwhelming.
+- weighted-v1 has two-part 20×20×6 mm stones with separate locating floors and post-print bonded ballast, then adhesive closure. Each team has 21 stones plus a capstone.
+- Compare an empty control, bonded sand and bonded fine steel shot. 5–7 g is an experimental target, not a measured result. Record cured mass, rattle, sound, grasp, stack separation and wall stability.
+- The current tray insert has 98 mm lanes for five 19.5 mm flats. Five 20 mm weighted stones require 100 mm before clearance. They do not fit that insert arrangement.
+- fox-knurled-v1 has 19.5×19.5×8 mm stones and fits the current insert digitally; physical grip/fit needs a sample.
+- fox-cat-capstones-v4 retains the looking-over-the-shoulder carved curl concept. Cat neck/shoulder corrected; Fox retained from v3. Rebuild and digital fit/slicing evidence are recorded; creator and physical acceptance remain pending.
+
+## History and lessons
+
+- v5–v7 archive: older open wells, filament pins, hinge coupons and center closures.
+- Historical coupon measurements from conversation: 1.90 mm fixed bore, 2.20 mm free bore, 1.70 mm plug hole. These belong to the old pin design, not v16 print-in-place hinges.
+- Historical complaints: center leaf too thin, carve-outs and round cut-outs misfit, clasp unreliable; rubber band used as interim closure. Verify applicability before carrying them into a current fix.
+- v11 smooth case and v12 chest are retained on named branches.
+- v13: two-leaf book with M3 clasp.
+- v14: 24 mm cells; paper play test too cramped.
+- v15: 28 mm cells; stacks difficult to grasp.
+- v16: 36 mm cells, larger piece clearance, revised cradle, roomier trays and base stiffening.
+- Earlier galaxy/raised-grid/6×6 artwork is historical exploration. Current request is 5×5; v16 grid is flush.
+
+## Next work
+
+1. Reconcile component print history and observations with issue #18. Record revision, filament, profile and photos; retain unchecked tests until performed.
+2. Address board stiffness and molded tray retention without sacrificing easy finger removal, clean closure or existing printed-part compatibility.
+3. Make a separate kinematic luxury concept: closed, opening stages, open play, repacking. Establish hinge axes, stops, lid order and piece retention before detailed styling.
+4. Revise the insert for weighted stones if those pieces are chosen; test a coupon first.
+5. Finish one physical Fox/Cat pair test and a weighted-stone feel comparison before batch printing.
+
+## Evidence and reproduction
+
+Read these current packages:
+- v16-field-book/README.md and ACCEPTANCE.md
+- pieces/weighted-v1/README.md
+- pieces/fox-cat-capstones-v4/README.md
+- https://github.com/Arcadesys/tak-box/issues/18
+
+Board pipeline: `python v16-field-book/source/build_all.py`. It runs model build, solid verification, mesh verification, rendering and plate packaging, stopping at the first failure. Use `--only verify_book` or `--only verify_meshes` for bounded checks. Full packaging requires ElegooSlicer; do not claim cloud slicing success without that dependency.
+
+Weighted-stone environment and commands are in its README and requirements.txt. Fox/Cat has a separate requirements file and reproduction pipeline. Avoid combining their dependencies blindly; rendering and slicing also contain macOS-specific assumptions. See CODEX.md for the collaboration starting point.
+
+Digital geometry, slicer estimates, physical print results and tactile acceptance must remain distinct.
