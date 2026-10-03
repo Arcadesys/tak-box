@@ -27,4 +27,6 @@ does not establish tab strength. Physical fit, board deflection and transport
 retention remain untested. No latch, printer job or paid generation added.
 Next: two 19 g total grip coupons, then one loaded cassette before its mate,
 followed by printed platform/board support and repacking trials.
-Review: focused draft PR pending, stacked on PR #20 while that base is open.
+Review: [draft PR #21](https://github.com/Arcadesys/tak-box/pull/21), stacked on
+PR #20 while that base is open. Final source/profile/input hashes and 3MF
+bounds/volume readbacks pass; shared board files are byte-identical.
