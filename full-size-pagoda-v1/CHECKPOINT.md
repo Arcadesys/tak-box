@@ -16,4 +16,4 @@ uniform scale, closure and storage collisions, sampled vertical removal,
 watertight exports, named millimetre 3MF readback, actual-mesh previews,
 supported local dry slicing, and a focused review PR. Physical fit remains open.
 
-State: 13 meshes and 9 geometry plates verified; exact new pieces fit both trays. All nine dry slice checks passed. Four actual-mesh previews rendered and reviewed. No physical test or transport closure yet. Next: focused draft PR, then ornament against this constrained foundation.
+State: 13 meshes and 9 geometry plates verified; exact new pieces fit both trays. All nine dry slice checks passed. Four actual-mesh previews rendered and reviewed. No physical test or transport closure yet. Review: https://github.com/Arcadesys/tak-box/pull/19 (draft). Next: physical sample trial and ornament against this constrained foundation.
