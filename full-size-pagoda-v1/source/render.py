@@ -119,10 +119,14 @@ def main():
     underside.apply_translation([20,87,-underside.bounds[0,2]])
     cassette_parts = loaded_tray('cat',(-140,-87,0))+[(underside,TRAY_COLOR)]
     render('05-cassettes','Piece cassettes | lift out for play',
-        'Flat rows: 5 + 5 + 6 + 5 | Separate capstone compartment',cassette_parts,
+        'Flats 2 mm below rim | 18 mm finger openings at each row',cassette_parts,
         (0,0,10),(230,-390,490),145)
+    cap_access = loaded_tray('cat',(-85,-20,0))+loaded_tray('fox',(35,-20,0))
+    render('06-capstone-access','Capstones | grasp through the front opening',
+        '28 mm openings | Cat / Fox | 2.3-3.2 mm below the rim',cap_access,
+        (0,-5,20),(0,-380,155),78)
     (PACKAGE/'reports/rendering.json').write_text(json.dumps({
-        'source':'exported STL meshes', 'views':5, 'renderer':vtk.vtkVersion.GetVTKVersion(),
+        'source':'exported STL meshes', 'views':6, 'renderer':vtk.vtkVersion.GetVTKVersion(),
         'felt_and_grid':'dimensioned diagram from felt-grid-100-percent.svg',
         'rendered_accessibility':'Large white labels on dark background; visible grid and separate motif geometry',
         'physical_result':False},indent=2)+'\n')

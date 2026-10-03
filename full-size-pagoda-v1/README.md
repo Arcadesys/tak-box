@@ -84,7 +84,23 @@ packed; they do not have separate lids.
 The flat rows hold **5 + 5 + 6 + 5 stones**. The third row extends forward
 beside the capstone; there is no separate 21st-flat pocket. Its slot is 151 mm
 long, while the five-flat slots are 126 mm long, each leaving 1 mm total end
-clearance. The capstone compartment and cassette outside dimensions stay the same.
+clearance. The capstone compartment footprint and cassette outside dimensions stay the same.
+
+**Raised flat seats:** the lane floors are at z=18 mm rather than z=2 mm.
+Finished flats reach z=28 mm, just **2 mm below the 30 mm perimeter rim**.
+They project 6 mm above the dividers. An 18 mm wide finger notch at the front
+of each row exposes 8 mm of the first stone's edge, so it can be lifted without
+digging into a deep well. Test actual
+finger access, especially after some stones have been removed, before a batch.
+
+**Capstone access:** the capstone floor is raised from z=2 to z=5 mm. A **28 mm
+wide opening** through the cassette's front wall exposes the curled body from
+the side. Its lower edge is at z=12 mm, leaving approximately 15 mm of the
+capstone above that edge. The Cat and Fox tops are respectively 3.2 and 2.3 mm
+below the rim. Grasp the body through this opening, rather than hooking an ear
+or tail tip. Shape, plan position and the 43 × 32 mm pocket footprint are retained.
+
+![Cat on left and Fox on right, accessible through the front openings](previews/06-capstone-access.png)
 
 The lower cassette rests on four 16 mm square supports within a low locating
 frame. The frame leaves 0.4 mm clearance per side. The upper cassette rests
@@ -92,9 +108,10 @@ on the lower perimeter rim, with four 2 mm square, 1 mm high pins entering
 2.8 mm square, 1.2 mm deep sockets in its underside. These locate the stack
 without a latch; both cassettes lift straight up. There is no cushioning yet.
 
-Both capstones lie below the next cassette floor, leaving at least 5.3 mm
+Both capstones lie below the next cassette floor, leaving at least 2.3 mm
 modeled headroom. The upper rim is 2 mm below the board backing, and its
-locating pins remain 1 mm below it. All pieces remain 25 × 25 × 10 mm.
+locating pins remain 1 mm below it. All flats remain 25 × 25 × 10 mm and have
+2 mm modeled clearance beneath the next cassette's underside.
 
 ![Loaded cassette and its matching underside](previews/05-cassettes.png)
 
@@ -121,8 +138,11 @@ Capstone source hashes and uniform scale factors are recorded. Additional
 checks establish lower-support and stacked-rim contact, pin/socket clearance,
 and zero collision at four sideways offsets of ±0.39 mm within the 0.4 mm
 allowance. Physical registration and release still need a cassette pair test.
+All 21 raised stone seats also pass a contact probe: each piece rests on its
+seat rather than floating above it. No loaded flat extends into the next
+cassette floor.
 
-[Slicer report](reports/slicing.json): the revised six-flat-row cassette was
+[Slicer report](reports/slicing.json): the revised raised-seat cassette was
 freshly sliced; eight unchanged plates reuse prior successful evidence with
 matching committed input hashes. All 9 local checks pass using the
 repository Centauri Carbon 2 / 0.4 mm nozzle profiles. Flat bodies/floors use
@@ -132,11 +152,13 @@ supports. Every object is on the bed with no outside-bed condition. Only the
 capstone plate uses supports. Do not reuse profiles blindly for another printer.
 
 The unornamented platform alone is estimated at **491 g PLA and 9 h 30 min**.
-Each tray is estimated at 150 g and 3 h; the felt backing at 185 g and 3 h.
+Each raised-seat cassette is estimated at **183 g and 3 h 27 min**; the felt
+backing at 185 g and 3 h. Raising the seats adds about 36 g per cassette compared
+with the previous deep-row design. No supports are used in the cassette slice.
 These are slicer estimates, not measured prints. The shell is a stiffness-first
 foundation; material reduction should be considered during ornament design.
 
-All five previews were rendered from the exported meshes. Felt and its grid
+All six previews were rendered from the exported meshes. Felt and its grid
 are dimensioned visual references to the SVG template. Rendered labels are
 large and high contrast. Digital verification does not establish physical
 fit, rigidity, tactile readability, release, retention, wear or comfort.

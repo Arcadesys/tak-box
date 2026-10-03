@@ -107,7 +107,7 @@ def storage_pose(mesh):
     m = mesh.copy()
     m.apply_transform(trimesh.transformations.rotation_matrix(np.pi/2, [0, 1, 0]))
     assert np.all(m.extents <= [43, 32, 28]), m.extents
-    position = np.array([4+(43-m.extents[0])/2, 4+(32-m.extents[1])/2, d.TRAY_FLOOR])
+    position = np.array([4+(43-m.extents[0])/2, 4+(32-m.extents[1])/2, d.CAP_SEAT_Z])
     m.apply_translation(position - m.bounds[0])
     return m
 
@@ -174,16 +174,24 @@ def main():
         for position in positions:
             for obj in (bodies[team], floor, felt):
                 maximum = max(maximum, tray.intersect(obj.translate(position)).val().Volume())
+            # The exact body rim reaches the seat; there is no floating piece.
+            assert tray.intersect(bodies[team].translate(
+                (position[0],position[1],position[2]-.01))).val().Volume() > .1
         assert maximum < 1e-6, (team,maximum)
         pose = storage_pose(caps[team])
         assert pose.bounds[1,2] < 30
         # Its entire actual-mesh AABB is inside the carved pocket: a
         # conservative zero-collision proof, no mesh Boolean assumption.
-        assert np.all(pose.bounds[0] >= [4,4,2]-np.array([1e-5]*3))
+        assert np.all(pose.bounds[0] >= [4,4,d.CAP_SEAT_Z]-np.array([1e-5]*3))
         assert np.all(pose.bounds[1] <= [47,36,30]+np.array([1e-5]*3))
         pose.export(PACKAGE/'models'/f'{team}-capstone-storage-reference.stl')
         loaded[team] = {'flat_count':len(positions),'maximum_cad_overlap_mm3':maximum,
+            'flat_top_mm':d.FLAT_TOP_Z,
+            'flat_to_next_cassette_floor_mm':d.TRAY[2]-d.FLAT_TOP_Z,
             'capstone_storage_bounds_mm':pose.bounds.tolist(),
+            'capstone_below_rim_mm':30-float(pose.bounds[1,2]),
+            'capstone_front_opening_width_mm':d.CAP_GRIP_WIDTH,
+            'capstone_above_grip_edge_mm':float(pose.bounds[1,2])-d.CAP_GRIP_BOTTOM_Z,
             'capstone_to_next_tray_floor_mm':30-float(pose.bounds[1,2])}
     base = d.platform()
     board = d.board().translate((0,0,d.BOARD_Z))
@@ -213,6 +221,14 @@ def main():
         'cassette_registered_size_mm':[120,174,31],
         'cassette_row_counts':list(d.LANE_COUNTS),
         'separate_21st_flat_pocket':False,
+        'flat_access':{'seat_z_mm':d.FLAT_SEAT_Z,'top_z_mm':d.FLAT_TOP_Z,
+            'below_rim_mm':d.TRAY[2]-d.FLAT_TOP_Z,
+            'edge_above_dividers_mm':d.FLAT_TOP_Z-d.DIVIDER_TOP_Z,
+            'front_notch_width_mm':18,'front_edge_exposed_mm':d.FLAT_TOP_Z-d.FINGER_NOTCH_Z,
+            'seat_contact_probes_passed':True},
+        'capstone_access':{'seat_z_mm':d.CAP_SEAT_Z,
+            'front_opening_width_mm':d.CAP_GRIP_WIDTH,
+            'front_opening_bottom_z_mm':d.CAP_GRIP_BOTTOM_Z},
         'two_loaded_trays':loaded,'board_seat_side_clearance_mm':d.SEAT_CLEARANCE,
         'platform_size_mm':[248,240,72], 'felt_play_surface_top_mm':73,
         'motion':'Board first, then trays; 9 sampled vertical offsets; no CAD overlaps',

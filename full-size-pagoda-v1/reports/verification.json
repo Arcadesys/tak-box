@@ -1,6 +1,6 @@
 {
   "units": "mm",
-  "source_revision": "8cdefbf18918378bd2f06a56b9f5381819d7479d",
+  "source_revision": "ed3d485a86a666330f78e1331b9d104b284f897a",
   "physical_fit": "not tested",
   "parts": {
     "stone-floor": {
@@ -99,7 +99,7 @@
         174.0,
         31.0
       ],
-      "volume_mm3": 175387.97408476262,
+      "volume_mm3": 405148.7489498782,
       "watertight": true,
       "winding_consistent": true,
       "components": 1,
@@ -339,7 +339,7 @@
       "bounds_mm": [
         [
           4.0,
-          4.0,
+          3.9999999999999996,
           0.0
         ],
         [
@@ -421,40 +421,64 @@
       5
     ],
     "separate_21st_flat_pocket": false,
+    "flat_access": {
+      "seat_z_mm": 18.0,
+      "top_z_mm": 28.0,
+      "below_rim_mm": 2.0,
+      "edge_above_dividers_mm": 6.0,
+      "front_notch_width_mm": 18,
+      "front_edge_exposed_mm": 8.0,
+      "seat_contact_probes_passed": true
+    },
+    "capstone_access": {
+      "seat_z_mm": 5.0,
+      "front_opening_width_mm": 28.0,
+      "front_opening_bottom_z_mm": 12.0
+    },
     "two_loaded_trays": {
       "cat": {
         "flat_count": 21,
         "maximum_cad_overlap_mm3": 0.0,
+        "flat_top_mm": 28.0,
+        "flat_to_next_cassette_floor_mm": 2.0,
         "capstone_storage_bounds_mm": [
           [
             8.595746989829067,
             7.5,
-            2.0
+            5.0
           ],
           [
             42.40425301017093,
             32.5,
-            23.78465461730957
+            26.78465461730957
           ]
         ],
-        "capstone_to_next_tray_floor_mm": 6.21534538269043
+        "capstone_below_rim_mm": 3.2153453826904297,
+        "capstone_front_opening_width_mm": 28.0,
+        "capstone_above_grip_edge_mm": 14.78465461730957,
+        "capstone_to_next_tray_floor_mm": 3.2153453826904297
       },
       "fox": {
         "flat_count": 21,
         "maximum_cad_overlap_mm3": 0.0,
+        "flat_top_mm": 28.0,
+        "flat_to_next_cassette_floor_mm": 2.0,
         "capstone_storage_bounds_mm": [
           [
             7.999999999999999,
             7.6090803146362305,
-            2.0
+            5.0
           ],
           [
             43.0,
             32.39091968536377,
-            24.693565368652344
+            27.693565368652344
           ]
         ],
-        "capstone_to_next_tray_floor_mm": 5.306434631347656
+        "capstone_below_rim_mm": 2.3064346313476562,
+        "capstone_front_opening_width_mm": 28.0,
+        "capstone_above_grip_edge_mm": 15.693565368652344,
+        "capstone_to_next_tray_floor_mm": 2.3064346313476562
       }
     },
     "board_seat_side_clearance_mm": 0.3,
@@ -509,9 +533,9 @@
     "pieces/fox-knurled-v1/source/flats.py": "f9a89b125189c981d27a8ae3c564ff3ba6dcba46ff3cf0d88a000e0d38437e95",
     "pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
     "v16-field-book/source/mesh_export.py": "8e442d95a8bdaf386e48c9e68c9c1f7fa5a061ea082ad85d6d32d288eeede7e7",
-    "full-size-pagoda-v1/source/build.py": "063d79ed341cfd7d9a95da39da02dcbb3d08eef1b73144c7de94666aac037d86",
-    "full-size-pagoda-v1/source/design.py": "0a9c3a32356efaddbb6d8ec263e4c1ef4ac01c6354fda2b70db3748c36b2772e",
-    "full-size-pagoda-v1/source/render.py": "b6d544fa03b080422e33f07f6cb11fa174d49b60c6b9cb336564ca217a76c9c6",
+    "full-size-pagoda-v1/source/build.py": "ab2e88d09ca023ae5457c41049d9446d7ba1f34df2177af79ae54aa3eaf199e6",
+    "full-size-pagoda-v1/source/design.py": "3e5395a34760ddadb40552e72afb1893c22b1fe01aa1b2f86004b0ff2b55fbd8",
+    "full-size-pagoda-v1/source/render.py": "34aaec3f9dc443a19f873c338c8fa938a202302211ef1dc6d6c4abf4fad8da66",
     "full-size-pagoda-v1/source/slice_check.py": "4ea20b0b54fa5a01f4f8eb9708f9ac6bdf8418ad61dbf5c545823904d2cbaf22"
   }
 }

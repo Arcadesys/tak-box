@@ -31,6 +31,13 @@ BOARD_Z = 66.0
 SEAT_CLEARANCE = .3
 TRAY = (120.0, 174.0, 30.0)
 TRAY_FLOOR = 2.0
+CAP_SEAT_Z = 5.0
+CAP_GRIP_WIDTH = 28.0
+CAP_GRIP_BOTTOM_Z = 12.0
+FLAT_SEAT_Z = 18.0
+FLAT_TOP_Z = FLAT_SEAT_Z + HEIGHT
+DIVIDER_TOP_Z = 22.0
+FINGER_NOTCH_Z = 20.0
 TRAY_Z = (4.0, 34.0)
 LANE_WIDTH = 25.6
 LANE_COUNTS = (5, 5, 6, 5)
@@ -148,14 +155,24 @@ def lanes():
 
 def tray():
     result = box(*TRAY, x=TRAY[0]/2, y=TRAY[1]/2)
-    for x, y, w, d in lanes() + [(4, 4, 43, 32)]:
-        result = result.cut(box(w, d, 31, x=x+w/2, y=y+d/2, z=TRAY_FLOOR))
+    for x, y, w, length in lanes():
+        result = result.cut(box(w, length, 31, x=x+w/2, y=y+length/2, z=FLAT_SEAT_Z))
+    result = result.cut(box(43, 32, 31, x=25.5, y=20, z=CAP_SEAT_Z))
+    # Open the front wall broadly enough to grasp the curled body, rather
+    # than having to hook a fine ear/tail detail from above.
+    cap_grip = box(CAP_GRIP_WIDTH, 12, 20, x=25.5, y=4, z=CAP_GRIP_BOTTOM_Z)
+    result = result.cut(cap_grip.edges('|Z').fillet(2))
     # Lower the lane dividers to expose each stone's upper face. Perimeter
     # remains full-height so the next tray rests on plastic, not on pieces.
-    result = result.cut(box(110, 131, 20, x=59, y=105.5, z=12))
+    result = result.cut(box(110, 131, 20, x=59, y=105.5, z=DIVIDER_TOP_Z))
     # Continue the low grasping rim around the sixth-flat end of row three.
     x, y, width, _ = lanes()[2]
-    result = result.cut(box(width+3.2, 28, 20, x=x+width/2, y=28, z=12))
+    result = result.cut(box(width+3.2, 28, 20, x=x+width/2, y=28, z=DIVIDER_TOP_Z))
+    # Broad open-top notches expose 8 mm of the first stone's front edge in
+    # every row. Their bottoms stay 2 mm above the raised seat for retention.
+    for x, y, width, _ in lanes():
+        notch = box(18, 12, 12, x=x+width/2, y=y-5, z=FINGER_NOTCH_Z)
+        result = result.cut(notch.edges('|Z').fillet(2))
     # Outside finger dishes are broad and do not cut into the capstone pocket.
     for x in (0, 120):
         result = result.cut(box(14, 38, 12, x=x, y=85, z=19))
@@ -172,5 +189,5 @@ def flat_positions():
     positions = []
     for (x, y, _, _), count in zip(lanes(), LANE_COUNTS):
         for j in range(count):
-            positions.append((x + LANE_WIDTH/2, y + .5 + FLAT/2 + j*FLAT, TRAY_FLOOR))
+            positions.append((x + LANE_WIDTH/2, y + .5 + FLAT/2 + j*FLAT, FLAT_SEAT_Z))
     return positions

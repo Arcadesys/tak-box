@@ -34,7 +34,12 @@ register the stacked pair. Flat rows hold 5+5+6+5; the third row extends beside
 the capstone, replacing the separate 21st-flat pocket without enlarging the
 cassette. Each is an open carrier, with separate lids not
 included in this revision. Cat is 33.809 mm tall; Fox is 35 mm. Both retain
-the existing looking-back curl. This changes the premium package; v16 and all
+their existing proportions and looking-back curl. Flat seats are raised 16 mm, placing the flats
+2 mm below the rim and 6 mm above the dividers; 18 mm finger openings expose
+the leading stone in each row. Loaded flats remain 2 mm below the next cassette.
+Capstone seats are raised 3 mm, with a 28 mm front finger opening to grasp the
+curled body; both capstones remain below the next cassette floor.
+This changes the premium package; v16 and all
 its printed interfaces remain unchanged. Full-size pieces do not fit v16's
 old 98 mm lanes. Geometry, mesh, 3MF readback and local slicing pass in the new
 package; physical cassette fit/release and transport retention remain unresolved.
