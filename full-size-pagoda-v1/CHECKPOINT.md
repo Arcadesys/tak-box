@@ -1,21 +1,24 @@
-# Full-size pagoda foundation
+# Full-size pagoda foundation checkpoint
 
-Outcome: existing Tak designs rebuilt around 25 × 25 × 10 mm finished flats,
-with a clear 5×5 board and lift-out trays underneath a low rectangular platform.
+Outcome: existing Tak designs adapted to 25 × 25 × 10 mm finished flats,
+with a clear 5×5 lift-out board and two internal piece cassettes.
 
-Route: one bounded workhorse pass, medium effort requested by the project role
-mapping. This desktop chat's model/effort was not switched or independently verified.
+Route: one bounded workhorse pass; medium effort requested by the role mapping.
+This desktop chat's model/effort was not switched or independently verified.
 
-Scope: additive `full-size-pagoda-v1`, project brief and README links. Preserve
-v16, original piece packages and the user's modified base-plate 3MF.
+Scope: additive full-size-pagoda-v1 package, project brief and README links.
+V16, older piece packages and the user's original modified 3MF are preserved.
+Baseline: aa7b061; cassette follow-up builds from 8cdefbf. No paid generation.
 
-Baseline: current GitHub `origin/main`, aa7b061. No new paid generation.
+Current state: cassette rows are 5+5+6+5. The third row uses the former separate
+21st-piece area beside the capstone; outside dimensions and the capstone pocket
+are unchanged. Both cassettes have lower supports/frame and stack pins/sockets.
 
-Completion evidence: exact solid/mesh dimensions, source capstone hashes and
-uniform scale, closure and storage collisions, sampled vertical removal,
-watertight exports, named millimetre 3MF readback, actual-mesh previews,
-supported local dry slicing, and a focused review PR. Physical fit remains open.
+Evidence: 13 meshes and 9 geometry plates verified; all 21 exact pieces fit.
+Support contact, lateral clearance, stacking and vertical removal pass.
+Changed cassette freshly dry-sliced; eight unchanged plates reuse hash-matched
+successful evidence. Five actual-mesh previews regenerated. Physical fit/release,
+separate covers, cushioning and transport retention remain unresolved.
 
-State: 13 meshes and 9 geometry plates verified; exact new pieces fit both trays. All nine dry slice checks passed. Four actual-mesh previews rendered and reviewed. No physical test or transport closure yet. Review: https://github.com/Arcadesys/tak-box/pull/19 (draft). Next: physical sample trial and ornament against this constrained foundation.
-
-Cassette follow-up complete: two open lift-out carriers, each with 21 flats and a capstone; lower floor supports/locating frame and four stacked pins/sockets added. 13 meshes and 9 geometry plates pass; support-contact, lateral-clearance and removal checks pass. Cassette/platform freshly sliced; seven unchanged inputs reuse hash-matched slice evidence. Five mesh previews updated; storage/cassette detail inspected. Separate lids not included; physical release and transport retention remain pending. PR #19 updated.
+Review: https://github.com/Arcadesys/tak-box/pull/19 (draft).
+Next: physical sample trial and ornament constrained to the external foundation.

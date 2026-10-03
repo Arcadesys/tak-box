@@ -33,7 +33,8 @@ TRAY = (120.0, 174.0, 30.0)
 TRAY_FLOOR = 2.0
 TRAY_Z = (4.0, 34.0)
 LANE_WIDTH = 25.6
-LANE_LENGTH = 126.0
+LANE_COUNTS = (5, 5, 6, 5)
+LANE_END = 168.0
 SEAT_WIDTH = 23.0
 CAVITY_WIDTH = 21.8
 CAVITY_TOP = 8.5
@@ -139,16 +140,22 @@ def board(grooves=False):
 
 
 def lanes():
-    return [(4 + i * (LANE_WIDTH + 1.6), 42, LANE_WIDTH, LANE_LENGTH) for i in range(4)]
+    # The third row extends forward beside the capstone, using the former
+    # separate-flat space. All four rows end at the same back edge.
+    return [(4 + i * (LANE_WIDTH + 1.6), LANE_END-(count*FLAT+1),
+             LANE_WIDTH, count*FLAT+1) for i,count in enumerate(LANE_COUNTS)]
 
 
 def tray():
     result = box(*TRAY, x=TRAY[0]/2, y=TRAY[1]/2)
-    for x, y, w, d in lanes() + [(4, 4, 43, 32), (58, 5, LANE_WIDTH, LANE_WIDTH)]:
+    for x, y, w, d in lanes() + [(4, 4, 43, 32)]:
         result = result.cut(box(w, d, 31, x=x+w/2, y=y+d/2, z=TRAY_FLOOR))
     # Lower the lane dividers to expose each stone's upper face. Perimeter
     # remains full-height so the next tray rests on plastic, not on pieces.
     result = result.cut(box(110, 131, 20, x=59, y=105.5, z=12))
+    # Continue the low grasping rim around the sixth-flat end of row three.
+    x, y, width, _ = lanes()[2]
+    result = result.cut(box(width+3.2, 28, 20, x=x+width/2, y=28, z=12))
     # Outside finger dishes are broad and do not cut into the capstone pocket.
     for x in (0, 120):
         result = result.cut(box(14, 38, 12, x=x, y=85, z=19))
@@ -163,8 +170,7 @@ def tray():
 
 def flat_positions():
     positions = []
-    for x, y, _, _ in lanes():
-        for j in range(5):
+    for (x, y, _, _), count in zip(lanes(), LANE_COUNTS):
+        for j in range(count):
             positions.append((x + LANE_WIDTH/2, y + .5 + FLAT/2 + j*FLAT, TRAY_FLOOR))
-    positions.append((58 + LANE_WIDTH/2, 5 + LANE_WIDTH/2, TRAY_FLOOR))
     return positions

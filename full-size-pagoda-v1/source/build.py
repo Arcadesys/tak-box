@@ -166,6 +166,9 @@ def main():
     loaded = {}
     tray = d.tray()
     positions = d.flat_positions()
+    assert d.LANE_COUNTS == (5,5,6,5) and len(positions) == 21
+    for (_, _, width, length), count in zip(d.lanes(), d.LANE_COUNTS):
+        assert width-d.FLAT >= .6-1e-7 and abs(length-count*d.FLAT-1) < 1e-7
     for team in ('cat','fox'):
         maximum = 0.0
         for position in positions:
@@ -208,6 +211,8 @@ def main():
         'field_mm':[d.FIELD,d.FIELD],'pitch_mm':d.PITCH,
         'centered_flat_gap_mm':d.PITCH-d.FLAT,'tray_body_size_mm':list(d.TRAY),
         'cassette_registered_size_mm':[120,174,31],
+        'cassette_row_counts':list(d.LANE_COUNTS),
+        'separate_21st_flat_pocket':False,
         'two_loaded_trays':loaded,'board_seat_side_clearance_mm':d.SEAT_CLEARANCE,
         'platform_size_mm':[248,240,72], 'felt_play_surface_top_mm':73,
         'motion':'Board first, then trays; 9 sampled vertical offsets; no CAD overlaps',

@@ -81,6 +81,11 @@ Each cassette carries one player's 21 flats and capstone. **These are open
 carriers in this revision**, covered by the upper cassette and board when
 packed; they do not have separate lids.
 
+The flat rows hold **5 + 5 + 6 + 5 stones**. The third row extends forward
+beside the capstone; there is no separate 21st-flat pocket. Its slot is 151 mm
+long, while the five-flat slots are 126 mm long, each leaving 1 mm total end
+clearance. The capstone compartment and cassette outside dimensions stay the same.
+
 The lower cassette rests on four 16 mm square supports within a low locating
 frame. The frame leaves 0.4 mm clearance per side. The upper cassette rests
 on the lower perimeter rim, with four 2 mm square, 1 mm high pins entering
@@ -117,8 +122,8 @@ checks establish lower-support and stacked-rim contact, pin/socket clearance,
 and zero collision at four sideways offsets of ±0.39 mm within the 0.4 mm
 allowance. Physical registration and release still need a cassette pair test.
 
-[Slicer report](reports/slicing.json): the changed cassette/platform plates were
-freshly sliced; seven unchanged plates reuse prior successful evidence with
+[Slicer report](reports/slicing.json): the revised six-flat-row cassette was
+freshly sliced; eight unchanged plates reuse prior successful evidence with
 matching committed input hashes. All 9 local checks pass using the
 repository Centauri Carbon 2 / 0.4 mm nozzle profiles. Flat bodies/floors use
 PETG, 0.2 mm layers and 100% infill; structural parts use PLA, 0.2 mm layers,

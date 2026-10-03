@@ -119,7 +119,7 @@ def main():
     underside.apply_translation([20,87,-underside.bounds[0,2]])
     cassette_parts = loaded_tray('cat',(-140,-87,0))+[(underside,TRAY_COLOR)]
     render('05-cassettes','Piece cassettes | lift out for play',
-        'Loaded cassette / underside | Four pins mate with four sockets',cassette_parts,
+        'Flat rows: 5 + 5 + 6 + 5 | Separate capstone compartment',cassette_parts,
         (0,0,10),(230,-390,490),145)
     (PACKAGE/'reports/rendering.json').write_text(json.dumps({
         'source':'exported STL meshes', 'views':5, 'renderer':vtk.vtkVersion.GetVTKVersion(),

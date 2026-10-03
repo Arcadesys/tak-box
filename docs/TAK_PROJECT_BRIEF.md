@@ -30,7 +30,9 @@ existing GitHub designs: 25×25×10 mm finished weighted flats, uniformly scaled
 Fox/Cat capstones within a 25 mm footprint, 42 mm pitch / 210 mm playing field,
 and two stacked lift-out piece cassettes, each for 21 flats and a capstone.
 The lower cassette has floor supports and a locating frame; four pins/sockets
-register the stacked pair. Each is an open carrier, with separate lids not
+register the stacked pair. Flat rows hold 5+5+6+5; the third row extends beside
+the capstone, replacing the separate 21st-flat pocket without enlarging the
+cassette. Each is an open carrier, with separate lids not
 included in this revision. Cat is 33.809 mm tall; Fox is 35 mm. Both retain
 the existing looking-back curl. This changes the premium package; v16 and all
 its printed interfaces remain unchanged. Full-size pieces do not fit v16's

@@ -86,16 +86,16 @@
       "exit_code": 0,
       "passed": true,
       "objects": 1,
-      "input_geometry_sha256": "92214d3455eeb1532c1c96f5a3c3968fff7f1217d79b7c41018fa1e9c58da4b1",
+      "input_geometry_sha256": "543500ff27999d06e060a1745e15a5b8c8cbf046fdbe154a51a45ca08e608ffe",
       "outside_bed": false,
       "support_used": "false",
-      "estimated_seconds": "10867",
-      "estimated_grams": "149.86",
-      "gcode_sha256": "452d7d849a0518e4ee47532e9f996ee33558e8f063a5db742ac2a8c4fff06c78",
+      "estimated_seconds": "10576",
+      "estimated_grams": "146.72",
+      "gcode_sha256": "560deef46c6a63308a15f3f10f07ed00138e36dd352b9941d476bc52a0d817ae",
       "machine": "Repository CC2 0.4 mm",
       "material": "PLA",
       "layer_mm": 0.2,
-      "sliced_project_sha256": "ddceb52cddfcb1667fbb5fe81e1bc76751de5cc38887bb6644f2a9431b4cc647"
+      "sliced_project_sha256": "67d1436735b18527f1e2d23f10a48997474c56b76668c18673d48eeb8ae8f51b"
     },
     "board-felt-backing": {
       "exit_code": 0,
@@ -142,7 +142,8 @@
       "machine": "Repository CC2 0.4 mm",
       "material": "PLA",
       "layer_mm": 0.2,
-      "sliced_project_sha256": "b1dfeeb5b47b8b91570c49e2aa00d8813a0f71d1d8a1dd9d709097f8911e3816"
+      "sliced_project_sha256": "b1dfeeb5b47b8b91570c49e2aa00d8813a0f71d1d8a1dd9d709097f8911e3816",
+      "evidence_reused_for_unchanged_geometry": true
     }
   }
 }

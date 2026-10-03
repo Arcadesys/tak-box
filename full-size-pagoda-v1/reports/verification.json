@@ -1,6 +1,6 @@
 {
   "units": "mm",
-  "source_revision": "5f07848cbf4ebe9ae9071e452f5cf6bf2907fe46",
+  "source_revision": "8cdefbf18918378bd2f06a56b9f5381819d7479d",
   "physical_fit": "not tested",
   "parts": {
     "stone-floor": {
@@ -99,7 +99,7 @@
         174.0,
         31.0
       ],
-      "volume_mm3": 176916.29416654972,
+      "volume_mm3": 175387.97408476262,
       "watertight": true,
       "winding_consistent": true,
       "components": 1,
@@ -414,6 +414,13 @@
       174,
       31
     ],
+    "cassette_row_counts": [
+      5,
+      5,
+      6,
+      5
+    ],
+    "separate_21st_flat_pocket": false,
     "two_loaded_trays": {
       "cat": {
         "flat_count": 21,
@@ -502,9 +509,9 @@
     "pieces/fox-knurled-v1/source/flats.py": "f9a89b125189c981d27a8ae3c564ff3ba6dcba46ff3cf0d88a000e0d38437e95",
     "pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
     "v16-field-book/source/mesh_export.py": "8e442d95a8bdaf386e48c9e68c9c1f7fa5a061ea082ad85d6d32d288eeede7e7",
-    "full-size-pagoda-v1/source/build.py": "b3285231b541be89459616940d21a61b81e426d8179ab9b822a56c35560d9fd3",
-    "full-size-pagoda-v1/source/design.py": "d45f1a078e6c90c17b535fc37af56b1a0b8c3426ceff07253169af939d8fb72a",
-    "full-size-pagoda-v1/source/render.py": "aedf781e74be7022563d6e9374498a5fa0d5677a4803560a0a2f22f1d0c289b6",
-    "full-size-pagoda-v1/source/slice_check.py": "375a7c5e0b1c80da8672e552a9d3472289660fe5c48248bafa2bf77c7d78b21c"
+    "full-size-pagoda-v1/source/build.py": "063d79ed341cfd7d9a95da39da02dcbb3d08eef1b73144c7de94666aac037d86",
+    "full-size-pagoda-v1/source/design.py": "0a9c3a32356efaddbb6d8ec263e4c1ef4ac01c6354fda2b70db3748c36b2772e",
+    "full-size-pagoda-v1/source/render.py": "b6d544fa03b080422e33f07f6cb11fa174d49b60c6b9cb336564ca217a76c9c6",
+    "full-size-pagoda-v1/source/slice_check.py": "4ea20b0b54fa5a01f4f8eb9708f9ac6bdf8418ad61dbf5c545823904d2cbaf22"
   }
 }
