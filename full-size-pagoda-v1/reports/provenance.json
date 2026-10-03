@@ -1,0 +1,53 @@
+{
+  "baseline_revision": "aa7b0617da608ee090628da09885c3ce945cf7b1",
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "environment": "Existing repository .venv; no new dependency installation",
+  "dependencies": {
+    "cadquery": "2.8.0",
+    "trimesh": "5.1.0",
+    "numpy": "2.5.3",
+    "vtk": "9.6.2",
+    "networkx": "3.7",
+    "lxml": "6.1.3"
+  },
+  "commands": [
+    "python full-size-pagoda-v1/source/build.py",
+    "python full-size-pagoda-v1/source/render.py",
+    "python full-size-pagoda-v1/source/slice_check.py"
+  ],
+  "source_and_profile_sha256": {
+    "full-size-pagoda-v1/source/build.py": "ab2e88d09ca023ae5457c41049d9446d7ba1f34df2177af79ae54aa3eaf199e6",
+    "full-size-pagoda-v1/source/design.py": "3e5395a34760ddadb40552e72afb1893c22b1fe01aa1b2f86004b0ff2b55fbd8",
+    "full-size-pagoda-v1/source/render.py": "1d67323d2a603fa789393f14e57ed382abb89e55314075fc908fa3437ab024fd",
+    "full-size-pagoda-v1/source/requirements.txt": "371d42747959fe93753e7fc8311527f94fe2083deab7357b6f4ca123ae23923e",
+    "full-size-pagoda-v1/source/slice_check.py": "4ea20b0b54fa5a01f4f8eb9708f9ac6bdf8418ad61dbf5c545823904d2cbaf22",
+    "pieces/profiles/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
+    "pieces/profiles/process-pieces.json": "d4f34c4ecf43e6794e0eafcef3a5420d2a71a95072e5b2c4292044068e6a7cc0",
+    "pieces/profiles/filament-orange.json": "669b905aed9bdd63c3b8bff74e3c96cf2e191f60e87c148020ad3dcfcb7a8e4b",
+    "v16-field-book/profiles/filament-pla-black.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+  },
+  "generation_credits_consumed": 0,
+  "printed": false,
+  "render_review": "All four final views reviewed: large high-contrast labels, light shell against dark background, visible white grid, Cat/Fox emblems distinguish teams beyond colour. Physical central-vision-loss usability requires a handling trial.",
+  "cassette_followup_revision": "5f07848cbf4ebe9ae9071e452f5cf6bf2907fe46",
+  "cassette_followup_commands": [
+    "python full-size-pagoda-v1/source/build.py",
+    "python full-size-pagoda-v1/source/render.py",
+    "python full-size-pagoda-v1/source/slice_check.py --only tray platform"
+  ],
+  "cassette_render_review": "Updated storage and cassette-detail views inspected: large readable labels, light cassette shells and visible loaded piece layout. Pin/socket physical fit is untested.",
+  "six_flat_row_revision": "8cdefbf18918378bd2f06a56b9f5381819d7479d",
+  "six_flat_row_commands": [
+    "python full-size-pagoda-v1/source/build.py",
+    "python full-size-pagoda-v1/source/render.py",
+    "python full-size-pagoda-v1/source/slice_check.py --only tray"
+  ],
+  "six_flat_row_render_review": "Updated actual-mesh cassette view inspected; caption shows 5+5+6+5 and the continuous six-flat third row replaces the separate pocket.",
+  "raised_seat_access_revision": "ed3d485a86a666330f78e1331b9d104b284f897a",
+  "raised_seat_access_commands": [
+    "python full-size-pagoda-v1/source/build.py",
+    "python full-size-pagoda-v1/source/render.py",
+    "python full-size-pagoda-v1/source/slice_check.py --only tray"
+  ],
+  "raised_access_render_review": "Actual-mesh cassette view and Cat/Fox front-access close-up inspected. High-contrast labels show flat/rim spacing and broad front openings; real grasp comfort remains untested."
+}

@@ -4,6 +4,12 @@ A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed p
 
 ## Current design: [v16 field book](v16-field-book)
 
+The separate [full-size pagoda foundation](full-size-pagoda-v1/README.md) uses
+25 × 25 × 10 mm weighted flats, scaled existing Fox/Cat capstones and a lift-out
+5×5 board above two stacked trays. It is the new premium printed exploration;
+v16 remains the travel prototype. Digital geometry and local slicing pass;
+physical fit and transport retention remain untested.
+
 ![v16 open with trays out](v16-field-book/previews/03-trays-out.png)
 
 The board folds in half with its face inside, and there's a snap-in piece tray under each half.

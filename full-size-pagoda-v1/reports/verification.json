@@ -1,0 +1,541 @@
+{
+  "units": "mm",
+  "source_revision": "ed3d485a86a666330f78e1331b9d104b284f897a",
+  "physical_fit": "not tested",
+  "parts": {
+    "stone-floor": {
+      "dimensions_mm": [
+        22.600000381469727,
+        22.600000381469727,
+        1.600000023841858
+      ],
+      "volume_mm3": 784.8001400516731,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        22.6,
+        22.6,
+        1.5999999999999999
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "cat-body-print": {
+      "dimensions_mm": [
+        25.0,
+        25.0,
+        10.000000000000002
+      ],
+      "volume_mm3": 1991.3023553203857,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        25.000000000000004,
+        25.000000000000004,
+        10.000000000000004
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "fox-body-print": {
+      "dimensions_mm": [
+        25.0,
+        25.0,
+        10.000000000000002
+      ],
+      "volume_mm3": 1779.7024977272886,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        25.0000002,
+        25.000000200000002,
+        10.000000100000003
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "witch-body-print": {
+      "dimensions_mm": [
+        25.0,
+        25.0,
+        10.000000000000002
+      ],
+      "volume_mm3": 2011.7824115288247,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        25.000000000000004,
+        25.000000000000004,
+        10.000000000000004
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "platform": {
+      "dimensions_mm": [
+        248.0,
+        240.0,
+        72.0
+      ],
+      "volume_mm3": 619793.2410534256,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        248.0,
+        240.0,
+        72.0
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "tray": {
+      "dimensions_mm": [
+        120.0,
+        174.0,
+        31.0
+      ],
+      "volume_mm3": 405148.7489498782,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        120.0,
+        174.0,
+        31.0
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "board-felt-backing": {
+      "dimensions_mm": [
+        232.0,
+        224.0,
+        6.0
+      ],
+      "volume_mm3": 311808.0,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        232.0,
+        224.0,
+        6.0
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "board-grooved-option": {
+      "dimensions_mm": [
+        232.0,
+        224.0,
+        6.0
+      ],
+      "volume_mm3": 309719.4258803098,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        232.0,
+        224.0,
+        6.0
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "cat-capstone": {
+      "dimensions_mm": [
+        21.78465461730957,
+        25.0,
+        33.808506020341866
+      ],
+      "volume_mm3": 6347.822811695372,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1
+    },
+    "fox-capstone": {
+      "dimensions_mm": [
+        22.693565368652344,
+        24.78183937072754,
+        35.0
+      ],
+      "volume_mm3": 6327.014409244449,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1
+    },
+    "floor-clearance-15": {
+      "dimensions_mm": [
+        22.700000762939453,
+        22.700000762939453,
+        1.600000023841858
+      ],
+      "volume_mm3": 791.8010066250043,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        22.7,
+        22.7,
+        1.5999999999999999
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "floor-clearance-20": {
+      "dimensions_mm": [
+        22.600000381469727,
+        22.600000381469727,
+        1.600000023841858
+      ],
+      "volume_mm3": 784.8001400516731,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        22.6,
+        22.6,
+        1.5999999999999999
+      ],
+      "zero_area_triangles_removed": 0
+    },
+    "floor-clearance-25": {
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        1.600000023841858
+      ],
+      "volume_mm3": 777.8243981067714,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "solid_valid": true,
+      "cad_dimensions_mm": [
+        22.5,
+        22.5,
+        1.6000000000000003
+      ],
+      "zero_area_triangles_removed": 0
+    }
+  },
+  "plates": {
+    "closure-coupon": {
+      "objects": 6,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          7.5,
+          7.5,
+          -1.97206422537983e-15
+        ],
+        [
+          96.5,
+          63.35000038146973,
+          10.0
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    },
+    "cat-flats-21": {
+      "objects": 21,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          5.5,
+          5.5,
+          -1.97206422537983e-15
+        ],
+        [
+          204.5,
+          88.5,
+          10.0
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    },
+    "fox-flats-21": {
+      "objects": 21,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          5.5,
+          5.5,
+          -1.97206422537983e-15
+        ],
+        [
+          204.5,
+          88.5,
+          10.0
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    },
+    "floors-21": {
+      "objects": 21,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          6.699999809265137,
+          6.699999809265137,
+          0.0
+        ],
+        [
+          191.30000019073486,
+          83.30000019073486,
+          1.600000023841858
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    },
+    "fox-cat-capstones": {
+      "objects": 2,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          14.107672691345215,
+          12.5,
+          -8.378976623646395e-09
+        ],
+        [
+          76.34678268432617,
+          37.5,
+          35.0
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    },
+    "platform": {
+      "objects": 1,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          4.0,
+          4.0,
+          0.0
+        ],
+        [
+          252.0,
+          244.0,
+          72.0
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    },
+    "tray": {
+      "objects": 1,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          4.0,
+          3.9999999999999996,
+          0.0
+        ],
+        [
+          124.0,
+          178.0,
+          31.0
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    },
+    "board-felt-backing": {
+      "objects": 1,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          4.0,
+          4.0,
+          0.0
+        ],
+        [
+          236.0,
+          228.0,
+          6.0
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    },
+    "board-grooved-option": {
+      "objects": 1,
+      "units": "millimeter",
+      "bounds_mm": [
+        [
+          4.0,
+          4.0,
+          0.0
+        ],
+        [
+          236.0,
+          228.0,
+          6.0
+        ]
+      ],
+      "labels_and_volumes_match": true,
+      "geometry_only": true
+    }
+  },
+  "checks": {
+    "flat_finished_envelope_mm": [
+      25,
+      25,
+      10
+    ],
+    "felt_mm": 0.6,
+    "adhesive_allowance_mm": 0.09999999999999998,
+    "roof_under_emblem_mm": 1.0,
+    "floor_side_clearance_mm": 0.2,
+    "field_mm": [
+      210.0,
+      210.0
+    ],
+    "pitch_mm": 42.0,
+    "centered_flat_gap_mm": 17.0,
+    "tray_body_size_mm": [
+      120.0,
+      174.0,
+      30.0
+    ],
+    "cassette_registered_size_mm": [
+      120,
+      174,
+      31
+    ],
+    "cassette_row_counts": [
+      5,
+      5,
+      6,
+      5
+    ],
+    "separate_21st_flat_pocket": false,
+    "flat_access": {
+      "seat_z_mm": 18.0,
+      "top_z_mm": 28.0,
+      "below_rim_mm": 2.0,
+      "edge_above_dividers_mm": 6.0,
+      "front_notch_width_mm": 18,
+      "front_edge_exposed_mm": 8.0,
+      "seat_contact_probes_passed": true
+    },
+    "capstone_access": {
+      "seat_z_mm": 5.0,
+      "front_opening_width_mm": 28.0,
+      "front_opening_bottom_z_mm": 12.0
+    },
+    "two_loaded_trays": {
+      "cat": {
+        "flat_count": 21,
+        "maximum_cad_overlap_mm3": 0.0,
+        "flat_top_mm": 28.0,
+        "flat_to_next_cassette_floor_mm": 2.0,
+        "capstone_storage_bounds_mm": [
+          [
+            8.595746989829067,
+            7.5,
+            5.0
+          ],
+          [
+            42.40425301017093,
+            32.5,
+            26.78465461730957
+          ]
+        ],
+        "capstone_below_rim_mm": 3.2153453826904297,
+        "capstone_front_opening_width_mm": 28.0,
+        "capstone_above_grip_edge_mm": 14.78465461730957,
+        "capstone_to_next_tray_floor_mm": 3.2153453826904297
+      },
+      "fox": {
+        "flat_count": 21,
+        "maximum_cad_overlap_mm3": 0.0,
+        "flat_top_mm": 28.0,
+        "flat_to_next_cassette_floor_mm": 2.0,
+        "capstone_storage_bounds_mm": [
+          [
+            7.999999999999999,
+            7.6090803146362305,
+            5.0
+          ],
+          [
+            43.0,
+            32.39091968536377,
+            27.693565368652344
+          ]
+        ],
+        "capstone_below_rim_mm": 2.3064346313476562,
+        "capstone_front_opening_width_mm": 28.0,
+        "capstone_above_grip_edge_mm": 15.693565368652344,
+        "capstone_to_next_tray_floor_mm": 2.3064346313476562
+      }
+    },
+    "board_seat_side_clearance_mm": 0.3,
+    "platform_size_mm": [
+      248,
+      240,
+      72
+    ],
+    "felt_play_surface_top_mm": 73,
+    "motion": "Board first, then trays; 9 sampled vertical offsets; no CAD overlaps",
+    "transport_retention": "not established; no latch or lid in this foundation",
+    "cassette_location": {
+      "frame_clearance_per_side_mm": 0.4,
+      "lower_supports": 4,
+      "stack_registration_pins": 4,
+      "socket_depth_mm": 1.2,
+      "pin_height_mm": 1.0,
+      "lateral_samples_mm": [
+        -0.39,
+        0.39
+      ],
+      "support_contact_probes_passed": true
+    },
+    "stacked_tray_load": "Perimeter rim contact with locating pins; pieces remain below next tray floor"
+  },
+  "capstones": {
+    "cat": {
+      "source": "pieces/fox-cat-capstones-v4/models/cat-capstone.stl",
+      "source_sha256": "8f50abec4fcf2662b152155f1717601606153fb44b2af38aa6dc440e362fb3d9",
+      "uniform_scale": 1.4037468663304666,
+      "dimensions_mm": [
+        21.78465461730957,
+        25.0,
+        33.808506020341866
+      ],
+      "ballast_cavity": false
+    },
+    "fox": {
+      "source": "pieces/fox-cat-capstones-v4/models/fox-capstone.stl",
+      "source_sha256": "5d6658021c501752d945a1277eb337af4e6745bce471e6caf8e3517131de83bf",
+      "uniform_scale": 1.434426251578521,
+      "dimensions_mm": [
+        22.693565368652344,
+        24.78183937072754,
+        35.0
+      ],
+      "ballast_cavity": false
+    }
+  },
+  "source_hashes": {
+    "pieces/weighted-v1/source/stones.py": "ae29e48693b925cc431f15707bfdf3de60650652a563578983add42f14db6a76",
+    "pieces/fox-knurled-v1/source/flats.py": "f9a89b125189c981d27a8ae3c564ff3ba6dcba46ff3cf0d88a000e0d38437e95",
+    "pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
+    "v16-field-book/source/mesh_export.py": "8e442d95a8bdaf386e48c9e68c9c1f7fa5a061ea082ad85d6d32d288eeede7e7",
+    "full-size-pagoda-v1/source/build.py": "ab2e88d09ca023ae5457c41049d9446d7ba1f34df2177af79ae54aa3eaf199e6",
+    "full-size-pagoda-v1/source/design.py": "3e5395a34760ddadb40552e72afb1893c22b1fe01aa1b2f86004b0ff2b55fbd8",
+    "full-size-pagoda-v1/source/render.py": "34aaec3f9dc443a19f873c338c8fa938a202302211ef1dc6d6c4abf4fad8da66",
+    "full-size-pagoda-v1/source/slice_check.py": "4ea20b0b54fa5a01f4f8eb9708f9ac6bdf8418ad61dbf5c545823904d2cbaf22"
+  }
+}

@@ -1,6 +1,6 @@
 # Tak project brief
 
-Updated September 30, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 2, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
 ## Project and collaboration
 
@@ -19,6 +19,33 @@ The current main-branch baseline is v16-field-book: a 5×5 board, 36 mm pitch, 1
 Issue #18 contains newer physical observations: the board feels too thin and pieces rattle in slightly oversized tray cavities. v16 documentation still has an opening statement that nothing has been printed; later sections discuss printed trays/plates, warping and a stiffened base. Treat physical status as mixed and component-specific; the unchecked acceptance sheet is not a complete print history. Start by recording exactly which revision and parts were printed.
 
 ### Crafted luxury concept
+
+Current selected premium direction: an exceptionally ornate **printed low
+rectangular pagoda platform**, with the pieces hidden beneath a lift-out board.
+The motifs are witch and cat, energy vines and galactic forms. The wooden-box,
+bagged-board and swap-shop alternatives preceded this selection.
+
+`full-size-pagoda-v1` establishes a separate unornamented foundation from the
+existing GitHub designs: 25×25×10 mm finished weighted flats, uniformly scaled
+Fox/Cat capstones within a 25 mm footprint, 42 mm pitch / 210 mm playing field,
+and two stacked lift-out piece cassettes, each for 21 flats and a capstone.
+The lower cassette has floor supports and a locating frame; four pins/sockets
+register the stacked pair. Flat rows hold 5+5+6+5; the third row extends beside
+the capstone, replacing the separate 21st-flat pocket without enlarging the
+cassette. Each is an open carrier, with separate lids not
+included in this revision. Cat is 33.809 mm tall; Fox is 35 mm. Both retain
+their existing proportions and looking-back curl. Flat seats are raised 16 mm, placing the flats
+2 mm below the rim and 6 mm above the dividers; 18 mm finger openings expose
+the leading stone in each row. Loaded flats remain 2 mm below the next cassette.
+Capstone seats are raised 3 mm, with a 28 mm front finger opening to grasp the
+curled body; both capstones remain below the next cassette floor.
+This changes the premium package; v16 and all
+its printed interfaces remain unchanged. Full-size pieces do not fit v16's
+old 98 mm lanes. Geometry, mesh, 3MF readback and local slicing pass in the new
+package; physical cassette fit/release and transport retention remain unresolved.
+The shell has no roof above the field. Its felt-covered board remains removable.
+
+The following hinged luxury arrangement is retained as earlier exploration:
 
 Latest conversation direction: a compact square closed object that opens into a rectangular arrangement with a central 5×5 playing board and piece wells on both sides. Desired feel is a beautiful crafted cigar box or heirloom case.
 
@@ -51,7 +78,7 @@ Walnut/maple, brass accents and felt-like lining in generated imagery are visual
 
 1. Reconcile component print history and observations with issue #18. Record revision, filament, profile and photos; retain unchecked tests until performed.
 2. Address board stiffness and molded tray retention without sacrificing easy finger removal, clean closure or existing printed-part compatibility.
-3. Make a separate kinematic luxury concept: closed, opening stages, open play, repacking. Establish hinge axes, stops, lid order and piece retention before detailed styling.
+3. Develop the selected premium pagoda from `full-size-pagoda-v1`: constrain ornament to the external shell, preserve the lift-out board and cassette removal paths, reduce material where possible and physically test cassette registration/release and resolve transport retention before a complete print. The earlier hinged luxury motion study remains separate.
 4. Revise the insert for weighted stones if those pieces are chosen; test a coupon first.
 5. Finish one physical Fox/Cat pair test and a weighted-stone feel comparison before batch printing.
 
