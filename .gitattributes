@@ -18,3 +18,6 @@ pieces/fox-cat-capstones-v4/raw/*.obj binary linguist-generated=true
 full-size-pagoda-v1/models/*.stl binary linguist-generated=true
 full-size-pagoda-v1/models/*.step binary linguist-generated=true
 full-size-pagoda-v1/plates/*.3mf binary linguist-generated=true
+home-board-compact-v1/models/*.step binary linguist-generated=true
+home-board-compact-v1/models/*.stl binary linguist-generated=true
+home-board-compact-v1/plates/*.3mf binary linguist-generated=true

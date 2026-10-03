@@ -1,0 +1,12 @@
+{
+  "source": "Exported STL geometry; felt/grid reference to shared exact-size template",
+  "views": 6,
+  "in_play_inventory_per_player": {
+    "field_flats": 6,
+    "cassette_flats": 15,
+    "capstones": 1
+  },
+  "accessibility": "Reviewed six rendered previews: large white labels on dark backgrounds, readable grid, separate component silhouettes, no colour-only instructions.",
+  "physical_result": false,
+  "review": "Support view checked after correcting exploded-list alias; all parts framed without clipping."
+}
