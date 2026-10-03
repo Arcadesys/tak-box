@@ -25,4 +25,4 @@ No model geometry was repaired after export. Unchanged meshes are byte-identical
 Blockers/limits: physical grasp, grip-rail flex, printed release and transport
 retention untested. Next: one cassette loaded handling trial before printing
 its mate; compare stacking to the previous cassette if available. No printer
-job or paid generation initiated. Review: PR pending.
+job or paid generation initiated. Review: https://github.com/Arcadesys/tak-box/pull/20 (draft).
