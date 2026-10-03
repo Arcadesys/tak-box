@@ -50,6 +50,19 @@ old 98 mm lanes. Geometry, mesh, 3MF readback and local slicing pass in the new
 package; physical cassette fit/release and transport retention remain unresolved.
 The shell has no roof above the field. Its felt-covered board remains removable.
 
+Compactness requirement: reduce **both packed footprint and height**, preserving
+the current 210 x 210 mm playing field, 42 mm pitch and easy piece access. The
+`home-board-compact-v1` package now implements a separate 240 x 232 x 43 mm variant,
+with two 112.2 mm-wide cassettes side by side and front/back lift tabs. It
+retains the full-size pieces, 5+5+6+5 layout and capstone chamber; the shared
+232 x 224 x 6 mm board is unchanged. Four support pads contact the board,
+and its finger openings reach 12 mm below the underside. Exact piece fit,
+support contact, independent cassette removal, geometric finger-space checks,
+mesh/3MF readback and local slicing pass. Actual grasp, tab strength, printed
+fit, board deflection and transport retention remain untested. The stacked
+package remains intact. Begin with its two small grip coupons before a full
+loaded cassette trial.
+
 The following hinged luxury arrangement is retained as earlier exploration:
 
 Latest conversation direction: a compact square closed object that opens into a rectangular arrangement with a central 5×5 playing board and piece wells on both sides. Desired feel is a beautiful crafted cigar box or heirloom case.

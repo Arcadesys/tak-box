@@ -10,6 +10,11 @@ The separate [full-size pagoda foundation](full-size-pagoda-v1/README.md) uses
 v16 remains the travel prototype. Digital geometry and local slicing pass;
 physical fit and transport retention remain untested.
 
+The additive [compact home-board variant](home-board-compact-v1/README.md)
+reduces both footprint and height to 240 × 232 × 43 mm by placing two narrower
+cassettes side by side. The same 42 mm cells and full-size pieces are retained.
+Digital geometry and local slicing pass; printed handling remains untested.
+
 ![v16 open with trays out](v16-field-book/previews/03-trays-out.png)
 
 The board folds in half with its face inside, and there's a snap-in piece tray under each half.
