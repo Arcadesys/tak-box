@@ -189,6 +189,13 @@ def main():
         assert base.intersect(placed).val().Volume() < 1e-6
         assert placed.intersect(board).val().Volume() < 1e-6
     assert tray.intersect(tray.translate((0,0,30))).val().Volume() < 1e-6
+    # Witness a support contact, then sample the specified sideways clearance.
+    lower = tray.translate((-60,-87,d.TRAY_Z[0]))
+    assert base.intersect(lower.translate((0,0,-.01))).val().Volume() > 1
+    assert tray.intersect(tray.translate((0,0,29.99))).val().Volume() > .1
+    for dx, dy in ((.39,0),(-.39,0),(0,.39),(0,-.39)):
+        assert base.intersect(lower.translate((dx,dy,0))).val().Volume() < 1e-6
+        assert tray.intersect(tray.translate((dx,dy,30))).val().Volume() < 1e-6
     for dz in (0,.1,.3,1,3,10,40,80,180):
         assert base.intersect(board.translate((0,0,dz))).val().Volume() < 1e-6
         # Board is removed before either tray is raised.
@@ -199,12 +206,18 @@ def main():
         'roof_under_emblem_mm':d.HEIGHT-d.CAVITY_TOP-d.ENGRAVE,
         'floor_side_clearance_mm':d.FLOOR_CLEARANCE,
         'field_mm':[d.FIELD,d.FIELD],'pitch_mm':d.PITCH,
-        'centered_flat_gap_mm':d.PITCH-d.FLAT,'tray_size_mm':list(d.TRAY),
+        'centered_flat_gap_mm':d.PITCH-d.FLAT,'tray_body_size_mm':list(d.TRAY),
+        'cassette_registered_size_mm':[120,174,31],
         'two_loaded_trays':loaded,'board_seat_side_clearance_mm':d.SEAT_CLEARANCE,
         'platform_size_mm':[248,240,72], 'felt_play_surface_top_mm':73,
         'motion':'Board first, then trays; 9 sampled vertical offsets; no CAD overlaps',
         'transport_retention':'not established; no latch or lid in this foundation',
-        'stacked_tray_load':'Perimeter rim contact; pieces remain below next tray floor'}
+        'cassette_location':{'frame_clearance_per_side_mm':d.CASSETTE_SIDE_CLEARANCE,
+            'lower_supports':4,'stack_registration_pins':4,
+            'socket_depth_mm':d.REGISTER_SOCKET_DEPTH,
+            'pin_height_mm':d.REGISTER_HEIGHT,
+            'lateral_samples_mm':[-.39,.39],'support_contact_probes_passed':True},
+        'stacked_tray_load':'Perimeter rim contact with locating pins; pieces remain below next tray floor'}
     # Exact-size felt grid can be printed at 100%; colours do not carry labels.
     lines = []
     for i in range(6):

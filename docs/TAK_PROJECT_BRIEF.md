@@ -28,11 +28,14 @@ bagged-board and swap-shop alternatives preceded this selection.
 `full-size-pagoda-v1` establishes a separate unornamented foundation from the
 existing GitHub designs: 25×25×10 mm finished weighted flats, uniformly scaled
 Fox/Cat capstones within a 25 mm footprint, 42 mm pitch / 210 mm playing field,
-and two stacked lift-out trays. Cat is 33.809 mm tall; Fox is 35 mm. Both retain
+and two stacked lift-out piece cassettes, each for 21 flats and a capstone.
+The lower cassette has floor supports and a locating frame; four pins/sockets
+register the stacked pair. Each is an open carrier, with separate lids not
+included in this revision. Cat is 33.809 mm tall; Fox is 35 mm. Both retain
 the existing looking-back curl. This changes the premium package; v16 and all
 its printed interfaces remain unchanged. Full-size pieces do not fit v16's
 old 98 mm lanes. Geometry, mesh, 3MF readback and local slicing pass in the new
-package; physical fit, tray location and transport retention remain unresolved.
+package; physical cassette fit/release and transport retention remain unresolved.
 The shell has no roof above the field. Its felt-covered board remains removable.
 
 The following hinged luxury arrangement is retained as earlier exploration:
@@ -68,7 +71,7 @@ Walnut/maple, brass accents and felt-like lining in generated imagery are visual
 
 1. Reconcile component print history and observations with issue #18. Record revision, filament, profile and photos; retain unchecked tests until performed.
 2. Address board stiffness and molded tray retention without sacrificing easy finger removal, clean closure or existing printed-part compatibility.
-3. Develop the selected premium pagoda from `full-size-pagoda-v1`: constrain ornament to the external shell, preserve the lift-out board and tray removal paths, reduce material where possible and resolve tray location/transport retention before a complete print. The earlier hinged luxury motion study remains separate.
+3. Develop the selected premium pagoda from `full-size-pagoda-v1`: constrain ornament to the external shell, preserve the lift-out board and cassette removal paths, reduce material where possible and physically test cassette registration/release and resolve transport retention before a complete print. The earlier hinged luxury motion study remains separate.
 4. Revise the insert for weighted stones if those pieces are chosen; test a coupon first.
 5. Finish one physical Fox/Cat pair test and a weighted-stone feel comparison before batch printing.
 

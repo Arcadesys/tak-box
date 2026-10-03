@@ -16,11 +16,11 @@
     "python full-size-pagoda-v1/source/slice_check.py"
   ],
   "source_and_profile_sha256": {
-    "full-size-pagoda-v1/source/build.py": "8f93baebd6885784221babbf95e27478e2b5b3b3af9ad41b4fdcabeb9e90cb9f",
-    "full-size-pagoda-v1/source/design.py": "55026714d9f2cb152039d0b99566b60c777a433c0c170756c158464d5bcfd325",
-    "full-size-pagoda-v1/source/render.py": "aedf781e74be7022563d6e9374498a5fa0d5677a4803560a0a2f22f1d0c289b6",
+    "full-size-pagoda-v1/source/build.py": "b3285231b541be89459616940d21a61b81e426d8179ab9b822a56c35560d9fd3",
+    "full-size-pagoda-v1/source/design.py": "d45f1a078e6c90c17b535fc37af56b1a0b8c3426ceff07253169af939d8fb72a",
+    "full-size-pagoda-v1/source/render.py": "aa0bf34e75ed4070681162c4ce53092dea215156e3dff0e99006b15c6be0c34d",
     "full-size-pagoda-v1/source/requirements.txt": "371d42747959fe93753e7fc8311527f94fe2083deab7357b6f4ca123ae23923e",
-    "full-size-pagoda-v1/source/slice_check.py": "375a7c5e0b1c80da8672e552a9d3472289660fe5c48248bafa2bf77c7d78b21c",
+    "full-size-pagoda-v1/source/slice_check.py": "4ea20b0b54fa5a01f4f8eb9708f9ac6bdf8418ad61dbf5c545823904d2cbaf22",
     "pieces/profiles/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
     "pieces/profiles/process-pieces.json": "d4f34c4ecf43e6794e0eafcef3a5420d2a71a95072e5b2c4292044068e6a7cc0",
     "pieces/profiles/filament-orange.json": "669b905aed9bdd63c3b8bff74e3c96cf2e191f60e87c148020ad3dcfcb7a8e4b",
@@ -28,5 +28,12 @@
   },
   "generation_credits_consumed": 0,
   "printed": false,
-  "render_review": "All four final views reviewed: large high-contrast labels, light shell against dark background, visible white grid, Cat/Fox emblems distinguish teams beyond colour. Physical central-vision-loss usability requires a handling trial."
+  "render_review": "All four final views reviewed: large high-contrast labels, light shell against dark background, visible white grid, Cat/Fox emblems distinguish teams beyond colour. Physical central-vision-loss usability requires a handling trial.",
+  "cassette_followup_revision": "5f07848cbf4ebe9ae9071e452f5cf6bf2907fe46",
+  "cassette_followup_commands": [
+    "python full-size-pagoda-v1/source/build.py",
+    "python full-size-pagoda-v1/source/render.py",
+    "python full-size-pagoda-v1/source/slice_check.py --only tray platform"
+  ],
+  "cassette_render_review": "Updated storage and cassette-detail views inspected: large readable labels, light cassette shells and visible loaded piece layout. Pin/socket physical fit is untested."
 }

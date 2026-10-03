@@ -1,7 +1,7 @@
 # Full-size Tak — pagoda foundation
 
 An additive board-and-storage foundation for the exceptionally ornate printed
-direction: **a clear 5×5 board above two removable, stacked player trays**.
+direction: **a clear 5×5 board above two removable, stacked piece cassettes**.
 Existing v16 parts and all older piece packages are unchanged. This is the shape
 to constrain future witch-and-cat, energy-vine and galactic ornament.
 
@@ -14,7 +14,7 @@ to constrain future witch-and-cat, energy-vine and galactic ornament.
 | Cat, Fox and optional Witch flats | 25 × 25 × 10 finished envelope | Exact CAD envelope; body, closure and felt allowance included |
 | Playing field | 210 × 210; 5×5 at 42 mm pitch | 17 mm between adjacent centered 25 mm flats |
 | Lift-out board backing | 232 × 224 × 6 | 0.3 mm seat clearance per side; broad front/back grips |
-| Each player tray | 120 × 174 × 30 | 21 flats and one sideways capstone; print twice |
+| Each player cassette | 120 × 174 × 30 body; 31 including locating pins | 21 flats and one sideways capstone; print twice |
 | Printed platform | 248 × 240 × 72 | Three low stepped terraces; removable board above storage |
 | Felt playing surface | 1 mm allowance; top at 73 mm | Measure actual felt plus adhesive before assembly |
 | Cat capstone | 21.785 × 25 × 33.809 | Uniformly scaled final Cat v4 sculpture |
@@ -53,7 +53,7 @@ single fused object.
 - [21 Cat bodies](plates/cat-flats-21.3mf) and [21 Fox bodies](plates/fox-flats-21.3mf).
 - [21 floors](plates/floors-21.3mf): print two copies for the full Cat/Fox set.
 - [Fox/Cat capstones](plates/fox-cat-capstones.3mf): two scaled existing sculptures.
-- [Tray](plates/tray.3mf): print two copies.
+- [Piece cassette](plates/tray.3mf): print two copies; the existing `tray` filename is retained.
 - [Platform](plates/platform.3mf).
 - [Felt backing](plates/board-felt-backing.3mf): flat support for the felt surface.
 - [Grooved board option](plates/board-grooved-option.3mf): separate alternative,
@@ -76,11 +76,22 @@ on the 42 mm printed paper grid before committing to the platform.
 ![Board and loaded trays separated vertically](previews/02-storage.png)
 
 Lift the board using the two 44 mm front/back grip openings, remove the upper
-then lower tray, set them beside the platform and reseat the board for play.
-The trays stack on their perimeter rims. Both capstones lie below the next
-tray floor, leaving at least 5.3 mm modeled headroom. The upper tray rim is
-2 mm below the board backing. The cavities are roomier than the two trays;
-this foundation does not yet provide horizontal tray location or cushioning.
+then lower cassette, set them beside the platform and reseat the board for play.
+Each cassette carries one player's 21 flats and capstone. **These are open
+carriers in this revision**, covered by the upper cassette and board when
+packed; they do not have separate lids.
+
+The lower cassette rests on four 16 mm square supports within a low locating
+frame. The frame leaves 0.4 mm clearance per side. The upper cassette rests
+on the lower perimeter rim, with four 2 mm square, 1 mm high pins entering
+2.8 mm square, 1.2 mm deep sockets in its underside. These locate the stack
+without a latch; both cassettes lift straight up. There is no cushioning yet.
+
+Both capstones lie below the next cassette floor, leaving at least 5.3 mm
+modeled headroom. The upper rim is 2 mm below the board backing, and its
+locating pins remain 1 mm below it. All pieces remain 25 × 25 × 10 mm.
+
+![Loaded cassette and its matching underside](previews/05-cassettes.png)
 
 ![Loaded trays beside the board](previews/03-trays-out.png)
 
@@ -90,7 +101,7 @@ roof above the field. Prefer broad cat/witch reliefs, thick energy vines and
 large galactic forms. The stepped shell is intentionally plain in this pass.
 
 **Transport retention remains unresolved:** there is no latch, transport lid,
-tray lock or spill-free carrying claim. Treat this as a stationary prototype
+cassette lock or spill-free carrying claim. Treat this as a stationary prototype
 until those details and physical handling are tested.
 
 ## Verification and cost
@@ -101,21 +112,26 @@ matching dimensions, object names and volumes. All 21 exact Cat and Fox body,
 floor and felt solids have zero tray overlap. Actual capstone mesh bounds are
 fully contained by their carved pockets. Stacked trays and seated board have
 zero CAD overlap. Nine vertical offsets check board-first, then tray removal.
-Capstone source hashes and uniform scale factors are recorded.
+Capstone source hashes and uniform scale factors are recorded. Additional
+checks establish lower-support and stacked-rim contact, pin/socket clearance,
+and zero collision at four sideways offsets of ±0.39 mm within the 0.4 mm
+allowance. Physical registration and release still need a cassette pair test.
 
-[Slicer report](reports/slicing.json): all 9 local checks passed using the
+[Slicer report](reports/slicing.json): the changed cassette/platform plates were
+freshly sliced; seven unchanged plates reuse prior successful evidence with
+matching committed input hashes. All 9 local checks pass using the
 repository Centauri Carbon 2 / 0.4 mm nozzle profiles. Flat bodies/floors use
 PETG, 0.2 mm layers and 100% infill; structural parts use PLA, 0.2 mm layers,
 four walls and 20% infill; the scaled capstones use PLA, 0.12 mm layers and tree
 supports. Every object is on the bed with no outside-bed condition. Only the
 capstone plate uses supports. Do not reuse profiles blindly for another printer.
 
-The unornamented platform alone is estimated at **484 g PLA and 9 h 18 min**.
+The unornamented platform alone is estimated at **491 g PLA and 9 h 30 min**.
 Each tray is estimated at 150 g and 3 h; the felt backing at 185 g and 3 h.
 These are slicer estimates, not measured prints. The shell is a stiffness-first
 foundation; material reduction should be considered during ornament design.
 
-All four previews were rendered from the exported meshes. Felt and its grid
+All five previews were rendered from the exported meshes. Felt and its grid
 are dimensioned visual references to the SVG template. Rendered labels are
 large and high contrast. Digital verification does not establish physical
 fit, rigidity, tactile readability, release, retention, wear or comfort.

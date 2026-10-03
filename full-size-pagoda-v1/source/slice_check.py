@@ -1,6 +1,7 @@
 """Local dry slice checks. Never sends G-code or starts a printer job."""
 from pathlib import Path
 from zipfile import ZipFile
+import argparse
 import hashlib
 import json
 import subprocess
@@ -13,7 +14,12 @@ WORK = PACKAGE/'.slicer-work'
 
 
 def main():
-    report = {'slicer':'ElegooSlicer','physical_print':False,'plates':{}}
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--only', nargs='+', help='Check only these plates; preserve unchanged prior evidence')
+    args = parser.parse_args()
+    report_path = PACKAGE/'reports/slicing.json'
+    report = (json.loads(report_path.read_text()) if args.only and report_path.exists()
+              else {'slicer':'ElegooSlicer','physical_print':False,'plates':{}})
     if not EXE.exists():
         report['unavailable']='Installed macOS ElegooSlicer not found'
         (PACKAGE/'reports/slicing.json').write_text(json.dumps(report,indent=2)+'\n')
@@ -25,6 +31,14 @@ def main():
              ('fox-cat-capstones','caps',2),('tray','structure',1),
              ('board-felt-backing','structure',1),('board-grooved-option','structure',1),
              ('platform','structure',1)]
+    assert not args.only or set(args.only)<=set(p[0] for p in plans),'Unknown plate'
+    if args.only:
+        for name in report['plates']:
+            if name not in args.only:
+                digest = hashlib.sha256((PACKAGE/'plates'/f'{name}.3mf').read_bytes()).hexdigest()
+                assert report['plates'][name].get('input_geometry_sha256') == digest, (name,'Unchanged slice evidence needs a matching input hash')
+                report['plates'][name]['evidence_reused_for_unchanged_geometry'] = True
+        plans = [p for p in plans if p[0] in args.only]
     for name,mode,count in plans:
         config = json.loads((REPO/'pieces/profiles/process-pieces.json').read_text())
         config.update({'curr_bed_type':'Textured PEI Plate','enable_prime_tower':'0'})
@@ -60,6 +74,7 @@ def main():
                 gcode = z.read('Metadata/plate_1.gcode')
                 assert b';LAYER_CHANGE' in gcode and len(gcode)>1000,name
                 report['plates'][name]={'exit_code':0,'passed':True,'objects':count,
+                    'input_geometry_sha256':hashlib.sha256((PACKAGE/'plates'/f'{name}.3mf').read_bytes()).hexdigest(),
                     'outside_bed':False,'support_used':values.get('support_used'),
                     'estimated_seconds':values.get('prediction'),'estimated_grams':values.get('weight'),
                     'gcode_sha256':hashlib.sha256(gcode).hexdigest(),

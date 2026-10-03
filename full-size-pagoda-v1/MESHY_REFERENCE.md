@@ -16,6 +16,8 @@ Suggested prompt:
 > edges below the playing surface. No building, tower or roof on the board.
 > Keep the top clear and level. Broad sturdy relief, monochrome concept mesh.
 
-The 248 × 240 × 72 mm shell, board seat and removal volume are reserved geometry.
+The 248 × 240 × 72 mm shell, board seat, internal cassette frame/supports and
+removal volume are reserved geometry. Two open cassettes must fit inside;
+preserve their straight-up removal paths and stacked pin/socket registration.
 Review each proposed treatment against those constraints before CAD integration.
 No generation, paid refinement or remeshing was run for this foundation pass.

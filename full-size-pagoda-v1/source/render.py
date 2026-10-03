@@ -104,18 +104,25 @@ def main():
         (0,0,52),(350,-440,385),180)
     exploded = platform + loaded_tray('cat',(-60,-87,100))
     exploded += loaded_tray('fox',(-60,-87,160)) + board((0,0,225))
-    render('02-storage','Lift the board, then remove both trays',
-        'Two trays: 21 flats + one capstone each | Geometry preview',exploded,
+    render('02-storage','Lift the board, then remove both cassettes',
+        'Two located cassettes | 21 flats + one capstone each',exploded,
         (0,0,115),(360,-450,405),205)
     setup = platform + board() + loaded_tray('cat',(-265,-87,0)) + loaded_tray('fox',(145,-87,0))
-    render('03-trays-out','Ready for play | trays beside the board',
+    render('03-trays-out','Ready for play | cassettes beside the board',
         'No roof over the field | Felt/grid shown from the size template',setup,
         (0,0,25),(400,-700,630),220,size=(2000,1250))
     render('04-packed','Packed | low stepped rectangular platform',
         '248 x 240 x 72 mm printed shell | Transport latch not yet designed',platform+board(),
         (0,0,36),(350,-440,320),175)
+    underside = mesh('tray')
+    underside.apply_transform(trimesh.transformations.rotation_matrix(np.pi,[1,0,0]))
+    underside.apply_translation([20,87,-underside.bounds[0,2]])
+    cassette_parts = loaded_tray('cat',(-140,-87,0))+[(underside,TRAY_COLOR)]
+    render('05-cassettes','Piece cassettes | lift out for play',
+        'Loaded cassette / underside | Four pins mate with four sockets',cassette_parts,
+        (0,0,10),(230,-390,490),145)
     (PACKAGE/'reports/rendering.json').write_text(json.dumps({
-        'source':'exported STL meshes', 'views':4, 'renderer':vtk.vtkVersion.GetVTKVersion(),
+        'source':'exported STL meshes', 'views':5, 'renderer':vtk.vtkVersion.GetVTKVersion(),
         'felt_and_grid':'dimensioned diagram from felt-grid-100-percent.svg',
         'rendered_accessibility':'Large white labels on dark background; visible grid and separate motif geometry',
         'physical_result':False},indent=2)+'\n')

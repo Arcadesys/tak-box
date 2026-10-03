@@ -43,6 +43,11 @@ FLOOR_THICKNESS = 1.0
 TONGUE_HEIGHT = .6
 FLOOR_CLEARANCE = .2
 ENGRAVE = .5
+CASSETTE_SIDE_CLEARANCE = .4
+REGISTER_XY = ((2, 2), (118, 2), (2, 172), (118, 172))
+REGISTER_WIDTH = 2.0
+REGISTER_HEIGHT = 1.0
+REGISTER_SOCKET_DEPTH = 1.2
 
 
 def box(w, d, h, x=0, y=0, z=0):
@@ -111,6 +116,15 @@ def platform():
     # Wide front/back openings reach below the board for a two-handed lift.
     for y in (-116, 116):
         result = result.cut(box(44, 20, 11, y=y, z=62))
+    # The lower cassette sits on the floor inside a low locating frame. The
+    # frame limits sideways movement and leaves 0.4 mm clearance per side.
+    inside = (TRAY[0]+2*CASSETTE_SIDE_CLEARANCE, TRAY[1]+2*CASSETTE_SIDE_CLEARANCE)
+    locator = box(inside[0]+3.2, inside[1]+3.2, 6.1, z=2.9)
+    locator = locator.cut(box(*inside, 6.3, z=2.8))
+    result = result.union(locator)
+    for x in (-40, 40):
+        for y in (-65, 65):
+            result = result.union(box(16, 16, 1.1, x=x, y=y, z=2.9))
     return result.clean()
 
 
@@ -138,6 +152,12 @@ def tray():
     # Outside finger dishes are broad and do not cut into the capstone pocket.
     for x in (0, 120):
         result = result.cut(box(14, 38, 12, x=x, y=85, z=19))
+    for x, y in REGISTER_XY:
+        result = result.union(box(REGISTER_WIDTH, REGISTER_WIDTH,
+                                  REGISTER_HEIGHT+.1, x=x, y=y, z=TRAY[2]-.1))
+        socket = REGISTER_WIDTH+2*CASSETTE_SIDE_CLEARANCE
+        result = result.cut(box(socket, socket, REGISTER_SOCKET_DEPTH+.1,
+                                x=x, y=y, z=-.1))
     return result.clean()
 
 
