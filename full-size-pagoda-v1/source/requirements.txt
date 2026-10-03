@@ -1,0 +1,6 @@
+cadquery==2.8.0
+trimesh==5.1.0
+numpy==2.5.3
+vtk==9.6.2
+networkx>=3.0,<4
+lxml>=6.0,<7

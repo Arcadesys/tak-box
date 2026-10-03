@@ -1,0 +1,32 @@
+{
+  "baseline_revision": "aa7b0617da608ee090628da09885c3ce945cf7b1",
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "environment": "Existing repository .venv; no new dependency installation",
+  "dependencies": {
+    "cadquery": "2.8.0",
+    "trimesh": "5.1.0",
+    "numpy": "2.5.3",
+    "vtk": "9.6.2",
+    "networkx": "3.7",
+    "lxml": "6.1.3"
+  },
+  "commands": [
+    "python full-size-pagoda-v1/source/build.py",
+    "python full-size-pagoda-v1/source/render.py",
+    "python full-size-pagoda-v1/source/slice_check.py"
+  ],
+  "source_and_profile_sha256": {
+    "full-size-pagoda-v1/source/build.py": "8f93baebd6885784221babbf95e27478e2b5b3b3af9ad41b4fdcabeb9e90cb9f",
+    "full-size-pagoda-v1/source/design.py": "55026714d9f2cb152039d0b99566b60c777a433c0c170756c158464d5bcfd325",
+    "full-size-pagoda-v1/source/render.py": "aedf781e74be7022563d6e9374498a5fa0d5677a4803560a0a2f22f1d0c289b6",
+    "full-size-pagoda-v1/source/requirements.txt": "371d42747959fe93753e7fc8311527f94fe2083deab7357b6f4ca123ae23923e",
+    "full-size-pagoda-v1/source/slice_check.py": "375a7c5e0b1c80da8672e552a9d3472289660fe5c48248bafa2bf77c7d78b21c",
+    "pieces/profiles/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
+    "pieces/profiles/process-pieces.json": "d4f34c4ecf43e6794e0eafcef3a5420d2a71a95072e5b2c4292044068e6a7cc0",
+    "pieces/profiles/filament-orange.json": "669b905aed9bdd63c3b8bff74e3c96cf2e191f60e87c148020ad3dcfcb7a8e4b",
+    "v16-field-book/profiles/filament-pla-black.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+  },
+  "generation_credits_consumed": 0,
+  "printed": false,
+  "render_review": "All four final views reviewed: large high-contrast labels, light shell against dark background, visible white grid, Cat/Fox emblems distinguish teams beyond colour. Physical central-vision-loss usability requires a handling trial."
+}
