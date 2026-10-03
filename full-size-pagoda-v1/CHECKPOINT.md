@@ -1,24 +1,28 @@
-# Full-size pagoda foundation checkpoint
+# Home-board cassette comfort checkpoint
 
-Outcome: existing Tak designs adapted to 25 × 25 × 10 mm finished flats,
-with a clear 5×5 lift-out board and two internal piece cassettes.
+Outcome: easier flat access and recessed grips for a loaded two-handed lift.
+Route: one bounded workhorse pass; medium effort requested by maintained role
+mapping. Desktop model/effort was not switched or independently verified.
+Scope: cassette geometry, exported tray files, previews, checks and documentation.
+Baseline: 88bc668 (merged PR #19); branch codex/cassette-comfort.
 
-Route: one bounded workhorse pass; medium effort requested by the role mapping.
-This desktop chat's model/effort was not switched or independently verified.
+Current state: dividers lowered to 20 mm (8 mm exposed flat edge); 20 mm row
+notches; 0.5 mm contact chamfers. Two 50 x 10 mm side recesses have 45-degree
+roofs, retaining a nominal 6 mm rim before chamfer and 4 mm seat at the
+deepest roof. Layout 5+5+6+5,
+capstone seats, outside size and stack registration remain compatible digitally.
 
-Scope: additive full-size-pagoda-v1 package, project brief and README links.
-V16, older piece packages and the user's original modified 3MF are preserved.
-Baseline: aa7b061; cassette follow-up builds from 8cdefbf. No paid generation.
+Evidence: full geometry/mesh/3MF build passes (13 meshes, 9 plates), including
+all 21 exact Cat/Fox pieces, grip void/ledge witnesses and old/new stack orders.
+Tray slice passes without supports (181.97 g, 12325 s); eight unchanged plates
+reuse exact input-hash-matched slice evidence. Eight actual-mesh previews;
+partial cassette, side grip and full Cat/Fox access views inspected.
 
-Current state: flats raised 16 mm, tops 2 mm below rim; 18 mm row-front openings expose their edges. Capstones raised 3 mm with 28 mm front openings for a body grasp, remaining 2.3-3.2 mm below rim. Cassette rows are 5+5+6+5. The third row uses the former separate
-21st-piece area beside the capstone; outside dimensions and the capstone pocket
-are unchanged. Both cassettes have lower supports/frame and stack pins/sockets.
+Resolved build failure: a combined contact chamfer produced invalid geometry.
+Cleaned geometry and separately validated edge groups produce a valid solid.
+No model geometry was repaired after export. Unchanged meshes are byte-identical.
 
-Evidence: 13 meshes and 9 geometry plates verified; all 21 exact pieces fit.
-Support contact, lateral clearance, stacking and vertical removal pass.
-Changed cassette freshly dry-sliced; eight unchanged plates reuse hash-matched
-successful evidence. Six actual-mesh previews regenerated; cassette and Cat/Fox access views inspected. Physical fit/release,
-separate covers, cushioning and transport retention remain unresolved.
-
-Review: https://github.com/Arcadesys/tak-box/pull/19 (draft).
-Next: physical sample trial and ornament constrained to the external foundation.
+Blockers/limits: physical grasp, grip-rail flex, printed release and transport
+retention untested. Next: one cassette loaded handling trial before printing
+its mate; compare stacking to the previous cassette if available. No printer
+job or paid generation initiated. Review: PR pending.

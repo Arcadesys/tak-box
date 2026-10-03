@@ -1,6 +1,6 @@
 {
   "source": "exported STL meshes",
-  "views": 6,
+  "views": 8,
   "renderer": "9.6.2",
   "felt_and_grid": "dimensioned diagram from felt-grid-100-percent.svg",
   "rendered_accessibility": "Large white labels on dark background; visible grid and separate motif geometry",

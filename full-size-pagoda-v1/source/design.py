@@ -36,8 +36,15 @@ CAP_GRIP_WIDTH = 28.0
 CAP_GRIP_BOTTOM_Z = 12.0
 FLAT_SEAT_Z = 18.0
 FLAT_TOP_Z = FLAT_SEAT_Z + HEIGHT
-DIVIDER_TOP_Z = 22.0
+DIVIDER_TOP_Z = 20.0
 FINGER_NOTCH_Z = 20.0
+FINGER_NOTCH_WIDTH = 20.0
+CONTACT_CHAMFER = .5
+LIFT_WIDTH = 50.0
+LIFT_DEPTH = 10.0
+LIFT_BOTTOM_Z = 8.0
+LIFT_ROOF_Z = 24.0
+LIFT_CENTER_Y = 85.0
 TRAY_Z = (4.0, 34.0)
 LANE_WIDTH = 25.6
 LANE_COUNTS = (5, 5, 6, 5)
@@ -153,6 +160,16 @@ def lanes():
              LANE_WIDTH, count*FLAT+1) for i,count in enumerate(LANE_COUNTS)]
 
 
+def lift_pocket():
+    roof = (cq.Workplane('XZ').polyline([
+        (-1,LIFT_BOTTOM_Z), (LIFT_DEPTH,LIFT_BOTTOM_Z),
+        (LIFT_DEPTH,LIFT_ROOF_Z-LIFT_DEPTH), (-1,LIFT_ROOF_Z+1)
+    ]).close().extrude(LIFT_WIDTH).translate((0,LIFT_CENTER_Y+LIFT_WIDTH/2,0)))
+    plan = box(LIFT_DEPTH+2,LIFT_WIDTH,32,x=LIFT_DEPTH/2-1,
+               y=LIFT_CENTER_Y).edges('|Z').fillet(3)
+    return roof.intersect(plan)
+
+
 def tray():
     result = box(*TRAY, x=TRAY[0]/2, y=TRAY[1]/2)
     for x, y, w, length in lanes():
@@ -171,17 +188,38 @@ def tray():
     # Broad open-top notches expose 8 mm of the first stone's front edge in
     # every row. Their bottoms stay 2 mm above the raised seat for retention.
     for x, y, width, _ in lanes():
-        notch = box(18, 12, 12, x=x+width/2, y=y-5, z=FINGER_NOTCH_Z)
+        notch = box(FINGER_NOTCH_WIDTH, 12, 12, x=x+width/2, y=y-5, z=FINGER_NOTCH_Z)
         result = result.cut(notch.edges('|Z').fillet(2))
-    # Outside finger dishes are broad and do not cut into the capstone pocket.
-    for x in (0, 120):
-        result = result.cut(box(14, 38, 12, x=x, y=85, z=19))
+    # Side recesses reach beneath the raised seat. The 45-degree roof grows
+    # inward as layers rise, avoiding a horizontal bridge or external handle.
+    # Preserve six millimetres of rim above the mouth and four of seat above
+    # the deepest roof; neither pocket reaches the capstone or stack pins.
+    pocket = lift_pocket()
+    result = result.cut(pocket)
+    result = result.cut(pocket.mirror('YZ').translate((TRAY[0],0,0)))
+    # Soften exposed divider/front-notch and capstone-notch edges. Stack
+    # bearing faces and registration geometry stay square and unchanged.
     for x, y in REGISTER_XY:
         result = result.union(box(REGISTER_WIDTH, REGISTER_WIDTH,
                                   REGISTER_HEIGHT+.1, x=x, y=y, z=TRAY[2]-.1))
         socket = REGISTER_WIDTH+2*CASSETTE_SIDE_CLEARANCE
         result = result.cut(box(socket, socket, REGISTER_SOCKET_DEPTH+.1,
                                 x=x, y=y, z=-.1))
+    result = result.clean()
+    for level in (DIVIDER_TOP_Z, CAP_GRIP_BOTTOM_Z):
+        contact_edges = [e for e in result.val().Edges()
+            if abs(e.BoundingBox().zmin-level)<1e-6 and
+               abs(e.BoundingBox().zmax-level)<1e-6]
+        result = result.newObject(contact_edges).chamfer(CONTACT_CHAMFER)
+        assert result.val().isValid(), ('Contact edge chamfer',level)
+    lift_edges = [e for e in result.val().Edges()
+        if abs(e.BoundingBox().zmin-LIFT_ROOF_Z)<1e-6 and
+           abs(e.BoundingBox().zmax-LIFT_ROOF_Z)<1e-6 and
+           any(abs(e.BoundingBox().xmin-side)<1e-6 and
+               abs(e.BoundingBox().xmax-side)<1e-6 for side in (0,TRAY[0]))]
+    assert len(lift_edges) == 2
+    result = result.newObject(lift_edges).chamfer(CONTACT_CHAMFER)
+    assert result.val().isValid(), 'Lift lip chamfer'
     return result.clean()
 
 

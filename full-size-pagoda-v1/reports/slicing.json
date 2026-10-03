@@ -86,16 +86,16 @@
       "exit_code": 0,
       "passed": true,
       "objects": 1,
-      "input_geometry_sha256": "f3a0cbc24dd43c147f0134c7ccda741d81e496de4a782a7b9e2d33030c7f448a",
+      "input_geometry_sha256": "bf3ad2092e528336a3d1a5c4050b77a61e9f1cae85deabfcc8b2001860719967",
       "outside_bed": false,
       "support_used": "false",
-      "estimated_seconds": "12398",
-      "estimated_grams": "182.73",
-      "gcode_sha256": "d5592b43f48b2766791cf7b5b9a15b70ea60c2eda42a58d2029b984624da7ac2",
+      "estimated_seconds": "12325",
+      "estimated_grams": "181.97",
+      "gcode_sha256": "a1b314cb4f4da995af96bf76a16f4b1b0b55903e10a2726363a4e07f8f7fa14e",
       "machine": "Repository CC2 0.4 mm",
       "material": "PLA",
       "layer_mm": 0.2,
-      "sliced_project_sha256": "bf9806a8b7d0a4b2435e0001e797a4bd657ef6443d5819c2aae76cfe1fc98924"
+      "sliced_project_sha256": "18bca0452414a7b64be75029dd2b55b9da8ea05588f41b9b38dca1b58402ea8b"
     },
     "board-felt-backing": {
       "exit_code": 0,
