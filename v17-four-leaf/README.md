@@ -28,3 +28,17 @@ with washers/nyloc nuts, subject to measured stack-up. Once assembled,
 normal opening requires only fingers. The steel hinge axles likewise remain
 installed. The trial exports use generic geometry placements, not qualified
 print orientations or sliced printer profiles. Do not print the full case.
+
+## Combined plate files
+
+Run `python v17-four-leaf/source/build_combined_plates.py`. The full study
+parts need three 256×256 mm beds in flat layouts: plate 01 contains both
+board leaves, the rear compartment and the four latch-trial parts; plate 02
+contains both drawer housings; plate 03 contains both drawers. Plate 04 is
+an optional single-plate latch trial and duplicates plate 01's latch parts.
+Steel axle reference solids are excluded because the hinges require steel
+hardware. All objects are named; bed bounds, ≥4 mm separation and 3MF
+geometry readback are checked. These are generic unsliced files, with no
+supports/profile assigned. Packaging does not make the incomplete case a
+print release. The six large part rectangles occupy 120,450 mm² compared
+with a 65,536 mm² bed, before gaps; they cannot share one flat plate.
