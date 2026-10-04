@@ -20,24 +20,14 @@
       "detail": 5.0
     },
     {
-      "name": "board-left separated from latch-mount",
+      "name": "board-left separated from A-squeeze-clip",
       "pass": true,
-      "detail": 5.0
+      "detail": 115.0
     },
     {
-      "name": "board-left separated from latch-lever",
+      "name": "board-left separated from B-socket",
       "pass": true,
-      "detail": 15.0
-    },
-    {
-      "name": "board-left separated from latch-hook",
-      "pass": true,
-      "detail": 27.0
-    },
-    {
-      "name": "board-left separated from latch-keeper",
-      "pass": true,
-      "detail": 40.0
+      "detail": 115.0
     },
     {
       "name": "board-right within bed",
@@ -50,24 +40,14 @@
       "detail": 16.0
     },
     {
-      "name": "board-right separated from latch-mount",
+      "name": "board-right separated from A-squeeze-clip",
       "pass": true,
-      "detail": 5.0
+      "detail": 9.0
     },
     {
-      "name": "board-right separated from latch-lever",
+      "name": "board-right separated from B-socket",
       "pass": true,
-      "detail": 5.0
-    },
-    {
-      "name": "board-right separated from latch-hook",
-      "pass": true,
-      "detail": 5.0
-    },
-    {
-      "name": "board-right separated from latch-keeper",
-      "pass": true,
-      "detail": 5.0
+      "detail": 9.0
     },
     {
       "name": "rear-cap-compartment within bed",
@@ -75,72 +55,27 @@
       "detail": null
     },
     {
-      "name": "rear-cap-compartment separated from latch-mount",
+      "name": "rear-cap-compartment separated from A-squeeze-clip",
       "pass": true,
-      "detail": 6.0
+      "detail": 189.8
     },
     {
-      "name": "rear-cap-compartment separated from latch-lever",
+      "name": "rear-cap-compartment separated from B-socket",
       "pass": true,
-      "detail": 26.0
+      "detail": 149.8
     },
     {
-      "name": "rear-cap-compartment separated from latch-hook",
-      "pass": true,
-      "detail": 38.0
-    },
-    {
-      "name": "rear-cap-compartment separated from latch-keeper",
-      "pass": true,
-      "detail": 51.0
-    },
-    {
-      "name": "latch-mount within bed",
+      "name": "A-squeeze-clip within bed",
       "pass": true,
       "detail": null
     },
     {
-      "name": "latch-mount separated from latch-lever",
+      "name": "A-squeeze-clip separated from B-socket",
       "pass": true,
-      "detail": 5.55
+      "detail": 9.0
     },
     {
-      "name": "latch-mount separated from latch-hook",
-      "pass": true,
-      "detail": 17.55
-    },
-    {
-      "name": "latch-mount separated from latch-keeper",
-      "pass": true,
-      "detail": 30.55
-    },
-    {
-      "name": "latch-lever within bed",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "latch-lever separated from latch-hook",
-      "pass": true,
-      "detail": 6.116
-    },
-    {
-      "name": "latch-lever separated from latch-keeper",
-      "pass": true,
-      "detail": 19.116
-    },
-    {
-      "name": "latch-hook within bed",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "latch-hook separated from latch-keeper",
-      "pass": true,
-      "detail": 7.324
-    },
-    {
-      "name": "latch-keeper within bed",
+      "name": "B-socket within bed",
       "pass": true,
       "detail": null
     },
@@ -152,10 +87,8 @@
           "board-left",
           "board-right",
           "rear-cap-compartment",
-          "latch-mount",
-          "latch-lever",
-          "latch-hook",
-          "latch-keeper"
+          "A-squeeze-clip",
+          "B-socket"
         ],
         "units": "mm",
         "sliced": false
@@ -216,52 +149,17 @@
       }
     },
     {
-      "name": "latch-mount within bed",
+      "name": "A-squeeze-clip within bed",
       "pass": true,
       "detail": null
     },
     {
-      "name": "latch-mount separated from latch-lever",
+      "name": "A-squeeze-clip separated from B-socket",
       "pass": true,
-      "detail": 5.55
+      "detail": 11.6
     },
     {
-      "name": "latch-mount separated from latch-hook",
-      "pass": true,
-      "detail": 17.55
-    },
-    {
-      "name": "latch-mount separated from latch-keeper",
-      "pass": true,
-      "detail": 30.55
-    },
-    {
-      "name": "latch-lever within bed",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "latch-lever separated from latch-hook",
-      "pass": true,
-      "detail": 6.116
-    },
-    {
-      "name": "latch-lever separated from latch-keeper",
-      "pass": true,
-      "detail": 19.116
-    },
-    {
-      "name": "latch-hook within bed",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "latch-hook separated from latch-keeper",
-      "pass": true,
-      "detail": 7.324
-    },
-    {
-      "name": "latch-keeper within bed",
+      "name": "B-socket within bed",
       "pass": true,
       "detail": null
     },
@@ -270,10 +168,8 @@
       "pass": true,
       "detail": {
         "objects": [
-          "latch-mount",
-          "latch-lever",
-          "latch-hook",
-          "latch-keeper"
+          "A-squeeze-clip",
+          "B-socket"
         ],
         "units": "mm",
         "sliced": false

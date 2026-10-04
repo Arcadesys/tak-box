@@ -1,0 +1,99 @@
+{
+  "checks": [
+    {
+      "name": "A-squeeze-clip valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A-squeeze-clip STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A-squeeze-clip mesh",
+      "pass": true,
+      "detail": {
+        "triangles": 128,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "B-socket valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "B-socket STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "B-socket mesh",
+      "pass": true,
+      "detail": {
+        "triangles": 1188,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "locked parts clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "shoulders block 0.5 mm withdrawal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "compressed arm envelopes can withdraw in 1 mm samples",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "central guide can withdraw",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "plate gap at least 6 mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-v17-simple-squeeze-latch",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "A-squeeze-clip",
+          "B-socket"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  ],
+  "command": "python v17-squeeze-latch/source/build.py",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "cadquery": "2.7.0",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "source_sha256": {
+    "folio.py": "807cd4fb152764924774b81a1db372eac1c973c4ea6f586d92b242e59559fa25",
+    "build.py": "22128e781048a4128ff080550eb1b223824a19a12e63bbc2f58480a74e41a37e",
+    "diagram.py": "d1ee2fc338487bda389474f6396acca8da2be6019703a5c3017bbd1f6720594b",
+    "export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e"
+  },
+  "limitations": [
+    "Separate hand-held latch trial, not integrated into the case.",
+    "Compressed envelopes do not prove elastic insertion/release, fatigue or force.",
+    "PETG proposed for the flexible clip; print fit and retention untested.",
+    "Generic unsliced 3MF; socket roof needs bridging/support review."
+  ]
+}

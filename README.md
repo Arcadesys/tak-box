@@ -6,13 +6,14 @@ A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed p
 
 Two drawer housings and two board leaves share one hinge axis. Covered
 sliding drawers keep flats enclosed while the leaves rotate. Board leaves
-will snap into their play positions; a direct over-center draw latch is the
-selected case closure. The 180 mm field and 36 mm pitch remain.
+will snap into their play positions; a [two-piece squeeze buckle](v17-squeeze-latch) is the
+current case-closure trial. The 180 mm field and 36 mm pitch remain.
 
 This is a CAD motion study, **not a full-print release**. Paired folding,
 independent board rotation, original-flat envelopes, solids and exported
 meshes pass the recorded sampled checks. Board snaps, drawer releases,
-rear capstone hatch and case closure remain to be implemented and tested.
+rear capstone hatch and case-closure integration remain unfinished. The
+previous four-part draw-latch trial was rejected as confusing.
 The main body is provisionally 101×236×32.6 mm, excluding closure hardware;
 it is thinner but longer than v16. No final size saving is claimed yet.
 

@@ -1,0 +1,45 @@
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-6_sjvy4l because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+A-squeeze-clip valid single solid PASS 
+A-squeeze-clip STEP readback PASS 
+A-squeeze-clip mesh PASS {'triangles': 128, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+B-socket valid single solid PASS 
+B-socket STEP readback PASS 
+B-socket mesh PASS {'triangles': 1188, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+locked parts clear PASS 
+shoulders block 0.5 mm withdrawal PASS 
+compressed arm envelopes can withdraw in 1 mm samples PASS 
+central guide can withdraw PASS 
+plate gap at least 6 mm PASS 
+3mf-readback-v17-simple-squeeze-latch PASS {'objects': ['A-squeeze-clip', 'B-socket'], 'units': 'mm', 'sliced': False}

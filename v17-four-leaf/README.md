@@ -1,3 +1,10 @@
+# Closure trial superseded
+
+The four-part draw latch below was rejected as confusing. Use the new
+[two-piece squeeze-latch trial](../v17-squeeze-latch), with one labeled plate
+and an assembly diagram. It is not yet integrated into this case study.
+The combined plate builder now uses the new two-part trial.
+
 # v17 four-leaf common-hinge study
 
 Selected architecture: two drawer housings and two board leaves rotate independently about one common hinge axis. Four interleaved knuckle families share the same steel axle at each end of the spine. The axle does not fasten the case closed. The board leaves snap onto their respective housings for play; covered sliding drawers allow access without disturbing the assembled board.
@@ -33,7 +40,7 @@ print orientations or sliced printer profiles. Do not print the full case.
 
 Run `python v17-four-leaf/source/build_combined_plates.py`. The full study
 parts need three 256×256 mm beds in flat layouts: plate 01 contains both
-board leaves, the rear compartment and the four latch-trial parts; plate 02
+board leaves, the rear compartment and the two current squeeze-latch parts; plate 02
 contains both drawer housings; plate 03 contains both drawers. Plate 04 is
 an optional single-plate latch trial and duplicates plate 01's latch parts.
 Steel axle reference solids are excluded because the hinges require steel

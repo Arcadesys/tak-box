@@ -8,7 +8,11 @@ User selected **all four leaves on the same hinge**: two drawer housings
 and two board leaves. `v17-four-leaf` records the architecture and motion
 study. Each housing has a fixed roof above a sliding flat drawer, so rotating
 leaves does not expose pieces. Board leaves will snap to their housings for
-play. A direct over-center draw latch on the case itself is selected; closure
+play. The four-part over-center trial was rejected as confusing. The current
+closure trial is `v17-squeeze-latch`: a two-part side-release buckle with
+broad load-bearing shoulders and two exposed squeeze buttons. Closing
+pushes the clip into its socket; squeeze both buttons to open. Case
+integration and physical spring/strength tests remain unfinished. Closure
 pins, sleeves and screws securing access to trays are rejected.
 
 The 5×5 field is 180 mm at 36 mm pitch. Forty-two original 19.5×19.5×8 mm
@@ -26,7 +30,7 @@ pass. Exact detailed capstone geometry, continuous swept motion, snap/stop
 implementation, capstone hatch and direct case closure remain unresolved.
 No complete-print release, slicing or physical retention is claimed.
 Next small trials: four-family common-axis hinge, board snap and drawer
-release, followed by an over-center draw-latch coupon before the full case.
+release, followed by the two-piece squeeze-buckle coupon before the full case.
 Weighted flats and curled Fox/Cat pieces are not verified in this package.
 Existing v16 printed interfaces remain incompatible and unchanged.
 
