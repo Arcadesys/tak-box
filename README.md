@@ -2,17 +2,22 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Current revision: [v17 compact retained folio](v17-compact-folio)
+## Current v17 direction: [four leaves on one common hinge](v17-four-leaf)
 
-v17 responds to the printed case spilling pieces, failing to stay closed and
-being too large. Both teams now share one shallow storage shell beneath an
-independent retaining roof and a folding board. Four M3 screws secure the
-closed assembly. Its 101 × 202 × 35 mm envelope is 31.4% smaller by volume,
-with the same 180 mm playing field and thicker 3 mm board plates.
+Two drawer housings and two board leaves share one hinge axis. Covered
+sliding drawers keep flats enclosed while the leaves rotate. Board leaves
+will snap into their play positions; a direct over-center draw latch is the
+selected case closure. The 180 mm field and 36 mm pitch remain.
 
-Digital geometry, mesh and generic 3MF readback pass. Physical acceptance
-and slicing remain untested. Start with the two small fit-trial plates in
-the [v17 package](v17-compact-folio). Original v16 parts remain preserved.
+This is a CAD motion study, **not a full-print release**. Paired folding,
+independent board rotation, original-flat envelopes, solids and exported
+meshes pass the recorded sampled checks. Board snaps, drawer releases,
+rear capstone hatch and case closure remain to be implemented and tested.
+The main body is provisionally 101×236×32.6 mm, excluding closure hardware;
+it is thinner but longer than v16. No final size saving is claimed yet.
+
+The [screw-clamped draft](v17-compact-folio) was rejected and is history only.
+The later pin/sleeve idea was also rejected; it is not the selected closure.
 
 ## Previous travel prototype: [v16 field book](v16-field-book)
 

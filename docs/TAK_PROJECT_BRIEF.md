@@ -2,26 +2,33 @@
 
 Updated October 3, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### v17 compact travel revision
+### v17 common-hinge travel revision
 
-The user reports that the current box spilled pieces, failed to stay closed,
-and was much larger than needed. Work proceeds from the active v16 travel
-baseline; the newer pagoda remains a separate premium exploration.
-`v17-compact-folio` preserves the 36 mm pitch / 180 mm field and uses thicker
-3 mm board leaves above a single 23 mm-high storage shell. It holds 42 existing
-19.5×19.5×8 mm flats edge-on in two three-channel banks and the two real
-original pawn capstones. An independent retaining roof blocks the channel
-finger scallops; four corner M3×16 screw clamps replace spring closure.
-Closed envelope including screw heads: 101×202×35 mm, 31.4% less volume.
-Printed v16 interfaces are incompatible and preserved unchanged. The 20×20×6
-weighted set needs spacers; 25 mm pagoda pieces do not fit this travel package.
-The folding motion does not rotate loaded storage: remove the folded board,
-then lift the independent roof with the storage shell upright. Digital solid,
-motion, clearance, mesh and generic 3MF checks pass. Physical fit, loaded
-transport retention, quietness and local slicing remain unchecked. Start
-with the small fastener and two-stone storage coupons. Exact prior printed
-component revisions and material are unknown; v16's blanket unprinted claim
-is superseded by user observations, not treated as authoritative.
+User selected **all four leaves on the same hinge**: two drawer housings
+and two board leaves. `v17-four-leaf` records the architecture and motion
+study. Each housing has a fixed roof above a sliding flat drawer, so rotating
+leaves does not expose pieces. Board leaves will snap to their housings for
+play. A direct over-center draw latch on the case itself is selected; closure
+pins, sleeves and screws securing access to trays are rejected.
+
+The 5×5 field is 180 mm at 36 mm pitch. Forty-two original 19.5×19.5×8 mm
+flats fit single-layer 3×7 drawers. Original Cat/Witch capstone envelopes fit
+in a separate rear compartment, outside the field. Two short coaxial steel
+axles at the ends leave the middle playing column unobstructed. Axles are
+permanent hinge hardware, not a closure pin. Four main hinged modules do
+not mean exactly four total printed parts: drawer inserts and a capstone
+hatch are additional parts.
+
+Preliminary body envelope 101×236×32.6 mm before closure hardware: thinner,
+but longer, than v16. No final closure-envelope size reduction is verified.
+Solid, STEP readback, STL and sampled paired/independent leaf motion checks
+pass. Exact detailed capstone geometry, continuous swept motion, snap/stop
+implementation, capstone hatch and direct case closure remain unresolved.
+No complete-print release, slicing or physical retention is claimed.
+Next small trials: four-family common-axis hinge, board snap and drawer
+release, followed by an over-center draw-latch coupon before the full case.
+Weighted flats and curled Fox/Cat pieces are not verified in this package.
+Existing v16 printed interfaces remain incompatible and unchanged.
 
 ## Project and collaboration
 

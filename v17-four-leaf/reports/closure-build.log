@@ -1,0 +1,49 @@
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-yvxnwg0v because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+latch-mount solid True 
+latch-mount mesh True {'triangles': 740, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+3mf-readback-latch-mount True {'objects': ['latch-mount'], 'units': 'mm', 'sliced': False}
+latch-lever solid True 
+latch-lever mesh True {'triangles': 2592, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+3mf-readback-latch-lever True {'objects': ['latch-lever'], 'units': 'mm', 'sliced': False}
+latch-hook solid True 
+latch-hook mesh True {'triangles': 668, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+3mf-readback-latch-hook True {'objects': ['latch-hook'], 'units': 'mm', 'sliced': False}
+latch-keeper solid True 
+latch-keeper mesh True {'triangles': 36, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+3mf-readback-latch-keeper True {'objects': ['latch-keeper'], 'units': 'mm', 'sliced': False}
+keeper and closed hook clear True 
+positive hook blocks 0.25 mm keeper lift True 
+released hook clears keeper True 
+crank passes dead-center line True -21.157982811253618

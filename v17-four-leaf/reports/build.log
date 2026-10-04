@@ -1,0 +1,70 @@
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-ble1vuv6 because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+housing-left solid PASS 1
+board-left solid PASS 1
+drawer-left solid PASS 1
+housing-right solid PASS 1
+board-right solid PASS 1
+drawer-right solid PASS 1
+housing-left STEP readback PASS 
+housing-left STL PASS {'triangles': 1348, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+board-left STEP readback PASS 
+board-left STL PASS {'triangles': 1672, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+drawer-left STEP readback PASS 
+drawer-left STL PASS {'triangles': 716, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+housing-right STEP readback PASS 
+housing-right STL PASS {'triangles': 1320, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+board-right STEP readback PASS 
+board-right STL PASS {'triangles': 1672, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+drawer-right STEP readback PASS 
+drawer-right STL PASS {'triangles': 716, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+rear-cap-compartment STEP readback PASS 
+rear-cap-compartment STL PASS {'triangles': 28, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+common-axle-0 STEP readback PASS 
+common-axle-0 STL PASS {'triangles': 332, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+common-axle-1 STEP readback PASS 
+common-axle-1 STL PASS {'triangles': 332, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+left flats clear housing PASS 
+left flats clear board PASS 
+left flats clear drawer PASS 
+left drawer clear housing PASS 
+right flats clear housing PASS 
+right flats clear board PASS 
+right flats clear drawer PASS 
+right drawer clear housing PASS 
+cap 0 clears compartment PASS 
+cap 1 clears compartment PASS 
+paired right leaves fold 0..180 in 10 degree samples PASS (0, None)
+left independent board 0..90 degree samples PASS 
+right independent board 0..90 degree samples PASS 

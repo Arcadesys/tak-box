@@ -2,7 +2,7 @@
 
 ## Start here
 
-Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The current proposed revision is v17-compact-folio; v16-field-book remains the printed baseline. The luxury hinged-well concept is a separate exploration until Austen selects it.
+Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The current v17 direction is v17-four-leaf: all four main leaves share one hinge axis. It is a motion study, not a print release. Screw-clamped storage and pin/sleeve closure were rejected; v16-field-book remains the printed baseline. The premium pagoda is separate.
 
 ## Design priorities
 

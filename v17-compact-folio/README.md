@@ -1,5 +1,9 @@
 # Tak v17 — compact retained folio
 
+**REJECTED DRAFT.** The user rejected having to unscrew storage to play.
+Use [v17 tool-free](../v17-tool-free/README.md). This package is retained only
+as design history; its print plates are not the current recommendation.
+
 **Digital prototype. Not physically printed or accepted. Generic 3MFs are unsliced.**
 
 The printed v16 did not retain its pieces, did not stay closed, and was too

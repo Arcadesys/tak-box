@@ -1,0 +1,145 @@
+{
+  "checks": [
+    {
+      "name": "latch-mount solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "latch-mount mesh",
+      "pass": true,
+      "detail": {
+        "triangles": 740,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "3mf-readback-latch-mount",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "latch-mount"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "latch-lever solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "latch-lever mesh",
+      "pass": true,
+      "detail": {
+        "triangles": 2592,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "3mf-readback-latch-lever",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "latch-lever"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "latch-hook solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "latch-hook mesh",
+      "pass": true,
+      "detail": {
+        "triangles": 668,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "3mf-readback-latch-hook",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "latch-hook"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "latch-keeper solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "latch-keeper mesh",
+      "pass": true,
+      "detail": {
+        "triangles": 36,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "3mf-readback-latch-keeper",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "latch-keeper"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "keeper and closed hook clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "positive hook blocks 0.25 mm keeper lift",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "released hook clears keeper",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "crank passes dead-center line",
+      "pass": true,
+      "detail": -21.157982811253618
+    }
+  ],
+  "limitations": [
+    "Not integrated into four-leaf housing.",
+    "Permanent M2.5 pivot hardware required; no screws needed for routine opening.",
+    "Preload, stop strength, release comfort and cycling require physical trial.",
+    "Generic 3MF, not sliced."
+  ],
+  "source_sha256": {
+    "folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
+    "build_closure_trial.py": "ea71021ede2e23785388ec4ad91a259fe175bd6e1158280edba7a89e14e7686f",
+    "build_study.py": "6ba7bd9a024009de27ceafa0dd17ab934210f3f72c021bcedfc01932f9cebb47",
+    "closure_trial.py": "ffa58e83a1b6e5065bc6b4ca95732e79630df200e62844401678c02449b7f099",
+    "export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e"
+  }
+}
