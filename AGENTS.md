@@ -2,7 +2,7 @@
 
 ## Start here
 
-Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The active baseline is v16-field-book. The luxury hinged-well concept is a separate exploration until Austen selects it.
+Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The current proposed revision is v17-compact-folio; v16-field-book remains the printed baseline. The luxury hinged-well concept is a separate exploration until Austen selects it.
 
 ## Design priorities
 

@@ -1,6 +1,27 @@
 # Tak project brief
 
-Updated October 2, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 3, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+
+### v17 compact travel revision
+
+The user reports that the current box spilled pieces, failed to stay closed,
+and was much larger than needed. Work proceeds from the active v16 travel
+baseline; the newer pagoda remains a separate premium exploration.
+`v17-compact-folio` preserves the 36 mm pitch / 180 mm field and uses thicker
+3 mm board leaves above a single 23 mm-high storage shell. It holds 42 existing
+19.5×19.5×8 mm flats edge-on in two three-channel banks and the two real
+original pawn capstones. An independent retaining roof blocks the channel
+finger scallops; four corner M3×16 screw clamps replace spring closure.
+Closed envelope including screw heads: 101×202×35 mm, 31.4% less volume.
+Printed v16 interfaces are incompatible and preserved unchanged. The 20×20×6
+weighted set needs spacers; 25 mm pagoda pieces do not fit this travel package.
+The folding motion does not rotate loaded storage: remove the folded board,
+then lift the independent roof with the storage shell upright. Digital solid,
+motion, clearance, mesh and generic 3MF checks pass. Physical fit, loaded
+transport retention, quietness and local slicing remain unchecked. Start
+with the small fastener and two-stone storage coupons. Exact prior printed
+component revisions and material are unknown; v16's blanket unprinted claim
+is superseded by user observations, not treated as authoritative.
 
 ## Project and collaboration
 

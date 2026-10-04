@@ -2,7 +2,19 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Current design: [v16 field book](v16-field-book)
+## Current revision: [v17 compact retained folio](v17-compact-folio)
+
+v17 responds to the printed case spilling pieces, failing to stay closed and
+being too large. Both teams now share one shallow storage shell beneath an
+independent retaining roof and a folding board. Four M3 screws secure the
+closed assembly. Its 101 × 202 × 35 mm envelope is 31.4% smaller by volume,
+with the same 180 mm playing field and thicker 3 mm board plates.
+
+Digital geometry, mesh and generic 3MF readback pass. Physical acceptance
+and slicing remain untested. Start with the two small fit-trial plates in
+the [v17 package](v17-compact-folio). Original v16 parts remain preserved.
+
+## Previous travel prototype: [v16 field book](v16-field-book)
 
 The separate [full-size pagoda foundation](full-size-pagoda-v1/README.md) uses
 25 × 25 × 10 mm weighted flats, scaled existing Fox/Cat capstones and a lift-out
@@ -18,7 +30,10 @@ The board folds in half with its face inside, and there's a snap-in piece tray u
 - **Assembly:** the board plates drop onto locating pegs and glue into shallow wells, so they line up without a jig.
 - **Size:** 101 × 202 × 51 mm closed.
 
-It has four multi-colour print plates and has not been printed yet. See the [v16 README](v16-field-book/README.md) for plates, assembly and checks.
+It has four multi-colour print plates. The user reports physical piece-retention
+and closure failures; the exact printed component revisions are unknown.
+See the [v16 README](v16-field-book/README.md) for retained plates and source;
+its blanket unprinted statement is historical and superseded by those reports.
 
 ## Pieces: [pieces](pieces)
 
