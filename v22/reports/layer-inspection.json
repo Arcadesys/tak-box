@@ -1,0 +1,116 @@
+{
+  "01-print-in-place-bases": {
+    "levels": 129,
+    "selected_z_mm": [
+      0.2,
+      2.2,
+      5.8,
+      10.4,
+      13.8,
+      14.4,
+      14.8,
+      15.4,
+      16.4,
+      17.8,
+      18.4,
+      25.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        10.41,
+        4.4559999999999995
+      ],
+      [
+        223.974,
+        246.567
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Both base floors lie on the bed as one grouped assembly; centre seam remains open in reviewed layers; local external support remains. Captive-bearing detail sheets show separate pin and socket contours."
+  },
+  "02-sliding-board-tops": {
+    "levels": 28,
+    "selected_z_mm": [
+      0.2,
+      0.6,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      4.2,
+      4.6,
+      4.8,
+      5.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        229.156,
+        204.856
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Boards lie directly on their broad undersides; catch slots and recessed grid visible; no broad underside support blanket in selected layers."
+  },
+  "03-hatch-hook-and-three-axle-caps": {
+    "levels": 39,
+    "selected_z_mm": [
+      0.2,
+      1.2,
+      2.0,
+      2.6,
+      3.2,
+      3.4,
+      4.2,
+      5.0,
+      6.0,
+      7.0,
+      7.8
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        3.968,
+        1.644
+      ],
+      [
+        146.356,
+        62.356
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Hatch broad face down, hook flat and three collars bore-up. Local hatch support remains."
+  }
+}

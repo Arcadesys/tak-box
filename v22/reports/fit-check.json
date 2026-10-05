@@ -1,0 +1,129 @@
+{
+  "checks": [
+    {
+      "name": "hinge-left valid single solid and STEP/STL readback",
+      "pass": true
+    },
+    {
+      "name": "hinge-right valid single solid and STEP/STL readback",
+      "pass": true
+    },
+    {
+      "name": "two disjoint captive parts",
+      "pass": true
+    },
+    {
+      "name": "full fold at 5 degree samples",
+      "pass": true
+    },
+    {
+      "name": "opposed pins block axial removal",
+      "pass": true
+    },
+    {
+      "name": "3mf-readback-captive-hinge-fit-check",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "hinge-left",
+          "hinge-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "captive-hinge-fit-check joint support and brim overrides",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "CC2 slice and exact named-mesh readback",
+      "pass": true
+    }
+  ],
+  "source_STEP_sha256": {
+    "housing-left.step": "0d22a3752d0649b394c2934bb45bf98a5e0f5769c2b8036293776d3ec31e1f14",
+    "housing-right.step": "a3d797b558d3c1ac9205c62c0d5295e1873ba3ab7db34919666b08669ac7588f"
+  },
+  "slicing": {
+    "slicer": "ElegooSlicer-2.4.2:",
+    "printer": "Elegoo Centauri Carbon 2 0.4 nozzle",
+    "physical_acceptance": false,
+    "printer_started": false,
+    "profiles_sha256": {
+      "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+      "process-case.json": "b5a2c0b2e6356120bda6262785b4d41c33e299964ebc0979fe72358cbe9426b4",
+      "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    "plates": {
+      "captive-hinge-fit-check": {
+        "passed": true,
+        "exit_code": 0,
+        "input_sha256": "c6e20a55cce60daddac7458d31d9c86e2011658db68b69602794f4f16ae6fe94",
+        "command": [
+          "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+          "--datadir",
+          "<repo>/v22/.slicer-work/fit-check/.slicer-work/config",
+          "--load-settings",
+          "<repo>/v22/.slicer-work/fit-check/profiles/machine.json;<repo>/v22/.slicer-work/fit-check/profiles/process-case.json",
+          "--load-filaments",
+          "<repo>/v22/.slicer-work/fit-check/profiles/filament-pla.json",
+          "--ensure-on-bed",
+          "--arrange",
+          "0",
+          "--orient",
+          "0",
+          "--slice",
+          "0",
+          "--export-3mf",
+          "<repo>/v22/.slicer-work/fit-check/PRINT/captive-hinge-fit-check-CC2-PLA.3mf",
+          "<repo>/v22/.slicer-work/fit-check/plates/captive-hinge-fit-check.3mf"
+        ],
+        "warnings": [
+          {
+            "msg": "bed_temperature_too_high_than_filament",
+            "level": "3",
+            "error_code": "1000C001"
+          }
+        ],
+        "objects": [
+          "hinge-left",
+          "hinge-right"
+        ],
+        "non_printing_support_blockers": [],
+        "slice_metadata": {
+          "index": "1",
+          "extruder_type": "0",
+          "nozzle_volume_type": "0",
+          "printer_model_id": "",
+          "nozzle_diameters": "0.4",
+          "timelapse_type": "0",
+          "prediction": "1290",
+          "weight": "3.80",
+          "first_layer_time": "0.000000",
+          "outside": "false",
+          "support_used": "true",
+          "label_object_enabled": "false",
+          "enable_filament_dynamic_map": "false",
+          "has_filament_switcher": "false",
+          "filament_maps": "1",
+          "limit_filament_maps": "0"
+        },
+        "project_sha256": "89dbf5c4ecb05417de63665e4e5230c450f4c01d4cec46eecaafc08b13ededba",
+        "project": "captive-hinge-fit-check-CC2-PLA.3mf",
+        "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      }
+    },
+    "total_estimated_seconds": 1290,
+    "total_estimated_grams": 3.8
+  },
+  "print_translation_mm": [
+    -80.99999989999998,
+    21.001332454097476,
+    0
+  ],
+  "rear_station_shift_mm": -180,
+  "scope": "Actual front/rear hinge cross-sections cropped from exported bases, rear moved 180 mm forward. Added connecting strips. Tests captive-joint release and rotation, not full-base warp, board sliders, capstone fit or transport.",
+  "physical_acceptance": false
+}

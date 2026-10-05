@@ -1,0 +1,263 @@
+{
+  "bed_mm": [
+    256,
+    256
+  ],
+  "checks": [
+    {
+      "name": "01-print-in-place-bases/housing-left bed and build height",
+      "pass": true,
+      "detail": [
+        107.8,
+        238.4,
+        25.8
+      ]
+    },
+    {
+      "name": "housing-left separation housing-right",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": -6.0,
+        "paired_captive_hinges": true
+      }
+    },
+    {
+      "name": "01-print-in-place-bases/housing-right bed and build height",
+      "pass": true,
+      "detail": [
+        109.80000000000001,
+        218.2,
+        19.3
+      ]
+    },
+    {
+      "name": "3mf-readback-01-print-in-place-bases",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "housing-left",
+          "housing-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "01-print-in-place-bases joint support and brim overrides",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-sliding-board-tops/board-left bed and build height",
+      "pass": true,
+      "detail": [
+        102.80000000000001,
+        192.50000000000003,
+        5.700000000000001
+      ]
+    },
+    {
+      "name": "board-left separation board-right",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 11.199999999999974,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "02-sliding-board-tops/board-right bed and build height",
+      "pass": true,
+      "detail": [
+        102.80000000000003,
+        192.50000000000003,
+        5.700000000000001
+      ]
+    },
+    {
+      "name": "3mf-readback-02-sliding-board-tops",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "board-left",
+          "board-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/capstone-hatch bed and build height",
+      "pass": true,
+      "detail": [
+        88.7,
+        28.900000000000013,
+        7.800000000000004
+      ]
+    },
+    {
+      "name": "capstone-hatch separation side-hook",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 14.299999999999997,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "capstone-hatch separation axle-end-cap-1",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 14.299999999999997,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "capstone-hatch separation axle-end-cap-2",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 26.299999999999997,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "capstone-hatch separation axle-end-cap-3",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 38.3,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/side-hook bed and build height",
+      "pass": true,
+      "detail": [
+        28.5,
+        15.5,
+        3.200000000000003
+      ]
+    },
+    {
+      "name": "side-hook separation axle-end-cap-1",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 27.5,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "side-hook separation axle-end-cap-2",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 27.5,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "side-hook separation axle-end-cap-3",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 27.5,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/axle-end-cap-1 bed and build height",
+      "pass": true,
+      "detail": [
+        7.0,
+        7.0,
+        4.0
+      ]
+    },
+    {
+      "name": "axle-end-cap-1 separation axle-end-cap-2",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 5.0,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "axle-end-cap-1 separation axle-end-cap-3",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 17.0,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/axle-end-cap-2 bed and build height",
+      "pass": true,
+      "detail": [
+        7.0,
+        7.0,
+        4.0
+      ]
+    },
+    {
+      "name": "axle-end-cap-2 separation axle-end-cap-3",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 5.0,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/axle-end-cap-3 bed and build height",
+      "pass": true,
+      "detail": [
+        7.0,
+        7.0,
+        4.0
+      ]
+    },
+    {
+      "name": "3mf-readback-03-hatch-hook-and-three-axle-caps",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "capstone-hatch",
+          "side-hook",
+          "axle-end-cap-1",
+          "axle-end-cap-2",
+          "axle-end-cap-3"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  ],
+  "plates": {
+    "01-print-in-place-bases": {
+      "objects": [
+        "housing-left",
+        "housing-right"
+      ],
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; hook flat; collar bore up.",
+      "supports": true,
+      "support_object_xy_distance_mm": 0.8
+    },
+    "02-sliding-board-tops": {
+      "objects": [
+        "board-left",
+        "board-right"
+      ],
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; hook flat; collar bore up.",
+      "supports": true,
+      "support_object_xy_distance_mm": 0.35
+    },
+    "03-hatch-hook-and-three-axle-caps": {
+      "objects": [
+        "capstone-hatch",
+        "side-hook",
+        "axle-end-cap-1",
+        "axle-end-cap-2",
+        "axle-end-cap-3"
+      ],
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; hook flat; collar bore up.",
+      "supports": true,
+      "support_object_xy_distance_mm": 0.35
+    }
+  },
+  "filament_pins_printed": false,
+  "physical_acceptance": false
+}

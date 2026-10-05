@@ -1,0 +1,32 @@
+{
+  "baseline": "v21",
+  "checks": [
+    {
+      "part": "board-left",
+      "pass": true,
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "board-right",
+      "pass": true,
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "capstone-hatch",
+      "pass": true,
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "side-hook",
+      "pass": true,
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "axle-end-cap",
+      "pass": true,
+      "symmetric_difference_mm3": 0.0
+    }
+  ],
+  "status": "Current thin-body hinge candidate; capstone direction unresolved",
+  "physical_interchangeability_observed": false
+}

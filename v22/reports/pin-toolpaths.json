@@ -1,0 +1,141 @@
+{
+  "scope": "Extrusion centerlines inside a nominal 1.75 mm pin core, cropped at passage ends. No bead-width/force/physical-fit proof.",
+  "extruder_offset_mm": [
+    0.0,
+    1.5
+  ],
+  "checks": [
+    {
+      "name": "01-print-in-place-bases/fixed hatch 0",
+      "pass": true,
+      "start_mm": [
+        17.3,
+        242.8,
+        23.2
+      ],
+      "end_mm": [
+        28.7,
+        242.8,
+        23.2
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+    },
+    {
+      "name": "01-print-in-place-bases/fixed hatch 75",
+      "pass": true,
+      "start_mm": [
+        92.3,
+        242.8,
+        23.2
+      ],
+      "end_mm": [
+        103.7,
+        242.8,
+        23.2
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+    },
+    {
+      "name": "01-print-in-place-bases/hook fixed pivot",
+      "pass": true,
+      "start_mm": [
+        14.1,
+        15.0,
+        7.0
+      ],
+      "end_mm": [
+        17.7,
+        15.0,
+        7.0
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/moving hatch",
+      "pass": true,
+      "start_mm": [
+        23.3,
+        9.599999999999994,
+        2.5999999999999766
+      ],
+      "end_mm": [
+        81.7,
+        9.599999999999994,
+        2.5999999999999766
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e32d1a6bbee512e5a774e16923971cae19558ffe43bc932eb3182307ea43e6c3"
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/moving hook",
+      "pass": true,
+      "start_mm": [
+        114.5,
+        17.0,
+        2.8999999999999995
+      ],
+      "end_mm": [
+        114.5,
+        17.0,
+        0.2999999999999994
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e32d1a6bbee512e5a774e16923971cae19558ffe43bc932eb3182307ea43e6c3"
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/collar 1",
+      "pass": true,
+      "start_mm": [
+        113.5,
+        53.5,
+        0.4
+      ],
+      "end_mm": [
+        113.5,
+        53.5,
+        3.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e32d1a6bbee512e5a774e16923971cae19558ffe43bc932eb3182307ea43e6c3"
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/collar 2",
+      "pass": true,
+      "start_mm": [
+        125.5,
+        53.5,
+        0.4
+      ],
+      "end_mm": [
+        125.5,
+        53.5,
+        3.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e32d1a6bbee512e5a774e16923971cae19558ffe43bc932eb3182307ea43e6c3"
+    },
+    {
+      "name": "03-hatch-hook-and-three-axle-caps/collar 3",
+      "pass": true,
+      "start_mm": [
+        137.5,
+        53.5,
+        0.4
+      ],
+      "end_mm": [
+        137.5,
+        53.5,
+        3.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e32d1a6bbee512e5a774e16923971cae19558ffe43bc932eb3182307ea43e6c3"
+    }
+  ],
+  "preview_sheets": [
+    "06-pin-passages-1.png",
+    "06-pin-passages-2.png"
+  ]
+}
