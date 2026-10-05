@@ -4,7 +4,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 import hashlib,json
 OUT=Path(__file__).resolve().parents[1]
 DIRS={'PRINT','plates','models','source','profiles','previews','reports','FIT-CHECK'}
-FILES={'START-HERE.md','BUILD-PROVENANCE.md','ACCEPTANCE.md','requirements.txt'}
+FILES={'START-HERE.md','BUILD-PROVENANCE.md','ACCEPTANCE.md','requirements.txt','DESIGN-STATUS.json'}
 def sha(data):return hashlib.sha256(data).hexdigest()
 def main():
  assert json.loads((OUT/'DESIGN-STATUS.json').read_text())['release_packaging_ready'], "Capstone direction unresolved; no final kit yet"
