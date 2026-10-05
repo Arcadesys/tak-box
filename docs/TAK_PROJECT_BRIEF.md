@@ -2,7 +2,11 @@
 
 Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Final version decision: v18
+### Current version decision: v19
+
+October 5: after seeing several versioned folders inside the v18 ZIP, the user explicitly requested **v19**. The current release is [v19](../v19/START-HERE.md): one ZIP root, one START-HERE guide and exactly five current projects in PRINT. Required CAD dependencies live under source/vendor; old version packages and coupons are excluded. Print projects, exported geometry and settings carry forward unchanged from the checked side-hook build at `1e8944b`. Physical acceptance remains pending. See [V19_CHECKPOINT.md](V19_CHECKPOINT.md).
+
+### Historical v18 decision
 
 The user selected **v18 as the FINAL version** on October 4, 2026 (Chicago).
 On October 5, the user explicitly replaced the complicated recessed clasp with a **simple side hook and pin**, retaining v18 and the four-leaf common-hinge architecture. See [V18_FINAL.md](V18_FINAL.md). The original coupon package stays pinned by [V18-FREEZE.json](V18-FREEZE.json).

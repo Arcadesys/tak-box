@@ -2,19 +2,13 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Final version direction: v18
+## Current print kit: v19
 
-V18 is the selected FINAL version. The [version freeze and release checklist](docs/V18_FINAL.md)
-preserve the recovered package and common-hinge baseline. The complete
-[first-print v18 build](v18-case/README.md) now includes five CC2 PLA projects,
-assembly instructions and a downloadable kit. Whole-case physical acceptance
-remains pending.
+[Download the V19 print kit](v19/release/tak-v19-print-kit.zip), then open **v19/START-HERE.md**. The five current CC2 PLA projects are together in **v19/PRINT**. The ZIP contains one v19 folder; older releases are archived separately.
 
-### Selected closure: side hook and headed pin
+V19 carries forward the checked side hook and headed pin, 1.75 mm filament hinges, four leaves on one common axis and the full 180 mm field. It contains 13 printed parts across five plates. This is a packaging/version cleanup; physical fit and loaded retention remain untested. See the [assembly guide](v19/START-HERE.md) and [checkpoint](docs/V19_CHECKPOINT.md).
 
-The user chose the simpler side hook on October 5. The complete [v18 case](v18-case/README.md) uses a separate swivelling hook, an integrated headed catch, and 1.75 mm PLA filament hinges. Five CC2 projects, full source and assembly instructions are included. The full field and four-leaf common axis remain.
-
-The [recessed-clasp coupon](v18-recessed-clasp) is retained byte-for-byte as history. The user reports it printed; it is not used in the current case. The new hook, filament joints and whole-case loaded retention await physical acceptance.
+The original [recessed clasp](v18-recessed-clasp) and [v18 integrated kit](v18-case/README.md) remain historical. Their frozen files are unchanged.
 
 ## Historical v17 architecture study: [four leaves on one common hinge](v17-four-leaf)
 

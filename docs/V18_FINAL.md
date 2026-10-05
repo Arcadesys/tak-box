@@ -1,4 +1,6 @@
-# V18 final version
+# V18 historical version
+
+The user advanced the current build to [v19](../v19/START-HERE.md) on October 5. This page records the retained v18 history.
 
 The user selected **v18 as FINAL** on October 4. On October 5 they explicitly chose a **simple side hook and pin** in place of the recessed press-and-slide latch, and **1.75 mm PLA filament pins**. This is the authorized v18 direction. Preserve the four-leaf common axis, full field and exact original Cat/Witch piece clearance checks.
 

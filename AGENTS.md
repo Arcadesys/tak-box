@@ -2,7 +2,7 @@
 
 ## Start here
 
-Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The user selected v18 as the FINAL version. Read docs/V18_FINAL.md and docs/V18-FREEZE.json. The user replaced the recessed clasp with a simple side hook and headed pin on October 5; the original v18-recessed-clasp package remains frozen history; the case-body baseline is v17-four-leaf, with all four main leaves sharing one hinge axis. Keep completion work within v18; reopening the version or direction requires an explicit user decision. The complete first-print build is in v18-case; read its README and current reports. The original v17 body remains a motion-study baseline. Physical acceptance of the integrated v18 case remains pending. Screw-clamped storage and pin/sleeve closure were rejected; v16-field-book remains the printed baseline. The premium pagoda is separate.
+Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The user explicitly advanced the current hook-and-pin case to v19 on October 5 to provide a single clear print package. Read v19/START-HERE.md, v19/BUILD-PROVENANCE.md and docs/V19_CHECKPOINT.md. V19 preserves the checked side-hook geometry, 1.75 mm filament hinges, four-leaf common axis and full field; it is a version/package cleanup, not a new physical-fit result. The five current CC2 projects are in v19/PRINT. The ZIP contains only one v19 folder, with necessary source dependencies under source/vendor. Earlier v18 packages and docs/V18-FREEZE.json remain historical and intact. V16 remains the printed baseline; the premium pagoda is separate.
 
 ## Design priorities
 
