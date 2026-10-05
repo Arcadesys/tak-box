@@ -317,7 +317,7 @@
     {
       "path": "v18-case/reports/provenance.json",
       "bytes": 2433,
-      "sha256": "82945afe3282cf892a56af0980a552a2e596ac61303ebcc16a2ffedd60e23e31"
+      "sha256": "4aaefb99ba4b9fc6898ad5f701fe901e712982891d3bba02ec15476fbe9fa369"
     },
     {
       "path": "v18-case/reports/render-build.log",
@@ -361,8 +361,8 @@
     },
     {
       "path": "v18-case/source/package_release.py",
-      "bytes": 2449,
-      "sha256": "b7787656574572dfede31e440de216adb892e55e20827e508d6c5fae8c4dfc45"
+      "bytes": 2466,
+      "sha256": "55771647558a90673ee1bcc66161b809ebc2cf16af99c3f16c9d92e2f85b5970"
     },
     {
       "path": "v18-case/source/render_case.py",
