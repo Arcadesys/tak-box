@@ -1,5 +1,5 @@
 {
-  "source_revision": "5b332635e9173d95e2d800814a3b26f1dd1d08b0",
+  "source_revision": "6b081e8a2e35f0c5455a1be2279fa1a1b194df28",
   "runtime_python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
   "installed_dependencies": {
     "cadquery": "2.7.0",
@@ -23,7 +23,7 @@
     "source/build_case.py": "085f60abe014c7047fc03913ed00448196e37ecf0c994a860f0dbbd32bafd9a8",
     "source/verify_field.py": "c26a843517ba94f5b5551c1cf8422e66827c511b125329dd6d13614b8108052d",
     "source/case.py": "155c01713939c17fc1803862a2a03777e2bb1c07a0e21994f8026dbd872659b3",
-    "source/package_release.py": "ada8909766d61edcd30607758af44b19f04f78c4c0ea1a92f04fc5fb3bfb4c52",
+    "source/package_release.py": "1a707dc0d0e7e395eaf96b1dbe44ba34a9831fa6dfbc82858756ba60ae6947ba",
     "source/slice_case.py": "5b1fab4ef54d4071a0638514e11d2bbfb2c1c7cab4e98ca55f7c5a367aa6b3be",
     "source/verify_pin_toolpaths.py": "a2208d1da2567bc381769e948bfe4d6458c38a22d201760e6d9971316f9a6c74",
     "source/verify_pip_hinges.py": "425da562d9e0c99ca5dfc6585d75575734ec2ca2f70c06edb9547e6a06093ce9",
