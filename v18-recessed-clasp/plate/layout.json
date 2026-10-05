@@ -1,0 +1,38 @@
+[
+  {
+    "name": "V18-receiver",
+    "bounds_mm": [
+      10.0,
+      88.0,
+      10.0,
+      20.100000381469727,
+      0.0,
+      40.0
+    ],
+    "support_required": true
+  },
+  {
+    "name": "V18-slider",
+    "bounds_mm": [
+      10.0,
+      54.0,
+      30.0,
+      34.40000009536743,
+      1.7763568394002505e-15,
+      25.200000762939453
+    ],
+    "support_required": true
+  },
+  {
+    "name": "V18-keeper",
+    "bounds_mm": [
+      65.0,
+      87.0,
+      30.0,
+      38.5,
+      0.0,
+      30.0
+    ],
+    "support_required": true
+  }
+]

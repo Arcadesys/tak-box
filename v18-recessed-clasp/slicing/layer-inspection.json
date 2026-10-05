@@ -1,0 +1,29 @@
+{
+  "unique_deposition_z_levels": 404,
+  "xy_centerline_bounds_mm": [
+    [
+      5.219,
+      5.231
+    ],
+    [
+      92.781,
+      43.281
+    ]
+  ],
+  "bed_fit_with_half_bead_mm": true,
+  "selected_layer_heights_mm": [
+    0.2,
+    2.4,
+    2.6,
+    2.8,
+    6.6,
+    18.6,
+    26,
+    26.2,
+    30.2,
+    33.2,
+    39.8,
+    40
+  ],
+  "geometry_note": "Support-removal assessment is visual/CAD access only, not physical verification."
+}

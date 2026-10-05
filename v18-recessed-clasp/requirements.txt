@@ -1,0 +1,6 @@
+cadquery==2.7.0
+vtk
+numpy
+trimesh
+Pillow
+matplotlib

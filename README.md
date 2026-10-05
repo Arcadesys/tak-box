@@ -2,6 +2,18 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
+## Latest closure trial: [v18 recessed press-and-slide clasp](v18-recessed-clasp)
+
+The recovered v18 package includes reproducible CAD source, STEP/STL parts,
+a three-part 3MF coupon plate, assembled release states, renders, review and
+slicing reports, and the original downloadable kit. [Recovery checks](v18-recessed-clasp/RECOVERY.md)
+confirmed all 67 manifest hashes and both separately saved artifacts.
+
+This is an **unprinted, support-required clasp coupon**, not a complete case.
+Both closing and opening require pressing the recessed button while sliding
+the rigid bolt. Case integration, physical fit, support removal, strength and
+loaded transport retention remain unverified. The v17 body study remains below.
+
 ## Current v17 direction: [four leaves on one common hinge](v17-four-leaf)
 
 Two drawer housings and two board leaves share one hinge axis. Covered

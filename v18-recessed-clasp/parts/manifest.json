@@ -1,0 +1,51 @@
+{
+  "parts": [
+    {
+      "name": "V18-receiver",
+      "stl": "/workspace/shared/tak-travel-cad/v18-recessed-clasp/parts/V18-receiver.stl",
+      "assembled_stl": "/workspace/shared/tak-travel-cad/v18-recessed-clasp/parts/V18-receiver-assembled.stl",
+      "bounds": [
+        78.00000020000002,
+        10.10000020000001,
+        40.0000002
+      ],
+      "volume_mm3": 11992.639999999985,
+      "watertight": true
+    },
+    {
+      "name": "V18-slider",
+      "stl": "/workspace/shared/tak-travel-cad/v18-recessed-clasp/parts/V18-slider.stl",
+      "assembled_stl": "/workspace/shared/tak-travel-cad/v18-recessed-clasp/parts/V18-slider-assembled.stl",
+      "bounds": [
+        44.0000002,
+        4.40000020000001,
+        25.20000020000001
+      ],
+      "volume_mm3": 1674.9499999999998,
+      "watertight": true
+    },
+    {
+      "name": "V18-keeper",
+      "stl": "/workspace/shared/tak-travel-cad/v18-recessed-clasp/parts/V18-keeper.stl",
+      "assembled_stl": "/workspace/shared/tak-travel-cad/v18-recessed-clasp/parts/V18-keeper-assembled.stl",
+      "bounds": [
+        22.000000200000006,
+        8.500000200000006,
+        30.00000020000001
+      ],
+      "volume_mm3": 2867.0000000000005,
+      "watertight": true
+    }
+  ],
+  "meta": {
+    "version": 18,
+    "status": "unprinted engineering coupon, not integrated case",
+    "assembly": "Insert slider from +X while depressing tooth until it passes receiver lock tabs. Align keeper beyond receiver. Closing and opening both require press then slide. Closing moves +X; opening moves -X.",
+    "no_screws": true
+  },
+  "assembled_overlap_mm3": {
+    "V18-receiver__V18-slider": 0,
+    "V18-receiver__V18-keeper": 0,
+    "V18-slider__V18-keeper": 0
+  }
+}

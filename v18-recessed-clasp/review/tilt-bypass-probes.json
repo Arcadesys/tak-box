@@ -1,0 +1,150 @@
+{
+  "source_sha256": "5f116585bd24d2ddfac74f463e62e62121bf2af9a84129f7541ff0c5430deadc",
+  "rows": [
+    {
+      "angle_deg": 0,
+      "dx_mm": 1,
+      "receiver_overlap": 0,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -2,
+      "dx_mm": 1,
+      "receiver_overlap": 0.30333824,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -5,
+      "dx_mm": 1,
+      "receiver_overlap": 0.45587343,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -8,
+      "dx_mm": 1,
+      "receiver_overlap": 2.30111866,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -10,
+      "dx_mm": 1,
+      "receiver_overlap": 6.08469236,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -12,
+      "dx_mm": 1,
+      "receiver_overlap": 10.71564487,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -15,
+      "dx_mm": 1,
+      "receiver_overlap": 18.38210356,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -18,
+      "dx_mm": 1,
+      "receiver_overlap": 26.35611335,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 1,
+      "receiver_overlap": 31.63845072,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -22,
+      "dx_mm": 1,
+      "receiver_overlap": 36.84524295,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -25,
+      "dx_mm": 1,
+      "receiver_overlap": 44.68541813,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -30,
+      "dx_mm": 1,
+      "receiver_overlap": 57.62693731,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 1,
+      "receiver_overlap": 31.63845072,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 2,
+      "receiver_overlap": 31.63845072,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 3,
+      "receiver_overlap": 32.23867656,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 4,
+      "receiver_overlap": 34.28862865,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 5,
+      "receiver_overlap": 37.19423584,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 6,
+      "receiver_overlap": 40.10599771,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 8,
+      "receiver_overlap": 45.92686226,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 10,
+      "receiver_overlap": 49.83422749,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 15,
+      "receiver_overlap": 66.31185458,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 20,
+      "receiver_overlap": 79.3962534,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 30,
+      "receiver_overlap": 0,
+      "slider_overlap": 0
+    },
+    {
+      "angle_deg": -20,
+      "dx_mm": 50,
+      "receiver_overlap": 0,
+      "slider_overlap": 0
+    }
+  ],
+  "description": "Sequential rigid pose hypothesis: +X 1mm, tilt 20deg rear upward around y axis through bolt tip, then pull keeper +X while bolt remains locked. Discrete samples only."
+}
