@@ -13,3 +13,5 @@ Evidence: v21/reports, v21/previews, exported STEP/STL, named 3MF projects and e
 Package audit: all 90 payload hashes, Python syntax, ZIP CRC and 10 local guide links pass from a fresh temporary extraction. Standalone base and board rebuilds are valid single solids with exported volume differences below 1e-5 mm³. See V21_PACKAGE_CHECK.json for ZIP hash and receipt. V18 freeze and V19/V20 package verifiers pass. Earlier packages and user-extracted archives remain unchanged.
 
 Next: review the draft PR and print the full kit or optional rail/catch fixture. Physical acceptance remains open.
+
+Handoff: draft PR #26, https://github.com/Arcadesys/tak-box/pull/26, stacked on V20 #25. Defining source d928d51; checked package be15eeb. Guide: v21/START-HERE.md. ZIP: v21/release/tak-v21-print-kit.zip. The raised rear capstone compartment and its hinge mounts were explained in response to the user; no redesign of that feature was requested.
