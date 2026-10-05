@@ -10,4 +10,6 @@ Current state: complete V21 geometry and four sliced full-build projects on code
 
 Evidence: v21/reports, v21/previews, exported STEP/STL, named 3MF projects and embedded Gcode. Motion is sampled and flex poses do not establish release force or fatigue. Original Cat/Witch CAD is the target. Physical acceptance remains false; no printer job started.
 
-Next: finish provenance, fresh ZIP extraction audit and draft PR. Earlier packages and user-extracted archives remain unchanged.
+Package audit: all 90 payload hashes, Python syntax, ZIP CRC and 10 local guide links pass from a fresh temporary extraction. Standalone base and board rebuilds are valid single solids with exported volume differences below 1e-5 mm³. See V21_PACKAGE_CHECK.json for ZIP hash and receipt. V18 freeze and V19/V20 package verifiers pass. Earlier packages and user-extracted archives remain unchanged.
+
+Next: review the draft PR and print the full kit or optional rail/catch fixture. Physical acceptance remains open.

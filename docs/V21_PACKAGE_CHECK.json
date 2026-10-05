@@ -1,0 +1,22 @@
+{
+  "archive": "v21/release/tak-v21-print-kit.zip",
+  "sha256": "6fce794dc1183aadd2b1393911c511e082ea017c792fbf93dbea43eaad3d161d",
+  "bytes": 10432125,
+  "fresh_extraction_manifest_and_syntax_pass": true,
+  "local_markdown_links_checked": 10,
+  "standalone_cad_build": [
+    {
+      "part": "housing-left",
+      "valid_single_solid": true,
+      "volume_delta_mm3": 9.19681042432785e-09
+    },
+    {
+      "part": "board-left",
+      "valid_single_solid": true,
+      "volume_delta_mm3": 7.275957614183426e-11
+    }
+  ],
+  "source_revision": "d928d5116226ef307aee9c3486a08b7268a15716",
+  "physical_acceptance": false,
+  "printer_started": false
+}

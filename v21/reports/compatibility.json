@@ -1,0 +1,43 @@
+{
+  "baseline": "v20",
+  "checks": [
+    {
+      "part": "capstone-hatch",
+      "old_assembly_translation_mm": [
+        0,
+        2,
+        0
+      ],
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "part": "side-hook",
+      "old_assembly_translation_mm": [
+        0,
+        -100,
+        0
+      ],
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "part": "axle-end-cap",
+      "old_assembly_translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "symmetric_difference_mm3": 0.0,
+      "pass": true
+    }
+  ],
+  "new_parts": [
+    "housing-left",
+    "housing-right",
+    "board-left",
+    "board-right"
+  ],
+  "main_filament_pin_length_mm": 14.9,
+  "physical_interchangeability_observed": false
+}

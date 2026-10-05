@@ -1,0 +1,130 @@
+{
+  "checks": [
+    {
+      "name": "fit-base STEP/STL readback",
+      "pass": true
+    },
+    {
+      "name": "fit-base valid cropped single solid",
+      "pass": true
+    },
+    {
+      "name": "fit-board STEP/STL readback",
+      "pass": true
+    },
+    {
+      "name": "fit-board valid cropped single solid",
+      "pass": true
+    },
+    {
+      "name": "coupon assembled disjoint",
+      "pass": true
+    },
+    {
+      "name": "coupon catch holds outward pull",
+      "pass": true
+    },
+    {
+      "name": "coupon rails hold lift",
+      "pass": true
+    },
+    {
+      "name": "coupon released slide",
+      "pass": true
+    },
+    {
+      "name": "3mf-readback-rail-and-catch-fit-check",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "fit-base",
+          "fit-board"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "CC2 slice and exact named-mesh readback",
+      "pass": true
+    }
+  ],
+  "source_STEP_sha256": {
+    "housing-left.step": "d9ff41c76181bca0d83bb44943f48352d38c017870d213955624a4d7bc269337",
+    "board-left.step": "f651a265401157edccfcbe0172dcd40d0a15c3f52de0c1a78d764a8a6059f0c5"
+  },
+  "slicing": {
+    "slicer": "ElegooSlicer-2.4.2:",
+    "printer": "Elegoo Centauri Carbon 2 0.4 nozzle",
+    "physical_acceptance": false,
+    "printer_started": false,
+    "profiles_sha256": {
+      "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+      "process-case.json": "2376cdf4e46ed615989b873267af10d11c87458219c3e76079130f6ea495cf51",
+      "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    "plates": {
+      "rail-and-catch-fit-check": {
+        "passed": true,
+        "exit_code": 0,
+        "input_sha256": "de1bbbd5752a9a75ac4e79cc716aeb225baf60d174e330270efc041734cb1817",
+        "command": [
+          "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+          "--datadir",
+          "<repo>/v21/.slicer-work/fit-check/.slicer-work/config",
+          "--load-settings",
+          "<repo>/v21/.slicer-work/fit-check/profiles/machine.json;<repo>/v21/.slicer-work/fit-check/profiles/process-case.json",
+          "--load-filaments",
+          "<repo>/v21/.slicer-work/fit-check/profiles/filament-pla.json",
+          "--ensure-on-bed",
+          "--arrange",
+          "0",
+          "--orient",
+          "0",
+          "--slice",
+          "0",
+          "--export-3mf",
+          "<repo>/v21/.slicer-work/fit-check/PRINT/rail-and-catch-fit-check-CC2-PLA.3mf",
+          "<repo>/v21/.slicer-work/fit-check/plates/rail-and-catch-fit-check.3mf"
+        ],
+        "warnings": [
+          {
+            "msg": "bed_temperature_too_high_than_filament",
+            "level": "3",
+            "error_code": "1000C001"
+          }
+        ],
+        "objects": [
+          "fit-base",
+          "fit-board"
+        ],
+        "non_printing_support_blockers": [],
+        "slice_metadata": {
+          "index": "1",
+          "extruder_type": "0",
+          "nozzle_volume_type": "0",
+          "printer_model_id": "",
+          "nozzle_diameters": "0.4",
+          "timelapse_type": "0",
+          "prediction": "3587",
+          "weight": "19.26",
+          "first_layer_time": "0.000000",
+          "outside": "false",
+          "support_used": "true",
+          "label_object_enabled": "false",
+          "enable_filament_dynamic_map": "false",
+          "has_filament_switcher": "false",
+          "filament_maps": "1",
+          "limit_filament_maps": "0"
+        },
+        "project_sha256": "b9c330d4bb922639c551d8e1e61501ea83d0f0f0e407b6c313a58670162edbab",
+        "project": "rail-and-catch-fit-check-CC2-PLA.3mf",
+        "gcode_sha256": "7ef6789aba1559e460f5dfaa47bb02c0546c94fbf799a68a1740750c6ec6d0c5"
+      }
+    },
+    "total_estimated_seconds": 3587,
+    "total_estimated_grams": 19.26
+  },
+  "scope": "X=0..70 front and rear sections from the actual left base/board; rear translated 160 mm forward and joined by a bridge. Rail cross-sections and catch dimensions unchanged; added fixture pull tab. Tests rail/catch fit, not full board warping, inner stops, hinge or loaded transport.",
+  "physical_acceptance": false
+}

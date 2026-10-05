@@ -1,0 +1,458 @@
+{
+  "version": "v21",
+  "kind": "complete_case_first_print",
+  "units": "mm",
+  "physical_acceptance": false,
+  "files": [
+    {
+      "path": "ACCEPTANCE.md",
+      "bytes": 2042,
+      "sha256": "e7c596964bfe259a1520a9aacef8b4c68826cbb519d5fe3dd52f3203eb3af81a"
+    },
+    {
+      "path": "BUILD-PROVENANCE.md",
+      "bytes": 4359,
+      "sha256": "37e03cf5dabc958f9ac10e45f3941dd568b992dad07e3c6b73d98dbcc132e0d3"
+    },
+    {
+      "path": "FIT-CHECK/README.md",
+      "bytes": 1231,
+      "sha256": "ce166fd7905cbbc0487369d9850e71b91b0dc1e1eb2ca2ca12cbff93644ffe15"
+    },
+    {
+      "path": "FIT-CHECK/fit-base.step",
+      "bytes": 162034,
+      "sha256": "0227f2c13ad5d3bc4b069d8a3d19d582beb856341fc21c08c93c7c0223efebeb"
+    },
+    {
+      "path": "FIT-CHECK/fit-base.stl",
+      "bytes": 8884,
+      "sha256": "9b4854cc28b60efbf1d413f7dd39b006c8b1999b5d6a7e654cfee1a512d0e686"
+    },
+    {
+      "path": "FIT-CHECK/fit-board.step",
+      "bytes": 176900,
+      "sha256": "18a13529f9bf3709825147a4a529c23067fde372f1c65dbbdd73683cddf753c5"
+    },
+    {
+      "path": "FIT-CHECK/fit-board.stl",
+      "bytes": 9584,
+      "sha256": "662d0f524afdc2e90c98edd14fb0df15e5ef6f07571545113b22e20562451fbe"
+    },
+    {
+      "path": "FIT-CHECK/layers.png",
+      "bytes": 344542,
+      "sha256": "f3a87533516adffe743008d6722871a4f30d45eeabe01c1b688a34aaab67854b"
+    },
+    {
+      "path": "FIT-CHECK/rail-and-catch-fit-check-CC2-PLA.3mf",
+      "bytes": 271664,
+      "sha256": "b9c330d4bb922639c551d8e1e61501ea83d0f0f0e407b6c313a58670162edbab"
+    },
+    {
+      "path": "FIT-CHECK/rail-and-catch-fit-check-geometry.3mf",
+      "bytes": 3748,
+      "sha256": "de1bbbd5752a9a75ac4e79cc716aeb225baf60d174e330270efc041734cb1817"
+    },
+    {
+      "path": "PRINT/01-left-housing-hook-pivot-and-cap-compartment-CC2-PLA.3mf",
+      "bytes": 793659,
+      "sha256": "9cd6b0a68a901cacb1704db564e600cb0ab891062fe5f64ce8573b8b37cd2142"
+    },
+    {
+      "path": "PRINT/02-right-housing-and-hook-pin-CC2-PLA.3mf",
+      "bytes": 645157,
+      "sha256": "f17c887a1e58a0de7b4c35a46a6e748209d8f7955c55a827f1c7229b161283ed"
+    },
+    {
+      "path": "PRINT/03-sliding-board-tops-CC2-PLA.3mf",
+      "bytes": 2140261,
+      "sha256": "fe4fedb7d0f598e4c3e01fa84a9d1240ab09c6c5e012f17e0d6ee1bed34f4581"
+    },
+    {
+      "path": "PRINT/04-hatch-hook-and-five-axle-caps-CC2-PLA.3mf",
+      "bytes": 355049,
+      "sha256": "08449ce270202efe8ea3fc3f89c70265f79ea6d03e24ced6158e3d863f826f69"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 7426,
+      "sha256": "2fb0999f62719c44e5fb7ef3ed24a4685cd0e0c2b99eb9a52dde90d09f4e6352"
+    },
+    {
+      "path": "models/assembly-closed-with-hardware.step",
+      "bytes": 3114805,
+      "sha256": "7cb6f2dae353b744c91bd7052efb0ee3c2a038416bc7064ddf1754bcc8a804fd"
+    },
+    {
+      "path": "models/assembly-closed.step",
+      "bytes": 3055035,
+      "sha256": "2f223137c79271b9d910429be56754bd97ad7c444ecf69f9e346c3e88459af8b"
+    },
+    {
+      "path": "models/assembly-open-with-hardware.step",
+      "bytes": 3096925,
+      "sha256": "58b256a43e86267b24d94d3e4fdf5e00a772121c6131d5b46fc82fc401a30aed"
+    },
+    {
+      "path": "models/assembly-open.step",
+      "bytes": 3040842,
+      "sha256": "d6437b818168ecc8ca171ca202579fc205e5b49587ffef18819320053a83103d"
+    },
+    {
+      "path": "models/axle-end-cap.step",
+      "bytes": 19140,
+      "sha256": "2d8413830746c11f94117105d7c995785735176abd72ab32d18ff1a12602f44d"
+    },
+    {
+      "path": "models/axle-end-cap.stl",
+      "bytes": 21884,
+      "sha256": "2cd77c6d9dd8d4dfb4f5393c87f3128cfe0787e5cdf2cc3ba44cf03300f27054"
+    },
+    {
+      "path": "models/board-left.step",
+      "bytes": 353714,
+      "sha256": "f651a265401157edccfcbe0172dcd40d0a15c3f52de0c1a78d764a8a6059f0c5"
+    },
+    {
+      "path": "models/board-left.stl",
+      "bytes": 18384,
+      "sha256": "3bb0a5abad278692ddd7ebb5b2ec9ef0fe76fcbf00ed14b5fbf2c005639801c9"
+    },
+    {
+      "path": "models/board-right.step",
+      "bytes": 334979,
+      "sha256": "02b51e3d291dc4cbd6d622646c28bd8734afc2380e8b985db04c524b299f0e4c"
+    },
+    {
+      "path": "models/board-right.stl",
+      "bytes": 18384,
+      "sha256": "c4ec269136e1cfcc0cb2319a36e16b21877f114ea22090880d154a7ce6e6fcbc"
+    },
+    {
+      "path": "models/capstone-hatch.step",
+      "bytes": 84373,
+      "sha256": "54a64e62e2932202745480780becb351723f4a5915f3dbf5639b125b781c534a"
+    },
+    {
+      "path": "models/capstone-hatch.stl",
+      "bytes": 34884,
+      "sha256": "58d06a38c68c3e736dec000f6f60e23f6649710488ccc92b16202722e7ec1881"
+    },
+    {
+      "path": "models/hardware-reference-NOT-PRINTED.step",
+      "bytes": 127066,
+      "sha256": "889373a59a625d8bd6103dbd117acb507576fe9f2d9684b32e60e8a75cdae699"
+    },
+    {
+      "path": "models/housing-left.step",
+      "bytes": 1180182,
+      "sha256": "d9ff41c76181bca0d83bb44943f48352d38c017870d213955624a4d7bc269337"
+    },
+    {
+      "path": "models/housing-left.stl",
+      "bytes": 303784,
+      "sha256": "5dd8a55ae297972499cf8d684b981b694e64e5560a8be151ac3eddd163cd9d04"
+    },
+    {
+      "path": "models/housing-right.step",
+      "bytes": 962421,
+      "sha256": "63c201b0461159bd177785e6f51e1fbf2d58b9234b1d78ecf5d7ab01c784dbb2"
+    },
+    {
+      "path": "models/housing-right.stl",
+      "bytes": 214784,
+      "sha256": "b98ed74ad7b67f763e11083f9e39bcd1f766c60c186d25c6f9c869c4e88132f5"
+    },
+    {
+      "path": "models/side-hook.step",
+      "bytes": 48716,
+      "sha256": "4184515806697263d4d0b698c6919aad5e1c9883c6eb013edabac8189f133202"
+    },
+    {
+      "path": "models/side-hook.stl",
+      "bytes": 37084,
+      "sha256": "d25c1ce23864cab88e85fda00ba722a0d9023254e0a5762552b18e3f821b5bf4"
+    },
+    {
+      "path": "plates/01-left-housing-hook-pivot-and-cap-compartment.3mf",
+      "bytes": 49097,
+      "sha256": "6861c7df3b59f5a8b428069d7add4f3c07a6b44b38beb52ca762e74908b2e42e"
+    },
+    {
+      "path": "plates/02-right-housing-and-hook-pin.3mf",
+      "bytes": 35035,
+      "sha256": "30bfd9c4c01f85cb814cc3c485a098a38bdce06c607cc534b18dc7588fd29097"
+    },
+    {
+      "path": "plates/03-sliding-board-tops.3mf",
+      "bytes": 6673,
+      "sha256": "59e41ccbbbadaede42f50ba9ab22bfad3868f9e0454070e9976ca446fd74e6c0"
+    },
+    {
+      "path": "plates/04-hatch-hook-and-five-axle-caps.3mf",
+      "bytes": 19568,
+      "sha256": "c0c0c9de5cf1851b723db38ba8dc2c2e7f5a4af439221fb0009af52498ca8253"
+    },
+    {
+      "path": "previews/01-left-housing-hook-pivot-and-cap-compartment-layers.png",
+      "bytes": 222001,
+      "sha256": "5f981a65531d60d3cd36b3b189881d1b7555de3adc5f4a8b415e744b554be19c"
+    },
+    {
+      "path": "previews/01-open.png",
+      "bytes": 45250,
+      "sha256": "17ac71b62a285edbbdba2f5a3c8a0d200506eafc8e683d43c407e5f777b04d36"
+    },
+    {
+      "path": "previews/02-closed.png",
+      "bytes": 33043,
+      "sha256": "be9f0a0a6e31b904abd0316f564d2226c018113701ea4cf52e6701c479021c40"
+    },
+    {
+      "path": "previews/02-right-housing-and-hook-pin-layers.png",
+      "bytes": 201625,
+      "sha256": "65bccf266d69802ddfd9913247575ced387610069a1af65e83ca5fe74e699a32"
+    },
+    {
+      "path": "previews/03-access.png",
+      "bytes": 45297,
+      "sha256": "9815b56148a92220c4b5ccfb6f057bc4a895c387e2e39281704f02036bf45785"
+    },
+    {
+      "path": "previews/03-sliding-board-tops-layers.png",
+      "bytes": 1205847,
+      "sha256": "8a6ce0157d7333ceac4e4f7ea09da0efa93768c350fd4d18f8f01ac1857333f2"
+    },
+    {
+      "path": "previews/04-hatch-hook-and-five-axle-caps-layers.png",
+      "bytes": 470563,
+      "sha256": "8d5f35336e43b2d0023fbce314fc99af1a9d600cfadddb979325c8adf8ac75ff"
+    },
+    {
+      "path": "previews/04-hook-closed.png",
+      "bytes": 40062,
+      "sha256": "5c24131f4302d19e47ce5949fdd718a6f80efcbd351401bd59722ed6e7047b71"
+    },
+    {
+      "path": "previews/05-hook-open.png",
+      "bytes": 42649,
+      "sha256": "df31c101aee86a70cbf8531069f78a287c2dd7d013669713f4647549476100fa"
+    },
+    {
+      "path": "previews/06-pin-passages-1.png",
+      "bytes": 164893,
+      "sha256": "80d5ee691ecb64771a8b3a7227dbbddddba513eee0425ff3389e8d740fbdcff3"
+    },
+    {
+      "path": "previews/06-pin-passages-2.png",
+      "bytes": 228455,
+      "sha256": "7c42164e53b8d8b7cce142ab37209495aea0da6f48c12b40e5e9b3fe94b94fc9"
+    },
+    {
+      "path": "previews/06-pin-passages-3.png",
+      "bytes": 227142,
+      "sha256": "c5ca655a26094aefba6c7d4f52ece5ad495ad751d01ab0fc65e5907a13a2e846"
+    },
+    {
+      "path": "profiles/filament-pla.json",
+      "bytes": 4108,
+      "sha256": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+    },
+    {
+      "path": "profiles/machine.json",
+      "bytes": 6300,
+      "sha256": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    {
+      "path": "profiles/process-case.json",
+      "bytes": 5099,
+      "sha256": "2376cdf4e46ed615989b873267af10d11c87458219c3e76079130f6ea495cf51"
+    },
+    {
+      "path": "reports/01-left-housing-hook-pivot-and-cap-compartment-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/02-right-housing-and-hook-pin-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/03-sliding-board-tops-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/04-hatch-hook-and-five-axle-caps-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/compatibility.json",
+      "bytes": 774,
+      "sha256": "145e65a05abcb3e3cf4ad17c7b3980c5012c23feeeef415102c1793e7079702b"
+    },
+    {
+      "path": "reports/field.json",
+      "bytes": 2963,
+      "sha256": "f52f1fbcc6b1f52a7f2072f4417515ff031e4e7c11700185d370458a27106651"
+    },
+    {
+      "path": "reports/fit-check-layers.json",
+      "bytes": 771,
+      "sha256": "4e42c3b38aa4893b98d1c9ed36c463ebd1b5fb54ef2eb211c21d92d902a7f2bd"
+    },
+    {
+      "path": "reports/fit-check.json",
+      "bytes": 4227,
+      "sha256": "47379831db82b7c3ab3955aac2570adc3c0b46dc31689e27d64a4befd160fa19"
+    },
+    {
+      "path": "reports/geometry.json",
+      "bytes": 10400,
+      "sha256": "6f5161a51526c0cc391311200865854ab349f3108e1da918060d1399248a713c"
+    },
+    {
+      "path": "reports/hardware.json",
+      "bytes": 7332,
+      "sha256": "72ae7dca37f325e289ea3ca6eebd302bdc02bf3998eddeab2060434646e31f27"
+    },
+    {
+      "path": "reports/layer-inspection.json",
+      "bytes": 3109,
+      "sha256": "bd87376562b9d0e694874c9436f86da8003783a1c059b5e37a8111543688092e"
+    },
+    {
+      "path": "reports/pin-toolpaths.json",
+      "bytes": 6242,
+      "sha256": "dc863f3bbe703d383dde5fa7a1e39c2ddf5b27db4e7df4abb86cc9446640b8fb"
+    },
+    {
+      "path": "reports/plates.json",
+      "bytes": 7897,
+      "sha256": "8eee586dd0c93a1471b8865592ccbf7df56f1f12662f9e54f71eaf11a748753f"
+    },
+    {
+      "path": "reports/provenance.json",
+      "bytes": 3578,
+      "sha256": "6747ad2524fed6fa09a62810c398c3929ffac4f8cafd715a29f16884c34777e7"
+    },
+    {
+      "path": "reports/rail-and-catch-fit-check-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/slicing.json",
+      "bytes": 8311,
+      "sha256": "c0988ede870ad6530648f5a8f0b4930a21f4bedc24d0417f7a4bae6f5742678c"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 736,
+      "sha256": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575"
+    },
+    {
+      "path": "source/build_case.py",
+      "bytes": 8831,
+      "sha256": "c02a6cf97abd8dc1d295926ff482d4396057fa912de8294ed852e6511cb03289"
+    },
+    {
+      "path": "source/build_fitcheck.py",
+      "bytes": 4450,
+      "sha256": "cd4fd560a327bdb4a7e0206df1b66bd414df61dce7862daf0e57fe0a743c8d07"
+    },
+    {
+      "path": "source/case.py",
+      "bytes": 8072,
+      "sha256": "06c9d0d17f3e079a54c033f3fe877de1765e420b7e93a9c7020f590444821fd5"
+    },
+    {
+      "path": "source/inspect_case_layers.py",
+      "bytes": 3540,
+      "sha256": "48c895c84939fd5a437f167bd244316c785e2cdcd8a09d2dd6010654ea0b938a"
+    },
+    {
+      "path": "source/package_case.py",
+      "bytes": 4361,
+      "sha256": "a759757d2c16a15c27eb272f0ea7125b7d3f7bed74759f098732ec62e3e477ef"
+    },
+    {
+      "path": "source/package_release.py",
+      "bytes": 1905,
+      "sha256": "065019dc330329c10021a3dc2c8a2b24253c0e9c7b6371d8bf5d50a5e1055490"
+    },
+    {
+      "path": "source/record_provenance.py",
+      "bytes": 3769,
+      "sha256": "337c168b2a1fb84eb9c27efd9ee803ebf45be45538ff0e1287ad333e6d79b966"
+    },
+    {
+      "path": "source/render_case.py",
+      "bytes": 3141,
+      "sha256": "cdf20345dbec321ae95702a9dc8f69a757526bcf96a8b722dd5677950293a0b7"
+    },
+    {
+      "path": "source/slice_case.py",
+      "bytes": 6170,
+      "sha256": "0ee30616d0f982647b9867990091fe09b8cb887d0f8f254e639111aff96bc538"
+    },
+    {
+      "path": "source/vendor/body/export_utils.py",
+      "bytes": 5734,
+      "sha256": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e"
+    },
+    {
+      "path": "source/vendor/body/folio.py",
+      "bytes": 3093,
+      "sha256": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7"
+    },
+    {
+      "path": "source/vendor/pieces/cat-capstone.stl",
+      "bytes": 787434,
+      "sha256": "d358aefa0c9cc3ae70cd99a2c7e1f8f7038c461fff386d49f30528063948c204"
+    },
+    {
+      "path": "source/vendor/pieces/cat-flat.stl",
+      "bytes": 217484,
+      "sha256": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1"
+    },
+    {
+      "path": "source/vendor/pieces/tak_pieces.py",
+      "bytes": 10600,
+      "sha256": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+    },
+    {
+      "path": "source/vendor/pieces/witch-capstone.stl",
+      "bytes": 486384,
+      "sha256": "4cd1a3ca3e1f49c6d55ae9caeec03f600335f762fd52725ee47103b2c3a88f1a"
+    },
+    {
+      "path": "source/vendor/pieces/witch-flat.stl",
+      "bytes": 131084,
+      "sha256": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba"
+    },
+    {
+      "path": "source/verify_field.py",
+      "bytes": 1126,
+      "sha256": "c26a843517ba94f5b5551c1cf8422e66827c511b125329dd6d13614b8108052d"
+    },
+    {
+      "path": "source/verify_hardware.py",
+      "bytes": 4748,
+      "sha256": "eb773c5efc9c01295c66c15a5a1088ffd69166c4618e5867a138a17b7c4c68e2"
+    },
+    {
+      "path": "source/verify_package.py",
+      "bytes": 724,
+      "sha256": "0f0de48118d453b43ab55707e8f76bd93b3a832efe681b82c516e8dcb89aa203"
+    },
+    {
+      "path": "source/verify_pin_toolpaths.py",
+      "bytes": 5851,
+      "sha256": "204d3dcdb93fa0c6ebc6d43196793a791df43f5d649360fc032ec422f0d63da3"
+    }
+  ]
+}
