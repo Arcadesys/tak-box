@@ -2,13 +2,13 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Current print kit: v19
+## Current print kit: v20
 
-[Download the V19 print kit](v19/release/tak-v19-print-kit.zip), then open **v19/START-HERE.md**. The five current CC2 PLA projects are together in **v19/PRINT**. The ZIP contains one v19 folder; older releases are archived separately.
+[Download the V20 print kit](v20/release/tak-v20-print-kit.zip), then open **v20/START-HERE.md**. The five CC2 PLA projects are together in **v20/PRINT**. The ZIP contains one v20 folder with reproducible source and dependencies.
 
-V19 carries forward the checked side hook and headed pin, 1.75 mm filament hinges, four leaves on one common axis and the full 180 mm field. It contains 13 printed parts across five plates. This is a packaging/version cleanup; physical fit and loaded retention remain untested. See the [assembly guide](v19/START-HERE.md) and [checkpoint](docs/V19_CHECKPOINT.md).
+V20 replaces the upright drawer housings with **flat-printing fixed-pocket bases and sliding storage lids**. Rails hold each lid down; broad thumb catches block withdrawal. Lift a board leaf, release and remove its lid, retrieve the pieces, then close the storage and lower the board for play. The 180 mm field, common hinge axis, 1.75 mm filament pins and side hook remain. There are 13 printed parts across five plates. Physical fit and loaded retention remain untested. See the [guide](v20/START-HERE.md) and [checkpoint](docs/V20_CHECKPOINT.md).
 
-The original [recessed clasp](v18-recessed-clasp) and [v18 integrated kit](v18-case/README.md) remain historical. Their frozen files are unchanged.
+The [V19 kit](v19/START-HERE.md), original [recessed clasp](v18-recessed-clasp) and [v18 integrated kit](v18-case/README.md) remain historical and intact.
 
 ## Historical v17 architecture study: [four leaves on one common hinge](v17-four-leaf)
 
