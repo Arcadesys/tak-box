@@ -6,20 +6,62 @@ import cadquery as cq
 REPO=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(REPO/'v17-four-leaf/source'))
 import folio as base
-sys.path.insert(0,str(REPO/'v18-recessed-clasp'))
-import build as clasp
 box=base.box
 mirror=base.mirror
 fold=base.fold
+HINGE_PIN_D=1.75
+HINGE_BORE_D=2.0
+CAP_BORE_D=1.9
 
 def union(*shapes):
  s=shapes[0]
  for t in shapes[1:]:s=s.fuse(t)
  return s.clean()
 
-def clasp_pose(s):
- # Bolt slides along case Y. Keeper lifts with the folded right housing.
- return s.rotate((0,0,0),(0,0,1),90).translate((-2,72,12.3))
+def filament_main_bores(s,side,kind):
+ # Fill only the baseline pin passages, preserving individual hinge families.
+ family=("tray" if kind=="housing" else "board")+"-"+side
+ for a,b in base.FAMILIES[family]:
+  passage=base.cyly(HINGE_BORE_D/2,a-.01,b+.01)
+  if kind=='board':
+   # Board prints face up: a 45-degree roof above the circular pin envelope.
+   h=HINGE_BORE_D/2/(2**.5)
+   roof=cq.Workplane('XZ').polyline([(98-h,16.3+h),(98+h,16.3+h),(98,16.3+2*h)]).close().extrude(b-a+.02).val().translate((0,b+.01,0))
+   passage=union(passage,roof)
+  s=union(s,base.cyly(1.72,a,b)).cut(passage)
+ return s.clean()
+
+# Side hook rotates in the YZ plane; X is its filament-pivot axis.
+HOOK_AXIS=(-5.2,94.,7.)
+HOOK_OPEN_ANGLE=65
+
+def x_cylinder(r,a,b,y,z):
+ return cq.Solid.makeCylinder(r,b-a,cq.Vector(a,y,z),cq.Vector(1,0,0))
+
+def hook_rotate(s,angle):
+ return s.rotate(HOOK_AXIS,(-4.2,94.,7.),angle)
+
+def hook_pivot_passage():
+ h=1/(2**.5)
+ roof=cq.Workplane('YZ').polyline([(94-h,7-h),(94-h,7+h),(94-2*h,7)]).close().extrude(4.61).val().translate((-3.61,0,0))
+ return union(x_cylinder(1,-3.61,1.0,94,7),roof)
+
+def hook_pivot_mount():
+ # Flat friction bearing pad and reverse stop beneath the broad thumb foot.
+ return union(x_cylinder(4.5,-3.6,.8,94,7),box(-3.2,.8,89.5,98.5,2.5,7),box(-6.8,.8,98.7,103,0,4.6)).cut(hook_pivot_passage()).clean()
+
+def hook_keeper():
+ # Closed-pose headed catch: the head prevents the hook sliding off sideways.
+ return union(x_cylinder(4,-3.2,.8,90,25),x_cylinder(2,-7.2,-3,90,25),x_cylinder(3.5,-8.8,-7.2,90,25))
+
+@lru_cache(None)
+def side_hook(angle=0):
+ # Broad rigid hook, open mouth toward +Y. Opening load seats it toward stop.
+ yz=[(91,5),(99.5,5),(99.5,9),(95,9),(87.6,22),(87.6,27.65),(98,27.65),(98,31),(84,31),(84,21)]
+ p=cq.Workplane('YZ').polyline(yz).close().extrude(3.2).val().translate((-6.8,0,0))
+ p=union(p,x_cylinder(4.5,-6.8,-3.6,94,7))
+ p=p.cut(x_cylinder(1,-6.81,-3.59,94,7)).clean()
+ return hook_rotate(p,angle)
 
 def open_from_closed(s,angle):
  return s.rotate((98,0,16.3),(98,1,16.3),angle)
@@ -42,7 +84,7 @@ def board_clip(y,release=0):
 @lru_cache(None)
 def board(side,release=0):
  clips=union(board_clip(5,release),board_clip(155,release))
- return union(base.board(side),clips if side=='left' else mirror(clips))
+ return union(filament_main_bores(base.board(side),side,"board"),clips if side=='left' else mirror(clips))
 
 def drawer_catch(release=0):
  # Press towards drawer centre: negative beam deflection moves it +X.
@@ -82,14 +124,19 @@ def hatch_clip(release=0):
  return union(root,beam(195,216,-2,-.8,18,21.6,release),box(-.9-release,1-release,213,216,19.2,21.25))
 
 def cylx(r,a,b):return cq.Solid.makeCylinder(r,b-a,cq.Vector(a,219.8,23.2),cq.Vector(1,0,0))
+def fixed_hatch_passage(a,b):
+ # Housing prints rear end down: roof points toward negative source Y.
+ h=HINGE_BORE_D/2/(2**.5)
+ roof=cq.Workplane('YZ').polyline([(219.8-h,23.2-h),(219.8-h,23.2+h),(219.8-2*h,23.2)]).close().extrude(b-a).val().translate((a,0,0))
+ return union(cylx(HINGE_BORE_D/2,a,b),roof)
 @lru_cache(None)
 def hatch(release=0):
  p=union(box(.3,86.7,193.5,216.1,22.4,24.4),box(14,73,215.5,219.8,22.4,24.4),cylx(2.6,14,73),hatch_clip(release))
- return p.cut(cylx(1.7,13.99,73.01)).clean()
+ return p.cut(cylx(HINGE_BORE_D/2,13.99,73.01)).clean()
 
 @lru_cache(None)
 def housing(side):
- p=base.housing(side)
+ p=filament_main_bores(base.housing(side),side,"housing")
  def tool(s):return s if side=='left' else mirror(s)
  # Closed drawer catch window and two board-snap pockets.
  p=p.cut(tool(box(-.3,2.41,31.5,44.5,2.3,10.2)))
@@ -98,30 +145,25 @@ def housing(side):
  ramp=cq.Workplane('YZ').polyline([(2.5,4),(14.5,10.7),(2.5,10.7)]).close().extrude(3.4).val().translate((80,0,0))
  p=p.fuse(tool(union(box(80,83.4,0,2.5,4,10.7),ramp))).clean()
  if side=='right':
-  k=clasp_pose(clasp.keeper)
-  bridge=union(box(-9,-.2,120,135,18.8,24.3),box(-9,2.4,120,135,20.8,24.3))
-  p=union(p,fold(union(k,bridge),180))
+  p=union(p,fold(hook_keeper(),180))
  else:
-  p=union(p,clasp_pose(clasp.receiver),box(-8,2.4,60,112,0,11.8),box(-8,-.2,60,112,11.7,13.3))
+  p=union(p,hook_pivot_mount())
   compartment=box(0,87,193.2,218,0,22.2).cut(box(1.6,85.4,194.8,216.4,1.2,22.3))
   compartment=compartment.cut(cylx(2.85,12.2,74.8))
   for x in (33.3,63.3):compartment=compartment.cut(cq.Solid.makeCylinder(6,1.4,cq.Vector(x,205.5,-.1)))
   compartment=compartment.cut(box(-.1,1.5,212.8,216.2,18.9,21.4))
   p=union(p,box(0,85,190.4,195,0,1.2),compartment)
   for a,b in ((0,12),(75,87)):
-   p=union(p,box(a,b,216.4,220,20,23.2),cylx(2.6,a,b).cut(cylx(1.7,a-.01,b+.01)))
- if side=='left':p=p.cut(cylx(1.7,-.01,12.01)).cut(cylx(1.7,74.99,87.01)).clean()
- # Blind outer ends retain the main axles without a cap in the playing field.
- p=union(p,base.cyly(1.7,4.6,5.6) if side=='right' else base.cyly(1.7,193.2,194.2))
- return p.clean()
-
-@lru_cache(None)
-def slider(delta=0,travel=0):return clasp_pose(clasp.slider(delta,travel))
+   p=union(p,box(a,b,216.4,220,20,23.2),cylx(2.6,a,b).cut(fixed_hatch_passage(a-.01,b+.01)))
+ if side=='left':p=p.cut(hook_pivot_passage()).cut(fixed_hatch_passage(-.01,12.01)).cut(fixed_hatch_passage(74.99,87.01)).clean()
+ # Main bores are through passages: bond only the outermost housing barrel
+ # to each filament axle after dry assembly. Other leaves remain free.
+ return p.clean().fix()
 
 def axle_cap():
- # Glue-on permanent axle end cap, not a case closure. 3.2 mm nominal bore.
- p=cq.Solid.makeCylinder(3.5,4,cq.Vector(0,0,0))
- return p.cut(cq.Solid.makeCylinder(1.6,3,cq.Vector(0,0,1))).clean()
+ # Bonded filament-pin collar. Through bore avoids a closed-floor transition.
+ p=box(-3.5,3.5,-3.5,3.5,0,4)
+ return p.cut(cq.Solid.makeCylinder(CAP_BORE_D/2,4.02,cq.Vector(0,0,-.01))).clean()
 
 def parts():
- return {**{f'{kind}-{side}':globals()[kind](side) for side in ('left','right') for kind in ('housing','board','drawer')},'capstone-hatch':hatch(),'clasp-slider':slider(),'axle-end-cap':axle_cap()}
+ return {**{f'{kind}-{side}':globals()[kind](side) for side in ('left','right') for kind in ('housing','board','drawer')},'capstone-hatch':hatch(),'side-hook':side_hook(),'axle-end-cap':axle_cap()}

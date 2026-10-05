@@ -9,8 +9,8 @@
       "name": "housing-left STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 4440,
-        "cad_volume_mm3": 93633.29470919295
+        "triangles": 4774,
+        "cad_volume_mm3": 77014.92894621917
       }
     },
     {
@@ -22,8 +22,8 @@
       "name": "board-left STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 2072,
-        "cad_volume_mm3": 57346.318324633496
+        "triangles": 1880,
+        "cad_volume_mm3": 57410.41601735478
       }
     },
     {
@@ -48,8 +48,8 @@
       "name": "housing-right STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 1766,
-        "cad_volume_mm3": 70282.5081808863
+        "triangles": 2960,
+        "cad_volume_mm3": 67037.12045374015
       }
     },
     {
@@ -61,8 +61,8 @@
       "name": "board-right STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 2072,
-        "cad_volume_mm3": 57346.31832463343
+        "triangles": 1880,
+        "cad_volume_mm3": 57410.41601735478
       }
     },
     {
@@ -88,20 +88,20 @@
       "pass": true,
       "detail": {
         "triangles": 864,
-        "cad_volume_mm3": 4879.59670715026
+        "cad_volume_mm3": 5229.915703952056
       }
     },
     {
-      "name": "clasp-slider valid single solid",
+      "name": "side-hook valid single solid",
       "pass": true,
       "detail": null
     },
     {
-      "name": "clasp-slider STEP/STL readback",
+      "name": "side-hook STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 108,
-        "cad_volume_mm3": 1674.9500000000003
+        "triangles": 740,
+        "cad_volume_mm3": 601.9107752869057
       }
     },
     {
@@ -113,8 +113,8 @@
       "name": "axle-end-cap STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 836,
-        "cad_volume_mm3": 129.81060844633026
+        "triangles": 436,
+        "cad_volume_mm3": 184.65885052054085
       }
     },
     {
@@ -142,21 +142,33 @@
       }
     },
     {
-      "name": "locked case opening blocked",
+      "name": "locked side hook blocks case opening at 1 degree",
       "pass": true,
       "detail": null
     },
     {
-      "name": "press-only case opening blocked",
+      "name": "hook reverse rotation stop",
       "pass": true,
       "detail": null
     },
     {
-      "name": "integrated press-and-slide path",
+      "name": "hook release 0..65 degrees at 1 degree samples",
       "pass": true,
       "detail": {
         "max_overlap_mm3": 0,
         "at": null
+      }
+    },
+    {
+      "name": "hook mouth clearance and headed keeper",
+      "pass": true,
+      "detail": {
+        "pin_diameter_mm": 4,
+        "head_diameter_mm": 7,
+        "hook_thickness_mm": 3.2,
+        "keeper_head_clearance_mm": 0.4,
+        "pivot_faces_contact_for_friction": true,
+        "retention": "Rigid hook shoulder and reverse rotation stop; set pivot collar for light friction. Unloaded rotation resistance remains physical."
       }
     },
     {
@@ -341,16 +353,17 @@
   "cadquery": "2.7.0",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "source_sha256": {
-    "render_case.py": "342a6b5c184f6e98f62e3bcee7fa0660575a243912e33f0847692d7fd6269abe",
-    "inspect_case_layers.py": "72b33133eb5424ac29cc0368bc9fb43ce040bd1012ca5f8528360e647eaeecb4",
-    "verify_hardware.py": "d86e831424406c80633e53cb5e7b01e540a30e47798098dd57ad41c0faca51db",
-    "package_case.py": "0fe2fa69ec9310ba754c47e4eb62553cb65e79dd5e60a9e2ee57b205806e3e52",
-    "build_case.py": "76eb417a22133291b6ef436bc04c3d936fd54c12e0d0ef8aedf2d40973dbb2eb",
+    "render_case.py": "ec6b2d58dcd6bb0f1cdc791b39aa9cc026a193575f620e899b09348309167f78",
+    "inspect_case_layers.py": "dcdeaebbf3544f2008bcb6e84cb574e1537be755ff629f10564f28d0ad675e2e",
+    "verify_hardware.py": "0e07f58251f131dc3e52a2fd85367865f61b509c9fd9e186200fba22244aa628",
+    "package_case.py": "7bb26d7ba8816d4bef3871aa283d851bed8661c62a07ba630c2aa00d60014573",
+    "build_case.py": "a9b33bd77a62335e44cf4d79d957de63ea34d137a1e42576ca75128626bc9cd5",
     "verify_field.py": "c6a74f60466e454e3d8269df1e36bb670319eed529dca5ff91eca4b7880043da",
-    "case.py": "d4e5872fdf24104b917960a17e257394b9e2bddaa73f7a6205f594cc84713a9f",
-    "slice_case.py": "58f7e328c17b0143ed33063571d5c7303b180251f3e9c9224ef76edc46960a40"
+    "case.py": "2cd8f016b66918d5af425a39da413a477f6fef4d5355a894ff552090f3cfa5df",
+    "package_release.py": "55771647558a90673ee1bcc66161b809ebc2cf16af99c3f16c9d92e2f85b5970",
+    "slice_case.py": "514e3096e134ef74b31b0a79a3b951c646f847569a753c4c5f80349fd7b3965a",
+    "verify_pin_toolpaths.py": "7b72d2b68a060b9886125b0c7ebef851ef30aa3dd545595a16c5b0c1b641c13d"
   },
-  "frozen_clasp_build_sha256": "5f116585bd24d2ddfac74f463e62e62121bf2af9a84129f7541ff0c5430deadc",
   "piece_package": {
     "name": "pieces original Cat/Witch",
     "flats_mm": [
@@ -367,8 +380,8 @@
     },
     "compatibility": "Detailed current CAD checked; old cat capstone STL is not watertight, so it is not used for volume fit. Original source CAD is valid; no piece exports changed."
   },
-  "closed_body_and_clasp_envelope_mm": [
-    143.0001503002813,
+  "closed_body_and_hook_envelope_mm": [
+    109.80015020028128,
     240.40239507698982,
     32.60268550629903
   ],
@@ -378,6 +391,6 @@
     "Flex release poses assume cubic deformation, not FEA or measured actuation.",
     "Hinge/clip/support removal/strength/loaded transport require physical observation.",
     "Original Cat/Witch set only. Weighted and curled sets unverified.",
-    "Axles require permanent end retention; printed end caps are bonded to steel, not sliding case closures."
+    "PLA filament pins require end retention; printed end caps bond to filament, not sliding case closures. Loaded stiffness and durability remain physical tests."
   ]
 }

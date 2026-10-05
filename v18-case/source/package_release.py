@@ -19,7 +19,7 @@ def main():
  dependencies += [REPO/'v17-four-leaf/requirements.txt',REPO/'v17-four-leaf/README.md']
  dependencies += [REPO/'pieces'/n for n in ['tak_pieces.py','cat-flat.stl','witch-flat.stl','cat-capstone.stl','witch-capstone.stl']]
  dependencies += [REPO/n for n in ['.gitattributes','README.md','AGENTS.md','CODEX.md','scripts/verify_v18_freeze.py','docs/TAK_PROJECT_BRIEF.md','docs/V18_FINAL.md','docs/V18_CHECKPOINT.md','docs/V18-FREEZE.json']]
- payload=sorted(set(files+[manifest]+dependencies));dest=OUT/'release/tak-v18-complete-case-CC2-PLA.zip';dest.parent.mkdir(exist_ok=True)
+ payload=sorted(set(files+[manifest]+dependencies));dest=OUT/'release/tak-v18-hook-and-pin-CC2-PLA.zip';dest.parent.mkdir(exist_ok=True)
  with ZipFile(dest,'w',compression=ZIP_DEFLATED,compresslevel=9) as kit:
   for p in payload:
    assert eligible(p),p

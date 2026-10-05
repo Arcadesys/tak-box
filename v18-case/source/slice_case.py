@@ -13,7 +13,9 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def mesh(el):
  vs=[[float(v.get(c)) for c in ('x','y','z')] for v in el.find('m:vertices',NS)]
  fs=[[int(v.get(c)) for c in ('v1','v2','v3')] for v in el.find('m:triangles',NS)]
- return trimesh.Trimesh(vertices=vs,faces=fs,process=True)
+ m=trimesh.Trimesh(vertices=vs,faces=fs,process=False)
+ assert m.is_watertight and m.is_winding_consistent and m.body_count==1
+ return m
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--only',nargs='+');args=parser.parse_args()
  WORK.mkdir(parents=True,exist_ok=True)
@@ -35,7 +37,10 @@ def main():
   if p.returncode:
    (OUT/'reports/slicing.json').write_text(json.dumps(report,indent=2)+'\n');raise RuntimeError(name+': see slice log')
   with ZipFile(source) as z:
-   original=ET.fromstring(z.read('3D/3dmodel.model'));want={o.get('name'):mesh(o.find('m:mesh',NS)) for o in original.findall('m:resources/m:object',NS)}
+   original=ET.fromstring(z.read('3D/3dmodel.model'))
+   all_meshes={o.get('name'):mesh(o.find('m:mesh',NS)) for o in original.findall('m:resources/m:object',NS) if o.find('m:mesh',NS) is not None}
+   blockers={n:m for n,m in all_meshes.items() if n=='pin-bore-support-blocker'}
+   want={n:m for n,m in all_meshes.items() if n not in blockers}
   with ZipFile(dest) as z:
    assert z.testzip() is None
    info=ET.fromstring(z.read('Metadata/slice_info.config'))
@@ -43,6 +48,8 @@ def main():
    if objects:assert len(objects)==len(want) and all(o.get('skipped')=='false' for o in objects)
    model_cfg=ET.fromstring(z.read('Metadata/model_settings.config'))
    assert len(model_cfg.findall('object'))==len(want)
+   if name.startswith(('01-','02-')):
+    assert model_cfg.find('.//object/metadata[@key="support_object_xy_distance"]').get('value')=='0.8'
    assert values['outside']=='false' and values['support_used']=='true'
    settings=json.loads(z.read('Metadata/project_settings.config'))
    assert settings['printer_model']=='Elegoo Centauri Carbon 2' and settings['wall_loops']=='4' and settings['enable_support']=='1'
@@ -51,7 +58,7 @@ def main():
    for comp in root.findall('.//m:component',NS):
     path=comp.get(PROD+'path').lstrip('/');sub=ET.fromstring(z.read(path))
     m=mesh(sub.find('.//m:mesh',NS));label=Path(path).stem.rsplit('_',1)[0]
-    expected=want[label]
+    expected=all_meshes[label]
     assert m.is_watertight and m.is_winding_consistent and m.volume>0 and m.body_count==1
     assert len(m.faces)==len(expected.faces) and abs(m.volume-expected.volume)<.05
     assert np.allclose(np.sort(m.extents),np.sort(expected.extents),atol=2e-5)
@@ -61,11 +68,15 @@ def main():
     ac=expected.triangles_center-expected.bounds.mean(axis=0);bc=m.triangles_center-m.bounds.mean(axis=0)
     face_error=float(cKDTree(ac).query(bc)[0].max())
     assert vertex_error<3e-5 and face_error<3e-5,(label,vertex_error,face_error)
-    got.append(label)
+    if label in blockers:
+     metadata_parts=model_cfg.findall('.//part')
+     matching=[p for p in metadata_parts if any(v.get('key')=='name' and v.get('value')==label for v in p.findall('metadata'))]
+     assert len(matching)==1 and matching[0].get('subtype')=='support_blocker'
+    else:got.append(label)
    assert set(got)==set(want)
    gcode=z.read('Metadata/plate_1.gcode');assert b';LAYER_CHANGE' in gcode
    (WORK/f'{name}.gcode').write_bytes(gcode)
-  row.update(passed=True,warnings=[w.attrib for w in info.findall('.//warning')],objects=got,slice_metadata=values,project_sha256=sha(dest),project=dest.name,gcode_sha256=hashlib.sha256(gcode).hexdigest())
+  row.update(passed=True,warnings=[w.attrib for w in info.findall('.//warning')],objects=got,non_printing_support_blockers=list(blockers),slice_metadata=values,project_sha256=sha(dest),project=dest.name,gcode_sha256=hashlib.sha256(gcode).hexdigest())
   (OUT/'reports/slicing.json').write_text(json.dumps(report,indent=2)+'\n')
   print(name,values['prediction'],values['weight'],'PASS',flush=True)
  report['total_estimated_seconds']=sum(int(p['slice_metadata']['prediction']) for p in report['plates'].values())

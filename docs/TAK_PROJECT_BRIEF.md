@@ -5,21 +5,13 @@ Updated October 5, 2026. This brief combines the current repository with Austen'
 ### Final version decision: v18
 
 The user selected **v18 as the FINAL version** on October 4, 2026 (Chicago).
-Finish the recessed press-and-slide clasp with the retained four-leaf
-common-hinge case architecture. See [V18_FINAL.md](V18_FINAL.md) for the exact
-source freeze, protected choices and remaining release gates. The coupon package
-is pinned by [V18-FREEZE.json](V18-FREEZE.json); the integrated first-print case is now prepared; physical acceptance is pending. Earlier closure trials are historical.
+On October 5, the user explicitly replaced the complicated recessed clasp with a **simple side hook and pin**, retaining v18 and the four-leaf common-hinge architecture. See [V18_FINAL.md](V18_FINAL.md). The original coupon package stays pinned by [V18-FREEZE.json](V18-FREEZE.json).
 
-October 5: the user reports the clasp trial has been printed and requested the
-full build. [`v18-case`](../v18-case/README.md) integrates the recessed clasp,
-board snaps, positively caught/stopped drawers and hinged capstone hatch.
-Five CC2 PLA projects and a complete first-print kit are prepared with current
-CAD/mesh/3MF, hardware, actual original-piece and sampled loaded-motion checks.
-The field remains 180 mm / 36 mm pitch. Actual original flats are 20×20×8 mm;
-new pockets are 20.7 mm. Whole-case physical acceptance is unchecked. See
-[V18_CHECKPOINT.md](V18_CHECKPOINT.md) for scope, evidence and remaining tests.
+The user reports the earlier clasp trial printed and requested the **full build**. They selected **1.75 mm PLA filament pins**, reporting an earlier filament hinge held in place. The integrated [v18-case](../v18-case/README.md) now uses a flat printed swivel hook over a headed catch. A bonded filament pivot and lightly contacting collar provide adjustable friction; no spring detent is claimed. Whether this resists accidental opening remains a physical acceptance item.
 
-### v18 recessed press-and-slide clasp coupon
+Five full-case CC2 PLA projects retain board snaps, caught/stopped drawers, the hinged hatch and the **180 mm / 36 mm pitch** field. Actual original flats are **20×20×8 mm**, with 20.7 mm pockets. Main/hatch/hook bores are 2.0 mm; collar bores are 1.9 mm. Pins are retained at designated stationary mounts after dry assembly, keeping adhesive away from moving leaves. The previous 3 mm rod kit is archived. Full-build physical acceptance stays unchecked; see [V18_CHECKPOINT.md](V18_CHECKPOINT.md).
+
+### Historical v18 recessed press-and-slide clasp coupon
 
 Recovered October 4, 2026 in `v18-recessed-clasp`. The complete saved package
 contains CAD sources, three separate printable parts, STEP/STL assemblies,

@@ -5,14 +5,14 @@
   "printer_started": false,
   "profiles_sha256": {
     "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
-    "process-case.json": "c66b1d81e81d59d572913c4164eca45f80683b1996696cacc710b0100b7fb688",
+    "process-case.json": "90596ef0a83197e83a5ad334a19eed71440a6a149e64d5adcd382cf228a62355",
     "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
   },
   "plates": {
-    "01-left-housing-clasp-and-cap-compartment": {
+    "01-left-housing-hook-pivot-and-cap-compartment": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "7e3c7a3a659f1e5fd57baba19a9d7be0e2de8458ff3f5f54005a233849ec23ba",
+      "input_sha256": "7ac213a8ef0c53661136385dfa29e27b5163046d7a362ad71362222a04e471a4",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -29,8 +29,8 @@
         "--slice",
         "0",
         "--export-3mf",
-        "<repo>/v18-case/plates/01-left-housing-clasp-and-cap-compartment-CC2-PLA.3mf",
-        "<repo>/v18-case/plates/01-left-housing-clasp-and-cap-compartment.3mf"
+        "<repo>/v18-case/plates/01-left-housing-hook-pivot-and-cap-compartment-CC2-PLA.3mf",
+        "<repo>/v18-case/plates/01-left-housing-hook-pivot-and-cap-compartment.3mf"
       ],
       "warnings": [
         {
@@ -42,6 +42,7 @@
       "objects": [
         "housing-left"
       ],
+      "non_printing_support_blockers": [],
       "slice_metadata": {
         "index": "1",
         "extruder_type": "0",
@@ -49,8 +50,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "34240",
-        "weight": "151.73",
+        "prediction": "28143",
+        "weight": "109.78",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -60,15 +61,14 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "e6a169ce489daa4108ec95f16c76073e1972bb748ef7c652a891b16eb353b582",
-      "project": "01-left-housing-clasp-and-cap-compartment-CC2-PLA.3mf",
-      "gcode_sha256": "10afde8a0738df7eef3f0c28bdca9251856fc56ada87d39189fd74ba12b63450",
-      "unchanged_slice_evidence_reused": true
+      "project_sha256": "ee4765fcf11ac79858d4403788538ab5dfe2ca6b9c9a25f7cf60226f1ae3c804",
+      "project": "01-left-housing-hook-pivot-and-cap-compartment-CC2-PLA.3mf",
+      "gcode_sha256": "d6875c46d5f4fe3a4e16a3959db77dcd1529eb81aae60b5b0af42513ad605e24"
     },
-    "02-right-housing-and-keeper": {
+    "02-right-housing-and-hook-pin": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "69fce0bc2072422c81854c1f36b2a1bc1bd48bfaff79425f176e06c777bee862",
+      "input_sha256": "50fdf5e939c54b6f23cae69459e626cd05da3b8185cfad8e334026031db06a9d",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -85,8 +85,8 @@
         "--slice",
         "0",
         "--export-3mf",
-        "<repo>/v18-case/plates/02-right-housing-and-keeper-CC2-PLA.3mf",
-        "<repo>/v18-case/plates/02-right-housing-and-keeper.3mf"
+        "<repo>/v18-case/plates/02-right-housing-and-hook-pin-CC2-PLA.3mf",
+        "<repo>/v18-case/plates/02-right-housing-and-hook-pin.3mf"
       ],
       "warnings": [
         {
@@ -98,6 +98,7 @@
       "objects": [
         "housing-right"
       ],
+      "non_printing_support_blockers": [],
       "slice_metadata": {
         "index": "1",
         "extruder_type": "0",
@@ -105,8 +106,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "24338",
-        "weight": "105.19",
+        "prediction": "24284",
+        "weight": "89.63",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -116,14 +117,14 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "df1ec9c7a16eecc2cdb267410a0a15911f1f586e5c73dc15f1da4666a7e6e633",
-      "project": "02-right-housing-and-keeper-CC2-PLA.3mf",
-      "gcode_sha256": "7593c631e0910b1da0333bc01856f27b6e27dcab4e9d090bb4a5f1c00450c993"
+      "project_sha256": "8724a406702d09bbaae812e51fa79cf80075bafb73d1b44faa0cb5ef93db3326",
+      "project": "02-right-housing-and-hook-pin-CC2-PLA.3mf",
+      "gcode_sha256": "4023d57a69619ea68c000f7179dd37f04d69bbd14b0585d06f4f39c4978c3166"
     },
     "03-board-leaves": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "a67ccf7c575dee1e75a93118009e40bc687e2ccf5a8330d0ab526938871fbd67",
+      "input_sha256": "a3f3d21cc172e5f07aa3f5623c6c781a762571b38ad70fb14419fb04c19c4a94",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -161,8 +162,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "32963",
-        "weight": "189.02",
+        "prediction": "33014",
+        "weight": "188.91",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -172,15 +173,15 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "591986ff45b72d8e9e5855a7f837fe6f7a3238225b54846fff223feec7a9ca9d",
+      "project_sha256": "fd5e7105dcb2d006f52fa98792ce1510738f24827d9488e40f6bc3236d5ae6c9",
       "project": "03-board-leaves-CC2-PLA.3mf",
-      "gcode_sha256": "22b2a1f1f321dfddd013ed04896b182332915fdf1971671155eec31d2e510bab",
+      "gcode_sha256": "8635bc73b47c834b86f69f69e6ad3189601bdd89482884a4a6b98954fe151577",
       "unchanged_slice_evidence_reused": true
     },
     "04-piece-drawers": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "8859f03f15c1402038cdf432ca5ee8a491d0d447997c03f9f86d746ad9b44294",
+      "input_sha256": "ad24d7b86ff1f2bf0efde1278089a1eb61a6fa783669a3b043e2e7d844221560",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -218,9 +219,9 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "27475",
-        "weight": "103.65",
-        "first_layer_time": "0.000000",
+        "prediction": "27890",
+        "weight": "102.07",
+        "first_layer_time": "38.650002",
         "outside": "false",
         "support_used": "true",
         "label_object_enabled": "false",
@@ -229,15 +230,15 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "f172e678235f6a0d8920342b1e15e640bd2a65e47ae95120cf26152332228841",
+      "project_sha256": "f144d32053eb6ad524e257638403949d27ac57e5cde7d88860e0c8d0f08864d6",
       "project": "04-piece-drawers-CC2-PLA.3mf",
-      "gcode_sha256": "b5aacb8e0375893761abdc2d49791cf9caff4657e3e801a3850dae2838c4d5c3",
+      "gcode_sha256": "6d4e571a88d44bdb82ece0f1721ab7aa5c41504c4a93210d948e047a0507c2eb",
       "unchanged_slice_evidence_reused": true
     },
-    "05-hatch-slider-and-four-axle-caps": {
+    "05-hatch-hook-and-five-axle-caps": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "e704af076c30aa0e6e178fbc340ea5ff38c5d4a8d9dd1bf7fd9b30edfc77d325",
+      "input_sha256": "5f4d39be9468067702fe576edd9d4519e88df227ac34074246245dd4d05c8e99",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -254,8 +255,8 @@
         "--slice",
         "0",
         "--export-3mf",
-        "<repo>/v18-case/plates/05-hatch-slider-and-four-axle-caps-CC2-PLA.3mf",
-        "<repo>/v18-case/plates/05-hatch-slider-and-four-axle-caps.3mf"
+        "<repo>/v18-case/plates/05-hatch-hook-and-five-axle-caps-CC2-PLA.3mf",
+        "<repo>/v18-case/plates/05-hatch-hook-and-five-axle-caps.3mf"
       ],
       "warnings": [
         {
@@ -266,11 +267,12 @@
       ],
       "objects": [
         "capstone-hatch",
-        "clasp-slider",
+        "side-hook",
         "axle-end-cap-1",
         "axle-end-cap-2",
         "axle-end-cap-3",
-        "axle-end-cap-4"
+        "axle-end-cap-4",
+        "axle-end-cap-5"
       ],
       "slice_metadata": {
         "index": "1",
@@ -279,8 +281,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "3293",
-        "weight": "15.02",
+        "prediction": "2981",
+        "weight": "8.99",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -290,12 +292,12 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "4d5d478bbb5a726dd2877c27876838c9c77959e460e19f1160aff61b12962754",
-      "project": "05-hatch-slider-and-four-axle-caps-CC2-PLA.3mf",
-      "gcode_sha256": "ba396e54643c91b01c64c32d3ed725dcfa6612151275eff4d540f702e9497ed4",
+      "project_sha256": "312ca7a83c9982ba8cd60e3fc728fc3f84eebfcb8fba2e18c97ebf7084ec36df",
+      "project": "05-hatch-hook-and-five-axle-caps-CC2-PLA.3mf",
+      "gcode_sha256": "c533bb66f2453d1cb8e6eb7d78bdc0314216832dbc8eb69a6abdd5caa902c637",
       "unchanged_slice_evidence_reused": true
     }
   },
-  "total_estimated_seconds": 122309,
-  "total_estimated_grams": 564.61
+  "total_estimated_seconds": 116312,
+  "total_estimated_grams": 499.38
 }

@@ -1,7 +1,7 @@
 {
   "checks": [
     {
-      "name": "open/steel-main-axle-front",
+      "name": "open/filament-main-axle-front",
       "pass": true,
       "overlap_mm3": {
         "housing-left": 0,
@@ -11,11 +11,11 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
-      "name": "open/steel-main-axle-rear",
+      "name": "open/filament-main-axle-rear",
       "pass": true,
       "overlap_mm3": {
         "housing-left": 0,
@@ -25,11 +25,11 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
-      "name": "open/steel-hatch-axle",
+      "name": "open/filament-hook-pivot",
       "pass": true,
       "overlap_mm3": {
         "housing-left": 0,
@@ -39,7 +39,21 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
+      }
+    },
+    {
+      "name": "open/filament-hatch-axle",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "side-hook": 0
       }
     },
     {
@@ -53,7 +67,7 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
@@ -67,7 +81,7 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
@@ -81,7 +95,7 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
@@ -95,11 +109,11 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
-      "name": "closed/steel-main-axle-front",
+      "name": "open/retention-cap-hook",
       "pass": true,
       "overlap_mm3": {
         "housing-left": 0,
@@ -109,11 +123,11 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
-      "name": "closed/steel-main-axle-rear",
+      "name": "closed/filament-main-axle-front",
       "pass": true,
       "overlap_mm3": {
         "housing-left": 0,
@@ -123,11 +137,11 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
-      "name": "closed/steel-hatch-axle",
+      "name": "closed/filament-main-axle-rear",
       "pass": true,
       "overlap_mm3": {
         "housing-left": 0,
@@ -137,7 +151,35 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
+      }
+    },
+    {
+      "name": "closed/filament-hook-pivot",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "side-hook": 0
+      }
+    },
+    {
+      "name": "closed/filament-hatch-axle",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "side-hook": 0
       }
     },
     {
@@ -151,7 +193,7 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
@@ -165,7 +207,7 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
@@ -179,7 +221,7 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
     },
     {
@@ -193,25 +235,123 @@
         "board-right": 0,
         "drawer-right": 0,
         "capstone-hatch": 0,
-        "clasp-slider": 0
+        "side-hook": 0
       }
+    },
+    {
+      "name": "closed/retention-cap-hook",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "side-hook": 0
+      }
+    },
+    {
+      "name": "housing-left bore at Y=-15.2",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "housing-left bore at Y=196.0",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "board-left bore at Y=-9.2",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "board-left bore at Y=202.0",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "housing-right bore at Y=2.8",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "housing-right bore at Y=214.0",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "board-right bore at Y=-3.2",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "board-right bore at Y=208.0",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "housing-left hatch bore at X=6",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "housing-left hatch bore at X=81",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "capstone-hatch hatch bore at X=43.5",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "hook pivot bore",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "end cap 1.9 mm bore",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
     }
   ],
   "closed_envelope_including_hardware_mm": [
-    143.5,
+    112.3,
     245.8,
     32.60000000000002
   ],
-  "steel_axles_mm": {
-    "diameter": 3,
+  "filament_axles_mm": {
+    "material": "PLA",
+    "diameter": 1.75,
     "front_length": 24.9,
     "rear_length": 24.9,
-    "hatch_length": 92
+    "hatch_length": 92,
+    "hook_pivot_length": 9.6
   },
-  "printed_retention_caps": 4,
-  "endplay_gap_mm": 0.5,
+  "hinge_bore_mm": 2.0,
+  "cap_bore_mm": 1.9,
+  "nominal_pin_diametral_clearance_mm": 0.25,
+  "printed_retention_caps": 5,
+  "hinge_endplay_gap_mm": 0.5,
+  "hook_bearing_endplay_nominal_mm": 0,
   "rod_in_cap_depth_mm": 2,
-  "retention": "Bond end caps to steel rods; keep adhesive out of rotating barrels. Confirm actual stack-up before bonding.",
+  "retention": "Bond main pins only at the exposed outer housing barrels (left front, right rear); bond hatch pin at one fixed ear and hook pin at its fixed mount. Bond caps to pins. Keep adhesive out of moving joints. Hook collar lightly contacts its bearing face; other caps have 0.5 mm running gaps.",
   "physical_acceptance": false,
-  "note": "Axles are permanent hinge hardware, not a closure pin. No steel-reference objects are included in print plates."
+  "note": "Filament references are assembly hardware only and excluded from print plates. The closure catch itself is a headed printed pin integrated into the housing."
 }

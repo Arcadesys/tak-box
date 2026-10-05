@@ -8,12 +8,13 @@ import matplotlib.pyplot as plt
 from matplotlib.collections import LineCollection
 from matplotlib.lines import Line2D
 REPO=Path(__file__).resolve().parents[2];OUT=REPO/'v18-case';WORK=REPO/'.slicer-work/v18-case'
+NOZZLE_OFFSET=[float(v) for v in json.loads((OUT/'profiles/machine.json').read_text())['extruder_offset'][0].split('x')]
 PLANS={
- '01-left-housing-clasp-and-cap-compartment':[.2,4.4,6,29.6,31.6,112.2,140.4,208,220,240.2],
- '02-right-housing-and-keeper':[.2,24.2,26.2,81.8,96.8,103.8,202.4,214.4,216.6],
+ '01-left-housing-hook-pivot-and-cap-compartment':[.2,2,5.8,27.6,29.2,128.4,132.4,190.8,208,222,240.2],
+ '02-right-housing-and-hook-pin':[.2,2,5.4,111.8,122,126.8,130.8,202.4,214.4,216.6],
  '03-board-leaves':[.2,3.2,3.6,4,5,5.4,5.6,7.4,7.6,8.2,9,12],
  '04-piece-drawers':[.2,6.2,9.8,10,11,16,81.4,85.2,86.4,89.2],
- '05-hatch-slider-and-four-axle-caps':[.2,2.6,4.4,6.6,9.4,12,18.6,24.8],
+ '05-hatch-hook-and-five-axle-caps':[.2,2.6,4.4,6.6,9.4,12,18.6,24.8,42.2,70.2,88.6],
 }
 def parse(path):
  xyz={};role='';segments=[];relative=True;last=0
@@ -29,7 +30,7 @@ def parse(path):
   v={k:float(n) for k,n in re.findall(r'([XYZE])(-?\d*\.?\d+)',cmd)};old=xyz.copy();xyz.update({k:n for k,n in v.items() if k in 'XYZ'})
   if 'E' in v:
    amount=v['E'] if relative else v['E']-last;last=v['E']
-   if amount>0 and role not in ('','Custom') and all(k in old and k in xyz for k in 'XYZ') and ('X' in v or 'Y' in v):segments.append((round(xyz['Z'],4),role,[(old['X'],old['Y']),(xyz['X'],xyz['Y'])]))
+   if amount>0 and role not in ('','Custom') and all(k in old and k in xyz for k in 'XYZ') and ('X' in v or 'Y' in v):segments.append((round(xyz['Z'],4),role,[(old['X']+NOZZLE_OFFSET[0],old['Y']+NOZZLE_OFFSET[1]),(xyz['X']+NOZZLE_OFFSET[0],xyz['Y']+NOZZLE_OFFSET[1])]))
  return segments
 
 def main():
@@ -48,7 +49,7 @@ def main():
   fig.suptitle(name.replace('-',' '),fontsize=23)
   fig.legend(handles=[Line2D([0],[0],color='#123957',lw=2,label='MODEL — solid'),Line2D([0],[0],color='#9a3150',lw=2,ls='--',label='SUPPORT — dashed')],loc='lower center',ncol=2,fontsize=18)
   fig.tight_layout(rect=(0,.045,1,.955));fig.savefig(OUT/'previews'/f'{name}-layers.png',dpi=130);plt.close(fig)
-  report[name]={'levels':len(levels),'selected_z_mm':selected,'xy_centerline_bounds_mm':[lo.tolist(),hi.tolist()],'fits_bed_with_half_bead':True,'visual_review':'pending','excluded_roles':['Custom','unlabelled start/end purge']}
+  report[name]={'levels':len(levels),'selected_z_mm':selected,'xy_centerline_bounds_mm':[lo.tolist(),hi.tolist()],'coordinate_frame':'Nozzle deposition; machine extruder_offset applied','extruder_offset_mm':NOZZLE_OFFSET,'fits_bed_with_half_bead':True,'visual_review':'pending','excluded_roles':['Custom','unlabelled start/end purge']}
  (OUT/'reports/layer-inspection.json').write_text(json.dumps(report,indent=2)+'\n')
  print('Five actual deposition-layer sheets generated; bed bounds pass.')
 if __name__=='__main__':main()

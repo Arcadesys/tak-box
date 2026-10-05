@@ -1,28 +1,29 @@
 {
-  "base_revision": "2589129101d6f63533b425bff4855ec84a735904",
+  "base_revision": "08c663b199a36c8e32b333b9aae3f9fc3d63503e",
+  "recovery_base_revision": "2589129101d6f63533b425bff4855ec84a735904",
   "python_environment": ".slicer-work/cad-venv (Python 3.12.13; requirements.txt)",
   "source_and_dependency_sha256": {
-    "v18-case/source/render_case.py": "e6a93fbbc84493a409b47b3fd57ec588d307c19fdbdbb7d5ca2bfe4abe91e428",
-    "v18-case/source/inspect_case_layers.py": "72b33133eb5424ac29cc0368bc9fb43ce040bd1012ca5f8528360e647eaeecb4",
-    "v18-case/source/verify_hardware.py": "d86e831424406c80633e53cb5e7b01e540a30e47798098dd57ad41c0faca51db",
-    "v18-case/source/package_case.py": "9f30099ca49452fdaa8e500049a8376a6f79b42e15443134b7af0cb4796f4d0d",
-    "v18-case/source/build_case.py": "76eb417a22133291b6ef436bc04c3d936fd54c12e0d0ef8aedf2d40973dbb2eb",
+    "v18-case/source/render_case.py": "e12ca3f0b9b7e670944165cec799c949abf26bce92d7dbdf18fa50889e274ab4",
+    "v18-case/source/inspect_case_layers.py": "425cfbd7dbb6e37139cc88373432cb4447e2be50f9e81ceed38ffb33d725c5e6",
+    "v18-case/source/verify_hardware.py": "0e07f58251f131dc3e52a2fd85367865f61b509c9fd9e186200fba22244aa628",
+    "v18-case/source/package_case.py": "2e9327f7475ff252e72977abd0b3cba2cc82144956726ae15d0752f089c71bf1",
+    "v18-case/source/build_case.py": "a9b33bd77a62335e44cf4d79d957de63ea34d137a1e42576ca75128626bc9cd5",
     "v18-case/source/verify_field.py": "c6a74f60466e454e3d8269df1e36bb670319eed529dca5ff91eca4b7880043da",
-    "v18-case/source/case.py": "d4e5872fdf24104b917960a17e257394b9e2bddaa73f7a6205f594cc84713a9f",
-    "v18-case/source/package_release.py": "55771647558a90673ee1bcc66161b809ebc2cf16af99c3f16c9d92e2f85b5970",
-    "v18-case/source/slice_case.py": "58f7e328c17b0143ed33063571d5c7303b180251f3e9c9224ef76edc46960a40",
+    "v18-case/source/case.py": "2cd8f016b66918d5af425a39da413a477f6fef4d5355a894ff552090f3cfa5df",
+    "v18-case/source/package_release.py": "d0aa1cdbbf71c100eb84ae52b8c07fda16966e723d03b7894e2d522cfc1fb5bb",
+    "v18-case/source/slice_case.py": "0cccf4d7539dbce4936b6aa0e7e70a22407783613c30cdc67de4e54093c42d71",
+    "v18-case/source/verify_pin_toolpaths.py": "d52d1ef698ee52fdbbd44fd68e9388fcdc18bfe5bf90337368049f3713ced09e",
+    "v18-case/source/record_provenance.py": "3dc27e91c64d591a8968a4d753325e3e3cc99bedb16fd3313c08ad0659b24a3d",
+    "v18-case/requirements.txt": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575",
     "v17-four-leaf/source/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
     "v17-four-leaf/source/export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e",
-    "v18-recessed-clasp/build.py": "5f116585bd24d2ddfac74f463e62e62121bf2af9a84129f7541ff0c5430deadc",
-    "v18-recessed-clasp/common.py": "7a064de17ec8303eb2c2cc4be4eb51bc4e5356ec3492e41f7247311f038107a1",
-    "pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
-    "v18-case/requirements.txt": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575"
+    "pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
   },
   "cad_validation_snapshot_defining_sources_match": true,
   "checks": [
     {
       "report": "geometry.json",
-      "checks": 50,
+      "checks": 51,
       "pass": true
     },
     {
@@ -32,18 +33,26 @@
     },
     {
       "report": "hardware.json",
-      "checks": 14,
+      "checks": 31,
       "pass": true
     },
     {
       "report": "plates.json",
-      "checks": 30,
+      "checks": 40,
+      "pass": true
+    },
+    {
+      "report": "pin-toolpaths.json",
+      "checks": 18,
       "pass": true
     }
   ],
   "five_project_input_profile_hashes_match": true,
   "selected_layer_visual_reviews_recorded": true,
+  "filament_toolpath_scope": "Extrusion centerlines inside a nominal 1.75 mm pin core, cropped at passage ends. No bead-width/force/physical-fit proof.",
+  "closure": "Side swivel hook over a headed printed pin; friction set by bonded pivot collar. No detent/force/physical retention qualification.",
   "printer_started": false,
   "physical_acceptance": false,
-  "clasp_trial": "Printed, per latest direct user report; force/cycles not supplied."
+  "clasp_trial": "Earlier recessed clasp printed per user; new hook untested.",
+  "earlier_filament_test": "User reports 1.75 mm PLA held in place; exact component revision, load and cycle count unknown."
 }

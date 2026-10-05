@@ -59,7 +59,7 @@
   "support_base_pattern": "rectilinear",
   "support_base_pattern_spacing": "1",
   "support_speed": "60",
-  "support_threshold_angle": "45",
+  "support_threshold_angle": "30",
   "support_object_xy_distance": "0.35",
   "tree_support_angle_slow": "30",
   "tree_support_branch_angle_organic": "45",
@@ -123,12 +123,12 @@
   "top_surface_acceleration": "2000",
   "top_shell_layers": "5",
   "wipe_tower_no_sparse_layers": "0",
-  "wall_generator": "classic",
+  "wall_generator": "arachne",
   "extra_perimeters_on_overhangs": "0",
   "seam_slope_conditional": "1",
   "seam_slope_inner_walls": "1",
   "accel_to_decel_enable": "0",
-  "precise_outer_wall": "0",
+  "precise_outer_wall": "1",
   "seam_slope_min_length": "0",
   "internal_bridge_flow": "0.95",
   "seam_slope_type": "none",
@@ -152,5 +152,7 @@
   "wipe_tower_y": [
     "212"
   ],
-  "curr_bed_type": "Textured PEI Plate"
+  "curr_bed_type": "Textured PEI Plate",
+  "seam_gap": "0%",
+  "support_remove_small_overhang": "1"
 }

@@ -1,6 +1,6 @@
 """Place all integrated case parts on CC2 beds; verify exported geometry."""
 from pathlib import Path
-from zipfile import ZipFile
+from zipfile import ZipFile, ZIP_DEFLATED
 import argparse,json,sys,xml.etree.ElementTree as ET
 import cadquery as cq
 import numpy as np
@@ -9,6 +9,17 @@ import case as c
 sys.path.insert(0,str(c.REPO/'v17-four-leaf/source'))
 import export_utils as e
 OUT=c.REPO/'v18-case';e.OUT=OUT
+cad_mesh=e.mesh
+def welded_mesh(shape):
+ # CadQuery face tessellations duplicate shared vertices. 3MF needs explicit
+ # indexed connectivity, rather than relying on the slicer's mesh repair.
+ vertices,faces=cad_mesh(shape)
+ m=trimesh.Trimesh(vertices=np.round(vertices,6),faces=faces,process=True)
+ m.merge_vertices(digits_vertex=6)
+ m.remove_unreferenced_vertices()
+ assert m.is_watertight and m.is_winding_consistent and m.body_count==1
+ return m.vertices,m.faces
+e.mesh=welded_mesh
 checks=[]
 def check(name,ok,detail=None):
  checks.append({'name':name,'pass':bool(ok),'detail':detail})
@@ -16,7 +27,7 @@ def check(name,ok,detail=None):
 e.check=check
 
 def load(name,rotation=None):
- p=(c.REPO/'v18-recessed-clasp/parts/V18-slider.step' if name=='clasp-slider' else OUT/'models'/f'{name}.step')
+ p=OUT/'models'/f'{name}.step'
  s=cq.importers.importStep(str(p)).val()
  if rotation:s=s.rotate((0,0,0),rotation[0],rotation[1])
  return s
@@ -25,14 +36,35 @@ def place(name,x,y,rotation=None):
  s=load(name,rotation);b=s.BoundingBox()
  return name,s.translate((x-b.xmin,y-b.ymin,-b.zmin))
 
+def housing_support_clearance(name,part):
+ # Keep support away from the 2 mm bore walls. This applies to housings only;
+ # boards and drawers retain the 0.35 mm global side clearance.
+ path=OUT/'plates'/f'{name}.3mf'
+ with ZipFile(path) as z:payload={n:z.read(n) for n in z.namelist()}
+ root=ET.fromstring(payload['3D/3dmodel.model']);ns='{'+e.NS+'}'
+ ET.SubElement(root,ns+'metadata',name='BambuStudio:3mfVersion').text='1'
+ config=ET.Element('config');obj=ET.SubElement(config,'object',id='1')
+ ET.SubElement(obj,'metadata',key='name',value=part)
+ ET.SubElement(obj,'metadata',key='support_object_xy_distance',value='0.8')
+ volume=ET.SubElement(obj,'part',id='1',subtype='normal_part')
+ ET.SubElement(volume,'metadata',key='name',value=part)
+ payload['3D/3dmodel.model']=ET.tostring(root,encoding='utf-8',xml_declaration=True)
+ payload['Metadata/model_settings.config']=ET.tostring(config,encoding='utf-8',xml_declaration=True)
+ with ZipFile(path,'w',ZIP_DEFLATED) as z:
+  for n,data in payload.items():z.writestr(n,data)
+ with ZipFile(path) as z:
+  assert z.testzip() is None
+  cfg=ET.fromstring(z.read('Metadata/model_settings.config'))
+  check(name+' housing support side clearance readback',cfg.find('.//metadata[@key="support_object_xy_distance"]').get('value')=='0.8',{'support_object_xy_distance_mm':.8})
+
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--only',nargs='+');args=parser.parse_args()
  plans={
- '01-left-housing-clasp-and-cap-compartment':[place('housing-left',10,7,((1,0,0),-90))],
- '02-right-housing-and-keeper':[place('housing-right',10,10,((1,0,0),-90))],
+ '01-left-housing-hook-pivot-and-cap-compartment':[place('housing-left',10,7,((1,0,0),-90))],
+ '02-right-housing-and-hook-pin':[place('housing-right',10,10,((1,0,0),-90))],
  '03-board-leaves':[place('board-left',7,7),place('board-right',115,7)],
  '04-piece-drawers':[place('drawer-left',7,7,((0,1,0),90)),place('drawer-right',24,7,((0,1,0),-90))],
- '05-hatch-slider-and-four-axle-caps':[place('capstone-hatch',7,7),place('clasp-slider',110,7)]+[(f'axle-end-cap-{i+1}',place('axle-end-cap',110+12*i,50)[1]) for i in range(4)],
+ '05-hatch-hook-and-five-axle-caps':[place('capstone-hatch',7,7,((0,1,0),-90)),place('side-hook',45,7,((0,1,0),90))]+[(f'axle-end-cap-{i+1}',place('axle-end-cap',110+12*i,50)[1]) for i in range(5)],
  }
  rows={}
  for name,items in plans.items():
@@ -42,8 +74,11 @@ def main():
    for label2,t in items[i+1:]:
     b=t.BoundingBox();gap=max(b.xmin-a.xmax,a.xmin-b.xmax,b.ymin-a.ymax,a.ymin-b.ymax)
     check(label+' separation '+label2,gap>=5,gap)
-  if not args.only or name in args.only:e.plate(name,items)
-  rows[name]={'objects':[n for n,_ in items],'orientation':'Side-oriented housings and drawers; boards/hatch face up; original frozen slider side orientation; axle caps bore up.','supports':True}
- (OUT/'reports/plates.json').write_text(json.dumps({'bed_mm':[256,256],'checks':checks,'plates':rows,'steel_axles_printed':False,'physical_acceptance':False},indent=2)+'\n')
+  if not args.only or name in args.only:
+   e.plate(name,items)
+   if name.startswith(('01-','02-')):
+    housing_support_clearance(name,items[0][0])
+  rows[name]={'objects':[n for n,_ in items],'orientation':'Rear-end housings; side-oriented drawers; boards face up; hatch hinge axis vertical; hook flat with pivot axis vertical; retaining collars bore up.','supports':True,'support_object_xy_distance_mm':.8 if name.startswith(('01-','02-')) else .35}
+ (OUT/'reports/plates.json').write_text(json.dumps({'bed_mm':[256,256],'checks':checks,'plates':rows,'filament_pins_printed':False,'physical_acceptance':False},indent=2)+'\n')
  print('Five complete-case geometry plates exported and read back.')
 if __name__=='__main__':main()

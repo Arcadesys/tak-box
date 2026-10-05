@@ -33,16 +33,17 @@ def main():
  # Static disjointness, excluding the repeated adhesive axle-cap component.
  nominal={n:s for n,s in parts.items() if n!='axle-end-cap'}
  worst('nominal assembled parts disjoint',((f'{a}/{b}',nominal[a],nominal[b]) for i,a in enumerate(nominal) for b in list(nominal)[i+1:]))
- left=[parts[f'{k}-left'] for k in ('housing','board','drawer')]+[parts['capstone-hatch'],c.slider(0,10)]
+ left=[parts[f'{k}-left'] for k in ('housing','board','drawer')]+[parts['capstone-hatch'],c.side_hook(c.HOOK_OPEN_ANGLE)]
  right=[parts[f'{k}-right'] for k in ('housing','board','drawer')]
  worst('full paired fold 0..180 degrees at 5 degree samples',((f'{a}:{i}:{j}',p,c.fold(q,a)) for a in range(0,181,5) for i,p in enumerate(left) for j,q in enumerate(right)))
- # Slider must retract before opening; this is the actual rotary keeper path.
- released=c.slider(0,10)
+ # Swivel hook clears the actual opening path; locked shoulder catches keeper.
+ released=c.side_hook(c.HOOK_OPEN_ANGLE)
  worst('unlocked case opening at 1 degree samples for first 10 degrees',((f'{a}:{i}',p,c.fold(q,180-a)) for a in range(0,11) for i,q in enumerate(right) for p in [parts['housing-left'],released]))
  closed_right=c.fold(parts['housing-right'],180)
- check('locked case opening blocked',ov(parts['clasp-slider'],c.open_from_closed(closed_right,1))>1)
- check('press-only case opening blocked',ov(c.slider(1.8,0),c.open_from_closed(closed_right,1))>1)
- worst('integrated press-and-slide path',((f'{d}:{t}:{n}',c.slider(d,t),parts[n]) for d,t in [(i*.1,0) for i in range(19)]+[(1.8,i*.5) for i in range(21)] for n in ('housing-left',)))
+ check('locked side hook blocks case opening at 1 degree',ov(parts['side-hook'],c.open_from_closed(closed_right,1))>1)
+ check('hook reverse rotation stop',ov(c.side_hook(-8),parts['housing-left'])>.01)
+ worst('hook release 0..65 degrees at 1 degree samples',((f'{a}:{n}',c.side_hook(a),p) for a in range(66) for n,p in [('left',parts['housing-left']),('right closed',closed_right)]))
+ check('hook mouth clearance and headed keeper',abs(c.hook_keeper().BoundingBox().xmin+8.8)<1e-6,{'pin_diameter_mm':4,'head_diameter_mm':7,'hook_thickness_mm':3.2,'keeper_head_clearance_mm':.4,'pivot_faces_contact_for_friction':True,'retention':'Rigid hook shoulder and reverse rotation stop; set pivot collar for light friction. Unloaded rotation resistance remains physical.'})
  for side,sign in (('left',-1),('right',1)):
   check(side+' board snap holds lift',ov(c.fold(parts['board-'+side],sign*1),parts['housing-'+side])>1)
   worst(side+' released board motion 0..90 at 5 degree samples',((a,c.fold(c.board(side,1.5),sign*a),parts['housing-'+side]) for a in range(0,91,5)))
@@ -79,9 +80,9 @@ def main():
  check('field remains 5x5 / 180 mm / 36 mm pitch',True,{'field_mm':180,'pitch_mm':36})
  closed=[s if not n.endswith('-right') else c.fold(s,180) for n,s in nominal.items()]
  bb=cq.Compound.makeCompound(closed).BoundingBox()
- report={'checks':checks,'python':sys.version,'cadquery':cq.__version__,'platform':platform.platform(),'source_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (OUT/'source').glob('*.py')},'frozen_clasp_build_sha256':hashlib.sha256((REPO/'v18-recessed-clasp/build.py').read_bytes()).hexdigest(),'piece_package':{'name':'pieces original Cat/Witch','flats_mm':[20,20,8],'source_and_mesh_hashes':hashes,'compatibility':'Detailed current CAD checked; old cat capstone STL is not watertight, so it is not used for volume fit. Original source CAD is valid; no piece exports changed.'},'closed_body_and_clasp_envelope_mm':[bb.xlen,bb.ylen,bb.zlen],'physical_acceptance':False,'limitations':['Motion sampled; not a continuous sweep proof.','Flex release poses assume cubic deformation, not FEA or measured actuation.','Hinge/clip/support removal/strength/loaded transport require physical observation.','Original Cat/Witch set only. Weighted and curled sets unverified.','Axles require permanent end retention; printed end caps are bonded to steel, not sliding case closures.']}
+ report={'checks':checks,'python':sys.version,'cadquery':cq.__version__,'platform':platform.platform(),'source_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (OUT/'source').glob('*.py')},'piece_package':{'name':'pieces original Cat/Witch','flats_mm':[20,20,8],'source_and_mesh_hashes':hashes,'compatibility':'Detailed current CAD checked; old cat capstone STL is not watertight, so it is not used for volume fit. Original source CAD is valid; no piece exports changed.'},'closed_body_and_hook_envelope_mm':[bb.xlen,bb.ylen,bb.zlen],'physical_acceptance':False,'limitations':['Motion sampled; not a continuous sweep proof.','Flex release poses assume cubic deformation, not FEA or measured actuation.','Hinge/clip/support removal/strength/loaded transport require physical observation.','Original Cat/Witch set only. Weighted and curled sets unverified.','PLA filament pins require end retention; printed end caps bond to filament, not sliding case closures. Loaded stiffness and durability remain physical tests.']}
  (OUT/'reports/geometry.json').write_text(json.dumps(report,indent=2)+'\n')
- cq.exporters.export(cq.Compound.makeCompound(list(nominal.values())),str(OUT/'models/assembly-open.step'))
+ cq.exporters.export(cq.Compound.makeCompound([c.side_hook(c.HOOK_OPEN_ANGLE) if n=='side-hook' else s for n,s in nominal.items()]),str(OUT/'models/assembly-open.step'))
  cq.exporters.export(cq.Compound.makeCompound(closed),str(OUT/'models/assembly-closed.step'))
  if not all(x['pass'] for x in checks):raise SystemExit('Geometry has failed checks; read geometry.json')
  print('Full integrated v18 digital checks pass',flush=True)

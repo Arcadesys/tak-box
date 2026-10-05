@@ -1,46 +1,53 @@
 {
-  "01-left-housing-clasp-and-cap-compartment": {
+  "01-left-housing-hook-pivot-and-cap-compartment": {
     "levels": 1202,
     "selected_z_mm": [
       0.2,
-      4.4,
-      6.0,
-      29.6,
-      31.6,
-      112.2,
-      140.4,
+      2.0,
+      5.8,
+      27.6,
+      29.2,
+      128.4,
+      132.4,
+      190.8,
       208.0,
-      220.0,
+      222.0,
       240.2
     ],
     "xy_centerline_bounds_mm": [
       [
-        7.953,
-        2.691
+        6.878,
+        4.191
       ],
       [
-        155.047,
-        34.765
+        120.922,
+        36.265
       ]
     ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
     "fits_bed_with_half_bead": true,
-    "visual_review": "selected_layers_reviewed",
+    "visual_review": "reviewed",
     "excluded_roles": [
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observation": "Rear foundation and cap bay supported; long drawer tunnel blank at selected middle layers. External clasp rail support remains accessible from the outer edge.",
-    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+    "observation": "Housing tunnel clear at selected body layers; support beneath cap-bay floor and outside roots; pivot bore and rear main passage clear in the detailed pin views.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
   },
-  "02-right-housing-and-keeper": {
+  "02-right-housing-and-hook-pin": {
     "levels": 1084,
     "selected_z_mm": [
       0.2,
-      24.2,
-      26.2,
-      81.8,
-      96.8,
-      103.8,
+      2.0,
+      5.4,
+      111.8,
+      122.0,
+      126.8,
+      130.8,
       202.4,
       214.4,
       216.6
@@ -48,21 +55,26 @@
     "xy_centerline_bounds_mm": [
       [
         4.655,
-        3.144
+        4.644
       ],
       [
-        151.17,
-        33.153
+        121.922,
+        34.653
       ]
     ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
     "fits_bed_with_half_bead": true,
-    "visual_review": "selected_layers_reviewed",
+    "visual_review": "reviewed",
     "excluded_roles": [
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observation": "Rear foundation supported; long drawer tunnel blank at selected middle layers. Keeper shoulder supported from outside. Shifted +3 mm on bed to retain full brim.",
-    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+    "observation": "Housing tunnel clear at selected body layers; external support retained under the headed catch and roots; rear main passage clear in detailed pin views.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
   },
   "03-board-leaves": {
     "levels": 60,
@@ -83,21 +95,26 @@
     "xy_centerline_bounds_mm": [
       [
         1.644,
-        3.172
+        4.672000000000001
       ],
       [
         223.356,
-        224.628
+        226.128
       ]
     ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
     "fits_bed_with_half_bead": true,
-    "visual_review": "selected_layers_reviewed",
+    "visual_review": "reviewed",
     "excluded_roles": [
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observation": "Dense support beneath broad first board layers; individual clip and hinge layers retained. Underside removal/flatness remains physical.",
-    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+    "observation": "Broad underside support and dense interface retained; playing faces and recessed grid present; detailed board hinge views clear.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
   },
   "04-piece-drawers": {
     "levels": 447,
@@ -116,24 +133,29 @@
     "xy_centerline_bounds_mm": [
       [
         1.644,
-        2.989
+        4.489
       ],
       [
         38.156,
-        205.256
+        206.756
       ]
     ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
     "fits_bed_with_half_bead": true,
-    "visual_review": "selected_layers_reviewed",
+    "visual_review": "reviewed",
     "excluded_roles": [
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observation": "Side-printed pocket floor/rims and catch/stop regions resolve; supports are along open sides and accessible pocket recesses.",
-    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+    "observation": "Drawer side orientation retains the catches and stop arms with external accessible support; pocket rows remain distinct.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
   },
-  "05-hatch-slider-and-four-axle-caps": {
-    "levels": 126,
+  "05-hatch-hook-and-five-axle-caps": {
+    "levels": 443,
     "selected_z_mm": [
       0.2,
       2.6,
@@ -142,25 +164,33 @@
       9.4,
       12.0,
       18.6,
-      24.8
+      24.8,
+      42.2,
+      70.2,
+      88.6
     ],
     "xy_centerline_bounds_mm": [
       [
-        1.644,
+        3.044,
         1.644
       ],
       [
-        158.343,
-        60.852
+        170.356,
+        62.356
       ]
     ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
     "fits_bed_with_half_bead": true,
-    "visual_review": "selected_layers_reviewed",
+    "visual_review": "reviewed",
     "excluded_roles": [
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observation": "Hatch underside and original slider side orientation supported; four cap bores open upward.",
-    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+    "observation": "Hook prints flat; five collars and vertical hatch hinge present; detailed pin views contain no model/support centerlines inside checked filament cores.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
   }
 }

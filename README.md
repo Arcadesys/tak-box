@@ -5,23 +5,16 @@ A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed p
 ## Final version direction: v18
 
 V18 is the selected FINAL version. The [version freeze and release checklist](docs/V18_FINAL.md)
-pin the recovered clasp and common-hinge baseline. The complete
+preserve the recovered package and common-hinge baseline. The complete
 [first-print v18 build](v18-case/README.md) now includes five CC2 PLA projects,
 assembly instructions and a downloadable kit. Whole-case physical acceptance
 remains pending.
 
-### Selected closure: [v18 recessed press-and-slide clasp](v18-recessed-clasp)
+### Selected closure: side hook and headed pin
 
-The recovered v18 package includes reproducible CAD source, STEP/STL parts,
-a three-part 3MF coupon plate, assembled release states, renders, review and
-slicing reports, and the original downloadable kit. [Recovery checks](v18-recessed-clasp/RECOVERY.md)
-confirmed all 67 manifest hashes and both separately saved artifacts.
+The user chose the simpler side hook on October 5. The complete [v18 case](v18-case/README.md) uses a separate swivelling hook, an integrated headed catch, and 1.75 mm PLA filament hinges. Five CC2 projects, full source and assembly instructions are included. The full field and four-leaf common axis remain.
 
-This retained package is a **support-required clasp coupon**. The user reports
-the trial printed; its source package predates that report.
-Both closing and opening require pressing the recessed button while sliding
-the rigid bolt. Integration is now in `v18-case`; physical fit, support removal, strength and
-loaded transport retention remain unverified. The v17 study remains below.
+The [recessed-clasp coupon](v18-recessed-clasp) is retained byte-for-byte as history. The user reports it printed; it is not used in the current case. The new hook, filament joints and whole-case loaded retention await physical acceptance.
 
 ## Historical v17 architecture study: [four leaves on one common hinge](v17-four-leaf)
 

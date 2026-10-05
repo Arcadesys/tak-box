@@ -1,7 +1,7 @@
 {
   "version": "v18",
   "decision": "User selected v18 as the FINAL version on October 4, 2026 (America/Chicago).",
-  "status": "complete_first_print_build_prepared_physical_acceptance_pending",
+  "status": "side_hook_filament_first_print_build_physical_acceptance_pending",
   "baseline_commit": "36ffe69465d09e3d64d8873b35efcef5642be556",
   "closure_package": "v18-recessed-clasp",
   "case_body_baseline": {
@@ -369,7 +369,27 @@
   "clasp_trial_printed_user_report": true,
   "integrated_case_manifest": {
     "path": "v18-case/PACKAGE-MANIFEST.json",
-    "bytes": 13264,
-    "sha256": "34e17fcafa17654c7e4767d9eb9ed3534a8ee3c09a7bb65749ff87bb19f5dcea"
+    "bytes": 14835,
+    "sha256": "3b837fc9cd06ae55f90e23318b2efeb3f2f8c020704e1c2f23498717b4078e3e"
+  },
+  "hinge_pins": {
+    "material": "PLA filament",
+    "diameter_mm": 1.75,
+    "hinge_bore_mm": 2.0,
+    "retaining_cap_bore_mm": 1.9,
+    "lengths_mm": [
+      24.9,
+      24.9,
+      92.0,
+      9.6
+    ],
+    "physical_acceptance": false,
+    "retention": "Bond only designated fixed mounts and collars; moving joints remain free. Hook collar sets friction."
+  },
+  "selected_case_closure": {
+    "type": "side_hook_and_headed_pin",
+    "decision": "Explicit user choice October 5, 2026; replaces recessed clasp within v18.",
+    "package": "v18-case",
+    "physical_acceptance": false
   }
 }
