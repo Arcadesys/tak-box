@@ -1,0 +1,22 @@
+{
+  "base_revision": "1091f7348f525d2b72f17cad1f5f8c680509fae0",
+  "decisions": [
+    "User authorized V20 with sliding tops after rejecting tall print orientation.",
+    "Fixed pockets replace drawers. Sloped rails plus a releasable catch retain each lid.",
+    "Field, shared hinge axis, original piece dimensions and side hook retained."
+  ],
+  "resolved_geometry_failures": [
+    {
+      "change": "Enlarged lid button from 12x3 to 20x5.6 mm",
+      "failure": "At old 2.8 mm inward release, raised button intersected the rail during withdrawal by 19.6 mm3.",
+      "fix": "Increase release to 4.5 mm and move pockets to give the arm and loaded pieces clearance."
+    },
+    {
+      "change": "Wider lid catch root",
+      "failure": "Front entry relief was 1.6 mm too narrow; root overlapped base by 15.36 mm3.",
+      "fix": "Widen only the front catch entry relief to X=12 mm."
+    }
+  ],
+  "final_geometry_checks_pass": true,
+  "physical_acceptance": false
+}
