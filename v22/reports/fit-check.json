@@ -43,8 +43,8 @@
     }
   ],
   "source_STEP_sha256": {
-    "housing-left.step": "0d22a3752d0649b394c2934bb45bf98a5e0f5769c2b8036293776d3ec31e1f14",
-    "housing-right.step": "a3d797b558d3c1ac9205c62c0d5295e1873ba3ab7db34919666b08669ac7588f"
+    "housing-left.step": "477ec2572c4512493ee47cc17d6fffc3f9c94a5d18ae34c0dc04df8c883b6db7",
+    "housing-right.step": "c1104c2a55a98922f65811c2fb0ea6bc6501ec924a60bcf980759d38ca15e9ae"
   },
   "slicing": {
     "slicer": "ElegooSlicer-2.4.2:",
@@ -60,7 +60,7 @@
       "captive-hinge-fit-check": {
         "passed": true,
         "exit_code": 0,
-        "input_sha256": "c6e20a55cce60daddac7458d31d9c86e2011658db68b69602794f4f16ae6fe94",
+        "input_sha256": "94bcf0aefb410b6864474097dceb84aa2ca8b2292700c1a5f72d7930f1c6cf73",
         "command": [
           "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
           "--datadir",
@@ -110,9 +110,9 @@
           "filament_maps": "1",
           "limit_filament_maps": "0"
         },
-        "project_sha256": "89dbf5c4ecb05417de63665e4e5230c450f4c01d4cec46eecaafc08b13ededba",
+        "project_sha256": "f152100ff283a9c39d2c19940c25332cf912a6477f3cbca0dd131de8ba7ece58",
         "project": "captive-hinge-fit-check-CC2-PLA.3mf",
-        "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+        "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
       }
     },
     "total_estimated_seconds": 1290,

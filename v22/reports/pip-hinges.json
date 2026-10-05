@@ -24,7 +24,7 @@
       "name": "pivot 1 no support centerlines inside bearing cavity",
       "pass": true,
       "intrusions": 0,
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 1 radial running gaps at Z=15.4",
@@ -33,7 +33,7 @@
         0.4170000000000016,
         0.4163642871059636
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 1 radial running gaps at Z=15.8",
@@ -42,7 +42,7 @@
         0.42199999999999704,
         0.4217000591453228
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 1 radial running gaps at Z=16.2",
@@ -51,7 +51,7 @@
         0.38800000000000523,
         0.38800000000000523
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 1 radial running gaps at Z=16.4",
@@ -60,7 +60,7 @@
         0.3849999999999909,
         0.3849999999999909
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 1 radial running gaps at Z=17.0",
@@ -69,7 +69,7 @@
         0.42199999999999704,
         0.4217000591453228
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 1 radial running gaps at Z=17.4",
@@ -78,13 +78,13 @@
         0.4170000000000016,
         0.4163642871059636
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 2 no support centerlines inside bearing cavity",
       "pass": true,
       "intrusions": 0,
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 2 radial running gaps at Z=15.4",
@@ -93,7 +93,7 @@
         0.41661760195512443,
         0.4170000000000016
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 2 radial running gaps at Z=15.8",
@@ -102,7 +102,7 @@
         0.42199999999999704,
         0.42199999999999704
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 2 radial running gaps at Z=16.2",
@@ -111,7 +111,7 @@
         0.38761034806489647,
         0.38800000000000523
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 2 radial running gaps at Z=16.4",
@@ -120,7 +120,7 @@
         0.3846101009687146,
         0.3849999999999909
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 2 radial running gaps at Z=17.0",
@@ -129,7 +129,7 @@
         0.42199999999999704,
         0.42199999999999704
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "pivot 2 radial running gaps at Z=17.4",
@@ -138,13 +138,13 @@
         0.41661760195512443,
         0.4170000000000016
       ],
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     {
       "name": "trial/pivot 1 no support centerlines inside bearing cavity",
       "pass": true,
       "intrusions": 0,
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 1 radial running gaps at Z=15.4",
@@ -153,7 +153,7 @@
         0.4169999999999998,
         0.4163642760909312
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 1 radial running gaps at Z=15.8",
@@ -162,7 +162,7 @@
         0.4220000000000006,
         0.4217000464274854
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 1 radial running gaps at Z=16.2",
@@ -171,7 +171,7 @@
         0.3879999999999999,
         0.3880000000000017
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 1 radial running gaps at Z=16.4",
@@ -180,7 +180,7 @@
         0.38500000000000156,
         0.38500000000000156
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 1 radial running gaps at Z=17.0",
@@ -189,7 +189,7 @@
         0.4220000000000006,
         0.4217000464274854
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 1 radial running gaps at Z=17.4",
@@ -198,13 +198,13 @@
         0.4169999999999998,
         0.4163642760909312
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 2 no support centerlines inside bearing cavity",
       "pass": true,
       "intrusions": 0,
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 2 radial running gaps at Z=15.4",
@@ -213,7 +213,7 @@
         0.4166176224241642,
         0.4170000000000016
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 2 radial running gaps at Z=15.8",
@@ -222,7 +222,7 @@
         0.4220000000000006,
         0.42199999999999704
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 2 radial running gaps at Z=16.2",
@@ -231,7 +231,7 @@
         0.3876106184358541,
         0.3880000000000017
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 2 radial running gaps at Z=16.4",
@@ -240,7 +240,7 @@
         0.3846101242246469,
         0.38500000000000156
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 2 radial running gaps at Z=17.0",
@@ -249,7 +249,7 @@
         0.4220000000000006,
         0.42199999999999704
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     },
     {
       "name": "trial/pivot 2 radial running gaps at Z=17.4",
@@ -258,7 +258,7 @@
         0.4166176224241642,
         0.4170000000000016
       ],
-      "gcode_sha256": "44501c31b5e0ac928731b1d3f7bbfcf2c3c499b40ad7781bead2c61a859a794e"
+      "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
     }
   ],
   "adapted_from": "v16-field-book/source/tak_book.py",

@@ -12,7 +12,7 @@
     "01-print-in-place-bases": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "7a5122637d4703f01b589d562fe56ed72c4fdb36aca7f4ebd6729d09b65d9676",
+      "input_sha256": "9b0e47a91db4c82a76d2c24644bac5f008ba1d3a812a4cea8bdf502caf42ce06",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -51,8 +51,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "24319",
-        "weight": "153.50",
+        "prediction": "21819",
+        "weight": "141.92",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -62,14 +62,14 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "0902a81dbe253a9d65c55133a66333e5c3f83d96199f41c62e95192984c45293",
+      "project_sha256": "4e1aa5d9cf41212bb65c9e7384699fbc85353d040f8816d36857685cb64329cb",
       "project": "01-print-in-place-bases-CC2-PLA.3mf",
-      "gcode_sha256": "1a1605d201c97b2b6e9c51e567c320fda327dc9b35195c7d08421c3bb4643836"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     "02-sliding-board-tops": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "f16a5e7825700306be8163486792d252222f05a6453fe79cdc44d4e0a8ec221c",
+      "input_sha256": "2d05bbdd4b1e4b34487f129f3062047253ea2633e20782bc11e5846ddb18a258",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -108,7 +108,7 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "17559",
+        "prediction": "17560",
         "weight": "120.61",
         "first_layer_time": "0.000000",
         "outside": "false",
@@ -119,14 +119,14 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "49180626dcd46483456470c7096861cb00f3534a82b4bec60a37bfa8ab32c136",
+      "project_sha256": "01581e89174a3c74103771eb25118243ece4a710cbc71c82d04a50e4643d866b",
       "project": "02-sliding-board-tops-CC2-PLA.3mf",
-      "gcode_sha256": "0ee878888121f7f67c330e031fb044889c0b7f3a276775425706bef41f9eba0a"
+      "gcode_sha256": "916e23582e4c2b8615a6a95c50e5cf6f4f9d471a906d835af4a97f6c4c7b87e1"
     },
-    "03-hatch-hook-and-three-axle-caps": {
+    "03-flat-capstones-hook-and-collar": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "97b7f86aea2a4bc987f7b19b4fce7c877aecca19a1e92eb77bafb1713e10c636",
+      "input_sha256": "ba668b9a09e39c6bd84fba711fa38d6cc8da0d1422eeee27f2b09aae768a76b1",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -143,8 +143,8 @@
         "--slice",
         "0",
         "--export-3mf",
-        "<repo>/v22/PRINT/03-hatch-hook-and-three-axle-caps-CC2-PLA.3mf",
-        "<repo>/v22/plates/03-hatch-hook-and-three-axle-caps.3mf"
+        "<repo>/v22/PRINT/03-flat-capstones-hook-and-collar-CC2-PLA.3mf",
+        "<repo>/v22/plates/03-flat-capstones-hook-and-collar.3mf"
       ],
       "warnings": [
         {
@@ -154,11 +154,10 @@
         }
       ],
       "objects": [
-        "capstone-hatch",
+        "capstone-cat",
+        "capstone-witch",
         "side-hook",
-        "axle-end-cap-1",
-        "axle-end-cap-2",
-        "axle-end-cap-3"
+        "axle-end-cap"
       ],
       "non_printing_support_blockers": [],
       "slice_metadata": {
@@ -168,8 +167,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "1920",
-        "weight": "9.69",
+        "prediction": "1250",
+        "weight": "5.14",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -179,11 +178,11 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "cc5a8b7ea2c048dfcb1534ea7a7189a06fd2309288b92663851267c482281dd4",
-      "project": "03-hatch-hook-and-three-axle-caps-CC2-PLA.3mf",
-      "gcode_sha256": "e32d1a6bbee512e5a774e16923971cae19558ffe43bc932eb3182307ea43e6c3"
+      "project_sha256": "5ac1e6bec8d25e40dbf68b7ca236ab722ec1aa6e221776a31c9cfae32a9ddf75",
+      "project": "03-flat-capstones-hook-and-collar-CC2-PLA.3mf",
+      "gcode_sha256": "bbf43b8083ac1a586a477bfa998fc34a5ebc098cb51deac1adacb28b728d7410"
     }
   },
-  "total_estimated_seconds": 43798,
-  "total_estimated_grams": 283.8
+  "total_estimated_seconds": 40629,
+  "total_estimated_grams": 267.66999999999996
 }

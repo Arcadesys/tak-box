@@ -9,8 +9,8 @@
       "pass": true,
       "detail": [
         107.8,
-        238.4,
-        25.8
+        213.5,
+        19.3
       ]
     },
     {
@@ -86,48 +86,65 @@
       }
     },
     {
-      "name": "03-hatch-hook-and-three-axle-caps/capstone-hatch bed and build height",
+      "name": "03-flat-capstones-hook-and-collar/capstone-cat bed and build height",
       "pass": true,
       "detail": [
-        88.7,
-        28.900000000000013,
-        7.800000000000004
+        24.647448986165003,
+        17.892004476688,
+        8.0
       ]
     },
     {
-      "name": "capstone-hatch separation side-hook",
+      "name": "capstone-cat separation capstone-witch",
       "pass": true,
       "detail": {
-        "bounding_gap_mm": 14.299999999999997,
+        "bounding_gap_mm": 13.352551013834997,
         "paired_captive_hinges": false
       }
     },
     {
-      "name": "capstone-hatch separation axle-end-cap-1",
+      "name": "capstone-cat separation side-hook",
       "pass": true,
       "detail": {
-        "bounding_gap_mm": 14.299999999999997,
+        "bounding_gap_mm": 53.352551013835,
         "paired_captive_hinges": false
       }
     },
     {
-      "name": "capstone-hatch separation axle-end-cap-2",
+      "name": "capstone-cat separation axle-end-cap",
       "pass": true,
       "detail": {
-        "bounding_gap_mm": 26.299999999999997,
+        "bounding_gap_mm": 93.352551013835,
         "paired_captive_hinges": false
       }
     },
     {
-      "name": "capstone-hatch separation axle-end-cap-3",
+      "name": "03-flat-capstones-hook-and-collar/capstone-witch bed and build height",
+      "pass": true,
+      "detail": [
+        26.0,
+        19.268921529373003,
+        8.0
+      ]
+    },
+    {
+      "name": "capstone-witch separation side-hook",
       "pass": true,
       "detail": {
-        "bounding_gap_mm": 38.3,
+        "bounding_gap_mm": 14.0,
         "paired_captive_hinges": false
       }
     },
     {
-      "name": "03-hatch-hook-and-three-axle-caps/side-hook bed and build height",
+      "name": "capstone-witch separation axle-end-cap",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 54.0,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "03-flat-capstones-hook-and-collar/side-hook bed and build height",
       "pass": true,
       "detail": [
         28.5,
@@ -136,31 +153,15 @@
       ]
     },
     {
-      "name": "side-hook separation axle-end-cap-1",
+      "name": "side-hook separation axle-end-cap",
       "pass": true,
       "detail": {
-        "bounding_gap_mm": 27.5,
+        "bounding_gap_mm": 11.5,
         "paired_captive_hinges": false
       }
     },
     {
-      "name": "side-hook separation axle-end-cap-2",
-      "pass": true,
-      "detail": {
-        "bounding_gap_mm": 27.5,
-        "paired_captive_hinges": false
-      }
-    },
-    {
-      "name": "side-hook separation axle-end-cap-3",
-      "pass": true,
-      "detail": {
-        "bounding_gap_mm": 27.5,
-        "paired_captive_hinges": false
-      }
-    },
-    {
-      "name": "03-hatch-hook-and-three-axle-caps/axle-end-cap-1 bed and build height",
+      "name": "03-flat-capstones-hook-and-collar/axle-end-cap bed and build height",
       "pass": true,
       "detail": [
         7.0,
@@ -169,57 +170,14 @@
       ]
     },
     {
-      "name": "axle-end-cap-1 separation axle-end-cap-2",
-      "pass": true,
-      "detail": {
-        "bounding_gap_mm": 5.0,
-        "paired_captive_hinges": false
-      }
-    },
-    {
-      "name": "axle-end-cap-1 separation axle-end-cap-3",
-      "pass": true,
-      "detail": {
-        "bounding_gap_mm": 17.0,
-        "paired_captive_hinges": false
-      }
-    },
-    {
-      "name": "03-hatch-hook-and-three-axle-caps/axle-end-cap-2 bed and build height",
-      "pass": true,
-      "detail": [
-        7.0,
-        7.0,
-        4.0
-      ]
-    },
-    {
-      "name": "axle-end-cap-2 separation axle-end-cap-3",
-      "pass": true,
-      "detail": {
-        "bounding_gap_mm": 5.0,
-        "paired_captive_hinges": false
-      }
-    },
-    {
-      "name": "03-hatch-hook-and-three-axle-caps/axle-end-cap-3 bed and build height",
-      "pass": true,
-      "detail": [
-        7.0,
-        7.0,
-        4.0
-      ]
-    },
-    {
-      "name": "3mf-readback-03-hatch-hook-and-three-axle-caps",
+      "name": "3mf-readback-03-flat-capstones-hook-and-collar",
       "pass": true,
       "detail": {
         "objects": [
-          "capstone-hatch",
+          "capstone-cat",
+          "capstone-witch",
           "side-hook",
-          "axle-end-cap-1",
-          "axle-end-cap-2",
-          "axle-end-cap-3"
+          "axle-end-cap"
         ],
         "units": "mm",
         "sliced": false
@@ -232,7 +190,7 @@
         "housing-left",
         "housing-right"
       ],
-      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; hook flat; collar bore up.",
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.",
       "supports": true,
       "support_object_xy_distance_mm": 0.8
     },
@@ -241,19 +199,18 @@
         "board-left",
         "board-right"
       ],
-      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; hook flat; collar bore up.",
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.",
       "supports": true,
       "support_object_xy_distance_mm": 0.35
     },
-    "03-hatch-hook-and-three-axle-caps": {
+    "03-flat-capstones-hook-and-collar": {
       "objects": [
-        "capstone-hatch",
+        "capstone-cat",
+        "capstone-witch",
         "side-hook",
-        "axle-end-cap-1",
-        "axle-end-cap-2",
-        "axle-end-cap-3"
+        "axle-end-cap"
       ],
-      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; hook flat; collar bore up.",
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.",
       "supports": true,
       "support_object_xy_distance_mm": 0.35
     }

@@ -12,11 +12,6 @@
       "symmetric_difference_mm3": 0.0
     },
     {
-      "part": "capstone-hatch",
-      "pass": true,
-      "symmetric_difference_mm3": 0.0
-    },
-    {
       "part": "side-hook",
       "pass": true,
       "symmetric_difference_mm3": 0.0
@@ -27,6 +22,15 @@
       "symmetric_difference_mm3": 0.0
     }
   ],
-  "status": "Current thin-body hinge candidate; capstone direction unresolved",
+  "new_parts": [
+    "paired print-in-place bases",
+    "V22 flat Cat capstone",
+    "V22 flat Witch capstone"
+  ],
+  "removed_parts": [
+    "rear capstone compartment and hatch",
+    "main hinge filament pins and two collars",
+    "hatch filament axle and two collars"
+  ],
   "physical_interchangeability_observed": false
 }

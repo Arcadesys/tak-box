@@ -9,8 +9,8 @@
       "name": "housing-left STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 7032,
-        "cad_volume_mm3": 80233.17457938893
+        "triangles": 4828,
+        "cad_volume_mm3": 70479.20485239376
       }
     },
     {
@@ -35,8 +35,8 @@
       "name": "housing-right STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 5252,
-        "cad_volume_mm3": 70183.13709516068
+        "triangles": 5316,
+        "cad_volume_mm3": 70515.00709516078
       }
     },
     {
@@ -53,16 +53,29 @@
       }
     },
     {
-      "name": "capstone-hatch valid single solid",
+      "name": "capstone-cat valid single solid",
       "pass": true,
       "detail": null
     },
     {
-      "name": "capstone-hatch STEP/STL readback",
+      "name": "capstone-cat STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 696,
-        "cad_volume_mm3": 8120.6400201986435
+        "triangles": 2592,
+        "cad_volume_mm3": 2477.7255490539355
+      }
+    },
+    {
+      "name": "capstone-witch valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-witch STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 1040,
+        "cad_volume_mm3": 1508.4121272162577
       }
     },
     {
@@ -228,25 +241,39 @@
       "detail": null
     },
     {
-      "name": "capstone hatch catch holds lift",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "released hatch 0..100 at 5 degree samples",
-      "pass": true,
-      "detail": {
-        "max_overlap_mm3": 0,
-        "at": null
-      }
-    },
-    {
       "name": "cat flat CAD valid",
       "pass": true,
       "detail": null
     },
     {
-      "name": "cat capstone CAD valid",
+      "name": "cat flat capstone valid and under roof",
+      "pass": true,
+      "detail": {
+        "stored_size_mm": [
+          24.647448986169778,
+          17.89200447668827,
+          8.0
+        ],
+        "roof_gap_mm": 0.3999999999999986
+      }
+    },
+    {
+      "name": "cat capstone rim blocks planar escape 3,0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cat capstone rim blocks planar escape -3,0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cat capstone rim blocks planar escape 0,3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cat capstone rim blocks planar escape 0,-3",
       "pass": true,
       "detail": null
     },
@@ -256,12 +283,39 @@
       "detail": null
     },
     {
-      "name": "witch capstone CAD valid",
+      "name": "witch flat capstone valid and under roof",
+      "pass": true,
+      "detail": {
+        "stored_size_mm": [
+          26.0,
+          19.268921529372847,
+          8.0
+        ],
+        "roof_gap_mm": 0.3999999999999986
+      }
+    },
+    {
+      "name": "witch capstone rim blocks planar escape 3,0",
       "pass": true,
       "detail": null
     },
     {
-      "name": "left actual original pieces clear assembled storage",
+      "name": "witch capstone rim blocks planar escape -3,0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "witch capstone rim blocks planar escape 0,3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "witch capstone rim blocks planar escape 0,-3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left exact flats and new flat capstone clear assembled storage",
       "pass": true,
       "detail": {
         "max_overlap_mm3": 0,
@@ -269,7 +323,7 @@
       }
     },
     {
-      "name": "right actual original pieces clear assembled storage",
+      "name": "right exact flats and new flat capstone clear assembled storage",
       "pass": true,
       "detail": {
         "max_overlap_mm3": 0,
@@ -277,7 +331,7 @@
       }
     },
     {
-      "name": "cap actual original pieces clear assembled storage",
+      "name": "stored pieces are mutually disjoint",
       "pass": true,
       "detail": {
         "max_overlap_mm3": 0,
@@ -285,7 +339,7 @@
       }
     },
     {
-      "name": "loaded original pieces clear opposite modules during fold at 15 degrees",
+      "name": "loaded flats and flat capstones clear opposite modules during fold at 15 degrees",
       "pass": true,
       "detail": {
         "max_overlap_mm3": 0,
@@ -293,15 +347,7 @@
       }
     },
     {
-      "name": "loaded capstones clear hatch opening at 5 degrees",
-      "pass": true,
-      "detail": {
-        "max_overlap_mm3": 0,
-        "at": null
-      }
-    },
-    {
-      "name": "left all original flats lift from fixed pockets",
+      "name": "left all flats and flat capstone lift from fixed pockets",
       "pass": true,
       "detail": {
         "max_overlap_mm3": 0,
@@ -317,7 +363,7 @@
       }
     },
     {
-      "name": "right all original flats lift from fixed pockets",
+      "name": "right all flats and flat capstone lift from fixed pockets",
       "pass": true,
       "detail": {
         "max_overlap_mm3": 0,
@@ -350,22 +396,24 @@
   "cadquery": "2.7.0",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "source_sha256": {
-    "render_case.py": "718a36e9e29c477f7ad7c5e81c502c921ef5d00b9bca15f345f065c32bc78fc5",
+    "render_case.py": "9ed524ae030cfa1715402aacaf556167cfeefda2b2b838f9261c11a6bcf07df1",
     "verify_package.py": "e9b9075d085edc33ac01c82f6e6c8bfe8836614d768a2bc558cc9ee878424ef4",
-    "inspect_case_layers.py": "adca763a1952bc57f5275dd881610db98aabc6f6f525edb1dfbbd1c8b88508c6",
+    "inspect_case_layers.py": "c275c4bd687437ea83caf5420764b825b5cc1577538267991ebbb0b568095acd",
     "build_fitcheck.py": "addedac3f6e29ca4249f653572712c07d926611f3dde7a8fb279ab893573f91e",
-    "verify_hardware.py": "c78938038d830b26fb0cd7e8a1899d0873781ebe67bf01af56ff13bdc18aa6d4",
-    "package_case.py": "cf1c65f308588713021d5ed25ba8da5d9cdf7e3e148e5513482743d12f20f427",
-    "build_case.py": "085f60abe014c7047fc03913ed00448196e37ecf0c994a860f0dbbd32bafd9a8",
+    "verify_hardware.py": "daa0ac807a132e25d4779f0e3996686195d30adbbc03a9cdb1f73d4c54e2389b",
+    "package_case.py": "89d3992299d475abdbbcae46bdf7bbed8d48363ac1bf7eba318e1cfb538d0947",
+    "build_case.py": "9287ffa503453fe8dbc5749c742b448b6c47ca9593df030846300bd5385dff0f",
     "verify_field.py": "c26a843517ba94f5b5551c1cf8422e66827c511b125329dd6d13614b8108052d",
-    "case.py": "155c01713939c17fc1803862a2a03777e2bb1c07a0e21994f8026dbd872659b3",
-    "package_release.py": "cbad8edbec60218acdd7a3dc2b7e07b2d1c194f464516a46636d7e8e6bf4ee1d",
-    "slice_case.py": "90fd0064d0327b626d81c7832b329ee073d05afa753791b495da844d9b9cbe92",
-    "verify_pin_toolpaths.py": "a2208d1da2567bc381769e948bfe4d6458c38a22d201760e6d9971316f9a6c74",
-    "record_provenance.py": "c052987bed73b57a3e61fdb0474c19d58a049e59ba1f0f81f48ecd47fe0a019f"
+    "case.py": "c4d43b94a32d33d99e06591e3d9d7e4d9633c648c9648e4c2740ad29eefe033c",
+    "package_release.py": "1a707dc0d0e7e395eaf96b1dbe44ba34a9831fa6dfbc82858756ba60ae6947ba",
+    "flat_capstones.py": "9a97013708dda2d92faafb5f38eb73295dff50a8433ae4fa1c788d825f4709d0",
+    "slice_case.py": "5b1fab4ef54d4071a0638514e11d2bbfb2c1c7cab4e98ca55f7c5a367aa6b3be",
+    "verify_pin_toolpaths.py": "baa6d643cb7b8dfac1a98028684f70415412678dccc7d38bf6c3649a59d4b887",
+    "verify_pip_hinges.py": "425da562d9e0c99ca5dfc6585d75575734ec2ca2f70c06edb9547e6a06093ce9",
+    "record_provenance.py": "b41dde7ca7e8ee39444d330da2809970a8a74bbf1b8d602feb755c7e31ce2f83"
   },
   "piece_package": {
-    "name": "pieces original Cat/Witch",
+    "name": "original Cat/Witch flats plus V22 one-piece flat capstones",
     "flats_mm": [
       20,
       20,
@@ -374,23 +422,22 @@
     "source_and_mesh_hashes": {
       "tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
       "cat-flat.stl": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1",
-      "witch-flat.stl": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba",
-      "cat-capstone.stl": "d358aefa0c9cc3ae70cd99a2c7e1f8f7038c461fff386d49f30528063948c204",
-      "witch-capstone.stl": "4cd1a3ca3e1f49c6d55ae9caeec03f600335f762fd52725ee47103b2c3a88f1a"
+      "witch-flat.stl": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba"
     },
-    "compatibility": "Detailed current CAD checked; old cat capstone STL is not watertight, so it is not used for volume fit. Original source CAD is valid; no piece exports changed."
+    "flat_capstone_source_sha256": "9a97013708dda2d92faafb5f38eb73295dff50a8433ae4fa1c788d825f4709d0",
+    "compatibility": "Original 20x20x8 mm flats retained. Original sculpted and curled capstones do not fit the new under-board bays; use the two supplied V22 flat capstones."
   },
   "closed_body_and_hook_envelope_mm": [
     109.80015020028128,
-    240.4010627228925,
-    32.60268550629903
+    220.20000010000007,
+    32.600000100000116
   ],
   "physical_acceptance": false,
   "limitations": [
     "Motion sampled; not a continuous sweep proof.",
     "Flex release poses assume cubic deformation, not FEA or measured actuation.",
     "Hinge/clip/support removal/strength/loaded transport require physical observation.",
-    "Original Cat/Witch set only. Weighted and curled sets unverified.",
-    "Main folding pivots print captive; remaining hatch/hook filament pins require end retention. Loaded stiffness and durability remain physical tests."
+    "Original Cat/Witch flats plus supplied V22 flat capstones only. Weighted flats and older sculpted/curled capstones are not qualified.",
+    "Main folding pivots print captive; remaining hook filament pin require end retention. Loaded stiffness and durability remain physical tests."
   ]
 }

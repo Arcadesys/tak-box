@@ -1,6 +1,6 @@
 {
   "01-print-in-place-bases": {
-    "levels": 129,
+    "levels": 96,
     "selected_z_mm": [
       0.2,
       2.2,
@@ -13,16 +13,16 @@
       16.4,
       17.8,
       18.4,
-      25.6
+      19.2
     ],
     "xy_centerline_bounds_mm": [
       [
         10.41,
-        4.4559999999999995
+        3.995
       ],
       [
         223.974,
-        246.567
+        228.205
       ]
     ],
     "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
@@ -36,7 +36,7 @@
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observations": "Both base floors lie on the bed as one grouped assembly; centre seam remains open in reviewed layers; local external support remains. Captive-bearing detail sheets show separate pin and socket contours."
+    "observations": "Paired floors lie flat with an open centre seam; rear shallow capstone bays visible; external supports remain outside captive bearings."
   },
   "02-sliding-board-tops": {
     "levels": 28,
@@ -73,31 +73,32 @@
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observations": "Boards lie directly on their broad undersides; catch slots and recessed grid visible; no broad underside support blanket in selected layers."
+    "observations": "Both board backs start on the bed; catch gaps and upper grid lines remain visible through the selected layers."
   },
-  "03-hatch-hook-and-three-axle-caps": {
-    "levels": 39,
+  "03-flat-capstones-hook-and-collar": {
+    "levels": 40,
     "selected_z_mm": [
       0.2,
+      0.6,
       1.2,
       2.0,
-      2.6,
       3.2,
-      3.4,
-      4.2,
+      4.0,
       5.0,
       6.0,
+      6.6,
       7.0,
-      7.8
+      7.4,
+      8.0
     ],
     "xy_centerline_bounds_mm": [
       [
-        3.968,
+        1.646,
         1.644
       ],
       [
-        146.356,
-        62.356
+        137.356,
+        31.616
       ]
     ],
     "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
@@ -111,6 +112,6 @@
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observations": "Hatch broad face down, hook flat and three collars bore-up. Local hatch support remains."
+    "observations": "Four separate parts start on the bed; capstone details grow from the continuous body top, with no floating marks."
   }
 }

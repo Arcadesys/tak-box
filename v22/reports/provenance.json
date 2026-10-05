@@ -1,5 +1,5 @@
 {
-  "source_revision": "6b081e8a2e35f0c5455a1be2279fa1a1b194df28",
+  "source_revision": "7b75f6549bf89e7f6d5f77f10ff07ad68d0f7ae0",
   "runtime_python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
   "installed_dependencies": {
     "cadquery": "2.7.0",
@@ -14,20 +14,22 @@
   "recovery_base_revision": "2589129101d6f63533b425bff4855ec84a735904",
   "python_environment": ".slicer-work/cad-venv (Python 3.12.13; requirements.txt)",
   "source_and_dependency_sha256": {
-    "source/render_case.py": "718a36e9e29c477f7ad7c5e81c502c921ef5d00b9bca15f345f065c32bc78fc5",
+    "source/render_case.py": "9346322bb80493c663fa97fb6bc9c6c10c7d9784d5d0cdd25a2a4c7d6d955a33",
     "source/verify_package.py": "e9b9075d085edc33ac01c82f6e6c8bfe8836614d768a2bc558cc9ee878424ef4",
-    "source/inspect_case_layers.py": "adca763a1952bc57f5275dd881610db98aabc6f6f525edb1dfbbd1c8b88508c6",
+    "source/inspect_case_layers.py": "c275c4bd687437ea83caf5420764b825b5cc1577538267991ebbb0b568095acd",
     "source/build_fitcheck.py": "addedac3f6e29ca4249f653572712c07d926611f3dde7a8fb279ab893573f91e",
-    "source/verify_hardware.py": "c78938038d830b26fb0cd7e8a1899d0873781ebe67bf01af56ff13bdc18aa6d4",
-    "source/package_case.py": "cf1c65f308588713021d5ed25ba8da5d9cdf7e3e148e5513482743d12f20f427",
-    "source/build_case.py": "085f60abe014c7047fc03913ed00448196e37ecf0c994a860f0dbbd32bafd9a8",
+    "source/verify_flat_capstones.py": "8c20828e1a9b35d77d1ed2996a0bda108c081a0ba5a68f51359d6b4921c15aa8",
+    "source/verify_hardware.py": "550dcf2e91e31d7bc9a0cb4feaaca21ee339219420f729d4fdc39c4c4dd5239c",
+    "source/package_case.py": "89d3992299d475abdbbcae46bdf7bbed8d48363ac1bf7eba318e1cfb538d0947",
+    "source/build_case.py": "9287ffa503453fe8dbc5749c742b448b6c47ca9593df030846300bd5385dff0f",
     "source/verify_field.py": "c26a843517ba94f5b5551c1cf8422e66827c511b125329dd6d13614b8108052d",
-    "source/case.py": "155c01713939c17fc1803862a2a03777e2bb1c07a0e21994f8026dbd872659b3",
+    "source/case.py": "c4d43b94a32d33d99e06591e3d9d7e4d9633c648c9648e4c2740ad29eefe033c",
     "source/package_release.py": "1a707dc0d0e7e395eaf96b1dbe44ba34a9831fa6dfbc82858756ba60ae6947ba",
+    "source/flat_capstones.py": "9a97013708dda2d92faafb5f38eb73295dff50a8433ae4fa1c788d825f4709d0",
     "source/slice_case.py": "5b1fab4ef54d4071a0638514e11d2bbfb2c1c7cab4e98ca55f7c5a367aa6b3be",
-    "source/verify_pin_toolpaths.py": "a2208d1da2567bc381769e948bfe4d6458c38a22d201760e6d9971316f9a6c74",
+    "source/verify_pin_toolpaths.py": "baa6d643cb7b8dfac1a98028684f70415412678dccc7d38bf6c3649a59d4b887",
     "source/verify_pip_hinges.py": "425da562d9e0c99ca5dfc6585d75575734ec2ca2f70c06edb9547e6a06093ce9",
-    "source/record_provenance.py": "5ce1017810f5d11427c527e12b3d57d7235bede4ae7e57205d19831a64451822",
+    "source/record_provenance.py": "a5cea34cad35d90b041562274fb99d2028c0d1206fa65654ac5dc5aa3049d271",
     "requirements.txt": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575",
     "source/vendor/body/export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e",
     "source/vendor/body/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
@@ -37,7 +39,7 @@
   "checks": [
     {
       "report": "geometry.json",
-      "checks": 52,
+      "checks": 59,
       "pass": true
     },
     {
@@ -47,22 +49,27 @@
     },
     {
       "report": "hardware.json",
-      "checks": 15,
+      "checks": 6,
       "pass": true
     },
     {
       "report": "plates.json",
-      "checks": 25,
+      "checks": 20,
       "pass": true
     },
     {
       "report": "pin-toolpaths.json",
-      "checks": 8,
+      "checks": 3,
       "pass": true
     },
     {
       "report": "pip-hinges.json",
       "checks": 32,
+      "pass": true
+    },
+    {
+      "report": "flat-capstones.json",
+      "checks": 20,
       "pass": true
     },
     {
@@ -73,6 +80,8 @@
   ],
   "three_project_input_profile_hashes_match": true,
   "selected_layer_visual_reviews_recorded": true,
+  "capstone_layout": "One-piece flat Cat/Witch capstones in shallow bays under the sliding boards; rear compartment and hatch removed",
+  "captive_hinge_toolpath_scope": "Opposed-pivot CAD clearance and axial capture; no support centerlines in cylindrical bearing cavity; sampled radial gaps with conservative 0.50 mm bead-width assumption. Does not prove continuous extrusion clearance, joint release force, strength or physical durability.",
   "filament_toolpath_scope": "Extrusion centerlines inside a nominal 1.75 mm pin core, cropped at passage ends. No bead-width/force/physical-fit proof.",
   "closure": "Side swivel hook over a headed printed pin; friction set by bonded pivot collar. No detent/force/physical retention qualification.",
   "printer_started": false,
