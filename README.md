@@ -2,7 +2,25 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Current design: [v16 field book](v16-field-book)
+## Current v17 direction: [four leaves on one common hinge](v17-four-leaf)
+
+Two drawer housings and two board leaves share one hinge axis. Covered
+sliding drawers keep flats enclosed while the leaves rotate. Board leaves
+will snap into their play positions; a [two-piece squeeze buckle](v17-squeeze-latch) is the
+current case-closure trial. The 180 mm field and 36 mm pitch remain.
+
+This is a CAD motion study, **not a full-print release**. Paired folding,
+independent board rotation, original-flat envelopes, solids and exported
+meshes pass the recorded sampled checks. Board snaps, drawer releases,
+rear capstone hatch and case-closure integration remain unfinished. The
+previous four-part draw-latch trial was rejected as confusing.
+The main body is provisionally 101×236×32.6 mm, excluding closure hardware;
+it is thinner but longer than v16. No final size saving is claimed yet.
+
+The [screw-clamped draft](v17-compact-folio) was rejected and is history only.
+The later pin/sleeve idea was also rejected; it is not the selected closure.
+
+## Previous travel prototype: [v16 field book](v16-field-book)
 
 The separate [full-size pagoda foundation](full-size-pagoda-v1/README.md) uses
 25 × 25 × 10 mm weighted flats, scaled existing Fox/Cat capstones and a lift-out
@@ -18,7 +36,10 @@ The board folds in half with its face inside, and there's a snap-in piece tray u
 - **Assembly:** the board plates drop onto locating pegs and glue into shallow wells, so they line up without a jig.
 - **Size:** 101 × 202 × 51 mm closed.
 
-It has four multi-colour print plates and has not been printed yet. See the [v16 README](v16-field-book/README.md) for plates, assembly and checks.
+It has four multi-colour print plates. The user reports physical piece-retention
+and closure failures; the exact printed component revisions are unknown.
+See the [v16 README](v16-field-book/README.md) for retained plates and source;
+its blanket unprinted statement is historical and superseded by those reports.
 
 ## Pieces: [pieces](pieces)
 

@@ -1,0 +1,185 @@
+{
+  "bed_mm": [
+    256,
+    256
+  ],
+  "checks": [
+    {
+      "name": "board-left within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left separated from board-right",
+      "pass": true,
+      "detail": 5.0
+    },
+    {
+      "name": "board-left separated from rear-cap-compartment",
+      "pass": true,
+      "detail": 5.0
+    },
+    {
+      "name": "board-left separated from A-squeeze-clip",
+      "pass": true,
+      "detail": 115.0
+    },
+    {
+      "name": "board-left separated from B-socket",
+      "pass": true,
+      "detail": 115.0
+    },
+    {
+      "name": "board-right within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right separated from rear-cap-compartment",
+      "pass": true,
+      "detail": 16.0
+    },
+    {
+      "name": "board-right separated from A-squeeze-clip",
+      "pass": true,
+      "detail": 9.0
+    },
+    {
+      "name": "board-right separated from B-socket",
+      "pass": true,
+      "detail": 9.0
+    },
+    {
+      "name": "rear-cap-compartment within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "rear-cap-compartment separated from A-squeeze-clip",
+      "pass": true,
+      "detail": 189.8
+    },
+    {
+      "name": "rear-cap-compartment separated from B-socket",
+      "pass": true,
+      "detail": 149.8
+    },
+    {
+      "name": "A-squeeze-clip within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A-squeeze-clip separated from B-socket",
+      "pass": true,
+      "detail": 9.0
+    },
+    {
+      "name": "B-socket within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-01-boards-cap-compartment-and-latch-trial",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "board-left",
+          "board-right",
+          "rear-cap-compartment",
+          "A-squeeze-clip",
+          "B-socket"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "housing-left within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left separated from housing-right",
+      "pass": true,
+      "detail": 5.0
+    },
+    {
+      "name": "housing-right within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-02-drawer-housings",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "housing-left",
+          "housing-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "drawer-left within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "drawer-left separated from drawer-right",
+      "pass": true,
+      "detail": 5.7
+    },
+    {
+      "name": "drawer-right within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-03-piece-drawers",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "drawer-left",
+          "drawer-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "A-squeeze-clip within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A-squeeze-clip separated from B-socket",
+      "pass": true,
+      "detail": 11.6
+    },
+    {
+      "name": "B-socket within bed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-04-latch-trial-only",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "A-squeeze-clip",
+          "B-socket"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  ],
+  "limitations": [
+    "Generic unsliced 3MF. No slicer profile or supports assigned.",
+    "Full case remains an incomplete motion study, not a print release.",
+    "Steel hinge axles are hardware reference models and are intentionally excluded.",
+    "Plate 04 duplicates latch parts on plate 01; print only one copy."
+  ]
+}

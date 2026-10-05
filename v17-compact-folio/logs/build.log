@@ -1,0 +1,59 @@
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+PASS valid-solids: {'shell': [97.8, 202.0, 23.0], 'retaining-lid': [97.8, 202.0, 11.6], 'board-A': [101.0, 202.0, 7.0], 'board-B': [101.0, 202.0, 7.0], 'grid-A': [90.2, 180.8, 0.6], 'grid-B': [90.2, 180.8, 0.6]}
+PASS assembled-part-clearances: shell, independent roof and board A
+PASS fold-sweep: {0: 0.0, 5: 0.0, 10: 0.0, 15: 0.0, 20: 0.0, 25: 0.0, 30: 0.0, 35: 0.0, 40: 0.0, 45: 0.0, 50: 0.0, 55: 0.0, 60: 0.0, 65: 0.0, 70: 0.0, 75: 0.0, 80: 0.0, 85: 0.0, 90: 0.0, 95: 0.0, 100: 0.0, 105: 0.0, 110: 0.0, 115: 0.0, 120: 0.0, 125: 0.0, 130: 0.0, 135: 0.0, 140: 0.0, 145: 0.0, 150: 0.0, 155: 0.0, 160: 0.0, 165: 0.0, 170: 0.0, 175: 0.0, 180: 0.0}
+PASS board-playability: {'pitch_mm': 36.0, 'field_mm': 180.0, 'gap_for_20mm_flat': 16.0, 'grid_flush': True, 'board_thickness_mm': 3.0}
+PASS 42-flats-and-real-pawns: {19.5: {'max_shell_or_roof_overlap_mm3': 0.0, 'min_roof_clearance_mm': 1.5, 'piece_to_piece_overlap_mm3': 0.0}, 20.0: {'max_shell_or_roof_overlap_mm3': 0.0, 'min_roof_clearance_mm': 1.0, 'piece_to_piece_overlap_mm3': 0.0}}
+PASS transport-retention: {'normal_wall_to_roof_gap_mm': 2.5, 'scallop_to_lid_tongue_gap_mm': 0.4, 'minimum_flat_dimension_mm': 8.0, 'cap_minimum_envelope_mm': 19.4, 'limits': 'Closed rigid roof blocks overtopping; screws hold all leaves. This is a geometric barrier check, not a shake/strength test.'}
+PASS representative-escape-attempts: {'(0, -2.0, 0)': 542.4105, '(0, 0, 2.0)': 78.0, '(-2.0, 0, 0)': 177.6, '(2.0, 0, 0)': 244.2}
+PASS closed-screw-clearance: {'hardware': '4 M3x16 socket-head screws, 4 DIN934 nuts; nominal 6mm head x 3mm height', 'screw_tip_z_mm': 16.0, 'nut_seat_z_mm': 18.0, 'nut_thickness_mm': 2.4, 'shaft_hole_d_mm': 3.4}
+PASS compact-envelope: {'closed_with_screw_heads_mm': [101.0, 202.0, 35.0], 'v16_mm': [101.0, 202.0, 51.0], 'volume_reduction_percent': np.float64(31.4)}
+PASS bed-fit: 256 mm bed; board hinge pair occupies 196 x 202 mm
+PASS mesh-shell: {'triangles': 1814, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-retaining-lid: {'triangles': 1564, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-board-A: {'triangles': 3992, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-board-B: {'triangles': 3996, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-grid-A: {'triangles': 292, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-grid-B: {'triangles': 292, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-trial-fastener-0: {'triangles': 544, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-trial-fastener-1: {'triangles': 520, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-trial-fastener-2: {'triangles': 520, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-trial-lane: {'triangles': 70, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS mesh-trial-lane-roof: {'triangles': 28, 'closed': True, 'oriented': True, 'positive_volume': True, 'nondegenerate': True}
+PASS 3mf-readback-00-fit-trials: {'objects': ['trial-fastener-0', 'trial-fastener-1', 'trial-fastener-2'], 'units': 'mm', 'sliced': False}
+PASS 3mf-readback-00b-lane-retention: {'objects': ['lane', 'roof'], 'units': 'mm', 'sliced': False}
+PASS 3mf-readback-01-shell-and-roof: {'objects': ['shell', 'roof'], 'units': 'mm', 'sliced': False}
+PASS 3mf-readback-02-folding-board: {'objects': ['board-A', 'board-B', 'grid-A', 'grid-B'], 'units': 'mm', 'sliced': False}
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-nvyjkf5f because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+ALL DIGITAL CHECKS PASS. Physical retention, fit and slicing remain untested.

@@ -1,0 +1,260 @@
+{
+  "checks": [
+    {
+      "name": "housing-left solid",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "board-left solid",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "drawer-left solid",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "housing-right solid",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "board-right solid",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "drawer-right solid",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "housing-left STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left STL",
+      "pass": true,
+      "detail": {
+        "triangles": 1348,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "board-left STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left STL",
+      "pass": true,
+      "detail": {
+        "triangles": 1672,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "drawer-left STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "drawer-left STL",
+      "pass": true,
+      "detail": {
+        "triangles": 716,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "housing-right STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right STL",
+      "pass": true,
+      "detail": {
+        "triangles": 1320,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "board-right STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right STL",
+      "pass": true,
+      "detail": {
+        "triangles": 1672,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "drawer-right STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "drawer-right STL",
+      "pass": true,
+      "detail": {
+        "triangles": 716,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "rear-cap-compartment STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "rear-cap-compartment STL",
+      "pass": true,
+      "detail": {
+        "triangles": 28,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "common-axle-0 STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "common-axle-0 STL",
+      "pass": true,
+      "detail": {
+        "triangles": 332,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "common-axle-1 STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "common-axle-1 STL",
+      "pass": true,
+      "detail": {
+        "triangles": 332,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    {
+      "name": "left flats clear housing",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "left flats clear board",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "left flats clear drawer",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "left drawer clear housing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right flats clear housing",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "right flats clear board",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "right flats clear drawer",
+      "pass": true,
+      "detail": 0.0
+    },
+    {
+      "name": "right drawer clear housing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cap 0 clears compartment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cap 1 clears compartment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired right leaves fold 0..180 in 10 degree samples",
+      "pass": true,
+      "detail": [
+        0,
+        null
+      ]
+    },
+    {
+      "name": "left independent board 0..90 degree samples",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right independent board 0..90 degree samples",
+      "pass": true,
+      "detail": 0
+    }
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "cadquery": "2.7.0",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "source_sha256": {
+    "folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
+    "build_study.py": "6ba7bd9a024009de27ceafa0dd17ab934210f3f72c021bcedfc01932f9cebb47",
+    "export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e"
+  },
+  "limitations": [
+    "Architecture study only: drawer latches/stops, rear hatch, board snaps and direct case closure not modeled.",
+    "Sampled motion does not establish continuous swept clearance or physical performance.",
+    "Capstones checked as conservative original envelopes, not detailed shapes.",
+    "No slicing or physical tests. No print plates released."
+  ]
+}

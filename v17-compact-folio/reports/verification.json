@@ -1,0 +1,363 @@
+{
+  "physical_acceptance": false,
+  "checks": {
+    "valid-solids": {
+      "pass": true,
+      "detail": {
+        "shell": [
+          97.8,
+          202.0,
+          23.0
+        ],
+        "retaining-lid": [
+          97.8,
+          202.0,
+          11.6
+        ],
+        "board-A": [
+          101.0,
+          202.0,
+          7.0
+        ],
+        "board-B": [
+          101.0,
+          202.0,
+          7.0
+        ],
+        "grid-A": [
+          90.2,
+          180.8,
+          0.6
+        ],
+        "grid-B": [
+          90.2,
+          180.8,
+          0.6
+        ]
+      }
+    },
+    "assembled-part-clearances": {
+      "pass": true,
+      "detail": "shell, independent roof and board A"
+    },
+    "fold-sweep": {
+      "pass": true,
+      "detail": {
+        "0": 0.0,
+        "5": 0.0,
+        "10": 0.0,
+        "15": 0.0,
+        "20": 0.0,
+        "25": 0.0,
+        "30": 0.0,
+        "35": 0.0,
+        "40": 0.0,
+        "45": 0.0,
+        "50": 0.0,
+        "55": 0.0,
+        "60": 0.0,
+        "65": 0.0,
+        "70": 0.0,
+        "75": 0.0,
+        "80": 0.0,
+        "85": 0.0,
+        "90": 0.0,
+        "95": 0.0,
+        "100": 0.0,
+        "105": 0.0,
+        "110": 0.0,
+        "115": 0.0,
+        "120": 0.0,
+        "125": 0.0,
+        "130": 0.0,
+        "135": 0.0,
+        "140": 0.0,
+        "145": 0.0,
+        "150": 0.0,
+        "155": 0.0,
+        "160": 0.0,
+        "165": 0.0,
+        "170": 0.0,
+        "175": 0.0,
+        "180": 0.0
+      }
+    },
+    "board-playability": {
+      "pass": true,
+      "detail": {
+        "pitch_mm": 36.0,
+        "field_mm": 180.0,
+        "gap_for_20mm_flat": 16.0,
+        "grid_flush": true,
+        "board_thickness_mm": 3.0
+      }
+    },
+    "42-flats-and-real-pawns": {
+      "pass": true,
+      "detail": {
+        "19.5": {
+          "max_shell_or_roof_overlap_mm3": 0.0,
+          "min_roof_clearance_mm": 1.5,
+          "piece_to_piece_overlap_mm3": 0.0
+        },
+        "20.0": {
+          "max_shell_or_roof_overlap_mm3": 0.0,
+          "min_roof_clearance_mm": 1.0,
+          "piece_to_piece_overlap_mm3": 0.0
+        }
+      }
+    },
+    "transport-retention": {
+      "pass": true,
+      "detail": {
+        "normal_wall_to_roof_gap_mm": 2.5,
+        "scallop_to_lid_tongue_gap_mm": 0.4,
+        "minimum_flat_dimension_mm": 8.0,
+        "cap_minimum_envelope_mm": 19.4,
+        "limits": "Closed rigid roof blocks overtopping; screws hold all leaves. This is a geometric barrier check, not a shake/strength test."
+      }
+    },
+    "representative-escape-attempts": {
+      "pass": true,
+      "detail": {
+        "(0, -2.0, 0)": 542.4105,
+        "(0, 0, 2.0)": 78.0,
+        "(-2.0, 0, 0)": 177.6,
+        "(2.0, 0, 0)": 244.2
+      }
+    },
+    "closed-screw-clearance": {
+      "pass": true,
+      "detail": {
+        "hardware": "4 M3x16 socket-head screws, 4 DIN934 nuts; nominal 6mm head x 3mm height",
+        "screw_tip_z_mm": 16.0,
+        "nut_seat_z_mm": 18.0,
+        "nut_thickness_mm": 2.4,
+        "shaft_hole_d_mm": 3.4
+      }
+    },
+    "compact-envelope": {
+      "pass": true,
+      "detail": {
+        "closed_with_screw_heads_mm": [
+          101.0,
+          202.0,
+          35.0
+        ],
+        "v16_mm": [
+          101.0,
+          202.0,
+          51.0
+        ],
+        "volume_reduction_percent": 31.4
+      }
+    },
+    "bed-fit": {
+      "pass": true,
+      "detail": "256 mm bed; board hinge pair occupies 196 x 202 mm"
+    },
+    "mesh-shell": {
+      "pass": true,
+      "detail": {
+        "triangles": 1814,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-retaining-lid": {
+      "pass": true,
+      "detail": {
+        "triangles": 1564,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-board-A": {
+      "pass": true,
+      "detail": {
+        "triangles": 3992,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-board-B": {
+      "pass": true,
+      "detail": {
+        "triangles": 3996,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-grid-A": {
+      "pass": true,
+      "detail": {
+        "triangles": 292,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-grid-B": {
+      "pass": true,
+      "detail": {
+        "triangles": 292,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-trial-fastener-0": {
+      "pass": true,
+      "detail": {
+        "triangles": 544,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-trial-fastener-1": {
+      "pass": true,
+      "detail": {
+        "triangles": 520,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-trial-fastener-2": {
+      "pass": true,
+      "detail": {
+        "triangles": 520,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-trial-lane": {
+      "pass": true,
+      "detail": {
+        "triangles": 70,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "mesh-trial-lane-roof": {
+      "pass": true,
+      "detail": {
+        "triangles": 28,
+        "closed": true,
+        "oriented": true,
+        "positive_volume": true,
+        "nondegenerate": true
+      }
+    },
+    "3mf-readback-00-fit-trials": {
+      "pass": true,
+      "detail": {
+        "objects": [
+          "trial-fastener-0",
+          "trial-fastener-1",
+          "trial-fastener-2"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    "3mf-readback-00b-lane-retention": {
+      "pass": true,
+      "detail": {
+        "objects": [
+          "lane",
+          "roof"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    "3mf-readback-01-shell-and-roof": {
+      "pass": true,
+      "detail": {
+        "objects": [
+          "shell",
+          "roof"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    "3mf-readback-02-folding-board": {
+      "pass": true,
+      "detail": {
+        "objects": [
+          "board-A",
+          "board-B",
+          "grid-A",
+          "grid-B"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  },
+  "environment": {
+    "cadquery": "2.7.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "baseline": "88bc668a1752b2dbc1a2edfc967dcbb525b6f4d0",
+  "command": "python v17-compact-folio/source/build.py",
+  "utc": "2026-10-03T21:44:47.811633+00:00",
+  "piece_package": "v16 existing 19.5 x 19.5 x 8 printed flats; pieces/cat-capstone.step and witch-capstone.step",
+  "slicing": "unavailable: ElegooSlicer is not installed; generic 3MF is unsliced",
+  "source_sha256": {
+    "folio.py": "cc7cca5513229af2b9bbce60e82d85144930fd4613d6ef64ab6e5f85129b7ad8",
+    "build.py": "0c93fe82975dadca52d3fc5e9c7c5ab39d25ab5254ce4b4ee4940c465cd872a5"
+  },
+  "artifacts": {
+    "source/folio.py": "cc7cca5513229af2b9bbce60e82d85144930fd4613d6ef64ab6e5f85129b7ad8",
+    "source/build.py": "0c93fe82975dadca52d3fc5e9c7c5ab39d25ab5254ce4b4ee4940c465cd872a5",
+    "models/grid-B.step": "478822f4d48bd576c042e015b70eafa559880d9c685f5e090bef7e2dae4e2673",
+    "models/trial-lane.step": "fe767a167302586cb15f01be9912b9be2bf476c7a9a00beafe74255657b23446",
+    "models/shell.step": "d630451c02c1c5038a8451a0be82b64bc6fdaaf72305fcbade761e1f56b8889d",
+    "models/grid-A.step": "925a90efa94db5a8c3e7c7f896d9ea999a639c48d65d1967440acbc68dad6e10",
+    "models/board-B.step": "48a70b204c053e8726928ec2a51a762735fa474cd0c8345be60bf8053574a905",
+    "models/trial-lane-roof.step": "fcf46197228e8a3572f253d24e9c1994dd7eadf2bc4d994441927dc2ef20cd01",
+    "models/board-A.step": "8397f36f0376371f2527364e396404a09057b4f2f15ae5a301a809ccb7ff19e8",
+    "models/retaining-lid.step": "1e96b352f4c9ac073daa6eb4230be47650e604384d8c202183d86b295f2dd413",
+    "stl/board-A.stl": "40b034e72b794ee5f82588b462b16f87ce5c321645ad5bd7af4c339e6e663171",
+    "stl/trial-fastener-0.stl": "bdef29c3b5874cd77b8e92ba620d035a7e93950f219e19175c62dbeca4160bd6",
+    "stl/trial-fastener-2.stl": "9f2f63e7f4ecf84cadea44bdf9d9d6f4956453a3c0c514a0a925c38aebbbc5d5",
+    "stl/board-B.stl": "4b5dc17e8b57a442e4c2fefe3ca6bf283a60278230ec10db4b611a049f31648f",
+    "stl/trial-lane.stl": "dd243ba8309489d29cee9602ab83c07cc53f4e8d47dc984184828f97cd224ce8",
+    "stl/grid-B.stl": "14d57c789838db4aa1c9d946dbd547e2a8068686042223773fb85ccc3992470b",
+    "stl/shell.stl": "fbfb0cebae1d7a9eb165941129f50284df0048e28c70d155d84b9246ae73468b",
+    "stl/grid-A.stl": "81f02433abb6f07561360ec387b049000028e0993f04c0cf43ab146353e83ff9",
+    "stl/trial-fastener-1.stl": "9f2f63e7f4ecf84cadea44bdf9d9d6f4956453a3c0c514a0a925c38aebbbc5d5",
+    "stl/trial-lane-roof.stl": "8b927481dc9a5db2b8473df7c8b44836295aebd92432bc507463caa45b3d975e",
+    "stl/retaining-lid.stl": "7514a067a31ac894b34ad52800f4bc77f1ce3135ee0da5dd7ec102962712fa10",
+    "plates/00b-lane-retention.3mf": "b06146d17c2be2ebe1f2be1e906e84bd723c21580fb573d123e438e77a4275a2",
+    "plates/02-folding-board.3mf": "7a35ee19b8d9517cb1198ba083968abc2403d2c01da234d656953b835e938a94",
+    "plates/00-fit-trials.3mf": "7634a7d5612a0b26003ce536b9c0ade1ad1c853705cd26f9a7f4b9e6e4fd9dc2",
+    "plates/01-shell-and-roof.3mf": "cf40a2ac42eca92d050605219b267dd859de92cc2afdd571b3946011a63e9ecf",
+    "previews/03-storage.png": "8415be4870cda42084462e5d1af858a9678d09d0d72f2000650a7f111528535b",
+    "previews/02-open-board.png": "c6e0a8db048bac9c602b27532d48ae2bd66c892bb22a415d2f9e10a2a34598f3",
+    "previews/01-closed.png": "af5acbaa9138ead2fddf7147526ccc13a2d0e0cedceba4b598703dae24f122de",
+    "previews/04-exploded.png": "136d128a309b562823016a26fd4adfd1430117d47d195817b025ed0bf361a29f"
+  }
+}
