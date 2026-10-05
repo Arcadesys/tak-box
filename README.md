@@ -5,8 +5,10 @@ A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed p
 ## Final version direction: v18
 
 V18 is the selected FINAL version. The [version freeze and release checklist](docs/V18_FINAL.md)
-pin the recovered clasp package and the common-hinge case baseline. Case integration
-and physical acceptance remain required before a complete-case release.
+pin the recovered clasp and common-hinge baseline. The complete
+[first-print v18 build](v18-case/README.md) now includes five CC2 PLA projects,
+assembly instructions and a downloadable kit. Whole-case physical acceptance
+remains pending.
 
 ### Selected closure: [v18 recessed press-and-slide clasp](v18-recessed-clasp)
 
@@ -15,17 +17,18 @@ a three-part 3MF coupon plate, assembled release states, renders, review and
 slicing reports, and the original downloadable kit. [Recovery checks](v18-recessed-clasp/RECOVERY.md)
 confirmed all 67 manifest hashes and both separately saved artifacts.
 
-This is an **unprinted, support-required clasp coupon**, not a complete case.
+This retained package is a **support-required clasp coupon**. The user reports
+the trial printed; its source package predates that report.
 Both closing and opening require pressing the recessed button while sliding
-the rigid bolt. Case integration, physical fit, support removal, strength and
-loaded transport retention remain unverified. The v17 body study remains below.
+the rigid bolt. Integration is now in `v18-case`; physical fit, support removal, strength and
+loaded transport retention remain unverified. The v17 study remains below.
 
-## Current v17 direction: [four leaves on one common hinge](v17-four-leaf)
+## Historical v17 architecture study: [four leaves on one common hinge](v17-four-leaf)
 
 Two drawer housings and two board leaves share one hinge axis. Covered
 sliding drawers keep flats enclosed while the leaves rotate. Board leaves
-will snap into their play positions; a [two-piece squeeze buckle](v17-squeeze-latch) is the
-current case-closure trial. The 180 mm field and 36 mm pitch remain.
+snap implementation was completed in v18; the [two-piece squeeze buckle](v17-squeeze-latch)
+is historical. The 180 mm field and 36 mm pitch remain.
 
 This is a CAD motion study, **not a full-print release**. Paired folding,
 independent board rotation, original-flat envelopes, solids and exported

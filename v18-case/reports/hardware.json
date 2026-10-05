@@ -1,0 +1,217 @@
+{
+  "checks": [
+    {
+      "name": "open/steel-main-axle-front",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "open/steel-main-axle-rear",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "open/steel-hatch-axle",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "open/retention-cap-front-a",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "open/retention-cap-rear-b",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "open/retention-cap-hatch-a",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "open/retention-cap-hatch-b",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "closed/steel-main-axle-front",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "closed/steel-main-axle-rear",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "closed/steel-hatch-axle",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "closed/retention-cap-front-a",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "closed/retention-cap-rear-b",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "closed/retention-cap-hatch-a",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    },
+    {
+      "name": "closed/retention-cap-hatch-b",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "drawer-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "drawer-right": 0,
+        "capstone-hatch": 0,
+        "clasp-slider": 0
+      }
+    }
+  ],
+  "closed_envelope_including_hardware_mm": [
+    143.5,
+    245.8,
+    32.60000000000002
+  ],
+  "steel_axles_mm": {
+    "diameter": 3,
+    "front_length": 24.9,
+    "rear_length": 24.9,
+    "hatch_length": 92
+  },
+  "printed_retention_caps": 4,
+  "endplay_gap_mm": 0.5,
+  "rod_in_cap_depth_mm": 2,
+  "retention": "Bond end caps to steel rods; keep adhesive out of rotating barrels. Confirm actual stack-up before bonding.",
+  "physical_acceptance": false,
+  "note": "Axles are permanent hinge hardware, not a closure pin. No steel-reference objects are included in print plates."
+}

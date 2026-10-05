@@ -1,6 +1,6 @@
 # Tak project brief
 
-Updated October 4, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
 ### Final version decision: v18
 
@@ -8,8 +8,16 @@ The user selected **v18 as the FINAL version** on October 4, 2026 (Chicago).
 Finish the recessed press-and-slide clasp with the retained four-leaf
 common-hinge case architecture. See [V18_FINAL.md](V18_FINAL.md) for the exact
 source freeze, protected choices and remaining release gates. The coupon package
-is pinned by [V18-FREEZE.json](V18-FREEZE.json); the integrated complete case
-and physical acceptance are still pending. Earlier closure trials are historical.
+is pinned by [V18-FREEZE.json](V18-FREEZE.json); the integrated first-print case is now prepared; physical acceptance is pending. Earlier closure trials are historical.
+
+October 5: the user reports the clasp trial has been printed and requested the
+full build. [`v18-case`](../v18-case/README.md) integrates the recessed clasp,
+board snaps, positively caught/stopped drawers and hinged capstone hatch.
+Five CC2 PLA projects and a complete first-print kit are prepared with current
+CAD/mesh/3MF, hardware, actual original-piece and sampled loaded-motion checks.
+The field remains 180 mm / 36 mm pitch. Actual original flats are 20×20×8 mm;
+new pockets are 20.7 mm. Whole-case physical acceptance is unchecked. See
+[V18_CHECKPOINT.md](V18_CHECKPOINT.md) for scope, evidence and remaining tests.
 
 ### v18 recessed press-and-slide clasp coupon
 
@@ -25,12 +33,11 @@ The receiver, keeper and rigid sliding bolt separate load-bearing shoulders
 from the recessed press leaf. Both closing and opening require pressing; to
 open, unload the keeper, press approximately 2 mm and slide left 10 mm before
 lifting. The assembled coupon is 78×40×10.1 mm. Prior digital checks are recorded
-in the package; physical fit, force, fatigue, support removal and loaded-bag
-retention remain untested. Supports are required in the provided orientation.
-This is a standalone clasp coupon, not a v18 complete-case release or an
-integrated change to v17. Next trial: print and inspect the small coupon, then
-check assembly, ten gentle cycles and press-only/drag-only retention as described
-in its README before case integration. Earlier closure studies remain history.
+in the package; the user reports the coupon printed; fit, force, fatigue, support removal and
+loaded-bag retention have no recorded acceptance. Supports are required in the provided orientation.
+This retained package is the standalone clasp coupon. The new integrated
+full build is in `v18-case`; complete its physical acceptance sheet. Earlier
+closure studies remain history.
 
 ### v17 common-hinge travel revision
 
@@ -38,8 +45,8 @@ User selected **all four leaves on the same hinge**: two drawer housings
 and two board leaves. `v17-four-leaf` records the architecture and motion
 study. Each housing has a fixed roof above a sliding flat drawer, so rotating
 leaves does not expose pieces. Board leaves will snap to their housings for
-play. The four-part over-center trial was rejected as confusing. The current
-closure trial is `v17-squeeze-latch`: a two-part side-release buckle with
+play. The four-part over-center trial was rejected as confusing. The historical v17
+closure trial was `v17-squeeze-latch`: a two-part side-release buckle with
 broad load-bearing shoulders and two exposed squeeze buttons. Closing
 pushes the clip into its socket; squeeze both buttons to open. Case
 integration and physical spring/strength tests remain unfinished. Closure
@@ -60,7 +67,7 @@ pass. Exact detailed capstone geometry, continuous swept motion, snap/stop
 implementation, capstone hatch and direct case closure remain unresolved.
 No complete-print release, slicing or physical retention is claimed.
 Next small trials: four-family common-axis hinge, board snap and drawer
-release, followed by the two-piece squeeze-buckle coupon before the full case.
+release, after the selected v18 recessed-clasp coupon; the squeeze buckle is historical.
 Weighted flats and curled Fox/Cat pieces are not verified in this package.
 Existing v16 printed interfaces remain incompatible and unchanged.
 

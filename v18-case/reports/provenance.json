@@ -1,0 +1,49 @@
+{
+  "base_revision": "2589129101d6f63533b425bff4855ec84a735904",
+  "python_environment": ".slicer-work/cad-venv (Python 3.12.13; requirements.txt)",
+  "source_and_dependency_sha256": {
+    "v18-case/source/render_case.py": "e6a93fbbc84493a409b47b3fd57ec588d307c19fdbdbb7d5ca2bfe4abe91e428",
+    "v18-case/source/inspect_case_layers.py": "72b33133eb5424ac29cc0368bc9fb43ce040bd1012ca5f8528360e647eaeecb4",
+    "v18-case/source/verify_hardware.py": "d86e831424406c80633e53cb5e7b01e540a30e47798098dd57ad41c0faca51db",
+    "v18-case/source/package_case.py": "9f30099ca49452fdaa8e500049a8376a6f79b42e15443134b7af0cb4796f4d0d",
+    "v18-case/source/build_case.py": "76eb417a22133291b6ef436bc04c3d936fd54c12e0d0ef8aedf2d40973dbb2eb",
+    "v18-case/source/verify_field.py": "c6a74f60466e454e3d8269df1e36bb670319eed529dca5ff91eca4b7880043da",
+    "v18-case/source/case.py": "d4e5872fdf24104b917960a17e257394b9e2bddaa73f7a6205f594cc84713a9f",
+    "v18-case/source/package_release.py": "b7787656574572dfede31e440de216adb892e55e20827e508d6c5fae8c4dfc45",
+    "v18-case/source/slice_case.py": "58f7e328c17b0143ed33063571d5c7303b180251f3e9c9224ef76edc46960a40",
+    "v17-four-leaf/source/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
+    "v17-four-leaf/source/export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e",
+    "v18-recessed-clasp/build.py": "5f116585bd24d2ddfac74f463e62e62121bf2af9a84129f7541ff0c5430deadc",
+    "v18-recessed-clasp/common.py": "7a064de17ec8303eb2c2cc4be4eb51bc4e5356ec3492e41f7247311f038107a1",
+    "pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
+    "v18-case/requirements.txt": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575"
+  },
+  "cad_validation_snapshot_defining_sources_match": true,
+  "checks": [
+    {
+      "report": "geometry.json",
+      "checks": 50,
+      "pass": true
+    },
+    {
+      "report": "field.json",
+      "checks": 37,
+      "pass": true
+    },
+    {
+      "report": "hardware.json",
+      "checks": 14,
+      "pass": true
+    },
+    {
+      "report": "plates.json",
+      "checks": 30,
+      "pass": true
+    }
+  ],
+  "five_project_input_profile_hashes_match": true,
+  "selected_layer_visual_reviews_recorded": true,
+  "printer_started": false,
+  "physical_acceptance": false,
+  "clasp_trial": "Printed, per latest direct user report; force/cycles not supplied."
+}

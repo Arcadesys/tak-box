@@ -1,0 +1,17 @@
+# V18 full-build checkpoint — October 5, 2026
+
+Outcome: the complete integrated v18 case is prepared as five Centauri Carbon 2 PLA print projects, with assembly guide and reproducible full-build kit. Scope remains v18: selected recessed press-and-slide clasp, four leaves on one hinge axis, original Cat/Witch pieces and 180 mm 5×5 field. Whole-case physical acceptance remains unchecked.
+
+Route: workhorse / medium for bounded CAD integration, export and focused checks. Named planning issues were actual 20 mm piece clearance, hinge-family interleaving, hardware retention and removable support orientation. The configured role mapping was read; this existing desktop context was retained. No model switch or delegated role enforcement is claimed. No agents were spawned. Usage/cost counters are unavailable.
+
+Current state: `v18-case/` contains integrated housings/receiver/keeper, both boards with release snaps, two 21-flat drawers with catches/withdrawal stops, captured latched hatch, slider and four bonded axle caps. Twelve printed parts, three steel rods. Seats now match the actual original 20×20×8 mm flats with 0.35 mm nominal clearance per side. The cap bay has floor finger ports. Main axle caps stay outside the field. Frozen clasp bytes and v16 interfaces remain intact; weighted/curled sets remain unverified.
+
+Evidence: 50 geometry/mesh/fit/motion checks, 37 exported field probes, 14 steel-hardware checks, five named geometry plates and five CC2 slices/readbacks pass. Selected critical deposition layers on all five plates were reviewed; full model/support/brim deposition bounds remain inside the bed. Rear-end housing orientations leave long tunnels clear of support, and board undersides have dense support. Total starting-profile estimate is 122309 seconds / 564.61 g. Original 70-file clasp freeze remains intact. See `v18-case/BUILD-PROVENANCE.md` for commands, environment, source hashes and repaired failures.
+
+Physical record: the user's latest direct report is “I already printed the clasp trial - i need the full build now.” This supersedes the earlier “Not printed yet” reply. Assembly/force/cycle results were not supplied. Slicer history also displays a completed October 4 clasp filename, but its source hash/time zone and physical fit are unknown. Neither source establishes whole-case physical acceptance. No new printer job was started.
+
+Limitations: sampled motion, assumed flex deformation, unmeasured support removal/adhesion/strength/actuation, Generic PLA starting preset with recorded bed/softening metadata warning. Original Cat capstone STL is open; its valid detailed CAD source supplies the fit check. V16 and weighted/curled compatibility are not claimed. Full hardware envelope is 143.5×245.8×32.6 mm.
+
+Next useful action: print plates 01–05 with the actual tested spool preset, use 3 mm steel rods (two 24.9 mm, one 92 mm), assemble empty and then load the original Cat/Witch set. Record full-build observations in `v18-case/ACCEPTANCE.md`. A coupon reprint is not required to obtain the full build. Physical operation/transport release remains pending those observations.
+
+Checkout: isolated managed worktree on `codex/v18-complete-build`, based on the recovered/frozen v18 revision `2589129`. The original checkout's modified v16 plate was left intact. Recovery PR #23 is the stacked dependency while open; the full-build PR targets that branch.

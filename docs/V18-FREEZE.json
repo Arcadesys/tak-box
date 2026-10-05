@@ -1,14 +1,14 @@
 {
   "version": "v18",
   "decision": "User selected v18 as the FINAL version on October 4, 2026 (America/Chicago).",
-  "status": "final_direction_frozen_release_pending",
+  "status": "complete_first_print_build_prepared_physical_acceptance_pending",
   "baseline_commit": "36ffe69465d09e3d64d8873b35efcef5642be556",
   "closure_package": "v18-recessed-clasp",
   "case_body_baseline": {
     "commit": "bad9d0f1e4b0ed55a9e6f35ae5434a32523039d1",
     "package": "v17-four-leaf",
     "architecture": "All four main leaves share one hinge axis; covered drawers; 180 mm 5x5 field at 36 mm pitch.",
-    "integration_status": "pending"
+    "integration_status": "integrated_first_print_build_in_v18_case"
   },
   "physical_acceptance": false,
   "complete_case_release": false,
@@ -363,5 +363,13 @@
       "bytes": 467,
       "sha256": "e51e52278291a77a94a7480c762c58aade26f17f70801effcd3e9e19bdbf226a"
     }
-  ]
+  ],
+  "integrated_case_package": "v18-case",
+  "complete_case_print_package": true,
+  "clasp_trial_printed_user_report": true,
+  "integrated_case_manifest": {
+    "path": "v18-case/PACKAGE-MANIFEST.json",
+    "bytes": 13264,
+    "sha256": "d1ff32ec78277369e8e635ac9d5faad9d7afb9791fb24bfd06719ef538dcaf02"
+  }
 }

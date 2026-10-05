@@ -1,0 +1,166 @@
+{
+  "01-left-housing-clasp-and-cap-compartment": {
+    "levels": 1202,
+    "selected_z_mm": [
+      0.2,
+      4.4,
+      6.0,
+      29.6,
+      31.6,
+      112.2,
+      140.4,
+      208.0,
+      220.0,
+      240.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        7.953,
+        2.691
+      ],
+      [
+        155.047,
+        34.765
+      ]
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "selected_layers_reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Rear foundation and cap bay supported; long drawer tunnel blank at selected middle layers. External clasp rail support remains accessible from the outer edge.",
+    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+  },
+  "02-right-housing-and-keeper": {
+    "levels": 1084,
+    "selected_z_mm": [
+      0.2,
+      24.2,
+      26.2,
+      81.8,
+      96.8,
+      103.8,
+      202.4,
+      214.4,
+      216.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        4.655,
+        3.144
+      ],
+      [
+        151.17,
+        33.153
+      ]
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "selected_layers_reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Rear foundation supported; long drawer tunnel blank at selected middle layers. Keeper shoulder supported from outside. Shifted +3 mm on bed to retain full brim.",
+    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+  },
+  "03-board-leaves": {
+    "levels": 60,
+    "selected_z_mm": [
+      0.2,
+      3.2,
+      3.6,
+      4.0,
+      5.0,
+      5.4,
+      5.6,
+      7.4,
+      7.6,
+      8.2,
+      9.0,
+      12.0
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        3.172
+      ],
+      [
+        223.356,
+        224.628
+      ]
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "selected_layers_reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Dense support beneath broad first board layers; individual clip and hinge layers retained. Underside removal/flatness remains physical.",
+    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+  },
+  "04-piece-drawers": {
+    "levels": 447,
+    "selected_z_mm": [
+      0.2,
+      6.2,
+      9.8,
+      10.0,
+      11.0,
+      16.0,
+      81.4,
+      85.2,
+      86.4,
+      89.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        2.989
+      ],
+      [
+        38.156,
+        205.256
+      ]
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "selected_layers_reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Side-printed pocket floor/rims and catch/stop regions resolve; supports are along open sides and accessible pocket recesses.",
+    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+  },
+  "05-hatch-slider-and-four-axle-caps": {
+    "levels": 126,
+    "selected_z_mm": [
+      0.2,
+      2.6,
+      4.4,
+      6.6,
+      9.4,
+      12.0,
+      18.6,
+      24.8
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        158.343,
+        60.852
+      ]
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "selected_layers_reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Hatch underside and original slider side orientation supported; four cap bores open upward.",
+    "scope": "Selected critical layers only; removal, adhesion, strength and spring effort need physical observation."
+  }
+}

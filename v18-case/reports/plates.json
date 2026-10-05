@@ -1,0 +1,258 @@
+{
+  "bed_mm": [
+    256,
+    256
+  ],
+  "checks": [
+    {
+      "name": "01-left-housing-clasp-and-cap-compartment/housing-left bed and build height",
+      "pass": true,
+      "detail": [
+        143.0,
+        25.800000000000026,
+        240.40000000000003
+      ]
+    },
+    {
+      "name": "02-right-housing-and-keeper/housing-right bed and build height",
+      "pass": true,
+      "detail": [
+        138.0,
+        20.30000000000002,
+        216.8
+      ]
+    },
+    {
+      "name": "3mf-readback-02-right-housing-and-keeper",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "housing-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "03-board-leaves/board-left bed and build height",
+      "pass": true,
+      "detail": [
+        103.0,
+        216.8,
+        12.100000000000001
+      ]
+    },
+    {
+      "name": "board-left separation board-right",
+      "pass": true,
+      "detail": 5.0
+    },
+    {
+      "name": "03-board-leaves/board-right bed and build height",
+      "pass": true,
+      "detail": [
+        103.0,
+        216.8,
+        12.100000000000001
+      ]
+    },
+    {
+      "name": "04-piece-drawers/drawer-left bed and build height",
+      "pass": true,
+      "detail": [
+        8.80000000000001,
+        194.40000000000003,
+        89.3
+      ]
+    },
+    {
+      "name": "drawer-left separation drawer-right",
+      "pass": true,
+      "detail": 8.19999999999999
+    },
+    {
+      "name": "04-piece-drawers/drawer-right bed and build height",
+      "pass": true,
+      "detail": [
+        8.800000000000011,
+        194.40000000000003,
+        89.29999999999998
+      ]
+    },
+    {
+      "name": "05-hatch-slider-and-four-axle-caps/capstone-hatch bed and build height",
+      "pass": true,
+      "detail": [
+        88.7,
+        28.900000000000013,
+        7.8
+      ]
+    },
+    {
+      "name": "capstone-hatch separation clasp-slider",
+      "pass": true,
+      "detail": 14.299999999999997
+    },
+    {
+      "name": "capstone-hatch separation axle-end-cap-1",
+      "pass": true,
+      "detail": 14.299999999999997
+    },
+    {
+      "name": "capstone-hatch separation axle-end-cap-2",
+      "pass": true,
+      "detail": 26.299999999999997
+    },
+    {
+      "name": "capstone-hatch separation axle-end-cap-3",
+      "pass": true,
+      "detail": 38.3
+    },
+    {
+      "name": "capstone-hatch separation axle-end-cap-4",
+      "pass": true,
+      "detail": 50.3
+    },
+    {
+      "name": "05-hatch-slider-and-four-axle-caps/clasp-slider bed and build height",
+      "pass": true,
+      "detail": [
+        44.0,
+        4.400000000000003,
+        25.2
+      ]
+    },
+    {
+      "name": "clasp-slider separation axle-end-cap-1",
+      "pass": true,
+      "detail": 38.599999999999994
+    },
+    {
+      "name": "clasp-slider separation axle-end-cap-2",
+      "pass": true,
+      "detail": 38.599999999999994
+    },
+    {
+      "name": "clasp-slider separation axle-end-cap-3",
+      "pass": true,
+      "detail": 38.599999999999994
+    },
+    {
+      "name": "clasp-slider separation axle-end-cap-4",
+      "pass": true,
+      "detail": 38.599999999999994
+    },
+    {
+      "name": "05-hatch-slider-and-four-axle-caps/axle-end-cap-1 bed and build height",
+      "pass": true,
+      "detail": [
+        7.0,
+        7.0,
+        4.0
+      ]
+    },
+    {
+      "name": "axle-end-cap-1 separation axle-end-cap-2",
+      "pass": true,
+      "detail": 5.0
+    },
+    {
+      "name": "axle-end-cap-1 separation axle-end-cap-3",
+      "pass": true,
+      "detail": 17.0
+    },
+    {
+      "name": "axle-end-cap-1 separation axle-end-cap-4",
+      "pass": true,
+      "detail": 29.0
+    },
+    {
+      "name": "05-hatch-slider-and-four-axle-caps/axle-end-cap-2 bed and build height",
+      "pass": true,
+      "detail": [
+        7.0,
+        7.0,
+        4.0
+      ]
+    },
+    {
+      "name": "axle-end-cap-2 separation axle-end-cap-3",
+      "pass": true,
+      "detail": 5.0
+    },
+    {
+      "name": "axle-end-cap-2 separation axle-end-cap-4",
+      "pass": true,
+      "detail": 17.0
+    },
+    {
+      "name": "05-hatch-slider-and-four-axle-caps/axle-end-cap-3 bed and build height",
+      "pass": true,
+      "detail": [
+        7.0,
+        7.0,
+        4.0
+      ]
+    },
+    {
+      "name": "axle-end-cap-3 separation axle-end-cap-4",
+      "pass": true,
+      "detail": 5.0
+    },
+    {
+      "name": "05-hatch-slider-and-four-axle-caps/axle-end-cap-4 bed and build height",
+      "pass": true,
+      "detail": [
+        7.0,
+        7.0,
+        4.0
+      ]
+    }
+  ],
+  "plates": {
+    "01-left-housing-clasp-and-cap-compartment": {
+      "objects": [
+        "housing-left"
+      ],
+      "orientation": "Side-oriented housings and drawers; boards/hatch face up; original frozen slider side orientation; axle caps bore up.",
+      "supports": true
+    },
+    "02-right-housing-and-keeper": {
+      "objects": [
+        "housing-right"
+      ],
+      "orientation": "Side-oriented housings and drawers; boards/hatch face up; original frozen slider side orientation; axle caps bore up.",
+      "supports": true
+    },
+    "03-board-leaves": {
+      "objects": [
+        "board-left",
+        "board-right"
+      ],
+      "orientation": "Side-oriented housings and drawers; boards/hatch face up; original frozen slider side orientation; axle caps bore up.",
+      "supports": true
+    },
+    "04-piece-drawers": {
+      "objects": [
+        "drawer-left",
+        "drawer-right"
+      ],
+      "orientation": "Side-oriented housings and drawers; boards/hatch face up; original frozen slider side orientation; axle caps bore up.",
+      "supports": true
+    },
+    "05-hatch-slider-and-four-axle-caps": {
+      "objects": [
+        "capstone-hatch",
+        "clasp-slider",
+        "axle-end-cap-1",
+        "axle-end-cap-2",
+        "axle-end-cap-3",
+        "axle-end-cap-4"
+      ],
+      "orientation": "Side-oriented housings and drawers; boards/hatch face up; original frozen slider side orientation; axle caps bore up.",
+      "supports": true
+    }
+  },
+  "steel_axles_printed": false,
+  "physical_acceptance": false
+}

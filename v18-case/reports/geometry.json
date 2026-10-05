@@ -1,0 +1,383 @@
+{
+  "checks": [
+    {
+      "name": "housing-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 4440,
+        "cad_volume_mm3": 93633.29470919295
+      }
+    },
+    {
+      "name": "board-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 2072,
+        "cad_volume_mm3": 57346.318324633496
+      }
+    },
+    {
+      "name": "drawer-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "drawer-left STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 976,
+        "cad_volume_mm3": 21733.85359999997
+      }
+    },
+    {
+      "name": "housing-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 1766,
+        "cad_volume_mm3": 70282.5081808863
+      }
+    },
+    {
+      "name": "board-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 2072,
+        "cad_volume_mm3": 57346.31832463343
+      }
+    },
+    {
+      "name": "drawer-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "drawer-right STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 976,
+        "cad_volume_mm3": 21733.853599999984
+      }
+    },
+    {
+      "name": "capstone-hatch valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-hatch STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 864,
+        "cad_volume_mm3": 4879.59670715026
+      }
+    },
+    {
+      "name": "clasp-slider valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "clasp-slider STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 108,
+        "cad_volume_mm3": 1674.9500000000003
+      }
+    },
+    {
+      "name": "axle-end-cap valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "axle-end-cap STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 836,
+        "cad_volume_mm3": 129.81060844633026
+      }
+    },
+    {
+      "name": "nominal assembled parts disjoint",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "full paired fold 0..180 degrees at 5 degree samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "unlocked case opening at 1 degree samples for first 10 degrees",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "locked case opening blocked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "press-only case opening blocked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "integrated press-and-slide path",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "left board snap holds lift",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left released board motion 0..90 at 5 degree samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "left drawer catch holds pull",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left released drawer withdrawal 0..168 at 8 mm samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "left drawer positive end stop",
+      "pass": true,
+      "detail": {
+        "169": 0.8004197761194038,
+        "170": 3.2754197761194055,
+        "172": 12.45
+      }
+    },
+    {
+      "name": "left deliberate stop release removal",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right board snap holds lift",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right released board motion 0..90 at 5 degree samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right drawer catch holds pull",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right released drawer withdrawal 0..168 at 8 mm samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right drawer positive end stop",
+      "pass": true,
+      "detail": {
+        "169": 0.8004197761194038,
+        "170": 3.2754197761194055,
+        "172": 12.45
+      }
+    },
+    {
+      "name": "right deliberate stop release removal",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "capstone hatch catch holds lift",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "released hatch 0..100 at 5 degree samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "cat flat CAD valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cat capstone CAD valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "witch flat CAD valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "witch capstone CAD valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left actual original pieces clear assembled storage",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right actual original pieces clear assembled storage",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "cap actual original pieces clear assembled storage",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "loaded original pieces clear opposite modules during fold at 15 degrees",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "loaded capstones clear hatch opening at 5 degrees",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "last flat exposed at full drawer stroke",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "roof gap above actual 8 mm flats",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "field remains 5x5 / 180 mm / 36 mm pitch",
+      "pass": true,
+      "detail": {
+        "field_mm": 180,
+        "pitch_mm": 36
+      }
+    }
+  ],
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "cadquery": "2.7.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_sha256": {
+    "render_case.py": "342a6b5c184f6e98f62e3bcee7fa0660575a243912e33f0847692d7fd6269abe",
+    "inspect_case_layers.py": "72b33133eb5424ac29cc0368bc9fb43ce040bd1012ca5f8528360e647eaeecb4",
+    "verify_hardware.py": "d86e831424406c80633e53cb5e7b01e540a30e47798098dd57ad41c0faca51db",
+    "package_case.py": "0fe2fa69ec9310ba754c47e4eb62553cb65e79dd5e60a9e2ee57b205806e3e52",
+    "build_case.py": "76eb417a22133291b6ef436bc04c3d936fd54c12e0d0ef8aedf2d40973dbb2eb",
+    "verify_field.py": "c6a74f60466e454e3d8269df1e36bb670319eed529dca5ff91eca4b7880043da",
+    "case.py": "d4e5872fdf24104b917960a17e257394b9e2bddaa73f7a6205f594cc84713a9f",
+    "slice_case.py": "58f7e328c17b0143ed33063571d5c7303b180251f3e9c9224ef76edc46960a40"
+  },
+  "frozen_clasp_build_sha256": "5f116585bd24d2ddfac74f463e62e62121bf2af9a84129f7541ff0c5430deadc",
+  "piece_package": {
+    "name": "pieces original Cat/Witch",
+    "flats_mm": [
+      20,
+      20,
+      8
+    ],
+    "source_and_mesh_hashes": {
+      "tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
+      "cat-flat.stl": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1",
+      "witch-flat.stl": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba",
+      "cat-capstone.stl": "d358aefa0c9cc3ae70cd99a2c7e1f8f7038c461fff386d49f30528063948c204",
+      "witch-capstone.stl": "4cd1a3ca3e1f49c6d55ae9caeec03f600335f762fd52725ee47103b2c3a88f1a"
+    },
+    "compatibility": "Detailed current CAD checked; old cat capstone STL is not watertight, so it is not used for volume fit. Original source CAD is valid; no piece exports changed."
+  },
+  "closed_body_and_clasp_envelope_mm": [
+    143.0001503002813,
+    240.40239507698982,
+    32.60268550629903
+  ],
+  "physical_acceptance": false,
+  "limitations": [
+    "Motion sampled; not a continuous sweep proof.",
+    "Flex release poses assume cubic deformation, not FEA or measured actuation.",
+    "Hinge/clip/support removal/strength/loaded transport require physical observation.",
+    "Original Cat/Witch set only. Weighted and curled sets unverified.",
+    "Axles require permanent end retention; printed end caps are bonded to steel, not sliding case closures."
+  ]
+}
