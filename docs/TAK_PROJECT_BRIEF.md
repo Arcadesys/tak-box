@@ -1,6 +1,15 @@
 # Tak project brief
 
-Updated October 3, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 4, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+
+### Final version decision: v18
+
+The user selected **v18 as the FINAL version** on October 4, 2026 (Chicago).
+Finish the recessed press-and-slide clasp with the retained four-leaf
+common-hinge case architecture. See [V18_FINAL.md](V18_FINAL.md) for the exact
+source freeze, protected choices and remaining release gates. The coupon package
+is pinned by [V18-FREEZE.json](V18-FREEZE.json); the integrated complete case
+and physical acceptance are still pending. Earlier closure trials are historical.
 
 ### v18 recessed press-and-slide clasp coupon
 

@@ -2,7 +2,7 @@
 
 ## Start here
 
-Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The current v17 direction is v17-four-leaf: all four main leaves share one hinge axis. It is a motion study, not a print release. Screw-clamped storage and pin/sleeve closure were rejected; v16-field-book remains the printed baseline. The premium pagoda is separate.
+Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The user selected v18 as the FINAL version. Read docs/V18_FINAL.md and docs/V18-FREEZE.json. The selected clasp is v18-recessed-clasp; the case-body baseline is v17-four-leaf, with all four main leaves sharing one hinge axis. Keep completion work within v18; reopening the version or direction requires an explicit user decision. It is a motion study, not a print release. Screw-clamped storage and pin/sleeve closure were rejected; v16-field-book remains the printed baseline. The premium pagoda is separate.
 
 ## Design priorities
 
