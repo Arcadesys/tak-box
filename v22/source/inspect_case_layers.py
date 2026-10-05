@@ -10,9 +10,9 @@ from matplotlib.lines import Line2D
 OUT=Path(__file__).resolve().parents[1];REPO=OUT.parent;WORK=OUT/'.slicer-work'
 NOZZLE_OFFSET=[float(v) for v in json.loads((OUT/'profiles/machine.json').read_text())['extruder_offset'][0].split('x')]
 PLANS={
- '01-print-in-place-bases':[.2,2.2,5.8,10.4,13.8,14.4,14.8,15.4,16.4,17.8,18.4,25.6],
+ '01-print-in-place-bases':[.2,2.2,5.8,10.4,13.8,14.4,14.8,15.4,16.4,17.8,18.4,19.2],
  '02-sliding-board-tops':[.2,.6,1,2,3,4,4.2,4.6,4.8,5.6],
- '03-hatch-hook-and-three-axle-caps':[.2,1.2,2,2.6,3.2,3.4,4.2,5,6,7,7.8],
+ '03-flat-capstones-hook-and-collar':[.2,.6,1.2,2,3.2,4,5,6,6.6,7,7.4,8],
 }
 
 def parse(path):

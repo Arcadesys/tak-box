@@ -2,13 +2,15 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Current print kit: v21
+## Current print kit: v22
 
-[Download the V21 print kit](v21/release/tak-v21-print-kit.zip), then open **v21/START-HERE.md**. Four CC2 PLA projects are together in **v21/PRINT**. The ZIP contains one v21 folder with reproducible source and dependencies.
+[Download the V22 print kit](v22/release/tak-v22-print-kit.zip), then open **v22/START-HERE.md**. Three CC2 PLA projects are together in **v22/PRINT**; the ZIP contains one v22 folder with reproducible source and dependencies.
 
-The **boards themselves slide outward to uncover the fixed piece pockets**. Slide them back and latch them for play or transport. Only the two bases hinge. Bases and boards print flat. The full 180 mm field, 1.75 mm filament hardware and side hook remain; the hook moves to the front corner to clear the sliders. Main hinge pins shorten to **14.9 mm**. There are 11 printed parts across four plates, estimated at 12 h 35 min / 287 g. Physical fit and loaded retention remain untested. See the [guide](v21/START-HERE.md) and [checkpoint](docs/V21_CHECKPOINT.md).
+The two bases **print together with captive hinges**. The playing boards slide outward to uncover 21 ordinary stones and a new flat capstone in each half. One-piece Cat/Witch capstones replace the sculpted pawns for this travel kit, allowing the rear compartment and hatch to be removed. The full 180 mm field and **32.6 mm closed thickness** remain. Closed envelope: 111.8×220.2×32.6 mm. Eight printed parts across three plates, estimated at 11 h 17 min / 268 g. Only the side hook retains an inserted filament pivot.
 
-The [V20 kit](v20/START-HERE.md), [V19 kit](v19/START-HERE.md), original [recessed clasp](v18-recessed-clasp) and [V18 integrated kit](v18-case/README.md) remain historical and intact.
+Digital geometry, slicing and package checks are recorded; physical release, grip, fit and loaded transport remain untested. See the [guide](v22/START-HERE.md) and [checkpoint](docs/V22_CHECKPOINT.md).
+
+The [V21 kit](v21/START-HERE.md), [V20 kit](v20/START-HERE.md), [V19 kit](v19/START-HERE.md), original [recessed clasp](v18-recessed-clasp) and [V18 integrated kit](v18-case/README.md) remain historical and intact.
 
 ## Historical v17 architecture study: [four leaves on one common hinge](v17-four-leaf)
 

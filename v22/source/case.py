@@ -1,4 +1,4 @@
-"""Integrated v22 case, original Cat/Witch target, mm. Flex poses are assumptions."""
+"""Integrated v22 case, original Cat/Witch flats plus V22 flat capstones, mm. Flex poses are assumptions."""
 from pathlib import Path
 from functools import lru_cache
 import sys
@@ -81,14 +81,6 @@ def side_hook(angle=0):
 def open_from_closed(s,angle):
  return s.rotate((98,0,16.3),(98,1,16.3),angle)
 
-def beam(y0,y1,x0,x1,z0,z1,delta=0):
- def d(y):
-  u=(y-y0)/(y1-y0)
-  return delta*u*u*(3-u)/2
- pts=[(x0-d(y),y) for y in [y0+i*(y1-y0)/40 for i in range(41)]]
- pts += [(x1-d(y),y) for y in [y1-i*(y1-y0)/40 for i in range(41)]]
- return cq.Workplane('XY').workplane(offset=z0).polyline(pts).close().extrude(z1-z0).val()
-
 def x_prism(points,x0,x1):
  # YZ section extruded along X: rails and board edges run sideways.
  return cq.Workplane('YZ').polyline(points).close().extrude(x1-x0).val().translate((x0,0,0))
@@ -130,30 +122,22 @@ def pocket_rims():
    rims.append(rim)
  return rims
 
-HATCH_AXIS=(0,221.8,23.2)
-def hatch_rotate(s,angle):return s.rotate(HATCH_AXIS,(1,221.8,23.2),-angle)
-def hatch_clip(release=0):
- root=union(box(-2,1.8,197,200,22.4,24.4),box(-2,-.8,197,200,18,24.4))
- return union(root,beam(197,218,-2,-.8,18,21.6,release),box(-.9-release,1-release,215,218,19.2,21.25))
+def capstone_rim():
+ rim=box(12.9,42.3,167.3,190.7,2.19,5.7).cut(box(14,41.2,168.4,189.6,2.18,5.71))
+ # Two broad grasp openings; the piece also projects 4.5 mm above this rim.
+ return rim.cut(box(21,34,167.2,168.5,3.2,5.71)).cut(box(12.8,14.1,175,183,3.2,5.71)).clean()
 
-def cylx(r,a,b):return cq.Solid.makeCylinder(r,b-a,cq.Vector(a,221.8,23.2),cq.Vector(1,0,0))
-def fixed_hatch_passage(a,b):
- # Housing prints bottom down: bore roof points upward in Z.
- h=HINGE_BORE_D/2/(2**.5)
- roof=cq.Workplane('YZ').polyline([(221.8-h,23.2+h),(221.8+h,23.2+h),(221.8,23.2+2*h)]).close().extrude(b-a).val().translate((a,0,0))
- return union(cylx(HINGE_BORE_D/2,a,b),roof)
-@lru_cache(None)
-def hatch(release=0):
- p=union(box(.3,86.7,195.5,218.1,22.4,25.8),box(14,73,217.5,221.8,22.4,25.8),cylx(2.6,14,73),hatch_clip(release))
- h=HINGE_BORE_D/2/(2**.5)
- roof=cq.Workplane('YZ').polyline([(221.8-h,23.2-h),(221.8+h,23.2-h),(221.8,23.2-2*h)]).close().extrude(59.02).val().translate((13.99,0,0))
- return p.cut(union(cylx(HINGE_BORE_D/2,13.99,73.01),roof)).clean()
+def stored_capstone(team,side):
+ import flat_capstones
+ s=flat_capstones.capstone(team);b=s.BoundingBox()
+ s=s.translate((27.6-(b.xmin+b.xmax)/2,179-(b.ymin+b.ymax)/2,2.2))
+ return s if side=='left' else mirror(s)
 
 @lru_cache(None)
 def housing(side):
  # Fixed seats and open top print on a broad base, with no internal roof.
  p=box(0,97.8,0,194.8,0,10.3).cut(box(2.4,89.5,2.4,193,2.2,30))
- p=union(p,*pocket_rims(),box(0,97.8,0,2.4,10.3,15.8),box(0,97.8,193,194.8,10.3,15.8))
+ p=union(p,*pocket_rims(),capstone_rim(),box(0,97.8,0,2.4,10.3,15.8),box(0,97.8,193,194.8,10.3,15.8))
  front=x_prism([(2.4,13.8),(4.4,15.8),(2.4,15.8)],57,97.8)
  rear=x_prism([(193,13.8),(191,15.8),(193,15.8)],0,97.8)
  p=union(p,front,rear,box(95.3,97.8,2.4,5.1,10.3,15.8),box(95.3,97.8,190.7,193,10.3,15.8))
@@ -163,18 +147,8 @@ def housing(side):
  p=union(p,box(0,6,-14,2.4,0,10.3))
  if side=='right':p=mirror(p)
  p=pip_hinges(base.hinged(p,'tray-'+side,0,1.2),side)
- if side=='right':
-  p=union(p,fold(hook_keeper(),180))
- else:
-  p=union(p,hook_pivot_mount())
-  compartment=box(0,87,195.2,220,0,22.2).cut(box(1.6,85.4,196.8,218.4,1.2,22.3))
-  compartment=compartment.cut(cylx(2.85,12.2,74.8))
-  for x in (33.3,63.3):compartment=compartment.cut(cq.Solid.makeCylinder(6,1.4,cq.Vector(x,207.5,-.1)))
-  compartment=compartment.cut(box(-.1,1.5,214.8,218.2,18.9,21.4))
-  p=union(p,box(0,85,192.4,197,0,1.2),compartment)
-  for a,b in ((0,12),(75,87)):
-   p=union(p,box(a,b,218.4,222,20,23.2),cylx(2.6,a,b).cut(fixed_hatch_passage(a-.01,b+.01)))
- if side=='left':p=p.cut(hook_pivot_passage()).cut(fixed_hatch_passage(-.01,12.01)).cut(fixed_hatch_passage(74.99,87.01)).clean()
+ if side=='right':p=union(p,fold(hook_keeper(),180))
+ else:p=union(p,hook_pivot_mount()).cut(hook_pivot_passage()).clean()
  # Main folding pivots print captive; no inserted main pins or glue.
  return p.clean().fix()
 
@@ -184,4 +158,5 @@ def axle_cap():
  return p.cut(cq.Solid.makeCylinder(CAP_BORE_D/2,4.02,cq.Vector(0,0,-.01))).clean()
 
 def parts():
- return {**{f'{kind}-{side}':globals()[kind](side) for side in ('left','right') for kind in ('housing','board')},'capstone-hatch':hatch(),'side-hook':side_hook(),'axle-end-cap':axle_cap()}
+ import flat_capstones
+ return {**{f'{kind}-{side}':globals()[kind](side) for side in ('left','right') for kind in ('housing','board')},'capstone-cat':flat_capstones.capstone('cat'),'capstone-witch':flat_capstones.capstone('witch'),'side-hook':side_hook(),'axle-end-cap':axle_cap()}

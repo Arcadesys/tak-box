@@ -3,9 +3,9 @@ import cadquery as cq
 import vtk
 import case as c
 OUT=c.OUT
-parts={n:cq.importers.importStep(str(OUT/'models'/f'{n}.step')).val() for n in c.parts() if n!='axle-end-cap'}
+parts={n:cq.importers.importStep(str(OUT/'models'/f'{n}.step')).val() for n in c.parts() if n!='axle-end-cap' and not n.startswith('capstone-')}
 parts['hardware']=cq.importers.importStep(str(OUT/'models/hardware-reference-NOT-PRINTED.step')).val()
-colors={'housing':(0.20,0.29,0.36),'board':(.85,.88,.92),'capstone':(.85,.88,.92),'side':(.59,.38,.13),'hardware':(.35,.38,.4)}
+colors={'housing':(0.20,0.29,0.36),'board':(.85,.88,.92),'capstone':(.85,.88,.92),'side':(.59,.38,.13),'hardware':(.35,.38,.4),'capbody':(.14,.23,.32),'capdetail':(.95,.71,.32)}
 def render(name,scene,title):
  renderer=vtk.vtkRenderer();renderer.SetBackground(1,1,1)
  for label,s in scene:
@@ -36,8 +36,8 @@ scene=[]
 for n,s in parts.items():
  if n=='side-hook':s=c.hook_rotate(s,c.HOOK_OPEN_ANGLE)
  if n.startswith('board'):s=c.slide(c.board(n.split('-')[1],c.BOARD_RELEASE),n.split('-')[1],c.BOARD_TRAVEL)
- if n=='capstone-hatch':s=c.hatch_rotate(s,100)
  scene.append((n,s))
+scene += [('capstone-'+team,c.stored_capstone(team,side)) for team,side in [('cat','left'),('witch','right')]]
 render('03-access',scene,'V22 access — release front buttons, slide boards outward')
 window=c.box(-15,8,-35,8,-1,35)
 closed=[(n,c.fold(s,180) if n.endswith('-right') else s) for n,s in parts.items()]
@@ -49,3 +49,10 @@ for filename,angle,title in [('04-hook-closed',0,'V22 side hook — CLOSED over 
   if clipped.Volume()>1e-5:closeup.append((n,clipped))
  render(filename,closeup,title)
 print('Five depth-buffered STEP readback previews generated.')
+
+cat=cq.importers.importStep(str(OUT/'models/capstone-cat.step')).val().translate((-18,0,0))
+witch=cq.importers.importStep(str(OUT/'models/capstone-witch.step')).val().translate((18,0,0))
+cap_scene=[]
+for shape in (cat,witch):
+ cap_scene += [('capbody',shape.intersect(c.box(-60,60,-30,30,-.1,6.8))),('capdetail',shape.intersect(c.box(-60,60,-30,30,6.8,8.1)))]
+render('09-flat-capstones',cap_scene,'V22 flat capstones — 8 mm tall; optional contrast paint shown')

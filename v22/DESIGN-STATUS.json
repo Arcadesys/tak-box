@@ -1,13 +1,8 @@
 {
-  "status": "capstone_direction_pending",
+  "status": "complete_first_print_kit",
   "closed_thickness_mm": 32.6,
   "deeper_box_rejected": true,
-  "current_geometry": "thin V21 body and rear capstone compartment plus captive PIP main hinges",
-  "choices": [
-    "one-piece flat capstones under boards",
-    "folding standee capstones under boards",
-    "existing sculpted capstones and rear compartment"
-  ],
-  "release_packaging_ready": false,
+  "current_geometry": "thin body, captive main hinges, flat Cat/Witch capstones beneath sliding boards; rear compartment removed",
+  "release_packaging_ready": true,
   "physical_acceptance": false
 }

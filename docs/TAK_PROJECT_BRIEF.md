@@ -2,7 +2,15 @@
 
 Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current version decision: v21
+### Current version decision: v22
+
+October 5: the user selected **V22**, restoring print-in-place main folding hinges while retaining the sliding playing boards. They rejected a deeper box and selected **one-piece flat Cat/Witch capstones** instead of folding standees or the existing rear compartment. New 8 mm-high capstones sit in graspable bays behind the ordinary stones under each board; the rear compartment and hatch are removed. The capstones remain flat during play, with distinct silhouettes and 1.2 mm raised tactile details.
+
+Both bases print together as one assembly with two separate solids. Opposed 3 mm printed pivots have 0.4 mm nominal radial and face clearance. Main filament pins and collars are removed; only the side hook retains its 9.6 mm filament pivot and one collar. The full 180 mm field, original 42 flats at 20×20×8 mm and 32.6 mm closed thickness remain. Closed envelope including hook hardware: 111.8×220.2×32.6 mm. New bases and capstones are required; board, hook and collar CAD shapes match V21.
+
+Three full-build projects contain eight printed parts, including the two new capstones; slicer estimate 11 h 17 min / 268 g. The optional hinge trial is separate. CAD, sampled motion/retention, mesh, readback and slicer evidence are recorded in [V22](../v22/START-HERE.md). Physical joint release, tactile recognition, retrieval, fit and loaded transport remain unobserved. Older sculpted capstones do not fit these shallow bays. No printer job was started.
+
+### Historical version decision: v21
 
 October 5: the user explicitly selected **V21** after asking why the playing board itself could not slide aside. Each board now doubles as its storage cover and slides outward, away from the centre seam. Only the two fixed-pocket bases hinge. The full 180 mm field and 36 mm pitch remain. Front buttons press rearward 2.8 mm to release; outward travel of 106 mm fully removes each board. Rails retain boards vertically and inner stops set their playing position. No captive withdrawal stop or measured release force is claimed.
 

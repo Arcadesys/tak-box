@@ -69,7 +69,7 @@ def main():
  plans={
  '01-print-in-place-bases':[(n,load(n).translate(c.PRINT_BASE_SHIFT)) for n in ['housing-left','housing-right']],
  '02-sliding-board-tops':[place('board-left',7,7),place('board-right',121,7)],
- '03-hatch-hook-and-three-axle-caps':[place('capstone-hatch',7,7,((1,0,0),180)),place('side-hook',110,7,((0,1,0),90))]+[(f'axle-end-cap-{i+1}',place('axle-end-cap',110+12*i,50)[1]) for i in range(3)],
+ '03-flat-capstones-hook-and-collar':[place('capstone-cat',7,7),place('capstone-witch',45,7),place('side-hook',85,7,((0,1,0),90)),place('axle-end-cap',125,7)],
  }
  rows={}
  for name,items in plans.items():
@@ -83,7 +83,7 @@ def main():
    e.plate(name,items)
    if name.startswith('01-'):
     housing_support_clearance(name,items)
-  rows[name]={'objects':[n for n,_ in items],'orientation':'Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; hook flat; collar bore up.','supports':True,'support_object_xy_distance_mm':.8 if name.startswith('01-') else .35}
+  rows[name]={'objects':[n for n,_ in items],'orientation':'Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.','supports':True,'support_object_xy_distance_mm':.8 if name.startswith('01-') else .35}
  (OUT/'reports/plates.json').write_text(json.dumps({'bed_mm':[256,256],'checks':checks,'plates':rows,'filament_pins_printed':False,'physical_acceptance':False},indent=2)+'\n')
  print('Three complete-case geometry plates exported and read back.')
 if __name__=='__main__':main()
