@@ -2,7 +2,15 @@
 
 Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current version decision: v20
+### Current version decision: v21
+
+October 5: the user explicitly selected **V21** after asking why the playing board itself could not slide aside. Each board now doubles as its storage cover and slides outward, away from the centre seam. Only the two fixed-pocket bases hinge. The full 180 mm field and 36 mm pitch remain. Front buttons press rearward 2.8 mm to release; outward travel of 106 mm fully removes each board. Rails retain boards vertically and inner stops set their playing position. No captive withdrawal stop or measured release force is claimed.
+
+The side hook moves to the front corner to clear board travel. Main filament pins shorten to 14.9 mm; hatch and hook pins remain 92 mm and 9.6 mm. Bases and boards print flat, eliminating the former broad underside support under the boards. The rear compartment shifts 2 mm for rail clearance; it retains its separate capstone hatch. New bases and boards are required. Four full-build projects contain 11 printed parts, estimated at 12 h 35 min / 287 g. The original Cat/Witch CAD remains the clearance target; weighted and curled sets are unverified.
+
+See [V21 guide](../v21/START-HERE.md) and [checkpoint](V21_CHECKPOINT.md). Physical fit, flex, loaded opening/repacking and transport remain unobserved. V18–V20 remain intact; no printer job was started.
+
+### Historical version decision: v20
 
 October 5: the user rejected the tall housing orientations and explicitly selected **V20** after proposing sliding tops for piece containment. V20 replaces removable drawers with fixed original-piece pockets and separate removable sliding lids. Each broad-bottom base and broad-face lid prints flat; sloped rails retain the lid vertically, a thumb catch blocks withdrawal and the rear wall stops over-insertion. The board leaf lifts for storage access and lowers again for play. Lids must be latched before folding.
 

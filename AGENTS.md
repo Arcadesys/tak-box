@@ -2,7 +2,7 @@
 
 ## Start here
 
-Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, v20/START-HERE.md, v20/BUILD-PROVENANCE.md and docs/V20_CHECKPOINT.md. The user explicitly selected V20 on October 5 after rejecting tall print orientations and choosing sliding storage lids. Current design: flat-printing fixed-pocket bases, separate sliding lids with thumb catches, four-leaf common hinge axis, 1.75 mm filament pins, side hook and full 180 mm field. The five projects are in v20/PRINT. Physical fit is unverified. Preserve historical V18/V19 packages, frozen files, printed V16 parts and the separate premium pagoda.
+Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, v21/START-HERE.md, v21/BUILD-PROVENANCE.md and docs/V21_CHECKPOINT.md. The user explicitly selected V21 on October 5: the boards themselves slide aside to uncover fixed piece pockets. Only the two bases hinge; there are no separate storage lids or board hinges. Retain the full 180 mm field, 1.75 mm filament pins and front-corner side hook. Four projects are in v21/PRINT. Main pins are now 14.9 mm. Physical fit is unverified. Preserve historical V18–V20 packages, frozen files, printed V16 parts and the separate premium pagoda.
 
 ## Design priorities
 
