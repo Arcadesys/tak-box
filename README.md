@@ -49,6 +49,8 @@ The Cat and Witch flats and capstones, with CAD source, STLs and one CC2 print p
 
 The [weighted stone prototype](pieces/weighted-v1/README.md) adds 20 × 20 × 6 mm two-part stones for post-print ballast and epoxied floors, with a three-clearance fit coupon and one complete geometry plate per team. Physical fit and feel remain untested.
 
+The [piece generator v1](pieces/piece-generator-v1/README.md) systematizes custom weighted teams from TOML presets: recessed engraving, side texture, solved ballast volume, a low-profile capstone, and a positive snap floor backed by adhesive. It generates a complete team plate plus a three-variant snap-fit coupon. CAD and mesh checks are automated; physical snap retention and tactile acceptance remain untested.
+
 The [fox knurled flats](pieces/fox-knurled-v1/README.md) add 21 fox-themed 19.5 × 19.5 × 8 mm stones with recessed face emblems and diamond-textured sides. Sample and full-set CC2 plates are included. Geometry fits the current tray insert; physical fit and grip await a sample print.
 
 The [reference-based Fox and Cat capstones](pieces/fox-cat-capstones-v4/README.md) follow a continuous carved nose-to-tail curl. This package contains the fuller Fox tail and the Cat's corrected neck/shoulder, printable STLs, a labeled two-object 3MF, retained reconstruction sources and large labeled previews. Digital v16 compatibility and dry slicing pass; physical fit and tactile acceptance remain untested.
