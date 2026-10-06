@@ -1,35 +1,40 @@
-# V22 first-print kit evidence
+# V22 seamless exterior — first-print evidence
 
-V22 keeps the 32.6 mm thin case and replaces the rear compartment/hatch with one-piece flat Cat/Witch capstones beneath the sliding boards. Closed size including hardware is 111.8 × 220.2 × 32.6 mm, 23.6 mm shorter than V21. The 180 × 180 mm, 5×5 playing field remains unchanged. Units: mm. Defining source revision and dependency hashes are in [reports/provenance.json](reports/provenance.json).
+This revision replaces the corner hook and projecting hinge roots with a centered recessed hook assembly, offset recessed board grips and rounded hinge-end shoulders within the case length. The complete closed outline, including hook, catch and pivot/collar, is **101 × 200 × 32.6 mm**. The earlier V22 kit measured 111.8 × 220.2 × 32.6 mm. Thickness and the full 180 mm, 5×5 / 36 mm-pitch field are preserved. Units: mm.
 
-Based on V21 commit `0fd6806`, with opposed captive main pivots adapted from V16 source geometry (3 mm diameter, 0.4 mm radial and face clearance). Both bases print together flat in one assembly. Boards, side hook and the remaining hook collar have zero CAD symmetric difference from V21. The only filament pivot is the 9.6 mm side-hook pin. Physical interchangeability has not been observed.
+The original V22 ZIP at source `02f8a0930e1af4da0ae74466eea1ca79128045b1` remains unchanged as `tak-v22-print-kit.zip`; the revised artifact is `tak-v22-seamless-print-kit.zip`. Defining source revision and dependency hashes are recorded in [reports/provenance.json](reports/provenance.json). The revision remains on the focused V22 branch/draft PR; V18–V21 and user-extracted copies are preserved.
 
-59 geometry/mesh/piece/motion checks, 37 field probes, six hardware checks, 20 plate/readback checks, three filament-core checks and 20 flat-capstone checks pass. Three slices pass with exact named meshes and preserved assembly positions. Full kit estimate: 40,629 seconds (11 h 17 min) / 267.67 g. Eight printed parts; maximum part height 19.3 mm. The optional shortened hinge pair passes eight checks and slices to 1,290 seconds / 3.80 g.
+Both bases print together flat with 3 mm opposed captive pivots and 0.4 mm nominal radial/face clearance. Rounded shoulders now lie in the front and rear end margins, clear of the playing field. The hook releases through 90° and parks at Z1.5–9.9, below the board underside at Z10.6. Its headed 3 mm catch, 3.2 mm hook and round 2 mm collar are fully recessed. One 8.6 mm length of 1.75 mm PLA provides the hook pivot. The 52×30.2 mm side recess admits a 12 mm thumb-pad clearance probe beside the hook; 30 mm-wide finger wells admit a 7 mm probe beneath the board edge. These are geometric access checks, not measured human comfort.
 
-32 captive-hinge checks pass: CAD clearance and opposed axial capture, no support centerlines within the cylindrical bearings, and sampled radial toolpath gaps in both full and trial prints. With a conservative 0.50 mm bead-width assumption, sampled side gaps measure 0.385–0.422 mm. This is not a continuous swept-volume or physical force/strength proof. Selected layers, gap plots and actual STEP previews were visually reviewed.
+Current passing checks: 59 solid/mesh/STEP/fit/motion checks; 37 exported field probes; eight hardware checks including the whole folding path; 29 exterior/access/wall probes; 254 preliminary exterior mechanism trial checks; 20 plate/readback checks; three filament-core toolpath checks; 32 captive-hinge checks; 20 capstone checks; eight hinge trial checks; 129 recessed-closure trial checks. Motion is sampled, not a continuous swept-volume proof. Flexing release poses are assumed rather than FEA or measured force.
 
-The exact piece package is 42 original Cat/Witch 20 × 20 × 8 mm flat stones plus two new V22 8 mm flat capstones. Vendored original flat STLs and defining source hashes are retained. Capstones have nominal 0.4 mm roof clearance and 4.5 mm exposed height above the bay rim; loaded folding, sliding, discrete retention poses and vertical retrieval checks pass. Older sculpted capstones do not fit these bays. Weighted flats remain unqualified. The capstone preview shows optional contrast paint; each capstone prints as one solid part.
+Three CC2 PLA slices pass with exact named meshes and preserved placement. Full-build estimate is **41,899 s (11 h 38 min 19 s) / 272.16 g**, eight printed parts, 19.3 mm maximum part height. The optional hinge trial is **1,556 s / 5.31 g**; the optional recessed closure trial is **3,175 s / 13.39 g**. Selected actual deposition layers, captive gaps and exported-geometry previews were reviewed. With a conservative 0.50 mm bead-width assumption, sampled captive running gaps are **0.384–0.422 mm**. No support centerlines enter the checked cylindrical bearings; this does not prove all extrusion clearances or physical joint release.
 
-Environment: repository `.slicer-work/cad-venv/bin/python`, Python 3.12.13; [requirements.txt](requirements.txt) pins the dependencies. ElegooSlicer 2.4.2, CC2 0.4 mm nozzle and included PLA/process profiles. Commands and profile hashes are recorded in slicing and fit-check reports. No printer job started. Generic PLA temperature-metadata warnings remain (45°C softening metadata versus 60°C bed). Missing CLI OpenGL thumbnails are replaced by separate actual-geometry previews.
+The exact piece package remains 42 original Cat/Witch 20×20×8 mm flats and two supplied one-piece 8 mm Cat/Witch capstones. Capstone geometry is identical to the earlier V22 kit; nominal storage roof gap remains 0.4 mm. Both bases, both boards, hook and collar have changed and must be replaced together. No printed interchangeability is claimed. Older sculpted capstones do not fit; weighted flats remain unqualified. The 1.8 mm closure backing wall, 1.2 mm local recess floor and 2.2 mm floor beneath pieces pass material probes. Rounded captive journal rims still need careful physical release/strength evaluation.
 
-Run from the repository root using the CAD environment, in order:
+Environment: repository `.slicer-work/cad-venv/bin/python`, Python 3.12.13, CadQuery 2.7.0; [requirements.txt](requirements.txt) pins dependencies. ElegooSlicer 2.4.2 with included CC2 0.4 mm, PLA and process profiles. No new dependencies were installed. Slice reports retain commands/profile/input/project/Gcode hashes. Generic PLA temperature-metadata warnings remain (45°C softening entry versus 60°C bed). CLI OpenGL thumbnail generation is unavailable; separate actual-CAD previews are provided.
+
+Reproduce using the CAD Python environment:
 
 ```text
+python v22/source/build_exterior_trial.py
 python v22/source/build_case.py
-python v22/source/verify_field.py
 python v22/source/verify_hardware.py
+python v22/source/verify_exterior.py
+python v22/source/verify_field.py
 python v22/source/verify_flat_capstones.py
+python v22/source/render_case.py
 python v22/source/package_case.py
 python v22/source/slice_case.py
-python v22/source/render_case.py
 python v22/source/inspect_case_layers.py
 python v22/source/verify_pin_toolpaths.py
 python v22/source/build_fitcheck.py
+python v22/source/build_closure_fitcheck.py
 python v22/source/verify_pip_hinges.py
 ```
 
-Review regenerated layer sheets before marking their reports reviewed, then run `record_provenance.py`, `package_release.py` and `verify_package.py` from the same source directory. The packaged source resolves its own paths and can also run from an extracted kit. Fresh extraction and standalone reconstruction evidence is recorded outside the archive in `docs/V22_PACKAGE_CHECK.json`.
+Review regenerated layer sheets and record their observations, then run `record_provenance.py`, `package_release.py` and `verify_package.py` under `v22/source`. Run `scripts/audit_v22_release.py` for fresh extraction, all payload hashes/syntax, local links and independent base/board/capstone reconstruction against packaged STEP. Its receipt is outside the archive at `docs/V22_SEAMLESS_PACKAGE_CHECK.json`. Source scripts resolve their own package paths and work from an extracted kit with the pinned CAD environment.
 
-Resolved implementation issues: separate-object slicing reported conflicting paths; grouping the disjoint base meshes into one assembly fixed it without merging them. Named-mesh readback verifies each component and world placement. The gap checker initially mistook internal infill voids for a missing pin; it now uses outer pin contours and segment-capsule intersections. An optional capstone edge chamfer caused a small Witch STEP volume readback discrepancy; removing it restored matching readback while retaining rounded outline corners. A tessellated bounding-box offset was removed from stored-piece placement; exact CAD bottom planes now set the storage height. No new dependencies were added.
+Resolved trial findings: a direct corner-hook relocation collided with the boards. The narrowed hook, revised pivot/catch heights, board-edge relief and 90° parked position remove those collisions. A high tongue corner briefly touched the recess roof during release; narrowing that tongue resolved it without removing the catch-engagement check. The initial reverse-stop block intruded into the pivot disc; moving it under the thumb foot restored independent rotation and the reverse stop. Hinge relief corners were rounded after the actual-geometry review, then the affected build and slices were regenerated. Earlier V22 separate-object slicing was resolved by keeping the base pair grouped as one assembly; that placement is preserved.
 
-Physical acceptance remains unchecked in [ACCEPTANCE.md](ACCEPTANCE.md): hinge release, warping, slider effort, capstone recognition/grip, hook retention and loaded transport require the printed build.
+Physical snag resistance, thumb/finger comfort, joint release, stiffness, wear, fit and loaded retention remain unchecked in [ACCEPTANCE.md](ACCEPTANCE.md). No printer job, paid generation or merge was performed.

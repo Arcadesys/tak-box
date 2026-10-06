@@ -42,8 +42,8 @@ def main():
  closed_right=c.fold(parts['housing-right'],180)
  check('locked side hook blocks case opening at 1 degree',ov(parts['side-hook'],c.open_from_closed(closed_right,1))>1)
  check('hook reverse rotation stop',ov(c.side_hook(-8),parts['housing-left'])>.01)
- worst('hook release 0..65 degrees at 1 degree samples',((f'{a}:{n}',c.side_hook(a),p) for a in range(66) for n,p in [('left',parts['housing-left']),('right closed',closed_right)]))
- check('hook mouth clearance and headed keeper',abs(c.hook_keeper().BoundingBox().xmin+8.8)<1e-6,{'pin_diameter_mm':4,'head_diameter_mm':7,'hook_thickness_mm':3.2,'keeper_head_clearance_mm':.4,'pivot_faces_contact_for_friction':True,'retention':'Rigid hook shoulder and reverse rotation stop; set pivot collar for light friction. Unloaded rotation resistance remains physical.'})
+ worst('hook release 0..90 degrees at 1 degree samples',((f'{a}:{n}',c.side_hook(a),p) for a in range(c.HOOK_OPEN_ANGLE+1) for n,p in [('left',parts['housing-left']),('right closed',closed_right),('board left',parts['board-left']),('board right closed',c.fold(parts['board-right'],180))]))
+ check('hook mouth clearance and headed keeper',abs(c.hook_keeper().BoundingBox().xmin)<1e-6,{'pin_diameter_mm':3,'head_diameter_mm':5.6,'hook_thickness_mm':3.2,'keeper_head_clearance_mm':.4,'pivot_faces_contact_for_friction':True,'retention':'Rigid hook shoulder and reverse rotation stop; set pivot collar for light friction. Unloaded rotation resistance remains physical.'})
  for side in ('left','right'):
   board=parts['board-'+side];housing=parts['housing-'+side]
   check(side+' board catch blocks outward slide',ov(c.slide(board,side,1),housing)>1)

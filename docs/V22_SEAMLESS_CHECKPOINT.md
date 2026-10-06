@@ -1,0 +1,15 @@
+# V22 seamless exterior revision
+
+Outcome: rounded flush closed exterior, recessed centered outer-side hook including pivot/collar/catch, recessed offset board grips, and integrated rounded hinge-end shoulders. Preserve 32.6 mm thickness, full 180 mm field, exact original 42 flats and solid 8 mm Cat/Witch capstones, captive main hinges. User authorized this local revision; no printer job or merge.
+
+Route: short design plan for centered closure/board motion and embedded hinge-end clearance, then bounded workhorse/medium implementation and focused checks in this context. Maintained role mapping read; no model switch or delegation claimed. Actual model/effort and usage counters unavailable.
+
+Plan: recess closure into spare side margin ahead of the first stone column; remove projecting board tab, add broad rounded grips offset along the side. Move opposed hinges into end margins outside the field, retaining their 3 mm pins and 0.4 mm gaps, and replace rectangular roots with rounded shoulders. Verify cropped actual closure and hinge-end geometry before full exports/slicing. Then check exact loaded geometry and motion, meshes/readback, slices/layers, provenance and freshly extracted revised ZIP.
+
+Baseline preserved: existing v22/release/tak-v22-print-kit.zip and its 02f8a09 source revision; new archive will be named tak-v22-seamless-print-kit.zip. V18–V21 and user-extracted folders remain untouched.
+
+Current: implementation and digital checks complete. Closed envelope 101×200×32.6 mm (baseline 111.8×220.2×32.6); hook parks at 90° below the boards. Eight full parts across three plates: 41,899 s / 272.16 g. Optional hinge trial 1,556 s / 5.31 g; closure trial 3,175 s / 13.39 g. All required replacement parts are explicit in the guide; capstone CAD unchanged.
+
+Evidence: 59 geometry, 37 field, eight hardware, 29 exterior/access/wall, 254 preliminary mechanism, 20 plate, three filament toolpath, 32 captive-hinge, 20 capstone, eight hinge-trial and 129 closure-trial checks pass. Three full slices and two trial slices match named exported meshes and placement. Selected layers, captive-gap plots and exported CAD previews reviewed. Baseline ZIP hash matches docs/V22_BASELINE_ARCHIVE.json. Fresh revised-ZIP audit receipt will be docs/V22_SEAMLESS_PACKAGE_CHECK.json.
+
+Remaining: pin current defining source in provenance, package and independently extract/audit the revised ZIP, commit/push and update draft PR #27. No physical acceptance observed. Next small physical trial is the supplied 53-minute recessed closure coupon, followed by the 26-minute hinge coupon; the full build is also supplied. No printer job, merge, paid generation or new agent.

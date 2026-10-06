@@ -21,9 +21,9 @@ def placement(part,xy,R):
 def region(plate,label,part,xy,R,start,end,radius=.875):
  d=np.array(c.PRINT_BASE_SHIFT) if part.startswith('housing-') else placement(part,xy,R);a=R@np.array(start)+d;b=R@np.array(end)+d
  regions.setdefault(plate,[]).append((label,a,b,radius))
-region('01-print-in-place-bases','hook fixed pivot','housing-left',(10,7),I,(-2.9,-6,7),(.7,-6,7))
-region('03-flat-capstones-hook-and-collar','moving hook','side-hook',(85,7),RP,(-6.5,-6,7),(-3.9,-6,7))
-region('03-flat-capstones-hook-and-collar','collar','axle-end-cap',(125,7),I,(0,0,.4),(0,0,3.6))
+region('01-print-in-place-bases','hook fixed pivot','housing-left',(10,7),I,(5.5,100.8,5.8),(9.5,100.8,5.8))
+region('03-flat-capstones-hook-and-collar','moving hook','side-hook',(85,7),RP,(2.3,100.8,5.8),(4.9,100.8,5.8))
+region('03-flat-capstones-hook-and-collar','collar','axle-end-cap',(125,7),I,(0,0,.4),(0,0,1.6))
 
 def hits(P,Q,a,b,radius):
  axis=b-a;length=np.linalg.norm(axis);axis=axis/length

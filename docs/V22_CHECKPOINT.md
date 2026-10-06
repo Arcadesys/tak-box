@@ -1,3 +1,5 @@
+Current revision: see [V22 seamless checkpoint](V22_SEAMLESS_CHECKPOINT.md). The following records the preserved original V22 kit.
+
 # V22 checkpoint — October 5, 2026
 
 Outcome: complete first-print kit with sliding boards, print-in-place main folding hinges and one-piece flat Cat/Witch capstones beneath the boards. The user explicitly selected V22 and accepted flat capstones. Keep the 32.6 mm thin box; remove the rear compartment and hatch. Preserve V18–V21, printed parts and the separate premium pagoda.

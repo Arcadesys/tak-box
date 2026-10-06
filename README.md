@@ -2,15 +2,15 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Current print kit: v22
+## Current print kit: V22 seamless exterior
 
-[Download the V22 print kit](v22/release/tak-v22-print-kit.zip), then open **v22/START-HERE.md**. Three CC2 PLA projects are together in **v22/PRINT**; the ZIP contains one v22 folder with reproducible source and dependencies.
+[Download the revised V22 seamless kit](v22/release/tak-v22-seamless-print-kit.zip), then open **v22/START-HERE.md**. Three CC2 PLA projects are together in **v22/PRINT**, with eight parts estimated at **11 h 38 min / 272 g**.
 
-The two bases **print together with captive hinges**. The playing boards slide outward to uncover 21 ordinary stones and a new flat capstone in each half. One-piece Cat/Witch capstones replace the sculpted pawns for this travel kit, allowing the rear compartment and hatch to be removed. The full 180 mm field and **32.6 mm closed thickness** remain. Closed envelope: 111.8×220.2×32.6 mm. Eight printed parts across three plates, estimated at 11 h 17 min / 268 g. Only the side hook retains an inserted filament pivot.
+The hook, catch and pivot/collar are recessed at the middle of the long side opposite the captive main hinges. Rounded hinge shoulders sit within the end margins, and recessed finger wells replace the projecting board tabs. Closed envelope: **101×200×32.6 mm**, preserving the full 180 mm field, original 42 flats and solid 8 mm Cat/Witch capstones under the sliding boards. Both bases still print together open flat. Only the hook uses an inserted filament pivot.
 
-Digital geometry, slicing and package checks are recorded; physical release, grip, fit and loaded transport remain untested. See the [guide](v22/START-HERE.md) and [checkpoint](docs/V22_CHECKPOINT.md).
+Replace both bases, both boards, hook and collar together; the flat capstones are unchanged. Digital geometry, sampled motion, mesh/readback and slice checks pass. Physical comfort, snag resistance, release, fit and loaded transport remain untested. The kit includes separate 26-minute hinge and 53-minute closure trials. See the [guide](v22/START-HERE.md) and [revision checkpoint](docs/V22_SEAMLESS_CHECKPOINT.md).
 
-The [V21 kit](v21/START-HERE.md), [V20 kit](v20/START-HERE.md), [V19 kit](v19/START-HERE.md), original [recessed clasp](v18-recessed-clasp) and [V18 integrated kit](v18-case/README.md) remain historical and intact.
+The [original V22 ZIP](v22/release/tak-v22-print-kit.zip) is preserved unchanged. [V21](v21/START-HERE.md), [V20](v20/START-HERE.md), [V19](v19/START-HERE.md) and [V18](v18-case/README.md) remain historical and intact.
 
 ## Historical v17 architecture study: [four leaves on one common hinge](v17-four-leaf)
 

@@ -2,13 +2,15 @@
 
 Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current version decision: v22
+### Current version decision: V22 seamless exterior
 
-October 5: the user selected **V22**, restoring print-in-place main folding hinges while retaining the sliding playing boards. They rejected a deeper box and selected **one-piece flat Cat/Witch capstones** instead of folding standees or the existing rear compartment. New 8 mm-high capstones sit in graspable bays behind the ordinary stones under each board; the rear compartment and hatch are removed. The capstones remain flat during play, with distinct silhouettes and 1.2 mm raised tactile details.
+October 5: the user authorized a local exterior revision within V22. The hook, pivot/collar and headed catch are recessed together at the middle of the long side opposite the main hinge. Broad rounded thumb access surrounds the hook; two offset recessed finger wells replace each board’s projecting pull tab. Rounded end shoulders replace the projecting rectangular main-hinge roots while retaining captive pivots and full folding motion.
 
-Both bases print together as one assembly with two separate solids. Opposed 3 mm printed pivots have 0.4 mm nominal radial and face clearance. Main filament pins and collars are removed; only the side hook retains its 9.6 mm filament pivot and one collar. The full 180 mm field, original 42 flats at 20×20×8 mm and 32.6 mm closed thickness remain. Closed envelope including hook hardware: 111.8×220.2×32.6 mm. New bases and capstones are required; board, hook and collar CAD shapes match V21.
+The closed envelope is **101×200×32.6 mm**, compared with 111.8×220.2×32.6 mm for the preserved original V22 kit. The full 180 mm, 5×5 / 36 mm-pitch field, original 42 Cat/Witch 20×20×8 mm flats and solid 8 mm flat Cat/Witch capstones remain. No deeper case, rear compartment, standee or sculpted capstone is introduced. Hook parking at 90° clears both complete outward board paths. Only its pivot uses an inserted 8.6 mm length of 1.75 mm PLA; main hinges print captive.
 
-Three full-build projects contain eight printed parts, including the two new capstones; slicer estimate 11 h 17 min / 268 g. The optional hinge trial is separate. CAD, sampled motion/retention, mesh, readback and slicer evidence are recorded in [V22](../v22/START-HERE.md). Physical joint release, tactile recognition, retrieval, fit and loaded transport remain unobserved. Older sculpted capstones do not fit these shallow bays. No printer job was started.
+The revised kit is `v22/release/tak-v22-seamless-print-kit.zip`: three full projects, eight parts, estimated 11 h 38 min / 272 g, with optional hinge and closure trials. Replace both bases, both boards, hook and collar together. The capstones match the original V22 CAD. The original V22 ZIP and V18–V21 archives are preserved. Geometry, exact loaded-piece clearance, motion samples, readback, toolpaths and slices pass; physical snag resistance, thumb/grip comfort, release, fit, durability and loaded retention remain unobserved. No printer job or merge is authorized by this preparation.
+
+See [V22 guide](../v22/START-HERE.md) and [revision checkpoint](V22_SEAMLESS_CHECKPOINT.md).
 
 ### Historical version decision: v21
 

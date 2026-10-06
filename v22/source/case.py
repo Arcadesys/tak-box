@@ -13,15 +13,17 @@ HINGE_PIN_D=1.75
 HINGE_BORE_D=2.0
 CAP_BORE_D=1.9
 # V16-style opposed captive pivots: print both bases together, open flat.
-base.L=194.8
-base.FAMILIES={'tray-left':((-9.3,-5.0),(195.2,199.5)),'tray-right':((-14.,-9.7),(199.9,204.2))}
+base.L=200.0
+base.FAMILIES={'tray-left':((4.9,9.2),(190.8,195.1)),'tray-right':((.2,4.5),(195.5,199.8))}
 PRINT_BASE_SHIFT=(17,21,0)
 PIP_PIN_R=1.5
 PIP_CLEARANCE=.4
-PIP_STATIONS=((-9.7,-9.3,1),(199.9,199.5,-1))
+PIP_STATIONS=((4.5,4.9,1),(195.5,195.1,-1))
 BOARD_RELEASE=2.8
 BOARD_TRAVEL=106
-HOOK_Y_SHIFT=-100
+HOOK_Y_SHIFT=8.25
+HOOK_X_SHIFT=8.8
+GRIP_CENTERS=(43.,157.)
 
 
 def union(*shapes):
@@ -46,37 +48,35 @@ def pip_hinges(s,side):
   s=union(s,pip_pin(face,d)) if side=='right' else s.cut(pip_socket(mouth,d))
  return s.clean()
 
-# Side hook rotates in the YZ plane; X is its filament-pivot axis.
-HOOK_AXIS=(-5.2,-6.,7.)
-HOOK_OPEN_ANGLE=65
+# Recessed side hook rotates in YZ; X is its filament-pivot axis.
+HOOK_AXIS=(3.6,100.8,5.8)
+HOOK_OPEN_ANGLE=90
 
 def x_cylinder(r,a,b,y,z):
  return cq.Solid.makeCylinder(r,b-a,cq.Vector(a,y,z),cq.Vector(1,0,0))
 
 def hook_rotate(s,angle):
- return s.rotate(HOOK_AXIS,(-4.2,-6.,7.),angle)
+ return s.rotate(HOOK_AXIS,(4.6,100.8,5.8),angle)
 
 def hook_pivot_passage():
- h=1/(2**.5)
- roof=cq.Workplane('YZ').polyline([(94-h,7+h),(94+h,7+h),(94,7+2*h)]).close().extrude(4.61).val().translate((-3.61,0,0))
- return union(x_cylinder(1,-3.61,1.0,94,7),roof).translate((0,HOOK_Y_SHIFT,0))
+ y,z=HOOK_AXIS[1:];h=1/(2**.5)
+ roof=cq.Workplane('YZ').polyline([(y-h,z+h),(y+h,z+h),(y,z+2*h)]).close().extrude(4.61).val().translate((5.19,0,0))
+ return union(x_cylinder(1,5.19,9.8,y,z),roof)
 
 def hook_pivot_mount():
- # Flat friction bearing pad and reverse stop beneath the broad thumb foot.
- return union(x_cylinder(4.5,-3.6,.8,94,7),box(-3.2,.8,89.5,98.5,2.5,7),box(-6.8,.8,98.7,103,0,4.6)).translate((0,HOOK_Y_SHIFT,0)).cut(hook_pivot_passage()).clean()
+ return union(x_cylinder(4,5.2,9.6,100.8,5.8),box(5.6,9.6,96.8,104.8,1.8,5.8),box(2,9.6,104.4,107,1.2,3.4)).cut(hook_pivot_passage()).clean()
 
 def hook_keeper():
- # Closed-pose headed catch: the head prevents the hook sliding off sideways.
- return union(x_cylinder(4,-3.2,.8,90,25),x_cylinder(2,-7.2,-3,90,25),x_cylinder(3.5,-8.8,-7.2,90,25)).translate((0,HOOK_Y_SHIFT,0))
+ return union(x_cylinder(3.5,5.6,9.6,100.5,27),x_cylinder(1.5,1.6,5.8,100.5,27),x_cylinder(2.8,0,1.6,100.5,27))
 
 @lru_cache(None)
 def side_hook(angle=0):
- # Broad rigid hook, open mouth toward +Y. Opening load seats it toward stop.
- yz=[(91,5),(99.5,5),(99.5,9),(95,9),(87.6,22),(87.6,27.65),(98,27.65),(98,31),(84,31),(84,21)]
- p=cq.Workplane('YZ').polyline(yz).close().extrude(3.2).val().translate((-6.8,0,0))
- p=union(p,x_cylinder(4.5,-6.8,-3.6,94,7))
- p=p.cut(x_cylinder(1,-6.81,-3.59,94,7)).clean()
- return hook_rotate(p.translate((0,HOOK_Y_SHIFT,0)),angle)
+ # Narrow load-bearing hook parks below the board; broad surrounding well
+ # gives thumb access. The catch is behind the pivot in Y, seating on stop.
+ yz=[(98,3.8),(104.9,3.8),(104.9,7.8),(101.8,7.8),(98.6,23.5),(98.6,29),(103,29),(103,31.1),(96.5,31.1),(96.5,22.5)]
+ p=cq.Workplane('YZ').polyline(yz).close().extrude(3.2).val().translate((2,0,0))
+ p=union(p,x_cylinder(4,2,5.2,100.8,5.8)).cut(x_cylinder(1,1.99,5.21,100.8,5.8)).clean()
+ return hook_rotate(p,angle)
 
 def open_from_closed(s,angle):
  return s.rotate((98,0,16.3),(98,1,16.3),angle)
@@ -92,14 +92,18 @@ def board_catch(release=0):
  pts=[(x,5.1+d(x)) for x in [54*i/40 for i in range(41)]]
  pts += [(x,6.3+d(x)) for x in [54*i/40 for i in range(40,-1,-1)]]
  arm=cq.Workplane('XY').workplane(offset=10.6).polyline(pts).close().extrude(4.7).val()
- return union(box(0,3,5.1,9.5,10.6,15.3),arm,box(34,54,-.2+release,5.2+release,10.6,15.3))
+ return union(box(0,3,5.1,9.5,10.6,15.3),arm,box(34,54,.2+release,5.2+release,10.6,15.3))
 
 @lru_cache(None)
 def board(side,release=0):
  # One part is both playing surface and the sealed storage top.
  p=x_prism([(3.1,10.6),(192.3,10.6),(192.3,14.2),(191.2,15.3),(4.2,15.3),(3.1,14.2)],0,97.8)
  p=p.cut(box(3,57,2.9,9.5,10.5,15.4))
- p=union(p,board_catch(release),box(-5,1,80,112,10.6,15.3),box(0,1.6,10,190,15.3,16.3))
+ p=union(p,board_catch(release),box(0,1.6,10,190,15.3,16.3))
+ for y in GRIP_CENTERS:
+  p=p.cut(round_box(-2,2.2,y-14,y+14,10.5,16.4,2.0,'Z'))
+ p=p.cut(round_box(-.2,5.7,70,122,10.5,16.4,2.5,'Z'))
+ p=p.cut(round_box(92.1,99,-1,9.6,10.5,17,1.3)).cut(round_box(92.1,99,190.4,201,10.5,17,1.3))
  # Stops lie outside the complete 180 mm field and block over-insertion.
  p=p.cut(box(95,98,2.9,5.4,10.5,15.4)).cut(box(95,98,190.4,192.4,10.5,15.4))
  for i in range(6):
@@ -133,29 +137,66 @@ def stored_capstone(team,side):
  s=s.translate((27.6-(b.xmin+b.xmax)/2,179-(b.ymin+b.ymax)/2,2.2))
  return s if side=='left' else mirror(s)
 
+def round_box(x0,x1,y0,y1,z0,z1,r,axis='Z'):
+ return cq.Workplane('XY').newObject([box(x0,x1,y0,y1,z0,z1)]).edges('|'+axis).fillet(r).val()
+
+def closure_recess():
+ # Complete closed-pose recess; cuts both halves at their common seam.
+ return round_box(-.2,9.4,70,122,1.2,31.4,5,'X')
+
+def rounded_hinges(p,side):
+ # Hinge journals now sit within the end margins; rounded rooted shoulders
+ # transfer load directly into the floor and end rail, outside the play field.
+ for a,b in base.FAMILIES['tray-'+side]:
+  root=round_box(90,97.8,a,b,0,16.3,1.4)
+  root=cq.Workplane('XY').newObject([root]).edges('<Z').fillet(.6).val()
+  # Relieve the inward root, preserving the full cylindrical journal.
+  root=root.cut(box(89.9,95.5,a-.1,b+.1,2.2,16.4))
+  if side=='right':root=mirror(root)
+  journal=cq.Workplane('XY').newObject([base.cyly(3,a,b)]).edges().fillet(.5).val()
+  p=union(p,root,journal)
+ for other,segments in base.FAMILIES.items():
+  if other!='tray-'+side:
+   for a,b in segments:
+    relief=round_box(92.1,103.5,a-.2,b+.2,-.1,19.6,.8)
+    p=p.cut(base.cyly(3.25,a-.15,b+.15)).cut(relief if side=='left' else mirror(relief))
+ for face,mouth,d in PIP_STATIONS:
+  p=union(p,pip_pin(face,d)) if side=='right' else p.cut(pip_socket(mouth,d))
+ return p.clean()
+
 @lru_cache(None)
 def housing(side):
- # Fixed seats and open top print on a broad base, with no internal roof.
- p=box(0,97.8,0,194.8,0,10.3).cut(box(2.4,89.5,2.4,193,2.2,30))
- p=union(p,*pocket_rims(),capstone_rim(),box(0,97.8,0,2.4,10.3,15.8),box(0,97.8,193,194.8,10.3,15.8))
+ outline=round_box(0,97.8,0,200,0,15.8,3)
+ outline=cq.Workplane('XY').newObject([outline]).edges('<Z or >Z').fillet(.8).val()
+ p=outline.intersect(box(-1,99,-1,201,0,10.3)).cut(box(2.4,89.5,2.4,193,2.2,30))
+ p=union(p,*pocket_rims(),capstone_rim(),outline.intersect(box(-1,99,0,2.4,10.3,16)),outline.intersect(box(-1,99,193,200,10.3,16)))
  front=x_prism([(2.4,13.8),(4.4,15.8),(2.4,15.8)],57,97.8)
  rear=x_prism([(193,13.8),(191,15.8),(193,15.8)],0,97.8)
  p=union(p,front,rear,box(95.3,97.8,2.4,5.1,10.3,15.8),box(95.3,97.8,190.7,193,10.3,15.8))
- # Front button window; the outer front rail is relieved for its full stroke.
  p=p.cut(box(33.5,54.5,-.3,2.41,10.4,16))
- # The hook lives at the front corner, entirely ahead of the board slide path.
- p=union(p,box(0,6,-14,2.4,0,10.3))
+ # Local wall stock replaces empty side margin; it does not enlarge the shell.
+ p=union(p,box(0,11.2,68,124,0,10.3))
+ for y in GRIP_CENTERS:
+  p=union(p,box(0,11.2,y-17,y+17,0,10.3))
+  p=p.cut(round_box(-.2,7.2,y-15,y+15,2.8,14,4,'X'))
+ # Cut the closed recess from the relevant half before mirroring/folding.
+ p=p.cut(closure_recess() if side=='left' else closure_recess().mirror('XY',(0,0,16.3)))
+ # Keep the full rounded outer edge while clearing opposite hinge roots.
+ p=p.cut(round_box(92.4,99,-1,9.3,10.3,16.5,1.3)).cut(round_box(92.4,99,190.7,201,10.3,16.5,1.3))
+ p=p.intersect(outline)
  if side=='right':p=mirror(p)
- p=pip_hinges(base.hinged(p,'tray-'+side,0,1.2),side)
+ p=rounded_hinges(p,side)
  if side=='right':p=union(p,fold(hook_keeper(),180))
  else:p=union(p,hook_pivot_mount()).cut(hook_pivot_passage()).clean()
- # Main folding pivots print captive; no inserted main pins or glue.
  return p.clean().fix()
 
 def axle_cap():
- # Bonded filament-pin collar. Through bore avoids a closed-floor transition.
- p=box(-3.5,3.5,-3.5,3.5,0,4)
- return p.cut(cq.Solid.makeCylinder(CAP_BORE_D/2,4.02,cq.Vector(0,0,-.01))).clean()
+ # Round 2 mm collar fits wholly inside the closure recess.
+ return cq.Solid.makeCylinder(3.5,2).cut(cq.Solid.makeCylinder(CAP_BORE_D/2,2.02,cq.Vector(0,0,-.01))).clean()
+
+def hook_hardware():
+ return {'filament-hook-pivot':x_cylinder(HINGE_PIN_D/2,1,9.6,HOOK_AXIS[1],5.8),
+ 'retention-cap-hook':axle_cap().rotate((0,0,0),(0,1,0),90).translate((0,HOOK_AXIS[1],5.8))}
 
 def parts():
  import flat_capstones

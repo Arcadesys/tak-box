@@ -3,7 +3,7 @@ from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 import hashlib,json
 OUT=Path(__file__).resolve().parents[1]
-DIRS={'PRINT','plates','models','source','profiles','previews','reports','FIT-CHECK'}
+DIRS={'PRINT','plates','models','source','profiles','previews','reports','FIT-CHECK','CLOSURE-FIT'}
 FILES={'START-HERE.md','BUILD-PROVENANCE.md','ACCEPTANCE.md','requirements.txt','DESIGN-STATUS.json'}
 def sha(data):return hashlib.sha256(data).hexdigest()
 def main():
@@ -14,8 +14,8 @@ def main():
  assert all(p.suffix!='.zip' for p in files)
  entries=[{'path':p.relative_to(OUT).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p.read_bytes())} for p in files]
  manifest=OUT/'PACKAGE-MANIFEST.json'
- manifest.write_text(json.dumps({'version':'v22','kind':'complete_case_first_print','units':'mm','physical_acceptance':False,'files':entries},indent=2)+'\n')
- dest=OUT/'release/tak-v22-print-kit.zip';dest.parent.mkdir(exist_ok=True)
+ manifest.write_text(json.dumps({'version':'v22','revision':'seamless-exterior','kind':'complete_case_first_print','units':'mm','physical_acceptance':False,'files':entries},indent=2)+'\n')
+ dest=OUT/'release/tak-v22-seamless-print-kit.zip';dest.parent.mkdir(exist_ok=True)
  with ZipFile(dest,'w',ZIP_DEFLATED,compresslevel=9) as z:
   for p in files+[manifest]:z.write(p,'v22/'+p.relative_to(OUT).as_posix())
  with ZipFile(dest) as z:
