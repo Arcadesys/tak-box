@@ -1,0 +1,13 @@
+{
+  "version": "V24",
+  "review": "Viewed the six current STEP-derived previews; V24 captions are visible, large and high contrast. Rendering caption placement adjusted to avoid leading-text clipping; exported geometry is unchanged.",
+  "physical_acceptance": false,
+  "files": {
+    "01-open.png": "3ead3e7fafb3de307633d13f93e24d57f411a0cc1d968d34e5f38f317dfd4abf",
+    "02-closed.png": "9157b97c9927c045eaee5fbfed0295ae20faa659d9d25f48aea47477bbe75f4b",
+    "03-table-setup.png": "43a761764de8a9466e326722b1770fd8d89e863bad7df5230ea133f40efe8135",
+    "04-loaded-storage.png": "9981a05608e412c3802d7e6714e9d31610353b333caaf9ec497cf4c1ccf7d6d6",
+    "05-hinge-detail.png": "917860591a4c2a2df2b9315119cd80b0d1687208f7a1eb5f7050872387443db1",
+    "06-loaded-trays.png": "8d05fb0c9970c32421bb1e4c7d621ee1826803255239f695fbd5a177ef3673cb"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "checks": [
+    {
+      "name": "left all 22 pieces clear exported tray",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left loaded tray seats without interference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left loaded removal/repacking every 1 mm through 25 mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left both covered and released board travel over loaded tray",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left seat blocks tray shift 0.7,0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left seat blocks tray shift -0.7,0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left seat blocks tray shift 0,0.7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left seat blocks tray shift 0,-0.7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left cover blocks empty and loaded tray upward motion at 0.6 mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left cover blocks each piece at 0.6 mm lift",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left pocket rims retain all pieces at full 0.4 mm roof slack",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left 14 mm fingertip probe beside grip X53.5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left 14 mm fingertip probe beside grip X78.5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left continuous 1.2 mm tray floor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left broad flat support footprint on table",
+      "pass": true,
+      "detail": {
+        "contact_area_lower_bound_mm2": 13874.088583470551,
+        "tray_width_length_height_mm": [
+          76.2,
+          182.1,
+          9.2
+        ]
+      }
+    },
+    {
+      "name": "left full loaded tray/other module folding every 10 degrees",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right all 22 pieces clear exported tray",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right loaded tray seats without interference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right loaded removal/repacking every 1 mm through 25 mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right both covered and released board travel over loaded tray",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right seat blocks tray shift 0.7,0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right seat blocks tray shift -0.7,0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right seat blocks tray shift 0,0.7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right seat blocks tray shift 0,-0.7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right cover blocks empty and loaded tray upward motion at 0.6 mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right cover blocks each piece at 0.6 mm lift",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right pocket rims retain all pieces at full 0.4 mm roof slack",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right 14 mm fingertip probe beside grip X53.5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right 14 mm fingertip probe beside grip X78.5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right continuous 1.2 mm tray floor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right broad flat support footprint on table",
+      "pass": true,
+      "detail": {
+        "contact_area_lower_bound_mm2": 13874.088583470551,
+        "tray_width_length_height_mm": [
+          76.2,
+          182.1,
+          9.2
+        ]
+      }
+    },
+    {
+      "name": "right full loaded tray/other module folding every 10 degrees",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "source_sha256": {
+    "loaded_pieces.py": "5b335335f0f06f2ba86f400a67abf0405e04366cdbdef018fe42455a9845a86b",
+    "verify_trays.py": "886cba8a46aa60351bc3e771ee393fcd25753f120858c6dbb533f2c822acae24",
+    "geometry_utils.py": "c8256a8146a2aaff58e60b47e7f9eb14d0b8401f8bad489112c35849a61f8815",
+    "inspect_case_layers.py": "734e5253d20b26aa7af157fb259b4350e05a6a45b7d5af64eaa7479b30a1b035",
+    "build_fitcheck.py": "29adfd4344aac235328de900d5758c70a692b389c4d6033a0b7bab7c766554a7",
+    "verify_hardware.py": "3eb49c80dfe5fa25b9514c3776b418165e064ae6eaa83e077b2c7a88acceec9c",
+    "package_case.py": "677e7f2bcaa228b53669f66eadf4727c3ea322c64b3e02cabf971a72723168ff",
+    "build_case.py": "00f1d1bafb1cb040d41f0c8f159afffd3789faa9245c68edbd2cfee6be34bda4",
+    "verify_supports.py": "63f228fd5500132bc0ea243a7b1413abc0dd910da5a10df7aedc7e2850a2c422",
+    "verify_field.py": "bff276ff653e7b620fd255eb14b9cc8c9843a1aba346c2819f1a641d8ff3a2da",
+    "render_utils.py": "622418733e8302253506b06be1cbcb22f08277daf6627b6bc683350726896747",
+    "case.py": "879a47ee764f50e7f29d3dea7d79022bd21d0c16a98a3ac90a38745f1b4d34d4",
+    "build_tray_trial.py": "746a1f912fbb0fe8e1301275d8a7c135b90b16028e3a6d9619b523e2d1adb08e",
+    "flat_capstones.py": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693",
+    "slice_case.py": "5b1fab4ef54d4071a0638514e11d2bbfb2c1c7cab4e98ca55f7c5a367aa6b3be",
+    "verify_pin_toolpaths.py": "7e980fc90639e8e2d0f824efefb95449cba0409877b77bde7bba056197b50e95",
+    "render_revision.py": "a9310edddddff6b7a0204d655fa036f9ab116d47c03a1e7b845b37406720ddc0",
+    "verify_pip_hinges.py": "16a0f07c8582e435f54e47237d775132c3f40c49ef860f1af917de9d48866fe2"
+  },
+  "piece_package": "42 original Cat/Witch 20x20x8 mm flats and the supplied 8 mm V23 flat capstones; old sculpted/weighted packages unqualified",
+  "stack_mm": {
+    "case_floor": 2.2,
+    "tray_floor": 1.2,
+    "piece_height": 8,
+    "roof_clearance": 0.4,
+    "board_body": 4.7
+  },
+  "closed_height_mm": 35,
+  "physical_acceptance": false,
+  "limitations": [
+    "Motion and containment use rigid sampled poses, not a continuous or drop simulation.",
+    "Open trays remain upright during removal/repacking; they do not clamp pieces against inversion.",
+    "1.2 mm floors, actual grasp, full-tray warp/flex, release, closed shake/drop/carry retention and hinge fatigue require physical observation."
+  ]
+}

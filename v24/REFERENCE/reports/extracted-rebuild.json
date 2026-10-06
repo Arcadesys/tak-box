@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "test": "Execute package_release.py from extracted kit outside any Git repository, with HISTORY intentionally absent",
+  "command": "<cad-venv-python> <extracted-kit>/v24/REFERENCE/source/package_release.py",
+  "full_projects": 4,
+  "trials": 3,
+  "output_projects_unchanged_sha256": {
+    "FULL-PRINT/01-FULL-paired-bases-CC2-PLA.3mf": "46eec3c21fc5882ed6ae4095689b0296fe0404cb03582638d7104e2adc6a41a8",
+    "FULL-PRINT/03-FULL-removable-player-trays-CC2-PLA.3mf": "7475557ffbf2041a0be9bf2c706077e07eaa220502f5bcd9527a14273804b127",
+    "FULL-PRINT/02-FULL-SIZE-FOUR-COLOUR-inlaid-boards-CC2-PLA.3mf": "8f57886f5cafc23856a9933c08611843eaca65d33ec34b117e2e516075f151ca",
+    "FULL-PRINT/04-FULL-flat-capstones-hook-and-collar-CC2-PLA.3mf": "f059f24d87cbcd63c1f3d12ce01139459c8660b8e4f37b027f0bc2da6c3ae537",
+    "SMALL-TRIALS/02-SMALL-removable-tray-access-trial-CC2-PLA.3mf": "e98710361387a18ce32fce2afa84a4401f8140b39b0b721e34876c51ccf11fa2",
+    "SMALL-TRIALS/03-SMALL-FOUR-COLOUR-inlay-trial-CC2-PLA.3mf": "a2de3b8500803430fc8540cabe2fc1aacf58548db2cf0024ae8dad32aea10ef4",
+    "SMALL-TRIALS/01-SMALL-hinge-support-trial-CC2-PLA.3mf": "f4b3a672c1abfa171ce62a4633f5fa07973e37d31405f2131d567b1f9d3e861f"
+  },
+  "extracted_archive_audit": {
+    "pass": true,
+    "payload_files": 220,
+    "full_projects": 4,
+    "small_trial_projects": 3,
+    "local_links": 49,
+    "top_level": [
+      "START-HERE.md",
+      "FULL-PRINT",
+      "SMALL-TRIALS",
+      "PREVIEW.png",
+      "REFERENCE"
+    ],
+    "nested_archives": 0,
+    "zip_sha256": "3c86c92bf072c4ea526723485c6e39c0dd343599e97e54447c5ff61152ca837f",
+    "zip_bytes": 39702254,
+    "physical_acceptance": false
+  },
+  "no_geometry_or_slicing_rerun": true
+}

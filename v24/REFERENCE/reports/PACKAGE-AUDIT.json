@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "payload_files": 221,
+  "full_projects": 4,
+  "small_trial_projects": 3,
+  "local_links": 50,
+  "top_level": [
+    "START-HERE.md",
+    "FULL-PRINT",
+    "SMALL-TRIALS",
+    "PREVIEW.png",
+    "REFERENCE"
+  ],
+  "nested_archives": 0,
+  "zip_sha256": "8faecc96a7001a84c846ccb8d68001bb69729c1ddff0a4c03de961cf0b306c2d",
+  "zip_bytes": 39703600,
+  "physical_acceptance": false
+}
