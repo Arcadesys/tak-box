@@ -1,6 +1,12 @@
 # V24 — reinforced hinges and removable player trays
 
-**V24 is the user-selected name for the completed reinforced-hinge/removable-tray revision previously delivered as V23 R2.** Geometry, printing, assembly instructions and physical acceptance are unchanged. The earlier V23 R2 kit remains recoverable in the repository. Embedded printer presets retain their historical V23 R2 names so profiles and sliced projects remain byte-identical.
+**V24 now includes the accepted four-colour playing surface in the actual printable boards and assembled previews.** The reinforced hinges, removable player trays and **102.5 × 200 × 35 mm** case remain unchanged.
+
+Open [the four-colour board project](PRINT/02-sliding-board-tops-CC2-PLA.3mf). It has black in slot 1, white grid/stars in slot 2 and independent silk accents in slots 3 and 4. **Select your actual silk profiles and reslice before printing:** gold and purple are preview examples, and both supplied silk profiles are generic PLA placeholders. Keep the grouped parts and all four assignments.
+
+![V24 four-colour board with loaded trays beside it](previews/03-table-setup.png)
+
+The white grid carries the playing information; the accents are decoration. Inlays are flush, 0.6 mm deep, on the full 180 mm / 36 mm field. The playing faces fold inward, so the closed exterior does not show the artwork. [Four-colour details and material map](board-inlays/README.md).
 
 This is the mechanical revision following the user's report that the thin bar carrying the V23 main hinge broke. The exact fracture location, whether a joint was fused and the action causing failure are unknown. Print the small trials first to evaluate this new support and tray design. Digital checks do not establish impact strength or physical fit.
 
@@ -13,21 +19,23 @@ This is the mechanical revision following the user's report that the thin bar ca
 
 The 35 mm choice retains case and board thickness while making room for the independent tray floors. Keeping 32.6 mm would require removing 1.2 mm elsewhere per half, such as thinning the boards to 3.5 mm or case floors to 1.0 mm. Those alternatives were not qualified. Neither the proposed 1.2 mm tray floor nor hinge strength has physical acceptance yet.
 
-Full-build slicer estimate: **13 h 35 min / 321.56 g**, excluding the original 42 flats. The hinge trial is **40 min 48 s / 9.41 g**; the tray trial is **56 min 44 s / 21.52 g**.
+Full-build dry-slicer estimate with placeholder silk profiles: **17 h 1 min / 326.85 g**, excluding the original 42 flats. The hinge trial is **40 min 48 s / 9.41 g**; the tray trial is **56 min 44 s / 21.52 g**.
 
 ## Small trials
 
 1. Open [the hinge/support trial](FIT-CHECK/captive-hinge-fit-check-CC2-PLA.3mf). Its front and rear sections come from the new exported bases, joined by fixture strips. Carefully remove external support, free both joints and cycle them through the whole range. Record whitening, cracks, binding or a fused joint before applying force. This checks local support/joint behaviour, not full-base warping or purse durability.
 2. Open [the tray fit/access trial](TRAY-FIT/removable-tray-access-trial-CC2-PLA.3mf). It contains the actual rear section of the tray and its case seat, including three flat pockets, capstone bay and pinch handle. Load three original flats and a supplied flat capstone; check seating, pinch access and upright lifting. The open-ended fixture does not qualify full-case containment or full-tray bending.
 
+3. Open [the four-colour inlay trial](INLAY-FIT/four-colour-inlay-trial-CC2-PLA.3mf). Choose actual silk profiles and reslice; check flushness, bonding, fine details and colour bleed. Estimate with placeholders: **1 h 12 min / 19.45 g**.
+
 [Acceptance sheet](ACCEPTANCE.md) records the remaining physical work.
 
 ## Complete build
 
-The four projects in PRINT are for the Centauri Carbon 2, 0.4 mm nozzle, PLA, 0.20 mm layers, four walls and 20% gyroid:
+The four projects in PRINT are for the Centauri Carbon 2, 0.4 mm nozzle, PLA, four walls and 20% gyroid. Mechanical plates use 0.20 mm layers; the four-colour boards use 0.10 mm layers with a 0.20 mm first layer and prime tower:
 
 1. Paired bases: print together open flat, preserving their assembly grouping and object-specific support/brim settings.
-2. Both sliding boards: flat undersides down, playing faces up.
+2. [Both four-colour sliding boards](PRINT/02-sliding-board-tops-CC2-PLA.3mf): flat undersides down, playing faces up. Two grouped board objects, each with five named parts across four material slots. About **8 h 8 min / 121.16 g** with placeholder profiles.
 3. Both removable player trays: broad flat undersides down.
 4. Flat capstones, longer side hook and collar.
 
@@ -39,4 +47,4 @@ For play: park the side hook, unfold the case flat, press each front release but
 
 Replace **both bases, both boards and the hook** together; add both trays. Do not mix old and revised halves. The larger supports interfere with the predecessor's board corner geometry. New loaded trays do not fit beneath old covers: the pieces would overlap the old roof by 0.8 mm. Original flats, the supplied V23 flat capstones, the hook collar and the 8.6 mm hook filament reference retain their geometry. Older sculpted/curled capstones and weighted flats remain unqualified.
 
-The original V23 source and ZIP, all earlier kits and user-extracted folders remain intact. This package contains no board artwork changes. The concurrently completed V23 board-inlay package is preserved, but its old corner geometry is not a V24 replacement; adapting its surface to these revised covers is a separate task. See [build provenance](BUILD-PROVENANCE.md) for commands, dependencies, source hashes, checks and limitations.
+The original V23 source and ZIP, all earlier kits and user-extracted folders remain intact. V24 now uses its own compatible four-colour boards; the old V23 inlay solids remain unsuitable for V24 hinge corners. The complete pre-inlay V24 kit is recoverable in the repository at `v24/release/archive/tak-v24-before-board-inlays.zip`. See [build provenance](BUILD-PROVENANCE.md) for commands, dependencies, source hashes, checks and limitations.

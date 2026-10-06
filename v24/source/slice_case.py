@@ -1,4 +1,4 @@
-"""Dry slice all three CC2 plates and verify named embedded mesh readback."""
+"""Dry slice the three mechanical CC2 plates and verify named embedded mesh readback."""
 from pathlib import Path
 from zipfile import ZipFile
 import argparse,hashlib,json,subprocess,sys,xml.etree.ElementTree as ET
@@ -21,9 +21,10 @@ def main():
  WORK.mkdir(parents=True,exist_ok=True)
  version=subprocess.run([str(EXE),'--help'],capture_output=True,text=True).stdout.splitlines()[0]
  report={'slicer':version,'printer':'Elegoo Centauri Carbon 2 0.4 nozzle','physical_acceptance':False,'printer_started':False,'profiles_sha256':{p.name:sha(p) for p in (OUT/'profiles').glob('*.json')},'plates':{}}
- previous=json.loads((OUT/'reports/slicing.json').read_text()) if args.only else None
+ previous=json.loads((OUT/'reports/slicing.json').read_text()) if (OUT/'reports/slicing.json').exists() else None
  for source in sorted((OUT/'plates').glob('*.3mf')):
   if source.name.endswith('-CC2-PLA.3mf'):continue
+  if source.stem=='02-sliding-board-tops':continue  # Four-colour pipeline owns this plate.
   name=source.stem;dest=OUT/'PRINT'/(name+'-CC2-PLA.3mf');dest.parent.mkdir(exist_ok=True)
   if args.only and name not in args.only:
    row=previous['plates'][name]
@@ -90,6 +91,11 @@ def main():
   row.update(passed=True,warnings=[w.attrib for w in info.findall('.//warning')],objects=got,non_printing_support_blockers=list(blockers),slice_metadata=values,project_sha256=sha(dest),project=dest.name,gcode_sha256=hashlib.sha256(gcode).hexdigest())
   (OUT/'reports/slicing.json').write_text(json.dumps(report,indent=2)+'\n')
   print(name,values['prediction'],values['weight'],'PASS',flush=True)
+ if previous and '02-sliding-board-tops' in previous['plates']:
+  row=previous['plates']['02-sliding-board-tops']
+  assert row['input_sha256']==sha(OUT/'plates/02-sliding-board-tops.3mf') and row['project_sha256']==sha(OUT/'PRINT'/row['project'])
+  report['plates']['02-sliding-board-tops']=row
+  report['board_profiles']=previous.get('board_profiles','See board-inlays/profiles')
  report['total_estimated_seconds']=sum(int(p['slice_metadata']['prediction']) for p in report['plates'].values())
  report['total_estimated_grams']=sum(float(p['slice_metadata']['weight']) for p in report['plates'].values())
  (OUT/'reports/slicing.json').write_text(json.dumps(report,indent=2)+'\n')

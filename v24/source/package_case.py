@@ -75,7 +75,6 @@ def main():
  parser=argparse.ArgumentParser();parser.add_argument('--only',nargs='+');args=parser.parse_args()
  plans={
  '01-print-in-place-bases':[(n,load(n).translate(c.PRINT_BASE_SHIFT)) for n in ['housing-left','housing-right']],
- '02-sliding-board-tops':[place('board-left',7,7),place('board-right',121,7)],
  '03-removable-player-trays':[place('tray-left',7,7),place('tray-right',105,7)],
  '04-flat-capstones-hook-and-collar':[place('capstone-cat',7,7),place('capstone-witch',45,7),place('side-hook',85,7,((0,1,0),90)),place('axle-end-cap',125,7)],
  }
@@ -93,5 +92,5 @@ def main():
     housing_support_clearance(name,items)
   rows[name]={'objects':[n for n,_ in items],'orientation':'Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.','supports':True,'support_object_xy_distance_mm':.8 if name.startswith('01-') else .35}
  (OUT/'reports/plates.json').write_text(json.dumps({'bed_mm':[256,256],'checks':checks,'plates':rows,'filament_pins_printed':False,'physical_acceptance':False},indent=2)+'\n')
- print('Four complete-case geometry plates exported and read back.')
+ print('Three mechanical plates exported; build board-inlays/source/build.py for multipart boards.')
 if __name__=='__main__':main()

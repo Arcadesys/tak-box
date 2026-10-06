@@ -1,42 +1,53 @@
-"""Record fresh checks or explicitly reused validation for the V24 identity."""
+"""Current inlaid V24 receipt; reuse only byte-verified mechanical evidence."""
 from pathlib import Path
-import argparse,hashlib,json,platform,subprocess,sys
+import hashlib,json,platform,subprocess,sys
 import cadquery as cq
 OUT=Path(__file__).resolve().parents[1]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def read(p):return json.loads(p.read_text())
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--reuse-accepted-validation',action='store_true');args=parser.parse_args()
- identity=None
- if args.reuse_accepted_validation:
-  from verify_identity import main as verify_identity
-  identity=verify_identity()
- reports={n:json.loads((OUT/'reports'/f'{n}.json').read_text()) for n in ['geometry','field','hardware','supports','trays','plates','pin-toolpaths','pip-hinges','fit-check','tray-trial']}
- counts={}
- for n,d in reports.items():
-  assert d['checks'] and all(r['pass'] for r in d['checks']),n
-  counts[n]=len(d['checks'])
- if not identity:
-  assert reports['geometry']['source_sha256']['case.py']==sha(OUT/'source/case.py')
-  assert reports['trays']['source_sha256']['case.py']==sha(OUT/'source/case.py')
- for n,want in reports['fit-check']['source_STEP_sha256'].items():assert want==sha(OUT/'models'/n)
- assert reports['tray-trial']['source_tray_STEP_sha256']==sha(OUT/'models/tray-left.step')
- if not identity:assert reports['tray-trial']['source_case_py_sha256']==sha(OUT/'source/case.py')
- for n in ['layer-inspection','fit-check-layers','tray-trial-layers']:
-  d=json.loads((OUT/'reports'/f'{n}.json').read_text());assert all(x['visual_review']!='pending' for x in d.values()),n
- slices=json.loads((OUT/'reports/slicing.json').read_text());assert len(slices['plates'])==4
- for profile,h in slices['profiles_sha256'].items():assert h==sha(OUT/'profiles'/profile)
- for n,row in slices['plates'].items():
-  assert row['passed'] and row['input_sha256']==sha(OUT/'plates'/f'{n}.3mf') and row['project_sha256']==sha(OUT/'PRINT'/row['project'])
- for n,folder in [('fit-check','FIT-CHECK'),('tray-trial','TRAY-FIT')]:
-  d=reports[n]['slicing'];assert d['profiles_sha256']==slices['profiles_sha256']
-  for row in d['plates'].values():assert row['passed'] and row['project_sha256']==sha(OUT/folder/row['project'])
- baseline=OUT.parent/'v23/release/tak-v23-print-kit.zip'
- if baseline.exists():assert sha(baseline)=='33510a63581b1a8b5f3c5afde34ed99acf6ecd5ccfb6bc49956e6d6e2b9e1221'
- git=subprocess.run(['git','rev-parse','HEAD'],cwd=OUT,capture_output=True,text=True)
- gaps=[g for r in reports['pip-hinges']['checks'] for g in r.get('estimated_bead_edge_gaps_mm',[])]
- files=[p for directory in ['source','profiles','models','PRINT','plates','FIT-CHECK','TRAY-FIT','previews','reports'] for p in (OUT/directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='provenance.json']
- report={'version':'V24','status':'digital checks complete; physical trial candidate','source_commit':git.stdout.strip() if git.returncode==0 else None,'environment':{'python':sys.version,'cadquery':cq.__version__,'platform':platform.platform(),'slicer':slices['slicer']},'checks':counts,'total_checks':sum(counts.values()),'slices':{'full_build':4,'small_trials':2,'full_seconds':slices['total_estimated_seconds'],'full_grams':slices['total_estimated_grams']},'closed_envelope_mm':reports['hardware']['closed_envelope_including_hardware_mm'],'sampled_bead_edge_hinge_gap_range_mm':[min(gaps),max(gaps)],'physical_acceptance':False,'printer_started':False,'source_and_output_sha256':{str(p.relative_to(OUT)):sha(p) for p in sorted(files)},'baseline_zip_sha256':'33510a63581b1a8b5f3c5afde34ed99acf6ecd5ccfb6bc49956e6d6e2b9e1221'}
- if identity:
-  report.update(status='identity correction; accepted digital validation reused',validation_reused=True,geometry_source_commit=identity['origin_source_commit'],accepted_artifact_commit=identity['origin_artifact_commit'],identity_report='reports/identity.json',validation_origin='reports/validation-origin.json',geometry_motion_slicing_rerun=False)
- (OUT/'reports/provenance.json').write_text(json.dumps(report,indent=2)+'\n');print('Provenance PASS',report['total_checks'],'checks; four full and two trial slices')
+ old=read(OUT/'reports/historical-identity-provenance.json')
+ original=old['source_and_output_sha256']
+ # Exact retained mechanical exports, profiles, trials, source and reports.
+ selected=[n for n in original if n.startswith(('models/','profiles/','FIT-CHECK/','TRAY-FIT/','source/vendor/'))]
+ selected += ['source/case.py','source/flat_capstones.py','source/loaded_pieces.py']
+ selected += ['reports/'+n+'.json' for n in ('hardware','supports','trays','pin-toolpaths','pip-hinges','fit-check','tray-trial','identity')]
+ selected += [f'PRINT/{n}-CC2-PLA.3mf' for n in ('01-print-in-place-bases','03-removable-player-trays','04-flat-capstones-hook-and-collar')]
+ selected += [f'plates/{n}.3mf' for n in ('01-print-in-place-bases','03-removable-player-trays','04-flat-capstones-hook-and-collar')]
+ for n in selected:assert sha(OUT/n)==original[n],n
+ (OUT/'reports/unchanged-mechanics.json').write_text(json.dumps({'pass':True,'baseline_commit':'b766181','baseline_zip_sha256':'5d48e11d789e2d2e1de48067df9993958c19a91a95c3c81998b7d06d61d66a9d','files_sha256':{n:original[n] for n in sorted(set(selected))},'note':'Monolithic board exports are retained mechanical references. Actual print/preview components are board-inlays/models. Historical identity and groove-only field receipts are not current board validation.'},indent=2)+'\n')
+ checks={}
+ for name in ('geometry','colour-layers','hardware-interfaces'):
+  d=read(OUT/'board-inlays/reports'/f'{name}.json')
+  assert d['checks'] and all(c['pass'] for c in d['checks']),name
+  checks[name]=len(d['checks'])
+ hardware=read(OUT/'board-inlays/reports/hardware-interfaces.json')
+ for path,want in hardware['sources_sha256'].items():assert sha(OUT.parent/path)==want,path
+ geometry=read(OUT/'board-inlays/reports/geometry.json')
+ for path,want in geometry['sources_sha256'].items():assert sha(OUT.parent/path)==want,path
+ slices=read(OUT/'board-inlays/reports/slicing.json')
+ for n,want in slices['profiles_sha256'].items():assert sha(OUT/'board-inlays/profiles'/n)==want,n
+ for stem,row in slices['plates'].items():
+  assert row['readback_passed'] and row['input_sha256']==sha(OUT/'board-inlays/plates'/(stem+'.3mf'))
+  assert row['output_sha256']==sha(OUT/'board-inlays/PRINT'/(stem+'-CC2.3mf'))
+ all_slices=read(OUT/'reports/slicing.json')
+ for stem,row in all_slices['plates'].items():
+  assert row['passed'] and row['project_sha256']==sha(OUT/'PRINT'/row['project'])
+  assert row['input_sha256']==sha(OUT/'plates'/(stem+'.3mf'))
+ assert sha(OUT/'PRINT/02-sliding-board-tops-CC2-PLA.3mf')==slices['plates']['02-boards-black-white-silk']['output_sha256']
+ assert sha(OUT/'INLAY-FIT/four-colour-inlay-trial-CC2-PLA.3mf')==slices['plates']['00-inlay-trial-black-white-silk']['output_sha256']
+ directories=['source','profiles','models','PRINT','plates','FIT-CHECK','TRAY-FIT','INLAY-FIT','board-inlays','previews','reports']
+ files=[p for d in directories for p in (OUT/d).rglob('*') if p.is_file() and '__pycache__' not in p.parts and '.slicer-work' not in p.parts and p.name!='provenance.json']
+ report={'version':'V24','status':'four-colour integration digitally verified; actual silk profiles and reslice required',
+  'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=OUT,text=True).strip(),
+  'environment':{'python':sys.version,'cadquery':cq.__version__,'platform':platform.platform(),'slicer':slices['slicer_version']},
+  'new_checks':checks,'reused_mechanical_evidence':'reports/unchanged-mechanics.json',
+  'historical_identity_only':'reports/historical-identity-provenance.json',
+  'slices':{'full_build':4,'small_trials':3,'full_seconds':all_slices['total_estimated_seconds'],'full_grams':all_slices['total_estimated_grams'],'silk_profile_final':False},
+  'closed_envelope_mm':[102.5,200,35],'field_mm':[180,180],'pitch_mm':36,'inlay_depth_mm':.6,
+  'material_slots':{'1':'Black PLA body','2':'White PLA grid and stars','3':'Silk accent 1 placeholder (gold preview)','4':'Silk accent 2 placeholder (purple preview)'},
+  'physical_acceptance':False,'printer_started':False,
+  'source_and_output_sha256':{str(p.relative_to(OUT)):sha(p) for p in sorted(files)}}
+ (OUT/'reports/provenance.json').write_text(json.dumps(report,indent=2)+'\n')
+ print('Current V24 provenance PASS',checks,report['slices'])
 if __name__=='__main__':main()

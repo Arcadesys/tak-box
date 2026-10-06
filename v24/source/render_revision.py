@@ -9,8 +9,14 @@ def render(name,*values):
  if args.only is None or args.only==name:draw(name,*values)
 colors['tray']=(.15,.45,.57);colors['stone']=(.91,.93,.95)
 p={n:cq.importers.importStep(str(c.OUT/'models'/f'{n}.step')).val() for n in c.parts() if n!='axle-end-cap' and not n.startswith('capstone')}
+# Actual multipart STEP exports, not a recoloured monolithic board.
+for side in ('left','right'):
+ del p['board-'+side]
+ for role,colour in {'body':(.055,.055,.055),'grid':(1,1,1),'stars':(1,1,1),'orange':(.84,.65,.30),'purple':(.72,.53,.87)}.items():
+  colors['board'+role]=colour
+  p['board'+role+'-'+side]=cq.importers.importStep(str(c.OUT/'board-inlays/models'/f'board-{side}-{role}.step')).val()
 p['hardware']=cq.importers.importStep(str(c.OUT/'models/hardware-reference-NOT-PRINTED.step')).val()
-render('01-open',[(n,c.side_hook(90) if n=='side-hook' else s) for n,s in p.items()],'V24 — full 180 mm field; removable player trays beneath')
+render('01-open',[(n,c.side_hook(90) if n=='side-hook' else s) for n,s in p.items()],'V24 — four-colour inlays; full 180 mm field')
 render('02-closed',[(n,c.fold(s,180) if n.endswith('right') else s) for n,s in p.items()],'V24 closed — 102.5 × 200 × 35 mm')
 scene=[(n,c.side_hook(90) if n=='side-hook' else s) for n,s in p.items() if not n.startswith('tray')]
 for side in ('left','right'):
@@ -19,7 +25,7 @@ for side in ('left','right'):
  compound=cq.importers.importStep(str(c.OUT/'models'/f'tray-loaded-{side}.step')).val()
  # The exported loaded compound begins with the tray, followed by the 22 pieces.
  for s in compound.Solids()[1:]:scene.append(('stone-'+side,s.translate(offset)))
-render('03-table-setup',scene,'V24 — loaded trays beside the board')
+render('03-table-setup',scene,'V24 — four-colour board and loaded player trays')
 scene=[(n,c.side_hook(90) if n=='side-hook' else s) for n,s in p.items() if not n.startswith('board')]
 for side in ('left','right'):
  compound=cq.importers.importStep(str(c.OUT/'models'/f'tray-loaded-{side}.step')).val()

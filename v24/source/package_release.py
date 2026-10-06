@@ -6,8 +6,8 @@ def sha(data):return hashlib.sha256(data).hexdigest()
 def main():
  provenance=json.loads((OUT/'reports/provenance.json').read_text())
  for name,h in provenance['source_and_output_sha256'].items():assert sha((OUT/name).read_bytes())==h,name
- dirs={'source','profiles','models','PRINT','plates','FIT-CHECK','TRAY-FIT','previews','reports'}
- files=sorted(p for p in OUT.rglob('*') if p.is_file() and '__pycache__' not in p.parts and (p.relative_to(OUT).parts[0] in dirs or p.name in ['START-HERE.md','BUILD-PROVENANCE.md','ACCEPTANCE.md','requirements.txt']))
+ dirs={'source','profiles','models','PRINT','plates','FIT-CHECK','TRAY-FIT','previews','reports','board-inlays','INLAY-FIT'}
+ files=sorted(p for p in OUT.rglob('*') if p.is_file() and '__pycache__' not in p.parts and '.slicer-work' not in p.parts and (p.relative_to(OUT).parts[0] in dirs or (p.parent==OUT and p.name in ['START-HERE.md','BUILD-PROVENANCE.md','ACCEPTANCE.md','requirements.txt'])))
  manifest={'version':'V24','units':'mm','physical_acceptance':False,'files':[{'path':str(p.relative_to(OUT)),'bytes':p.stat().st_size,'sha256':sha(p.read_bytes())} for p in files]}
  mp=OUT/'PACKAGE-MANIFEST.json';mp.write_text(json.dumps(manifest,indent=2)+'\n');files.append(mp)
  dest=OUT/'release/tak-v24-print-kit.zip';dest.parent.mkdir(exist_ok=True)
@@ -30,7 +30,8 @@ def main():
      if not link.startswith(('http:','https:','#')):assert (p.parent/link.split('#')[0]).exists(),link;links+=1
   assert len(list((root/'PRINT').glob('*.3mf')))==4
   assert len(list((root/'FIT-CHECK').glob('*CC2-PLA.3mf')))==1 and len(list((root/'TRAY-FIT').glob('*CC2-PLA.3mf')))==1
- audit={'pass':True,'payload_files':len(got['files']),'full_projects':4,'small_trial_projects':2,'local_links':links,'zip_sha256':sha(dest.read_bytes()),'zip_bytes':dest.stat().st_size,'physical_acceptance':False}
+  assert len(list((root/'INLAY-FIT').glob('*CC2-PLA.3mf')))==1
+ audit={'pass':True,'payload_files':len(got['files']),'full_projects':4,'small_trial_projects':3,'local_links':links,'zip_sha256':sha(dest.read_bytes()),'zip_bytes':dest.stat().st_size,'physical_acceptance':False}
  # Outside the archive to avoid a circular ZIP hash.
  (OUT/'release/AUDIT.json').write_text(json.dumps(audit,indent=2)+'\n');print(json.dumps(audit))
 if __name__=='__main__':main()

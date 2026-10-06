@@ -1,5 +1,8 @@
 """Render actual CAD geometry with depth buffering."""
 import vtk
+from PIL import Image, ImageDraw, ImageFont
+import matplotlib
+from pathlib import Path
 import case as c
 OUT=c.OUT
 colors={'housing':(0.20,0.29,0.36),'board':(.85,.88,.92),'capstone':(.85,.88,.92),'side':(.59,.38,.13),'hardware':(.35,.38,.4),'capbody':(.14,.23,.32),'capdetail':(.95,.71,.32)}
@@ -27,3 +30,10 @@ def render(name,scene,title,camera_pos=(-500,-500,650)):
  window=vtk.vtkRenderWindow();window.SetOffScreenRendering(1);window.SetSize(1600,1120);window.AddRenderer(renderer);window.Render()
  capture=vtk.vtkWindowToImageFilter();capture.SetInput(window);capture.Update()
  writer=vtk.vtkPNGWriter();writer.SetFileName(str(OUT/'previews'/f'{name}.png'));writer.SetInputConnection(capture.GetOutputPort());writer.Write();window.Finalize()
+ # Compose the CAD figure caption with a deterministic font. VTK's macOS
+ # glyph atlas intermittently drops leading characters across offscreen views.
+ path=OUT/'previews'/f'{name}.png'
+ im=Image.open(path).convert('RGB');caption=ImageDraw.Draw(im)
+ caption.rectangle((0,0,1600,105),fill='white')
+ font=ImageFont.truetype(str(Path(matplotlib.get_data_path())/'fonts/ttf/DejaVuSans.ttf'),31)
+ caption.text((140,30),title,font=font,fill=(13,13,13));im.save(path)
