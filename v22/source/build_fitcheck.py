@@ -11,9 +11,9 @@ OUT=c.OUT
 NAME='captive-hinge-fit-check'
 
 def section(s,side):
- front=s.intersect(c.box(88,108,-.1,11,-.1,60))
- rear=s.intersect(c.box(88,108,189,200.1,-.1,60)).translate((0,-175,0))
- bridge=c.box(90,92,9,16,0,1.2)
+ front=s.intersect(c.box(88,108,-14.1,2,-.1,60))
+ rear=s.intersect(c.box(88,108,192,204.3,-.1,60)).translate((0,-180,0))
+ bridge=c.box(90,92,0,14,0,1.2)
  if side=='right':bridge=c.mirror(bridge)
  return c.union(front,rear,bridge).clean()
 
@@ -50,7 +50,7 @@ def main():
  shutil.copy2(stage/'plates'/f'{NAME}.3mf',dest/f'{NAME}-geometry.3mf')
  sliced=json.loads((stage/'reports/slicing.json').read_text());row=sliced['plates'][NAME]
  checks.append({'name':'CC2 slice and exact named-mesh readback','pass':row['passed']})
- (OUT/'reports/fit-check.json').write_text(json.dumps({'checks':checks,'source_STEP_sha256':inputs,'slicing':sliced,'print_translation_mm':shift,'rear_station_shift_mm':-175,'scope':'Actual front/rear hinge cross-sections cropped from exported bases, rear moved 175 mm forward. Added connecting strips. Tests captive-joint release and rotation, not full-base warp, board sliders, capstone fit or transport.','physical_acceptance':False},indent=2)+'\n')
+ (OUT/'reports/fit-check.json').write_text(json.dumps({'checks':checks,'source_STEP_sha256':inputs,'slicing':sliced,'print_translation_mm':shift,'rear_station_shift_mm':-180,'scope':'Actual front/rear hinge cross-sections cropped from exported bases, rear moved 180 mm forward. Added connecting strips. Tests captive-joint release and rotation, not full-base warp, board sliders, capstone fit or transport.','physical_acceptance':False},indent=2)+'\n')
  shutil.copy2(stage/'reports'/f'{NAME}-slice.log',OUT/'reports'/f'{NAME}-slice.log')
  import inspect_case_layers as layers
  layers.OUT=stage;layers.WORK=stage/'.slicer-work'

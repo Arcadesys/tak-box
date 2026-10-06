@@ -1,3 +1,5 @@
+Superseded name: this seamless design is now **V23**. See [V23 checkpoint](V23_CHECKPOINT.md). The historical ZIP is preserved at `v22/release/archive/tak-v22-seamless-before-v23.zip`; V22 source and guide now refer to the original corner-hook baseline. The following records the earlier delivery.
+
 # V22 seamless exterior revision
 
 Outcome: rounded flush closed exterior, recessed centered outer-side hook including pivot/collar/catch, recessed offset board grips, and integrated rounded hinge-end shoulders. Preserve 32.6 mm thickness, full 180 mm field, exact original 42 flats and solid 8 mm Cat/Witch capstones, captive main hinges. User authorized this local revision; no printer job or merge.

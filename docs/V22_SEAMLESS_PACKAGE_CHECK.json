@@ -69,5 +69,8 @@
   "command": "Repository CAD Python scripts/audit_v22_release.py; fresh temporary extraction, standard-library package verification, local Markdown links, standalone imported CAD reconstruction versus packaged STEP",
   "baseline_archive_hash_preserved": true,
   "physical_acceptance": false,
-  "printer_started": false
+  "printer_started": false,
+  "historical_status": "Superseded version label; accepted design is now V23. Original audit measurements retained.",
+  "recoverable_archive_path": "v22/release/archive/tak-v22-seamless-before-v23.zip",
+  "current_identity_audit": "docs/V23_PACKAGE_CHECK.json"
 }

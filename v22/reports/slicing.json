@@ -12,7 +12,7 @@
     "01-print-in-place-bases": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "c1fe5ef33bb42472656f6061cf3d1552f439ffe7d828bb3f05b22e9ca956bdeb",
+      "input_sha256": "9b0e47a91db4c82a76d2c24644bac5f008ba1d3a812a4cea8bdf502caf42ce06",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -51,8 +51,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "23681",
-        "weight": "150.85",
+        "prediction": "21819",
+        "weight": "141.92",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -62,14 +62,14 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "dfe59821a18ca4429e1412a499025b4f4149e4120077ecfb6edd556904c4584b",
+      "project_sha256": "4e1aa5d9cf41212bb65c9e7384699fbc85353d040f8816d36857685cb64329cb",
       "project": "01-print-in-place-bases-CC2-PLA.3mf",
-      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
     },
     "02-sliding-board-tops": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "0acad8454161c320910f207116c19d7d93fa5d3ba58d47f7a9c4e79cdeb13f0c",
+      "input_sha256": "2d05bbdd4b1e4b34487f129f3062047253ea2633e20782bc11e5846ddb18a258",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -108,8 +108,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "17073",
-        "weight": "116.58",
+        "prediction": "17560",
+        "weight": "120.61",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -119,14 +119,14 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "5a4eb30805f4b4b1c9dbee560384023c49b41017cc95bfb60ebc022a1eb1499f",
+      "project_sha256": "01581e89174a3c74103771eb25118243ece4a710cbc71c82d04a50e4643d866b",
       "project": "02-sliding-board-tops-CC2-PLA.3mf",
-      "gcode_sha256": "35c4aecdfdeca659a50c1c9b199a4472ea192dab9c5e8e96257d06e9b6313d85"
+      "gcode_sha256": "916e23582e4c2b8615a6a95c50e5cf6f4f9d471a906d835af4a97f6c4c7b87e1"
     },
     "03-flat-capstones-hook-and-collar": {
       "passed": true,
       "exit_code": 0,
-      "input_sha256": "28a5f4e766ed723372193899cf1b3bdeebcbab99bc761815eaba6748ae174a53",
+      "input_sha256": "ba668b9a09e39c6bd84fba711fa38d6cc8da0d1422eeee27f2b09aae768a76b1",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
@@ -167,8 +167,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "1145",
-        "weight": "4.73",
+        "prediction": "1250",
+        "weight": "5.14",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -178,11 +178,11 @@
         "filament_maps": "1",
         "limit_filament_maps": "0"
       },
-      "project_sha256": "74751b9789660b1029746508e88c2644b97689b06ba93a62d3d9fb4d75fa2604",
+      "project_sha256": "5ac1e6bec8d25e40dbf68b7ca236ab722ec1aa6e221776a31c9cfae32a9ddf75",
       "project": "03-flat-capstones-hook-and-collar-CC2-PLA.3mf",
-      "gcode_sha256": "aba001746a4798a6d1ab869bf689385885b0a9f2740f487d814f9daff5597e1d"
+      "gcode_sha256": "bbf43b8083ac1a586a477bfa998fc34a5ebc098cb51deac1adacb28b728d7410"
     }
   },
-  "total_estimated_seconds": 41899,
-  "total_estimated_grams": 272.15999999999997
+  "total_estimated_seconds": 40629,
+  "total_estimated_grams": 267.66999999999996
 }

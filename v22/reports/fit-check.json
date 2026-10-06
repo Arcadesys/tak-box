@@ -43,8 +43,8 @@
     }
   ],
   "source_STEP_sha256": {
-    "housing-left.step": "56202807c698cb57a0e53b5954ff9a2bbb2b42b46d44057833385a32fe4c25fa",
-    "housing-right.step": "3da4c9691a85c75801294d9591bc7ce0e1e33065c3fea30d9ab7655feffb3029"
+    "housing-left.step": "477ec2572c4512493ee47cc17d6fffc3f9c94a5d18ae34c0dc04df8c883b6db7",
+    "housing-right.step": "c1104c2a55a98922f65811c2fb0ea6bc6501ec924a60bcf980759d38ca15e9ae"
   },
   "slicing": {
     "slicer": "ElegooSlicer-2.4.2:",
@@ -60,7 +60,7 @@
       "captive-hinge-fit-check": {
         "passed": true,
         "exit_code": 0,
-        "input_sha256": "836061b0e5e39529ba34855501f23727f4778c8b1c783d2c0020997c333b026c",
+        "input_sha256": "94bcf0aefb410b6864474097dceb84aa2ca8b2292700c1a5f72d7930f1c6cf73",
         "command": [
           "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
           "--datadir",
@@ -99,8 +99,8 @@
           "printer_model_id": "",
           "nozzle_diameters": "0.4",
           "timelapse_type": "0",
-          "prediction": "1556",
-          "weight": "5.31",
+          "prediction": "1290",
+          "weight": "3.80",
           "first_layer_time": "0.000000",
           "outside": "false",
           "support_used": "true",
@@ -110,20 +110,20 @@
           "filament_maps": "1",
           "limit_filament_maps": "0"
         },
-        "project_sha256": "d920a2520bfa025111269904ddbe6fdf09423dc5b79cf10ff33a876474c23e57",
+        "project_sha256": "f152100ff283a9c39d2c19940c25332cf912a6477f3cbca0dd131de8ba7ece58",
         "project": "captive-hinge-fit-check-CC2-PLA.3mf",
-        "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+        "gcode_sha256": "33e9c572fccc08fe47e71ad73107ac9fba05c159d10ed3df1780f321866f5e8e"
       }
     },
-    "total_estimated_seconds": 1556,
-    "total_estimated_grams": 5.31
+    "total_estimated_seconds": 1290,
+    "total_estimated_grams": 3.8
   },
   "print_translation_mm": [
-    -80.99965676467048,
-    7.001054118889781,
+    -80.99999989999998,
+    21.001332454097476,
     0
   ],
-  "rear_station_shift_mm": -175,
-  "scope": "Actual front/rear hinge cross-sections cropped from exported bases, rear moved 175 mm forward. Added connecting strips. Tests captive-joint release and rotation, not full-base warp, board sliders, capstone fit or transport.",
+  "rear_station_shift_mm": -180,
+  "scope": "Actual front/rear hinge cross-sections cropped from exported bases, rear moved 180 mm forward. Added connecting strips. Tests captive-joint release and rotation, not full-base warp, board sliders, capstone fit or transport.",
   "physical_acceptance": false
 }
