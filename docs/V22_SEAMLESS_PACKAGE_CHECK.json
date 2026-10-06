@@ -1,0 +1,73 @@
+{
+  "archive": "v22/release/tak-v22-seamless-print-kit.zip",
+  "bytes": 19150854,
+  "sha256": "d48410b2b090c39770dcf3f2bf56b243482c84fbbc51b89927d7b21dd7d633a4",
+  "payload_files": 122,
+  "single_root": "v22",
+  "print_projects": 3,
+  "fresh_extraction_payload_hashes_and_syntax": true,
+  "relative_markdown_links_checked": 14,
+  "standalone_CAD_rebuild": [
+    {
+      "part": "housing-left",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 8.484013960696757e-06,
+      "symmetric_difference_mm3": 0,
+      "maximum_bound_difference_mm": 8.526512829121202e-14
+    },
+    {
+      "part": "board-left",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 4.950561560690403e-08,
+      "symmetric_difference_mm3": 0,
+      "maximum_bound_difference_mm": 1.0196288258157438e-12
+    },
+    {
+      "part": "housing-right",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 0.0008431695896433666,
+      "symmetric_difference_mm3": 0,
+      "maximum_bound_difference_mm": 7.562190808403877e-09
+    },
+    {
+      "part": "board-right",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 3.779714461416006e-07,
+      "symmetric_difference_mm3": 0,
+      "maximum_bound_difference_mm": 1.0231815394945443e-12
+    },
+    {
+      "part": "capstone-cat",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 1.9736035028472543e-10,
+      "symmetric_difference_mm3": 0,
+      "maximum_bound_difference_mm": 4.886757665190089e-12
+    },
+    {
+      "part": "capstone-witch",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 1.7257661966141313e-10,
+      "symmetric_difference_mm3": 0,
+      "maximum_bound_difference_mm": 1.4921397450962104e-13
+    },
+    {
+      "part": "side-hook",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 1.2238388080731966e-10,
+      "symmetric_difference_mm3": 0,
+      "maximum_bound_difference_mm": 0.0
+    },
+    {
+      "part": "axle-end-cap",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 1.5631940186722204e-12,
+      "symmetric_difference_mm3": 0,
+      "maximum_bound_difference_mm": 0.0
+    }
+  ],
+  "source_revision": "4859c9cdd515cd7f12324a99423b8795fa7984ac",
+  "command": "Repository CAD Python scripts/audit_v22_release.py; fresh temporary extraction, standard-library package verification, local Markdown links, standalone imported CAD reconstruction versus packaged STEP",
+  "baseline_archive_hash_preserved": true,
+  "physical_acceptance": false,
+  "printer_started": false
+}

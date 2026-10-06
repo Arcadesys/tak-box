@@ -8,16 +8,16 @@
       "name": "01-print-in-place-bases/housing-left bed and build height",
       "pass": true,
       "detail": [
-        107.8,
-        213.5,
-        19.3
+        101.0000001,
+        200.00000020000016,
+        19.30000020000011
       ]
     },
     {
       "name": "housing-left separation housing-right",
       "pass": true,
       "detail": {
-        "bounding_gap_mm": -6.0,
+        "bounding_gap_mm": -6.000000199999988,
         "paired_captive_hinges": true
       }
     },
@@ -25,9 +25,9 @@
       "name": "01-print-in-place-bases/housing-right bed and build height",
       "pass": true,
       "detail": [
-        109.80000000000001,
-        218.2,
-        19.3
+        101.0000001,
+        200.00000020000329,
+        19.300000200000113
       ]
     },
     {
@@ -51,8 +51,8 @@
       "name": "02-sliding-board-tops/board-left bed and build height",
       "pass": true,
       "detail": [
-        102.80000000000001,
-        192.50000000000003,
+        97.80000000000129,
+        192.10000000000002,
         5.700000000000001
       ]
     },
@@ -60,7 +60,7 @@
       "name": "board-left separation board-right",
       "pass": true,
       "detail": {
-        "bounding_gap_mm": 11.199999999999974,
+        "bounding_gap_mm": 16.19999999999871,
         "paired_captive_hinges": false
       }
     },
@@ -68,8 +68,8 @@
       "name": "02-sliding-board-tops/board-right bed and build height",
       "pass": true,
       "detail": [
-        102.80000000000003,
-        192.50000000000003,
+        97.80000000000129,
+        192.10000000000002,
         5.700000000000001
       ]
     },
@@ -147,16 +147,16 @@
       "name": "03-flat-capstones-hook-and-collar/side-hook bed and build height",
       "pass": true,
       "detail": [
-        28.5,
-        15.5,
-        3.200000000000003
+        29.30000000000001,
+        8.400000000000006,
+        3.2000000000000037
       ]
     },
     {
       "name": "side-hook separation axle-end-cap",
       "pass": true,
       "detail": {
-        "bounding_gap_mm": 11.5,
+        "bounding_gap_mm": 10.699999999999989,
         "paired_captive_hinges": false
       }
     },
@@ -166,7 +166,7 @@
       "detail": [
         7.0,
         7.0,
-        4.0
+        2.0
       ]
     },
     {

@@ -1,36 +1,57 @@
 {
-  "baseline": "v21",
-  "checks": [
+  "baseline": "V22 original kit at 02f8a09",
+  "baseline_zip_hash_preserved": true,
+  "comparisons": [
+    {
+      "part": "housing-left",
+      "symmetric_difference_mm3": 16398.93351790688,
+      "same_CAD_shape": false
+    },
+    {
+      "part": "housing-right",
+      "symmetric_difference_mm3": 16919.362670327253,
+      "same_CAD_shape": false
+    },
     {
       "part": "board-left",
-      "pass": true,
-      "symmetric_difference_mm3": 0.0
+      "symmetric_difference_mm3": 3056.57800847473,
+      "same_CAD_shape": false
     },
     {
       "part": "board-right",
-      "pass": true,
-      "symmetric_difference_mm3": 0.0
+      "symmetric_difference_mm3": 3056.5780081223074,
+      "same_CAD_shape": false
     },
     {
       "part": "side-hook",
-      "pass": true,
-      "symmetric_difference_mm3": 0.0
+      "symmetric_difference_mm3": 974.4743909322192,
+      "same_CAD_shape": false
     },
     {
       "part": "axle-end-cap",
-      "pass": true,
-      "symmetric_difference_mm3": 0.0
+      "symmetric_difference_mm3": 113.36040524731696,
+      "same_CAD_shape": false
+    },
+    {
+      "part": "capstone-cat",
+      "symmetric_difference_mm3": 0,
+      "same_CAD_shape": true
+    },
+    {
+      "part": "capstone-witch",
+      "symmetric_difference_mm3": 0,
+      "same_CAD_shape": true
     }
   ],
-  "new_parts": [
-    "paired print-in-place bases",
-    "V22 flat Cat capstone",
-    "V22 flat Witch capstone"
+  "replace": [
+    "both bases",
+    "both boards",
+    "side hook",
+    "round collar"
   ],
-  "removed_parts": [
-    "rear capstone compartment and hatch",
-    "main hinge filament pins and two collars",
-    "hatch filament axle and two collars"
+  "retained": [
+    "original 42 Cat/Witch flat stones",
+    "V22 solid flat Cat/Witch capstones"
   ],
   "physical_interchangeability_observed": false
 }

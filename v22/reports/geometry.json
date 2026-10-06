@@ -9,8 +9,8 @@
       "name": "housing-left STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 4828,
-        "cad_volume_mm3": 70479.20485239376
+        "triangles": 38790,
+        "cad_volume_mm3": 77419.56151898114
       }
     },
     {
@@ -22,8 +22,8 @@
       "name": "board-left STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 366,
-        "cad_volume_mm3": 86518.42399999993
+        "triangles": 1446,
+        "cad_volume_mm3": 83461.84599148328
       }
     },
     {
@@ -35,8 +35,8 @@
       "name": "housing-right STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 5316,
-        "cad_volume_mm3": 70515.00709516078
+        "triangles": 41630,
+        "cad_volume_mm3": 77475.76625292064
       }
     },
     {
@@ -48,8 +48,8 @@
       "name": "board-right STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 366,
-        "cad_volume_mm3": 86518.4239999998
+        "triangles": 1446,
+        "cad_volume_mm3": 83461.84599148325
       }
     },
     {
@@ -88,7 +88,7 @@
       "pass": true,
       "detail": {
         "triangles": 740,
-        "cad_volume_mm3": 601.9107752869057
+        "cad_volume_mm3": 372.56361564528464
       }
     },
     {
@@ -100,8 +100,8 @@
       "name": "axle-end-cap STEP/STL readback",
       "pass": true,
       "detail": {
-        "triangles": 436,
-        "cad_volume_mm3": 184.65885052054085
+        "triangles": 840,
+        "cad_volume_mm3": 71.29844527322037
       }
     },
     {
@@ -139,7 +139,7 @@
       "detail": null
     },
     {
-      "name": "hook release 0..65 degrees at 1 degree samples",
+      "name": "hook release 0..90 degrees at 1 degree samples",
       "pass": true,
       "detail": {
         "max_overlap_mm3": 0,
@@ -150,8 +150,8 @@
       "name": "hook mouth clearance and headed keeper",
       "pass": true,
       "detail": {
-        "pin_diameter_mm": 4,
-        "head_diameter_mm": 7,
+        "pin_diameter_mm": 3,
+        "head_diameter_mm": 5.6,
         "hook_thickness_mm": 3.2,
         "keeper_head_clearance_mm": 0.4,
         "pivot_faces_contact_for_friction": true,
@@ -396,21 +396,26 @@
   "cadquery": "2.7.0",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "source_sha256": {
-    "render_case.py": "9ed524ae030cfa1715402aacaf556167cfeefda2b2b838f9261c11a6bcf07df1",
+    "render_case.py": "55889ffe129349dc823c229f3aba6121ff9d34ad0ea1cccabc9bfc658cac39cd",
     "verify_package.py": "e9b9075d085edc33ac01c82f6e6c8bfe8836614d768a2bc558cc9ee878424ef4",
     "inspect_case_layers.py": "c275c4bd687437ea83caf5420764b825b5cc1577538267991ebbb0b568095acd",
-    "build_fitcheck.py": "addedac3f6e29ca4249f653572712c07d926611f3dde7a8fb279ab893573f91e",
-    "verify_hardware.py": "daa0ac807a132e25d4779f0e3996686195d30adbbc03a9cdb1f73d4c54e2389b",
+    "build_fitcheck.py": "d150357c422027ff4478f6975cb09bb798f2b9f606d6f1816d192edacf449064",
+    "verify_exterior.py": "045347a73a582e04190064b606ff20a9ca27ba017697b632774307dda16b52b6",
+    "build_closure_fitcheck.py": "a82e4a15bf2b4af2fcc6d73e5fd818c0c110f7430873f3815df2fbcc4269c122",
+    "verify_flat_capstones.py": "8c20828e1a9b35d77d1ed2996a0bda108c081a0ba5a68f51359d6b4921c15aa8",
+    "verify_hardware.py": "2bd41a8f8f2d5d3e5fa7502b58b1c4b43a4be31b346dcab4d9968742e25b0a7a",
     "package_case.py": "89d3992299d475abdbbcae46bdf7bbed8d48363ac1bf7eba318e1cfb538d0947",
-    "build_case.py": "9287ffa503453fe8dbc5749c742b448b6c47ca9593df030846300bd5385dff0f",
+    "build_case.py": "5dc45e4945731188974201e1c8cc8a3c9e6ce3859c8548cff5dc141882d15daa",
     "verify_field.py": "c26a843517ba94f5b5551c1cf8422e66827c511b125329dd6d13614b8108052d",
-    "case.py": "c4d43b94a32d33d99e06591e3d9d7e4d9633c648c9648e4c2740ad29eefe033c",
-    "package_release.py": "1a707dc0d0e7e395eaf96b1dbe44ba34a9831fa6dfbc82858756ba60ae6947ba",
+    "render_utils.py": "622418733e8302253506b06be1cbcb22f08277daf6627b6bc683350726896747",
+    "case.py": "3e60dfbc18b2f7f330721464cc5bbad19c14ce3f16949db30f72c025f5494b09",
+    "build_exterior_trial.py": "968a18978dae4a910722b2ce1793aef2eebec129e794c848b33ac774f8919549",
+    "package_release.py": "97d121a532380d672ed530970ff51ab7cbe9c3d3eff4a94be1a7141b440ad677",
     "flat_capstones.py": "9a97013708dda2d92faafb5f38eb73295dff50a8433ae4fa1c788d825f4709d0",
     "slice_case.py": "5b1fab4ef54d4071a0638514e11d2bbfb2c1c7cab4e98ca55f7c5a367aa6b3be",
-    "verify_pin_toolpaths.py": "baa6d643cb7b8dfac1a98028684f70415412678dccc7d38bf6c3649a59d4b887",
+    "verify_pin_toolpaths.py": "c3e217ea90348e7d56374729ebc9730b1d3db0dd991dd6e398061acc6e4a5bd5",
     "verify_pip_hinges.py": "425da562d9e0c99ca5dfc6585d75575734ec2ca2f70c06edb9547e6a06093ce9",
-    "record_provenance.py": "b41dde7ca7e8ee39444d330da2809970a8a74bbf1b8d602feb755c7e31ce2f83"
+    "record_provenance.py": "c9d55c74dfdbc1934457bdd24e72989c6544d8a7c55fc05bca6cc1ad7fde4eb3"
   },
   "piece_package": {
     "name": "original Cat/Witch flats plus V22 one-piece flat capstones",
@@ -428,9 +433,9 @@
     "compatibility": "Original 20x20x8 mm flats retained. Original sculpted and curled capstones do not fit the new under-board bays; use the two supplied V22 flat capstones."
   },
   "closed_body_and_hook_envelope_mm": [
-    109.80015020028128,
-    220.20000010000007,
-    32.600000100000116
+    101.00738277040742,
+    200.00351853662843,
+    32.602283381145064
   ],
   "physical_acceptance": false,
   "limitations": [
