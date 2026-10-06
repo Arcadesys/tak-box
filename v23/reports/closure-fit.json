@@ -1,0 +1,746 @@
+{
+  "checks": [
+    {
+      "name": "housing-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left STEP/STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left STEP/STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right STEP/STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right STEP/STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "side-hook valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "side-hook STEP/STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "axle-end-cap valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "axle-end-cap STEP/STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left/board-left disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left/housing-right disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left/board-right disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left/side-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left/filament-hook-pivot disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left/retention-cap-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left/housing-right disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left/board-right disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left/side-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left/filament-hook-pivot disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left/retention-cap-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right/board-right disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right/side-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right/filament-hook-pivot disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right/retention-cap-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right/side-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right/filament-hook-pivot disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right/retention-cap-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "side-hook/filament-hook-pivot disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "side-hook/retention-cap-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "filament-hook-pivot/retention-cap-hook disjoint in closed fixture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fixture retains exact keeper engagement",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fixture retains reverse stop",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 29",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 31",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 32",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 33",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 34",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 35",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 36",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 37",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 38",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 39",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 41",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 42",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 43",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 44",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 45",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 46",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 47",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 48",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 49",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 50",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 51",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 52",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 53",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 54",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 55",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 56",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 57",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 58",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 59",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 61",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 62",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 63",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 64",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 65",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 66",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 67",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 68",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 69",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 70",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 71",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 72",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 73",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 74",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 75",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 76",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 77",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 78",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 79",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 80",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 81",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 82",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 83",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 84",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 85",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 86",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 87",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 88",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 89",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "release 90",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-recessed-closure-fit-check",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "housing-left",
+          "housing-right",
+          "board-left",
+          "board-right",
+          "side-hook",
+          "axle-end-cap"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "recessed-closure-fit-check joint support and brim overrides",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "CC2 slice and exact named mesh readback",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "source_STEP_sha256": {
+    "housing-left": "56202807c698cb57a0e53b5954ff9a2bbb2b42b46d44057833385a32fe4c25fa",
+    "board-left": "026aa49e8c925f6089cabbd7baf315a4ab9b9d0b4e7ed1d12afd7a0c0b108a23",
+    "housing-right": "3da4c9691a85c75801294d9591bc7ce0e1e33065c3fea30d9ab7655feffb3029",
+    "board-right": "e309d4c55a70e61b7fc386799a4a442bfb8839f990ed953e29d212b95f77b0a8",
+    "side-hook": "5c71241121eea20ba4977f7c596244a9a31abd0f46ac461dbced749498b39d43",
+    "axle-end-cap": "1de642544c8b79f33fde112824105de13a0bccabaff43d8ff23603a9587bc4fa"
+  },
+  "slicing": {
+    "slicer": "ElegooSlicer-2.4.2:",
+    "printer": "Elegoo Centauri Carbon 2 0.4 nozzle",
+    "physical_acceptance": false,
+    "printer_started": false,
+    "profiles_sha256": {
+      "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+      "process-case.json": "b5a2c0b2e6356120bda6262785b4d41c33e299964ebc0979fe72358cbe9426b4",
+      "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    "plates": {
+      "recessed-closure-fit-check": {
+        "passed": true,
+        "exit_code": 0,
+        "input_sha256": "d4c34ec0166aed38b3a3c9be6795e65a2e831659282dd0ce975a7593d6e41c73",
+        "command": [
+          "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+          "--datadir",
+          "<repo>/v22/.slicer-work/closure-fit/.slicer-work/config",
+          "--load-settings",
+          "<repo>/v22/.slicer-work/closure-fit/profiles/machine.json;<repo>/v22/.slicer-work/closure-fit/profiles/process-case.json",
+          "--load-filaments",
+          "<repo>/v22/.slicer-work/closure-fit/profiles/filament-pla.json",
+          "--ensure-on-bed",
+          "--arrange",
+          "0",
+          "--orient",
+          "0",
+          "--slice",
+          "0",
+          "--export-3mf",
+          "<repo>/v22/.slicer-work/closure-fit/PRINT/recessed-closure-fit-check-CC2-PLA.3mf",
+          "<repo>/v22/.slicer-work/closure-fit/plates/recessed-closure-fit-check.3mf"
+        ],
+        "warnings": [
+          {
+            "msg": "bed_temperature_too_high_than_filament",
+            "level": "3",
+            "error_code": "1000C001"
+          }
+        ],
+        "objects": [
+          "housing-left",
+          "housing-right",
+          "board-left",
+          "board-right",
+          "side-hook",
+          "axle-end-cap"
+        ],
+        "non_printing_support_blockers": [],
+        "slice_metadata": {
+          "index": "1",
+          "extruder_type": "0",
+          "nozzle_volume_type": "0",
+          "printer_model_id": "",
+          "nozzle_diameters": "0.4",
+          "timelapse_type": "0",
+          "prediction": "3175",
+          "weight": "13.39",
+          "first_layer_time": "0.000000",
+          "outside": "false",
+          "support_used": "true",
+          "label_object_enabled": "false",
+          "enable_filament_dynamic_map": "false",
+          "has_filament_switcher": "false",
+          "filament_maps": "1",
+          "limit_filament_maps": "0"
+        },
+        "project_sha256": "7994c7bae2fb1c70979f780e253c2eddd0b1a53ea3739ae47e124a6f12773d38",
+        "project": "recessed-closure-fit-check-CC2-PLA.3mf",
+        "gcode_sha256": "f2d9b359f188be502c26c40f387d2e1d0426fdd2371a1b5803cee3c7f15856af"
+      }
+    },
+    "total_estimated_seconds": 3175,
+    "total_estimated_grams": 13.39
+  },
+  "scope": "Actual cropped housing and board edges, full hook/collar. Fixture-only rear pillars establish the 32.6 mm closed alignment and rear ledges support cropped board edges; these are not full-case features. Not a full-case warping, hinge, slider-latch, storage or transport test.",
+  "physical_acceptance": false
+}

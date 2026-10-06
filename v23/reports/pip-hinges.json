@@ -1,0 +1,269 @@
+{
+  "checks": [
+    {
+      "name": "opposed pivots block forward axial removal",
+      "pass": true,
+      "overlap_mm3": 48.29055235961104
+    },
+    {
+      "name": "opposed pivots block backward axial removal",
+      "pass": true,
+      "overlap_mm3": 48.29063693140166
+    },
+    {
+      "name": "pivot CAD clearance 4.5",
+      "pass": true,
+      "minimum_surface_gap_mm": 0.399999999999989
+    },
+    {
+      "name": "pivot CAD clearance 195.5",
+      "pass": true,
+      "minimum_surface_gap_mm": 0.3999999999999889
+    },
+    {
+      "name": "pivot 1 no support centerlines inside bearing cavity",
+      "pass": true,
+      "intrusions": 0,
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=15.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4170000000000016,
+        0.4163658373507957
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=15.8",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.42199999999999704,
+        0.4216996648267042
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=16.2",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.38800000000000523,
+        0.38800000000000523
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=16.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.38420983658920704,
+        0.3846967954563212
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=17.0",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.42099999999999227,
+        0.42199999999999704
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=17.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4170000000000016,
+        0.41636480346308247
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 2 no support centerlines inside bearing cavity",
+      "pass": true,
+      "intrusions": 0,
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=15.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.41661760195512443,
+        0.4170000000000016
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=15.8",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.42199999999999704,
+        0.42099999999999227
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=16.2",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.38761059536130915,
+        0.38800000000000523
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=16.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3846101009687146,
+        0.38400000000000034
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=17.0",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.42199999999999704,
+        0.42199999999999704
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=17.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.41661760195512443,
+        0.4170000000000016
+      ],
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "trial/pivot 1 no support centerlines inside bearing cavity",
+      "pass": true,
+      "intrusions": 0,
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 1 radial running gaps at Z=15.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4169999999999998,
+        0.41636579635163073
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 1 radial running gaps at Z=15.8",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4220000000000006,
+        0.42199999999999704
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 1 radial running gaps at Z=16.2",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3879999999999999,
+        0.3880000000000017
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 1 radial running gaps at Z=16.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.38400000000000034,
+        0.38500000000000156
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 1 radial running gaps at Z=17.0",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4220000000000006,
+        0.42199999999999704
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 1 radial running gaps at Z=17.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4169999999999998,
+        0.4163647624949611
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 2 no support centerlines inside bearing cavity",
+      "pass": true,
+      "intrusions": 0,
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 2 radial running gaps at Z=15.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4169999999999998,
+        0.4170000000000016
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 2 radial running gaps at Z=15.8",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4216125589707751,
+        0.42199999999999704
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 2 radial running gaps at Z=16.2",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3879999999999999,
+        0.3880000000000017
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 2 radial running gaps at Z=16.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.38400000000000034,
+        0.38500000000000156
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 2 radial running gaps at Z=17.0",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4216125589707751,
+        0.42199999999999704
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    },
+    {
+      "name": "trial/pivot 2 radial running gaps at Z=17.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.4169999999999998,
+        0.4170000000000016
+      ],
+      "gcode_sha256": "c37bce7384db744a386d459fb16ad49870385bfc06a22f1697c8b9aefd4e857d"
+    }
+  ],
+  "adapted_from": "v16-field-book/source/tak_book.py",
+  "nominal_pin_diameter_mm": 3,
+  "nominal_radial_and_face_clearance_mm": 0.4,
+  "scope": "Opposed-pivot CAD clearance and axial capture; no support centerlines in cylindrical bearing cavity; sampled radial gaps with conservative 0.50 mm bead-width assumption. Does not prove continuous extrusion clearance, joint release force, strength or physical durability.",
+  "physical_acceptance": false
+}
