@@ -41,3 +41,11 @@ v23/board-inlays/PRINT/*.3mf binary linguist-generated=true
 v23/board-inlays/previews/*.png binary linguist-generated=true
 v23/board-inlays/release/*.zip binary linguist-generated=true
 v23/board-inlays/reports/*.log -diff linguist-generated=true
+
+# V23 R2 mechanical revision: source and geometry previews are the review surface.
+v23-r2/**/*.step binary linguist-generated=true
+v23-r2/**/*.stl binary linguist-generated=true
+v23-r2/**/*.3mf binary linguist-generated=true
+v23-r2/**/*.png binary linguist-generated=true
+v23-r2/release/*.zip binary linguist-generated=true
+v23-r2/reports/*.log -diff linguist-generated=true
