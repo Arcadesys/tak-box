@@ -1,0 +1,41 @@
+{
+  "baseline_revision": "071469c4e424a777e52e42a8503890b19b62ecbd",
+  "baseline_note": "Parent V23 revision used for this separate replacement-board option. Source hashes identify the option precisely.",
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "runtime": "/Users/arcades/Documents/GitHub/tak-box/.venv/bin/python",
+  "dependencies_sha256": {
+    "v23/source/case.py": "073dbc614c0b71b1e9a2575054ecaba9ad20ef8a5052134636234685affd7c95",
+    "v23/source/flat_capstones.py": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693",
+    "v23/source/vendor/body/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
+    "v23/source/vendor/pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
+    "v23/source/vendor/pieces/cat-flat.stl": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1",
+    "v23/source/vendor/pieces/witch-flat.stl": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba",
+    "v23/models/housing-left.step": "56202807c698cb57a0e53b5954ff9a2bbb2b42b46d44057833385a32fe4c25fa",
+    "v23/models/housing-right.step": "3da4c9691a85c75801294d9591bc7ce0e1e33065c3fea30d9ab7655feffb3029",
+    "v23/profiles/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
+    "v23/profiles/process-case.json": "6d448649d404b589a3b4f32db7d6fd60df352efaf80ee8f2b27aa9fc38ddbdec",
+    "v23/profiles/filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "v16-field-book/source/tak_book.py": "924a819968fa1e8445d79cd4eab2e5ffe09766d0b16c2792372544fb8a5c2a3e",
+    "v16-field-book/source/decor.py": "a315c1f4167f94842352e78f44bb1e07750a9a95fb21d64ffbc73788e0cf7429",
+    "v17-four-leaf/source/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7"
+  },
+  "source_sha256": {
+    "v23/board-inlays/source/package.py": "0d1178996908988178a68c7d49a6db62764e65202010c7293de8cb597b81c796",
+    "v23/board-inlays/source/build.py": "a1030b76d09e1fb90fca39dc41759cb2564767456b46e3c4e380726b4f0eda42",
+    "v23/board-inlays/source/inlays.py": "ed025b11b63f8487ad5627aad497228cbf2066b985e3c46663f38c502210121c",
+    "v23/board-inlays/source/requirements.txt": "0eac58492ff36ce75a86c190a0422661b85af6264a552b704e96ab9c02547362",
+    "v23/board-inlays/source/slice.py": "4af0564faae4188102f685af002627bec6b4c91159d1d8085d6c8ad4989c936a",
+    "v23/board-inlays/source/render.py": "ad1d9a9a96eeee5533903286b31e1394a92877adf73bfbd272fd3681b40a44c6",
+    "v23/board-inlays/source/inspect_layers.py": "b579b31cecb2235bdccf3bef9258ed10e53fd1be76cf139d53a6508af8cecfb7"
+  },
+  "commands": [
+    "python v23/board-inlays/source/build.py",
+    "python v23/board-inlays/source/render.py",
+    "python v23/board-inlays/source/slice.py",
+    "python v23/board-inlays/source/inspect_layers.py",
+    "python v23/board-inlays/source/package.py"
+  ],
+  "physical_acceptance": false,
+  "printer_started": false
+}

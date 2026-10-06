@@ -1,0 +1,1313 @@
+{
+  "checks": [
+    {
+      "name": "board-left-body CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-body one structural solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-body STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13704
+      }
+    },
+    {
+      "name": "board-left-body STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-grid CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-grid STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "board-left-grid STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-stars CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-stars STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "board-left-stars STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-art CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-art STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 11,
+        "triangles": 8496
+      }
+    },
+    {
+      "name": "board-left-art STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/body disjoint from grid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/body disjoint from stars",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/body disjoint from art",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/grid disjoint from stars",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/grid disjoint from art",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/stars disjoint from art",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left filled board matches original envelope",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left all sliding interfaces unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/grid flush 0.6 mm inlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/stars flush 0.6 mm inlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/art flush 0.6 mm inlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left art stays within field",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left exact stored pieces clear replacement",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left released slide samples clear housings and parked hook",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0.0,
+        "travel_mm": 106,
+        "sample_step_mm": 10
+      }
+    },
+    {
+      "name": "board-right-body CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-body one structural solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-body STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13700
+      }
+    },
+    {
+      "name": "board-right-body STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-grid CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-grid STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "board-right-grid STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-stars CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-stars STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "board-right-stars STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-art CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-art STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 11,
+        "triangles": 8492
+      }
+    },
+    {
+      "name": "board-right-art STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/body disjoint from grid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/body disjoint from stars",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/body disjoint from art",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/grid disjoint from stars",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/grid disjoint from art",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/stars disjoint from art",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right filled board matches original envelope",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right all sliding interfaces unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/grid flush 0.6 mm inlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/stars flush 0.6 mm inlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/art flush 0.6 mm inlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right art stays within field",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right exact stored pieces clear replacement",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right released slide samples clear housings and parked hook",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0.0,
+        "travel_mm": 106,
+        "sample_step_mm": 10
+      }
+    },
+    {
+      "name": "filled playing faces fold 0..180 degree samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0.0,
+        "sample_step_degrees": 10
+      }
+    },
+    {
+      "name": "cell 1,1 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 1,2 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 1,3 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 1,4 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 1,5 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 2,1 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 2,2 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 2,3 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 2,4 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 2,5 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 3,1 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 3,2 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 3,3 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 3,4 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 3,5 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 4,1 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 4,2 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 4,3 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 4,4 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 4,5 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 5,1 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 5,2 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 5,3 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 5,4 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cell 5,5 surface",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 8,28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 26,10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 44,28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 26,46",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 80,28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 26,82",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 116,28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 26,118",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 152,28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 26,154",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 188,28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "white grid 26,190",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13704
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13704
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-left-body bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-left-grid bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-left-stars bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 11,
+        "triangles": 8496
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-left-art bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13700
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13700
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-right-body bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-right-grid bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-right-stars bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 11,
+        "triangles": 8492
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-right-art bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white group separation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white ZIP CRC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white grouped build readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-body mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-body filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-grid mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-grid filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-stars mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-stars filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-art mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-art filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-body mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-body filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-grid mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-grid filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-stars mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-stars filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-art mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-art filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13704
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13704
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-body bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-grid bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-stars bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 11,
+        "triangles": 8496
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-art bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13700
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13700
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-body bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-grid bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-stars bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 11,
+        "triangles": 8492
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-art bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk group separation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk ZIP CRC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk grouped build readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-body mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-body filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-grid mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-grid filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-stars mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-stars filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-art mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-art filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-body mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-body filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-grid mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-grid filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-stars mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-stars filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-art mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-art filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-body CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-body one structural solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-body STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 3444
+      }
+    },
+    {
+      "name": "coupon-body STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-grid CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-grid STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 68
+      }
+    },
+    {
+      "name": "coupon-grid STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-stars CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-stars STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 500
+      }
+    },
+    {
+      "name": "coupon-stars STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-art CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-art STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 3,
+        "triangles": 2868
+      }
+    },
+    {
+      "name": "coupon-art STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 3444
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 3444
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-body bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 68
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-grid bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 500
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-stars bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 3,
+        "triangles": 2868
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-art bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk ZIP CRC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk grouped build readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-body mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-body filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-grid mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-grid filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-stars mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-stars filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-art mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-art filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 3444
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 3444
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-body bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 68
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-grid bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 500
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-stars bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 3,
+        "triangles": 2868
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-art bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white ZIP CRC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white grouped build readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-body mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-body filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-grid mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-grid filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-stars mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-stars filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-art mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-art filament slot",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "cadquery": "2.8.0",
+  "trimesh": "5.1.0",
+  "numpy": "2.5.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "sources_sha256": {
+    "v23/board-inlays/source/build.py": "a1030b76d09e1fb90fca39dc41759cb2564767456b46e3c4e380726b4f0eda42",
+    "v23/board-inlays/source/inlays.py": "ed025b11b63f8487ad5627aad497228cbf2066b985e3c46663f38c502210121c",
+    "v23/source/case.py": "073dbc614c0b71b1e9a2575054ecaba9ad20ef8a5052134636234685affd7c95",
+    "v16-field-book/source/tak_book.py": "924a819968fa1e8445d79cd4eab2e5ffe09766d0b16c2792372544fb8a5c2a3e",
+    "v16-field-book/source/decor.py": "a315c1f4167f94842352e78f44bb1e07750a9a95fb21d64ffbc73788e0cf7429",
+    "v17-four-leaf/source/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
+    "v23/source/flat_capstones.py": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693"
+  },
+  "baseline": "V23 071469c; v17 recessed grid; v16 retained celestial CAD",
+  "field_mm": [
+    180,
+    180
+  ],
+  "pitch_mm": 36,
+  "inlay_depth_mm": 0.6,
+  "physical_acceptance": false,
+  "limitations": [
+    "Motion sampled, not continuous swept-volume proof.",
+    "Physical fit, friction, colour bleed and silk bonding unobserved.",
+    "Silk filament brand/profile not selected; silk dry slice is illustrative."
+  ]
+}

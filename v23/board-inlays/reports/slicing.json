@@ -1,0 +1,275 @@
+{
+  "printer": "Elegoo Centauri Carbon 2, 0.4 mm nozzle",
+  "layer_height_mm": 0.1,
+  "initial_layer_height_mm": 0.2,
+  "inlay_layers": 6,
+  "physical_acceptance": false,
+  "printer_started": false,
+  "silk_profile_note": "Generic PLA placeholder at 6 mm3/s. Select actual silk spool profile and reslice before printing silk.",
+  "slicer_version": "ElegooSlicer-2.4.2:",
+  "profiles_sha256": {
+    "silk-placeholder.json": "a87fc325af8f38bb3432dd465eaa9c00170a6945f2c2a37cb876783a98642a80",
+    "black.json": "19965c7fc6caf54e4d07bc49b3ae9f04766b5bee3a6e9b7e33182c2c8dfedcd1",
+    "white.json": "575dba6347b36bf984a7022111957e5f84fb5c2174ef15fcca8c6f9ecce84588",
+    "process.json": "b5f3df32c9bc3ff7f67c81582cda9708d48bfd6332aa81732539ca3404e88447",
+    "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+  },
+  "plates": {
+    "00-inlay-trial-black-white-silk": {
+      "exit_code": 0,
+      "input_sha256": "53cfef0739e9ba13cbbdb7d232a2b31699d54d581ada9340b8d891df3264fc86",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v23/board-inlays/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v23/board-inlays/profiles/machine.json;<repo>/v23/board-inlays/profiles/process.json",
+        "--load-filaments",
+        "<repo>/v23/board-inlays/profiles/black.json;<repo>/v23/board-inlays/profiles/white.json;<repo>/v23/board-inlays/profiles/silk-placeholder.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v23/board-inlays/PRINT/00-inlay-trial-black-white-silk-CC2.3mf",
+        "<repo>/v23/board-inlays/plates/00-inlay-trial-black-white-silk.3mf"
+      ],
+      "readback_passed": true,
+      "named_parts": [
+        "inlay-trial-body",
+        "inlay-trial-grid",
+        "inlay-trial-stars",
+        "inlay-trial-art"
+      ],
+      "max_world_vertex_error_mm": 5.8018879653323e-06,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF",
+        "#D6A54C"
+      ],
+      "tool_ids": [
+        0,
+        1,
+        2
+      ],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "3500",
+        "weight": "16.22",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0 0 0"
+      },
+      "gcode_sha256": "c8956f8d9bfe6ce92a4a3133364e461d620c28d7c44b502bfb40874f2ead69f9",
+      "silk_profile_final": false,
+      "prime_tower_enabled": true,
+      "output_sha256": "505a69734272ab8b76ab8954d5548ee2c4e0813692bf991fcbd84b69498b6a09"
+    },
+    "00-inlay-trial-black-white": {
+      "exit_code": 0,
+      "input_sha256": "a5a659877149c2750aea464999cfbb983babe35f41270a167d44ea8703c8cc88",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v23/board-inlays/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v23/board-inlays/profiles/machine.json;<repo>/v23/board-inlays/profiles/process.json",
+        "--load-filaments",
+        "<repo>/v23/board-inlays/profiles/black.json;<repo>/v23/board-inlays/profiles/white.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v23/board-inlays/PRINT/00-inlay-trial-black-white-CC2.3mf",
+        "<repo>/v23/board-inlays/plates/00-inlay-trial-black-white.3mf"
+      ],
+      "readback_passed": true,
+      "named_parts": [
+        "inlay-trial-body",
+        "inlay-trial-grid",
+        "inlay-trial-stars",
+        "inlay-trial-art"
+      ],
+      "max_world_vertex_error_mm": 5.8018879653323e-06,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF"
+      ],
+      "tool_ids": [
+        0,
+        1
+      ],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "2574",
+        "weight": "12.23",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0 0"
+      },
+      "gcode_sha256": "719cbc3ba034bffbc2f47bfad4120b3c971a8beb393385eb586b6d8f178fb0e8",
+      "silk_profile_final": null,
+      "prime_tower_enabled": true,
+      "output_sha256": "74b13277cdc95e611efccf2118ceae7ed2c25910ff44ed7409f7184ebc12e578"
+    },
+    "02-boards-black-white-silk": {
+      "exit_code": 0,
+      "input_sha256": "d503892ffa265e3409a8269b88e5e087ceef3d5c093a73ceccb5ec09043175a9",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v23/board-inlays/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v23/board-inlays/profiles/machine.json;<repo>/v23/board-inlays/profiles/process.json",
+        "--load-filaments",
+        "<repo>/v23/board-inlays/profiles/black.json;<repo>/v23/board-inlays/profiles/white.json;<repo>/v23/board-inlays/profiles/silk-placeholder.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v23/board-inlays/PRINT/02-boards-black-white-silk-CC2.3mf",
+        "<repo>/v23/board-inlays/plates/02-boards-black-white-silk.3mf"
+      ],
+      "readback_passed": true,
+      "named_parts": [
+        "board-left-body",
+        "board-left-grid",
+        "board-left-stars",
+        "board-left-art",
+        "board-right-body",
+        "board-right-grid",
+        "board-right-stars",
+        "board-right-art"
+      ],
+      "max_world_vertex_error_mm": 1.7189822568480036e-05,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF",
+        "#D6A54C"
+      ],
+      "tool_ids": [
+        0,
+        1,
+        2
+      ],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "28501",
+        "weight": "118.29",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0 0 0"
+      },
+      "gcode_sha256": "d1a2a7c0cc5c74139a26b2755399c4271d3145aedd4ae3ea8a6b1f1287bfb58e",
+      "silk_profile_final": false,
+      "prime_tower_enabled": true,
+      "output_sha256": "e96ffd4e38a5c97a89fe3086103340dd73cc9fd2eff08c37df02275a60a2b73e"
+    },
+    "02-boards-black-white": {
+      "exit_code": 0,
+      "input_sha256": "16f99295eb34a0fb821d0447f4f50b991aa2d71b01ec56ea7813f1c93062d764",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v23/board-inlays/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v23/board-inlays/profiles/machine.json;<repo>/v23/board-inlays/profiles/process.json",
+        "--load-filaments",
+        "<repo>/v23/board-inlays/profiles/black.json;<repo>/v23/board-inlays/profiles/white.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v23/board-inlays/PRINT/02-boards-black-white-CC2.3mf",
+        "<repo>/v23/board-inlays/plates/02-boards-black-white.3mf"
+      ],
+      "readback_passed": true,
+      "named_parts": [
+        "board-left-body",
+        "board-left-grid",
+        "board-left-stars",
+        "board-left-art",
+        "board-right-body",
+        "board-right-grid",
+        "board-right-stars",
+        "board-right-art"
+      ],
+      "max_world_vertex_error_mm": 1.7189822568480036e-05,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF"
+      ],
+      "tool_ids": [
+        0,
+        1
+      ],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "27576",
+        "weight": "114.70",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0 0"
+      },
+      "gcode_sha256": "5a573abd766eeb5f86d2dfe1963cc6b8cafafee722994d650381573eef741c5f",
+      "silk_profile_final": null,
+      "prime_tower_enabled": true,
+      "output_sha256": "0e5b142db8e8ac5d97ebbb12cdbc050490037b3871e3ab6ffd4ead799bee50a1"
+    }
+  }
+}

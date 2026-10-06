@@ -32,6 +32,10 @@ The full 180 mm field, four-leaf common hinge axis, 1.75 mm PLA filament hardwar
 
 See [V20 guide](../v20/START-HERE.md) and [checkpoint](V20_CHECKPOINT.md). Physical fit, release force, durability and loaded transport still require observation. Prior V18/V19 files remain intact. No printer job is authorized by kit preparation.
 
+### V23 multicolour playing-surface option — October 6, 2026
+
+The user selected the V23 sliding boards for a flush black/white inlay option, with optional silk PLA accents. `v23/board-inlays/` reuses the v17 recessed grid and retained v16 celestial artwork. The full 180 mm field, 36 mm pitch, V23 rails, catches, grips, bases and capstones are preserved. This replaces only board plate 02; the existing complete-kit ZIP stays archived unchanged. Both two-colour and optional three-colour projects include a small physical trial. The accent colour and actual silk profile are still to be selected; physical finish and fit remain unobserved. Read the option README and fresh reports before printing.
+
 ### Historical version decision: v19
 
 October 5: after seeing several versioned folders inside the v18 ZIP, the user explicitly requested **v19**. The current release is [v19](../v19/START-HERE.md): one ZIP root, one START-HERE guide and exactly five current projects in PRINT. Required CAD dependencies live under source/vendor; old version packages and coupons are excluded. Print projects, exported geometry and settings carry forward unchanged from the checked side-hook build at `1e8944b`. Physical acceptance remains pending. See [V19_CHECKPOINT.md](V19_CHECKPOINT.md).

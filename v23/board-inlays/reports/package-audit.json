@@ -1,0 +1,9 @@
+{
+  "zip_sha256": "c29c7dff9069aab2fcebc582c6bde784170fe5a754855512bab98545874ef532",
+  "payload_files": 73,
+  "crc_pass": true,
+  "all_payload_hashes_pass": true,
+  "python_syntax_pass": true,
+  "four_sliced_projects": true,
+  "physical_acceptance": false
+}

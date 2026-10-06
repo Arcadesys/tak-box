@@ -2,6 +2,10 @@
 
 **Use `tak-v23-print-kit.zip` and print the three projects in PRINT.** The earlier `tak-v22-print-kit.zip` is retained as the baseline and has different bases, boards, hook and collar. The paired bases print together, open flat, with captive main hinges. The centered side hook, pivot/collar and headed catch sit within the closed side outline. Rounded end shoulders replace the projecting hinge roots, and two recessed finger wells replace each board’s projecting pull tab. Each playing-board half slides outward to uncover 21 flat stones and one flat capstone. The rear compartment and its hatch are gone; the closed box stays **32.6 mm thick**.
 
+## Optional multicolour playing surface
+
+[Flush black/white board inlays with optional silk accents](board-inlays/README.md) replace plate 02 only. The option includes both colour variants and a small colour/finish trial. Select the actual silk spool profile and reslice before printing an accent version.
+
 ## Three full-build plates
 
 | Project | Contents | Orientation |

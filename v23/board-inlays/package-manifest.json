@@ -1,0 +1,372 @@
+{
+  "root": "tak-v23-board-inlays",
+  "units": "millimeter",
+  "physical_acceptance": false,
+  "files": [
+    {
+      "path": "v16-field-book/source/decor.py",
+      "bytes": 4466,
+      "sha256": "a315c1f4167f94842352e78f44bb1e07750a9a95fb21d64ffbc73788e0cf7429"
+    },
+    {
+      "path": "v16-field-book/source/tak_book.py",
+      "bytes": 28759,
+      "sha256": "924a819968fa1e8445d79cd4eab2e5ffe09766d0b16c2792372544fb8a5c2a3e"
+    },
+    {
+      "path": "v17-four-leaf/source/folio.py",
+      "bytes": 3093,
+      "sha256": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7"
+    },
+    {
+      "path": "v23/board-inlays/PRINT/00-inlay-trial-black-white-CC2.3mf",
+      "bytes": 265546,
+      "sha256": "74b13277cdc95e611efccf2118ceae7ed2c25910ff44ed7409f7184ebc12e578"
+    },
+    {
+      "path": "v23/board-inlays/PRINT/00-inlay-trial-black-white-silk-CC2.3mf",
+      "bytes": 283341,
+      "sha256": "505a69734272ab8b76ab8954d5548ee2c4e0813692bf991fcbd84b69498b6a09"
+    },
+    {
+      "path": "v23/board-inlays/PRINT/02-boards-black-white-CC2.3mf",
+      "bytes": 4837733,
+      "sha256": "0e5b142db8e8ac5d97ebbb12cdbc050490037b3871e3ab6ffd4ead799bee50a1"
+    },
+    {
+      "path": "v23/board-inlays/PRINT/02-boards-black-white-silk-CC2.3mf",
+      "bytes": 4878798,
+      "sha256": "e96ffd4e38a5c97a89fe3086103340dd73cc9fd2eff08c37df02275a60a2b73e"
+    },
+    {
+      "path": "v23/board-inlays/README.md",
+      "bytes": 5859,
+      "sha256": "406a5e3ef6036d58518e648a97b5b3eb2ad60d573c99bd0fccd54b4c61fae33c"
+    },
+    {
+      "path": "v23/board-inlays/models/board-left-art.step",
+      "bytes": 1446128,
+      "sha256": "4d3610c77e59ddf48e3615fcc2f06ed034c2e2b568e2ef99fd28cea9dabcc991"
+    },
+    {
+      "path": "v23/board-inlays/models/board-left-art.stl",
+      "bytes": 424884,
+      "sha256": "79e6380cd4ce8b99570dcf2924257a613af45174dbc4a3b04c32060239597615"
+    },
+    {
+      "path": "v23/board-inlays/models/board-left-body.step",
+      "bytes": 1948262,
+      "sha256": "ec1cb982cf32934008bf86ea629469189715970a749302a8cfe983b26e22fda3"
+    },
+    {
+      "path": "v23/board-inlays/models/board-left-body.stl",
+      "bytes": 685284,
+      "sha256": "6bb2c6cc86a1ef636d0c5fb880ac7d8895a8e8ded55cd26f07b93c438d2909b8"
+    },
+    {
+      "path": "v23/board-inlays/models/board-left-grid.step",
+      "bytes": 234057,
+      "sha256": "c2e6c1c81459c7d18d500ddde15da1d173b02ae19521f0acbbc220ad1243e4ed"
+    },
+    {
+      "path": "v23/board-inlays/models/board-left-grid.stl",
+      "bytes": 14684,
+      "sha256": "079a96ca395375fc3cb6e752068629be5ea39f5973dfa2c578f5dc1bed060eb2"
+    },
+    {
+      "path": "v23/board-inlays/models/board-left-stars.step",
+      "bytes": 41980,
+      "sha256": "d2b397792279348b703cb2ac3352630c24e976bad2ccae56e66493e845797a84"
+    },
+    {
+      "path": "v23/board-inlays/models/board-left-stars.stl",
+      "bytes": 175084,
+      "sha256": "e8f0709640b24ee494d54b2a241344f0db0f26083c1ff81ddda6f386d77b57b7"
+    },
+    {
+      "path": "v23/board-inlays/models/board-right-art.step",
+      "bytes": 1445492,
+      "sha256": "f00426ac8d7b5fa72887f43172c45aaa5368cfcff2e94d760b50498fa1d2df06"
+    },
+    {
+      "path": "v23/board-inlays/models/board-right-art.stl",
+      "bytes": 424684,
+      "sha256": "8ff26fee8b7c395193c14f10a2bad6eee9f48ef6fb6b623b8d886eeec6d5cabb"
+    },
+    {
+      "path": "v23/board-inlays/models/board-right-body.step",
+      "bytes": 1932120,
+      "sha256": "3e1c2da4d0fbb5fc06bbeaad33268c7ab70acf19f93a9e3f3b377cfc36339717"
+    },
+    {
+      "path": "v23/board-inlays/models/board-right-body.stl",
+      "bytes": 685084,
+      "sha256": "3895009a659904e9a272f151fea8d04d744875b6c7bc85a7927bb266b2dbb451"
+    },
+    {
+      "path": "v23/board-inlays/models/board-right-grid.step",
+      "bytes": 228658,
+      "sha256": "1cfe697dc9f7fefff1eaa9446516f6c47a4c21fb37c4a746385a209ecab6106d"
+    },
+    {
+      "path": "v23/board-inlays/models/board-right-grid.stl",
+      "bytes": 14684,
+      "sha256": "46610907cf1f96ef8e8562a3ba200c5c1ee5340c1ddb3e0f544763834424c62f"
+    },
+    {
+      "path": "v23/board-inlays/models/board-right-stars.step",
+      "bytes": 42029,
+      "sha256": "716929dc77661645ccb48f7579b21a91aa85eb928cdb46a541b1ca26972fd10f"
+    },
+    {
+      "path": "v23/board-inlays/models/board-right-stars.stl",
+      "bytes": 175084,
+      "sha256": "7d55c4ac0348ff45c02fb8c9027698a3ca137b67aef52e2d5a63391ccd299d3d"
+    },
+    {
+      "path": "v23/board-inlays/models/coupon-art.step",
+      "bytes": 646159,
+      "sha256": "0a34024834d15037fed2cbcbb95c892d316a1c98521104b422e712d71702634b"
+    },
+    {
+      "path": "v23/board-inlays/models/coupon-art.stl",
+      "bytes": 143484,
+      "sha256": "fdb4ec95760488f5de5db5b58b7986a194d7c906c3cb47c64a34e7478b51127b"
+    },
+    {
+      "path": "v23/board-inlays/models/coupon-body.step",
+      "bytes": 710025,
+      "sha256": "1c923fa92e603998901095b6d146f24b5f8945069c061ff48247a92d49482717"
+    },
+    {
+      "path": "v23/board-inlays/models/coupon-body.stl",
+      "bytes": 172284,
+      "sha256": "35d261522c22e92c01e7bfe5ba65021fb3a8ee9d6bd219c73e3d3d8f568f9093"
+    },
+    {
+      "path": "v23/board-inlays/models/coupon-grid.step",
+      "bytes": 58103,
+      "sha256": "fe921209b1f6ab9f7eb42b00cb60226d627f4af57b6f9f18db0edaab034e43a2"
+    },
+    {
+      "path": "v23/board-inlays/models/coupon-grid.stl",
+      "bytes": 3484,
+      "sha256": "3ea84c227d3828710129df1a1b0358548d67c5e6333c8487607fd0a897319982"
+    },
+    {
+      "path": "v23/board-inlays/models/coupon-stars.step",
+      "bytes": 5667,
+      "sha256": "2eb006a5bcae5dd206f821421235b9b5dc98d74df02d4e42585aacf823c7cf4f"
+    },
+    {
+      "path": "v23/board-inlays/models/coupon-stars.stl",
+      "bytes": 25084,
+      "sha256": "01ff120eaac504f87abd01b0f12af66a9e16523d8a25648a83d3a4d62d7c1dd4"
+    },
+    {
+      "path": "v23/board-inlays/plates/00-inlay-trial-black-white-silk.3mf",
+      "bytes": 72933,
+      "sha256": "53cfef0739e9ba13cbbdb7d232a2b31699d54d581ada9340b8d891df3264fc86"
+    },
+    {
+      "path": "v23/board-inlays/plates/00-inlay-trial-black-white.3mf",
+      "bytes": 72930,
+      "sha256": "a5a659877149c2750aea464999cfbb983babe35f41270a167d44ea8703c8cc88"
+    },
+    {
+      "path": "v23/board-inlays/plates/02-boards-black-white-silk.3mf",
+      "bytes": 539704,
+      "sha256": "d503892ffa265e3409a8269b88e5e087ceef3d5c093a73ceccb5ec09043175a9"
+    },
+    {
+      "path": "v23/board-inlays/plates/02-boards-black-white.3mf",
+      "bytes": 539701,
+      "sha256": "16f99295eb34a0fb821d0447f4f50b991aa2d71b01ec56ea7813f1c93062d764"
+    },
+    {
+      "path": "v23/board-inlays/previews/01-black-white.png",
+      "bytes": 19644,
+      "sha256": "5830e435e21e20719c6bf8524765b19799c188fd780b2b6712fdbd33ad74a6f8"
+    },
+    {
+      "path": "v23/board-inlays/previews/02-black-white-silk.png",
+      "bytes": 19662,
+      "sha256": "5ec2984a38e5f9c14b7854651e7e7bbd186bd30fbfecba10a7c467e0b0153230"
+    },
+    {
+      "path": "v23/board-inlays/previews/03-open-case.png",
+      "bytes": 48528,
+      "sha256": "92ded43e69e877e58c1612178dc972f184c7d28e0248fe8f90fedfe7c83b3aa6"
+    },
+    {
+      "path": "v23/board-inlays/previews/04-small-trial.png",
+      "bytes": 16791,
+      "sha256": "250bdd369b1a2c11ad74f5b4e37d1735174b9e790740dbb742f7a399dee2ab63"
+    },
+    {
+      "path": "v23/board-inlays/previews/05-sliced-colour-layer.png",
+      "bytes": 296635,
+      "sha256": "61af339c8d8e4833596dbd61f05e6040af3d0a46472c36cc4e6d13a7396b8be8"
+    },
+    {
+      "path": "v23/board-inlays/profiles/black.json",
+      "bytes": 3609,
+      "sha256": "19965c7fc6caf54e4d07bc49b3ae9f04766b5bee3a6e9b7e33182c2c8dfedcd1"
+    },
+    {
+      "path": "v23/board-inlays/profiles/machine.json",
+      "bytes": 6300,
+      "sha256": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    {
+      "path": "v23/board-inlays/profiles/process.json",
+      "bytes": 5184,
+      "sha256": "b5f3df32c9bc3ff7f67c81582cda9708d48bfd6332aa81732539ca3404e88447"
+    },
+    {
+      "path": "v23/board-inlays/profiles/silk-placeholder.json",
+      "bytes": 3619,
+      "sha256": "a87fc325af8f38bb3432dd465eaa9c00170a6945f2c2a37cb876783a98642a80"
+    },
+    {
+      "path": "v23/board-inlays/profiles/white.json",
+      "bytes": 3609,
+      "sha256": "575dba6347b36bf984a7022111957e5f84fb5c2174ef15fcca8c6f9ecce84588"
+    },
+    {
+      "path": "v23/board-inlays/reports/00-inlay-trial-black-white-silk-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v23/board-inlays/reports/00-inlay-trial-black-white-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v23/board-inlays/reports/02-boards-black-white-silk-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v23/board-inlays/reports/02-boards-black-white-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v23/board-inlays/reports/checks-latest.json",
+      "bytes": 23939,
+      "sha256": "440d4f06916215b962672f2a3d5a3a52ae9397542c48c8e072ef917cfb0b5ded"
+    },
+    {
+      "path": "v23/board-inlays/reports/colour-layers.json",
+      "bytes": 3439,
+      "sha256": "c3cfa73708e68702db0d1a85edd67e46a564637efab7023e8e75b5554b2b9217"
+    },
+    {
+      "path": "v23/board-inlays/reports/geometry.json",
+      "bytes": 27886,
+      "sha256": "2f5b0521c0510c3963a688aafb2f591c8b481e57d25305cdbd33229535c554b3"
+    },
+    {
+      "path": "v23/board-inlays/reports/provenance.json",
+      "bytes": 3043,
+      "sha256": "a443dd4630664a7b69d6afce79a1d52e84b753835f1c388e3308b220d05b5c75"
+    },
+    {
+      "path": "v23/board-inlays/reports/slicing.json",
+      "bytes": 9512,
+      "sha256": "4155ae86df6c961e7eaa50f7a3e67f6a97d3c2b49d271dabe5967bc3ff38dd30"
+    },
+    {
+      "path": "v23/board-inlays/source/build.py",
+      "bytes": 11367,
+      "sha256": "a1030b76d09e1fb90fca39dc41759cb2564767456b46e3c4e380726b4f0eda42"
+    },
+    {
+      "path": "v23/board-inlays/source/inlays.py",
+      "bytes": 1852,
+      "sha256": "ed025b11b63f8487ad5627aad497228cbf2066b985e3c46663f38c502210121c"
+    },
+    {
+      "path": "v23/board-inlays/source/inspect_layers.py",
+      "bytes": 4226,
+      "sha256": "b579b31cecb2235bdccf3bef9258ed10e53fd1be76cf139d53a6508af8cecfb7"
+    },
+    {
+      "path": "v23/board-inlays/source/package.py",
+      "bytes": 4027,
+      "sha256": "0d1178996908988178a68c7d49a6db62764e65202010c7293de8cb597b81c796"
+    },
+    {
+      "path": "v23/board-inlays/source/render.py",
+      "bytes": 3072,
+      "sha256": "ad1d9a9a96eeee5533903286b31e1394a92877adf73bfbd272fd3681b40a44c6"
+    },
+    {
+      "path": "v23/board-inlays/source/requirements.txt",
+      "bytes": 112,
+      "sha256": "0eac58492ff36ce75a86c190a0422661b85af6264a552b704e96ab9c02547362"
+    },
+    {
+      "path": "v23/board-inlays/source/slice.py",
+      "bytes": 6980,
+      "sha256": "4af0564faae4188102f685af002627bec6b4c91159d1d8085d6c8ad4989c936a"
+    },
+    {
+      "path": "v23/models/housing-left.step",
+      "bytes": 1475686,
+      "sha256": "56202807c698cb57a0e53b5954ff9a2bbb2b42b46d44057833385a32fe4c25fa"
+    },
+    {
+      "path": "v23/models/housing-right.step",
+      "bytes": 1401824,
+      "sha256": "3da4c9691a85c75801294d9591bc7ce0e1e33065c3fea30d9ab7655feffb3029"
+    },
+    {
+      "path": "v23/profiles/filament-pla.json",
+      "bytes": 4108,
+      "sha256": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+    },
+    {
+      "path": "v23/profiles/machine.json",
+      "bytes": 6300,
+      "sha256": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    {
+      "path": "v23/profiles/process-case.json",
+      "bytes": 5099,
+      "sha256": "6d448649d404b589a3b4f32db7d6fd60df352efaf80ee8f2b27aa9fc38ddbdec"
+    },
+    {
+      "path": "v23/source/case.py",
+      "bytes": 8716,
+      "sha256": "073dbc614c0b71b1e9a2575054ecaba9ad20ef8a5052134636234685affd7c95"
+    },
+    {
+      "path": "v23/source/flat_capstones.py",
+      "bytes": 1637,
+      "sha256": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693"
+    },
+    {
+      "path": "v23/source/vendor/body/folio.py",
+      "bytes": 3093,
+      "sha256": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7"
+    },
+    {
+      "path": "v23/source/vendor/pieces/cat-flat.stl",
+      "bytes": 217484,
+      "sha256": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1"
+    },
+    {
+      "path": "v23/source/vendor/pieces/tak_pieces.py",
+      "bytes": 10600,
+      "sha256": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+    },
+    {
+      "path": "v23/source/vendor/pieces/witch-flat.stl",
+      "bytes": 131084,
+      "sha256": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba"
+    }
+  ]
+}
