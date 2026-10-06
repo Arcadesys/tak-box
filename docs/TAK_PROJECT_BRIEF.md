@@ -2,7 +2,17 @@
 
 Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current version decision: v21
+### Current version decision: V22 seamless exterior
+
+October 5: the user authorized a local exterior revision within V22. The hook, pivot/collar and headed catch are recessed together at the middle of the long side opposite the main hinge. Broad rounded thumb access surrounds the hook; two offset recessed finger wells replace each board’s projecting pull tab. Rounded end shoulders replace the projecting rectangular main-hinge roots while retaining captive pivots and full folding motion.
+
+The closed envelope is **101×200×32.6 mm**, compared with 111.8×220.2×32.6 mm for the preserved original V22 kit. The full 180 mm, 5×5 / 36 mm-pitch field, original 42 Cat/Witch 20×20×8 mm flats and solid 8 mm flat Cat/Witch capstones remain. No deeper case, rear compartment, standee or sculpted capstone is introduced. Hook parking at 90° clears both complete outward board paths. Only its pivot uses an inserted 8.6 mm length of 1.75 mm PLA; main hinges print captive.
+
+The revised kit is `v22/release/tak-v22-seamless-print-kit.zip`: three full projects, eight parts, estimated 11 h 38 min / 272 g, with optional hinge and closure trials. Replace both bases, both boards, hook and collar together. The capstones match the original V22 CAD. The original V22 ZIP and V18–V21 archives are preserved. Geometry, exact loaded-piece clearance, motion samples, readback, toolpaths and slices pass; physical snag resistance, thumb/grip comfort, release, fit, durability and loaded retention remain unobserved. No printer job or merge is authorized by this preparation.
+
+See [V22 guide](../v22/START-HERE.md) and [revision checkpoint](V22_SEAMLESS_CHECKPOINT.md).
+
+### Historical version decision: v21
 
 October 5: the user explicitly selected **V21** after asking why the playing board itself could not slide aside. Each board now doubles as its storage cover and slides outward, away from the centre seam. Only the two fixed-pocket bases hinge. The full 180 mm field and 36 mm pitch remain. Front buttons press rearward 2.8 mm to release; outward travel of 106 mm fully removes each board. Rails retain boards vertically and inner stops set their playing position. No captive withdrawal stop or measured release force is claimed.
 

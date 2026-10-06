@@ -2,7 +2,7 @@
 
 ## Start here
 
-Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, v21/START-HERE.md, v21/BUILD-PROVENANCE.md and docs/V21_CHECKPOINT.md. The user explicitly selected V21 on October 5: the boards themselves slide aside to uncover fixed piece pockets. Only the two bases hinge; there are no separate storage lids or board hinges. Retain the full 180 mm field, 1.75 mm filament pins and front-corner side hook. Four projects are in v21/PRINT. Main pins are now 14.9 mm. Physical fit is unverified. Preserve historical V18–V20 packages, frozen files, printed V16 parts and the separate premium pagoda.
+Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, v22/START-HERE.md, v22/BUILD-PROVENANCE.md and docs/V22_CHECKPOINT.md. The user selected the V22 seamless exterior revision with a fully recessed centered side hook, offset recessed board grips, rounded integrated hinge ends and print-in-place main hinges and one-piece flat Cat/Witch capstones stored under the sliding boards. Keep the 32.6 mm closed thickness and full 180 mm field. Both bases print together as one assembly with two separate solids. The rear compartment and hatch are removed. Three projects are in v22/PRINT; the only inserted filament pin is the 8.6 mm side-hook pivot. Original 20×20×8 mm flats remain; old sculpted capstones do not fit the new bays. The revised ZIP is tak-v22-seamless-print-kit.zip; retain the original tak-v22-print-kit.zip unchanged. Both bases, boards, hook and collar differ from the original V22 kit; flat capstones are unchanged. Physical acceptance is unobserved. Preserve historical V18–V21 packages, frozen files, printed V16 parts and the separate premium pagoda.
 
 ## Design priorities
 
