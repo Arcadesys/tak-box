@@ -2,7 +2,15 @@
 
 Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current version decision: V23
+### Current mechanical revision: V23 R2 — October 6
+
+The user reports the V23 print broke at the thin bar carrying the main hinge and wants sturdier hinges plus a removable loaded player tray on each side for purse use. Exact fracture location, fused-joint state and breaking action remain unknown. This supersedes blanket unprinted status for that baseline component; other physical acceptance is not inferred.
+
+[V23 R2](../v23-r2/START-HERE.md) preserves the full 180 mm field and original flats/flat capstones. It uses 8 mm full-height hinge supports, 4 mm captive pivots, 9 mm rounded barrels, separate 1.2 mm tray floors, broad pinch handles and low locating stops under sliding covers. The selected closed size is **102.5×200×35 mm**: +1.5 mm at the stronger hinge barrels and +2.4 mm thickness, retaining the 2.2 mm case floors and 4.7 mm boards. Each tray carries 21 flats plus a capstone and rests flat beside the board. Open trays are handled upright.
+
+New paired bases, covers and hook are required; capstones, flats and collar retain geometry. Baseline V23 and all earlier kits remain intact. Concurrent multicolor artwork is preserved separately and is not incorporated into this mechanical revision. Fresh CAD, loaded path, export and four CC2 slice checks pass, with separate hinge/support and tray-access trials. Strength, printed release/fit, grasp and loaded transport still require physical trials; no printer job or merge is performed. See [checkpoint](V23_R2_CHECKPOINT.md).
+
+### Preserved version decision: V23
 
 October 5: the user explicitly named the accepted seamless-exterior design **V23**. This changes version identity only; geometry, material/process settings and print behavior remain those accepted at 4859c9c / 19b8773. The hook, pivot/collar and headed catch are recessed together at the middle of the long side opposite the main hinge. Broad rounded thumb access surrounds the hook; two offset recessed finger wells replace each board’s projecting pull tab. Rounded end shoulders replace the projecting rectangular main-hinge roots while retaining captive pivots and full folding motion.
 
