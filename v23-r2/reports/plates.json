@@ -1,0 +1,267 @@
+{
+  "bed_mm": [
+    256,
+    256
+  ],
+  "checks": [
+    {
+      "name": "01-print-in-place-bases/housing-left bed and build height",
+      "pass": true,
+      "detail": [
+        102.5000001,
+        200.00000020000016,
+        22.000000200000326
+      ]
+    },
+    {
+      "name": "housing-left separation housing-right",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": -9.000000199999988,
+        "paired_captive_hinges": true
+      }
+    },
+    {
+      "name": "01-print-in-place-bases/housing-right bed and build height",
+      "pass": true,
+      "detail": [
+        102.50000019999999,
+        200.00000020000329,
+        22.0000001
+      ]
+    },
+    {
+      "name": "3mf-readback-01-print-in-place-bases",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "housing-left",
+          "housing-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "01-print-in-place-bases joint support and brim overrides",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-sliding-board-tops/board-left bed and build height",
+      "pass": true,
+      "detail": [
+        97.80000000000129,
+        192.10000000000002,
+        5.699999999999999
+      ]
+    },
+    {
+      "name": "board-left separation board-right",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 16.19999999999871,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "02-sliding-board-tops/board-right bed and build height",
+      "pass": true,
+      "detail": [
+        97.80000000000129,
+        192.10000000000002,
+        5.699999999999999
+      ]
+    },
+    {
+      "name": "3mf-readback-02-sliding-board-tops",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "board-left",
+          "board-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "03-removable-player-trays/tray-left bed and build height",
+      "pass": true,
+      "detail": [
+        76.2,
+        182.1,
+        9.2
+      ]
+    },
+    {
+      "name": "tray-left separation tray-right",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 21.799999999999997,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "03-removable-player-trays/tray-right bed and build height",
+      "pass": true,
+      "detail": [
+        76.19999999999999,
+        182.1,
+        9.2
+      ]
+    },
+    {
+      "name": "3mf-readback-03-removable-player-trays",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "tray-left",
+          "tray-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "04-flat-capstones-hook-and-collar/capstone-cat bed and build height",
+      "pass": true,
+      "detail": [
+        24.647448986165003,
+        17.892004476688,
+        8.0
+      ]
+    },
+    {
+      "name": "capstone-cat separation capstone-witch",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 13.352551013834997,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "capstone-cat separation side-hook",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 53.352551013835,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "capstone-cat separation axle-end-cap",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 93.352551013835,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "04-flat-capstones-hook-and-collar/capstone-witch bed and build height",
+      "pass": true,
+      "detail": [
+        26.0,
+        19.268921529373003,
+        8.0
+      ]
+    },
+    {
+      "name": "capstone-witch separation side-hook",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 14.0,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "capstone-witch separation axle-end-cap",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 54.0,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "04-flat-capstones-hook-and-collar/side-hook bed and build height",
+      "pass": true,
+      "detail": [
+        31.700000000000003,
+        8.400000000000006,
+        3.200000000000004
+      ]
+    },
+    {
+      "name": "side-hook separation axle-end-cap",
+      "pass": true,
+      "detail": {
+        "bounding_gap_mm": 8.299999999999997,
+        "paired_captive_hinges": false
+      }
+    },
+    {
+      "name": "04-flat-capstones-hook-and-collar/axle-end-cap bed and build height",
+      "pass": true,
+      "detail": [
+        7.0,
+        7.0,
+        2.0
+      ]
+    },
+    {
+      "name": "3mf-readback-04-flat-capstones-hook-and-collar",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "capstone-cat",
+          "capstone-witch",
+          "side-hook",
+          "axle-end-cap"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  ],
+  "plates": {
+    "01-print-in-place-bases": {
+      "objects": [
+        "housing-left",
+        "housing-right"
+      ],
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.",
+      "supports": true,
+      "support_object_xy_distance_mm": 0.8
+    },
+    "02-sliding-board-tops": {
+      "objects": [
+        "board-left",
+        "board-right"
+      ],
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.",
+      "supports": true,
+      "support_object_xy_distance_mm": 0.35
+    },
+    "03-removable-player-trays": {
+      "objects": [
+        "tray-left",
+        "tray-right"
+      ],
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.",
+      "supports": true,
+      "support_object_xy_distance_mm": 0.35
+    },
+    "04-flat-capstones-hook-and-collar": {
+      "objects": [
+        "capstone-cat",
+        "capstone-witch",
+        "side-hook",
+        "axle-end-cap"
+      ],
+      "orientation": "Bases broad bottom down; sliding boards directly on their flat underside, playing faces up; capstones broad bottom down; hook flat; collar bore up.",
+      "supports": true,
+      "support_object_xy_distance_mm": 0.35
+    }
+  },
+  "filament_pins_printed": false,
+  "physical_acceptance": false
+}
