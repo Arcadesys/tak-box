@@ -1,3 +1,5 @@
+> Historical delivery label. The user named this unchanged geometry V24. Current identity, kit and review are recorded in [V24_CHECKPOINT.md](V24_CHECKPOINT.md).
+
 # V23 R2 — reinforced hinges and removable player trays
 
 Outcome: full-height main-hinge supports and two removable trays, each loaded with 21 original flats plus its supplied flat capstone. Full 180 mm field, 36 mm pitch, sliding covers and recessed side hook retained. New package v23-r2 on codex/v23-durable-player-trays; original V23 kit/source and all earlier kits preserved.

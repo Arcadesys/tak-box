@@ -49,3 +49,11 @@ v23-r2/**/*.3mf binary linguist-generated=true
 v23-r2/**/*.png binary linguist-generated=true
 v23-r2/release/*.zip binary linguist-generated=true
 v23-r2/reports/*.log -diff linguist-generated=true
+
+# V24 identity of the reinforced hinge and removable tray kit.
+v24/**/*.step binary linguist-generated=true
+v24/**/*.stl binary linguist-generated=true
+v24/**/*.3mf binary linguist-generated=true
+v24/**/*.png binary linguist-generated=true
+v24/release/*.zip binary linguist-generated=true
+v24/reports/*.log -diff linguist-generated=true
