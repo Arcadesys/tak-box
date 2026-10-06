@@ -1,0 +1,208 @@
+board-left-body CAD validity PASS
+board-left-body one structural solid PASS
+board-left-body STEP readback PASS
+mesh topology PASS
+board-left-body STL readback PASS
+board-left-grid CAD validity PASS
+board-left-grid STEP readback PASS
+mesh topology PASS
+board-left-grid STL readback PASS
+board-left-stars CAD validity PASS
+board-left-stars STEP readback PASS
+mesh topology PASS
+board-left-stars STL readback PASS
+board-left-orange CAD validity PASS
+board-left-orange STEP readback PASS
+mesh topology PASS
+board-left-orange STL readback PASS
+board-left-purple CAD validity PASS
+board-left-purple STEP readback PASS
+mesh topology PASS
+board-left-purple STL readback PASS
+left/body disjoint from grid PASS
+left/body disjoint from stars PASS
+left/body disjoint from orange PASS
+left/body disjoint from purple PASS
+left/grid disjoint from stars PASS
+left/grid disjoint from orange PASS
+left/grid disjoint from purple PASS
+left/stars disjoint from orange PASS
+left/stars disjoint from purple PASS
+left/orange disjoint from purple PASS
+left filled board matches original envelope PASS
+left all sliding interfaces unchanged PASS
+left/grid flush 0.6 mm inlay PASS
+left/stars flush 0.6 mm inlay PASS
+left/orange flush 0.6 mm inlay PASS
+left/purple flush 0.6 mm inlay PASS
+left art stays within field PASS
+left exact stored pieces clear replacement PASS
+left released slide samples clear housings, loaded trays and parked hook PASS
+board-right-body CAD validity PASS
+board-right-body one structural solid PASS
+board-right-body STEP readback PASS
+mesh topology PASS
+board-right-body STL readback PASS
+board-right-grid CAD validity PASS
+board-right-grid STEP readback PASS
+mesh topology PASS
+board-right-grid STL readback PASS
+board-right-stars CAD validity PASS
+board-right-stars STEP readback PASS
+mesh topology PASS
+board-right-stars STL readback PASS
+board-right-orange CAD validity PASS
+board-right-orange STEP readback PASS
+mesh topology PASS
+board-right-orange STL readback PASS
+board-right-purple CAD validity PASS
+board-right-purple STEP readback PASS
+mesh topology PASS
+board-right-purple STL readback PASS
+right/body disjoint from grid PASS
+right/body disjoint from stars PASS
+right/body disjoint from orange PASS
+right/body disjoint from purple PASS
+right/grid disjoint from stars PASS
+right/grid disjoint from orange PASS
+right/grid disjoint from purple PASS
+right/stars disjoint from orange PASS
+right/stars disjoint from purple PASS
+right/orange disjoint from purple PASS
+right filled board matches original envelope PASS
+right all sliding interfaces unchanged PASS
+right/grid flush 0.6 mm inlay PASS
+right/stars flush 0.6 mm inlay PASS
+right/orange flush 0.6 mm inlay PASS
+right/purple flush 0.6 mm inlay PASS
+right art stays within field PASS
+right exact stored pieces clear replacement PASS
+right released slide samples clear housings, loaded trays and parked hook PASS
+filled boards fold past opposite loaded half 0..180 degree samples PASS
+cell 1,1 surface PASS
+cell 1,2 surface PASS
+cell 1,3 surface PASS
+cell 1,4 surface PASS
+cell 1,5 surface PASS
+cell 2,1 surface PASS
+cell 2,2 surface PASS
+cell 2,3 surface PASS
+cell 2,4 surface PASS
+cell 2,5 surface PASS
+cell 3,1 surface PASS
+cell 3,2 surface PASS
+cell 3,3 surface PASS
+cell 3,4 surface PASS
+cell 3,5 surface PASS
+cell 4,1 surface PASS
+cell 4,2 surface PASS
+cell 4,3 surface PASS
+cell 4,4 surface PASS
+cell 4,5 surface PASS
+cell 5,1 surface PASS
+cell 5,2 surface PASS
+cell 5,3 surface PASS
+cell 5,4 surface PASS
+cell 5,5 surface PASS
+white grid 8,28 PASS
+white grid 26,10 PASS
+white grid 44,28 PASS
+white grid 26,46 PASS
+white grid 80,28 PASS
+white grid 26,82 PASS
+white grid 116,28 PASS
+white grid 26,118 PASS
+white grid 152,28 PASS
+white grid 26,154 PASS
+white grid 188,28 PASS
+white grid 26,190 PASS
+mesh topology PASS
+mesh topology PASS
+02-boards-black-white-silk/board-left-body bed bounds PASS
+mesh topology PASS
+02-boards-black-white-silk/board-left-grid bed bounds PASS
+mesh topology PASS
+02-boards-black-white-silk/board-left-stars bed bounds PASS
+mesh topology PASS
+02-boards-black-white-silk/board-left-orange bed bounds PASS
+mesh topology PASS
+02-boards-black-white-silk/board-left-purple bed bounds PASS
+mesh topology PASS
+mesh topology PASS
+02-boards-black-white-silk/board-right-body bed bounds PASS
+mesh topology PASS
+02-boards-black-white-silk/board-right-grid bed bounds PASS
+mesh topology PASS
+02-boards-black-white-silk/board-right-stars bed bounds PASS
+mesh topology PASS
+02-boards-black-white-silk/board-right-orange bed bounds PASS
+mesh topology PASS
+02-boards-black-white-silk/board-right-purple bed bounds PASS
+02-boards-black-white-silk group separation PASS
+02-boards-black-white-silk ZIP CRC PASS
+02-boards-black-white-silk grouped build readback PASS
+02-boards-black-white-silk/board-left-body mesh readback PASS
+02-boards-black-white-silk/board-left-body filament slot PASS
+02-boards-black-white-silk/board-left-grid mesh readback PASS
+02-boards-black-white-silk/board-left-grid filament slot PASS
+02-boards-black-white-silk/board-left-stars mesh readback PASS
+02-boards-black-white-silk/board-left-stars filament slot PASS
+02-boards-black-white-silk/board-left-orange mesh readback PASS
+02-boards-black-white-silk/board-left-orange filament slot PASS
+02-boards-black-white-silk/board-left-purple mesh readback PASS
+02-boards-black-white-silk/board-left-purple filament slot PASS
+02-boards-black-white-silk/board-right-body mesh readback PASS
+02-boards-black-white-silk/board-right-body filament slot PASS
+02-boards-black-white-silk/board-right-grid mesh readback PASS
+02-boards-black-white-silk/board-right-grid filament slot PASS
+02-boards-black-white-silk/board-right-stars mesh readback PASS
+02-boards-black-white-silk/board-right-stars filament slot PASS
+02-boards-black-white-silk/board-right-orange mesh readback PASS
+02-boards-black-white-silk/board-right-orange filament slot PASS
+02-boards-black-white-silk/board-right-purple mesh readback PASS
+02-boards-black-white-silk/board-right-purple filament slot PASS
+coupon-body CAD validity PASS
+coupon-body one structural solid PASS
+coupon-body STEP readback PASS
+mesh topology PASS
+coupon-body STL readback PASS
+coupon-grid CAD validity PASS
+coupon-grid STEP readback PASS
+mesh topology PASS
+coupon-grid STL readback PASS
+coupon-stars CAD validity PASS
+coupon-stars STEP readback PASS
+mesh topology PASS
+coupon-stars STL readback PASS
+coupon-orange CAD validity PASS
+coupon-orange STEP readback PASS
+mesh topology PASS
+coupon-orange STL readback PASS
+coupon-purple CAD validity PASS
+coupon-purple STEP readback PASS
+mesh topology PASS
+coupon-purple STL readback PASS
+mesh topology PASS
+mesh topology PASS
+00-inlay-trial-black-white-silk/inlay-trial-body bed bounds PASS
+mesh topology PASS
+00-inlay-trial-black-white-silk/inlay-trial-grid bed bounds PASS
+mesh topology PASS
+00-inlay-trial-black-white-silk/inlay-trial-stars bed bounds PASS
+mesh topology PASS
+00-inlay-trial-black-white-silk/inlay-trial-orange bed bounds PASS
+mesh topology PASS
+00-inlay-trial-black-white-silk/inlay-trial-purple bed bounds PASS
+00-inlay-trial-black-white-silk ZIP CRC PASS
+00-inlay-trial-black-white-silk grouped build readback PASS
+00-inlay-trial-black-white-silk/inlay-trial-body mesh readback PASS
+00-inlay-trial-black-white-silk/inlay-trial-body filament slot PASS
+00-inlay-trial-black-white-silk/inlay-trial-grid mesh readback PASS
+00-inlay-trial-black-white-silk/inlay-trial-grid filament slot PASS
+00-inlay-trial-black-white-silk/inlay-trial-stars mesh readback PASS
+00-inlay-trial-black-white-silk/inlay-trial-stars filament slot PASS
+00-inlay-trial-black-white-silk/inlay-trial-orange mesh readback PASS
+00-inlay-trial-black-white-silk/inlay-trial-orange filament slot PASS
+00-inlay-trial-black-white-silk/inlay-trial-purple mesh readback PASS
+00-inlay-trial-black-white-silk/inlay-trial-purple filament slot PASS
+Board replacements and small colour trial verified.

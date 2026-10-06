@@ -67,17 +67,16 @@
       "gcode_sha256": "35133bcbe05fbdc96c2473e2863a9cdbb6de863ae0bb7894bb30a7f4488d4f2e"
     },
     "02-sliding-board-tops": {
-      "passed": true,
       "exit_code": 0,
-      "input_sha256": "07fd741bbd0a67849195ed4e3fa447b7f11fd053ed411d4048fccfd8e30d2c70",
+      "input_sha256": "87f0a0a813cc4f531257fcbfc8a93564d833c4d2a474748485ac0469723be5d2",
       "command": [
         "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
         "--datadir",
-        "<repo>/v23-r2/.slicer-work/config",
+        "<repo>/v24/board-inlays/.slicer-work/config",
         "--load-settings",
-        "<repo>/v23-r2/profiles/machine.json;<repo>/v23-r2/profiles/process-case.json",
+        "<repo>/v24/board-inlays/profiles/machine.json;<repo>/v24/board-inlays/profiles/process.json",
         "--load-filaments",
-        "<repo>/v23-r2/profiles/filament-pla.json",
+        "<repo>/v24/board-inlays/profiles/black.json;<repo>/v24/board-inlays/profiles/white.json;<repo>/v24/board-inlays/profiles/silk-orange-placeholder.json;<repo>/v24/board-inlays/profiles/silk-purple-placeholder.json",
         "--ensure-on-bed",
         "--arrange",
         "0",
@@ -86,21 +85,35 @@
         "--slice",
         "0",
         "--export-3mf",
-        "<repo>/v23-r2/PRINT/02-sliding-board-tops-CC2-PLA.3mf",
-        "<repo>/v23-r2/plates/02-sliding-board-tops.3mf"
+        "<repo>/v24/board-inlays/PRINT/02-boards-black-white-silk-CC2.3mf",
+        "<repo>/v24/board-inlays/plates/02-boards-black-white-silk.3mf"
       ],
-      "warnings": [
-        {
-          "msg": "bed_temperature_too_high_than_filament",
-          "level": "3",
-          "error_code": "1000C001"
-        }
+      "readback_passed": true,
+      "named_parts": [
+        "board-left-body",
+        "board-left-grid",
+        "board-left-stars",
+        "board-left-orange",
+        "board-left-purple",
+        "board-right-body",
+        "board-right-grid",
+        "board-right-stars",
+        "board-right-orange",
+        "board-right-purple"
       ],
-      "objects": [
-        "board-left",
-        "board-right"
+      "max_world_vertex_error_mm": 1.7189822568480036e-05,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF",
+        "#D6A54C",
+        "#B887DD"
       ],
-      "non_printing_support_blockers": [],
+      "tool_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
       "slice_metadata": {
         "index": "1",
         "extruder_type": "0",
@@ -108,8 +121,8 @@
         "printer_model_id": "",
         "nozzle_diameters": "0.4",
         "timelapse_type": "0",
-        "prediction": "16955",
-        "weight": "115.87",
+        "prediction": "29275",
+        "weight": "121.16",
         "first_layer_time": "0.000000",
         "outside": "false",
         "support_used": "true",
@@ -117,11 +130,17 @@
         "enable_filament_dynamic_map": "false",
         "has_filament_switcher": "false",
         "filament_maps": "1",
-        "limit_filament_maps": "0"
+        "limit_filament_maps": "0 0 0 0"
       },
-      "project_sha256": "f4cda11fa4748dad224b63af4223748127940f47487d6c643be23b587823fbcb",
+      "gcode_sha256": "069ace769aaf3b23db468eb4baf8efdf9d39f7cf76a7db5c8f8b37b8e3f4b20c",
+      "silk_profile_final": false,
+      "prime_tower_enabled": true,
+      "output_sha256": "8f57886f5cafc23856a9933c08611843eaca65d33ec34b117e2e516075f151ca",
+      "passed": true,
       "project": "02-sliding-board-tops-CC2-PLA.3mf",
-      "gcode_sha256": "2e48b569d86b053439210469eed072e54aa17d25eca327c2964080be5e8e8187"
+      "project_sha256": "8f57886f5cafc23856a9933c08611843eaca65d33ec34b117e2e516075f151ca",
+      "evidence": "board-inlays/reports/slicing.json",
+      "four_materials": true
     },
     "03-removable-player-trays": {
       "passed": true,
@@ -240,6 +259,7 @@
       "gcode_sha256": "8a20a8676618f3205c98aec26843e552690d3bf480d1ef8f5da7086d70d83052"
     }
   },
-  "total_estimated_seconds": 48922,
-  "total_estimated_grams": 321.56
+  "total_estimated_seconds": 61242,
+  "total_estimated_grams": 326.85,
+  "board_profiles": "board-inlays/profiles; two silk placeholders require actual profiles and reslice"
 }
