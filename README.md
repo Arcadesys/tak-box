@@ -2,7 +2,15 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Current print kit: V23
+## Current print kit: V24
+
+[Download V24](v24/release/tak-v24-print-kit.zip) and read [START-HERE](v24/START-HERE.md). Following the reported V23 hinge-support break, this revision uses broader full-height supports and two removable loaded player trays. The full 180 mm field remains; closed size is **102.5×200×35 mm**, adding 1.5 mm at the larger hinge barrels and 2.4 mm thickness for independent tray floors. Four sliced CC2 PLA plates total about **13 h 35 min / 322 g**. Separate hinge and tray-access trials are included; physical durability and fit remain pending.
+
+Replace both bases, both boards and the hook; add both trays. Existing original flats, supplied flat capstones and hook collar retain their geometry. The separate V23 multicolor boards are preserved but need their corner geometry adapted before use with V24. See [the V24 checkpoint](docs/V24_CHECKPOINT.md).
+
+V24 is the explicit version name for the previously delivered V23 R2 geometry; this naming correction changes no print behavior. The [V23 R2 kit](v23-r2/release/tak-v23-r2-print-kit.zip) remains preserved.
+
+## Preserved V23 baseline
 
 [Download the V23 print kit](v23/release/tak-v23-print-kit.zip), then open **v23/START-HERE.md**. Three CC2 PLA projects are together in **v23/PRINT**, with eight parts estimated at **11 h 38 min / 272 g**.
 

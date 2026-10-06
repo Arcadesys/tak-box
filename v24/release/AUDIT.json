@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "payload_files": 132,
+  "full_projects": 4,
+  "small_trial_projects": 2,
+  "local_links": 8,
+  "zip_sha256": "5d48e11d789e2d2e1de48067df9993958c19a91a95c3c81998b7d06d61d66a9d",
+  "zip_bytes": 19458002,
+  "physical_acceptance": false
+}

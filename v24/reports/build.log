@@ -1,0 +1,64 @@
+housing-left valid single solid PASS 
+housing-left STEP/STL readback PASS {'triangles': 29452, 'cad_volume_mm3': 75975.19441794838}
+board-left valid single solid PASS 
+board-left STEP/STL readback PASS {'triangles': 1446, 'cad_volume_mm3': 82960.50899150233}
+tray-left valid single solid PASS 
+tray-left STEP/STL readback PASS {'triangles': 1740, 'cad_volume_mm3': 22550.79496792936}
+housing-right valid single solid PASS 
+housing-right STEP/STL readback PASS {'triangles': 29724, 'cad_volume_mm3': 76681.6098951509}
+board-right valid single solid PASS 
+board-right STEP/STL readback PASS {'triangles': 1446, 'cad_volume_mm3': 82960.50899150227}
+tray-right valid single solid PASS 
+tray-right STEP/STL readback PASS {'triangles': 1740, 'cad_volume_mm3': 22550.794967929294}
+capstone-cat valid single solid PASS 
+capstone-cat STEP/STL readback PASS {'triangles': 2592, 'cad_volume_mm3': 2477.7255490539355}
+capstone-witch valid single solid PASS 
+capstone-witch STEP/STL readback PASS {'triangles': 1040, 'cad_volume_mm3': 1508.4121272162577}
+side-hook valid single solid PASS 
+side-hook STEP/STL readback PASS {'triangles': 740, 'cad_volume_mm3': 395.3480643951546}
+axle-end-cap valid single solid PASS 
+axle-end-cap STEP/STL readback PASS {'triangles': 840, 'cad_volume_mm3': 71.29844527322037}
+nominal assembled parts disjoint PASS {'max_overlap_mm3': 0, 'at': None}
+full paired fold 0..180 degrees at 5 degree samples PASS {'max_overlap_mm3': 0, 'at': None}
+unlocked case opening at 1 degree samples for first 10 degrees PASS {'max_overlap_mm3': 0, 'at': None}
+locked side hook blocks case opening at 1 degree PASS 
+hook reverse rotation stop PASS 
+hook release 0..90 degrees at 1 degree samples PASS {'max_overlap_mm3': 0, 'at': None}
+hook mouth clearance and headed keeper PASS {'pin_diameter_mm': 3, 'head_diameter_mm': 5.6, 'hook_thickness_mm': 3.2, 'keeper_head_clearance_mm': 0.4, 'pivot_faces_contact_for_friction': True, 'retention': 'Rigid hook shoulder and reverse rotation stop; set pivot collar for light friction. Unloaded rotation resistance remains physical.'}
+left board catch blocks outward slide PASS 
+left board inner stops block over-insertion PASS 
+left rails prevent lifting board PASS 
+left ledges support downward board load PASS 
+left catch release clears base PASS {'max_overlap_mm3': 0, 'at': None}
+left full board slide clears assembled case and parked hook PASS {'max_overlap_mm3': 0, 'at': None}
+right board catch blocks outward slide PASS 
+right board inner stops block over-insertion PASS 
+right rails prevent lifting board PASS 
+right ledges support downward board load PASS 
+right catch release clears base PASS {'max_overlap_mm3': 0, 'at': None}
+right full board slide clears assembled case and parked hook PASS {'max_overlap_mm3': 0, 'at': None}
+two hinged bases only PASS 
+parked hook remains above table PASS 
+cat flat CAD valid PASS 
+cat flat capstone valid and under roof PASS {'stored_size_mm': [24.647448986169778, 17.89200447668827, 8.0], 'roof_gap_mm': 0.40000000000000036}
+cat capstone rim blocks planar escape 3,0 PASS 
+cat capstone rim blocks planar escape -3,0 PASS 
+cat capstone rim blocks planar escape 0,3 PASS 
+cat capstone rim blocks planar escape 0,-3 PASS 
+witch flat CAD valid PASS 
+witch flat capstone valid and under roof PASS {'stored_size_mm': [26.0, 19.268921529372847, 8.0], 'roof_gap_mm': 0.40000000000000036}
+witch capstone rim blocks planar escape 3,0 PASS 
+witch capstone rim blocks planar escape -3,0 PASS 
+witch capstone rim blocks planar escape 0,3 PASS 
+witch capstone rim blocks planar escape 0,-3 PASS 
+left exact flats and new flat capstone clear assembled storage PASS {'max_overlap_mm3': 0, 'at': None}
+right exact flats and new flat capstone clear assembled storage PASS {'max_overlap_mm3': 0, 'at': None}
+stored pieces are mutually disjoint PASS {'max_overlap_mm3': 0, 'at': None}
+loaded flats and flat capstones clear opposite modules during fold at 15 degrees PASS {'max_overlap_mm3': 0, 'at': None}
+left all flats and flat capstone lift from tray pockets PASS {'max_overlap_mm3': 0, 'at': None}
+left sliding board clears loaded pieces PASS {'max_overlap_mm3': 0, 'at': None}
+right all flats and flat capstone lift from tray pockets PASS {'max_overlap_mm3': 0, 'at': None}
+right sliding board clears loaded pieces PASS {'max_overlap_mm3': 0, 'at': None}
+roof gap above actual 8 mm flats PASS 
+field remains 5x5 / 180 mm / 36 mm pitch PASS {'field_mm': 180, 'pitch_mm': 36}
+Full integrated V23 R2 digital checks pass

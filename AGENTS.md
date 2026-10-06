@@ -1,5 +1,9 @@
 # Tak collaboration instructions
 
+## Current version: V24
+
+Read v24/START-HERE.md, v24/BUILD-PROVENANCE.md and docs/V24_CHECKPOINT.md first for the reinforced-hinge/removable-tray revision. The user reports a baseline V23 hinge-support break; the exact failure mechanism is unknown. V24 has a 102.5×200×35 mm envelope, full-height 8 mm supports, captive 4 mm pivots and two loaded lift-out trays. Physical V24 acceptance remains pending. Preserve the original v23 source/kit and its separate board-inlay work; V24 is a distinct package and focused draft review. The user explicitly named the completed V23 R2 revision V24; no geometry/profile/print change is implied. Read v24/reports/identity.json to bridge the preserved 238 checks and six slices, which retain historical labels. Preserve the v23-r2 kit too. Historical text below describes the retained baseline.
+
 ## Start here
 
 Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, v23/START-HERE.md, v23/BUILD-PROVENANCE.md and docs/V23_CHECKPOINT.md. The user named the accepted seamless exterior **V23**: centered fully recessed side hook/catch/pivot, offset recessed board grips and rounded integrated captive-hinge ends. This is an identity-only migration of geometry 4859c9c / artifact 19b8773. Keep 101×200×32.6 mm closed size, the full 180 mm field, original 42 20×20×8 mm flats and the supplied solid flat capstones. Both bases print together as one assembly; the only inserted filament pin is the 8.6 mm hook pivot. Use v23/release/tak-v23-print-kit.zip, with three projects under v23/PRINT. Physical acceptance remains unobserved.
