@@ -1,7 +1,7 @@
 {
   "version": "V24",
   "status": "organized delivery; accepted print content unchanged",
-  "source_commit": "400838890bf62157feb822681c533380c7937767",
+  "source_commit": "3073c9eda41335a6d76c2f1ecda0368f56fb550d",
   "accepted_inlay_revision": "d831c2b0d35d478c7fe4c59ffb1d2557af3e48bd",
   "accepted_checks_reused": {
     "geometry": 207,
