@@ -44,7 +44,7 @@ def main():
             if any(x0<=x<=x1 and y0<=y<=y1 for x0,x1,y0,y1 in rois):
                 model.append((tool,z,points))
         wanted=[round(v,2) for v in np.arange(1.3 if trial else 4.2,1.81 if trial else 4.71,.1)]
-        tool_layers={str(t):sorted(set(round(z,2) for tool,z,_ in model if tool==t)) for t in range(1,3 if silk else 2)}
+        tool_layers={str(t):sorted(set(round(z,2) for tool,z,_ in model if tool==t)) for t in range(1,4 if silk else 2)}
         for tool,layers in tool_layers.items():
             ok=layers==wanted
             checks.append({'name':path.stem+'/colour-tool-'+tool+' exact six inlay layers','pass':ok,'layers_mm':layers})
@@ -53,15 +53,15 @@ def main():
                          'model_deposition_segments':len(model),'prime_tower_excluded':True}
         if not trial and silk:figure=model
     fig,ax=plt.subplots(figsize=(12,10));fig.patch.set_facecolor('#EFEFEF');ax.set_facecolor('#080808')
-    colours={0:'#444444',1:'#FFFFFF',2:'#D6A54C'}
-    labels={0:'Black PLA',1:'White PLA',2:'Optional accent PLA'}
-    for tool in range(3):
+    colours={0:'#444444',1:'#FFFFFF',2:'#D6A54C',3:'#B887DD'}
+    labels={0:'Black PLA',1:'White PLA',2:'Accent 1 PLA',3:'Accent 2 PLA'}
+    for tool in range(4):
         lines=[points for t,z,points in figure if t==tool and abs(z-4.7)<.001]
         ax.add_collection(LineCollection(lines,colors=colours[tool],linewidths=1.1,label=labels[tool]))
     ax.set_xlim(3,223);ax.set_ylim(3,203);ax.set_aspect('equal')
     ax.tick_params(labelsize=16);ax.set_xlabel('Plate X (mm)',fontsize=18);ax.set_ylabel('Plate Y (mm)',fontsize=18)
     ax.set_title('Actual sliced inlay layer: Z 4.70 mm\nTwo registered board assemblies',fontsize=22,pad=18)
-    legend=ax.legend(loc='upper center',bbox_to_anchor=(.5,-.09),ncol=3,fontsize=15,facecolor='#111111',labelcolor='white')
+    legend=ax.legend(loc='upper center',bbox_to_anchor=(.5,-.09),ncol=2,fontsize=15,facecolor='#111111',labelcolor='white')
     fig.tight_layout();fig.savefig(c.OUT/'previews/05-sliced-colour-layer.png',dpi=160,bbox_inches='tight');plt.close(fig)
     report={'checks':checks,'projects':rows,'physical_acceptance':False,
             'note':'Linear positive-extrusion XY moves from embedded Gcode. The only arc is the end-of-print parking move. Prime tower is outside model regions. This confirms colour tools deposit at model locations on the six inlay layers; no physical bonding or colour purity claim.'}

@@ -75,12 +75,12 @@
       "detail": null
     },
     {
-      "name": "board-left-art CAD validity",
+      "name": "board-left-orange CAD validity",
       "pass": true,
       "detail": null
     },
     {
-      "name": "board-left-art STEP readback",
+      "name": "board-left-orange STEP readback",
       "pass": true,
       "detail": null
     },
@@ -88,12 +88,35 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 11,
-        "triangles": 8496
+        "bodies": 6,
+        "triangles": 5100
       }
     },
     {
-      "name": "board-left-art STL readback",
+      "name": "board-left-orange STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-purple CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-purple STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 5,
+        "triangles": 3396
+      }
+    },
+    {
+      "name": "board-left-purple STL readback",
       "pass": true,
       "detail": null
     },
@@ -108,7 +131,12 @@
       "detail": null
     },
     {
-      "name": "left/body disjoint from art",
+      "name": "left/body disjoint from orange",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/body disjoint from purple",
       "pass": true,
       "detail": null
     },
@@ -118,12 +146,27 @@
       "detail": null
     },
     {
-      "name": "left/grid disjoint from art",
+      "name": "left/grid disjoint from orange",
       "pass": true,
       "detail": null
     },
     {
-      "name": "left/stars disjoint from art",
+      "name": "left/grid disjoint from purple",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/stars disjoint from orange",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/stars disjoint from purple",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/orange disjoint from purple",
       "pass": true,
       "detail": null
     },
@@ -148,7 +191,12 @@
       "detail": null
     },
     {
-      "name": "left/art flush 0.6 mm inlay",
+      "name": "left/orange flush 0.6 mm inlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left/purple flush 0.6 mm inlay",
       "pass": true,
       "detail": null
     },
@@ -246,12 +294,12 @@
       "detail": null
     },
     {
-      "name": "board-right-art CAD validity",
+      "name": "board-right-orange CAD validity",
       "pass": true,
       "detail": null
     },
     {
-      "name": "board-right-art STEP readback",
+      "name": "board-right-orange STEP readback",
       "pass": true,
       "detail": null
     },
@@ -259,12 +307,35 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 11,
-        "triangles": 8492
+        "bodies": 5,
+        "triangles": 3396
       }
     },
     {
-      "name": "board-right-art STL readback",
+      "name": "board-right-orange STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-purple CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-purple STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 6,
+        "triangles": 5096
+      }
+    },
+    {
+      "name": "board-right-purple STL readback",
       "pass": true,
       "detail": null
     },
@@ -279,7 +350,12 @@
       "detail": null
     },
     {
-      "name": "right/body disjoint from art",
+      "name": "right/body disjoint from orange",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/body disjoint from purple",
       "pass": true,
       "detail": null
     },
@@ -289,12 +365,27 @@
       "detail": null
     },
     {
-      "name": "right/grid disjoint from art",
+      "name": "right/grid disjoint from orange",
       "pass": true,
       "detail": null
     },
     {
-      "name": "right/stars disjoint from art",
+      "name": "right/grid disjoint from purple",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/stars disjoint from orange",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/stars disjoint from purple",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/orange disjoint from purple",
       "pass": true,
       "detail": null
     },
@@ -319,7 +410,12 @@
       "detail": null
     },
     {
-      "name": "right/art flush 0.6 mm inlay",
+      "name": "right/orange flush 0.6 mm inlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right/purple flush 0.6 mm inlay",
       "pass": true,
       "detail": null
     },
@@ -586,12 +682,25 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 11,
-        "triangles": 8496
+        "bodies": 6,
+        "triangles": 5100
       }
     },
     {
-      "name": "02-boards-black-white/board-left-art bed bounds",
+      "name": "02-boards-black-white/board-left-orange bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 5,
+        "triangles": 3396
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-left-purple bed bounds",
       "pass": true,
       "detail": null
     },
@@ -646,12 +755,25 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 11,
-        "triangles": 8492
+        "bodies": 5,
+        "triangles": 3396
       }
     },
     {
-      "name": "02-boards-black-white/board-right-art bed bounds",
+      "name": "02-boards-black-white/board-right-orange bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 6,
+        "triangles": 5096
+      }
+    },
+    {
+      "name": "02-boards-black-white/board-right-purple bed bounds",
       "pass": true,
       "detail": null
     },
@@ -701,12 +823,22 @@
       "detail": null
     },
     {
-      "name": "02-boards-black-white/board-left-art mesh readback",
+      "name": "02-boards-black-white/board-left-orange mesh readback",
       "pass": true,
       "detail": null
     },
     {
-      "name": "02-boards-black-white/board-left-art filament slot",
+      "name": "02-boards-black-white/board-left-orange filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-purple mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-left-purple filament slot",
       "pass": true,
       "detail": null
     },
@@ -741,12 +873,22 @@
       "detail": null
     },
     {
-      "name": "02-boards-black-white/board-right-art mesh readback",
+      "name": "02-boards-black-white/board-right-orange mesh readback",
       "pass": true,
       "detail": null
     },
     {
-      "name": "02-boards-black-white/board-right-art filament slot",
+      "name": "02-boards-black-white/board-right-orange filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-purple mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white/board-right-purple filament slot",
       "pass": true,
       "detail": null
     },
@@ -801,12 +943,25 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 11,
-        "triangles": 8496
+        "bodies": 6,
+        "triangles": 5100
       }
     },
     {
-      "name": "02-boards-black-white-silk/board-left-art bed bounds",
+      "name": "02-boards-black-white-silk/board-left-orange bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 5,
+        "triangles": 3396
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-purple bed bounds",
       "pass": true,
       "detail": null
     },
@@ -861,12 +1016,25 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 11,
-        "triangles": 8492
+        "bodies": 5,
+        "triangles": 3396
       }
     },
     {
-      "name": "02-boards-black-white-silk/board-right-art bed bounds",
+      "name": "02-boards-black-white-silk/board-right-orange bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 6,
+        "triangles": 5096
+      }
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-purple bed bounds",
       "pass": true,
       "detail": null
     },
@@ -916,12 +1084,22 @@
       "detail": null
     },
     {
-      "name": "02-boards-black-white-silk/board-left-art mesh readback",
+      "name": "02-boards-black-white-silk/board-left-orange mesh readback",
       "pass": true,
       "detail": null
     },
     {
-      "name": "02-boards-black-white-silk/board-left-art filament slot",
+      "name": "02-boards-black-white-silk/board-left-orange filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-purple mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-left-purple filament slot",
       "pass": true,
       "detail": null
     },
@@ -956,12 +1134,22 @@
       "detail": null
     },
     {
-      "name": "02-boards-black-white-silk/board-right-art mesh readback",
+      "name": "02-boards-black-white-silk/board-right-orange mesh readback",
       "pass": true,
       "detail": null
     },
     {
-      "name": "02-boards-black-white-silk/board-right-art filament slot",
+      "name": "02-boards-black-white-silk/board-right-orange filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-purple mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "02-boards-black-white-silk/board-right-purple filament slot",
       "pass": true,
       "detail": null
     },
@@ -1040,12 +1228,12 @@
       "detail": null
     },
     {
-      "name": "coupon-art CAD validity",
+      "name": "coupon-orange CAD validity",
       "pass": true,
       "detail": null
     },
     {
-      "name": "coupon-art STEP readback",
+      "name": "coupon-orange STEP readback",
       "pass": true,
       "detail": null
     },
@@ -1053,12 +1241,35 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 3,
-        "triangles": 2868
+        "bodies": 1,
+        "triangles": 1748
       }
     },
     {
-      "name": "coupon-art STL readback",
+      "name": "coupon-orange STL readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-purple CAD validity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "coupon-purple STEP readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 2,
+        "triangles": 1120
+      }
+    },
+    {
+      "name": "coupon-purple STL readback",
       "pass": true,
       "detail": null
     },
@@ -1113,12 +1324,25 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 3,
-        "triangles": 2868
+        "bodies": 1,
+        "triangles": 1748
       }
     },
     {
-      "name": "00-inlay-trial-black-white-silk/inlay-trial-art bed bounds",
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-orange bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 2,
+        "triangles": 1120
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-purple bed bounds",
       "pass": true,
       "detail": null
     },
@@ -1163,12 +1387,22 @@
       "detail": null
     },
     {
-      "name": "00-inlay-trial-black-white-silk/inlay-trial-art mesh readback",
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-orange mesh readback",
       "pass": true,
       "detail": null
     },
     {
-      "name": "00-inlay-trial-black-white-silk/inlay-trial-art filament slot",
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-orange filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-purple mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white-silk/inlay-trial-purple filament slot",
       "pass": true,
       "detail": null
     },
@@ -1223,12 +1457,25 @@
       "name": "mesh topology",
       "pass": true,
       "detail": {
-        "bodies": 3,
-        "triangles": 2868
+        "bodies": 1,
+        "triangles": 1748
       }
     },
     {
-      "name": "00-inlay-trial-black-white/inlay-trial-art bed bounds",
+      "name": "00-inlay-trial-black-white/inlay-trial-orange bed bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass": true,
+      "detail": {
+        "bodies": 2,
+        "triangles": 1120
+      }
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-purple bed bounds",
       "pass": true,
       "detail": null
     },
@@ -1273,12 +1520,22 @@
       "detail": null
     },
     {
-      "name": "00-inlay-trial-black-white/inlay-trial-art mesh readback",
+      "name": "00-inlay-trial-black-white/inlay-trial-orange mesh readback",
       "pass": true,
       "detail": null
     },
     {
-      "name": "00-inlay-trial-black-white/inlay-trial-art filament slot",
+      "name": "00-inlay-trial-black-white/inlay-trial-orange filament slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-purple mesh readback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "00-inlay-trial-black-white/inlay-trial-purple filament slot",
       "pass": true,
       "detail": null
     }
@@ -1289,8 +1546,8 @@
   "numpy": "2.5.3",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "sources_sha256": {
-    "v23/board-inlays/source/build.py": "a1030b76d09e1fb90fca39dc41759cb2564767456b46e3c4e380726b4f0eda42",
-    "v23/board-inlays/source/inlays.py": "ed025b11b63f8487ad5627aad497228cbf2066b985e3c46663f38c502210121c",
+    "v23/board-inlays/source/build.py": "cdddc67bfe20eb79aaddfba9eb33d0e94b5de1d23340618690c31cf03a2553a3",
+    "v23/board-inlays/source/inlays.py": "b8a20fcd1f6d669bae4d0ab673bd8445d45d577d4e90f3c9013f09f865950102",
     "v23/source/case.py": "073dbc614c0b71b1e9a2575054ecaba9ad20ef8a5052134636234685affd7c95",
     "v16-field-book/source/tak_book.py": "924a819968fa1e8445d79cd4eab2e5ffe09766d0b16c2792372544fb8a5c2a3e",
     "v16-field-book/source/decor.py": "a315c1f4167f94842352e78f44bb1e07750a9a95fb21d64ffbc73788e0cf7429",

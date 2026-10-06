@@ -4,7 +4,7 @@
 
 ## Optional multicolour playing surface
 
-[Flush black/white board inlays with optional silk accents](board-inlays/README.md) replace plate 02 only. The option includes both colour variants and a small colour/finish trial. Select the actual silk spool profile and reslice before printing an accent version.
+[Flush black/white board inlays with two silk accents](board-inlays/README.md) replace plate 02 only. The option includes both colour variants and a small colour/finish trial. Select both actual silk spool profiles and reslice before printing the four-colour version.
 
 ## Three full-build plates
 

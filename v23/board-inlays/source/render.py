@@ -42,18 +42,18 @@ def render(name,scene,title,top=True):
 
 
 def main():
-    colours={'body':(.055,.055,.055),'grid':(1,1,1),'stars':(1,1,1),'art':(.84,.65,.30)}
+    colours={'body':(.055,.055,.055),'grid':(1,1,1),'stars':(1,1,1),'orange':(.84,.65,.30),'purple':(.72,.53,.87)}
     for silk in (False,True):
-        scene=[(load(f'board-{side}-{role}'),colours[role] if silk or role!='art' else (1,1,1))
+        scene=[(load(f'board-{side}-{role}'),colours[role] if silk or role not in ('orange','purple') else (1,1,1))
                for side in ('left','right') for role in colours]
         name='02-black-white-silk' if silk else '01-black-white'
-        render(name,scene,'V23 | Black + white + optional silk accent' if silk else 'V23 | Black + white | 180 mm field')
+        render(name,scene,'V23 | Black + white + two silk accents' if silk else 'V23 | Black + white | 180 mm field')
         if silk:
             scene += [(cq.importers.importStep(str(c.OUT.parent/'models'/f'housing-{side}.step')).val(),(.12,.12,.12)) for side in ('left','right')]
             scene += [(c.case.side_hook(90),(.12,.12,.12))]
             render('03-open-case',scene,'V23 | Flush inlays on the retained sliding boards',False)
     render('04-small-trial',[(load('coupon-'+role),colours[role]) for role in colours],
-           'Print this small trial first | Black / white / silk')
+           'Print this small trial first | Black / white / two silk accents')
 
 
 if __name__=='__main__':main()

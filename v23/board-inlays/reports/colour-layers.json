@@ -37,6 +37,18 @@
       ]
     },
     {
+      "name": "00-inlay-trial-black-white-silk-CC2/colour-tool-3 exact six inlay layers",
+      "pass": true,
+      "layers_mm": [
+        1.3,
+        1.4,
+        1.5,
+        1.6,
+        1.7,
+        1.8
+      ]
+    },
+    {
       "name": "02-boards-black-white-CC2/colour-tool-1 exact six inlay layers",
       "pass": true,
       "layers_mm": [
@@ -71,11 +83,23 @@
         4.6,
         4.7
       ]
+    },
+    {
+      "name": "02-boards-black-white-silk-CC2/colour-tool-3 exact six inlay layers",
+      "pass": true,
+      "layers_mm": [
+        4.2,
+        4.3,
+        4.4,
+        4.5,
+        4.6,
+        4.7
+      ]
     }
   ],
   "projects": {
     "00-inlay-trial-black-white-CC2.3mf": {
-      "gcode_sha256": "719cbc3ba034bffbc2f47bfad4120b3c971a8beb393385eb586b6d8f178fb0e8",
+      "gcode_sha256": "0d283715790ec51ed90e66edf4607734f42063024c5cbc4b9cf31a149d7c5ecb",
       "coloured_model_layers_mm": {
         "1": [
           1.3,
@@ -86,11 +110,11 @@
           1.8
         ]
       },
-      "model_deposition_segments": 18319,
+      "model_deposition_segments": 18353,
       "prime_tower_excluded": true
     },
     "00-inlay-trial-black-white-silk-CC2.3mf": {
-      "gcode_sha256": "c8956f8d9bfe6ce92a4a3133364e461d620c28d7c44b502bfb40874f2ead69f9",
+      "gcode_sha256": "e35e1d947b0395f9fc891f1e1e3996e59d39e88df91911d21a92900dabfe18f4",
       "coloured_model_layers_mm": {
         "1": [
           1.3,
@@ -107,13 +131,21 @@
           1.6,
           1.7,
           1.8
+        ],
+        "3": [
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8
         ]
       },
-      "model_deposition_segments": 18340,
+      "model_deposition_segments": 18360,
       "prime_tower_excluded": true
     },
     "02-boards-black-white-CC2.3mf": {
-      "gcode_sha256": "5a573abd766eeb5f86d2dfe1963cc6b8cafafee722994d650381573eef741c5f",
+      "gcode_sha256": "dc7552562adc7dc00ed878a06fa17ec19513a4c76c046ede798a08e03fb1e2dd",
       "coloured_model_layers_mm": {
         "1": [
           4.2,
@@ -124,11 +156,11 @@
           4.7
         ]
       },
-      "model_deposition_segments": 820422,
+      "model_deposition_segments": 820356,
       "prime_tower_excluded": true
     },
     "02-boards-black-white-silk-CC2.3mf": {
-      "gcode_sha256": "d1a2a7c0cc5c74139a26b2755399c4271d3145aedd4ae3ea8a6b1f1287bfb58e",
+      "gcode_sha256": "3dc74b6fb888427fcaec15837067aee38510a0f8edc5c7eeb9749586d1fe6d36",
       "coloured_model_layers_mm": {
         "1": [
           4.2,
@@ -145,9 +177,17 @@
           4.5,
           4.6,
           4.7
+        ],
+        "3": [
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7
         ]
       },
-      "model_deposition_segments": 820417,
+      "model_deposition_segments": 820344,
       "prime_tower_excluded": true
     }
   },

@@ -25,9 +25,9 @@ def profiles():
                    flush_into_infill='0',flush_into_objects='0',flush_into_support='0')
     (folder/'process.json').write_text(json.dumps(process,indent=2)+'\n')
     original=json.loads((OUT.parent/'profiles/filament-pla.json').read_text())
-    for name,colour in [('black','#111111'),('white','#FFFFFF'),('silk-placeholder','#D6A54C')]:
+    for name,colour in [('black','#111111'),('white','#FFFFFF'),('silk-orange-placeholder','#D6A54C'),('silk-purple-placeholder','#B887DD')]:
         data=dict(original);data['name']='Tak '+name+' PLA @CC2';data['filament_colour']=[colour]
-        if name=='silk-placeholder':
+        if name.startswith('silk-'):
             data['filament_max_volumetric_speed']=['6']
         (folder/(name+'.json')).write_text(json.dumps(data,indent=2)+'\n')
 
@@ -53,7 +53,7 @@ def check_project(source,dest,silk):
         cfg=ET.fromstring(z.read('Metadata/model_settings.config'))
         assert len(cfg.findall('object'))==build_count
         settings=json.loads(z.read('Metadata/project_settings.config'))
-        colours=['#111111','#FFFFFF']+(['#D6A54C'] if silk else [])
+        colours=['#111111','#FFFFFF']+(['#D6A54C','#B887DD'] if silk else [])
         assert settings['filament_colour']==colours
         assert settings['enable_prime_tower']=='1' and settings['layer_height']=='0.1'
         root=ET.fromstring(z.read('3D/3dmodel.model'))
@@ -67,7 +67,7 @@ def check_project(source,dest,silk):
             label=part.find("metadata[@key='name']").get('value')
             role=label.rsplit('-',1)[1]
             slot=int(part.find("metadata[@key='extruder']").get('value'))
-            assert slot==(1 if role=='body' else 3 if silk and role=='art' else 2)
+            assert slot==c.slot(role,silk)
             want=expected[label]
             owner=next(o for o in root.findall('m:resources/m:object',NS) if comp in o.findall('m:components/m:component',NS))
             instance=root.find("m:build/m:item[@objectid='"+owner.get('id')+"']",NS)
@@ -82,7 +82,7 @@ def check_project(source,dest,silk):
         assert set(seen)==set(expected)
         gcode=z.read(next(n for n in z.namelist() if n.endswith('.gcode'))).decode()
         tools=sorted(set(int(v) for v in re.findall(r'^T(\d+)\s*$',gcode,re.M)))
-        assert all(i in tools for i in range(3 if silk else 2)),tools
+        assert all(i in tools for i in range(4 if silk else 2)),tools
         return {'readback_passed':True,'named_parts':seen,'max_world_vertex_error_mm':max(errors),
                 'filament_colours':settings['filament_colour'],'tool_ids':tools,'slice_metadata':metadata,
                 'gcode_sha256':hashlib.sha256(gcode.encode()).hexdigest(),
@@ -94,13 +94,13 @@ def main():
     work=OUT/'.slicer-work';work.mkdir(exist_ok=True)
     report={'printer':'Elegoo Centauri Carbon 2, 0.4 mm nozzle','layer_height_mm':.1,
             'initial_layer_height_mm':.2,'inlay_layers':6,'physical_acceptance':False,
-            'printer_started':False,'silk_profile_note':'Generic PLA placeholder at 6 mm3/s. Select actual silk spool profile and reslice before printing silk.',
+            'printer_started':False,'silk_profile_note':'Two generic PLA accent placeholders at 6 mm3/s. Select both actual silk spool profiles and reslice before printing silk.',
             'slicer_version':subprocess.run([EXE,'--help'],capture_output=True,text=True).stdout.splitlines()[0],
             'profiles_sha256':{p.name:sha(p) for p in (OUT/'profiles').glob('*.json')},'plates':{}}
     for source in sorted((OUT/'plates').glob('*.3mf')):
         silk=source.stem.endswith('-silk')
         dest=OUT/'PRINT'/(source.stem+'-CC2.3mf')
-        materials=['black','white']+(['silk-placeholder'] if silk else [])
+        materials=['black','white']+(['silk-orange-placeholder','silk-purple-placeholder'] if silk else [])
         command=[EXE,'--datadir',str(work/'config'),'--load-settings',f'{OUT/"profiles/machine.json"};{OUT/"profiles/process.json"}',
                  '--load-filaments',';'.join(str(OUT/'profiles'/(n+'.json')) for n in materials),
                  '--ensure-on-bed','--arrange','0','--orient','0','--slice','0','--export-3mf',str(dest),str(source)]

@@ -14,7 +14,12 @@ import tak_book as artwork
 FACE = 15.3
 DEPTH = .6
 ROLES = {'body': (1, '#111111'), 'grid': (2, '#FFFFFF'),
-         'stars': (2, '#FFFFFF'), 'art': (3, '#D6A54C')}
+         'stars': (2, '#FFFFFF'), 'orange': (3, '#D6A54C'),
+         'purple': (4, '#B887DD')}
+
+
+def slot(role, silk=True):
+    return ROLES[role][0] if silk else (1 if role == 'body' else 2)
 
 
 def union(shapes):
@@ -37,8 +42,8 @@ def overlays(side):
     old = 'A' if side == 'left' else 'B'
     shift = (0, 0, FACE-artwork.FACE)
     return {'grid': grid(side), 'stars': artwork.stars(old).translate(shift),
-            'art': union([artwork.decor(old, colour).translate(shift)
-                          for colour in ('orange', 'purple')])}
+            'orange': artwork.decor(old, 'orange').translate(shift),
+            'purple': artwork.decor(old, 'purple').translate(shift)}
 
 
 @lru_cache(None)

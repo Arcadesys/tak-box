@@ -1,5 +1,5 @@
 {
-  "baseline_revision": "071469c4e424a777e52e42a8503890b19b62ecbd",
+  "baseline_revision": "f4493a8895dc6d7642b73aeb340277a63c528fa6",
   "baseline_note": "Parent V23 revision used for this separate replacement-board option. Source hashes identify the option precisely.",
   "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
@@ -21,13 +21,13 @@
     "v17-four-leaf/source/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7"
   },
   "source_sha256": {
-    "v23/board-inlays/source/package.py": "0d1178996908988178a68c7d49a6db62764e65202010c7293de8cb597b81c796",
-    "v23/board-inlays/source/build.py": "a1030b76d09e1fb90fca39dc41759cb2564767456b46e3c4e380726b4f0eda42",
-    "v23/board-inlays/source/inlays.py": "ed025b11b63f8487ad5627aad497228cbf2066b985e3c46663f38c502210121c",
+    "v23/board-inlays/source/package.py": "7a2b1a2c3c8c4ae91a39918483f8b32e32ced8f9e0f27564ca4a7b563a70da8c",
+    "v23/board-inlays/source/build.py": "cdddc67bfe20eb79aaddfba9eb33d0e94b5de1d23340618690c31cf03a2553a3",
+    "v23/board-inlays/source/inlays.py": "b8a20fcd1f6d669bae4d0ab673bd8445d45d577d4e90f3c9013f09f865950102",
     "v23/board-inlays/source/requirements.txt": "0eac58492ff36ce75a86c190a0422661b85af6264a552b704e96ab9c02547362",
-    "v23/board-inlays/source/slice.py": "4af0564faae4188102f685af002627bec6b4c91159d1d8085d6c8ad4989c936a",
-    "v23/board-inlays/source/render.py": "ad1d9a9a96eeee5533903286b31e1394a92877adf73bfbd272fd3681b40a44c6",
-    "v23/board-inlays/source/inspect_layers.py": "b579b31cecb2235bdccf3bef9258ed10e53fd1be76cf139d53a6508af8cecfb7"
+    "v23/board-inlays/source/slice.py": "e1368a35d9f5b0d8c3fc7ed0a5cc761a5a4e593172054e25d8f67be8c63eb881",
+    "v23/board-inlays/source/render.py": "53d08e28b1adbea67e2ec3fd4a09569e1e10194314dff89b3702274ffb9acaf6",
+    "v23/board-inlays/source/inspect_layers.py": "aee311e3ea12b0762aed55500756ff144536158ea39f0268e4041d9e48f8a497"
   },
   "commands": [
     "python v23/board-inlays/source/build.py",

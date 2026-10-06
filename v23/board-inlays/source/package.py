@@ -40,7 +40,7 @@ def main():
     manifest_path=out/'package-manifest.json';manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
     path=release/'tak-v23-board-inlays.zip'
     with ZipFile(path,'w',ZIP_DEFLATED) as z:
-        z.writestr('tak-v23-board-inlays/START-HERE.md','# V23 multicolour replacement boards\n\nStart with [the guide](v23/board-inlays/README.md) and print the small trial first. Black/white projects use slots 1 and 2. Optional silk uses slot 3 and requires your actual spool profile and reslicing. The complete case is not included.\n')
+        z.writestr('tak-v23-board-inlays/START-HERE.md','# V23 multicolour replacement boards\n\nStart with [the guide](v23/board-inlays/README.md) and print the small trial first. Black/white projects use slots 1 and 2. Two silk accents use slots 3 and 4 and require both actual spool profiles and reslicing. The complete case is not included.\n')
         for p in files+[manifest_path]:
             z.write(p,'tak-v23-board-inlays/'+str(p.relative_to(repo)))
     with ZipFile(path) as z:

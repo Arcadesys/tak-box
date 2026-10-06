@@ -58,7 +58,7 @@ def project(name, groups, silk=True):
     build=ET.SubElement(root,TAG+'build')
     config=ET.Element('config')
     materials=ET.SubElement(resources,TAG+'basematerials',id='1000')
-    for role in ('body','grid','art'):
+    for role in ('body','grid','orange','purple'):
         ET.SubElement(materials,TAG+'base',name=role,displaycolor=c.ROLES[role][1]+'FF')
     expected={}; next_id=1; group_bounds=[]
     for label,parts,origin in groups:
@@ -71,7 +71,7 @@ def project(name, groups, silk=True):
             shifted=s.translate(delta)
             m=mesh(shifted); expected[next_id]=(label+'-'+role,m)
             check(name+'/'+label+'-'+role+' bed bounds',np.all(m.bounds[0]>=-1e-6) and np.all(m.bounds[1]<=[256,256,250]))
-            idx=0 if role=='body' else (2 if silk and role=='art' else 1)
+            idx=c.slot(role,silk)-1
             ob=ET.SubElement(resources,TAG+'object',id=str(next_id),type='model',name=label+'-'+role,pid='1000',pindex=str(idx))
             me=ET.SubElement(ob,TAG+'mesh'); verts=ET.SubElement(me,TAG+'vertices');tris=ET.SubElement(me,TAG+'triangles')
             for q in m.vertices:
@@ -112,7 +112,7 @@ def project(name, groups, silk=True):
         check(name+'/'+label+' mesh readback',ob.get('name')==label and np.allclose(vv,m.vertices,atol=1e-6) and np.array_equal(ff,m.faces))
         slot=int(cfg.find(f".//part[@id='{oid}']/metadata[@key='extruder']").get('value'))
         role=label.rsplit('-',1)[1]
-        check(name+'/'+label+' filament slot',slot==(1 if role=='body' else 3 if silk and role=='art' else 2))
+        check(name+'/'+label+' filament slot',slot==c.slot(role,silk))
     return path
 
 
@@ -133,7 +133,7 @@ def main():
             b=s.BoundingBox()
             check(side+'/'+role+' flush 0.6 mm inlay',abs(b.zmax-c.FACE)<1e-6 and abs(b.zmin-(c.FACE-c.DEPTH))<1e-6)
         field=c.case.box(7.6,188.4,9.6,190.4,14.7,15.3)
-        check(side+' art stays within field',p['art'].cut(field).Volume()<1e-5 and p['stars'].cut(field).Volume()<1e-5)
+        check(side+' art stays within field',all(p[role].cut(field).Volume()<1e-5 for role in ('orange','purple','stars')))
         # Actual original 20x20x8 flats and the supplied V23 flat capstones.
         sys.path.insert(0,str(c.OUT.parent/'source/vendor/pieces'))
         import tak_pieces as pieces

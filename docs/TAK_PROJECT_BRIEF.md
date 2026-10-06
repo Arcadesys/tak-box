@@ -34,7 +34,7 @@ See [V20 guide](../v20/START-HERE.md) and [checkpoint](V20_CHECKPOINT.md). Physi
 
 ### V23 multicolour playing-surface option — October 6, 2026
 
-The user selected the V23 sliding boards for a flush black/white inlay option, with optional silk PLA accents. `v23/board-inlays/` reuses the v17 recessed grid and retained v16 celestial artwork. The full 180 mm field, 36 mm pitch, V23 rails, catches, grips, bases and capstones are preserved. This replaces only board plate 02; the existing complete-kit ZIP stays archived unchanged. Both two-colour and optional three-colour projects include a small physical trial. The accent colour and actual silk profile are still to be selected; physical finish and fit remain unobserved. Read the option README and fresh reports before printing.
+The user selected the V23 sliding boards for a flush black/white inlay option, with two silk PLA accent colours. `v23/board-inlays/` reuses the v17 recessed grid and retained v16 celestial artwork. The full 180 mm field, 36 mm pitch, V23 rails, catches, grips, bases and capstones are preserved. This replaces only board plate 02; the existing complete-kit ZIP stays archived unchanged. Both black/white and four-colour projects include a small physical trial. The two accent colours and actual silk profiles are still to be selected; physical finish and fit remain unobserved. Read the option README and fresh reports before printing.
 
 ### Historical version decision: v19
 
