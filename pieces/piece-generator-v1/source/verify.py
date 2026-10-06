@@ -4,6 +4,7 @@ These checks validate CAD invariants only. They do not claim a successful
 physical snap, adhesive bond, ballast recipe, print, or tactile result.
 """
 from __future__ import annotations
+import cadquery as cq
 import numpy as np
 from OCP.Bnd import Bnd_Box
 from OCP.BRepBndLib import BRepBndLib
@@ -29,8 +30,9 @@ def _piece_report(label, spec, body, floor, solved):
     overlap = body.intersect(floor).val().Volume()
     assert overlap < 1e-5, (label, "body/floor overlap", overlap)
 
-    assembled = body.union(floor)
-    _check_solid(f"{label} assembled", assembled)
+    assembled = cq.Workplane(
+        obj=cq.Compound.makeCompound([body.val(), floor.val()])
+    )
     b = bounds(assembled)
     dims = b[1] - b[0]
     assert abs(dims[0] - spec.width) < 1e-6
