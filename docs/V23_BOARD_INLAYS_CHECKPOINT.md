@@ -17,3 +17,5 @@ Corrections during verification: the first full-board readback detected a 0.0010
 Limitations: motion is sampled, not a continuous swept-volume proof. The extracted ZIP passed isolated dependency import and CAD smoke checks. Physical colour purity, adhesion, silk bonding, surface feel, rail friction and loaded retention remain unchecked. The trial does not test rails or catches; dry-fit one full replacement board before printing its mate. No printer job, paid generation, merge or physical acceptance is claimed.
 
 Next: review the replacement option, print the small colour/finish trial with selected material profiles, then test one full board. The existing full-case plates 01 and 03 remain the source for bases and hardware.
+
+Delivery: option committed at 2e4a839 and pushed; draft review [PR #29](https://github.com/Arcadesys/tak-box/pull/29) is stacked on the retained V23 branch. The option ZIP has 73 hashed payload files and four sliced projects; its SHA-256 is c29c7dff9069aab2fcebc582c6bde784170fe5a754855512bab98545874ef532. No geometry or profile changes followed the accepted checks.
