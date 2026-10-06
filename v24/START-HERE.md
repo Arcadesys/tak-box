@@ -45,6 +45,8 @@ For play: park the side hook, unfold the case flat, press each front release but
 
 ## Compatibility
 
-Replace **both bases, both boards and the hook** together; add both trays. Do not mix old and revised halves. The larger supports interfere with the predecessor's board corner geometry. New loaded trays do not fit beneath old covers: the pieces would overlap the old roof by 0.8 mm. Original flats, the supplied V23 flat capstones, the hook collar and the 8.6 mm hook filament reference retain their geometry. Older sculpted/curled capstones and weighted flats remain unqualified.
+If you already have the previous V24 mechanical kit, **only board plate 02 changes**; reuse its bases, trays, hook, collar and pieces.
+
+When upgrading from original V23, replace **both bases, both boards and the hook** together; add both trays. Do not mix old and revised halves. The larger supports interfere with the predecessor's board corner geometry. New loaded trays do not fit beneath old covers: the pieces would overlap the old roof by 0.8 mm. Original flats, the supplied V23 flat capstones, the hook collar and the 8.6 mm hook filament reference retain their geometry. Older sculpted/curled capstones and weighted flats remain unqualified.
 
 The original V23 source and ZIP, all earlier kits and user-extracted folders remain intact. V24 now uses its own compatible four-colour boards; the old V23 inlay solids remain unsuitable for V24 hinge corners. The complete pre-inlay V24 kit is recoverable in the repository at `v24/release/archive/tak-v24-before-board-inlays.zip`. See [build provenance](BUILD-PROVENANCE.md) for commands, dependencies, source hashes, checks and limitations.
