@@ -8,6 +8,8 @@ The user reports V24 printed and liked, but loose and barely held together; its 
 
 [V25](../v25/START-HERE.md) is a separate local coupon study: three filament bore fits, a blind end and bonded fixed barrel, two curved board-edge clearance samples, and the existing three broad lip trials. No printed pin or collar is included. Keep the full 180 mm / 36 mm field, removable trays and side hook backup. Rounded clearance is selected; fully concealed underside linkage, complete-case integration, bond strength, fatigue, firmness and loaded purse retention remain unverified. Filament cut lengths in this kit apply only to coupons. V24 production geometry and earlier packages stay unchanged. See [V25_CHECKPOINT.md](V25_CHECKPOINT.md) for commands and evidence.
 
+The user subsequently asked about a continuous full-length filament axle for stability and accepted a motion assessment. [The assessment](../v25/motion-study/README.md) rejects a straight single axle on or below the current axis: exposed seam or folded-face overlap. A two-axis board-only path is possible, but the unchanged case bodies collide and no complete hinge/link solids or loaded motion are verified. That alternative remains unselected; the current V25 print kit is unchanged.
+
 ### Preserved version: V24 — October 6
 
 The user explicitly named the completed reinforced-hinge/removable-tray revision **V24**. The original name correction preserved V23 R2 mechanics. The current accepted follow-up integrates the four-colour playing surface into V24 boards and previews, with new board geometry/slice evidence and no physical acceptance. The V23 R2 kit remains archived in its original package.
