@@ -4,7 +4,7 @@ A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed p
 
 ## V25 filament-hinge trial
 
-The user selected ordinary 1.75 mm filament axles and rounded underside board clearance after reporting loose V24 joints and printed-pin failures. Open [the V25 coupon guide](v25/START-HERE.md) for three bore fits, two curved board-edge samples and three broad lip trials. This is a separate local test, not a complete case or a drop-in replacement. V24 stays intact; physical firmness and loaded retention remain unverified.
+The latest [V25 strength trial](v25/STRENGTH-TRIAL/START-HERE.md) uses ordinary 1.75 mm filament, two heated-tool formed heads and a moving knuckle supported between two fixed knuckles. Print the eight-part trial and begin with S2. Rounded underside board samples are included. Whole-case integration and physical durability remain unverified. The [earlier hinge and lip kit](v25/START-HERE.md) and V24 production geometry remain preserved.
 
 ## Current print kit: V24
 
