@@ -1,8 +1,14 @@
 # Tak project brief
 
-Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 7, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current version: V24 — October 6
+### Current experiment: V25 — October 7
+
+The user reports V24 printed and liked, but loose and barely held together; its thin board clip snaps during cleanup and captive hinges feel loose. They selected **1.75 mm filament axles** for V25 because earlier filament hinges worked well while printed pins broke or failed to hold the assembly. They also selected the rounded underside board treatment they remember from V17. This supersedes the printed-pin proposal in the first V25 coupon kit; that earlier kit is preserved outside this checkout.
+
+[V25](../v25/START-HERE.md) is a separate local coupon study: three filament bore fits, a blind end and bonded fixed barrel, two curved board-edge clearance samples, and the existing three broad lip trials. No printed pin or collar is included. Keep the full 180 mm / 36 mm field, removable trays and side hook backup. Rounded clearance is selected; fully concealed underside linkage, complete-case integration, bond strength, fatigue, firmness and loaded purse retention remain unverified. Filament cut lengths in this kit apply only to coupons. V24 production geometry and earlier packages stay unchanged. See [V25_CHECKPOINT.md](V25_CHECKPOINT.md) for commands and evidence.
+
+### Preserved version: V24 — October 6
 
 The user explicitly named the completed reinforced-hinge/removable-tray revision **V24**. The original name correction preserved V23 R2 mechanics. The current accepted follow-up integrates the four-colour playing surface into V24 boards and previews, with new board geometry/slice evidence and no physical acceptance. The V23 R2 kit remains archived in its original package.
 

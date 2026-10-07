@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "tested_snapshot_zip_sha256": "c640ef0650406fa64a6eecd3e5533c8fec21c971dc84db2b0432fb34bf911cfe",
+  "geometry_checks": 646,
+  "named_printed_parts": 14,
+  "surface_tolerance_mm": 0.002,
+  "mesh_checks": [
+    {
+      "name": "BOARD-left.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "BOARD-right.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "H1-left.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "H1-right.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "H2-left.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "H2-right.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "H3-left.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "H3-right.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "L1-board.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "L1-seat.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "L2-board.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "L2-seat.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "L3-board.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "L3-seat.stl",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    }
+  ],
+  "checked_source_sha256": {
+    "source/package.py": "a3fbce16210e72135e2d25f02dc2b87ab88c5e604194fc935ad109612cab7c20",
+    "source/build.py": "df80886084ff73786f876c86d1a0fe1da56041fe2434e74c1358dfa77a1f54d8",
+    "source/slice.py": "66d805e5647aaa228765f5f0b712ee750cd72f27014948013a13bd556a78500a",
+    "source/reproduce.py": "db074c6a17705810812a7849196ce90f48efa1d155fa13f148e5ae2a3c46bffa",
+    "source/render.py": "9c3703cd6e0a35c02b5f2392845080d7717c1cc129bd11aebc86519384ac9824",
+    "reference/v24/source/loaded_pieces.py": "6a0e4f75e5695e5f74f130ef788950d72d82fe9c5678371515f32276d0d373ee",
+    "reference/v24/source/delivery.py": "08724993c909e680ff92c2e96cfcf0c3b8baf51699c683e0b07cdcc59058d47c",
+    "reference/v24/source/verify_trays.py": "886cba8a46aa60351bc3e771ee393fcd25753f120858c6dbb533f2c822acae24",
+    "reference/v24/source/verify_identity.py": "e83dd8c54edd8888ae2e177ab1d50919bf5c7e9bcd437704c43c3e6d5d20f106",
+    "reference/v24/source/geometry_utils.py": "c8256a8146a2aaff58e60b47e7f9eb14d0b8401f8bad489112c35849a61f8815",
+    "reference/v24/source/inspect_case_layers.py": "34bfa8bb03854ba2e668cdcda0547325ecccdc78afc72acb45475b089d324fc0",
+    "reference/v24/source/build_fitcheck.py": "29adfd4344aac235328de900d5758c70a692b389c4d6033a0b7bab7c766554a7",
+    "reference/v24/source/verify_hardware.py": "3eb49c80dfe5fa25b9514c3776b418165e064ae6eaa83e077b2c7a88acceec9c",
+    "reference/v24/source/package_case.py": "dd5b3be14468ab16de3eb8ce4ddf9f6e51e0b07b8c6b3e8936372ed17cdcc860",
+    "reference/v24/source/build_case.py": "fab3ee747e32a37b97017e2ec0e769356e95f6ec691cbb28e51e4bbcf411c3b1",
+    "reference/v24/source/verify_supports.py": "07e3b11179d83a10fe0aedaaff4dbf33eb16929293bef68d4449f89aa6658ede",
+    "reference/v24/source/verify_field.py": "7ca4f1ec49475dfe30e064dd3e7c6cac00a2e6e0b0e341889e8310bef2593863",
+    "reference/v24/source/render_utils.py": "cc8baf6d01a3197780dfe929673e6dbd13febc73730856d75f442fee7bf36c1f",
+    "reference/v24/source/case.py": "84e79ca32468bb2067708e17d953bdd865c4a39e9edd646228299777b0fc1da1",
+    "reference/v24/source/build_tray_trial.py": "746a1f912fbb0fe8e1301275d8a7c135b90b16028e3a6d9619b523e2d1adb08e",
+    "reference/v24/source/package_release.py": "aafc749c0c561a9a134980532992ceeb33ca5477f8cc45a97934e932830b5a6d",
+    "reference/v24/source/flat_capstones.py": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693",
+    "reference/v24/source/slice_case.py": "053440ec17904cd05aa4c40e3a7f9df1b859926fa0470e86aac8841a1e0a7b19",
+    "reference/v24/source/verify_pin_toolpaths.py": "7e980fc90639e8e2d0f824efefb95449cba0409877b77bde7bba056197b50e95",
+    "reference/v24/source/render_revision.py": "031b65cb99f8691981c4cf5c5458e1e05d5a876e32c62685c26f7617a8e56c8b",
+    "reference/v24/source/verify_pip_hinges.py": "d54b0126f7bb1e1d6b750176ff023755b518403149bba1e9b8df7023a1c271fe",
+    "reference/v24/source/record_provenance.py": "b406910ab17cabc00204a1ed2c1fa0d60549ebaa37877e00e20ab0912ae68a0f",
+    "reference/v24/source/vendor/body/export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e",
+    "reference/v24/source/vendor/body/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
+    "reference/v24/source/vendor/pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+  },
+  "physical_acceptance": false
+}

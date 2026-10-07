@@ -1,0 +1,3582 @@
+{
+  "source_revision": "8085e9d79ffff3c69f07a1cca67595994237869e",
+  "source_pr": "https://github.com/Arcadesys/tak-box/pull/31",
+  "source_case_sha256": "84e79ca32468bb2067708e17d953bdd865c4a39e9edd646228299777b0fc1da1",
+  "cadquery": "2.7.0",
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "units": "mm",
+  "checks": [
+    {
+      "name": "source V24 constants",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "rounded board retains local playing-field geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "V24 reference board fold 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "buried simple axis rejected depth 1",
+      "pass_": true,
+      "detail": {
+        "overlap_mm3": 34582.21373367897,
+        "face_gap_mm": -2
+      }
+    },
+    {
+      "name": "buried simple axis rejected depth 2",
+      "pass_": true,
+      "detail": {
+        "overlap_mm3": 70007.57055641052,
+        "face_gap_mm": -4
+      }
+    },
+    {
+      "name": "H1 hinge sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 hinge sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 pin running clearance",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 blind end blocks inward filament migration",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 unbonded filament can withdraw outward",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 blind wall is 0.5mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 actual V24 board hinge clearance 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1 rounded board / hinge sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.49911117553711,
+          26.0,
+          21.99911117553711
+        ],
+        "volume_mm3": 1590.5361601862626
+      }
+    },
+    {
+      "name": "H1-right CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.49911117553711,
+          26.0,
+          21.99911117553711
+        ],
+        "volume_mm3": 1939.1699913339496
+      }
+    },
+    {
+      "name": "H2 hinge sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 hinge sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 pin running clearance",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 blind end blocks inward filament migration",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 unbonded filament can withdraw outward",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 blind wall is 0.5mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 actual V24 board hinge clearance 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2 rounded board / hinge sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.499107360839844,
+          26.0,
+          21.99911117553711
+        ],
+        "volume_mm3": 1589.7282762584134
+      }
+    },
+    {
+      "name": "H2-right CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.499107360839844,
+          26.0,
+          21.99911117553711
+        ],
+        "volume_mm3": 1938.0764095678048
+      }
+    },
+    {
+      "name": "H3 hinge sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 hinge sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 pin running clearance",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 blind end blocks inward filament migration",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 unbonded filament can withdraw outward",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 blind wall is 0.5mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 actual V24 board hinge clearance 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3 rounded board / hinge sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.499114990234375,
+          26.0,
+          21.99911117553711
+        ],
+        "volume_mm3": 1588.5768339438237
+      }
+    },
+    {
+      "name": "H3-right CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.499114990234375,
+          26.0,
+          21.99911117553711
+        ],
+        "volume_mm3": 1936.617616353702
+      }
+    },
+    {
+      "name": "BOARD-left CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          21.799999237060547,
+          22.900001525878906,
+          4.699999809265144
+        ],
+        "volume_mm3": 1741.8360994587576
+      }
+    },
+    {
+      "name": "BOARD-right CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          21.799999237060547,
+          22.900001525878906,
+          4.699999809265144
+        ],
+        "volume_mm3": 1741.836094466791
+      }
+    },
+    {
+      "name": "L1 rest lip and seat clear",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 positive withdrawal catch",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 fixture guides block sideways escape",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 lifted release path",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 retained tray margin",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1 raised axis lip / actual tray sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-board CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-board STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          18.0,
+          36.0,
+          5.800000190734863
+        ],
+        "volume_mm3": 2455.889081826164
+      }
+    },
+    {
+      "name": "L1-seat CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-seat STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          18.0,
+          37.599998474121094,
+          14.100000381469727
+        ],
+        "volume_mm3": 3151.1662419422028
+      }
+    },
+    {
+      "name": "L2 rest lip and seat clear",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 positive withdrawal catch",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 fixture guides block sideways escape",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 lifted release path",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 retained tray margin",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2 raised axis lip / actual tray sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-board CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-board STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          18.0,
+          36.0,
+          5.800000190734863
+        ],
+        "volume_mm3": 2522.90515785818
+      }
+    },
+    {
+      "name": "L2-seat CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-seat STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          18.0,
+          37.599998474121094,
+          14.100000381469727
+        ],
+        "volume_mm3": 3151.166096972571
+      }
+    },
+    {
+      "name": "L3 rest lip and seat clear",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 positive withdrawal catch",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 fixture guides block sideways escape",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 lifted release path",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 retained tray margin",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 15",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 25",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 35",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 45",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 55",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 65",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 75",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 85",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 95",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 105",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 115",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 125",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 135",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 145",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 155",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 165",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 175",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3 raised axis lip / actual tray sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3-board CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3-board STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          18.0,
+          36.0,
+          5.800000190734863
+        ],
+        "volume_mm3": 2590.0908122751844
+      }
+    },
+    {
+      "name": "L3-seat CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3-seat STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          18.0,
+          37.599998474121094,
+          14.100000381469727
+        ],
+        "volume_mm3": 3151.166008448917
+      }
+    },
+    {
+      "name": "H1-left on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation H1-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation H2-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation H2-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation H3-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation H3-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation BOARD-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation L1-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-left plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation H2-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation H2-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation H3-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation H3-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation BOARD-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation L1-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H1-right plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation H2-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation H3-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation H3-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation BOARD-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation L1-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-left plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation H3-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation H3-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation BOARD-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation L1-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H2-right plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation H3-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation BOARD-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation L1-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-left plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right plate separation BOARD-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right plate separation L1-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3-right plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left plate separation L1-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right plate separation L1-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-board on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-board plate separation L1-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-board plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-board plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-board plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-board plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-seat on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-seat plate separation L2-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-seat plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-seat plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L1-seat plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-board on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-board plate separation L2-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-board plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-board plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-seat on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-seat plate separation L3-board",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L2-seat plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3-board on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3-board plate separation L3-seat",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "L3-seat on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-01-V25-hinge-lip-coupons",
+      "pass_": true,
+      "detail": {
+        "objects": [
+          "H1-left",
+          "H1-right",
+          "H2-left",
+          "H2-right",
+          "H3-left",
+          "H3-right",
+          "BOARD-left",
+          "BOARD-right",
+          "L1-board",
+          "L1-seat",
+          "L2-board",
+          "L2-seat",
+          "L3-board",
+          "L3-seat"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  ],
+  "specifications": {
+    "H1-left": {
+      "size_mm": [
+        26.49911117553711,
+        26.0,
+        21.99911117553711
+      ],
+      "sha256": "a4f6db2b91fc3a8e5889008afc94b32f23c562a7b6a717118d39635fb12bc73f"
+    },
+    "H1-right": {
+      "size_mm": [
+        26.49911117553711,
+        26.0,
+        21.99911117553711
+      ],
+      "sha256": "0e917b123c60f3ef1d4407328a3d28f588d2b5b9389d664ee572e8d548d06872"
+    },
+    "H1": {
+      "filament_d_mm": 1.75,
+      "bore_d_mm": 1.95,
+      "diametral_clearance_mm": 0.2,
+      "knuckle_end_gap_mm": 0.4,
+      "barrel_d_mm": 9,
+      "axis_mm": [
+        98,
+        17.5
+      ],
+      "root_radial_mm": 8,
+      "filament_cut_length_mm": 5.4,
+      "blind_wall_mm": 0.5,
+      "fixed_bond_length_mm": 2.2,
+      "axial_retention": "Blind stop inward; cured bond in fixed left barrel required against outward withdrawal",
+      "printed_pin": false
+    },
+    "H2-left": {
+      "size_mm": [
+        26.499107360839844,
+        26.0,
+        21.99911117553711
+      ],
+      "sha256": "356782efa835c8e4d7441c5fe7600928b2c2cb0565d95b8ec0da57283b88bae3"
+    },
+    "H2-right": {
+      "size_mm": [
+        26.499107360839844,
+        26.0,
+        21.99911117553711
+      ],
+      "sha256": "9e549a819cfc4ad9b89fb6e07ce8b06dd2b424f447395ac636360645bf2c8b43"
+    },
+    "H2": {
+      "filament_d_mm": 1.75,
+      "bore_d_mm": 2.1,
+      "diametral_clearance_mm": 0.35,
+      "knuckle_end_gap_mm": 0.4,
+      "barrel_d_mm": 9,
+      "axis_mm": [
+        98,
+        17.5
+      ],
+      "root_radial_mm": 8,
+      "filament_cut_length_mm": 5.4,
+      "blind_wall_mm": 0.5,
+      "fixed_bond_length_mm": 2.2,
+      "axial_retention": "Blind stop inward; cured bond in fixed left barrel required against outward withdrawal",
+      "printed_pin": false
+    },
+    "H3-left": {
+      "size_mm": [
+        26.499114990234375,
+        26.0,
+        21.99911117553711
+      ],
+      "sha256": "4828c0cf1ddeef965473c16fbc85ca5e9db5bd500b06a66ded7f838303a1c046"
+    },
+    "H3-right": {
+      "size_mm": [
+        26.499114990234375,
+        26.0,
+        21.99911117553711
+      ],
+      "sha256": "59dc437e9e76ee54f75b7758fa03654de7799208aed7cceb49d77aca447a1a53"
+    },
+    "H3": {
+      "filament_d_mm": 1.75,
+      "bore_d_mm": 2.25,
+      "diametral_clearance_mm": 0.5,
+      "knuckle_end_gap_mm": 0.4,
+      "barrel_d_mm": 9,
+      "axis_mm": [
+        98,
+        17.5
+      ],
+      "root_radial_mm": 8,
+      "filament_cut_length_mm": 5.4,
+      "blind_wall_mm": 0.5,
+      "fixed_bond_length_mm": 2.2,
+      "axial_retention": "Blind stop inward; cured bond in fixed left barrel required against outward withdrawal",
+      "printed_pin": false
+    },
+    "BOARD-left": {
+      "size_mm": [
+        21.799999237060547,
+        22.900001525878906,
+        4.699999809265144
+      ],
+      "sha256": "36badbe6939f8dabd08ed63acdb686ae412e88af3badf21fdac085f3f9bbf6d8"
+    },
+    "BOARD-right": {
+      "size_mm": [
+        21.799999237060547,
+        22.900001525878906,
+        4.699999809265144
+      ],
+      "sha256": "2466a7670ff8f16028ebf3571a218b7b1d5f3ef85d2310ec796f20b36092f8b6"
+    },
+    "rounded_board_relief": {
+      "radius_mm": 19.691881404893856,
+      "y_span_mm": [
+        -1,
+        9.6
+      ],
+      "playing_field_start_y_mm": 10,
+      "underside_z_mm": 11.8,
+      "playing_face_z_mm": 16.5,
+      "full_case_integration": false
+    },
+    "L1-board": {
+      "size_mm": [
+        18.0,
+        36.0,
+        5.800000190734863
+      ],
+      "sha256": "b3da057ed1a62785d5fa10bed434b36edb5d29de332298eb99bb00813e7e43a4"
+    },
+    "L1-seat": {
+      "size_mm": [
+        18.0,
+        37.599998474121094,
+        14.100000381469727
+      ],
+      "sha256": "ea4797ee278f35288b0ea3f0661f5fd030dc498ac9312770441cf496fcb32988"
+    },
+    "L1": {
+      "blade_width_mm": 28,
+      "free_length_mm": 12,
+      "blade_thickness_mm": 0.8,
+      "catch_depth_mm": 0.6,
+      "engagement_mm": 0.4,
+      "release_lift_mm": 0.65,
+      "ceiling_z_mm": 14.8,
+      "face_z_mm": 17.5,
+      "proposed_half_rise_mm": 1,
+      "proposed_total_thickness_increase_mm": 2,
+      "estimated_beam_root_strain_at_release": 0.005416666666666668
+    },
+    "L2-board": {
+      "size_mm": [
+        18.0,
+        36.0,
+        5.800000190734863
+      ],
+      "sha256": "6b5a0de9459fd97b6fd68b811612884788b4094a4606fb5ffde68b1485975eca"
+    },
+    "L2-seat": {
+      "size_mm": [
+        18.0,
+        37.599998474121094,
+        14.100000381469727
+      ],
+      "sha256": "063b5bec30b2e720d5e42b158da3189951f02b40ac9bb568f67b25d4468d38a4"
+    },
+    "L2": {
+      "blade_width_mm": 28,
+      "free_length_mm": 12,
+      "blade_thickness_mm": 1.0,
+      "catch_depth_mm": 0.6,
+      "engagement_mm": 0.4,
+      "release_lift_mm": 0.65,
+      "ceiling_z_mm": 14.8,
+      "face_z_mm": 17.5,
+      "proposed_half_rise_mm": 1,
+      "proposed_total_thickness_increase_mm": 2,
+      "estimated_beam_root_strain_at_release": 0.0067708333333333336
+    },
+    "L3-board": {
+      "size_mm": [
+        18.0,
+        36.0,
+        5.800000190734863
+      ],
+      "sha256": "79f08be237ff48ba912307b9d6b2906474b58d96b72ab982c285e0df0d7a4ce5"
+    },
+    "L3-seat": {
+      "size_mm": [
+        18.0,
+        37.599998474121094,
+        14.100000381469727
+      ],
+      "sha256": "18bcff2d085b101ff69ed6e3c3102ebaa2dcbffffafc71302534b452483c7641"
+    },
+    "L3": {
+      "blade_width_mm": 28,
+      "free_length_mm": 12,
+      "blade_thickness_mm": 1.2,
+      "catch_depth_mm": 0.6,
+      "engagement_mm": 0.4,
+      "release_lift_mm": 0.65,
+      "ceiling_z_mm": 14.8,
+      "face_z_mm": 17.5,
+      "proposed_half_rise_mm": 1,
+      "proposed_total_thickness_increase_mm": 2,
+      "estimated_beam_root_strain_at_release": 0.008125
+    }
+  },
+  "physical_acceptance": false,
+  "full_case_integration": false,
+  "printer_started": false
+}

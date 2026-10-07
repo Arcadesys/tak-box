@@ -1,6 +1,10 @@
 # Tak collaboration instructions
 
-## Current version: V24
+## Current experiment: V25
+
+Read v25/START-HERE.md and docs/V25_CHECKPOINT.md for the October 7 filament-hinge/rounded-board coupon study. The user explicitly selected 1.75 mm filament because prior filament hinges worked well, and rejected printed pins that broke or did not hold the joint. Preserve the rounded underside board treatment they remember from V17, the full playing field, the broad lip trials, removable trays and side-hook backup. The coupon has a blind stop and requires bonding only the fixed barrel; unbonded outward retention is not established. Full-case integration and physical acceptance remain pending. Preserve V24 production files and the earlier separate V25 printed-pin kit.
+
+## Preserved version: V24
 
 Read v24/START-HERE.md, v24/BUILD-PROVENANCE.md and docs/V24_CHECKPOINT.md first for the reinforced-hinge/removable-tray revision. The user reports a baseline V23 hinge-support break; the exact failure mechanism is unknown. V24 has a 102.5×200×35 mm envelope, full-height 8 mm supports, captive 4 mm pivots and two loaded lift-out trays. Physical V24 acceptance remains pending. Preserve the original v23 source/kit and its separate board-inlay work; V24 is a distinct package and focused draft review. The user explicitly named the completed V23 R2 revision V24; no geometry/profile/print change is implied. Read v24/reports/identity.json to bridge the preserved 238 checks and six slices, which retain historical labels. Preserve the v23-r2 kit too. Historical text below describes the retained baseline.
 
