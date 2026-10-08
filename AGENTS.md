@@ -1,6 +1,8 @@
 # Tak collaboration instructions
 
-## Current print plates: V26
+## Current V26 main-hinge correction
+
+The user identifies the current main hinge as different from the captive mechanism discussed. The delivered case plate uses older opposing single-ended peg/socket stations; only the side hook uses an axle between two fixed supports. Clarify and implement the intended main hinge, keeping the tab-free board release. Existing full-kit files are a prior snapshot pending correction; do not describe them as the corrected captive design. Read the latest docs/V26_CHECKPOINT.md entry before further CAD changes.
 
 The user explicitly approves shared case-hook retention, removes the awkward flexible sliding-board tabs and asks to build the full plates without waiting for small physical trials. Read v26/START-HERE.md, v26/README.md and docs/V26_CHECKPOINT.md. Preserve PIP main hinges, fixed integral guides, no removable trays, full playing field, original inlays and flat-piece package. Rigid seating shoulders stop inward board travel; the opened case hook permits outward withdrawal. Keep the 4 mm captive hook axle and 0.4 mm gaps. Physical strength, handling, loaded retention and rounded-cover underside integration remain unchecked. Preserve all V25 packages, the prior V26 mechanism-review ZIP, user-extracted folders and V24. Do not dispatch printer jobs.
 

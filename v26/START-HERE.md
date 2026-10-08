@@ -1,4 +1,6 @@
-# Print V26
+# V26 — main hinge under correction
+
+**The current case plate uses the older opposing pin-and-socket joints. The user identified that this does not match the captive hinge they intended. Plate 1 and the current ZIP await a main-hinge revision.** The tab-free board release remains the selected direction; fit with the revised hinge must be rechecked.
 
 Open the three projects in **FULL-PRINT**. The board tabs are gone: open the case hook, then pull each board straight out. A solid seating shoulder sets each board's inward position without a press-and-pull action.
 

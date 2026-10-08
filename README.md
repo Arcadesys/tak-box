@@ -2,9 +2,11 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## V26 print plates
+## V26 — main hinge under correction
 
-[Print V26](v26/START-HERE.md) or [download the kit](v26/V26-PRINT-KIT.zip). Three full plates contain the PIP case bodies with fixed guides and a captive hook, the full-size four-colour board pair, and optional matching flat capstones. Open the hook, then pull the boards freely; rigid seating shoulders replace the flexible release tabs. The full field and original pieces remain. The user chose full plates before physical trials; strength, comfort and loaded transport still need observation. Earlier V25 kits and the V26 clip-trial archive are preserved.
+The user identified that the current case plate has the older opposing peg/socket joints rather than the intended captive main hinge. [Current status](v26/START-HERE.md). The existing ZIP is a prior snapshot awaiting a main-hinge replacement; the selected tab-free board release remains.
+
+[Review V26](v26/START-HERE.md) or inspect [the previous kit snapshot](v26/V26-PRINT-KIT.zip). Three full plates contain the PIP case bodies with fixed guides and a captive hook, the full-size four-colour board pair, and optional matching flat capstones. Open the hook, then pull the boards freely; rigid seating shoulders replace the flexible release tabs. The full field and original pieces remain. The user chose full plates before physical trials; strength, comfort and loaded transport still need observation. Earlier V25 kits and the V26 clip-trial archive are preserved.
 
 ## Preserved V25 PIP with fixed piece guides
 

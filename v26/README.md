@@ -1,4 +1,6 @@
-# V26 print plates
+# V26 print plates — main hinge under correction
+
+The user identified that the delivered main hinge differs from the intended captive design. The case plate currently uses the older opposed peg/socket joints; only the side hook has an axle held between two fixed supports. The existing kit is a prior snapshot pending correction. The tab-free board release remains selected.
 
 [Start printing V26](START-HERE.md) or [download the complete kit](V26-PRINT-KIT.zip). **FULL-PRINT** contains the joined case/hook assembly, the full four-colour board pair and the matching flat capstones. Current total estimate: **17h 45m / 289.53 g PLA**, including the optional capstones.
 

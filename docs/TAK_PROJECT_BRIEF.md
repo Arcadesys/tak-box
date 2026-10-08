@@ -2,7 +2,9 @@
 
 Updated October 7, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current print plates: V26 — October 7
+### Current V26 main-hinge correction — October 7
+
+The user identifies the delivered main hinge as different from the captive hinge discussed. The full case plate currently retains opposing single-ended peg/socket stations; the two-fixed-support captive axle was applied only to the side hook. The earlier B filament bearing had a moving barrel between two fixed supports. The intended PIP main-hinge support arrangement is being clarified before geometry and plate replacement. The existing kit is a prior snapshot, and the tab-free board release remains selected. Previous digital checks validate that snapshot, not the intended replacement.
 
 The user reports that pressing a sliding-board tab while pulling was awkward. They approve using the case hook to secure both covers during closed transport and explicitly choose to build full plates before small physical trials. [V26](../v26/START-HERE.md) now removes the flexible catches and restores solid bevelled board margins. A rigid 4 × 6.1 × 4.7 mm seating shoulder outside each playing field meets the front rail to stop inward travel; it moves away freely on outward withdrawal. Open the case hook, then pull either board without pressing a tab.
 
