@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "hook-trial-fixture unchanged single valid solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial-fixture CC2 bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial unchanged single valid solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial CC2 bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip-trial-seat unchanged single valid solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip-trial-seat CC2 bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip-trial-board unchanged single valid solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip-trial-board CC2 bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial-fixture/hook-trial no overlap",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial-fixture/clip-trial-seat no overlap",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial-fixture/clip-trial-board no overlap",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial/clip-trial-seat no overlap",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial/clip-trial-board no overlap",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip-trial-seat/clip-trial-board no overlap",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook/clip fixture separation at least 16mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-03-V26-combined-mechanism-trials",
+      "pass_": true,
+      "detail": {
+        "objects": [
+          "hook-trial-fixture",
+          "hook-trial",
+          "clip-trial-seat",
+          "clip-trial-board"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "03-V26-combined-mechanism-trials joint support and brim overrides",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "all four parts retain one placed assembly",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "four unique named meshes retained",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/combine.py"
+  ],
+  "source_sha256": {
+    "hook-trial-fixture.step": "3a6af68ab88f4e0466666accd2b4355e448bd09aa75b1d9aae7714b7f8ccecb7",
+    "hook-trial.step": "95a7895e5a3c7b04aaf3a363468e60fec39511af0f03f6ad2dded13fa3c30d72",
+    "clip-trial-seat.step": "867150772c6d62c5dcd53e76959a8e41079dc57553092fbdef0b560f508660b8",
+    "clip-trial-board.step": "691ca6df73412ed021c25e3a88d65ac273d881813a82bccc8160c0714eb30295"
+  },
+  "hook_translation_from_original_plate_mm": [
+    0,
+    0,
+    0
+  ],
+  "clip_translation_from_original_plate_mm": [
+    32,
+    0,
+    0
+  ],
+  "hook_print_translation_mm": [
+    8,
+    -60,
+    0
+  ],
+  "geometry_changed": false,
+  "physical_acceptance": false,
+  "printer_started": false
+}

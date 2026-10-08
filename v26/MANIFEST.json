@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 3218,
-      "sha256": "d31f00ca1858b40cab933c7223d9f0c3a8d19d8d88d01c56b1d680eccaf43f57"
+      "bytes": 3637,
+      "sha256": "2f223de21744b4d6758b8059b7ea3aa714cd59ee2153939684c05d8ce53fe5df"
     },
     {
       "path": "SMALL-TRIALS/01-V26-captive-hook-trial-CC2-PLA.3mf",
@@ -16,6 +16,11 @@
       "path": "SMALL-TRIALS/02-V26-board-clip-trial-CC2-PLA.3mf",
       "bytes": 181037,
       "sha256": "41649eed866d25df8d4bedbc8f852493d75ae72f5d4eb1d253e844ce4bdc278a"
+    },
+    {
+      "path": "SMALL-TRIALS/03-V26-combined-mechanism-trials-CC2-PLA.3mf",
+      "bytes": 358317,
+      "sha256": "88c92315756b8552fd836cd128aabc21d09a66a8d4c0a7c96235e4ca7791fc91"
     },
     {
       "path": "models/board-left-body.step",
@@ -223,6 +228,11 @@
       "sha256": "859443ae7a914ea1de220d8a46eccae6e075ac74d529492b3b5d7241aa815bdc"
     },
     {
+      "path": "plates/03-V26-combined-mechanism-trials.3mf",
+      "bytes": 51467,
+      "sha256": "4653147b015fa1fc71ca1850b6121e58d04efe840dab8482b3bc46cf99901618"
+    },
+    {
       "path": "previews/01-game-open.png",
       "bytes": 55215,
       "sha256": "0d56faa84d4aaefed9dd5d13296bbc4f97215cca7531736030d351d3e2c35ccb"
@@ -254,6 +264,16 @@
     },
     {
       "path": "previews/07-hook-sliced-gaps.png",
+      "bytes": 104443,
+      "sha256": "cfdb91bd94e4d96cad9d7e7e37aa5975a017fcd5f0c2fa6185a6a270b6224390"
+    },
+    {
+      "path": "previews/08-combined-trials.png",
+      "bytes": 49843,
+      "sha256": "163292b3363e727b3f1498c17ce60e8d8825b5a979ba086c30712fcb019fbcdc"
+    },
+    {
+      "path": "previews/09-combined-hook-sliced-gaps.png",
       "bytes": 104443,
       "sha256": "cfdb91bd94e4d96cad9d7e7e37aa5975a017fcd5f0c2fa6185a6a270b6224390"
     },
@@ -478,14 +498,34 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "reports/03-V26-combined-mechanism-trials-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "reports/build.log",
       "bytes": 220,
       "sha256": "eb1694913fd8cb8978788d09f52076de7e825af42fd059bd7fd64df7fd5c57d4"
     },
     {
       "path": "reports/caption.log",
-      "bytes": 46,
-      "sha256": "fb2367efdfa192e2c7dd665f0c22b7ff17328603fd110a06f00149f9354f4cd0"
+      "bytes": 44,
+      "sha256": "91bc6044eee78543dfa7181222dfc69a5298616823ed3dc8d6c41ac9cf749571"
+    },
+    {
+      "path": "reports/combine.log",
+      "bytes": 42,
+      "sha256": "448c361edca7e75fba41cb3fd144d18314509e6dd3d1f5e8f4520a0eeb6225b5"
+    },
+    {
+      "path": "reports/combined-layout.json",
+      "bytes": 3302,
+      "sha256": "45b04a025b60ab038c27384e7ddef4f14c6aeeab97e211a2ff92dea455ca3a7a"
+    },
+    {
+      "path": "reports/combined-slice.log",
+      "bytes": 63,
+      "sha256": "75752f55e664544ae038ea5a239867dfc954e3ea877eb6db332e2276807df41b"
     },
     {
       "path": "reports/focused-hook-check.log",
@@ -559,8 +599,8 @@
     },
     {
       "path": "reports/slicing.json",
-      "bytes": 9031,
-      "sha256": "e99ea4f068ff1ac1c23b3539f17e6acf2f5c4052046a07a695dd8de631e8d504"
+      "bytes": 14763,
+      "sha256": "e20939c6cd4f021fe90c54c3d601db78aa0b35eb1c8a65166b9fce2da1c7b832"
     },
     {
       "path": "reports/trial-build-initial.log",
@@ -589,8 +629,13 @@
     },
     {
       "path": "source/caption.py",
-      "bytes": 1618,
-      "sha256": "214a36f95f96eaa6ef6c463bd716c9351447a9491a62bd2fa59250d6175ae222"
+      "bytes": 1826,
+      "sha256": "042fd61043b192b448a797e5c0d01302e222402f34a589cf1a835147a7b5113b"
+    },
+    {
+      "path": "source/combine.py",
+      "bytes": 2750,
+      "sha256": "575d5f46313c2a5d904bc2f71fd56f1c9dcaf9ec055378b2d62a4b1dec29aad9"
     },
     {
       "path": "source/common.py",
@@ -624,8 +669,8 @@
     },
     {
       "path": "source/slice.py",
-      "bytes": 8076,
-      "sha256": "20f4036f6423f7eb4ce9fb1f58977577c8c1f2d67cc963ff9038b331a2e61c5a"
+      "bytes": 8413,
+      "sha256": "2097735c0cb6d969e156dfe0b1b85ac286c3adb26ed9143480847e1831fa283f"
     },
     {
       "path": "source/trial.py",

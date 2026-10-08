@@ -4,7 +4,7 @@ A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed p
 
 ## V26 mechanism review
 
-[Review V26](v26/README.md): a wider sliding-board clip with a rounded root and a side hook that prints captive. PIP main hinges, fixed piece guides and the full field remain. Two small mechanism trials precede whole-case printing; physical release, durability and transport retention remain unverified. Existing V25 kits are preserved.
+[Review V26](v26/README.md): a wider sliding-board clip with a rounded root and a side hook that prints captive. PIP main hinges, fixed piece guides and the full field remain. Two small mechanism trials share [one plate](v26/SMALL-TRIALS/03-V26-combined-mechanism-trials-CC2-PLA.3mf) before whole-case printing; physical release, durability and transport retention remain unverified. Existing V25 kits are preserved.
 
 ## Preserved V25 PIP with fixed piece guides
 
