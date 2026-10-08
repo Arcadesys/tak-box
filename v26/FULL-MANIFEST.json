@@ -569,8 +569,8 @@
     },
     {
       "path": "reports/full-plates.json",
-      "bytes": 11841,
-      "sha256": "d119833e61c16f3f5618d24f0c7bea7d4fce7697d7d3a8a637f2620767ca6081"
+      "bytes": 12212,
+      "sha256": "ca9d5c63f9c3a13ae051927a8afe892dcb228437d510215054b622101476eef0"
     },
     {
       "path": "reports/full-plates.log",
@@ -580,7 +580,7 @@
     {
       "path": "reports/full-provenance.json",
       "bytes": 3414,
-      "sha256": "60aa693c83bb3d884644d7a9599d87b7b4c0ffd536cae8da26a49f1ad2b5caba"
+      "sha256": "e0ce2d8ab4a46d822532338f2296e69266c44a541b2be8c8a7137b80fff1d619"
     },
     {
       "path": "reports/full-render-initial-failure.log",
@@ -619,8 +619,8 @@
     },
     {
       "path": "source/board_plate.py",
-      "bytes": 5778,
-      "sha256": "38dfdc0beea336192a18421901968f012cf3198825e3cc2bcd9e63ace072826a"
+      "bytes": 5777,
+      "sha256": "ddf04bf309a13aee6276aec26ca83b72ff97d28f2b5bec7ae49fd280f77e2e38"
     },
     {
       "path": "source/build.py",

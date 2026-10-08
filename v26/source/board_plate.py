@@ -90,4 +90,3 @@ def project(name, groups, silk=True):
         role=label.rsplit('-',1)[1]
         check(name+'/'+label+' filament slot',slot==c.slot(role,silk))
     return path
-

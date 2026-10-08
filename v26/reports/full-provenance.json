@@ -15,10 +15,10 @@
     "matplotlib": "3.11.2",
     "Pillow": "12.3.0"
   },
-  "base_revision": "ac27c6ead15d398b8140fc3b2c6ff1a32de3fb9c",
+  "base_revision": "d065a0db5e25a47ac82623203d2f92b35c9dbd33",
   "source_sha256": {
     "source/package.py": "5f4c4c9893db1cd4367e7dfdbbe410b60ab0e7a09e0cee4f2fc3cd8d0e11d2d2",
-    "source/board_plate.py": "38dfdc0beea336192a18421901968f012cf3198825e3cc2bcd9e63ace072826a",
+    "source/board_plate.py": "ddf04bf309a13aee6276aec26ca83b72ff97d28f2b5bec7ae49fd280f77e2e38",
     "source/build.py": "719186c3924b01c8928267d8b161dc4795d9c0854daa12cf9cf546908d21a9af",
     "source/verify_colour.py": "a481160f622a0e937f630442388f3f2564563aedf67822f0e38d6d8fc8a102d1",
     "source/slice.py": "2097735c0cb6d969e156dfe0b1b85ac286c3adb26ed9143480847e1831fa283f",

@@ -493,5 +493,13 @@
     "board_plate.py": "38dfdc0beea336192a18421901968f012cf3198825e3cc2bcd9e63ace072826a"
   },
   "physical_acceptance": false,
-  "printer_started": false
+  "printer_started": false,
+  "source_format_only_changes": {
+    "board_plate.py": {
+      "prior_sha256": "38dfdc0beea336192a18421901968f012cf3198825e3cc2bcd9e63ace072826a",
+      "current_sha256": "ddf04bf309a13aee6276aec26ca83b72ff97d28f2b5bec7ae49fd280f77e2e38",
+      "ast_identical": true,
+      "change": "Remove extra blank line at EOF; generated geometry and plates unchanged."
+    }
+  }
 }
