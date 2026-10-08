@@ -1,0 +1,60 @@
+Building equal-half cat
+Building equal-half witch
+Building cat regular
+Building witch regular
+{
+  "passed": true,
+  "print_parts": 8,
+  "capstones": {
+    "cat": {
+      "external_envelope_mm": [
+        26,
+        20,
+        8
+      ],
+      "nominal_external_half_depths_mm": [
+        4,
+        4
+      ],
+      "seam_centre_z_mm": 4.0,
+      "bond_gap_mm": 0.05,
+      "hidden_lip_above_midpoint_mm": 1.3499999999999996,
+      "usable_fill_ml": 0.8603464988464102,
+      "closed_void_before_glue_ml": 1.1659344493517592,
+      "safe_fill_limit_z_from_bottom_mm": 4.9412255318462845,
+      "fill_surface_below_lip_mm": 0.4087744681537151,
+      "headroom_and_glue_capacity_ml": 0.029999997588424865,
+      "roof_mm": 0.7999999999999998,
+      "minimum_main_side_wall_mm": 1.6,
+      "minimum_receiver_wall_at_pocket_mm": 0.75,
+      "body_halves_overlap_mm3": 0.0,
+      "same_external_silhouette_as_v1": true,
+      "physical_retention_verified": false
+    },
+    "witch": {
+      "external_envelope_mm": [
+        26,
+        20,
+        8
+      ],
+      "nominal_external_half_depths_mm": [
+        4,
+        4
+      ],
+      "seam_centre_z_mm": 4.0,
+      "bond_gap_mm": 0.05,
+      "hidden_lip_above_midpoint_mm": 1.3499999999999996,
+      "usable_fill_ml": 0.8603464970446677,
+      "closed_void_before_glue_ml": 1.1659344493700698,
+      "safe_fill_limit_z_from_bottom_mm": 4.661493000239134,
+      "fill_surface_below_lip_mm": 0.6885069997608655,
+      "headroom_and_glue_capacity_ml": 0.08909046614095772,
+      "roof_mm": 1.1006968240514814,
+      "minimum_main_side_wall_mm": 2.2,
+      "minimum_receiver_wall_at_pocket_mm": 0.75,
+      "body_halves_overlap_mm3": 0.0,
+      "same_external_silhouette_as_v1": true,
+      "physical_retention_verified": false
+    }
+  }
+}

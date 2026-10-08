@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "base_revision": "a5368a5c6be61f961a31f9ca64bc890f311b829e",
+  "quantity": {
+    "logical_pieces": 4,
+    "separate_printable_components": 8,
+    "complete_sets": false,
+    "fused_components": false
+  },
+  "used_filament_slots": [
+    3
+  ],
+  "printer_started": false,
+  "physical_acceptance": false,
+  "commands": [
+    "source/build.py",
+    "source/verify_case.py",
+    "source/plate.py",
+    "source/verify_plate.py",
+    "source/verify_snap_slice.py",
+    "source/render.py",
+    "source/render_plate.py"
+  ],
+  "dependency_environment": "reports/dependencies.json",
+  "source_hashes": {
+    "source/build.py": "e3f1aa93bae0f5b7cbc620c53f980467043eec5664f0d2ed3c04ffce237c4c57",
+    "source/plate.py": "d6c56212323dacc4e938c6f6759eddebaca761137311cfa0249d5ca37ed9ee8a",
+    "source/render.py": "e1939e6a88a9b60895acb09d845f2a69aba4a7efee99c05d825c4c73b08e1d82",
+    "source/render_plate.py": "ed9f9756c899aca8d2dbba3080c8af61c688382fd9533f204f89858f3b989262",
+    "source/verify_case.py": "6d62cc3a329f4570a0a23c3d4666cb82524aa23486af0cdacb5e5763cd0f3064",
+    "source/verify_plate.py": "443ff40db3457c7cd72f5df6f1ff1b6d37a6c5bd8940342bd80a65d176e7f0c5",
+    "source/verify_snap_slice.py": "24f9675dc7198fdec1c090d00deb4e8d73b55bb8bbacc6b51e5b76cf089104e6"
+  },
+  "profile_hashes": {
+    "profiles/black.json": "19965c7fc6caf54e4d07bc49b3ae9f04766b5bee3a6e9b7e33182c2c8dfedcd1",
+    "profiles/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
+    "profiles/process.json": "238099ff2968bb706ac02182df0d65859e28aaa363b8e80148e3130c6f7f08dc",
+    "profiles/silk-orange-placeholder.json": "8388f1e68aa3b44189bd2f0beaedc35c4a4533d7a9d954ff2dc4821ed5050fd4",
+    "profiles/silk-purple-placeholder.json": "e2ae6d2a672e17004a0dd0fccdb49717426932e218c9977fd216dea4403908e9",
+    "profiles/white.json": "575dba6347b36bf984a7022111957e5f84fb5c2174ef15fcca8c6f9ecce84588"
+  },
+  "evidence_hashes": {
+    "reports/geometry.json": "c5c83e6843b7568a4163b97abba0518d2122341fb5d3f99ec2340375469c69d7",
+    "reports/v26-fit.json": "1f9abb1813c1f29b039cb619556917bdb441dd3004c64e7ca32322309b76eb23",
+    "reports/slicing.json": "9a76d8931eb3d487c5079a50bfd65516ed69d31bdc4416f0e7b7b839285cde99",
+    "reports/snap-slice.json": "d9f870e51a1eac3632b2684f63415d7aed0edf611a7d2a2de198ec0fe4eb79da",
+    "previews/capstone-joint-sections.png": "48f1700d4205c6011cdfb92aa876b85e5c551053ad0e0bc3edfd4e65fe6dfac6",
+    "previews/print-block.png": "93b5608ea995d261c6b036ec4157951ddabcc9a3e7a9508fdca9e6c1615bc943",
+    "previews/capstone-halves.png": "8c5e7dbe1ace67f0b81cc19f14a5e1eb4e88f9f3dfc68d4c4d3a443a823b8332",
+    "previews/four-piece-sample.png": "d7113fb510d60eb79987fecaffb98e8534d8b8e3b0cf7051a2f6be642e0e7071",
+    "PRINT/Tak-FOUR-PIECE-SAMPLE-MIDPOINT-SLOT-3.3mf": "aa849c10d47123822b53307811265b7b7ccafede8de6d3af64f91368002c530c"
+  },
+  "failure_history": [
+    "Initial safe-fill construction overlapped the lip by its 0.01 mm union allowance; fill transition now uses the exact lip base.",
+    "G-code path parser first missed extrusion values beginning with a decimal point; parsing was corrected.",
+    "Initial path probes omitted the retained physical-nozzle 1.5 mm Y offset; commanded-coordinate conversion was corrected. No geometry tuning was inferred from those false failures."
+  ],
+  "remaining_physical_gates": [
+    "dry retention",
+    "shot diameter and packing fit",
+    "sand leakage",
+    "stacking",
+    "finished sanding/varnish texture",
+    "finished fit in the actual printed V26 case"
+  ],
+  "preview_accessibility": "Rendered PNGs inspected: large black labels on white, explicit part names, sufficient contrast, no meaning conveyed only by colour"
+}

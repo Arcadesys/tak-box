@@ -1,0 +1,11 @@
+.slicer-config/
+__pycache__/
+source/__pycache__/
+source/vendor/__pycache__/
+reports/cad-runtime-sample.txt
+reports/slicer-debug.log
+reports/sample.gcode
+reports/readback-meshes.npz
+previews/*-assembled-preview.stl
+previews/*-preview.stl
+reports/slice-probe-debug.png

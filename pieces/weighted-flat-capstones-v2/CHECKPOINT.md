@@ -1,0 +1,15 @@
+# Equal-half weighted sample checkpoint
+
+Outcome: completed four-piece sample print block with eight separate printable components: Cat capstone lower/upper, Witch capstone lower/upper, recessed-diamond Cat regular body/floor, and existing-finish Witch regular body/floor. All use Elegoo silk PLA slot 3. No complete teams or fused block. Saved slice: 40m 26s / 9.57 g, CC2 0.4 mm nozzle / 0.2 mm layers, no prime tower. No printer dispatch.
+
+Capstones: nominal 4 mm external halves meet at Z4, with a symmetric 0.05 mm adhesive seam, hidden aligning lip/recess, guarded vertical snap tabs and epoxy bonding/sealing. Silhouettes and finished 8 mm envelope are unchanged from V1. Both have 1.165934 mL nominal closed void before glue and 0.860346 mL usable fill after overlap, mechanism exclusions, headroom and 0.03 mL glue reserve. This is less usable fill than V1's 0.988819 mL; team capacities still match. Both new cups are required. Regular floors are geometrically identical to V1; Cat recesses stay off the closure and stacking faces.
+
+Physical evidence: the user printed only the V1 Cat capstone. Regular-flat snaps worked in their test. Cat capstone seats without a click or clicks then separates. Witch capstone retention is untested. The old straight-pull checks did not establish physical retention. New dry retention, shot fit, leakage, stacking, finished sanding/varnish texture and actual V26 case fit remain physical gates. Steel shot is expected October 9; its diameter/packing is unknown.
+
+Evidence: reports/verification.json records source/profile/output hashes, dependency versions, commands and failures. Valid solid/STEP/mesh exports, matched fill, insertion/guard clearance and capture checks pass. Unchanged V26 STEP housing/cover checks pass 115 storage/slide/fold tests. Saved 3MF readback confirms eight independent named objects, slots [3], source surfaces within 0.002 mm and G-code T2 only. Actual sliced-tab verification passes 32 bead-path probes, including free slots and printed retaining plateaux in two layers; minimum sampled probe clearance 0.1745 mm. No physical retention claim. Inherited bed/vitrification metadata warning remains. Previews from actual exports inspected with large black labels on white.
+
+Route: requested bounded workhorse / medium pass in this existing context; runtime mapping inspected. Model switching is unavailable, so route enforcement is not claimed. No subagents.
+
+Source base: a5368a5c6be61f961a31f9ca64bc890f311b829e. PR #37 remains the focused review. V1 source/models/plates and existing case geometry, printed parts, archives and unrelated primary-checkout changes are preserved. The retained Python 3.12 / CadQuery 2.7 runtime imported successfully; source paths use this worktree.
+
+Saved deliverable: /Users/arcades/Documents/GitHub/tak-box/sample-plates/2026-10-08-four-piece-midpoint/Tak-FOUR-PIECE-SAMPLE-MIDPOINT-SLOT-3.3mf. Review views: print-block.png, four-piece-sample.png, capstone-halves.png and capstone-joint-sections.png in the same folder. Quantity/one-filament delivery is resolved. No implementation blocker remains; physical gates follow this print.
