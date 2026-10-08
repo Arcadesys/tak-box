@@ -2,7 +2,7 @@
 
 ## Current experiment: V25
 
-The user explicitly selected PIP main hinges and plain fixed storage wells, superseding filament axles and removable trays. Read v25/PIP-FIXED-STORAGE/START-HERE.md and docs/V25_CHECKPOINT.md. Both halves print together as an assembly using opposed captive 4 mm pivots with V24 full-height 8 mm roots, and 3.4 mm integral floors. Preserve the full field, original flat-piece capacity, independent accent colours and side-hook backup. The remembered physically strong PIP version is unidentified; fixed floors may increase stiffness but strength remains unverified. B is a historical filament-fit assumption. Broad lip, catch and remembered V17 rounded-cover integration are still pending. Preserve all earlier V25 kits and V24. No printer jobs or physical acceptance claims.
+The latest user clarification is **fixed piece guides with no removable trays**, keeping PIP main hinges. Read v25/PIP-FIXED-GUIDES/START-HERE.md and docs/V25_CHECKPOINT.md. Each body has integral guides for 21 original flats and a capstone, 3.4 mm floors and 3.5 mm guide height. Both bodies print together using opposed captive 4 mm pivots with V24 full-height 8 mm roots. Preserve the full field, exact original flat-piece capacity, independent accent colours and side-hook backup. Physical fit, dumping and durability remain unverified. Cover catch, broad lip and V17-style rounded-cover full integration remain pending. Preserve the older empty-well PIP plate, earlier filament kits, user-extracted folders and V24. V26 was recommended but not selected; keep current V25 names. No printer jobs or physical acceptance claims.
 
 ## Preserved version: V24
 

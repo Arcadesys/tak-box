@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/PIP-FIXED-GUIDES/source/build.py", line 111, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/PIP-FIXED-GUIDES/source/build.py", line 41, in main
+    check(side+' connected case body',h[side].isValid() and len(h[side].Solids())==1)
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/PIP-FIXED-GUIDES/source/build.py", line 12, in check
+    checks.append(dict(name=name,pass_=bool(ok),detail=detail));assert ok,(name,detail)
+                                                                       ^^
+AssertionError: ('left connected case body', None)
