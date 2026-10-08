@@ -2,6 +2,10 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
+## V25 PIP fixed-storage prototype
+
+The user selected [captive PIP hinges with fixed storage wells](v25/PIP-FIXED-STORAGE/START-HERE.md). Both halves print together; 4 mm opposed pivots and full-height 8 mm roots replace the main filament hinges. Plain 3.4 mm integral floors retain the same field, piece capacity and outside size. Start with the full-length hinge trial before replacement bodies. Physical release, strength and loaded transport remain unverified; cover-catch, lip and rounded-cover integration remain open. Earlier V25 filament kits and V24 stay preserved.
+
 ## Current print kit: V24
 
 [Download V24](v24/V24-PRINT-KIT.zip) and read [START-HERE](v24/START-HERE.md). Following the reported V23 hinge-support break, this revision uses broader full-height supports and two removable loaded player trays. The full 180 mm field remains; closed size is **102.5×200×35 mm**, adding 1.5 mm at the larger hinge barrels and 2.4 mm thickness for independent tray floors. Open **v24/FULL-PRINT** for the four sliced projects; **02-FULL-SIZE-FOUR-COLOUR-inlaid-boards-CC2-PLA.3mf** is the full board pair. Small tests are together in **v24/SMALL-TRIALS**. Four CC2 PLA plates include the **four-colour inlaid boards** (black, white and two silk accents), about **17 h 1 min / 327 g** with placeholder silk profiles; select actual silk profiles and reslice before printing. Separate hinge, tray-access and colour trials are included; physical durability and fit remain pending.
