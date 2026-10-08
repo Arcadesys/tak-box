@@ -13,3 +13,5 @@ Source base: V26 7444f978933505b6808003d226c90ff9d503ebc9. The original snap gen
 Saved copy: /Users/arcades/Documents/GitHub/tak-box/sample-plates/2026-10-08-flat-cat-witch/Tak-SAMPLE-WEIGHTED-Cat-Witch-slots-3-4.3mf. Native app observation confirmed the eight-part project, CC2 0.4 mm nozzle, slots 3/4 and 0.2 mm layers before its later slice request timed out. The package rebuild used identical geometry and material/process values.
 
 Next physical gate: print this sample, check the actual case pockets, fill without grains on the seats, snap both hooks, cure the epoxy, then check handling and leakage. Physical fit, snap retention, assembly force, wear and sand sealing are unverified. No full piece-set release is claimed.
+
+Review: draft PR https://github.com/Arcadesys/tak-box/pull/37 targets codex/v25-fixed-piece-guides, which now contains merged V26 PR #36. GitHub reports mergeable. Geometry/source delivery commit: 896fb7178f9a7f50d823cef2815803874b2a0fdb. The diff contains only this new package and the project brief.
