@@ -1,8 +1,8 @@
 # Tak collaboration instructions
 
-## Current experiment: V25
+## Current experiment: V26
 
-The latest user clarification is **fixed piece guides with no removable trays**, keeping PIP main hinges. Read v25/PIP-FIXED-GUIDES/START-HERE.md and docs/V25_CHECKPOINT.md. Each body has integral guides for 21 original flats and a capstone, 3.4 mm floors and 3.5 mm guide height. Both bodies print together using opposed captive 4 mm pivots with V24 full-height 8 mm roots. Preserve the full field, exact original flat-piece capacity, independent accent colours and side-hook backup. Physical fit, dumping and durability remain unverified. Cover catch, broad lip and V17-style rounded-cover full integration remain pending. Preserve the older empty-well PIP plate, earlier filament kits, user-extracted folders and V24. V26 was recommended but not selected; keep current V25 names. No printer jobs or physical acceptance claims.
+The user explicitly selects V26 for review of the thin sliding-board clip and asks for the side hook to print captive too. Read v26/README.md and docs/V26_CHECKPOINT.md. Preserve PIP main hinges, fixed integral piece guides, no removable trays, full playing field and original flat-piece package. V26 strengthens the clip candidate and tests a 4 mm captive side-hook axle with 0.4 mm gaps. Small trials come before a complete print kit; physical strength, release effort and loaded retention remain unchecked. Preserve all V25 packages, user-extracted folders and V24. Rounded-cover underside integration remains pending. No printer jobs.
 
 ## Preserved version: V24
 

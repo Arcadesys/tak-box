@@ -66,3 +66,11 @@ v25/**/*.png binary linguist-generated=true
 v25/previews/*.svg -diff linguist-generated=true
 v25/*.zip binary linguist-generated=true
 v25/reports/*.log -diff linguist-generated=true
+
+# V26 mechanism review geometry
+v26/**/*.step binary linguist-generated=true
+v26/**/*.stl binary linguist-generated=true
+v26/**/*.3mf binary linguist-generated=true
+v26/**/*.png binary linguist-generated=true
+v26/*.zip binary linguist-generated=true
+v26/reports/*.log -diff linguist-generated=true

@@ -2,7 +2,11 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## V25 PIP with fixed piece guides
+## V26 mechanism review
+
+[Review V26](v26/README.md): a wider sliding-board clip with a rounded root and a side hook that prints captive. PIP main hinges, fixed piece guides and the full field remain. Two small mechanism trials precede whole-case printing; physical release, durability and transport retention remain unverified. Existing V25 kits are preserved.
+
+## Preserved V25 PIP with fixed piece guides
 
 The latest [fixed-guide prototype](v25/PIP-FIXED-GUIDES/START-HERE.md) has permanent positions for 21 flat stones and a capstone in each case half, joined to 3.4 mm integral floors. No removable trays. The two halves print together with captive 4 mm PIP pivots and full-height 8 mm roots. Original piece capacity, playing field, accent colours and outside size are retained. Digital checks do not establish physical fit, dumping or strength; cover-catch, lip and rounded-cover complete integration remain open. The earlier empty-well PIP plate, filament kits and V24 stay preserved.
 
