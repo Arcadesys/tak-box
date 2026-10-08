@@ -20,7 +20,7 @@ def main():
     font=font_manager.findfont(font_manager.FontProperties(family='DejaVu Sans',weight='bold'))
     big=ImageFont.truetype(font,42);small=ImageFont.truetype(font,32)
     canvas=Image.new('RGB',(1780,1140),'white');draw=ImageDraw.Draw(canvas)
-    draw.text((40,20),('Black PLA trial — 4 samples, 8 components, provisional slot 1' if black else 'One print block — 4 samples, 8 separate components, slot 3'),font=big,fill='#101010')
+    draw.text((40,20),(('Black PLA trial — 4 samples, 8 components, slot 1' if provenance.get('current_spool_verified') else 'Black PLA trial — 4 samples, 8 components, provisional slot 1') if black else 'One print block — 4 samples, 8 separate components, slot 3'),font=big,fill='#101010')
     canvas.paste(view(parts,eye=(0,-45,130),size=(1700,850),zoom=1.75),(40,140))
     draw.text((40,85),'Columns: Cat capstone  |  Witch capstone  |  Cat flat  |  Witch flat',font=small,fill='#101010')
     draw.text((40,1010),'Top row: upper cups / floors. Bottom row: lower cups / bodies.',font=small,fill='#101010')

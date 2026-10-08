@@ -10,7 +10,7 @@
   "source_scripts_sha256": {
     "build.py": "e3f1aa93bae0f5b7cbc620c53f980467043eec5664f0d2ed3c04ffce237c4c57",
     "plate.py": "1b34edfb9a5613c4f22a47ee84809a744a1f6ada001fef33ceb42514190ab519",
-    "render_plate.py": "1bd1d4a21c9a69000b7f3c8d73256bc18846c3d402fd8158f68a768b5654776b",
+    "render_plate.py": "b1a7c42f8c919654503fccbf200ffa010044df3621f1d09d9e4b4899dd85a835",
     "render.py": "e1939e6a88a9b60895acb09d845f2a69aba4a7efee99c05d825c4c73b08e1d82",
     "verify_case.py": "6d62cc3a329f4570a0a23c3d4666cb82524aa23486af0cdacb5e5763cd0f3064",
     "verify_plate.py": "e1cddfa7743eeedd7d464b05c9a64f0d9c02d07998d58ae874391457d65846b3",
@@ -28,10 +28,13 @@
   "physical_acceptance": false,
   "ui_visible_loaded": false,
   "printer_started": false,
-  "current_spool_verified": false,
+  "current_spool_verified": true,
   "native_control_failures": [
     "getApp bundle ID timed out (120s)",
-    "getApp display name timed out (10s, REPL reset)"
+    "getApp display name timed out (10s, REPL reset)",
+    "Follow-up ElegooSlicer getApp timed out (120s)",
+    "Finder getApp timed out (10s, REPL reset); native failure extends beyond slicer"
   ],
-  "blocker": "Native control unavailable; current black material, slot and connected printer ready state unverified"
+  "blocker": "Native control unavailable; live loaded project and printer-ready state unverified",
+  "material": "User confirmed regular PLA, black, slot 1"
 }
