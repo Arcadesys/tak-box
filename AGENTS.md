@@ -1,8 +1,8 @@
 # Tak collaboration instructions
 
-## Current experiment: V26
+## Current print plates: V26
 
-The user explicitly selects V26 for review of the thin sliding-board clip and asks for the side hook to print captive too. Read v26/README.md and docs/V26_CHECKPOINT.md. Preserve PIP main hinges, fixed integral piece guides, no removable trays, full playing field and original flat-piece package. V26 strengthens the clip candidate and tests a 4 mm captive side-hook axle with 0.4 mm gaps. Small trials come before a complete print kit; physical strength, release effort and loaded retention remain unchecked. Preserve all V25 packages, user-extracted folders and V24. Rounded-cover underside integration remains pending. No printer jobs.
+The user explicitly approves shared case-hook retention, removes the awkward flexible sliding-board tabs and asks to build the full plates without waiting for small physical trials. Read v26/START-HERE.md, v26/README.md and docs/V26_CHECKPOINT.md. Preserve PIP main hinges, fixed integral guides, no removable trays, full playing field, original inlays and flat-piece package. Rigid seating shoulders stop inward board travel; the opened case hook permits outward withdrawal. Keep the 4 mm captive hook axle and 0.4 mm gaps. Physical strength, handling, loaded retention and rounded-cover underside integration remain unchecked. Preserve all V25 packages, the prior V26 mechanism-review ZIP, user-extracted folders and V24. Do not dispatch printer jobs.
 
 ## Preserved version: V24
 

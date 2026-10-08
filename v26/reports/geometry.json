@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "version": "V26 reinforced clip and captive hook review",
+  "version": "V26 tab-free boards and captive hook print kit",
   "units": "mm",
   "parent_revision": "c101d7d6585c363e23cf140f9059f38a96a8d6c8",
   "reference_revision": "8085e9d79ffff3c69f07a1cca67595994237869e",
@@ -12,7 +12,7 @@
   "cadquery": "2.7.0",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "source_sha256": {
-    "source/build.py": "c65c59a84d9b46a40fbd923ac6a9408eeaa969f164a5770f0e22855bb29e44e9",
+    "source/build.py": "719186c3924b01c8928267d8b161dc4795d9c0854daa12cf9cf546908d21a9af",
     "source/common.py": "2d1222f18b80662a6419e7ff3b09abf1d97ca94c25f980023f4ddc4d8b885666",
     "reference/v24/source/case.py": "84e79ca32468bb2067708e17d953bdd865c4a39e9edd646228299777b0fc1da1",
     "reference/v24/source/loaded_pieces.py": "6a0e4f75e5695e5f74f130ef788950d72d82fe9c5678371515f32276d0d373ee"
@@ -730,272 +730,272 @@
       "detail": null
     },
     {
-      "name": "left reference cover slide 0",
+      "name": "left tab-free cover slide 0",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 2",
+      "name": "left tab-free cover slide 2",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 4",
+      "name": "left tab-free cover slide 4",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 6",
+      "name": "left tab-free cover slide 6",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 8",
+      "name": "left tab-free cover slide 8",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 10",
+      "name": "left tab-free cover slide 10",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 12",
+      "name": "left tab-free cover slide 12",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 14",
+      "name": "left tab-free cover slide 14",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 16",
+      "name": "left tab-free cover slide 16",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 18",
+      "name": "left tab-free cover slide 18",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 20",
+      "name": "left tab-free cover slide 20",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 22",
+      "name": "left tab-free cover slide 22",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 24",
+      "name": "left tab-free cover slide 24",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 26",
+      "name": "left tab-free cover slide 26",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 28",
+      "name": "left tab-free cover slide 28",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 30",
+      "name": "left tab-free cover slide 30",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 32",
+      "name": "left tab-free cover slide 32",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 34",
+      "name": "left tab-free cover slide 34",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 36",
+      "name": "left tab-free cover slide 36",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 38",
+      "name": "left tab-free cover slide 38",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 40",
+      "name": "left tab-free cover slide 40",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 42",
+      "name": "left tab-free cover slide 42",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 44",
+      "name": "left tab-free cover slide 44",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 46",
+      "name": "left tab-free cover slide 46",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 48",
+      "name": "left tab-free cover slide 48",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 50",
+      "name": "left tab-free cover slide 50",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 52",
+      "name": "left tab-free cover slide 52",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 54",
+      "name": "left tab-free cover slide 54",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 56",
+      "name": "left tab-free cover slide 56",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 58",
+      "name": "left tab-free cover slide 58",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 60",
+      "name": "left tab-free cover slide 60",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 62",
+      "name": "left tab-free cover slide 62",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 64",
+      "name": "left tab-free cover slide 64",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 66",
+      "name": "left tab-free cover slide 66",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 68",
+      "name": "left tab-free cover slide 68",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 70",
+      "name": "left tab-free cover slide 70",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 72",
+      "name": "left tab-free cover slide 72",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 74",
+      "name": "left tab-free cover slide 74",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 76",
+      "name": "left tab-free cover slide 76",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 78",
+      "name": "left tab-free cover slide 78",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 80",
+      "name": "left tab-free cover slide 80",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 82",
+      "name": "left tab-free cover slide 82",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 84",
+      "name": "left tab-free cover slide 84",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 86",
+      "name": "left tab-free cover slide 86",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 88",
+      "name": "left tab-free cover slide 88",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 90",
+      "name": "left tab-free cover slide 90",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 92",
+      "name": "left tab-free cover slide 92",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 94",
+      "name": "left tab-free cover slide 94",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 96",
+      "name": "left tab-free cover slide 96",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 98",
+      "name": "left tab-free cover slide 98",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 100",
+      "name": "left tab-free cover slide 100",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 102",
+      "name": "left tab-free cover slide 102",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 104",
+      "name": "left tab-free cover slide 104",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left reference cover slide 106",
+      "name": "left tab-free cover slide 106",
       "pass_": true,
       "detail": null
     },
@@ -1730,272 +1730,272 @@
       "detail": null
     },
     {
-      "name": "right reference cover slide 0",
+      "name": "right tab-free cover slide 0",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 2",
+      "name": "right tab-free cover slide 2",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 4",
+      "name": "right tab-free cover slide 4",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 6",
+      "name": "right tab-free cover slide 6",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 8",
+      "name": "right tab-free cover slide 8",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 10",
+      "name": "right tab-free cover slide 10",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 12",
+      "name": "right tab-free cover slide 12",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 14",
+      "name": "right tab-free cover slide 14",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 16",
+      "name": "right tab-free cover slide 16",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 18",
+      "name": "right tab-free cover slide 18",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 20",
+      "name": "right tab-free cover slide 20",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 22",
+      "name": "right tab-free cover slide 22",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 24",
+      "name": "right tab-free cover slide 24",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 26",
+      "name": "right tab-free cover slide 26",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 28",
+      "name": "right tab-free cover slide 28",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 30",
+      "name": "right tab-free cover slide 30",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 32",
+      "name": "right tab-free cover slide 32",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 34",
+      "name": "right tab-free cover slide 34",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 36",
+      "name": "right tab-free cover slide 36",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 38",
+      "name": "right tab-free cover slide 38",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 40",
+      "name": "right tab-free cover slide 40",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 42",
+      "name": "right tab-free cover slide 42",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 44",
+      "name": "right tab-free cover slide 44",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 46",
+      "name": "right tab-free cover slide 46",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 48",
+      "name": "right tab-free cover slide 48",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 50",
+      "name": "right tab-free cover slide 50",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 52",
+      "name": "right tab-free cover slide 52",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 54",
+      "name": "right tab-free cover slide 54",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 56",
+      "name": "right tab-free cover slide 56",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 58",
+      "name": "right tab-free cover slide 58",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 60",
+      "name": "right tab-free cover slide 60",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 62",
+      "name": "right tab-free cover slide 62",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 64",
+      "name": "right tab-free cover slide 64",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 66",
+      "name": "right tab-free cover slide 66",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 68",
+      "name": "right tab-free cover slide 68",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 70",
+      "name": "right tab-free cover slide 70",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 72",
+      "name": "right tab-free cover slide 72",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 74",
+      "name": "right tab-free cover slide 74",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 76",
+      "name": "right tab-free cover slide 76",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 78",
+      "name": "right tab-free cover slide 78",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 80",
+      "name": "right tab-free cover slide 80",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 82",
+      "name": "right tab-free cover slide 82",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 84",
+      "name": "right tab-free cover slide 84",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 86",
+      "name": "right tab-free cover slide 86",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 88",
+      "name": "right tab-free cover slide 88",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 90",
+      "name": "right tab-free cover slide 90",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 92",
+      "name": "right tab-free cover slide 92",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 94",
+      "name": "right tab-free cover slide 94",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 96",
+      "name": "right tab-free cover slide 96",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 98",
+      "name": "right tab-free cover slide 98",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 100",
+      "name": "right tab-free cover slide 100",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 102",
+      "name": "right tab-free cover slide 102",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 104",
+      "name": "right tab-free cover slide 104",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right reference cover slide 106",
+      "name": "right tab-free cover slide 106",
       "pass_": true,
       "detail": null
     },
@@ -2693,7 +2693,7 @@
       }
     },
     {
-      "name": "left revised clip board is one solid",
+      "name": "left tab-free board is one solid",
       "pass_": true,
       "detail": null
     },
@@ -2703,32 +2703,52 @@
       "detail": null
     },
     {
-      "name": "left clip blocks withdrawal at rest",
+      "name": "left board has no projecting release tab",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left assumed clip flex pose 0",
+      "name": "left rails block vertical board lift",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left assumed clip flex pose 0.7",
+      "name": "left rigid shoulder blocks 0.5mm over-insertion",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left assumed clip flex pose 1.4",
+      "name": "left rigid shoulder blocks 1mm over-insertion",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left assumed clip flex pose 2.1",
+      "name": "left closed hook blocks withdrawal 1mm",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left assumed clip flex pose 2.8",
+      "name": "left closed hook blocks withdrawal 2mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 3mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 4mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 8mm",
       "pass_": true,
       "detail": null
     },
@@ -2743,14 +2763,14 @@
       "detail": {
         "size_mm": [
           97.80000305175781,
-          192.10000304877758,
+          189.6000030040741,
           5.699999809265137
         ],
-        "volume_mm3": 82973.34506017774
+        "volume_mm3": 83642.00247849365
       }
     },
     {
-      "name": "right revised clip board is one solid",
+      "name": "right tab-free board is one solid",
       "pass_": true,
       "detail": null
     },
@@ -2760,32 +2780,52 @@
       "detail": null
     },
     {
-      "name": "right clip blocks withdrawal at rest",
+      "name": "right board has no projecting release tab",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right assumed clip flex pose 0",
+      "name": "right rails block vertical board lift",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right assumed clip flex pose 0.7",
+      "name": "right rigid shoulder blocks 0.5mm over-insertion",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right assumed clip flex pose 1.4",
+      "name": "right rigid shoulder blocks 1mm over-insertion",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right assumed clip flex pose 2.1",
+      "name": "right closed hook blocks withdrawal 1mm",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "right assumed clip flex pose 2.8",
+      "name": "right closed hook blocks withdrawal 2mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 3mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 4mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 8mm",
       "pass_": true,
       "detail": null
     },
@@ -2800,10 +2840,10 @@
       "detail": {
         "size_mm": [
           97.80000305175781,
-          192.10000304877758,
+          189.6000030040741,
           5.699999809265137
         ],
-        "volume_mm3": 82973.34986717721
+        "volume_mm3": 83642.00728970287
       }
     },
     {
@@ -4545,7 +4585,7 @@
           200.0,
           22.0
         ],
-        "volume_mm3": 98368.9860459178
+        "volume_mm3": 98368.97459185368
       }
     },
     {
@@ -4567,7 +4607,7 @@
           200.0,
           22.0
         ],
-        "volume_mm3": 98855.13494441814
+        "volume_mm3": 98855.13485895116
       }
     },
     {
@@ -4633,7 +4673,7 @@
         200.0,
         22.0
       ],
-      "sha256": "cad8baeb95b1c229c3309f069db30828fd79de8acd768a412794c81600cac97d"
+      "sha256": "1c14426ce8bcb5c3dee38a3ecfcc90809a1eb006a3136e0e87df6aa8643d9373"
     },
     "housing-right": {
       "size_mm": [
@@ -4641,7 +4681,7 @@
         200.0,
         22.0
       ],
-      "sha256": "980fd032165590ebba165f8307d61a8703133acfc76116f923e29a3903a4d5e1"
+      "sha256": "878907c6ecd4f1675ac3c3e5db9ca921baabd752f4878c78e71e3c2e6774744e"
     },
     "captive-hook": {
       "size_mm": [
@@ -4662,6 +4702,12 @@
     0
   ],
   "removable_tray": false,
+  "flexible_board_tabs": false,
+  "board_seating_shoulder_mm": [
+    4,
+    6.1,
+    4.7
+  ],
   "pocket_rims": true,
   "guide_top_mm": 6.9,
   "guide_height_above_floor_mm": 3.5,
@@ -4677,7 +4723,7 @@
   "printer_started": false,
   "limitations": [
     "Rigid sampled poses and nominal-piece guides; physical loading, dumping and shake/drop/transport remain unverified.",
-    "Wider board clip and captive hook are unprinted; release force and retention are physical gates. Rounded-cover underside remains pending.",
+    "Case hook secures both boards only while closed; boards slide freely when it is opened. Captive hook and tab-free covers need physical handling and transport tests. Rounded-cover underside remains pending.",
     "Two new bodies required; previous physical PIP success has no identified version or recorded strength rating."
   ]
 }

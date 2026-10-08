@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/package_full.py"
+  ],
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "dependencies": {
+    "cadquery": "2.7.0",
+    "vtk": "9.3.1",
+    "trimesh": "5.1.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0"
+  },
+  "base_revision": "ac27c6ead15d398b8140fc3b2c6ff1a32de3fb9c",
+  "source_sha256": {
+    "source/package.py": "5f4c4c9893db1cd4367e7dfdbbe410b60ab0e7a09e0cee4f2fc3cd8d0e11d2d2",
+    "source/board_plate.py": "38dfdc0beea336192a18421901968f012cf3198825e3cc2bcd9e63ace072826a",
+    "source/build.py": "719186c3924b01c8928267d8b161dc4795d9c0854daa12cf9cf546908d21a9af",
+    "source/verify_colour.py": "a481160f622a0e937f630442388f3f2564563aedf67822f0e38d6d8fc8a102d1",
+    "source/slice.py": "2097735c0cb6d969e156dfe0b1b85ac286c3adb26ed9143480847e1831fa283f",
+    "source/render.py": "5049114eccaa8a264a7a06fef04f89a17c8834b9b12202bedf6559763e5bc9e9",
+    "source/inspect_case_layers.py": "ee4662292bb31a7bdbcf986c9a6ed51ace0e00c6c27a7bf8c455d271f4c64aea",
+    "source/plates_full.py": "12a66950edcf6f908e648ae65856f8868d13516734e8f21b4cc38a907ad7538c",
+    "source/package_full.py": "2554eac37b53e1fdaa3feb0c0d69af3f31ae40ea8b185e295a1a1dd222bddcb5",
+    "source/caption.py": "bb06c043d897c8779c771e71d54ade3b91f3e8db8910eb24f1e23ba6d7226059",
+    "source/reproduce_full.py": "4a5c2bca45db39a8742a604e0ee4b701e096e0dceeb34a5ee4ab879bfe12f5fc",
+    "source/verify_review.py": "355068d8c6c950e80a10edc57133215e6fe676559cf9ca03e370fe23e3b86e29",
+    "source/common.py": "2d1222f18b80662a6419e7ff3b09abf1d97ca94c25f980023f4ddc4d8b885666",
+    "source/slice_full.py": "221cb086e5d83b0bfdaab0c9cd4e73ef6132d3f88fdae797c53433527ff80c4a",
+    "source/verify_pin_toolpaths.py": "7b7facb82a2ebc341ef74e609200ff343b42f1ec2837585b5659a87ec3a6d444",
+    "source/verify_pip_hinges.py": "5fbf9b0eaca21aa47f7acc98d90e7c380ee80ef7ab952e4cece59826bf2198d5"
+  },
+  "preserved_archives": {
+    "v25/V25-COUPON-KIT.zip": "7075ba1bbb3f7cbd5c867683f46d221b398a2e9b99c92eaa9ec10cae26318cd7",
+    "v25/STRENGTH-TRIAL/V25-STRENGTH-TRIAL.zip": "86ece451aa864eb21081b00a71c4a63c0f50f366332ef8c02a6d3b3a40ef0207",
+    "v25/REINFORCED-B-TRIAL/V25-REINFORCED-B-TRIAL.zip": "8ced9ddb737f98ca3d1ae8244da7c5f2a6d9f21eb6f82ad7a1cdc5bcf0065918",
+    "v25/FIXED-STORAGE/V25-FIXED-STORAGE.zip": "2e20be6253a648bc97d1ff586b569e7a9526fc28d59383c1fe6030f8e40c1dd0",
+    "v25/PIP-FIXED-STORAGE/V25-PIP-FIXED-STORAGE.zip": "6ab929a3ac146cfcc17d7eb8d5181fefd56c9f3c6590bc994f5ac5acf1bcc86d",
+    "v25/PIP-FIXED-GUIDES/V25-PIP-FIXED-GUIDES.zip": "a17e0f3c72a07d5eec62562ba31813165b0ae1383047639712febd2cc6c682e5",
+    "v26/V26-MECHANISM-REVIEW.zip": "664a4d012611dc2889dbf5ca7508ec9b8a0385b1cfe1426226637f5e121314ff"
+  },
+  "archives_unavailable_in_standalone_extraction": [],
+  "units": "mm",
+  "piece_package": "42 original Cat/Witch 20x20x8 mm flats and two supplied 8 mm V23 flat capstones; no weighted or sculpted pieces",
+  "flexible_board_tabs": false,
+  "hook_retains_both_closed_boards": true,
+  "board_seating_shoulder_mm": [
+    4,
+    6.1,
+    4.7
+  ],
+  "physical_acceptance": false,
+  "printer_started": false
+}

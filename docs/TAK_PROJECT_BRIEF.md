@@ -2,11 +2,13 @@
 
 Updated October 7, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current experiment: V26 — October 7
+### Current print plates: V26 — October 7
 
-The user explicitly names V26, reports that the sliding-board clip felt very thin and easily breakable, and asks to print the side hook in place too. [V26](../v26/README.md) retains the PIP main hinges and fixed piece guides. Its clip candidate doubles the free arm width from 1.2 to 2.4 mm, tapers from a 3.2 mm root and adds a 1.2 mm root blend. Nominal release travel remains 2.8 mm; increased release force and fatigue must be tested. The hook candidate uses a fixed 4 mm axle between two cheeks, including a 2 mm outer cheek and 3.4 mm frame bridge, with 0.4 mm radial/face gaps and a parked printing foot. No filament hook pivot or loose collar. A small local board notch grows 0.5 mm for lever clearance outside the playing field. The full field, original pieces, guides and 102.5×200×35 mm closed envelope remain.
+The user reports that pressing a sliding-board tab while pulling was awkward. They approve using the case hook to secure both covers during closed transport and explicitly choose to build full plates before small physical trials. [V26](../v26/START-HERE.md) now removes the flexible catches and restores solid bevelled board margins. A rigid 4 × 6.1 × 4.7 mm seating shoulder outside each playing field meets the front rail to stop inward travel; it moves away freely on outward withdrawal. Open the case hook, then pull either board without pressing a tab.
 
-Scope is a CAD review and two small mechanism trials, not a complete V26 print release. Both bodies and boards must be replaced for the integrated candidate; retained original flats, flat capstones and inlay artwork remain compatible in CAD. Physical release, captive retention, strength, fatigue, dumping and loaded transport remain gates. The requested rounded-cover underside remains pending. All V25/V24 exports, archives and the user extraction remain preserved. No printer job is started.
+The kit retains the PIP main hinges, permanent piece guides, 3.4 mm floors, 180 mm / 36 mm-cell field, original independent accent inlays and 102.5 × 200 × 35 mm closed envelope. The captive hook has a 4 mm fixed axle, 2 mm outer cheek, 3.4 mm frame bridge, 0.4 mm radial/face gaps and parked printing foot. No filament hook pivot, loose collar or removable tray. Three full sliced projects are under V26/FULL-PRINT: joined bodies/hook, full-size four-colour boards and optional original flat capstones. Actual silk spool profiles still require matching and reslicing.
+
+New V26 bodies and covers replace the V24/V25 assembly; original 42 flats and supplied flat capstones remain compatible in nominal CAD. Case/hook geometry is retained from the V26 mechanism review. Physical strength, hook capture, release comfort, dumping and loaded transport remain unobserved; no printer dispatch. Rounded-cover underside integration remains pending. Earlier V26 clip trials are superseded but preserved in their mechanism-review archive, and all V25/V24 assets and user extractions remain intact.
 
 ### Preserved experiment: V25 — October 7
 

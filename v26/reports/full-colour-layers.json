@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards-CC2-PLA/colour-tool-1 exact six inlay layers",
+      "pass": true,
+      "layers_mm": [
+        4.2,
+        4.3,
+        4.4,
+        4.5,
+        4.6,
+        4.7
+      ]
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards-CC2-PLA/colour-tool-2 exact six inlay layers",
+      "pass": true,
+      "layers_mm": [
+        4.2,
+        4.3,
+        4.4,
+        4.5,
+        4.6,
+        4.7
+      ]
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards-CC2-PLA/colour-tool-3 exact six inlay layers",
+      "pass": true,
+      "layers_mm": [
+        4.2,
+        4.3,
+        4.4,
+        4.5,
+        4.6,
+        4.7
+      ]
+    }
+  ],
+  "projects": {
+    "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards-CC2-PLA.3mf": {
+      "gcode_sha256": "b8508849abc19b409ac453e9d2815d620983cd9574b8f8171f4e8f2747ba80f5",
+      "coloured_model_layers_mm": {
+        "1": [
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7
+        ],
+        "2": [
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7
+        ],
+        "3": [
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7
+        ]
+      },
+      "model_deposition_segments": 820380,
+      "prime_tower_excluded": true
+    }
+  },
+  "physical_acceptance": false,
+  "note": "Linear positive-extrusion XY moves from embedded Gcode. The only arc is the end-of-print parking move. Prime tower is outside model regions. This confirms colour tools deposit at model locations on the six inlay layers; no physical bonding or colour purity claim."
+}
