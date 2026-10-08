@@ -2,7 +2,7 @@
 
 ## Current experiment: V25
 
-The user explicitly selected PIP main hinges and plain fixed storage wells, superseding filament axles and removable trays. Read v25/PIP-FIXED-STORAGE/START-HERE.md and docs/V25_CHECKPOINT.md. Both halves print together as an assembly using opposed captive 4 mm pivots with V24 full-height 8 mm roots, and 3.4 mm integral floors. Preserve the full field, original flat-piece capacity, independent accent colours and side-hook backup. The remembered physically strong PIP version is unidentified; fixed floors may increase stiffness but strength remains unverified. B is a historical filament-fit assumption. Broad lip, catch and remembered V17 rounded-cover integration are still pending. Preserve all earlier V25 kits and V24. No printer jobs or physical acceptance claims.
+The user selects fixed individual square pockets and a captive three-knuckle main hinge: stationary outer / moving centre / stationary outer, with an integral 4 mm post joining both stationary knuckles. Read v25/PIP-SQUARE-POCKETS/START-HERE.md and docs/V25_CHECKPOINT.md. Both halves print together as one assembly. Preserve 3.4 mm integral floors, the full field, original flat-piece capacity, independent accent colours and side-hook backup. Physical release and strength remain unverified. Broad lip, catch and remembered V17 rounded-cover integration remain pending. Preserve earlier V25 kits and V24. No printer jobs or physical acceptance claims.
 
 ## Preserved version: V24
 

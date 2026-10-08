@@ -2,9 +2,9 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## V25 PIP fixed-storage prototype
+## V25 square pockets and captive three-knuckle hinges
 
-The user selected [captive PIP hinges with fixed storage wells](v25/PIP-FIXED-STORAGE/START-HERE.md). Both halves print together; 4 mm opposed pivots and full-height 8 mm roots replace the main filament hinges. Plain 3.4 mm integral floors retain the same field, piece capacity and outside size. Start with the full-length hinge trial before replacement bodies. Physical release, strength and loaded transport remain unverified; cover-catch, lip and rounded-cover integration remain open. Earlier V25 filament kits and V24 stay preserved.
+[The current prototype](v25/PIP-SQUARE-POCKETS/START-HERE.md) restores 21 square stone holders and a capstone holder per half, integrated into the 3.4 mm floor. Each hinge has two stationary outer knuckles joined by a 4 mm integral post, with the moving knuckle captured between them. Both halves print together as one assembly. The full field, pieces and outside size stay the same. Physical release, strength and transport remain unverified; cover-catch, broad lip and rounded-cover integration remain open. Earlier V25 kits and V24 are preserved.
 
 ## Current print kit: V24
 

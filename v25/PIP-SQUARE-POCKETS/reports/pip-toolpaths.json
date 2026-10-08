@@ -1,0 +1,190 @@
+{
+  "checks": [
+    {
+      "name": "pivot 1 no support centerlines inside bearing cavity",
+      "pass": true,
+      "intrusions": 0,
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=16.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.396017830442986,
+        0.396017830442986
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=16.8",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3485030332264074,
+        0.3485030332264074
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=17.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3190168684011212,
+        0.3190168684011212
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=17.6",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3180168684011164,
+        0.3180168684011164
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=18.2",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3360053257756306,
+        0.3360053257756306
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 1 radial running gaps at Z=18.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.34900605166021137,
+        0.34900605166021137
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "hinge 1 axial face gap 2.8 at X offset -3",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3210539842202529
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "hinge 1 axial face gap 6.4 at X offset -3",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.32338117193441107
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "hinge 1 axial face gap 2.8 at X offset 3",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3204915693946475
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "hinge 1 axial face gap 6.4 at X offset 3",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.32049156939464396
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 2 no support centerlines inside bearing cavity",
+      "pass": true,
+      "intrusions": 0,
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=16.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.396017830442986,
+        0.396017830442986
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=16.8",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3485030332264074,
+        0.3485030332264074
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=17.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3190168684011212,
+        0.3190168684011212
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=17.6",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3180168684011164,
+        0.3180168684011164
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=18.2",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3360053257756306,
+        0.3360053257756306
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "pivot 2 radial running gaps at Z=18.4",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.34900605166021137,
+        0.34900605166021137
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "hinge 2 axial face gap 193.2 at X offset -3",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.32130856738950797
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "hinge 2 axial face gap 196.8 at X offset -3",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3233811719343862
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "hinge 2 axial face gap 193.2 at X offset 3",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.3204915693946191
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    },
+    {
+      "name": "hinge 2 axial face gap 196.8 at X offset 3",
+      "pass": true,
+      "estimated_bead_edge_gaps_mm": [
+        0.32049596849790873
+      ],
+      "gcode_sha256": "1e88f8c7b7ab8f11258e7fcb009c3cc5dcdd271c066a7da6e44accda51c89f27"
+    }
+  ],
+  "physical_acceptance": false,
+  "scope": "Sampled 0.50 mm bead gaps and support centerline exclusion; release and durability require physical testing."
+}
