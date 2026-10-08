@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/verify_review.py", line 29, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/verify_review.py", line 13, in main
+    gap=park.distance(h['left']);check('exported hook minimum body clearance',gap>.39,dict(gap_mm=gap))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/verify_review.py", line 10, in check
+    checks.append(dict(name=n,pass_=bool(ok),detail=d));assert ok,(n,d)
+                                                               ^^
+AssertionError: ('exported hook minimum body clearance', {'gap_mm': 0.17299264554112945})

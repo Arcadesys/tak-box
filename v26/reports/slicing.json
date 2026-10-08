@@ -1,0 +1,427 @@
+{
+  "plates": {
+    "01-V26-captive-hook-trial": {
+      "passed": true,
+      "exit_code": 0,
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/.slicer-work/config",
+        "--load-settings",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/process-case.json",
+        "--load-filaments",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/SMALL-TRIALS/01-V26-captive-hook-trial-CC2-PLA.3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/plates/01-V26-captive-hook-trial.3mf"
+      ],
+      "input_sha256": "cad2a08e9a0b1c66e5352314ed15f5f1eb948d877a876985a5f77c30545dfc03",
+      "project_sha256": "2ab3af428a2ffee95faf157a085207eb8d259a50b735f03c18d4c04ed698121e",
+      "profiles_sha256": {
+        "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+        "process-case.json": "b9b12d3cf370159dda6b013c98492ef3c8ebe50c3f10dae2827c870f4deb7bff",
+        "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+      },
+      "mesh_readback": [
+        {
+          "name": "hook-trial-fixture",
+          "watertight": true,
+          "single_body": true,
+          "surface_error_mm": 1.9442222106072746e-06,
+          "volume_error_mm3": 0.0003769329618990014
+        },
+        {
+          "name": "hook-trial",
+          "watertight": true,
+          "single_body": true,
+          "surface_error_mm": 2.8612759432391887e-06,
+          "volume_error_mm3": 0.00012098758588763303
+        }
+      ],
+      "plate_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "1493",
+        "weight": "4.93",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "bearing_checks": [
+        {
+          "name": "No support centerlines inside hook bearing",
+          "pass_": true,
+          "intrusions": 0
+        },
+        {
+          "name": "Hook radial bead gaps Z4.8",
+          "pass_": true,
+          "gaps_mm": [
+            0.3810040937979764,
+            0.3819999999999979
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z5.2",
+          "pass_": true,
+          "gaps_mm": [
+            0.3429999999999964,
+            0.3429999999999964
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z5.6",
+          "pass_": true,
+          "gaps_mm": [
+            0.3230000000000004,
+            0.3230000000000004
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.3200000000000003
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.4",
+          "pass_": true,
+          "gaps_mm": [
+            0.33100000000000307,
+            0.33100000000000307
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.8",
+          "pass_": true,
+          "gaps_mm": [
+            0.3585007221792722,
+            0.35900000000000176
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z5.2 Y37.599999999999994",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.329109821211393
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z5.2 Y44.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.33000000000000007
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z6.4 Y37.599999999999994",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.3288283026936707
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z6.4 Y44.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.33000000000000007
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "gcode_sha256": "ca14cda0a66bb67e818db0d3977bee3d9afcff28afdaf285c561db4829aeb7c9"
+    },
+    "02-V26-board-clip-trial": {
+      "passed": true,
+      "exit_code": 0,
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/.slicer-work/config",
+        "--load-settings",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/process-case.json",
+        "--load-filaments",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/SMALL-TRIALS/02-V26-board-clip-trial-CC2-PLA.3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/plates/02-V26-board-clip-trial.3mf"
+      ],
+      "input_sha256": "859443ae7a914ea1de220d8a46eccae6e075ac74d529492b3b5d7241aa815bdc",
+      "project_sha256": "41649eed866d25df8d4bedbc8f852493d75ae72f5d4eb1d253e844ce4bdc278a",
+      "profiles_sha256": {
+        "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+        "process-case.json": "b9b12d3cf370159dda6b013c98492ef3c8ebe50c3f10dae2827c870f4deb7bff",
+        "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+      },
+      "mesh_readback": [
+        {
+          "name": "clip-trial-seat",
+          "watertight": true,
+          "single_body": true,
+          "surface_error_mm": 2.498239381740669e-06,
+          "volume_error_mm3": -0.0004291386130717001
+        },
+        {
+          "name": "clip-trial-board",
+          "watertight": true,
+          "single_body": true,
+          "surface_error_mm": 3.999512465971098e-06,
+          "volume_error_mm3": 0.00018625302300279145
+        }
+      ],
+      "plate_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "2537",
+        "weight": "9.51",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "bearing_checks": [],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "gcode_sha256": "a42cef120a4505c7275ab587f62314f5b31a4500d652c1cad1e5128fe2ef9344"
+    },
+    "03-V26-combined-mechanism-trials": {
+      "passed": true,
+      "exit_code": 0,
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/.slicer-work/config",
+        "--load-settings",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/process-case.json",
+        "--load-filaments",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/SMALL-TRIALS/03-V26-combined-mechanism-trials-CC2-PLA.3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/plates/03-V26-combined-mechanism-trials.3mf"
+      ],
+      "input_sha256": "4653147b015fa1fc71ca1850b6121e58d04efe840dab8482b3bc46cf99901618",
+      "project_sha256": "88c92315756b8552fd836cd128aabc21d09a66a8d4c0a7c96235e4ca7791fc91",
+      "profiles_sha256": {
+        "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+        "process-case.json": "b9b12d3cf370159dda6b013c98492ef3c8ebe50c3f10dae2827c870f4deb7bff",
+        "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+      },
+      "mesh_readback": [
+        {
+          "name": "hook-trial-fixture",
+          "watertight": true,
+          "single_body": true,
+          "surface_error_mm": 1.9442222106072746e-06,
+          "volume_error_mm3": 0.00037693296144425403
+        },
+        {
+          "name": "hook-trial",
+          "watertight": true,
+          "single_body": true,
+          "surface_error_mm": 2.8612759432391887e-06,
+          "volume_error_mm3": 0.00012098758634238038
+        },
+        {
+          "name": "clip-trial-seat",
+          "watertight": true,
+          "single_body": true,
+          "surface_error_mm": 3.1016124845482896e-06,
+          "volume_error_mm3": 2.5739220291143283e-05
+        },
+        {
+          "name": "clip-trial-board",
+          "watertight": true,
+          "single_body": true,
+          "surface_error_mm": 4.090232263535284e-06,
+          "volume_error_mm3": 0.0001596288634573284
+        }
+      ],
+      "plate_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "3925",
+        "weight": "13.92",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "bearing_checks": [
+        {
+          "name": "No support centerlines inside hook bearing",
+          "pass_": true,
+          "intrusions": 0
+        },
+        {
+          "name": "Hook radial bead gaps Z4.8",
+          "pass_": true,
+          "gaps_mm": [
+            0.3810040937979764,
+            0.3819999999999979
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z5.2",
+          "pass_": true,
+          "gaps_mm": [
+            0.3429999999999964,
+            0.3429999999999964
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z5.6",
+          "pass_": true,
+          "gaps_mm": [
+            0.3230000000000004,
+            0.3230000000000004
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.3200000000000003
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.4",
+          "pass_": true,
+          "gaps_mm": [
+            0.33100000000000307,
+            0.33100000000000307
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.8",
+          "pass_": true,
+          "gaps_mm": [
+            0.3585007221792722,
+            0.35900000000000176
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z5.2 Y37.599999999999994",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.329109821211393
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z5.2 Y44.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.33000000000000007
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z6.4 Y37.599999999999994",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.3288283026936707
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z6.4 Y44.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.33000000000000007
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "gcode_sha256": "e233d2a0f7863cc4b1ce79aae1bbdb68eee73e771eb7db01283dff7e01dc6f3d"
+    }
+  },
+  "physical_acceptance": false,
+  "printer_started": false,
+  "source_sha256": {
+    "source/package.py": "5f4c4c9893db1cd4367e7dfdbbe410b60ab0e7a09e0cee4f2fc3cd8d0e11d2d2",
+    "source/build.py": "c65c59a84d9b46a40fbd923ac6a9408eeaa969f164a5770f0e22855bb29e44e9",
+    "source/trial.py": "fcf1eb6386663b417b933ef2ef00671d7874f91f811f700769932a3e9291c348",
+    "source/combine.py": "575d5f46313c2a5d904bc2f71fd56f1c9dcaf9ec055378b2d62a4b1dec29aad9",
+    "source/slice.py": "2097735c0cb6d969e156dfe0b1b85ac286c3adb26ed9143480847e1831fa283f",
+    "source/reproduce.py": "bf5cb9283c5b1c425e14ca01bbaf214dfec3fddfd7b40cd99fcd903527486fb9",
+    "source/render.py": "333093b8dde9be055e9bb9f643ab94690cc6763069824b823710a2582a4f615b",
+    "source/inspect_case_layers.py": "ee4662292bb31a7bdbcf986c9a6ed51ace0e00c6c27a7bf8c455d271f4c64aea",
+    "source/caption.py": "042fd61043b192b448a797e5c0d01302e222402f34a589cf1a835147a7b5113b",
+    "source/verify_review.py": "355068d8c6c950e80a10edc57133215e6fe676559cf9ca03e370fe23e3b86e29",
+    "source/common.py": "2d1222f18b80662a6419e7ff3b09abf1d97ca94c25f980023f4ddc4d8b885666",
+    "source/verify_pin_toolpaths.py": "7b7facb82a2ebc341ef74e609200ff343b42f1ec2837585b5659a87ec3a6d444",
+    "source/verify_pip_hinges.py": "5fbf9b0eaca21aa47f7acc98d90e7c380ee80ef7ab952e4cece59826bf2198d5"
+  },
+  "scope": "Dry trial slices; sampled 0.50 mm bead gaps and support-centerline checks, not release force or durability."
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/render.py", line 45, in <module>
+    main()
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/render.py", line 33, in main
+    draw('12-case-plate',[(n,load(n)) for n in ('housing-left','housing-right','captive-hook')],'Plate 1 — PIP bodies, fixed guides and captive hook','Keep all three captive components together in their existing placement',(100,100,900))
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/render.py", line 13, in draw
+    r.render(n,scene,title,camera)
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/reference/v24/source/render_utils.py", line 22, in render
+    actor.GetProperty().SetColor(*colors[label.split('-')[0]])
+                                  ~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'captive'

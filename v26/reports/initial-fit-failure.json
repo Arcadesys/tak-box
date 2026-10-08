@@ -1,0 +1,1 @@
+{"rejected":true,"hook_mount_overlap_mm3":{"30_degrees":0.4538329976,"90_degrees":0.9076659953},"cause":"Parked bed-foot corners extended beyond initial 6.2 mm bearing relief. Expanded rotating relief to 7 mm and moved frame bridge outward; recheck required.","initial_build":"Stopped redundant uncached full build after targeted collision detection.","physical_acceptance":false}

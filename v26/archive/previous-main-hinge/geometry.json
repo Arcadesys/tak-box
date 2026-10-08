@@ -1,0 +1,4729 @@
+{
+  "passed": true,
+  "version": "V26 tab-free boards and captive hook print kit",
+  "units": "mm",
+  "parent_revision": "c101d7d6585c363e23cf140f9059f38a96a8d6c8",
+  "reference_revision": "8085e9d79ffff3c69f07a1cca67595994237869e",
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/build.py"
+  ],
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "cadquery": "2.7.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_sha256": {
+    "source/build.py": "719186c3924b01c8928267d8b161dc4795d9c0854daa12cf9cf546908d21a9af",
+    "source/common.py": "2d1222f18b80662a6419e7ff3b09abf1d97ca94c25f980023f4ddc4d8b885666",
+    "reference/v24/source/case.py": "84e79ca32468bb2067708e17d953bdd865c4a39e9edd646228299777b0fc1da1",
+    "reference/v24/source/loaded_pieces.py": "6a0e4f75e5695e5f74f130ef788950d72d82fe9c5678371515f32276d0d373ee"
+  },
+  "reference_body_sha256": {
+    "housing-design-right.step": "fcb6b737e6f7a1e2642a8d9ac280f12c55a626d1fe132c001e28556fce0050d9",
+    "housing-design-left.step": "a5606cc7f7b4e9585071c252a6acb9a65ff7a9c51a1e13b842e903a1516072b0"
+  },
+  "reference_board_sha256": {
+    "board-right-stars.step": "25d2ef78856b1a3e408f2d1a82e01dce52cced2c7b7ec35e4512304e012401e4",
+    "board-left-body.step": "4d15f69ba80270021e70b112fad7f271307d1ff35bc03851e7a4d45751723856",
+    "board-left-grid.step": "f499d7df9020aecac8954bcb59bde6b7629282b6975b3b72a5731d6739b2d28e",
+    "board-right-body.step": "e9fb53f5f2ae6cefce75728e6312a3209903f803282a5d62864e3b5c5af4a2ea",
+    "board-right-orange.step": "8f2d30802085784504227475be98f20dbc1f68fe10eb3eea5a7e1b2926262d00",
+    "board-left-orange.step": "03420b480808bbbfd0a3a3fe10784d4605c9f4df54ea818f7ed2152e6dbe05f0",
+    "board-right-grid.step": "dc688d2fd3925beb91f3af524b33bdf754a7a3be77775737469f40345a88719d",
+    "board-right-purple.step": "1076102ae07aff5de052c04877107dd747a2c570d874c98fb24ce9287a8db654",
+    "board-left-stars.step": "04df529459d1fe4174f8c6b7a0263bc66620ee8f37bd6fc6022730c4c16b4ea6",
+    "board-left-purple.step": "766c518a8edb5a6c5b007c78154f3234518af7b0df8b3faafcc4860ba054165d"
+  },
+  "checks": [
+    {
+      "name": "left connected case body",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed floor replaces tray height",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left 21 fixed flat guides plus capstone guide",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left guides are integral body material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left guide top 6.9mm leaves 4.5mm piece grasp height",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 0,0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 0,1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 0,2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 0,3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 0,4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 0,5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 0,6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 1,0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 1,1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 1,2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 1,3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 1,4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 1,5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 1,6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 2,0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 2,1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 2,2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 2,3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 2,4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 2,5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left fixed guide wall 2,6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left 14mm rear fingertip access 53.5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left 14mm rear fingertip access 78.5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left 21 original flats and one flat capstone",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-1 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-1 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-1 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-1 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-1 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-2 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-2 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-2 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-2 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-2 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-3 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-3 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-3 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-3 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-3 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-4 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-4 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-4 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-4 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-4 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-5 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-5 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-5 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-5 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-5 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-6 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-6 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-6 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-6 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-6 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-7 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-7 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-7 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-7 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-7 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-8 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-8 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-8 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-8 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-8 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-9 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-9 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-9 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-9 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-9 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-10 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-10 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-10 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-10 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-10 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-11 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-11 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-11 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-11 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-11 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-12 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-12 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-12 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-12 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-12 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-13 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-13 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-13 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-13 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-13 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-14 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-14 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-14 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-14 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-14 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-15 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-15 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-15 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-15 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-15 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-16 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-16 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-16 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-16 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-16 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-17 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-17 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-17 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-17 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-17 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-18 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-18 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-18 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-18 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-18 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-19 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-19 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-19 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-19 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-19 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-20 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-20 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-20 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-20 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-20 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-21 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-21 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-21 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-21 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-21 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-capstone fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-capstone seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-capstone fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-capstone lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "cat-capstone cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left tab-free cover slide 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "housing-design-left CAD validity",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "housing-design-left STEP readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "board-reference-left CAD validity",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "board-reference-left STEP readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "pieces-reference-left CAD validity",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "pieces-reference-left STEP readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right connected case body",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed floor replaces tray height",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right 21 fixed flat guides plus capstone guide",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right guides are integral body material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right guide top 6.9mm leaves 4.5mm piece grasp height",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right body change limited to fixed guides",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 0,0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 0,1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 0,2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 0,3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 0,4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 0,5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 0,6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 1,0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 1,1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 1,2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 1,3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 1,4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 1,5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 1,6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 2,0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 2,1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 2,2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 2,3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 2,4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 2,5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right fixed guide wall 2,6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right 14mm rear fingertip access 53.5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right 14mm rear fingertip access 78.5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right 21 original flats and one flat capstone",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-1 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-1 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-1 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-1 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-1 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-2 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-2 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-2 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-2 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-2 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-3 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-3 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-3 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-3 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-3 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-4 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-4 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-4 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-4 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-4 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-5 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-5 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-5 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-5 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-5 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-6 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-6 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-6 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-6 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-6 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-7 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-7 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-7 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-7 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-7 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-8 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-8 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-8 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-8 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-8 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-9 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-9 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-9 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-9 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-9 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-10 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-10 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-10 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-10 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-10 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-11 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-11 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-11 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-11 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-11 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-12 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-12 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-12 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-12 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-12 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-13 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-13 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-13 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-13 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-13 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-14 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-14 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-14 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-14 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-14 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-15 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-15 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-15 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-15 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-15 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-16 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-16 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-16 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-16 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-16 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-17 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-17 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-17 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-17 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-17 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-18 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-18 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-18 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-18 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-18 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-19 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-19 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-19 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-19 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-19 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-20 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-20 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-20 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-20 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-20 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-21 fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-21 seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-21 fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-21 lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-21 cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-capstone fitted in fixed well",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-capstone seated on fixed floor",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-capstone fixed guides block 3mm XY shift under cover",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-capstone lifts straight out after cover removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "witch-capstone cover blocks upward lift at 0.6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right tab-free cover slide 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "housing-design-right CAD validity",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "housing-design-right STEP readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "board-reference-right CAD validity",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "board-reference-right STEP readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "pieces-reference-right CAD validity",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "pieces-reference-right STEP readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "opposed pivots block forward axial removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "opposed pivots block backward axial removal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "pivot CAD clearance 4.5",
+      "pass_": true,
+      "detail": {
+        "minimum_surface_gap_mm": 0.3999999999999885
+      }
+    },
+    {
+      "name": "pivot CAD clearance 195.5",
+      "pass_": true,
+      "detail": {
+        "minimum_surface_gap_mm": 0.39999999999998975
+      }
+    },
+    {
+      "name": "left full-height root 4.9 Z1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left full-height root 4.9 Z4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left full-height root 4.9 Z8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left full-height root 4.9 Z12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left full-height root 190.8 Z1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left full-height root 190.8 Z4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left full-height root 190.8 Z8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left full-height root 190.8 Z12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right full-height root 0.2 Z1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right full-height root 0.2 Z4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right full-height root 0.2 Z8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right full-height root 0.2 Z12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right full-height root 195.5 Z1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right full-height root 195.5 Z4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right full-height root 195.5 Z8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right full-height root 195.5 Z12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 108",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 112",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 114",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 116",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 118",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 122",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 124",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 126",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 128",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 132",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 134",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 136",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 138",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 142",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 144",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 146",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 148",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 152",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 154",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 156",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 158",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 162",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 164",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 166",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 168",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 172",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 174",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 176",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 178",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "body and cover fold 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "packed reference set fold 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "closed envelope unchanged",
+      "pass_": true,
+      "detail": {
+        "x": 102.50000019999999,
+        "y": 200.0000002,
+        "z": 35.00000020000001
+      }
+    },
+    {
+      "name": "left tab-free board is one solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left board playing field unchanged",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left board has no projecting release tab",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left rails block vertical board lift",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left rigid shoulder blocks 0.5mm over-insertion",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left rigid shoulder blocks 1mm over-insertion",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 1mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 2mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 3mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 4mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left closed hook blocks withdrawal 8mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-body CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "board-left-body STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          97.80000305175781,
+          189.6000030040741,
+          5.699999809265137
+        ],
+        "volume_mm3": 83642.00247849365
+      }
+    },
+    {
+      "name": "right tab-free board is one solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right board playing field unchanged",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right board has no projecting release tab",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right rails block vertical board lift",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right rigid shoulder blocks 0.5mm over-insertion",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right rigid shoulder blocks 1mm over-insertion",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 1mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 2mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 3mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 4mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 6mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right closed hook blocks withdrawal 8mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-body CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "board-right-body STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          97.80000305175781,
+          189.6000030040741,
+          5.699999809265137
+        ],
+        "volume_mm3": 83642.00728970287
+      }
+    },
+    {
+      "name": "captive hook own-body rotation 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook own-body rotation 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-case rotation 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive hook closed-boards rotation 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook parked bed foot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook radial axle clearance",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook axial capture -1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook axial capture 1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 108",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 112",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 114",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 116",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 118",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 122",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 124",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 126",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 128",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 132",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 134",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 136",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 138",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 142",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 144",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 146",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 148",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 152",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 154",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 156",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 158",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 162",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 164",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 166",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 168",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 172",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 174",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 176",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 178",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook case fold 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left parked hook board removal 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right parked hook board removal 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-design-closed CAD validity",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-design-closed STEP readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-design-parked CAD validity",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-design-parked STEP readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          102.5,
+          200.0,
+          22.0
+        ],
+        "volume_mm3": 98368.97459185368
+      }
+    },
+    {
+      "name": "housing-left bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          102.5,
+          200.0,
+          22.0
+        ],
+        "volume_mm3": 98855.13485895116
+      }
+    },
+    {
+      "name": "housing-right bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive-hook CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "captive-hook STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          3.200000762939453,
+          33.49968719482422,
+          11.599411010742188
+        ],
+        "volume_mm3": 503.29560140829864
+      }
+    },
+    {
+      "name": "paired PIP bodies have no overlap",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-01-V26-PIP-guides-and-hook",
+      "pass_": true,
+      "detail": {
+        "objects": [
+          "housing-left",
+          "housing-right",
+          "captive-hook"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "01-V26-PIP-guides-and-hook joint support and brim overrides",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "PIP pair has one assembly build item",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "PIP assembly retains both bodies and captive hook",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "specifications": {
+    "housing-left": {
+      "size_mm": [
+        102.5,
+        200.0,
+        22.0
+      ],
+      "sha256": "1c14426ce8bcb5c3dee38a3ecfcc90809a1eb006a3136e0e87df6aa8643d9373"
+    },
+    "housing-right": {
+      "size_mm": [
+        102.5,
+        200.0,
+        22.0
+      ],
+      "sha256": "878907c6ecd4f1675ac3c3e5db9ca921baabd752f4878c78e71e3c2e6774744e"
+    },
+    "captive-hook": {
+      "size_mm": [
+        3.200000762939453,
+        33.49968719482422,
+        11.599411010742188
+      ],
+      "sha256": "9c65a4ac8b91fa35ea8191e40ae232e164e4e2422a43998fb0a9aa7ac9e10725"
+    }
+  },
+  "printed_parts": 3,
+  "main_hinge": "opposed captive PIP pivots",
+  "nominal_pin_diameter_mm": 4,
+  "nominal_radial_and_face_clearance_mm": 0.4,
+  "print_translation_mm": [
+    17,
+    21,
+    0
+  ],
+  "removable_tray": false,
+  "flexible_board_tabs": false,
+  "board_seating_shoulder_mm": [
+    4,
+    6.1,
+    4.7
+  ],
+  "pocket_rims": true,
+  "guide_top_mm": 6.9,
+  "guide_height_above_floor_mm": 3.5,
+  "fixed_floor_mm": 3.4,
+  "piece_package": "42 original Cat/Witch 20x20x8 mm flats and two supplied 8 mm V23 flat capstones; no weighted or sculpted pieces",
+  "packed_piece_count": 44,
+  "closed_dimensions_mm": [
+    102.50000019999999,
+    200.0000002,
+    35.00000020000001
+  ],
+  "physical_acceptance": false,
+  "printer_started": false,
+  "limitations": [
+    "Rigid sampled poses and nominal-piece guides; physical loading, dumping and shake/drop/transport remain unverified.",
+    "Case hook secures both boards only while closed; boards slide freely when it is opened. Captive hook and tab-free covers need physical handling and transport tests. Rounded-cover underside remains pending.",
+    "Two new bodies required; previous physical PIP success has no identified version or recorded strength rating."
+  ]
+}

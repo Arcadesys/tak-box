@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/verify_review.py", line 31, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/verify_review.py", line 28, in main
+    check(side+' body modifications stay in hook mount region',original.cut(h[side]).cut(allowed).Volume()<1e-5 and h[side].cut(original).cut(allowed).Volume()<1e-5)
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/lib/python3.12/site-packages/cadquery/occ_impl/shapes.py", line 4641, in cut
+    return tcast(Compound, self._bool_op(self, toCut, cut_op))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/lib/python3.12/site-packages/cadquery/occ_impl/shapes.py", line 1300, in _bool_op
+    return Shape.cast(op.Shape())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/lib/python3.12/site-packages/cadquery/occ_impl/shapes.py", line 473, in cast
+    t = shapetype(obj)
+        ^^^^^^^^^^^^^^
+  File "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/lib/python3.12/site-packages/cadquery/occ_impl/shapes.py", line 395, in shapetype
+    raise ValueError("Null TopoDS_Shape object")
+ValueError: Null TopoDS_Shape object

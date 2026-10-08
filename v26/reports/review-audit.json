@@ -1,0 +1,313 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "exported hook minimum body clearance",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999915
+      }
+    },
+    {
+      "name": "exported hook own-body gap 0",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999931
+      }
+    },
+    {
+      "name": "exported hook own-body gap 5",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999996
+      }
+    },
+    {
+      "name": "exported hook own-body gap 10",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999938
+      }
+    },
+    {
+      "name": "exported hook own-body gap 15",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999547
+      }
+    },
+    {
+      "name": "exported hook own-body gap 20",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999959
+      }
+    },
+    {
+      "name": "exported hook own-body gap 25",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999973
+      }
+    },
+    {
+      "name": "exported hook own-body gap 30",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999998576
+      }
+    },
+    {
+      "name": "exported hook own-body gap 35",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999514
+      }
+    },
+    {
+      "name": "exported hook own-body gap 40",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999964
+      }
+    },
+    {
+      "name": "exported hook own-body gap 45",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999961
+      }
+    },
+    {
+      "name": "exported hook own-body gap 50",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999214
+      }
+    },
+    {
+      "name": "exported hook own-body gap 55",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999214
+      }
+    },
+    {
+      "name": "exported hook own-body gap 60",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999625
+      }
+    },
+    {
+      "name": "exported hook own-body gap 65",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999325
+      }
+    },
+    {
+      "name": "exported hook own-body gap 70",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999514
+      }
+    },
+    {
+      "name": "exported hook own-body gap 75",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999902
+      }
+    },
+    {
+      "name": "exported hook own-body gap 80",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999597
+      }
+    },
+    {
+      "name": "exported hook own-body gap 85",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.3999999999999813
+      }
+    },
+    {
+      "name": "exported hook own-body gap 90",
+      "pass_": true,
+      "detail": {
+        "gap_mm": 0.39999999999999414
+      }
+    },
+    {
+      "name": "latched hook stops early case opening",
+      "pass_": true,
+      "detail": {
+        "overlap_mm3": {
+          "179": 7.913252132564848,
+          "178": 17.98921707528653,
+          "177": 3.687817744514187
+        }
+      }
+    },
+    {
+      "name": "left/grid retained inlay geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/stars retained inlay geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/orange retained inlay geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/purple retained inlay geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/body/grid disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/body/stars disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/body/orange disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/body/purple disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/grid/stars disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/grid/orange disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/grid/purple disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/stars/orange disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/stars/purple disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left/orange/purple disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left body modifications stay in main-hinge bays, hook mount and outer corner rounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/grid retained inlay geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/stars retained inlay geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/orange retained inlay geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/purple retained inlay geometry",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/body/grid disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/body/stars disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/body/orange disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/body/purple disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/grid/stars disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/grid/orange disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/grid/purple disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/stars/orange disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/stars/purple disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right/orange/purple disjoint material",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right body modifications stay in main-hinge bays, hook mount and outer corner rounds",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/verify_review.py"
+  ],
+  "source_sha256": "2b02c51503fd22c5050af627fded78228267907554dfb534309b93e62eaa4ce8",
+  "physical_acceptance": false,
+  "scope": "Nominal exported CAD material and early opening obstruction; no physical retention force rating."
+}

@@ -1,0 +1,605 @@
+{
+  "passed": true,
+  "printer": "Elegoo Centauri Carbon 2, 0.4 mm nozzle",
+  "slicer": "ElegooSlicer 2.4.2",
+  "physical_acceptance": false,
+  "printer_started": false,
+  "source_sha256": {
+    "source/slice_full.py": "bcf7b6cca2dcda5171357b8ba9448a1b4aa7bcf106ef6c8f4da6181ece3066d2",
+    "source/slice.py": "2097735c0cb6d969e156dfe0b1b85ac286c3adb26ed9143480847e1831fa283f",
+    "source/verify_pip_hinges.py": "9d17f75bbe9b94bb74c7f8151b4a2d4b452abb3832ceb2dfff8fcf4f5d76a5aa",
+    "source/inspect_case_layers.py": "ee4662292bb31a7bdbcf986c9a6ed51ace0e00c6c27a7bf8c455d271f4c64aea",
+    "source/verify_pin_toolpaths.py": "7b7facb82a2ebc341ef74e609200ff343b42f1ec2837585b5659a87ec3a6d444"
+  },
+  "plates": {
+    "01-V26-PIP-guides-and-hook": {
+      "passed": true,
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/.slicer-work/full-config",
+        "--load-settings",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/process-case.json",
+        "--load-filaments",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/FULL-PRINT/01-V26-PIP-guides-and-hook-CC2-PLA.3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/plates/01-V26-PIP-guides-and-hook.3mf"
+      ],
+      "input_sha256": "0d29632e574a96adeb2579958eec00f8709c1b9ca0e8c6998a213a8cdaa18853",
+      "project_sha256": "bbeb2295897e07b74879db785a8f80290a9c71c7ae40d025b4f0f3e8296c1c77",
+      "profiles_sha256": {
+        "profiles/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
+        "profiles/process-case.json": "b9b12d3cf370159dda6b013c98492ef3c8ebe50c3f10dae2827c870f4deb7bff",
+        "profiles/filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+      },
+      "mesh_readback": [
+        {
+          "name": "housing-left",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 8.294100287957565e-06,
+          "volume_error_mm3": 0.00886537114274688
+        },
+        {
+          "name": "housing-right",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 1.037514336314445e-05,
+          "volume_error_mm3": 0.010887622949667275
+        },
+        {
+          "name": "captive-hook",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 7.512556151441365e-06,
+          "volume_error_mm3": 0.00010447474846841942
+        }
+      ],
+      "plate_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "34152",
+        "weight": "163.71",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "bearing_checks": [
+        {
+          "name": "pivot 1 no support centerlines inside bearing cavity",
+          "pass": true,
+          "intrusions": 0,
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 1 radial running gaps at Z=16.4",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.39801783044298134,
+            0.39801783044298134
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 1 radial running gaps at Z=16.8",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.3485030332264074,
+            0.3485030332264074
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 1 radial running gaps at Z=17.4",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.320016868401126,
+            0.320016868401126
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 1 radial running gaps at Z=17.6",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.31801638702989976,
+            0.31801638702989976
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 1 radial running gaps at Z=18.2",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.33400532577562103,
+            0.33400532577562103
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 1 radial running gaps at Z=18.4",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.3485030332264074,
+            0.3485030332264074
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 1 no support in axial gap 2.8000000000000003,3.2",
+          "pass": true,
+          "intrusions": 0,
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 1 no support in axial gap 6.4,6.800000000000001",
+          "pass": true,
+          "intrusions": 0,
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 1 both support face gaps Z16.8 X111.8",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.32094409078104746,
+            0.32049451505885784
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 1 both support face gaps Z16.8 X118.2",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.32063186028728197,
+            0.3206318602872784
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 1 both support face gaps Z18.2 X111.8",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.3219266348435319,
+            0.3210732041118334
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 1 both support face gaps Z18.2 X118.2",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.32061338044439935,
+            0.32106633930986206
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 2 no support centerlines inside bearing cavity",
+          "pass": true,
+          "intrusions": 0,
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 2 radial running gaps at Z=16.4",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.39801783044298134,
+            0.39801783044298134
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 2 radial running gaps at Z=16.8",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.3485030332264074,
+            0.3485030332264074
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 2 radial running gaps at Z=17.4",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.320016868401126,
+            0.320016868401126
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 2 radial running gaps at Z=17.6",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.31801638702989976,
+            0.31801638702989976
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 2 radial running gaps at Z=18.2",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.33400532577562103,
+            0.33400532577562103
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "pivot 2 radial running gaps at Z=18.4",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.3485030332264074,
+            0.3485030332264074
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 2 no support in axial gap 193.2,193.6",
+          "pass": true,
+          "intrusions": 0,
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 2 no support in axial gap 196.8,197.20000000000002",
+          "pass": true,
+          "intrusions": 0,
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 2 both support face gaps Z16.8 X111.8",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.32094409078104036,
+            0.3204945150588685
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 2 both support face gaps Z16.8 X118.2",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.3206318602872784,
+            0.32025652115919456
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 2 both support face gaps Z18.2 X111.8",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.32150565044730683,
+            0.3210698555432998
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "hinge 2 both support face gaps Z18.2 X118.2",
+          "pass": true,
+          "estimated_bead_edge_gaps_mm": [
+            0.32061338044439935,
+            0.3210663393098514
+          ],
+          "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde"
+        },
+        {
+          "name": "No support centerlines inside hook bearing",
+          "pass_": true,
+          "intrusions": 0
+        },
+        {
+          "name": "Hook radial bead gaps Z4.8",
+          "pass_": true,
+          "gaps_mm": [
+            0.3810040937979835,
+            0.382000000000005
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z5.2",
+          "pass_": true,
+          "gaps_mm": [
+            0.3430000000000035,
+            0.3430000000000035
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z5.6",
+          "pass_": true,
+          "gaps_mm": [
+            0.3230000000000075,
+            0.3230000000000075
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3199999999999932,
+            0.3200000000000074
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.4",
+          "pass_": true,
+          "gaps_mm": [
+            0.33100000000000307,
+            0.33099999999998886
+          ]
+        },
+        {
+          "name": "Hook radial bead gaps Z6.8",
+          "pass_": true,
+          "gaps_mm": [
+            0.3585007221792722,
+            0.35899999999999466
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z5.2 Y118.6",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.329109821211393
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z5.2 Y125.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.3299999999999983
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z6.4 Y118.6",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.3288283026936689
+          ]
+        },
+        {
+          "name": "Hook face bead gaps Z6.4 Y125.0",
+          "pass_": true,
+          "gaps_mm": [
+            0.3200000000000003,
+            0.3299999999999983
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "gcode_sha256": "52a9fa33b08f1ff0590826d291d456dbc237131781e72d7be068ddcf00caefde",
+      "accent_profiles_final": null
+    },
+    "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards": {
+      "passed": true,
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/.slicer-work/full-config",
+        "--load-settings",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/boards/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/boards/process.json",
+        "--load-filaments",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/boards/black.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/boards/white.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/boards/silk-orange-placeholder.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/boards/silk-purple-placeholder.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/FULL-PRINT/02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards-CC2-PLA.3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/plates/02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards.3mf"
+      ],
+      "input_sha256": "ec04e7666e5662a3a306f7c77b8813afcd94b943b529ee09a32566e3d5358095",
+      "project_sha256": "c39659dcb395cc7124648e709c500c478795908e1975396ddfe2bfb8dd09a6bc",
+      "profiles_sha256": {
+        "profiles/boards/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
+        "profiles/boards/process.json": "0f9081c30bb9b7576f38baee93f039994e95aa4ff83c1fb55cc592228eb54773",
+        "profiles/boards/black.json": "19965c7fc6caf54e4d07bc49b3ae9f04766b5bee3a6e9b7e33182c2c8dfedcd1",
+        "profiles/boards/white.json": "575dba6347b36bf984a7022111957e5f84fb5c2174ef15fcca8c6f9ecce84588",
+        "profiles/boards/silk-orange-placeholder.json": "86bf1be89d522fd11a212ea0630b1d63377b7d474774929373635e483df7599f",
+        "profiles/boards/silk-purple-placeholder.json": "5bdb064aa1b4fac700aa37d00ad4019c7238c4890ab47bcfb5c274997dce7376"
+      },
+      "mesh_readback": [
+        {
+          "name": "board-left-body",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 8.49941174833055e-06,
+          "volume_error_mm3": -0.0008139495912473649
+        },
+        {
+          "name": "board-left-grid",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 5.729861785100059e-06,
+          "volume_error_mm3": -0.000374947152522509
+        },
+        {
+          "name": "board-left-stars",
+          "watertight": true,
+          "mesh_bodies": 7,
+          "surface_error_mm": 1.2302492256508664e-05,
+          "volume_error_mm3": 2.0388797405956893e-07
+        },
+        {
+          "name": "board-left-orange",
+          "watertight": true,
+          "mesh_bodies": 6,
+          "surface_error_mm": 1.0896853479415251e-05,
+          "volume_error_mm3": -1.1471119488959403e-05
+        },
+        {
+          "name": "board-left-purple",
+          "watertight": true,
+          "mesh_bodies": 5,
+          "surface_error_mm": 9.409639507080877e-06,
+          "volume_error_mm3": -1.2559064096251404e-05
+        },
+        {
+          "name": "board-right-body",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 1.713971996374614e-05,
+          "volume_error_mm3": 0.0014514774666167796
+        },
+        {
+          "name": "board-right-grid",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 1.4790382569169646e-05,
+          "volume_error_mm3": 0.00040582077542694606
+        },
+        {
+          "name": "board-right-stars",
+          "watertight": true,
+          "mesh_bodies": 7,
+          "surface_error_mm": 1.1054470436193062e-05,
+          "volume_error_mm3": -1.6751751528154557e-06
+        },
+        {
+          "name": "board-right-orange",
+          "watertight": true,
+          "mesh_bodies": 5,
+          "surface_error_mm": 1.3521513114104747e-05,
+          "volume_error_mm3": 1.1176996782324977e-05
+        },
+        {
+          "name": "board-right-purple",
+          "watertight": true,
+          "mesh_bodies": 6,
+          "surface_error_mm": 1.1360955743231953e-05,
+          "volume_error_mm3": 1.4592944967972699e-05
+        }
+      ],
+      "plate_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "28819",
+        "weight": "121.17",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0 0 0 0"
+      },
+      "bearing_checks": [],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "gcode_sha256": "8eaa15c5a652231d67c25ed763d0b3b42d6bb4da669d309178215d809f72905e",
+      "accent_profiles_final": false
+    },
+    "03-V26-flat-capstones": {
+      "passed": true,
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/.slicer-work/full-config",
+        "--load-settings",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/process-case.json",
+        "--load-filaments",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/FULL-PRINT/03-V26-flat-capstones-CC2-PLA.3mf",
+        "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/plates/03-V26-flat-capstones.3mf"
+      ],
+      "input_sha256": "e50a3433d96b1c390e1f81b1d8de2104c487c28105506e5351c0b3ce1d322bf2",
+      "project_sha256": "e30c1dfb4eb3cb5b1f0e589c9524600f65481e0795b9e241ff70a7caa17883b3",
+      "profiles_sha256": {
+        "profiles/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
+        "profiles/process-case.json": "b9b12d3cf370159dda6b013c98492ef3c8ebe50c3f10dae2827c870f4deb7bff",
+        "profiles/filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+      },
+      "mesh_readback": [
+        {
+          "name": "capstone-cat",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 1.6530577756643666e-06,
+          "volume_error_mm3": 5.7484036005917005e-05
+        },
+        {
+          "name": "capstone-witch",
+          "watertight": true,
+          "mesh_bodies": 1,
+          "surface_error_mm": 3.8157830145654804e-06,
+          "volume_error_mm3": 3.8946631548242294e-05
+        }
+      ],
+      "plate_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "990",
+        "weight": "3.78",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "bearing_checks": [],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "gcode_sha256": "85800d89860842569846cb912d8107622eee9284a4b4eb92117c0d1fa72e0b0b",
+      "accent_profiles_final": null
+    }
+  },
+  "total_estimated_seconds": 63961,
+  "total_estimated_grams": 288.66
+}
