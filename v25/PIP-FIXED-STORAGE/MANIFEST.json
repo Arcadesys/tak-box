@@ -1,0 +1,490 @@
+{
+  "version": "V25 PIP fixed-storage bodies",
+  "reference_revision": "8085e9d79ffff3c69f07a1cca67595994237869e",
+  "units": "mm",
+  "geometry_checks": 402,
+  "printed_parts": 2,
+  "supplemental_trial_parts": 2,
+  "trial_geometry_checks": 105,
+  "estimated_seconds": 29609,
+  "estimated_grams": 153.39,
+  "physical_acceptance": false,
+  "printer_started": false,
+  "files": [
+    {
+      "path": "PIP-FIXED-STORAGE/ENGINEERING.md",
+      "bytes": 2362,
+      "sha256": "cac65adb22e351c81605b2edecd09edbaf5cfb6d07e865dd7451652c43f14928"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/PRINT/01-V25-PIP-fixed-storage-CC2-PLA.3mf",
+      "bytes": 3150423,
+      "sha256": "1cbac6a1d742b46da5bef1b65ea023760813f6f72614a24781d5077f6a060954"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/PRINT/02-V25-PIP-hinge-trial-CC2-PLA.3mf",
+      "bytes": 1510059,
+      "sha256": "487e6b9687c7217624ced03151d25b9d176f020b532eb0974573740798e87231"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/README.md",
+      "bytes": 213,
+      "sha256": "3233cf685a9ff57163f7a713dcd05a01fc4f427258d41e9ba345124d4d0aa673"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/START-HERE.md",
+      "bytes": 3692,
+      "sha256": "09ade93bff9b6e2b8281eabd5153f17312db6f00c53e713f762b498496f449a9"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/board-reference-left.step",
+      "bytes": 3685385,
+      "sha256": "3be7819c5ac88fa8291d27bd353bb635e7990a0ae5fabf31a5df4eba55597428"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/board-reference-right.step",
+      "bytes": 3691643,
+      "sha256": "8676f481d3abf97bc4b5a1b35ebc8d1a4f201dbe8da631de5438ce36228eb339"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/housing-design-left.step",
+      "bytes": 560886,
+      "sha256": "a5606cc7f7b4e9585071c252a6acb9a65ff7a9c51a1e13b842e903a1516072b0"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/housing-design-right.step",
+      "bytes": 494103,
+      "sha256": "fcb6b737e6f7a1e2642a8d9ac280f12c55a626d1fe132c001e28556fce0050d9"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/housing-left.step",
+      "bytes": 544489,
+      "sha256": "d674091ac58b0685677e1ca1eb4b21cd45c758d8ff24dbdad7a260da0cc49474"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/housing-left.stl",
+      "bytes": 1478384,
+      "sha256": "dee2acbe1432d98956ad3a7a1a98680d0833fbb3439a5e496717923cd882323f"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/housing-right.step",
+      "bytes": 486545,
+      "sha256": "cc969e235c0c675af6584884ce18feb394e764021110f5ad579e313ddd21f65c"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/housing-right.stl",
+      "bytes": 1492084,
+      "sha256": "f4917dd9c118e22ddbd602a48623d4bca62359acad1dbafe489f876aef53afa5"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/pieces-reference-left.step",
+      "bytes": 4293067,
+      "sha256": "e529d219b3b2b5d99206e98ae95d1ed01762cb4361e78a609be724790c9ed22b"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/pieces-reference-right.step",
+      "bytes": 3762704,
+      "sha256": "776a16c1c5f19756d89775ef5cd464e49b6f797d82143fdc79c36ca0dc878a48"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/trial-hinge-left-design.step",
+      "bytes": 278219,
+      "sha256": "67fa8fe8cd1ddc5fa7a97865f48d3bbc477794f81e5457a9ea4a45616945f863"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/trial-hinge-left.step",
+      "bytes": 277885,
+      "sha256": "a587ed71c37502bac373f91cc6ada3e7c1b8494f889498704554b32200dea309"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/trial-hinge-left.stl",
+      "bytes": 1078484,
+      "sha256": "a6f06b7043f93ad4c1c1ac65a2419310ab07304ebd4ab538f9067cbad7e814c5"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/trial-hinge-right-design.step",
+      "bytes": 250936,
+      "sha256": "0cc80773cec31fbd74077f6ac07b9f79d7b984e2443e0a3049420c2de6497544"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/trial-hinge-right.step",
+      "bytes": 250477,
+      "sha256": "9f7069f6d52756f784b8654c7a2743635df5b3faa7dca26f0dcac856b0e07bb6"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/models/trial-hinge-right.stl",
+      "bytes": 1069284,
+      "sha256": "1903d14ecdb285e4b7b667bfe575d0a7dd76f25d8adc095323a239cda64382c4"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/plates/01-V25-PIP-fixed-storage.3mf",
+      "bytes": 690870,
+      "sha256": "3cebebd336c388d22c9ef15000fbe59c9b3d60361bf36bc05496e12d3ffe447e"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/plates/02-V25-PIP-hinge-trial.3mf",
+      "bytes": 499744,
+      "sha256": "eb91e2f7b593801bcddd807795af454a5655111d977738412d84356588f2f08c"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/previews/01-game-open.png",
+      "bytes": 62677,
+      "sha256": "4951e0ab25f5695b794e35234571f3c7d26676c26bbdae3c00fe970c1671174a"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/previews/02-fixed-wells.png",
+      "bytes": 99466,
+      "sha256": "e3b127d24c50421a23e331c174c68ae3bad99aa3ea285a4b0e663bfb6b1875d8"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/previews/03-closed.png",
+      "bytes": 41757,
+      "sha256": "f554aa74e4ae14fc2802e160114202a9ef0916ec73a50f5290854f8fdc86c6f4"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/previews/04-empty-wells.png",
+      "bytes": 51152,
+      "sha256": "a0f6fa503914ae26e0f267015868fecfa6020085a5038e388fb12412dadc5a3f"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/previews/05-PIP-hinge.png",
+      "bytes": 50162,
+      "sha256": "358e32ce4af8040922d673b0f79767636587e806e0caf81d0a76eab88476fd8f"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/previews/06-PIP-sliced-gaps.png",
+      "bytes": 239685,
+      "sha256": "d0b4ddefc85a06a5a07ee2f3835db34bed0fc105de37e7461564cd7acee48cfd"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/previews/07-trial-PIP-sliced-gaps.png",
+      "bytes": 238288,
+      "sha256": "5f5c1c451e6555361b985004979a8cf659fb7362e8b9369eac71c6fb3ec72b03"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/profiles/filament-pla.json",
+      "bytes": 4108,
+      "sha256": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/profiles/machine.json",
+      "bytes": 6300,
+      "sha256": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/profiles/process-case.json",
+      "bytes": 5174,
+      "sha256": "e3714d3b362a05fb995907c914acae47332fd88740e9cb01dde183648d3d8751"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-left-body.step",
+      "bytes": 1948058,
+      "sha256": "4d15f69ba80270021e70b112fad7f271307d1ff35bc03851e7a4d45751723856"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-left-grid.step",
+      "bytes": 234062,
+      "sha256": "f499d7df9020aecac8954bcb59bde6b7629282b6975b3b72a5731d6739b2d28e"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-left-orange.step",
+      "bytes": 735749,
+      "sha256": "03420b480808bbbfd0a3a3fe10784d4605c9f4df54ea818f7ed2152e6dbe05f0"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-left-purple.step",
+      "bytes": 687416,
+      "sha256": "766c518a8edb5a6c5b007c78154f3234518af7b0df8b3faafcc4860ba054165d"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-left-stars.step",
+      "bytes": 41980,
+      "sha256": "04df529459d1fe4174f8c6b7a0263bc66620ee8f37bd6fc6022730c4c16b4ea6"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-right-body.step",
+      "bytes": 1932001,
+      "sha256": "e9fb53f5f2ae6cefce75728e6312a3209903f803282a5d62864e3b5c5af4a2ea"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-right-grid.step",
+      "bytes": 228663,
+      "sha256": "dc688d2fd3925beb91f3af524b33bdf754a7a3be77775737469f40345a88719d"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-right-orange.step",
+      "bytes": 686476,
+      "sha256": "8f2d30802085784504227475be98f20dbc1f68fe10eb3eea5a7e1b2926262d00"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-right-purple.step",
+      "bytes": 736061,
+      "sha256": "1076102ae07aff5de052c04877107dd747a2c570d874c98fb24ce9287a8db654"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reference/board-inlays/board-right-stars.step",
+      "bytes": 42029,
+      "sha256": "25d2ef78856b1a3e408f2d1a82e01dce52cced2c7b7ec35e4512304e012401e4"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/build.log",
+      "bytes": 69,
+      "sha256": "7b13bdc9ed963a374786caf979cacb1ed718c8c8fec9c4cf8281c8a70e3adf21"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/geometry.json",
+      "bytes": 45252,
+      "sha256": "daa775ca151bab16738fb594587871e064259e45b47fef569ca95e324796f72a"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/pip-toolpaths.json",
+      "bytes": 3972,
+      "sha256": "9412f4d8d5584dadb8167fe1ca851755ba141ac1a1060e757878fd899360f491"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/preservation.json",
+      "bytes": 746,
+      "sha256": "7209df49b8b4f23254d91126cfc574c24e164aa34a2d6b7f28d73af81bc99042"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/render-run.log",
+      "bytes": 51,
+      "sha256": "096b76a6a9dd9881da15930984f49b6529a927d91641db40bd5c95b0cb788016"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/slice-run.log",
+      "bytes": 47,
+      "sha256": "a1d500d903cda3cd2a3e9446c1431b1f80a00c91af847edddea896afe14015de"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/slicing.json",
+      "bytes": 3506,
+      "sha256": "1231a97b44de77026ded1c057615027036db4c405a0010af3a9815e47d7a6532"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/trial-geometry.json",
+      "bytes": 10504,
+      "sha256": "3da584ad783435473dd12ff8a38810615fb8fb2fee7f9be1b2cb2853e708dfd0"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/trial-pip-toolpaths.json",
+      "bytes": 3973,
+      "sha256": "9e3dfb1c80962d76b5802b3f18d837af289de17d936cb6cc924c123d4095e7ca"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/trial-run.log",
+      "bytes": 38,
+      "sha256": "c64d8c4f8714a325f2023d47ada20da20a5a6e7ff84a37ff8949548360c65206"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/trial-slice-run.log",
+      "bytes": 46,
+      "sha256": "0d130d6f394f582529c9d881c433757ad15dfdd104e7a30c2d7b4fcd549c339b"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/trial-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/reports/trial-slicing.json",
+      "bytes": 3510,
+      "sha256": "a90c61927ba843ae746c95d7a909a2cd181af11031a62cfef4385c70a39391ef"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/build.py",
+      "bytes": 7319,
+      "sha256": "fb4a14c58002c2844dd6aa58b4f1ed788add98bbc3d53e02d8c41631af9ebfd2"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/inspect_case_layers.py",
+      "bytes": 1179,
+      "sha256": "ee4662292bb31a7bdbcf986c9a6ed51ace0e00c6c27a7bf8c455d271f4c64aea"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/package.py",
+      "bytes": 3924,
+      "sha256": "53f4b82350c2834f1d4324959359fe4df36e56311e73bcc5e051dc60c2341625"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/render.py",
+      "bytes": 2997,
+      "sha256": "07c6426d1a0228d60850d9ccf3d09091c1e0b7730d4a3bdfbb1ee543a991a306"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/reproduce.py",
+      "bytes": 2496,
+      "sha256": "b6ccdf132ba20e118ad5ea675dbd8b53987ec91ceb4fc421a6fd57b6fd074146"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/slice.py",
+      "bytes": 6529,
+      "sha256": "8c68101c5c9351b4b5e5a669d18d7f96b975507b41ea53c8a0a9c66b5d94893d"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/trial.py",
+      "bytes": 2419,
+      "sha256": "2c8068b221ea41eefa17fab99db4dd06f3ed612e8d963b7ec833422501e97e85"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/verify_pin_toolpaths.py",
+      "bytes": 825,
+      "sha256": "7b7facb82a2ebc341ef74e609200ff343b42f1ec2837585b5659a87ec3a6d444"
+    },
+    {
+      "path": "PIP-FIXED-STORAGE/source/verify_pip_hinges.py",
+      "bytes": 3935,
+      "sha256": "5fbf9b0eaca21aa47f7acc98d90e7c380ee80ef7ab952e4cece59826bf2198d5"
+    },
+    {
+      "path": "reference/v24/source/build_case.py",
+      "bytes": 9148,
+      "sha256": "fab3ee747e32a37b97017e2ec0e769356e95f6ec691cbb28e51e4bbcf411c3b1"
+    },
+    {
+      "path": "reference/v24/source/build_fitcheck.py",
+      "bytes": 3869,
+      "sha256": "29adfd4344aac235328de900d5758c70a692b389c4d6033a0b7bab7c766554a7"
+    },
+    {
+      "path": "reference/v24/source/build_tray_trial.py",
+      "bytes": 3082,
+      "sha256": "746a1f912fbb0fe8e1301275d8a7c135b90b16028e3a6d9619b523e2d1adb08e"
+    },
+    {
+      "path": "reference/v24/source/case.py",
+      "bytes": 9170,
+      "sha256": "84e79ca32468bb2067708e17d953bdd865c4a39e9edd646228299777b0fc1da1"
+    },
+    {
+      "path": "reference/v24/source/delivery.py",
+      "bytes": 1728,
+      "sha256": "08724993c909e680ff92c2e96cfcf0c3b8baf51699c683e0b07cdcc59058d47c"
+    },
+    {
+      "path": "reference/v24/source/flat_capstones.py",
+      "bytes": 1637,
+      "sha256": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693"
+    },
+    {
+      "path": "reference/v24/source/geometry_utils.py",
+      "bytes": 213,
+      "sha256": "c8256a8146a2aaff58e60b47e7f9eb14d0b8401f8bad489112c35849a61f8815"
+    },
+    {
+      "path": "reference/v24/source/inspect_case_layers.py",
+      "bytes": 3490,
+      "sha256": "34bfa8bb03854ba2e668cdcda0547325ecccdc78afc72acb45475b089d324fc0"
+    },
+    {
+      "path": "reference/v24/source/loaded_pieces.py",
+      "bytes": 838,
+      "sha256": "6a0e4f75e5695e5f74f130ef788950d72d82fe9c5678371515f32276d0d373ee"
+    },
+    {
+      "path": "reference/v24/source/package_case.py",
+      "bytes": 5265,
+      "sha256": "dd5b3be14468ab16de3eb8ce4ddf9f6e51e0b07b8c6b3e8936372ed17cdcc860"
+    },
+    {
+      "path": "reference/v24/source/package_release.py",
+      "bytes": 2764,
+      "sha256": "aafc749c0c561a9a134980532992ceeb33ca5477f8cc45a97934e932830b5a6d"
+    },
+    {
+      "path": "reference/v24/source/record_provenance.py",
+      "bytes": 6287,
+      "sha256": "b406910ab17cabc00204a1ed2c1fa0d60549ebaa37877e00e20ab0912ae68a0f"
+    },
+    {
+      "path": "reference/v24/source/render_revision.py",
+      "bytes": 2866,
+      "sha256": "031b65cb99f8691981c4cf5c5458e1e05d5a876e32c62685c26f7617a8e56c8b"
+    },
+    {
+      "path": "reference/v24/source/render_utils.py",
+      "bytes": 2278,
+      "sha256": "cc8baf6d01a3197780dfe929673e6dbd13febc73730856d75f442fee7bf36c1f"
+    },
+    {
+      "path": "reference/v24/source/slice_case.py",
+      "bytes": 7618,
+      "sha256": "053440ec17904cd05aa4c40e3a7f9df1b859926fa0470e86aac8841a1e0a7b19"
+    },
+    {
+      "path": "reference/v24/source/vendor/body/export_utils.py",
+      "bytes": 5734,
+      "sha256": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e"
+    },
+    {
+      "path": "reference/v24/source/vendor/body/folio.py",
+      "bytes": 3093,
+      "sha256": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7"
+    },
+    {
+      "path": "reference/v24/source/vendor/pieces/cat-flat.stl",
+      "bytes": 217484,
+      "sha256": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1"
+    },
+    {
+      "path": "reference/v24/source/vendor/pieces/tak_pieces.py",
+      "bytes": 10600,
+      "sha256": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+    },
+    {
+      "path": "reference/v24/source/vendor/pieces/witch-flat.stl",
+      "bytes": 131084,
+      "sha256": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba"
+    },
+    {
+      "path": "reference/v24/source/verify_field.py",
+      "bytes": 1132,
+      "sha256": "7ca4f1ec49475dfe30e064dd3e7c6cac00a2e6e0b0e341889e8310bef2593863"
+    },
+    {
+      "path": "reference/v24/source/verify_hardware.py",
+      "bytes": 3379,
+      "sha256": "3eb49c80dfe5fa25b9514c3776b418165e064ae6eaa83e077b2c7a88acceec9c"
+    },
+    {
+      "path": "reference/v24/source/verify_identity.py",
+      "bytes": 4559,
+      "sha256": "e83dd8c54edd8888ae2e177ab1d50919bf5c7e9bcd437704c43c3e6d5d20f106"
+    },
+    {
+      "path": "reference/v24/source/verify_pin_toolpaths.py",
+      "bytes": 5241,
+      "sha256": "7e980fc90639e8e2d0f824efefb95449cba0409877b77bde7bba056197b50e95"
+    },
+    {
+      "path": "reference/v24/source/verify_pip_hinges.py",
+      "bytes": 5584,
+      "sha256": "d54b0126f7bb1e1d6b750176ff023755b518403149bba1e9b8df7023a1c271fe"
+    },
+    {
+      "path": "reference/v24/source/verify_supports.py",
+      "bytes": 1995,
+      "sha256": "07e3b11179d83a10fe0aedaaff4dbf33eb16929293bef68d4449f89aa6658ede"
+    },
+    {
+      "path": "reference/v24/source/verify_trays.py",
+      "bytes": 3794,
+      "sha256": "886cba8a46aa60351bc3e771ee393fcd25753f120858c6dbb533f2c822acae24"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 736,
+      "sha256": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575"
+    },
+    {
+      "path": "source/build.py",
+      "bytes": 9744,
+      "sha256": "df80886084ff73786f876c86d1a0fe1da56041fe2434e74c1358dfa77a1f54d8"
+    }
+  ]
+}

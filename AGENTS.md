@@ -2,7 +2,7 @@
 
 ## Current experiment: V25
 
-Read v25/START-HERE.md and docs/V25_CHECKPOINT.md for the October 7 filament-hinge/rounded-board coupon study. The user explicitly selected 1.75 mm filament because prior filament hinges worked well, and rejected printed pins that broke or did not hold the joint. Preserve the rounded underside board treatment they remember from V17, the full playing field, the broad lip trials, removable trays and side-hook backup. The coupon has a blind stop and requires bonding only the fixed barrel; unbonded outward retention is not established. Full-case integration and physical acceptance remain pending. Preserve V24 production files and the earlier separate V25 printed-pin kit.
+The user explicitly selected PIP main hinges and plain fixed storage wells, superseding filament axles and removable trays. Read v25/PIP-FIXED-STORAGE/START-HERE.md and docs/V25_CHECKPOINT.md. Both halves print together as an assembly using opposed captive 4 mm pivots with V24 full-height 8 mm roots, and 3.4 mm integral floors. Preserve the full field, original flat-piece capacity, independent accent colours and side-hook backup. The remembered physically strong PIP version is unidentified; fixed floors may increase stiffness but strength remains unverified. B is a historical filament-fit assumption. Broad lip, catch and remembered V17 rounded-cover integration are still pending. Preserve all earlier V25 kits and V24. No printer jobs or physical acceptance claims.
 
 ## Preserved version: V24
 
