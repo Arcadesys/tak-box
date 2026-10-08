@@ -4,7 +4,7 @@ A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed p
 
 ## V25 filament-hinge trial
 
-The latest [V25 strength trial](v25/STRENGTH-TRIAL/START-HERE.md) uses ordinary 1.75 mm filament, two heated-tool formed heads and a moving knuckle supported between two fixed knuckles. Print the eight-part trial and begin with S2. Rounded underside board samples are included. Whole-case integration and physical durability remain unverified. The [earlier hinge and lip kit](v25/START-HERE.md) and V24 production geometry remain preserved.
+V25 now uses [plain fixed storage wells](v25/FIXED-STORAGE/START-HERE.md): slide off the covers and tip the pieces onto the table. No removable tray or pocket dividers. The 3.4 mm integral case floors keep the same outside size and original piece capacity; B filament hinges sit at both ends. The [reinforced B trial](v25/REINFORCED-B-TRIAL/START-HERE.md) keeps the middle fit and uses 6 mm sample floors after reported thin coupon-body failure. B is the assumed best fit; strength, cover changes and loaded transport remain physical/integration gates. All earlier V25 kits and V24 are preserved.
 
 ## Current print kit: V24
 
