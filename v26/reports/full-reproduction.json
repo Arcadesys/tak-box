@@ -4,8 +4,8 @@
     "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
     "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/reproduce_full.py"
   ],
-  "zip_sha256": "db35b5db3caee5e3d9949e3dc533835be2de00983649a9685ad243a3e22b97fa",
-  "audited_files": 140,
+  "zip_sha256": "fdd45edecb9544de774ffb7beedfaa130afc947a700d40090deb65c717c5aaad",
+  "audited_files": 147,
   "plates": [
     {
       "plate": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards",

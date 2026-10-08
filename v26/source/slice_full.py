@@ -70,8 +70,16 @@ def main():
     (OUT/'FULL-PRINT').mkdir(exist_ok=True)
     stage=OUT/'.slicer-work';stage.mkdir(exist_ok=True)
     plans=[('01-V26-PIP-guides-and-hook',False),('02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards',True),('03-V26-flat-capstones',False)]
+    previous=json.loads((OUT/'reports/full-slicing.json').read_text()) if '--case-only' in sys.argv else None
     report=dict(passed=False,printer='Elegoo Centauri Carbon 2, 0.4 mm nozzle',slicer='ElegooSlicer 2.4.2',physical_acceptance=False,printer_started=False,
                 source_sha256={str(p.relative_to(OUT)):sha(p) for p in (Path(__file__).resolve(),OUT/'source/slice.py',OUT/'source/verify_pip_hinges.py',OUT/'source/inspect_case_layers.py',OUT/'source/verify_pin_toolpaths.py')},plates={})
+    if previous:
+        report['plates']={n:r for n,r in previous['plates'].items() if not n.startswith('01')}
+        for n,r in report['plates'].items():
+            assert sha(OUT/'plates'/f'{n}.3mf')==r['input_sha256'] and sha(OUT/'FULL-PRINT'/f'{n}-CC2-PLA.3mf')==r['project_sha256']
+            for path,digest in r['profiles_sha256'].items():assert sha(OUT/path)==digest
+            r['unchanged_geometry_slice_reused']=True
+        plans=[plans[0]]
     for name,colour in plans:
         src=OUT/'plates'/f'{name}.3mf';dest=OUT/'FULL-PRINT'/f'{name}-CC2-PLA.3mf'
         folder=OUT/'profiles/boards' if colour else OUT/'profiles'
@@ -89,7 +97,8 @@ def main():
         if name.startswith('01'):
             shift=json.loads((OUT/'reports/geometry.json').read_text())['print_translation_mm']
             pip.OUT=OUT
-            bearing=pip.toolpath_checks(gcode,shift,preview='10-full-PIP-sliced-gaps')
+            spans=json.loads((OUT/'reports/geometry.json').read_text())['main_hinge_moving_spans_mm']
+            bearing=pip.toolpath_checks(gcode,shift,preview='10-full-PIP-sliced-gaps',moving_spans=spans)
             bearing+=trials.hook_checks(gcode,shift,preview='11-full-hook-sliced-gaps')
             assert all(q.get('pass',q.get('pass_',False)) for q in bearing),bearing
         report['plates'][name]=dict(passed=True,command=command,input_sha256=sha(src),project_sha256=sha(dest),

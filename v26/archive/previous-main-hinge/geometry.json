@@ -12,7 +12,7 @@
   "cadquery": "2.7.0",
   "platform": "macOS-26.6.2-arm64-arm-64bit",
   "source_sha256": {
-    "source/build.py": "ab8a788548b5f02f5382fbb5b89eb57e32df2599b26a7b02755047d59670ccd6",
+    "source/build.py": "719186c3924b01c8928267d8b161dc4795d9c0854daa12cf9cf546908d21a9af",
     "source/common.py": "2d1222f18b80662a6419e7ff3b09abf1d97ca94c25f980023f4ddc4d8b885666",
     "reference/v24/source/case.py": "84e79ca32468bb2067708e17d953bdd865c4a39e9edd646228299777b0fc1da1",
     "reference/v24/source/loaded_pieces.py": "6a0e4f75e5695e5f74f130ef788950d72d82fe9c5678371515f32276d0d373ee"
@@ -51,16 +51,6 @@
     },
     {
       "name": "left guides are integral body material",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "left 4mm outside case corner rounds",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "left 2mm outside board corner rounds",
       "pass_": true,
       "detail": null
     },
@@ -1060,17 +1050,12 @@
       "detail": null
     },
     {
-      "name": "right 4mm outside case corner rounds",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right 2mm outside board corner rounds",
-      "pass_": true,
-      "detail": null
-    },
-    {
       "name": "right guide top 6.9mm leaves 4.5mm piece grasp height",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right body change limited to fixed guides",
       "pass_": true,
       "detail": null
     },
@@ -2045,246 +2030,106 @@
       "detail": null
     },
     {
-      "name": "main hinge 1 axle permanently joins fixed half",
+      "name": "opposed pivots block forward axial removal",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "main hinge 1 full 4mm axle across moving bearing",
+      "name": "opposed pivots block backward axial removal",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "main hinge 1 axle bonded into support (2.5, 2.7)",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 1 axle bonded into support (6.8999999999999995, 7.1)",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 1 moving barrel surrounds axle",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 1 0.4mm radial running gap",
+      "name": "pivot CAD clearance 4.5",
       "pass_": true,
       "detail": {
-        "minimum_surface_gap_mm": 0.3999999999999874
+        "minimum_surface_gap_mm": 0.3999999999999885
       }
     },
     {
-      "name": "main hinge 1 two supports trap barrel axial -1",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 1 two supports trap barrel axial 1",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 1 closed bore traps axle radial 3,0",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 1 closed bore traps axle radial -3,0",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 1 closed bore traps axle radial 0,3",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 1 closed bore traps axle radial 0,-3",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 2 axle permanently joins fixed half",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 2 full 4mm axle across moving bearing",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 2 axle bonded into support (192.9, 193.1)",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 2 axle bonded into support (197.3, 197.5)",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 2 moving barrel surrounds axle",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "main hinge 2 0.4mm radial running gap",
+      "name": "pivot CAD clearance 195.5",
       "pass_": true,
       "detail": {
-        "minimum_surface_gap_mm": 0.39999999999999075
+        "minimum_surface_gap_mm": 0.39999999999998975
       }
     },
     {
-      "name": "main hinge 2 two supports trap barrel axial -1",
+      "name": "left full-height root 4.9 Z1",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "main hinge 2 two supports trap barrel axial 1",
+      "name": "left full-height root 4.9 Z4",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "main hinge 2 closed bore traps axle radial 3,0",
+      "name": "left full-height root 4.9 Z8",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "main hinge 2 closed bore traps axle radial -3,0",
+      "name": "left full-height root 4.9 Z12",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "main hinge 2 closed bore traps axle radial 0,3",
+      "name": "left full-height root 190.8 Z1",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "main hinge 2 closed bore traps axle radial 0,-3",
+      "name": "left full-height root 190.8 Z4",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 0.3 Z1",
+      "name": "left full-height root 190.8 Z8",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 0.3 Z4",
+      "name": "left full-height root 190.8 Z12",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 0.3 Z8",
+      "name": "right full-height root 0.2 Z1",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 0.3 Z12",
+      "name": "right full-height root 0.2 Z4",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 6.8 Z1",
+      "name": "right full-height root 0.2 Z8",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 6.8 Z4",
+      "name": "right full-height root 0.2 Z12",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 6.8 Z8",
+      "name": "right full-height root 195.5 Z1",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 6.8 Z12",
+      "name": "right full-height root 195.5 Z4",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 190.7 Z1",
+      "name": "right full-height root 195.5 Z8",
       "pass_": true,
       "detail": null
     },
     {
-      "name": "left double-supported full-height root 190.7 Z4",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "left double-supported full-height root 190.7 Z8",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "left double-supported full-height root 190.7 Z12",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "left double-supported full-height root 197.2 Z1",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "left double-supported full-height root 197.2 Z4",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "left double-supported full-height root 197.2 Z8",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "left double-supported full-height root 197.2 Z12",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right double-supported full-height root 3.2 Z1",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right double-supported full-height root 3.2 Z4",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right double-supported full-height root 3.2 Z8",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right double-supported full-height root 3.2 Z12",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right double-supported full-height root 193.6 Z1",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right double-supported full-height root 193.6 Z4",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right double-supported full-height root 193.6 Z8",
-      "pass_": true,
-      "detail": null
-    },
-    {
-      "name": "right double-supported full-height root 193.6 Z12",
+      "name": "right full-height root 195.5 Z12",
       "pass_": true,
       "detail": null
     },
@@ -2842,9 +2687,9 @@
       "name": "closed envelope unchanged",
       "pass_": true,
       "detail": {
-        "x": 102.5000002,
-        "y": 200.00000020000058,
-        "z": 35.00000020000002
+        "x": 102.50000019999999,
+        "y": 200.0000002,
+        "z": 35.00000020000001
       }
     },
     {
@@ -2921,7 +2766,7 @@
           189.6000030040741,
           5.699999809265137
         ],
-        "volume_mm3": 83635.06630746399
+        "volume_mm3": 83642.00247849365
       }
     },
     {
@@ -2998,7 +2843,7 @@
           189.6000030040741,
           5.699999809265137
         ],
-        "volume_mm3": 83635.07111298564
+        "volume_mm3": 83642.00728970287
       }
     },
     {
@@ -4740,7 +4585,7 @@
           200.0,
           22.0
         ],
-        "volume_mm3": 98426.92965197471
+        "volume_mm3": 98368.97459185368
       }
     },
     {
@@ -4762,7 +4607,7 @@
           200.0,
           22.0
         ],
-        "volume_mm3": 97411.50338365103
+        "volume_mm3": 98855.13485895116
       }
     },
     {
@@ -4828,7 +4673,7 @@
         200.0,
         22.0
       ],
-      "sha256": "d2778dff071f65c0c220515460e9f37c92f7a6f54e9c9c9e71da46b2c840c34f"
+      "sha256": "1c14426ce8bcb5c3dee38a3ecfcc90809a1eb006a3136e0e87df6aa8643d9373"
     },
     "housing-right": {
       "size_mm": [
@@ -4836,7 +4681,7 @@
         200.0,
         22.0
       ],
-      "sha256": "3b59772b40fc58de7d068814a4f6b12b140729a480fde24903949e738902a3d8"
+      "sha256": "878907c6ecd4f1675ac3c3e5db9ca921baabd752f4878c78e71e3c2e6774744e"
     },
     "captive-hook": {
       "size_mm": [
@@ -4848,51 +4693,7 @@
     }
   },
   "printed_parts": 3,
-  "main_hinge": "two fixed supports and integral axle trapping each central moving barrel",
-  "main_hinge_fixed_spans_mm": [
-    [
-      0.3,
-      2.8
-    ],
-    [
-      6.8,
-      9.3
-    ],
-    [
-      190.7,
-      193.2
-    ],
-    [
-      197.2,
-      199.7
-    ]
-  ],
-  "main_hinge_moving_spans_mm": [
-    [
-      3.2,
-      6.4
-    ],
-    [
-      193.6,
-      196.8
-    ]
-  ],
-  "main_hinge_axle_spans_mm": [
-    [
-      2.5,
-      7.1
-    ],
-    [
-      192.9,
-      197.5
-    ]
-  ],
-  "main_hinge_axis_mm": [
-    98,
-    17.5
-  ],
-  "case_outer_corner_radius_mm": 4.0,
-  "board_outer_corner_radius_mm": 2.0,
+  "main_hinge": "opposed captive PIP pivots",
   "nominal_pin_diameter_mm": 4,
   "nominal_radial_and_face_clearance_mm": 0.4,
   "print_translation_mm": [
@@ -4914,9 +4715,9 @@
   "piece_package": "42 original Cat/Witch 20x20x8 mm flats and two supplied 8 mm V23 flat capstones; no weighted or sculpted pieces",
   "packed_piece_count": 44,
   "closed_dimensions_mm": [
-    102.5000002,
-    200.00000020000058,
-    35.00000020000002
+    102.50000019999999,
+    200.0000002,
+    35.00000020000001
   ],
   "physical_acceptance": false,
   "printer_started": false,

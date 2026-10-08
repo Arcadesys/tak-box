@@ -6,7 +6,7 @@
       "pass_": true,
       "detail": {
         "bodies": 1,
-        "triangles": 13680
+        "triangles": 13966
       }
     },
     {
@@ -46,7 +46,7 @@
       "pass_": true,
       "detail": {
         "bodies": 1,
-        "triangles": 13676
+        "triangles": 13962
       }
     },
     {
@@ -86,7 +86,7 @@
       "pass_": true,
       "detail": {
         "bodies": 1,
-        "triangles": 13680
+        "triangles": 13966
       }
     },
     {
@@ -94,7 +94,7 @@
       "pass_": true,
       "detail": {
         "bodies": 1,
-        "triangles": 13680
+        "triangles": 13966
       }
     },
     {
@@ -159,7 +159,7 @@
       "pass_": true,
       "detail": {
         "bodies": 1,
-        "triangles": 13676
+        "triangles": 13962
       }
     },
     {
@@ -167,7 +167,7 @@
       "pass_": true,
       "detail": {
         "bodies": 1,
-        "triangles": 13676
+        "triangles": 13962
       }
     },
     {
@@ -401,7 +401,7 @@
   ],
   "specifications": {
     "board-left-body": {
-      "sha256": "b555ab9726ba5d1afc5a808677665cdef193fa4c48cbaa219606ed374f4dc690",
+      "sha256": "73ac84072b22b7143032726e9a7fa4181a0d4f271fca55576bba3f5c6616124d",
       "watertight": true,
       "mesh_bodies": 1
     },
@@ -426,7 +426,7 @@
       "mesh_bodies": 5
     },
     "board-right-body": {
-      "sha256": "a9918f7b76b477ba73683248ee3ec1c046572aba929b9c160400d69649d5d69c",
+      "sha256": "965109875089be5ff34f2c79ba397237697910d12e33754a3a002a9ff1600580",
       "watertight": true,
       "mesh_bodies": 1
     },
@@ -490,16 +490,8 @@
   ],
   "sources_sha256": {
     "plates_full.py": "12a66950edcf6f908e648ae65856f8868d13516734e8f21b4cc38a907ad7538c",
-    "board_plate.py": "38dfdc0beea336192a18421901968f012cf3198825e3cc2bcd9e63ace072826a"
+    "board_plate.py": "ddf04bf309a13aee6276aec26ca83b72ff97d28f2b5bec7ae49fd280f77e2e38"
   },
   "physical_acceptance": false,
-  "printer_started": false,
-  "source_format_only_changes": {
-    "board_plate.py": {
-      "prior_sha256": "38dfdc0beea336192a18421901968f012cf3198825e3cc2bcd9e63ace072826a",
-      "current_sha256": "ddf04bf309a13aee6276aec26ca83b72ff97d28f2b5bec7ae49fd280f77e2e38",
-      "ast_identical": true,
-      "change": "Remove extra blank line at EOF; generated geometry and plates unchanged."
-    }
-  }
+  "printer_started": false
 }

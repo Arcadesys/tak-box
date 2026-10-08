@@ -32,21 +32,25 @@ def bead_ranges(segments,y,radius=.25):
   else:merged.append((lo,hi))
  return merged
 
-def toolpath_checks(path,shift,rear_shift=0,preview='07-captive-hinge-gaps'):
+def toolpath_checks(path,shift,rear_shift=0,preview='07-captive-hinge-gaps',moving_spans=None):
  segs=layers.parse(path);checks=[];views=[]
  P=np.array([[pts[0][0],pts[0][1],z] for z,_,pts in segs]);Q=np.array([[pts[1][0],pts[1][1],z] for z,_,pts in segs]);support=np.array([r.startswith('Support') for _,r,_ in segs])
  levels=sorted({z for z,_,_ in segs});digest=hashlib.sha256(path.read_bytes()).hexdigest()
- for index,(face,mouth,d) in enumerate(c.PIP_STATIONS):
-  extra=rear_shift if index else 0;face+=extra;mouth+=extra
+ stations=moving_spans if moving_spans is not None else c.PIP_STATIONS
+ for index,station in enumerate(stations):
+  if moving_spans is not None:
+   lo,hi=station[0]+.15,station[1]-.15
+  else:
+   face,mouth,d=station;extra=rear_shift if index else 0;face+=extra;mouth+=extra
+   end=face+d*1.9;lo=min(mouth,end)+.15;hi=max(mouth,end)-.15
   axis=np.array([98,0,c.base.AX[1]])+np.array(shift)
-  end=face+d*1.9;lo=min(mouth,end)+.15;hi=max(mouth,end)-.15
   a=axis+np.array([0,lo,0]);b=axis+np.array([0,hi,0])
   found=hits(P[support],Q[support],a,b,2.4)
   checks.append({'name':f'pivot {index+1} no support centerlines inside bearing cavity','pass':not bool(found.any()),'intrusions':int(found.sum()),'gcode_sha256':digest})
   y=axis[1]+(lo+hi)/2
   for dz in (-1,-.6,-.2,.2,.6,1):
    z=min(levels,key=lambda zz:abs(zz-(axis[2]+dz)))
-   crop=[(r,pts) for zz,r,pts in segs if zz==z and max(p[0] for p in pts)>axis[0]-5 and min(p[0] for p in pts)<axis[0]+5 and max(p[1] for p in pts)>axis[1]+min(face,mouth,end)-1 and min(p[1] for p in pts)<axis[1]+max(face,mouth,end)+1]
+   crop=[(r,pts) for zz,r,pts in segs if zz==z and max(p[0] for p in pts)>axis[0]-5 and min(p[0] for p in pts)<axis[0]+5 and max(p[1] for p in pts)>axis[1]+lo-1 and min(p[1] for p in pts)<axis[1]+hi+1]
    # 0.50 mm assumed bead width conservatively covers the configured widths.
    occupied=bead_ranges(crop,y)
    pin_indices=[i for i,v in enumerate(occupied) if v[0]<axis[0]+1.2 and v[1]>axis[0]-1.2]
@@ -57,6 +61,28 @@ def toolpath_checks(path,shift,rear_shift=0,preview='07-captive-hinge-gaps'):
    passed=len(gaps)==2 and min(gaps)>.1
    checks.append({'name':f'pivot {index+1} radial running gaps at Z={z}','pass':bool(passed),'estimated_bead_edge_gaps_mm':gaps,'gcode_sha256':digest})
    if dz in (-.2,.2):views.append((f'Pivot {index+1}, Z={z:g}',crop,axis,y,gaps))
+  if moving_spans is not None:
+   first,last=station
+   for a0,b0 in ((first-.4,first),(last,last+.4)):
+    a=axis+np.array([0,a0+.02,0]);b=axis+np.array([0,b0-.02,0])
+    found=hits(P[support],Q[support],a,b,4.5)
+    checks.append({'name':f'hinge {index+1} no support in axial gap {a0},{b0}','pass':not bool(found.any()),'intrusions':int(found.sum()),'gcode_sha256':digest})
+   for dz in (-.6,.6):
+    z=min(levels,key=lambda zz:abs(zz-(axis[2]+dz)))
+    for dx in (-3.2,3.2):
+     x=axis[0]+dx
+     crop=[(r,[(pts[0][1],pts[0][0]),(pts[1][1],pts[1][0])]) for zz,r,pts in segs if zz==z and min(p[0] for p in pts)<x+.5 and max(p[0] for p in pts)>x-.5 and min(p[1] for p in pts)<axis[1]+last+3.2 and max(p[1] for p in pts)>axis[1]+first-3.2]
+     occupied=bead_ranges(crop,x)
+     # Probe the two CAD face interfaces, not small gaps between infill
+     # and perimeter beads inside the moving barrel.
+     gaps=[]
+     for center in (axis[1]+first-.2,axis[1]+last+.2):
+      left=[q[1] for q in occupied if q[1]<center]
+      right=[q[0] for q in occupied if q[0]>center]
+      if any(q[0]<=center<=q[1] for q in occupied) or not left or not right:
+       gaps.append(0.)
+      else:gaps.append(min(right)-max(left))
+     checks.append({'name':f'hinge {index+1} both support face gaps Z{z} X{x}','pass':bool(len(gaps)==2 and min(gaps)>.1),'estimated_bead_edge_gaps_mm':gaps,'gcode_sha256':digest})
  fig,axes=plt.subplots(2,2,figsize=(14,12))
  for ax,(title,crop,axis,y,gaps) in zip(axes.flat,views):
   for sup,col,style in [(False,'#123957','solid'),(True,'#9a3150','dashed')]:ax.add_collection(LineCollection([pts for role,pts in crop if role.startswith('Support')==sup],colors=col,linestyles=style,linewidths=1.4))

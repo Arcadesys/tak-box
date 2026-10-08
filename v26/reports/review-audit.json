@@ -223,7 +223,7 @@
       "detail": null
     },
     {
-      "name": "left body modifications stay in hook mount region",
+      "name": "left body modifications stay in main-hinge bays, hook mount and outer corner rounds",
       "pass_": true,
       "detail": null
     },
@@ -298,7 +298,7 @@
       "detail": null
     },
     {
-      "name": "right body modifications stay in hook mount region",
+      "name": "right body modifications stay in main-hinge bays, hook mount and outer corner rounds",
       "pass_": true,
       "detail": null
     }
@@ -307,7 +307,7 @@
     "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
     "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/verify_review.py"
   ],
-  "source_sha256": "355068d8c6c950e80a10edc57133215e6fe676559cf9ca03e370fe23e3b86e29",
+  "source_sha256": "2b02c51503fd22c5050af627fded78228267907554dfb534309b93e62eaa4ce8",
   "physical_acceptance": false,
   "scope": "Nominal exported CAD material and early opening obstruction; no physical retention force rating."
 }

@@ -1,16 +1,18 @@
 # Tak project brief
 
-Updated October 7, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 8, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current V26 main-hinge correction — October 7
+### Current V26 captive main hinge — October 7
 
-The user identifies the delivered main hinge as different from the captive hinge discussed. The full case plate currently retains opposing single-ended peg/socket stations; the two-fixed-support captive axle was applied only to the side hook. The earlier B filament bearing had a moving barrel between two fixed supports. The intended PIP main-hinge support arrangement is being clarified before geometry and plate replacement. The existing kit is a prior snapshot, and the tab-free board release remains selected. Previous digital checks validate that snapshot, not the intended replacement.
+The user confirms a printed axle permanently fixed between two supports on one half, trapping the opposite half’s moving barrel. V26 now uses this arrangement at both main-hinge stations: 4 mm axles, 2.5 mm fixed supports, 3.2 mm moving barrels, 9 mm outer barrels, full-height 8 mm roots and nominal 0.4 mm radial/face gaps. The rounded revision passes 947 integrated CAD checks, 51 exported audits and 37 sliced hinge/hook checks; sliced main support-face gaps are at least 0.32 mm under the conservative bead-width check. The prior opposing peg/socket full kit is preserved under v26/archive/previous-main-hinge. The modest outside rounding changes the boards’ body margins; inlay geometry remains intact. The current board plates are rebuilt and sliced again. Current complete estimate is 17h 46m / 288.66 g including optional capstones; physical strength remains untested.
+
+The user also requests modest corner rounding while this revision is underway. Use 4 mm outside case corners and 2 mm outside sliding-board corners, preserving the complete field, inlays, guides and hinge supports.
 
 The user reports that pressing a sliding-board tab while pulling was awkward. They approve using the case hook to secure both covers during closed transport and explicitly choose to build full plates before small physical trials. [V26](../v26/START-HERE.md) now removes the flexible catches and restores solid bevelled board margins. A rigid 4 × 6.1 × 4.7 mm seating shoulder outside each playing field meets the front rail to stop inward travel; it moves away freely on outward withdrawal. Open the case hook, then pull either board without pressing a tab.
 
 The kit retains the PIP main hinges, permanent piece guides, 3.4 mm floors, 180 mm / 36 mm-cell field, original independent accent inlays and 102.5 × 200 × 35 mm closed envelope. The captive hook has a 4 mm fixed axle, 2 mm outer cheek, 3.4 mm frame bridge, 0.4 mm radial/face gaps and parked printing foot. No filament hook pivot, loose collar or removable tray. Three full sliced projects are under V26/FULL-PRINT: joined bodies/hook, full-size four-colour boards and optional original flat capstones. Actual silk spool profiles still require matching and reslicing.
 
-New V26 bodies and covers replace the V24/V25 assembly; original 42 flats and supplied flat capstones remain compatible in nominal CAD. Case/hook geometry is retained from the V26 mechanism review. Physical strength, hook capture, release comfort, dumping and loaded transport remain unobserved; no printer dispatch. Rounded-cover underside integration remains pending. Earlier V26 clip trials are superseded but preserved in their mechanism-review archive, and all V25/V24 assets and user extractions remain intact.
+New V26 bodies and covers replace the V24/V25 assembly; original 42 flats and supplied flat capstones remain compatible in nominal CAD. The captive side hook is retained; the main hinges replace the earlier opposed-pivot arrangement. Physical strength, hook capture, release comfort, dumping and loaded transport remain unobserved; no printer dispatch. Rounded-cover underside integration remains pending. Earlier V26 clip trials are superseded but preserved in their mechanism-review archive, and all V25/V24 assets and user extractions remain intact.
 
 ### Preserved experiment: V25 — October 7
 

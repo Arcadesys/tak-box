@@ -39,7 +39,7 @@
   ],
   "projects": {
     "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards-CC2-PLA.3mf": {
-      "gcode_sha256": "b8508849abc19b409ac453e9d2815d620983cd9574b8f8171f4e8f2747ba80f5",
+      "gcode_sha256": "8eaa15c5a652231d67c25ed763d0b3b42d6bb4da669d309178215d809f72905e",
       "coloured_model_layers_mm": {
         "1": [
           4.2,
@@ -66,7 +66,7 @@
           4.7
         ]
       },
-      "model_deposition_segments": 820380,
+      "model_deposition_segments": 822870,
       "prime_tower_excluded": true
     }
   },

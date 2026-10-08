@@ -1,4 +1,4 @@
-"""V26 tab-free sliding boards and captive side hook; fixed guides and PIP bodies."""
+"""V26 tab-free sliding boards and captive side hook; fixed guides and double-supported PIP bodies."""
 from pathlib import Path
 import importlib.util,sys,json,hashlib,platform,math
 import cadquery as cq
@@ -14,16 +14,46 @@ def check(name,ok,detail=None):
 b.OUT=OUT;b.check=check;b.e.OUT=OUT;b.e.check=check
 R=math.hypot(8,17.5)+.45
 ROLES=('body','grid','stars','orange','purple')
+# Each moving barrel sits between two supports on the fixed left half.
+FIXED=((.3,2.8),(6.8,9.3),(190.7,193.2),(197.2,199.7))
+MOVING=((3.2,6.4),(193.6,196.8))
+MAIN_AXLES=((2.5,7.1),(192.9,197.5))
+CASE_CORNER_R=4.0
+BOARD_CORNER_R=2.0
+def corner_cuts(radius,y0,y1,z0,z1,side):
+ # Only the two outside corners, away from the common hinge axis.
+ cuts=[]
+ for y,front in ((y0,True),(y1,False)):
+  cy=y+radius if front else y-radius
+  square=c.box(-.1,radius,y-.1 if front else y-radius,y+radius if front else y+.1,z0,z1)
+  keep=cq.Solid.makeCylinder(radius,z1-z0,cq.Vector(radius,cy,z0))
+  cut=square.cut(keep)
+  cuts.append(c.mirror(cut) if side=='right' else cut)
+ return cuts
 def housing(side):
- # Preserve the earlier opposed captive pivots and full-height 8 mm roots.
  s=c.housing(side)
+ # Remove inherited single-ended pins/sockets; leave the surrounding shell.
+ for a,z in ((-.1,9.5),(190.5,200.1)):
+  cut=c.box(90.1,120,a,z,-1,31)
+  s=s.cut(c.mirror(cut) if side=='right' else cut)
  floor=c.union(c.box(11.2,89.5,2.4,193,2.19,3.4),c.box(76,90.2,0,200,0,3.4))
  if side=='right':floor=c.mirror(floor)
- # Relieve only the added floor before union: retain the original pin/socket.
- for other,spans in c.base.FAMILIES.items():
-  if other!='tray-'+side:
-   for a,z in spans:floor=floor.cut(b.cy(R,a-.15,z+.15))
- s=c.union(s,floor,*guide_parts(side)).clean()
+ s=c.union(s,floor,*guide_parts(side))
+ own=FIXED if side=='left' else MOVING
+ other=MOVING if side=='left' else FIXED
+ for a,z in own:
+  root=c.box(90,98,a,z,0,17.5)
+  if side=='right':root=c.mirror(root)
+  journal=cq.Workplane('XY').newObject([b.cy(4.5,a,z)]).edges().fillet(.4).val()
+  s=c.union(s,root,journal)
+ # Relieve the full-height opposite roots before adding the fixed axles.
+ for a,z in other:s=s.cut(b.cy(R,a-.15,z+.15))
+ if side=='left':
+  s=c.union(s,*(b.cy(2,a,z) for a,z in MAIN_AXLES))
+ else:
+  for a,z in MOVING:s=s.cut(b.cy(2.4,a-.02,z+.02))
+ for cut in corner_cuts(CASE_CORNER_R,0,200,-.1,17.1,side):s=s.cut(cut)
+ s=s.clean()
  return captive_mount(s) if side=='left' else s
 def guide_parts(side):
  # Exact earlier removable-tray guide layout, now fused into the case floor.
@@ -48,6 +78,7 @@ def board_parts(side,release=0):
  parts['body']=c.union(parts['body'].cut(old),patch,shoulder).clean()
  notch=c.box(5.69,6.2,70,122,11.7,17.6)
  parts['body']=parts['body'].cut(c.mirror(notch) if side=='right' else notch).clean()
+ for cut in corner_cuts(BOARD_CORNER_R,3.1,192.3,11.7,17.6,side):parts['body']=parts['body'].cut(cut).clean()
  return parts
 @lru_cache(None)
 def board(side,release=0):return cq.Compound.makeCompound(list(board_parts(side,release).values()))
@@ -99,11 +130,9 @@ def main():
   g=guides(side)
   check(side+' 21 fixed flat guides plus capstone guide',len(guide_parts(side))==22 and g.isValid())
   check(side+' guides are integral body material',g.cut(h[side]).Volume()<1e-5)
+  check(side+' 4mm outside case corner rounds',all(ov(h[side],cut)<1e-5 for cut in corner_cuts(CASE_CORNER_R,0,200,-.1,17.1,side)))
+  check(side+' 2mm outside board corner rounds',all(ov(board(side),cut)<1e-5 for cut in corner_cuts(BOARD_CORNER_R,3.1,192.3,11.7,17.6,side)))
   check(side+' guide top 6.9mm leaves 4.5mm piece grasp height',abs(g.BoundingBox().zmax-6.9)<1e-5)
-  baseline=OUT/'reference/plain-bodies'/f'housing-design-{side}.step'
-  if baseline.exists() and side=='right':
-   old=cq.importers.importStep(str(baseline)).val()
-   check(side+' body change limited to fixed guides',old.cut(h[side]).Volume()<1e-5 and h[side].cut(c.union(old,g)).Volume()<1e-5)
   for i in range(3):
    for j in range(7):
     wall=c.box(13+22*i-.95,13+22*i-.35,10+22.6*j+1,10+22.6*j+4,3.5,6.8)
@@ -123,17 +152,25 @@ def main():
   for d in range(0,107,2):
    check(side+f' tab-free cover slide {d}',ov(c.slide(board(side),side,d),h[side])<1e-5 and all(ov(c.slide(board(side),side,d),p)<1e-5 for _,p in pieces[side]))
   export_reference('housing-design-'+side,h[side]);export_reference('board-reference-'+side,boards[side]);export_reference('pieces-reference-'+side,cq.Compound.makeCompound([p for _,p in pieces[side]]))
- for label,delta in [('forward',3),('backward',-3)]:
-  check('opposed pivots block '+label+' axial removal',ov(h['left'],h['right'].translate((0,delta,0)))>1)
- for face,mouth,d in c.PIP_STATIONS:
-  gap=c.pip_pin(face,d).distance(h['left'])
-  check('pivot CAD clearance '+str(face),gap>.39,dict(minimum_surface_gap_mm=gap))
- for side in h:
-  for a,z in c.base.FAMILIES['tray-'+side]:
+ for i,((a,z),(p0,p1)) in enumerate(zip(MOVING,MAIN_AXLES)):
+  axle=b.cy(2,p0,p1)
+  check(f'main hinge {i+1} axle permanently joins fixed half',axle.cut(h['left']).Volume()<1e-5)
+  check(f'main hinge {i+1} full 4mm axle across moving bearing',abs(axle.intersect(b.cy(2,a,z)).Volume()-math.pi*4*(z-a))<1e-5)
+  for endpoint in ((p0,p0+.2),(p1-.2,p1)):
+   check(f'main hinge {i+1} axle bonded into support {endpoint}',b.cy(2,*endpoint).cut(h['left']).Volume()<1e-5)
+  rotor=h['right'].intersect(b.cy(4.51,a,z))
+  check(f'main hinge {i+1} moving barrel surrounds axle',len(rotor.Solids())==1 and rotor.isValid())
+  gap=rotor.distance(axle)
+  check(f'main hinge {i+1} 0.4mm radial running gap',gap>.39,dict(minimum_surface_gap_mm=gap))
+  for dy in (-1,1):check(f'main hinge {i+1} two supports trap barrel axial {dy}',ov(rotor.translate((0,dy,0)),h['left'])>.1)
+  for dx,dz in ((3,0),(-3,0),(0,3),(0,-3)):
+   check(f'main hinge {i+1} closed bore traps axle radial {dx},{dz}',ov(rotor.translate((dx,0,dz)),axle)>.1)
+ for side,spans in (('left',FIXED),('right',MOVING)):
+  for a,z in spans:
    for height in (1,4,8,12):
     probe=c.box(90.2,97.8,a+.2,z-.2,height,height+.5)
     if side=='right':probe=c.mirror(probe)
-    check(side+f' full-height root {a} Z{height}',abs(probe.Volume()-h[side].intersect(probe).Volume())<1e-5)
+    check(side+f' double-supported full-height root {a} Z{height}',abs(probe.Volume()-h[side].intersect(probe).Volume())<1e-5)
  print('Starting integrated fold checks',flush=True)
  for angle in range(0,181,2):
   if angle%30==0:print('Fold',angle,flush=True)
@@ -194,6 +231,6 @@ def main():
   check('PIP pair has one assembly build item',len(root.findall('m:build/m:item',ns))==1)
   check('PIP assembly retains both bodies and captive hook',len(root.findall('.//m:component',ns))==3)
  source_files=[Path(__file__).resolve(),OUT/'source/common.py',V25/'reference/v24/source/case.py',V25/'reference/v24/source/loaded_pieces.py']
- report=dict(passed=True,version='V26 tab-free boards and captive hook print kit',units='mm',parent_revision='c101d7d6585c363e23cf140f9059f38a96a8d6c8',reference_revision='8085e9d79ffff3c69f07a1cca67595994237869e',command=[sys.executable,str(Path(__file__).resolve())],python=sys.version,cadquery=cq.__version__,platform=platform.platform(),source_sha256={str(p.relative_to(V25)):hashlib.sha256(p.read_bytes()).hexdigest() for p in source_files},reference_body_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (OUT/'reference/plain-bodies').glob('*.step')},reference_board_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (OUT/'reference/board-inlays').glob('*.step')},checks=checks,specifications=specs,printed_parts=3,main_hinge='opposed captive PIP pivots',nominal_pin_diameter_mm=4,nominal_radial_and_face_clearance_mm=.4,print_translation_mm=c.PRINT_BASE_SHIFT,removable_tray=False,flexible_board_tabs=False,board_seating_shoulder_mm=[4,6.1,4.7],pocket_rims=True,guide_top_mm=6.9,guide_height_above_floor_mm=3.5,fixed_floor_mm=3.4,piece_package='42 original Cat/Witch 20x20x8 mm flats and two supplied 8 mm V23 flat capstones; no weighted or sculpted pieces',packed_piece_count=44,closed_dimensions_mm=[dims.xlen,dims.ylen,dims.zlen],physical_acceptance=False,printer_started=False,limitations=['Rigid sampled poses and nominal-piece guides; physical loading, dumping and shake/drop/transport remain unverified.','Case hook secures both boards only while closed; boards slide freely when it is opened. Captive hook and tab-free covers need physical handling and transport tests. Rounded-cover underside remains pending.','Two new bodies required; previous physical PIP success has no identified version or recorded strength rating.'])
+ report=dict(passed=True,version='V26 tab-free boards and captive hook print kit',units='mm',parent_revision='c101d7d6585c363e23cf140f9059f38a96a8d6c8',reference_revision='8085e9d79ffff3c69f07a1cca67595994237869e',command=[sys.executable,str(Path(__file__).resolve())],python=sys.version,cadquery=cq.__version__,platform=platform.platform(),source_sha256={str(p.relative_to(V25)):hashlib.sha256(p.read_bytes()).hexdigest() for p in source_files},reference_body_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (OUT/'reference/plain-bodies').glob('*.step')},reference_board_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (OUT/'reference/board-inlays').glob('*.step')},checks=checks,specifications=specs,printed_parts=3,main_hinge='two fixed supports and integral axle trapping each central moving barrel',main_hinge_fixed_spans_mm=FIXED,main_hinge_moving_spans_mm=MOVING,main_hinge_axle_spans_mm=MAIN_AXLES,main_hinge_axis_mm=[98,17.5],case_outer_corner_radius_mm=CASE_CORNER_R,board_outer_corner_radius_mm=BOARD_CORNER_R,nominal_pin_diameter_mm=4,nominal_radial_and_face_clearance_mm=.4,print_translation_mm=c.PRINT_BASE_SHIFT,removable_tray=False,flexible_board_tabs=False,board_seating_shoulder_mm=[4,6.1,4.7],pocket_rims=True,guide_top_mm=6.9,guide_height_above_floor_mm=3.5,fixed_floor_mm=3.4,piece_package='42 original Cat/Witch 20x20x8 mm flats and two supplied 8 mm V23 flat capstones; no weighted or sculpted pieces',packed_piece_count=44,closed_dimensions_mm=[dims.xlen,dims.ylen,dims.zlen],physical_acceptance=False,printer_started=False,limitations=['Rigid sampled poses and nominal-piece guides; physical loading, dumping and shake/drop/transport remain unverified.','Case hook secures both boards only while closed; boards slide freely when it is opened. Captive hook and tab-free covers need physical handling and transport tests. Rounded-cover underside remains pending.','Two new bodies required; previous physical PIP success has no identified version or recorded strength rating.'])
  (OUT/'reports/geometry.json').write_text(json.dumps(report,indent=2)+'\n');print('PASS',len(checks),'V26 tab-free mechanism checks;',len(items),'PIP case components; 44 reference pieces')
 if __name__=='__main__':main()

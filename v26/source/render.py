@@ -7,7 +7,7 @@ import matplotlib
 OUT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('review_build',OUT/'source/build.py');b=importlib.util.module_from_spec(spec);spec.loader.exec_module(b)
 import render_utils as r
-r.OUT=OUT;r.colors.update(clip=(.32,.47,.60),boardbody=(.12,.14,.16),boardgrid=(1,1,1),boardstars=(1,1,1),boardorange=(.9,.55,.22),boardpurple=(.7,.5,.85),hook=(.95,.55,.12),captive=(.95,.55,.12),capstone=(.20,.29,.36),old=(.6,.65,.7))
+r.OUT=OUT;r.colors.update(clip=(.32,.47,.60),boardbody=(.12,.14,.16),boardgrid=(1,1,1),boardstars=(1,1,1),boardorange=(.9,.55,.22),boardpurple=(.7,.5,.85),hook=(.95,.55,.12),captive=(.95,.55,.12),capstone=(.20,.29,.36),moving=(.95,.55,.12),old=(.6,.65,.7))
 def load(n):return cq.importers.importStep(str(OUT/'models'/f'{n}.step')).val()
 def draw(n,scene,title,sub,camera):
  r.render(n,scene,title,camera)
@@ -41,6 +41,21 @@ def main():
  draw('13-board-plate',placed,'Plate 2 — full-size four-colour boards','Slots: 1 black; 2 white; 3 orange accent; 4 purple accent',(112,103,900))
  draw('14-capstone-plate',[(n,load(n)) for n in ('capstone-cat','capstone-witch')],'Plate 3 — original flat capstones','Left: Cat. Right: Witch. Optional 8 mm replacements.',(50,-160,280))
 
+def corner_detail():
+ window=b.c.box(-.1,12,-.1,15,-.1,18)
+ housing=load('housing-design-left').intersect(window)
+ board=load('board-reference-left').intersect(window)
+ draw('18-rounded-corner',[('housing-left',housing),('boardbody-left',board)],'Outside corners — modest rounds','Case: 4 mm radius. Board: 2 mm radius. Field, guides and hinge supports retained.',(-130,-150,150))
+
+def hinge_detail():
+ left=load('housing-design-left');right=load('housing-design-right')
+ window=b.c.box(86,110,-.1,11,0,23)
+ draw('16-main-hinge',[('housing-fixed-supports',left.intersect(window)),('moving-central-barrel',right.intersect(window))],'Main hinge — fixed axle between two supports','Two outer supports and axle: fixed half. Centre barrel: moving half.',(260,-170,190))
+ slab=b.c.box(97.999,98.001,-.1,9.6,10,23)
+ draw('17-main-hinge-section',[('housing-fixed-axle',left.intersect(slab)),('moving-central-barrel',right.intersect(slab))],'Main hinge section — trapped moving barrel','Integral 4 mm axle; two 2.5 mm supports; 0.4 mm radial and face gaps',(350,4.8,17.5))
 if __name__=='__main__':
- main()
+ if '--hinge-only' not in sys.argv:
+  main()
+  corner_detail()
+ hinge_detail()
  subprocess.run([sys.executable,str(OUT/'source/caption.py')],check=True)

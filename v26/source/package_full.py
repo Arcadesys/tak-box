@@ -9,7 +9,7 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def main():
     preserved={}; unavailable=[]
-    for name,digest in {**PRESERVED,'v26/V26-MECHANISM-REVIEW.zip':'664a4d012611dc2889dbf5ca7508ec9b8a0385b1cfe1426226637f5e121314ff'}.items():
+    for name,digest in {**PRESERVED,'v26/V26-MECHANISM-REVIEW.zip':'664a4d012611dc2889dbf5ca7508ec9b8a0385b1cfe1426226637f5e121314ff','v26/archive/previous-main-hinge/V26-opposed-pivots-superseded.zip':'db35b5db3caee5e3d9949e3dc533835be2de00983649a9685ad243a3e22b97fa'}.items():
         if not (ROOT/name).exists():
             assert not (ROOT/'.git').exists(),('Missing preserved checkout archive',name)
             unavailable.append(name);continue
@@ -32,7 +32,7 @@ def main():
         base_revision=revision.stdout.strip() if revision.returncode==0 else previous.get('base_revision'),
         source_sha256={str(p.relative_to(OUT)):sha(p) for p in (OUT/'source').glob('*.py') if p.name not in ('trial.py','combine.py','reproduce.py')},
         preserved_archives=preserved,archives_unavailable_in_standalone_extraction=unavailable,units='mm',piece_package=reports['geometry.json']['piece_package'],flexible_board_tabs=False,
-        hook_retains_both_closed_boards=True,board_seating_shoulder_mm=[4,6.1,4.7],physical_acceptance=False,printer_started=False)
+        hook_retains_both_closed_boards=True,case_outer_corner_radius_mm=reports['geometry.json']['case_outer_corner_radius_mm'],board_outer_corner_radius_mm=reports['geometry.json']['board_outer_corner_radius_mm'],main_hinge='integral 4mm axle between two fixed supports; central moving barrel',main_hinge_fixed_spans_mm=reports['geometry.json']['main_hinge_fixed_spans_mm'],main_hinge_moving_spans_mm=reports['geometry.json']['main_hinge_moving_spans_mm'],board_seating_shoulder_mm=[4,6.1,4.7],physical_acceptance=False,printer_started=False)
     (OUT/'reports/full-provenance.json').write_text(json.dumps(provenance,indent=2)+'\n')
     source_names=('requirements.txt','build.py','common.py','board_plate.py','plates_full.py','slice_full.py','slice.py','verify_pip_hinges.py','inspect_case_layers.py','verify_pin_toolpaths.py','verify_review.py','verify_colour.py','render.py','caption.py','package_full.py','package.py','reproduce_full.py')
     paths=[OUT/'README.md',OUT/'START-HERE.md']+[OUT/'source'/n for n in source_names]
@@ -41,9 +41,9 @@ def main():
     paths.extend(p for p in (OUT/'models').iterdir() if p.is_file() and 'trial' not in p.name)
     plate_names=reports['full-slicing.json']['plates']
     paths.extend(OUT/'plates'/f'{name}.3mf' for name in plate_names)
-    previews=('01-game-open','02-board-clip','03-captive-hook','04-hook-section','05-closed','06-fixed-guides','10-full-PIP-sliced-gaps','11-full-hook-sliced-gaps','12-case-plate','13-board-plate','14-capstone-plate','15-full-sliced-colour-layer')
+    previews=('01-game-open','02-board-clip','03-captive-hook','04-hook-section','05-closed','06-fixed-guides','10-full-PIP-sliced-gaps','11-full-hook-sliced-gaps','12-case-plate','13-board-plate','14-capstone-plate','15-full-sliced-colour-layer','16-main-hinge','17-main-hinge-section','18-rounded-corner')
     paths.extend(OUT/'previews'/f'{name}.png' for name in previews)
-    paths.extend(OUT/'reports'/name for name in (*reports,'full-provenance.json','build-full.log','build-full-initial-failure.log','full-plates.log','full-slice-driver.log','full-colour.log','full-review.log','full-render.log','full-render-initial-failure.log'))
+    paths.extend(OUT/'reports'/name for name in (*reports,'full-provenance.json','build-full.log','build-full-initial-failure.log','full-plates.log','full-slice-driver.log','full-colour.log','full-review.log','full-render.log','full-render-initial-failure.log','build-double-supported.log','build-double-supported-rounded.log','main-hinge-render.log','corner-render.log'))
     paths.extend(OUT/'reports'/f'{name}-full-slice.log' for name in plate_names)
     paths=sorted(set(paths))
     assert all(p.is_file() for p in paths)
