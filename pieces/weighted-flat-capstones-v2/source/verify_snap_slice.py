@@ -1,6 +1,6 @@
 """Read actual linear G-code bead widths around V2 protected snap tabs."""
 from pathlib import Path
-import json,re,hashlib
+import json,re,hashlib,sys
 from zipfile import ZipFile
 import numpy as np
 OUT=Path(__file__).resolve().parents[1]
@@ -39,6 +39,8 @@ def margin(point,beads):
     index=int(np.argmin(distances));return float(distances[index]),beads[index][4]
 
 def main():
+    global OUT
+    if '--black' in sys.argv:OUT=OUT/'BLACK'
     path=OUT/'reports/sample.gcode';data=path.read_text();paths=segments(data)
     geometry=json.loads((OUT/'reports/geometry.json').read_text());plate=json.loads((OUT/'reports/plate-provenance.json').read_text());checks=[]
     with ZipFile(plate['saved_project']) as archive:settings=json.loads(archive.read('Metadata/project_settings.config'))

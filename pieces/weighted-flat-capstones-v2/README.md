@@ -1,5 +1,7 @@
 # Four-piece print block: midpoint capstones and Cat recess texture
 
+The latest black-filament request has a [separate provisional black PLA slice](BLACK/README.md), **36m 32s / 9.57 g**. Native UI control timed out; live spool/device verification and printer dispatch remain pending. The original silk delivery below is preserved.
+
 Open [the ready-to-print 3MF plate](PRINT/Tak-FOUR-PIECE-SAMPLE-MIDPOINT-SLOT-3.3mf). It contains **one Cat capstone, one Witch capstone, one Cat regular flat and one Witch regular flat**, as **eight separate printable components**. Every component and support uses **Elegoo silk PLA in slot 3**. This is one sample plate, not complete teams and not a fused block. Unused slots 1/2 remain in the project only to preserve physical slot numbering.
 
 The verified saved slice estimates **40m 26s / 9.57 g**, with Centauri Carbon 2, 0.4 mm nozzle, 0.2 mm layers, 220 °C nozzle, 55 °C Textured PEI bed, 40 mm/s outer walls and 6 mm³/s maximum flow. Build-plate-only support remains enabled under the upper capstones' face-down raised details. There is no prime tower or filament switching. No printer job was dispatched. The inherited bed/vitrification metadata warning remains; the confirmed material/process basis was preserved.
