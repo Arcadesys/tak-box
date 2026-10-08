@@ -2,6 +2,12 @@
 
 Updated October 8, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
+### Weighted sample for the printed V26 case — October 8
+
+The user reports V26 already printed. Fit in that existing case takes priority over increasing piece height, and they permit redesigning the Witch hat. The new [weighted flat/capstone sample](../pieces/weighted-flat-capstones-v1/README.md) keeps regulars at 20 × 20 × 8 mm and capstones within 26 × 20 × 8 mm. A broader Witch hat matches the Cat's 0.988819 mL usable ballast space and 1.094064 mL complete closed void, with a thicker 1.538 mm roof. Two opposing snap hooks capture each floor behind retaining lips as a mechanical backup to the epoxy seal. The eight-part plate uses the user's Elegoo silk PLA on slots 3/4 and estimates 2h 7m 34s / 26.87 g.
+
+This exact piece package passes solid/mesh/STEP checks, 115 checks against V26's unchanged housings, cover travel and sampled folding, and named saved-3MF readback. The project was visibly loaded in ElegooSlicer; a subsequent native slice request timed out, so the saved CLI slice is the confirmed slice. The inherited vitrification metadata warning remains documented. No printer job was dispatched. The exact physical case revision, new-piece fit, snap strength and sand seal still require the sample trial. Existing V26 plates and older weighted packages are preserved.
+
 ### Current V26 captive main hinge — October 7
 
 The user confirms a printed axle permanently fixed between two supports on one half, trapping the opposite half’s moving barrel. V26 now uses this arrangement at both main-hinge stations: 4 mm axles, 2.5 mm fixed supports, 3.2 mm moving barrels, 9 mm outer barrels, full-height 8 mm roots and nominal 0.4 mm radial/face gaps. The rounded revision passes 947 integrated CAD checks, 51 exported audits and 37 sliced hinge/hook checks; sliced main support-face gaps are at least 0.32 mm under the conservative bead-width check. The prior opposing peg/socket full kit is preserved under v26/archive/previous-main-hinge. The modest outside rounding changes the boards’ body margins; inlay geometry remains intact. The current board plates are rebuilt and sliced again. Current complete estimate is 17h 46m / 288.66 g including optional capstones; physical strength remains untested.

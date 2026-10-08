@@ -1,0 +1,41 @@
+Building capstone cat
+Building capstone witch
+Matched capstone volume; hat roof 1.5379357947950694 mm
+Building regular cat
+Building regular witch
+{
+  "passed": true,
+  "capstones": {
+    "cat": {
+      "height_mm": 8,
+      "height_increase_mm": 0,
+      "usable_fill_ml": 0.9888185794956339,
+      "total_closed_interior_ml": 1.0940638467598252,
+      "fill_limit_depth_from_open_rim_mm": 1.9000000000000004,
+      "headroom_above_floor_tongue_mm": 0.30000000000000027,
+      "roof_mm": 0.7999999999999998,
+      "body_floor_overlap_mm3": 0.0,
+      "same_xy_as_original": true,
+      "redesigned_witch_hat": false,
+      "body_print_opening_up": true,
+      "support_for_face_down_raised_details": true,
+      "current_8mm_capstone_case_compatible": true
+    },
+    "witch": {
+      "height_mm": 8,
+      "height_increase_mm": 0,
+      "usable_fill_ml": 0.9888185790473846,
+      "total_closed_interior_ml": 1.0940638468062156,
+      "fill_limit_depth_from_open_rim_mm": 1.8464257267580813,
+      "headroom_above_floor_tongue_mm": 0.24642572675808117,
+      "roof_mm": 1.537935794795069,
+      "body_floor_overlap_mm3": 0.0,
+      "same_xy_as_original": false,
+      "redesigned_witch_hat": true,
+      "body_print_opening_up": true,
+      "support_for_face_down_raised_details": true,
+      "current_8mm_capstone_case_compatible": true
+    }
+  },
+  "print_parts": 8
+}

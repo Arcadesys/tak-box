@@ -1,0 +1,456 @@
+{
+  "units": "mm",
+  "source_revision": "7444f978933505b6808003d226c90ff9d503ebc9",
+  "generator_reference": {
+    "source_ref": "origin/feat/piece-generator-v1",
+    "revision": "863055fd146396925e2d05461b3e4696bf0c9ac4",
+    "package": "pieces/piece-generator-v1",
+    "verbatim_files": [
+      "geometry.py",
+      "spec.py",
+      "verify.py",
+      "README-original.md"
+    ]
+  },
+  "physical_acceptance": false,
+  "printed": false,
+  "printer_started": false,
+  "parameters": {
+    "side_wall_mm": 1.6,
+    "seat_wall_mm": 1.2,
+    "roof_under_raised_face_mm": 0.8,
+    "clearance_mm": 0.2,
+    "snap_engagement_mm": 0.25,
+    "arm_length_mm": 4.0,
+    "arm_width_mm": 0.8,
+    "slot_gap_mm": 0.35
+  },
+  "parts": {
+    "cat-capstone-body": {
+      "stl": "models/cat-capstone-body.stl",
+      "step": "models/cat-capstone-body.step",
+      "sha256": "50f4e0a6dcfaadf9c8090a0adab408a9d51f2390932279aec6744ecccdd5b859",
+      "step_sha256": "fac9e4a28abc8cce1c4defc62098690307a133305c6699a8356417eea01e21ee",
+      "volume_mm3": 996.8694514991881,
+      "mesh_volume_mm3": 996.8533415864473,
+      "bounds_mm": [
+        [
+          -12.323724493084887,
+          -8.592004476688262,
+          -1.3322676295501878e-15
+        ],
+        [
+          12.323724493084887,
+          9.3,
+          8.000000000000002
+        ]
+      ],
+      "watertight": true,
+      "mesh_bodies": 1,
+      "triangles": 3568,
+      "welding": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      },
+      "degenerate_triangles_removed": 0
+    },
+    "cat-capstone-floor": {
+      "stl": "models/cat-capstone-floor.stl",
+      "step": "models/cat-capstone-floor.step",
+      "sha256": "39459a184a8f59a579b8c2621742815de9dbf6f32cc4fcb157d4ba6305d9594a",
+      "step_sha256": "7736825365ed6373a9655a3f1b5b3ae2628028b9404347986057a87199cc78cc",
+      "volume_mm3": 386.7922507949228,
+      "mesh_volume_mm3": 386.7953340764755,
+      "bounds_mm": [
+        [
+          -10.688690483864738,
+          -7.900000002551647,
+          0.0
+        ],
+        [
+          10.688690483864738,
+          6.648010445605937,
+          1.6000000000000003
+        ]
+      ],
+      "watertight": true,
+      "mesh_bodies": 1,
+      "triangles": 588,
+      "welding": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      },
+      "degenerate_triangles_removed": 0
+    },
+    "witch-capstone-body": {
+      "stl": "models/witch-capstone-body.stl",
+      "step": "models/witch-capstone-body.step",
+      "sha256": "4ce9535b51ec1fa22fd5cae364519d8b868f3b31d5f644c93f850da2b9794d1c",
+      "step_sha256": "4ac57d7bba70cca25b07f85ab332e4041057b5d881e3ed98362df30ab1e23a34",
+      "volume_mm3": 1299.6884611847086,
+      "mesh_volume_mm3": 1299.6805390034608,
+      "bounds_mm": [
+        [
+          -13.0,
+          -9.971691620877097,
+          -4.440892098500626e-16
+        ],
+        [
+          13.0,
+          10.0,
+          8.000000000000002
+        ]
+      ],
+      "watertight": true,
+      "mesh_bodies": 1,
+      "triangles": 1472,
+      "welding": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      },
+      "degenerate_triangles_removed": 0
+    },
+    "witch-capstone-floor": {
+      "stl": "models/witch-capstone-floor.stl",
+      "step": "models/witch-capstone-floor.step",
+      "sha256": "01db5facc6ae9a4a29d3b6c976abad9f91f1cebfc2a873cb9092c1d6d350d8ea",
+      "step_sha256": "2ea9502c58329c85e3fc1817f2841ea997beb84ce17d88e88ce08733790b490e",
+      "volume_mm3": 464.2750659404723,
+      "mesh_volume_mm3": 464.2771474667017,
+      "bounds_mm": [
+        [
+          -11.600000005527864,
+          -8.600000000000001,
+          0.0
+        ],
+        [
+          11.600000000000005,
+          8.500920673854774,
+          1.6000000000000003
+        ]
+      ],
+      "watertight": true,
+      "mesh_bodies": 1,
+      "triangles": 468,
+      "welding": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      },
+      "degenerate_triangles_removed": 0
+    },
+    "cat-regular-body": {
+      "stl": "models/cat-regular-body.stl",
+      "step": "models/cat-regular-body.step",
+      "sha256": "93f946dd654d6105e1bdfcd09aba0facab5245dc936b8a9707fb02f7d0ed48f1",
+      "step_sha256": "5cf39cef6ed95c7c40d8df5f9ea239b3d0da85252d1f32b6b25763e8acd678a0",
+      "volume_mm3": 1699.8759211740044,
+      "mesh_volume_mm3": 1699.8475072025105,
+      "bounds_mm": [
+        [
+          -10.000000000000002,
+          -10.000000000000002,
+          -1.972300327263827e-15
+        ],
+        [
+          10.000000000000002,
+          10.000000000000002,
+          8.000000000000002
+        ]
+      ],
+      "watertight": true,
+      "mesh_bodies": 1,
+      "triangles": 4028,
+      "welding": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      },
+      "degenerate_triangles_removed": 0
+    },
+    "cat-regular-floor": {
+      "stl": "models/cat-regular-floor.stl",
+      "step": "models/cat-regular-floor.step",
+      "sha256": "06c9d185f3fb8272c8c44fbae40114836fd89f4de6052d16aaf727413a8f015c",
+      "step_sha256": "af54ed81df014bb2bfee28253244839ee230150b7898f6f099d1c0575ae80ad6",
+      "volume_mm3": 410.1625348801015,
+      "mesh_volume_mm3": 410.1614676137787,
+      "bounds_mm": [
+        [
+          -9.25,
+          -8.8,
+          0.0
+        ],
+        [
+          9.25,
+          8.8,
+          1.6
+        ]
+      ],
+      "watertight": true,
+      "mesh_bodies": 1,
+      "triangles": 1148,
+      "welding": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      },
+      "degenerate_triangles_removed": 0
+    },
+    "witch-regular-body": {
+      "stl": "models/witch-regular-body.stl",
+      "step": "models/witch-regular-body.step",
+      "sha256": "48d70e3839fd85ca7bd919a62b6bf3797178e30963318902eb455bcf33d56a8a",
+      "step_sha256": "808970a2dfebd3c315ff1335ff727102885c11e25320a3a82322d753a54ab435",
+      "volume_mm3": 1709.414764739875,
+      "mesh_volume_mm3": 1709.375934092279,
+      "bounds_mm": [
+        [
+          -10.000000000000002,
+          -10.000000000000002,
+          -1.972300327263827e-15
+        ],
+        [
+          10.000000000000002,
+          10.000000000000002,
+          8.000000000000002
+        ]
+      ],
+      "watertight": true,
+      "mesh_bodies": 1,
+      "triangles": 3164,
+      "welding": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      },
+      "degenerate_triangles_removed": 0
+    },
+    "witch-regular-floor": {
+      "stl": "models/witch-regular-floor.stl",
+      "step": "models/witch-regular-floor.step",
+      "sha256": "06c9d185f3fb8272c8c44fbae40114836fd89f4de6052d16aaf727413a8f015c",
+      "step_sha256": "0d548ae5a10036a5431bde7d7a487bf19f8db28a970d13bf0c7483ae05fa89f8",
+      "volume_mm3": 410.1625348801015,
+      "mesh_volume_mm3": 410.1614676137787,
+      "bounds_mm": [
+        [
+          -9.25,
+          -8.8,
+          0.0
+        ],
+        [
+          9.25,
+          8.8,
+          1.6
+        ]
+      ],
+      "watertight": true,
+      "mesh_bodies": 1,
+      "triangles": 1148,
+      "welding": {
+        "reused_vertex_occurrences": 0,
+        "maximum_position_change_mm": 0.0
+      },
+      "degenerate_triangles_removed": 0
+    }
+  },
+  "capstones": {
+    "cat": {
+      "height_mm": 8,
+      "height_increase_mm": 0,
+      "usable_fill_ml": 0.9888185794956339,
+      "total_closed_interior_ml": 1.0940638467598252,
+      "fill_limit_depth_from_open_rim_mm": 1.9000000000000004,
+      "headroom_above_floor_tongue_mm": 0.30000000000000027,
+      "pull_checks": [
+        {
+          "outward_mm": 0.1,
+          "collision_mm3": 0.0,
+          "capture": false
+        },
+        {
+          "outward_mm": 0.2,
+          "collision_mm3": 0.04249999999999915,
+          "capture": true
+        },
+        {
+          "outward_mm": 0.4,
+          "collision_mm3": 0.0641749999999987,
+          "capture": true
+        },
+        {
+          "outward_mm": 0.7,
+          "collision_mm3": 0.0,
+          "capture": false
+        }
+      ],
+      "snap_frames": [
+        {
+          "origin_xy": [
+            -8.665852349780664,
+            -6.107230529987719
+          ],
+          "normal_xy": [
+            -0.6672483215852396,
+            -0.744835335723058
+          ],
+          "angle_deg": -131.85504253530198
+        },
+        {
+          "origin_xy": [
+            8.665852349780664,
+            -6.107230529987719
+          ],
+          "normal_xy": [
+            0.6672483215852396,
+            -0.744835335723058
+          ],
+          "angle_deg": -48.14495746469802
+        }
+      ],
+      "roof_mm": 0.7999999999999998,
+      "body_floor_overlap_mm3": 0.0,
+      "same_xy_as_original": true,
+      "redesigned_witch_hat": false,
+      "body_print_opening_up": true,
+      "support_for_face_down_raised_details": true,
+      "current_8mm_capstone_case_compatible": true
+    },
+    "witch": {
+      "height_mm": 8,
+      "height_increase_mm": 0,
+      "usable_fill_ml": 0.9888185790473846,
+      "total_closed_interior_ml": 1.0940638468062156,
+      "fill_limit_depth_from_open_rim_mm": 1.8464257267580813,
+      "headroom_above_floor_tongue_mm": 0.24642572675808117,
+      "pull_checks": [
+        {
+          "outward_mm": 0.1,
+          "collision_mm3": 0.0,
+          "capture": false
+        },
+        {
+          "outward_mm": 0.2,
+          "collision_mm3": 0.042499999999999816,
+          "capture": true
+        },
+        {
+          "outward_mm": 0.4,
+          "collision_mm3": 0.06417500000000201,
+          "capture": true
+        },
+        {
+          "outward_mm": 0.7,
+          "collision_mm3": 0.0,
+          "capture": false
+        }
+      ],
+      "snap_frames": [
+        {
+          "origin_xy": [
+            -6.31887391717505,
+            3.7483743109295773
+          ],
+          "normal_xy": [
+            -0.8436614877321075,
+            0.5368754921931592
+          ],
+          "angle_deg": 147.52880770915152
+        },
+        {
+          "origin_xy": [
+            8.641800499796535,
+            2.6604501249491337
+          ],
+          "normal_xy": [
+            0.9701425001453319,
+            0.24253562503633297
+          ],
+          "angle_deg": 14.036243467926479
+        }
+      ],
+      "roof_mm": 1.537935794795069,
+      "body_floor_overlap_mm3": 0.0,
+      "same_xy_as_original": false,
+      "redesigned_witch_hat": true,
+      "body_print_opening_up": true,
+      "support_for_face_down_raised_details": true,
+      "current_8mm_capstone_case_compatible": true
+    }
+  },
+  "regulars": {
+    "cat": {
+      "dimensions_mm": [
+        20,
+        20,
+        8
+      ],
+      "ballast": {
+        "requested_fill_ml": 0.9,
+        "usable_fill_ml": 0.9,
+        "cavity_width_mm": 13.572871843845636,
+        "cavity_top_mm": 6.8,
+        "fill_height_mm": 4.9,
+        "side_wall_mm": 3.213564078077182,
+        "limited": false
+      },
+      "body_floor_overlap_mm3": 0.0,
+      "pull_checks": [
+        {
+          "outward_mm": 0.2,
+          "collision_mm3": 0.042499999999999816
+        },
+        {
+          "outward_mm": 0.4,
+          "collision_mm3": 0.06417500000000304
+        }
+      ],
+      "mechanism": "recovered piece-generator-v1, unchanged default snap parameters",
+      "body_print_opening_up": true
+    },
+    "witch": {
+      "dimensions_mm": [
+        20,
+        20,
+        8
+      ],
+      "ballast": {
+        "requested_fill_ml": 0.9,
+        "usable_fill_ml": 0.9,
+        "cavity_width_mm": 13.572871843845636,
+        "cavity_top_mm": 6.8,
+        "fill_height_mm": 4.9,
+        "side_wall_mm": 3.213564078077182,
+        "limited": false
+      },
+      "body_floor_overlap_mm3": 0.0,
+      "pull_checks": [
+        {
+          "outward_mm": 0.2,
+          "collision_mm3": 0.042499999999999816
+        },
+        {
+          "outward_mm": 0.4,
+          "collision_mm3": 0.06417500000000304
+        }
+      ],
+      "mechanism": "recovered piece-generator-v1, unchanged default snap parameters",
+      "body_print_opening_up": true
+    }
+  },
+  "equal_volume_error_ml": 4.639044703935724e-11,
+  "usable_volume_error_ml": 4.4824932654563554e-10,
+  "environment": {
+    "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+    "executable": "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "cadquery": "2.7.0",
+    "numpy": "2.5.3",
+    "trimesh": "5.1.1"
+  },
+  "sources_sha256": {
+    "pieces/weighted-flat-capstones-v1/source/build.py": "6e53e1a05ce40e10205003f04a7f46923b96b909c28994f4a14567ad9c8e54a4",
+    "pieces/weighted-flat-capstones-v1/source/vendor/spec.py": "f7e33e2a122bacf87aab5190e8beddee9a1a74222b8996fcab0f5ff04970107d",
+    "pieces/weighted-flat-capstones-v1/source/vendor/geometry.py": "bf433e6477eff544e89e9a71c61226ddca3df403cd96c98d2ea76b153bc52262",
+    "pieces/weighted-flat-capstones-v1/source/vendor/verify.py": "2f6fde6d27f18e7d72d74446432af9adf68435bcdb9562aba8bcf8edbadcf939",
+    "v26/reference/v24/source/flat_capstones.py": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693",
+    "pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+  },
+  "passed": true
+}
