@@ -18,3 +18,17 @@ pieces/fox-cat-capstones-v4/raw/*.obj binary linguist-generated=true
 full-size-pagoda-v1/models/*.stl binary linguist-generated=true
 full-size-pagoda-v1/models/*.step binary linguist-generated=true
 full-size-pagoda-v1/plates/*.3mf binary linguist-generated=true
+v18-case/models/*.step binary linguist-generated=true
+v18-case/models/*.stl binary linguist-generated=true
+v18-case/plates/*.3mf binary linguist-generated=true
+v18-case/previews/*.png binary linguist-generated=true
+v18-case/release/*.zip binary linguist-generated=true
+v18-case/reports/*.log -diff linguist-generated=true whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+
+v19/models/*.step binary linguist-generated=true
+v19/models/*.stl binary linguist-generated=true
+v19/PRINT/*.3mf binary linguist-generated=true
+v19/plates/*.3mf binary linguist-generated=true
+v19/previews/*.png binary linguist-generated=true
+v19/release/*.zip binary linguist-generated=true
+v19/reports/*.log -diff linguist-generated=true whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab

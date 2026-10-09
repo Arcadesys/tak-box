@@ -2,30 +2,20 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Final version direction: v18
+## Current print kit: v19
 
-V18 is the selected FINAL version. The [version freeze and release checklist](docs/V18_FINAL.md)
-pin the recovered clasp package and the common-hinge case baseline. Case integration
-and physical acceptance remain required before a complete-case release.
+[Download the V19 print kit](v19/release/tak-v19-print-kit.zip), then open **v19/START-HERE.md**. The five current CC2 PLA projects are together in **v19/PRINT**. The ZIP contains one v19 folder; older releases are archived separately.
 
-### Selected closure: [v18 recessed press-and-slide clasp](v18-recessed-clasp)
+V19 carries forward the checked side hook and headed pin, 1.75 mm filament hinges, four leaves on one common axis and the full 180 mm field. It contains 13 printed parts across five plates. This is a packaging/version cleanup; physical fit and loaded retention remain untested. See the [assembly guide](v19/START-HERE.md) and [checkpoint](docs/V19_CHECKPOINT.md).
 
-The recovered v18 package includes reproducible CAD source, STEP/STL parts,
-a three-part 3MF coupon plate, assembled release states, renders, review and
-slicing reports, and the original downloadable kit. [Recovery checks](v18-recessed-clasp/RECOVERY.md)
-confirmed all 67 manifest hashes and both separately saved artifacts.
+The original [recessed clasp](v18-recessed-clasp) and [v18 integrated kit](v18-case/README.md) remain historical. Their frozen files are unchanged.
 
-This is an **unprinted, support-required clasp coupon**, not a complete case.
-Both closing and opening require pressing the recessed button while sliding
-the rigid bolt. Case integration, physical fit, support removal, strength and
-loaded transport retention remain unverified. The v17 body study remains below.
-
-## Current v17 direction: [four leaves on one common hinge](v17-four-leaf)
+## Historical v17 architecture study: [four leaves on one common hinge](v17-four-leaf)
 
 Two drawer housings and two board leaves share one hinge axis. Covered
 sliding drawers keep flats enclosed while the leaves rotate. Board leaves
-will snap into their play positions; a [two-piece squeeze buckle](v17-squeeze-latch) is the
-current case-closure trial. The 180 mm field and 36 mm pitch remain.
+snap implementation was completed in v18; the [two-piece squeeze buckle](v17-squeeze-latch)
+is historical. The 180 mm field and 36 mm pitch remain.
 
 This is a CAD motion study, **not a full-print release**. Paired folding,
 independent board rotation, original-flat envelopes, solids and exported
