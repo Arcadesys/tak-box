@@ -2,7 +2,15 @@
 
 Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current version decision: v19
+### Current version decision: v20
+
+October 5: the user rejected the tall housing orientations and explicitly selected **V20** after proposing sliding tops for piece containment. V20 replaces removable drawers with fixed original-piece pockets and separate removable sliding lids. Each broad-bottom base and broad-face lid prints flat; sloped rails retain the lid vertically, a thumb catch blocks withdrawal and the rear wall stops over-insertion. The board leaf lifts for storage access and lowers again for play. Lids must be latched before folding.
+
+The full 180 mm field, four-leaf common hinge axis, 1.75 mm PLA filament hardware and side hook remain. The pockets shift 4 mm inward to provide clearance for the lid button's 4.5 mm nominal release. Release pads are 20×5.6 mm; pull tabs are 31 mm wide. The hatch outer face gains 1.4 mm thickness for flat printing. No hold-open detent or captive lid removal stop is claimed. Original Cat/Witch CAD is the clearance target; weighted and curled sets remain unverified.
+
+See [V20 guide](../v20/START-HERE.md) and [checkpoint](V20_CHECKPOINT.md). Physical fit, release force, durability and loaded transport still require observation. Prior V18/V19 files remain intact. No printer job is authorized by kit preparation.
+
+### Historical version decision: v19
 
 October 5: after seeing several versioned folders inside the v18 ZIP, the user explicitly requested **v19**. The current release is [v19](../v19/START-HERE.md): one ZIP root, one START-HERE guide and exactly five current projects in PRINT. Required CAD dependencies live under source/vendor; old version packages and coupons are excluded. Print projects, exported geometry and settings carry forward unchanged from the checked side-hook build at `1e8944b`. Physical acceptance remains pending. See [V19_CHECKPOINT.md](V19_CHECKPOINT.md).
 

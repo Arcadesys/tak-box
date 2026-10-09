@@ -1,0 +1,114 @@
+{
+  "checks": [
+    {
+      "name": "fit-base valid cropped single solid",
+      "pass": true
+    },
+    {
+      "name": "fit-lid valid cropped single solid",
+      "pass": true
+    },
+    {
+      "name": "3mf-readback-rail-and-catch-fit-check",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "fit-base",
+          "fit-lid"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "CC2 slice and exact named-mesh readback",
+      "pass": true
+    },
+    {
+      "name": "fit-base STEP/STL readback",
+      "pass": true
+    },
+    {
+      "name": "fit-lid STEP/STL readback",
+      "pass": true
+    }
+  ],
+  "source_STEP_sha256": {
+    "housing-left.step": "e9f00b16fc92b10815f993d5b0d97e4fb265afb2b06ede6b576b3a8ec32babe6",
+    "lid-left.step": "8ec721f37239b8ff20d60d95727bbe998f22d872cae13f37bd94d83856cd9d35"
+  },
+  "slicing": {
+    "slicer": "ElegooSlicer-2.4.2:",
+    "printer": "Elegoo Centauri Carbon 2 0.4 nozzle",
+    "physical_acceptance": false,
+    "printer_started": false,
+    "profiles_sha256": {
+      "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+      "process-case.json": "d9b18bf7a837bd5ac00a9ea442144cc01142252cb018e1abd5d028e9f45f0a5a",
+      "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    "plates": {
+      "rail-and-catch-fit-check": {
+        "passed": true,
+        "exit_code": 0,
+        "input_sha256": "d9e3a24fb8f315dfc2bc4b07e65ba06d065feb87102cb2fdb2516c616742f141",
+        "command": [
+          "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+          "--datadir",
+          "<repo>/v20/.slicer-work/fit-check/.slicer-work/config",
+          "--load-settings",
+          "<repo>/v20/.slicer-work/fit-check/profiles/machine.json;<repo>/v20/.slicer-work/fit-check/profiles/process-case.json",
+          "--load-filaments",
+          "<repo>/v20/.slicer-work/fit-check/profiles/filament-pla.json",
+          "--ensure-on-bed",
+          "--arrange",
+          "0",
+          "--orient",
+          "0",
+          "--slice",
+          "0",
+          "--export-3mf",
+          "<repo>/v20/.slicer-work/fit-check/PRINT/rail-and-catch-fit-check-CC2-PLA.3mf",
+          "<repo>/v20/.slicer-work/fit-check/plates/rail-and-catch-fit-check.3mf"
+        ],
+        "warnings": [
+          {
+            "msg": "bed_temperature_too_high_than_filament",
+            "level": "3",
+            "error_code": "1000C001"
+          }
+        ],
+        "objects": [
+          "fit-base",
+          "fit-lid"
+        ],
+        "non_printing_support_blockers": [],
+        "slice_metadata": {
+          "index": "1",
+          "extruder_type": "0",
+          "nozzle_volume_type": "0",
+          "printer_model_id": "",
+          "nozzle_diameters": "0.4",
+          "timelapse_type": "0",
+          "prediction": "5306",
+          "weight": "33.18",
+          "first_layer_time": "0.000000",
+          "outside": "false",
+          "support_used": "true",
+          "label_object_enabled": "false",
+          "enable_filament_dynamic_map": "false",
+          "has_filament_switcher": "false",
+          "filament_maps": "1",
+          "limit_filament_maps": "0"
+        },
+        "project_sha256": "4a4ffa4a493b30c08806d903abbf8cb34e6a16de63b5e349e70246ea36b7c0eb",
+        "project": "rail-and-catch-fit-check-CC2-PLA.3mf",
+        "gcode_sha256": "9b4e74350ef39eb32c812a0c0a4fe6bf83dac6539aa5c5e2a95918b422eebff2"
+      }
+    },
+    "total_estimated_seconds": 5306,
+    "total_estimated_grams": 33.18
+  },
+  "scope": "Front 65 mm of actual left base/lid. Tests matching rail and thumb catch only, not full-length warp, rear stop, hinge or transport. No change in rail/catch dimensions.",
+  "physical_acceptance": false
+}

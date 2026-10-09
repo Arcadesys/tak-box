@@ -1,0 +1,302 @@
+{
+  "scope": "Extrusion centerlines inside a nominal 1.75 mm pin core, cropped at passage ends. No bead-width/force/physical-fit proof.",
+  "extruder_offset_mm": [
+    0.0,
+    1.5
+  ],
+  "checks": [
+    {
+      "name": "01-left-housing-hook-pivot-and-cap-compartment/main left Y=-18.0",
+      "pass": true,
+      "start_mm": [
+        114.8,
+        7.300000000000001,
+        16.3
+      ],
+      "end_mm": [
+        114.8,
+        12.299999999999999,
+        16.3
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "55cae61b5684643b910fcfd3b7ec73b30ca124ed6f90d03952d3de8137825bbe"
+    },
+    {
+      "name": "01-left-housing-hook-pivot-and-cap-compartment/main left Y=193.2",
+      "pass": true,
+      "start_mm": [
+        114.8,
+        219.4,
+        16.3
+      ],
+      "end_mm": [
+        114.8,
+        223.5,
+        16.3
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "55cae61b5684643b910fcfd3b7ec73b30ca124ed6f90d03952d3de8137825bbe"
+    },
+    {
+      "name": "01-left-housing-hook-pivot-and-cap-compartment/fixed hatch 0",
+      "pass": true,
+      "start_mm": [
+        17.1,
+        244.8,
+        23.2
+      ],
+      "end_mm": [
+        28.5,
+        244.8,
+        23.2
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "55cae61b5684643b910fcfd3b7ec73b30ca124ed6f90d03952d3de8137825bbe"
+    },
+    {
+      "name": "01-left-housing-hook-pivot-and-cap-compartment/fixed hatch 75",
+      "pass": true,
+      "start_mm": [
+        92.1,
+        244.8,
+        23.2
+      ],
+      "end_mm": [
+        103.5,
+        244.8,
+        23.2
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "55cae61b5684643b910fcfd3b7ec73b30ca124ed6f90d03952d3de8137825bbe"
+    },
+    {
+      "name": "01-left-housing-hook-pivot-and-cap-compartment/hook fixed pivot",
+      "pass": true,
+      "start_mm": [
+        13.9,
+        119.0,
+        7.0
+      ],
+      "end_mm": [
+        17.5,
+        119.0,
+        7.0
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "55cae61b5684643b910fcfd3b7ec73b30ca124ed6f90d03952d3de8137825bbe"
+    },
+    {
+      "name": "02-right-housing-and-hook-pin/main right Y=0.0",
+      "pass": true,
+      "start_mm": [
+        13.0,
+        10.3,
+        16.3
+      ],
+      "end_mm": [
+        13.0,
+        14.4,
+        16.3
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "080fad7ef143785f82c5ea668b3912b1eec8089d8efececefd8ef2881bc42fe5"
+    },
+    {
+      "name": "02-right-housing-and-hook-pin/main right Y=211.2",
+      "pass": true,
+      "start_mm": [
+        13.0,
+        221.5,
+        16.3
+      ],
+      "end_mm": [
+        13.0,
+        226.5,
+        16.3
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "080fad7ef143785f82c5ea668b3912b1eec8089d8efececefd8ef2881bc42fe5"
+    },
+    {
+      "name": "03-board-leaves/board left Y=-12.0",
+      "pass": true,
+      "start_mm": [
+        107.0,
+        7.300000000000001,
+        9.100000000000001
+      ],
+      "end_mm": [
+        107.0,
+        12.3,
+        9.100000000000001
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "743ecfa6accbc01536625e1eea14187bc32d486a04abf5d585e9e1b836752dac"
+    },
+    {
+      "name": "03-board-leaves/board left Y=199.2",
+      "pass": true,
+      "start_mm": [
+        107.0,
+        218.5,
+        9.100000000000001
+      ],
+      "end_mm": [
+        107.0,
+        223.5,
+        9.100000000000001
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "743ecfa6accbc01536625e1eea14187bc32d486a04abf5d585e9e1b836752dac"
+    },
+    {
+      "name": "03-board-leaves/board right Y=-6.0",
+      "pass": true,
+      "start_mm": [
+        118.0,
+        7.3,
+        9.100000000000001
+      ],
+      "end_mm": [
+        118.0,
+        12.3,
+        9.100000000000001
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "743ecfa6accbc01536625e1eea14187bc32d486a04abf5d585e9e1b836752dac"
+    },
+    {
+      "name": "03-board-leaves/board right Y=205.2",
+      "pass": true,
+      "start_mm": [
+        118.0,
+        218.5,
+        9.100000000000001
+      ],
+      "end_mm": [
+        118.0,
+        223.5,
+        9.100000000000001
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "743ecfa6accbc01536625e1eea14187bc32d486a04abf5d585e9e1b836752dac"
+    },
+    {
+      "name": "05-hatch-hook-and-five-axle-caps/moving hatch",
+      "pass": true,
+      "start_mm": [
+        23.3,
+        9.599999999999994,
+        2.5999999999999766
+      ],
+      "end_mm": [
+        81.7,
+        9.599999999999994,
+        2.5999999999999766
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+    },
+    {
+      "name": "05-hatch-hook-and-five-axle-caps/moving hook",
+      "pass": true,
+      "start_mm": [
+        114.5,
+        17.0,
+        2.8999999999999995
+      ],
+      "end_mm": [
+        114.5,
+        17.0,
+        0.2999999999999994
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+    },
+    {
+      "name": "05-hatch-hook-and-five-axle-caps/collar 1",
+      "pass": true,
+      "start_mm": [
+        113.5,
+        53.5,
+        0.4
+      ],
+      "end_mm": [
+        113.5,
+        53.5,
+        3.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+    },
+    {
+      "name": "05-hatch-hook-and-five-axle-caps/collar 2",
+      "pass": true,
+      "start_mm": [
+        125.5,
+        53.5,
+        0.4
+      ],
+      "end_mm": [
+        125.5,
+        53.5,
+        3.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+    },
+    {
+      "name": "05-hatch-hook-and-five-axle-caps/collar 3",
+      "pass": true,
+      "start_mm": [
+        137.5,
+        53.5,
+        0.4
+      ],
+      "end_mm": [
+        137.5,
+        53.5,
+        3.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+    },
+    {
+      "name": "05-hatch-hook-and-five-axle-caps/collar 4",
+      "pass": true,
+      "start_mm": [
+        149.5,
+        53.5,
+        0.4
+      ],
+      "end_mm": [
+        149.5,
+        53.5,
+        3.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+    },
+    {
+      "name": "05-hatch-hook-and-five-axle-caps/collar 5",
+      "pass": true,
+      "start_mm": [
+        161.5,
+        53.5,
+        0.4
+      ],
+      "end_mm": [
+        161.5,
+        53.5,
+        3.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+    }
+  ],
+  "preview_sheets": [
+    "06-pin-passages-1.png",
+    "06-pin-passages-2.png",
+    "06-pin-passages-3.png"
+  ]
+}
