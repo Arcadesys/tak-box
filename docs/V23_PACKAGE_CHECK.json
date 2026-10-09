@@ -1,0 +1,19 @@
+{
+  "version": "v23",
+  "archive": "v23/release/tak-v23-print-kit.zip",
+  "bytes": 19247719,
+  "sha256": "33510a63581b1a8b5f3c5afde34ed99acf6ecd5ccfb6bc49956e6d6e2b9e1221",
+  "single_root": "v23",
+  "print_projects": 3,
+  "payload_files": 124,
+  "fresh_payload_hashes_and_syntax": true,
+  "relative_markdown_links_checked": 16,
+  "CAD_exports_byte_identical_to_accepted_seamless": 38,
+  "three_mf_projects_meshes_transforms_and_operational_values_equivalent": 10,
+  "original_v22_archive_and_payload_preserved": true,
+  "source_revision": "ab99d397d1dd4f19f4bc35a7f24de395630c2cf3",
+  "geometry_source_revision": "4859c9cdd515cd7f12324a99423b8795fa7984ac",
+  "prior_geometry_motion_and_slices_reused": true,
+  "physical_acceptance": false,
+  "printer_started": false
+}

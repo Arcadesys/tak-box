@@ -16,11 +16,11 @@
     "xy_centerline_bounds_mm": [
       [
         7.21,
-        5.1690000000000005
+        4.884
       ],
       [
         26.79,
-        33.833
+        47.319
       ]
     ],
     "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
@@ -34,6 +34,6 @@
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observations": "Shortened hinge pair begins on two connected leaves, with external supports, rounded shoulders and separate pin/socket contours in selected layers."
+    "observations": "Both connected trial leaves start on the bed; external supports stop below the bearings; opposed pivot/socket contours remain separate in the selected layers and enlarged gap plots."
   }
 }

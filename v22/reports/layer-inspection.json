@@ -17,12 +17,12 @@
     ],
     "xy_centerline_bounds_mm": [
       [
-        17.21,
-        18.535
+        10.41,
+        3.995
       ],
       [
-        216.088,
-        223.465
+        223.974,
+        228.205
       ]
     ],
     "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
@@ -36,7 +36,7 @@
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observations": "Paired bases lie flat. Side wells and rear capstone bays are visible; local end supports stay outside the captive cylindrical bearing gaps. No brim joins the centre seam."
+    "observations": "Paired floors lie flat with an open centre seam; rear shallow capstone bays visible; external supports remain outside captive bearings."
   },
   "02-sliding-board-tops": {
     "levels": 28,
@@ -58,8 +58,8 @@
         1.644
       ],
       [
-        224.156,
-        204.456
+        229.156,
+        204.856
       ]
     ],
     "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
@@ -73,7 +73,7 @@
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observations": "Both boards start on broad undersides. Recessed side grips and center-hook relief continue through the part; grid and release slots remain visible on the selected layers."
+    "observations": "Both board backs start on the bed; catch gaps and upper grid lines remain visible through the selected layers."
   },
   "03-flat-capstones-hook-and-collar": {
     "levels": 40,
@@ -97,7 +97,7 @@
         1.644
       ],
       [
-        137.343,
+        137.356,
         31.616
       ]
     ],
@@ -112,6 +112,6 @@
       "Custom",
       "unlabelled start/end purge"
     ],
-    "observations": "Capstones, hook and round collar start on the bed. Hook is a continuous narrow solid; raised capstone marks grow from top skins. Collar bore remains open."
+    "observations": "Four separate parts start on the bed; capstone details grow from the continuous body top, with no floating marks."
   }
 }

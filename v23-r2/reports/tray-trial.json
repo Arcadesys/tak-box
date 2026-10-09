@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "name": "seat-section valid solid and STEP/STL readback",
+      "pass": true
+    },
+    {
+      "name": "tray-section valid solid and STEP/STL readback",
+      "pass": true
+    },
+    {
+      "name": "nominal seating and vertical removal",
+      "pass": true
+    },
+    {
+      "name": "3mf-readback-removable-tray-access-trial",
+      "pass": true,
+      "detail": {
+        "objects": [
+          "seat-section",
+          "tray-section"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "CC2 slice and exact mesh/placement readback",
+      "pass": true
+    }
+  ],
+  "slicing": {
+    "slicer": "ElegooSlicer-2.4.2:",
+    "printer": "Elegoo Centauri Carbon 2 0.4 nozzle",
+    "physical_acceptance": false,
+    "printer_started": false,
+    "profiles_sha256": {
+      "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+      "process-case.json": "d68555941050fd04c5f358566b3428a1286c5c7829558f90a6766a16602106b1",
+      "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    "plates": {
+      "removable-tray-access-trial": {
+        "passed": true,
+        "exit_code": 0,
+        "input_sha256": "fdbd6d2100972149c9aa224883f47f57ecc623f6f1922bdc0891ef828d218388",
+        "command": [
+          "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+          "--datadir",
+          "<repo>/v23-r2/.slicer-work/tray-trial/.slicer-work/config",
+          "--load-settings",
+          "<repo>/v23-r2/.slicer-work/tray-trial/profiles/machine.json;<repo>/v23-r2/.slicer-work/tray-trial/profiles/process-case.json",
+          "--load-filaments",
+          "<repo>/v23-r2/.slicer-work/tray-trial/profiles/filament-pla.json",
+          "--ensure-on-bed",
+          "--arrange",
+          "0",
+          "--orient",
+          "0",
+          "--slice",
+          "0",
+          "--export-3mf",
+          "<repo>/v23-r2/.slicer-work/tray-trial/PRINT/removable-tray-access-trial-CC2-PLA.3mf",
+          "<repo>/v23-r2/.slicer-work/tray-trial/plates/removable-tray-access-trial.3mf"
+        ],
+        "warnings": [
+          {
+            "msg": "bed_temperature_too_high_than_filament",
+            "level": "3",
+            "error_code": "1000C001"
+          }
+        ],
+        "objects": [
+          "seat-section",
+          "tray-section"
+        ],
+        "non_printing_support_blockers": [],
+        "slice_metadata": {
+          "index": "1",
+          "extruder_type": "0",
+          "nozzle_volume_type": "0",
+          "printer_model_id": "",
+          "nozzle_diameters": "0.4",
+          "timelapse_type": "0",
+          "prediction": "3404",
+          "weight": "21.52",
+          "first_layer_time": "0.000000",
+          "outside": "false",
+          "support_used": "true",
+          "label_object_enabled": "false",
+          "enable_filament_dynamic_map": "false",
+          "has_filament_switcher": "false",
+          "filament_maps": "1",
+          "limit_filament_maps": "0"
+        },
+        "project_sha256": "e98710361387a18ce32fce2afa84a4401f8140b39b0b721e34876c51ccf11fa2",
+        "project": "removable-tray-access-trial-CC2-PLA.3mf",
+        "gcode_sha256": "0eca40171de1189280b26ced0402b186ee53878484039d676588643755565ce1"
+      }
+    },
+    "total_estimated_seconds": 3404,
+    "total_estimated_grams": 21.52
+  },
+  "source_tray_STEP_sha256": "02a33e022fee5cad1202137f13624fde0323873ed7b736575eb96a91773367aa",
+  "source_case_py_sha256": "879a47ee764f50e7f29d3dea7d79022bd21d0c16a98a3ac90a38745f1b4d34d4",
+  "scope": "Actual rear 54 mm of proposed tray and empty case seat. Three flat pockets, capstone bay and full pinch handle. Open-ended section has no full-case containment function. Does not qualify full-tray warping, raised shell/rails, closure or carry retention.",
+  "physical_acceptance": false
+}

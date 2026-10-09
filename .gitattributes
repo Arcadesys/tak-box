@@ -32,3 +32,28 @@ v19/plates/*.3mf binary linguist-generated=true
 v19/previews/*.png binary linguist-generated=true
 v19/release/*.zip binary linguist-generated=true
 v19/reports/*.log -diff linguist-generated=true whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+
+# V23 multicolour board option: review generated CAD through source and previews.
+v23/board-inlays/models/*.step binary linguist-generated=true
+v23/board-inlays/models/*.stl binary linguist-generated=true
+v23/board-inlays/plates/*.3mf binary linguist-generated=true
+v23/board-inlays/PRINT/*.3mf binary linguist-generated=true
+v23/board-inlays/previews/*.png binary linguist-generated=true
+v23/board-inlays/release/*.zip binary linguist-generated=true
+v23/board-inlays/reports/*.log -diff linguist-generated=true
+
+# V23 R2 mechanical revision: source and geometry previews are the review surface.
+v23-r2/**/*.step binary linguist-generated=true
+v23-r2/**/*.stl binary linguist-generated=true
+v23-r2/**/*.3mf binary linguist-generated=true
+v23-r2/**/*.png binary linguist-generated=true
+v23-r2/release/*.zip binary linguist-generated=true
+v23-r2/reports/*.log -diff linguist-generated=true
+
+# V24 identity of the reinforced hinge and removable tray kit.
+v24/**/*.step binary linguist-generated=true
+v24/**/*.stl binary linguist-generated=true
+v24/**/*.3mf binary linguist-generated=true
+v24/**/*.png binary linguist-generated=true
+v24/release/*.zip binary linguist-generated=true
+v24/reports/*.log -diff linguist-generated=true

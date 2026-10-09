@@ -2,15 +2,29 @@
 
 Updated October 5, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Current version decision: V22 seamless exterior
+### Current version: V24 — October 6
 
-October 5: the user authorized a local exterior revision within V22. The hook, pivot/collar and headed catch are recessed together at the middle of the long side opposite the main hinge. Broad rounded thumb access surrounds the hook; two offset recessed finger wells replace each board’s projecting pull tab. Rounded end shoulders replace the projecting rectangular main-hinge roots while retaining captive pivots and full folding motion.
+The user explicitly named the completed reinforced-hinge/removable-tray revision **V24**. This is an identity correction of V23 R2, without new geometry, slicing or physical evidence. The V23 R2 kit remains archived in its original package.
+
+The user reports the V23 print broke at the thin bar carrying the main hinge and wants sturdier hinges plus a removable loaded player tray on each side for purse use. Exact fracture location, fused-joint state and breaking action remain unknown. This supersedes blanket unprinted status for that baseline component; other physical acceptance is not inferred.
+
+[V24](../v24/START-HERE.md) preserves the full 180 mm field and original flats/flat capstones. It uses 8 mm full-height hinge supports, 4 mm captive pivots, 9 mm rounded barrels, separate 1.2 mm tray floors, broad pinch handles and low locating stops under sliding covers. The selected closed size is **102.5×200×35 mm**: +1.5 mm at the stronger hinge barrels and +2.4 mm thickness, retaining the 2.2 mm case floors and 4.7 mm boards. Each tray carries 21 flats plus a capstone and rests flat beside the board. Open trays are handled upright.
+
+New paired bases, covers and hook are required; capstones, flats and collar retain geometry. Baseline V23 and all earlier kits remain intact. Concurrent multicolor artwork is preserved separately and is not incorporated into this mechanical revision. The 238 CAD, loaded path, export and other checks plus four CC2 full slices and two trial slices from the unchanged V23 R2 revision remain applicable through equivalence evidence, with separate hinge/support and tray-access trials. Strength, printed release/fit, grasp and loaded transport still require physical trials; no printer job or merge is performed. See [checkpoint](V24_CHECKPOINT.md).
+
+### Preserved version decision: V23
+
+October 5: the user explicitly named the accepted seamless-exterior design **V23**. This changes version identity only; geometry, material/process settings and print behavior remain those accepted at 4859c9c / 19b8773. The hook, pivot/collar and headed catch are recessed together at the middle of the long side opposite the main hinge. Broad rounded thumb access surrounds the hook; two offset recessed finger wells replace each board’s projecting pull tab. Rounded end shoulders replace the projecting rectangular main-hinge roots while retaining captive pivots and full folding motion.
 
 The closed envelope is **101×200×32.6 mm**, compared with 111.8×220.2×32.6 mm for the preserved original V22 kit. The full 180 mm, 5×5 / 36 mm-pitch field, original 42 Cat/Witch 20×20×8 mm flats and solid 8 mm flat Cat/Witch capstones remain. No deeper case, rear compartment, standee or sculpted capstone is introduced. Hook parking at 90° clears both complete outward board paths. Only its pivot uses an inserted 8.6 mm length of 1.75 mm PLA; main hinges print captive.
 
-The revised kit is `v22/release/tak-v22-seamless-print-kit.zip`: three full projects, eight parts, estimated 11 h 38 min / 272 g, with optional hinge and closure trials. Replace both bases, both boards, hook and collar together. The capstones match the original V22 CAD. The original V22 ZIP and V18–V21 archives are preserved. Geometry, exact loaded-piece clearance, motion samples, readback, toolpaths and slices pass; physical snag resistance, thumb/grip comfort, release, fit, durability and loaded retention remain unobserved. No printer job or merge is authorized by this preparation.
+The revised kit is `v23/release/tak-v23-print-kit.zip`: three full projects, eight parts, estimated 11 h 38 min / 272 g, with optional hinge and closure trials. Replace both bases, both boards, hook and collar together. The capstones match the original V22 CAD. The original V22 ZIP and V18–V21 archives are preserved. Geometry, exact loaded-piece clearance, motion samples, readback, toolpaths and slices pass; physical snag resistance, thumb/grip comfort, release, fit, durability and loaded retention remain unobserved. No printer job or merge is authorized by this preparation.
 
-See [V22 guide](../v22/START-HERE.md) and [revision checkpoint](V22_SEAMLESS_CHECKPOINT.md).
+See [V23 guide](../v23/START-HERE.md) and [checkpoint](V23_CHECKPOINT.md).
+
+### Historical version decision: V22
+
+Original V22 remains the corner-hook design with captive main hinges and solid flat capstones under sliding boards, at 111.8×220.2×32.6 mm. Source and package were restored from 02f8a09; the original ZIP and all 94 payload files are unchanged. The intermediate seamless delivery was subsequently named V23 and is retained in v22/release/archive for recovery. Current download and guide links point to V23.
 
 ### Historical version decision: v21
 
@@ -27,6 +41,10 @@ October 5: the user rejected the tall housing orientations and explicitly select
 The full 180 mm field, four-leaf common hinge axis, 1.75 mm PLA filament hardware and side hook remain. The pockets shift 4 mm inward to provide clearance for the lid button's 4.5 mm nominal release. Release pads are 20×5.6 mm; pull tabs are 31 mm wide. The hatch outer face gains 1.4 mm thickness for flat printing. No hold-open detent or captive lid removal stop is claimed. Original Cat/Witch CAD is the clearance target; weighted and curled sets remain unverified.
 
 See [V20 guide](../v20/START-HERE.md) and [checkpoint](V20_CHECKPOINT.md). Physical fit, release force, durability and loaded transport still require observation. Prior V18/V19 files remain intact. No printer job is authorized by kit preparation.
+
+### V23 multicolour playing-surface option — October 6, 2026
+
+The user selected the V23 sliding boards for a flush black/white inlay option, with two silk PLA accent colours. `v23/board-inlays/` reuses the v17 recessed grid and retained v16 celestial artwork. The full 180 mm field, 36 mm pitch, V23 rails, catches, grips, bases and capstones are preserved. This replaces only board plate 02; the existing complete-kit ZIP stays archived unchanged. Both black/white and four-colour projects include a small physical trial. The two accent colours and actual silk profiles are still to be selected; physical finish and fit remain unobserved. Read the option README and fresh reports before printing.
 
 ### Historical version decision: v19
 
