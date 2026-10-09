@@ -1,6 +1,6 @@
 # Tak project brief
 
-Updated October 4, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 6, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
 ### Final version decision: v18
 
@@ -137,6 +137,7 @@ Walnut/maple, brass accents and felt-like lining in generated imagery are visual
 
 - Goal: satisfying weight, grip, stacking and sound; plain plastic feels underwhelming.
 - weighted-v1 has two-part 20×20×6 mm stones with separate locating floors and post-print bonded ballast, then adhesive closure. Each team has 21 stones plus a capstone.
+- piece-generator-v1 is the new reusable piece-system direction: TOML presets generate 20×20×6 mm weighted flats, recessed engraving, subtractive side textures, solved ballast cavities, and a flat tactile capstone. Weighted pieces require a positive in-plane snap-floor closure plus adhesive; glue is no longer the only retention mechanism. The first physical gate is the generated 0.20/0.25/0.30 mm snap-engagement coupon before any full team print.
 - Compare an empty control, bonded sand and bonded fine steel shot. 5–7 g is an experimental target, not a measured result. Record cured mass, rattle, sound, grasp, stack separation and wall stability.
 - The current tray insert has 98 mm lanes for five 19.5 mm flats. Five 20 mm weighted stones require 100 mm before clearance. They do not fit that insert arrangement.
 - fox-knurled-v1 has 19.5×19.5×8 mm stones and fits the current insert digitally; physical grip/fit needs a sample.

@@ -1,0 +1,88 @@
+name = "example-cat"
+
+[stone]
+width = 20.0
+height = 6.0
+corner_radius = 2.0
+edge_chamfer = 0.4
+seat_width = 18.0
+seat_radius = 1.0
+seat_depth = 1.2
+floor_thickness = 1.0
+tongue_height = 0.6
+
+[stone.ballast]
+target_fill_ml = 0.90
+minimum_side_wall = 1.20
+minimum_roof = 0.80
+fill_bottom = 1.90
+cavity_radius = 0.80
+
+[stone.closure]
+kind = "snap"
+clearance = 0.20
+arm_length = 4.00
+arm_width = 0.80
+slot_gap = 0.35
+attach_length = 0.60
+hook_engagement = 0.25
+hook_width = 0.85
+pocket_height = 0.60
+
+[stone.engraving]
+kind = "builtin"
+value = "cat"
+depth = 0.40
+scale = 1.0
+
+[stone.texture]
+kind = "diamond"
+depth = 0.35
+groove_width = 0.75
+pitch = 2.40
+angle = 45.0
+z_start = 1.25
+z_end = 4.75
+
+[capstone]
+shape = "octagon"
+width = 20.0
+height = 7.5
+corner_clip = 3.0
+seat_width = 15.8
+seat_radius = 0.8
+seat_depth = 1.2
+floor_thickness = 1.0
+tongue_height = 0.6
+
+[capstone.ballast]
+target_fill_ml = 0.90
+minimum_side_wall = 1.20
+minimum_roof = 0.80
+fill_bottom = 1.90
+cavity_radius = 0.80
+
+[capstone.closure]
+kind = "snap"
+clearance = 0.20
+arm_length = 4.00
+arm_width = 0.80
+slot_gap = 0.35
+attach_length = 0.60
+hook_engagement = 0.25
+hook_width = 0.85
+pocket_height = 0.60
+
+[capstone.engraving]
+kind = "builtin"
+value = "cat"
+depth = 0.40
+scale = 1.0
+
+[capstone.texture]
+kind = "vertical_ribs"
+depth = 0.35
+groove_width = 0.75
+pitch = 2.40
+z_start = 1.25
+z_end = 6.25
