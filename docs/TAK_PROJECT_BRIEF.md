@@ -2,6 +2,36 @@
 
 Updated October 6, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
+### Final version decision: v18
+
+The user selected **v18 as the FINAL version** on October 4, 2026 (Chicago).
+Finish the recessed press-and-slide clasp with the retained four-leaf
+common-hinge case architecture. See [V18_FINAL.md](V18_FINAL.md) for the exact
+source freeze, protected choices and remaining release gates. The coupon package
+is pinned by [V18-FREEZE.json](V18-FREEZE.json); the integrated complete case
+and physical acceptance are still pending. Earlier closure trials are historical.
+
+### v18 recessed press-and-slide clasp coupon
+
+Recovered October 4, 2026 in `v18-recessed-clasp`. The complete saved package
+contains CAD sources, three separate printable parts, STEP/STL assemblies,
+a generic 3MF plate, four release states, actual-geometry renders, review and
+prior slicing evidence. The original ZIP is retained under `release/`.
+Recovery verified ZIP CRC, all 67 manifest byte counts/SHA-256 hashes, matching
+standalone 3MF/image files and Python syntax. No geometry rebuild or new slice
+was performed during recovery.
+
+The receiver, keeper and rigid sliding bolt separate load-bearing shoulders
+from the recessed press leaf. Both closing and opening require pressing; to
+open, unload the keeper, press approximately 2 mm and slide left 10 mm before
+lifting. The assembled coupon is 78×40×10.1 mm. Prior digital checks are recorded
+in the package; physical fit, force, fatigue, support removal and loaded-bag
+retention remain untested. Supports are required in the provided orientation.
+This is a standalone clasp coupon, not a v18 complete-case release or an
+integrated change to v17. Next trial: print and inspect the small coupon, then
+check assembly, ten gentle cycles and press-only/drag-only retention as described
+in its README before case integration. Earlier closure studies remain history.
+
 ### v17 common-hinge travel revision
 
 User selected **all four leaves on the same hinge**: two drawer housings
@@ -67,15 +97,33 @@ the capstone, replacing the separate 21st-flat pocket without enlarging the
 cassette. Each is an open carrier, with separate lids not
 included in this revision. Cat is 33.809 mm tall; Fox is 35 mm. Both retain
 their existing proportions and looking-back curl. Flat seats are raised 16 mm, placing the flats
-2 mm below the rim and 6 mm above the dividers; 18 mm finger openings expose
+2 mm below the rim and 8 mm above the dividers; 20 mm finger openings expose
 the leading stone in each row. Loaded flats remain 2 mm below the next cassette.
 Capstone seats are raised 3 mm, with a 28 mm front finger opening to grasp the
-curled body; both capstones remain below the next cassette floor.
+curled body; both capstones remain below the next cassette floor. Contact edges
+have 0.5 mm chamfers. Broad recessed side grips (50 mm wide, 10 mm deep) reach
+beneath the raised seats with sloped roofs for a two-handed cassette lift.
+The outside size and stacking pins/sockets retain the previous dimensions;
+old/new pairs have passed digital contact, clearance and removal checks.
+Physical loaded-lift comfort and grip-rail strength remain untested.
 This changes the premium package; v16 and all
 its printed interfaces remain unchanged. Full-size pieces do not fit v16's
 old 98 mm lanes. Geometry, mesh, 3MF readback and local slicing pass in the new
 package; physical cassette fit/release and transport retention remain unresolved.
 The shell has no roof above the field. Its felt-covered board remains removable.
+
+Compactness requirement: reduce **both packed footprint and height**, preserving
+the current 210 x 210 mm playing field, 42 mm pitch and easy piece access. The
+`home-board-compact-v1` package now implements a separate 240 x 232 x 43 mm variant,
+with two 112.2 mm-wide cassettes side by side and front/back lift tabs. It
+retains the full-size pieces, 5+5+6+5 layout and capstone chamber; the shared
+232 x 224 x 6 mm board is unchanged. Four support pads contact the board,
+and its finger openings reach 12 mm below the underside. Exact piece fit,
+support contact, independent cassette removal, geometric finger-space checks,
+mesh/3MF readback and local slicing pass. Actual grasp, tab strength, printed
+fit, board deflection and transport retention remain untested. The stacked
+package remains intact. Begin with its two small grip coupons before a full
+loaded cassette trial.
 
 The following hinged luxury arrangement is retained as earlier exploration:
 

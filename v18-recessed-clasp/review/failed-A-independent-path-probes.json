@@ -1,0 +1,255 @@
+{
+  "A_insertion_fixed_deformation_positions": [
+    {
+      "translation_y_mm": -48,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -36,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -34,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -33,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -32,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -31,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 1.2,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -30,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 10.8,
+        "0.4": 3.726708,
+        "0.8": 0.371913,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -29,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 25.2,
+        "0.4": 12.426708,
+        "0.8": 3.371913,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -28,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 39.6,
+        "0.4": 21.383851,
+        "0.8": 6.886199,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -25,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 68.4,
+        "0.4": 40.069565,
+        "0.8": 15.457627,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -20,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 68.4,
+        "0.4": 40.069565,
+        "0.8": 15.457627,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -15,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 68.4,
+        "0.4": 40.069565,
+        "0.8": 15.457627,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -10,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 68.4,
+        "0.4": 40.069565,
+        "0.8": 15.457627,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -5,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 65.328,
+        "0.4": 39.927857,
+        "0.8": 15.457627,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -2,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 24.48,
+        "0.4": 15.948429,
+        "0.8": 7.416857,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -1,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 10.08,
+        "0.4": 6.657,
+        "0.8": 3.234,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -0.6,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 4.32,
+        "0.4": 2.868429,
+        "0.8": 1.416857,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": -0.3,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": 0,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": 1,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": 2,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 0,
+        "0.4": 0,
+        "0.8": 0,
+        "1.2": 0,
+        "1.6": 0
+      }
+    },
+    {
+      "translation_y_mm": 2.5,
+      "intersection_volume_by_each_beam_deflection_mm": {
+        "0": 33.6,
+        "0.4": 33.6,
+        "0.8": 33.6,
+        "1.2": 33.6,
+        "1.6": 33.6
+      }
+    }
+  ],
+  "A_vertical_perturbations": [
+    {
+      "z_mm": -0.5,
+      "overlap_mm3": 26.72
+    },
+    {
+      "z_mm": -0.31,
+      "overlap_mm3": 1.336
+    },
+    {
+      "z_mm": -0.3,
+      "overlap_mm3": 0
+    },
+    {
+      "z_mm": 0,
+      "overlap_mm3": 0
+    },
+    {
+      "z_mm": 0.3,
+      "overlap_mm3": 0
+    },
+    {
+      "z_mm": 0.31,
+      "overlap_mm3": 0.7196
+    },
+    {
+      "z_mm": 0.5,
+      "overlap_mm3": 14.392
+    }
+  ],
+  "note": "Contact/interference-only ideal geometry; prescribed beam deflection is not a force/stress solution. No original files modified."
+}

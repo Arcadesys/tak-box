@@ -39,12 +39,14 @@ def board(position=(0,0,d.BOARD_Z)):
     return parts
 
 
-def loaded_tray(team, position):
+def loaded_tray(team, position, keep=None):
     color = WHITE if team=='cat' else FOX
     parts = [(moved(mesh('tray'),position),TRAY_COLOR)]
     stone = mesh(team+'-body-assembly')
     floor = moved(mesh('stone-floor'),[0,0,d.FLOOR_Z])
-    for p in d.flat_positions():
+    for i, p in enumerate(d.flat_positions()):
+        if keep is not None and i not in keep:
+            continue
         pos = np.array(p)+np.array(position)
         parts.extend([(moved(stone,pos),color),(moved(floor,pos),color)])
     parts.append((moved(mesh(team+'-capstone-storage-reference'),position),color))
@@ -119,14 +121,22 @@ def main():
     underside.apply_translation([20,87,-underside.bounds[0,2]])
     cassette_parts = loaded_tray('cat',(-140,-87,0))+[(underside,TRAY_COLOR)]
     render('05-cassettes','Piece cassettes | lift out for play',
-        'Flats 2 mm below rim | 18 mm finger openings at each row',cassette_parts,
+        'Flats 8 mm above dividers | 20 mm row-front openings',cassette_parts,
         (0,0,10),(230,-390,490),145)
     cap_access = loaded_tray('cat',(-85,-20,0))+loaded_tray('fox',(35,-20,0))
     render('06-capstone-access','Capstones | grasp through the front opening',
         '28 mm openings | Cat / Fox | 2.3-3.2 mm below the rim',cap_access,
-        (0,-5,20),(0,-380,155),78)
+        (35,-5,20),(35,-380,155),100)
+    sparse = loaded_tray('cat',(0,0,0),keep={3,4,8,9,14,15,19,20})
+    render('07-partial-cassette','As rows empty | exposed flat edges',
+        '8 mm above dividers | Actual remaining stones | Grip comfort untested',sparse,
+        (60,85,12),(330,-300,400),120)
+    render('08-side-lift','Loaded lift | recessed grips on both sides',
+        '50 mm wide | 10 mm deep | Sloped roof | Softened mouth edges',
+        loaded_tray('cat',(0,0,0)),
+        (60,85,16),(390,20,150),105)
     (PACKAGE/'reports/rendering.json').write_text(json.dumps({
-        'source':'exported STL meshes', 'views':6, 'renderer':vtk.vtkVersion.GetVTKVersion(),
+        'source':'exported STL meshes', 'views':8, 'renderer':vtk.vtkVersion.GetVTKVersion(),
         'felt_and_grid':'dimensioned diagram from felt-grid-100-percent.svg',
         'rendered_accessibility':'Large white labels on dark background; visible grid and separate motif geometry',
         'physical_result':False},indent=2)+'\n')

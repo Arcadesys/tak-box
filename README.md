@@ -2,6 +2,24 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
+## Final version direction: v18
+
+V18 is the selected FINAL version. The [version freeze and release checklist](docs/V18_FINAL.md)
+pin the recovered clasp package and the common-hinge case baseline. Case integration
+and physical acceptance remain required before a complete-case release.
+
+### Selected closure: [v18 recessed press-and-slide clasp](v18-recessed-clasp)
+
+The recovered v18 package includes reproducible CAD source, STEP/STL parts,
+a three-part 3MF coupon plate, assembled release states, renders, review and
+slicing reports, and the original downloadable kit. [Recovery checks](v18-recessed-clasp/RECOVERY.md)
+confirmed all 67 manifest hashes and both separately saved artifacts.
+
+This is an **unprinted, support-required clasp coupon**, not a complete case.
+Both closing and opening require pressing the recessed button while sliding
+the rigid bolt. Case integration, physical fit, support removal, strength and
+loaded transport retention remain unverified. The v17 body study remains below.
+
 ## Current v17 direction: [four leaves on one common hinge](v17-four-leaf)
 
 Two drawer housings and two board leaves share one hinge axis. Covered
@@ -27,6 +45,11 @@ The separate [full-size pagoda foundation](full-size-pagoda-v1/README.md) uses
 5×5 board above two stacked trays. It is the new premium printed exploration;
 v16 remains the travel prototype. Digital geometry and local slicing pass;
 physical fit and transport retention remain untested.
+
+The additive [compact home-board variant](home-board-compact-v1/README.md)
+reduces both footprint and height to 240 × 232 × 43 mm by placing two narrower
+cassettes side by side. The same 42 mm cells and full-size pieces are retained.
+Digital geometry and local slicing pass; printed handling remains untested.
 
 ![v16 open with trays out](v16-field-book/previews/03-trays-out.png)
 

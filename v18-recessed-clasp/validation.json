@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "press_path": true,
+    "pressed_slide_path": true,
+    "open_lift_path": true,
+    "assembly_insertion": true,
+    "nominal_parts_disjoint": true,
+    "three_watertight_parts": true,
+    "locked_slide_barrier": true,
+    "pressed_only_still_holds": true,
+    "open_rest_clear": true
+  },
+  "status": "digital geometry tests pass; physical print/fit untested",
+  "build_sha256": "5f116585bd24d2ddfac74f463e62e62121bf2af9a84129f7541ff0c5430deadc"
+}

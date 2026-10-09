@@ -1,6 +1,6 @@
 {
   "units": "mm",
-  "source_revision": "ed3d485a86a666330f78e1331b9d104b284f897a",
+  "source_revision": "88bc668a1752b2dbc1a2edfc967dcbb525b6f4d0",
   "physical_fit": "not tested",
   "parts": {
     "stone-floor": {
@@ -99,15 +99,15 @@
         174.0,
         31.0
       ],
-      "volume_mm3": 405148.7489498782,
+      "volume_mm3": 395024.2959927909,
       "watertight": true,
       "winding_consistent": true,
       "components": 1,
       "solid_valid": true,
       "cad_dimensions_mm": [
-        120.0,
-        174.0,
-        31.0
+        120.00000019999999,
+        174.0000001,
+        31.0000001
       ],
       "zero_area_triangles_removed": 0
     },
@@ -339,7 +339,7 @@
       "bounds_mm": [
         [
           4.0,
-          3.9999999999999996,
+          4.0,
           0.0
         ],
         [
@@ -425,10 +425,31 @@
       "seat_z_mm": 18.0,
       "top_z_mm": 28.0,
       "below_rim_mm": 2.0,
-      "edge_above_dividers_mm": 6.0,
-      "front_notch_width_mm": 18,
+      "edge_above_dividers_mm": 8.0,
+      "front_notch_width_mm": 20.0,
       "front_edge_exposed_mm": 8.0,
       "seat_contact_probes_passed": true
+    },
+    "cassette_comfort": {
+      "contact_chamfer_mm": 0.5,
+      "side_lift_openings": 2,
+      "lift_width_mm": 50.0,
+      "lift_depth_mm": 10.0,
+      "lift_bottom_z_mm": 8.0,
+      "lift_roof_at_mouth_z_mm": 24.0,
+      "roof_slope_degrees": 45,
+      "rim_above_lift_mouth_mm": 6.0,
+      "seat_above_deepest_roof_mm": 4.0,
+      "negative_grip_volume_clear": true,
+      "seat_ledge_witnesses_passed": true,
+      "mixed_previous_current_stacking_orders_passed": 2,
+      "all_flat_envelope_removal_paths_passed": 21,
+      "flat_removal_offsets_mm": [
+        0,
+        1,
+        10
+      ],
+      "human_grasp": "not tested"
     },
     "capstone_access": {
       "seat_z_mm": 5.0,
@@ -533,9 +554,10 @@
     "pieces/fox-knurled-v1/source/flats.py": "f9a89b125189c981d27a8ae3c564ff3ba6dcba46ff3cf0d88a000e0d38437e95",
     "pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
     "v16-field-book/source/mesh_export.py": "8e442d95a8bdaf386e48c9e68c9c1f7fa5a061ea082ad85d6d32d288eeede7e7",
-    "full-size-pagoda-v1/source/build.py": "ab2e88d09ca023ae5457c41049d9446d7ba1f34df2177af79ae54aa3eaf199e6",
-    "full-size-pagoda-v1/source/design.py": "3e5395a34760ddadb40552e72afb1893c22b1fe01aa1b2f86004b0ff2b55fbd8",
-    "full-size-pagoda-v1/source/render.py": "34aaec3f9dc443a19f873c338c8fa938a202302211ef1dc6d6c4abf4fad8da66",
+    "full-size-pagoda-v1/references/cassette-before-comfort.step": "3703276b017f894082cd4b3dd75ff6d0d9d7c9bc3f748cb196a08ca56cb9ee7d",
+    "full-size-pagoda-v1/source/build.py": "b4c9c0719e10e187645e25996d0a407b1441c1f67d56208a99684b428c6eed30",
+    "full-size-pagoda-v1/source/design.py": "ce3a2f91237e73944c7a6a4e69608e5325cdcc763b1ac5a9bbbf288dc7856bde",
+    "full-size-pagoda-v1/source/render.py": "0153411a24aed0ec1b6867651b6f7cb2ad0e4526dce9d0fb10b0d384c380d1f1",
     "full-size-pagoda-v1/source/slice_check.py": "4ea20b0b54fa5a01f4f8eb9708f9ac6bdf8418ad61dbf5c545823904d2cbaf22"
   }
 }
