@@ -1,0 +1,5 @@
+models/*.step binary linguist-generated=true
+models/*.stl binary linguist-generated=true
+PRINT/*.3mf binary linguist-generated=true
+previews/*.png binary linguist-generated=true
+reports/*.log -diff linguist-generated=true

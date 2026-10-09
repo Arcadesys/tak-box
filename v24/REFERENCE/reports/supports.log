@@ -1,0 +1,26 @@
+left support 4.9 continuous width at Z1 True
+left support 4.9 continuous width at Z2.2 True
+left support 4.9 continuous width at Z5 True
+left support 4.9 continuous width at Z10 True
+left support 4.9 continuous width at Z15.0 True
+left support 190.8 continuous width at Z1 True
+left support 190.8 continuous width at Z2.2 True
+left support 190.8 continuous width at Z5 True
+left support 190.8 continuous width at Z10 True
+left support 190.8 continuous width at Z15.0 True
+left journal 4.9 radial wall material True
+left journal 190.8 radial wall material True
+right support 0.2 continuous width at Z1 True
+right support 0.2 continuous width at Z2.2 True
+right support 0.2 continuous width at Z5 True
+right support 0.2 continuous width at Z10 True
+right support 0.2 continuous width at Z15.0 True
+right support 195.5 continuous width at Z1 True
+right support 195.5 continuous width at Z2.2 True
+right support 195.5 continuous width at Z5 True
+right support 195.5 continuous width at Z10 True
+right support 195.5 continuous width at Z15.0 True
+right journal 0.2 radial wall material True
+right journal 195.5 radial wall material True
+opposed pivots block axial withdrawal True
+baseline board replacement required True

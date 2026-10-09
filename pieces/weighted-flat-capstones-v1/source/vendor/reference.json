@@ -1,0 +1,11 @@
+{
+  "source_ref": "origin/feat/piece-generator-v1",
+  "revision": "863055fd146396925e2d05461b3e4696bf0c9ac4",
+  "package": "pieces/piece-generator-v1",
+  "verbatim_files": [
+    "geometry.py",
+    "spec.py",
+    "verify.py",
+    "README-original.md"
+  ]
+}

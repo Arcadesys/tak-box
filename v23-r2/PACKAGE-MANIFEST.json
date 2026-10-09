@@ -1,0 +1,642 @@
+{
+  "version": "V23 R2",
+  "units": "mm",
+  "physical_acceptance": false,
+  "files": [
+    {
+      "path": "ACCEPTANCE.md",
+      "bytes": 1574,
+      "sha256": "9ccabaf2f5cae27bfd92a9251c487c7c6a2183eb806bed40b560e455348ac24d"
+    },
+    {
+      "path": "BUILD-PROVENANCE.md",
+      "bytes": 4779,
+      "sha256": "204fa40484db38e331301e9bcd9b71930d43eee3932af8157607901acc7122a6"
+    },
+    {
+      "path": "FIT-CHECK/captive-hinge-fit-check-CC2-PLA.3mf",
+      "bytes": 631942,
+      "sha256": "f4b3a672c1abfa171ce62a4633f5fa07973e37d31405f2131d567b1f9d3e861f"
+    },
+    {
+      "path": "FIT-CHECK/captive-hinge-fit-check-geometry.3mf",
+      "bytes": 306049,
+      "sha256": "4a242891547e8e715fb5eaccd2830eecb7a1fc843e3bcdc1c59ec9d1bfca484a"
+    },
+    {
+      "path": "FIT-CHECK/hinge-left.step",
+      "bytes": 318021,
+      "sha256": "f3ab524bd8a2b240f148e80ae8fb0c9ab2381754afff22d794496f8a0b94c2a1"
+    },
+    {
+      "path": "FIT-CHECK/hinge-left.stl",
+      "bytes": 1089884,
+      "sha256": "88e697c95bfe4683b89a66f9d624e1225fb74389796120ebdbb8db2a9e1bc4e6"
+    },
+    {
+      "path": "FIT-CHECK/hinge-right.step",
+      "bytes": 305970,
+      "sha256": "b39411869a10b3c910da55ed28c0da0fcf3cb56e5cfad68efa8d1dfa949bee0c"
+    },
+    {
+      "path": "FIT-CHECK/hinge-right.stl",
+      "bytes": 1080884,
+      "sha256": "01e30061523f86c29e09f47f06a28dfe5ca1c2c4890430856b2ce8f6bcad8571"
+    },
+    {
+      "path": "FIT-CHECK/layers.png",
+      "bytes": 349415,
+      "sha256": "0fc4e4bc6d58932926b9b1a178365466ebd899763e23244bac9ba33a16b4b384"
+    },
+    {
+      "path": "PRINT/01-print-in-place-bases-CC2-PLA.3mf",
+      "bytes": 2318831,
+      "sha256": "46eec3c21fc5882ed6ae4095689b0296fe0404cb03582638d7104e2adc6a41a8"
+    },
+    {
+      "path": "PRINT/02-sliding-board-tops-CC2-PLA.3mf",
+      "bytes": 2214215,
+      "sha256": "f4cda11fa4748dad224b63af4223748127940f47487d6c643be23b587823fbcb"
+    },
+    {
+      "path": "PRINT/03-removable-player-trays-CC2-PLA.3mf",
+      "bytes": 314109,
+      "sha256": "7475557ffbf2041a0be9bf2c706077e07eaa220502f5bcd9527a14273804b127"
+    },
+    {
+      "path": "PRINT/04-flat-capstones-hook-and-collar-CC2-PLA.3mf",
+      "bytes": 287386,
+      "sha256": "f059f24d87cbcd63c1f3d12ce01139459c8660b8e4f37b027f0bc2da6c3ae537"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 5301,
+      "sha256": "7b36c9a4fabf85330e4273c0a15a6f23f94db8f94539bdf56e6d3d404541902a"
+    },
+    {
+      "path": "TRAY-FIT/layers.png",
+      "bytes": 427199,
+      "sha256": "f8736c36872cc879001151b3e5ba1643cd13e63dd67704fc642178472dd83b95"
+    },
+    {
+      "path": "TRAY-FIT/removable-tray-access-trial-CC2-PLA.3mf",
+      "bytes": 150188,
+      "sha256": "e98710361387a18ce32fce2afa84a4401f8140b39b0b721e34876c51ccf11fa2"
+    },
+    {
+      "path": "TRAY-FIT/removable-tray-access-trial-geometry.3mf",
+      "bytes": 8615,
+      "sha256": "fdbd6d2100972149c9aa224883f47f57ecc623f6f1922bdc0891ef828d218388"
+    },
+    {
+      "path": "TRAY-FIT/seat-section.step",
+      "bytes": 89868,
+      "sha256": "b86324e49fa552ca71bdfb61a2673eac24d32b9017e19b9c888e8939c03140e2"
+    },
+    {
+      "path": "TRAY-FIT/seat-section.stl",
+      "bytes": 4684,
+      "sha256": "05920a045dd7bb58b31b3b2cb9f6a1d0cfe0175710ac5051efb9e092fb789a7f"
+    },
+    {
+      "path": "TRAY-FIT/tray-section.step",
+      "bytes": 270332,
+      "sha256": "8060443b3d0e7f40869be5f7e4b8441d39e5b94c606f31cbc2fa060e5607be2b"
+    },
+    {
+      "path": "TRAY-FIT/tray-section.stl",
+      "bytes": 45884,
+      "sha256": "c30ac11bb47e4addd32c869ac0394da84582086b8c719b48fa4afdbf17b32878"
+    },
+    {
+      "path": "models/assembly-closed-with-hardware.step",
+      "bytes": 3835230,
+      "sha256": "cd6991f5b4c254024773cc0f2f854db3a36466b82e627c743b072ec57d386389"
+    },
+    {
+      "path": "models/assembly-closed.step",
+      "bytes": 3872996,
+      "sha256": "13819753eeae2acbbb4df6a20e61c3fdb751e4b3f68b3e066f75e5bf5c0518b0"
+    },
+    {
+      "path": "models/assembly-loaded.step",
+      "bytes": 12248005,
+      "sha256": "31ec06a771b746ac1ea29c9a98f9b54e1880ba6ff7503f3eaee103e49252a346"
+    },
+    {
+      "path": "models/assembly-open-with-hardware.step",
+      "bytes": 3805617,
+      "sha256": "c4842f23afa507ff224765d7a2631569cde801a287c7fff1f431309e771511ca"
+    },
+    {
+      "path": "models/assembly-open.step",
+      "bytes": 3852450,
+      "sha256": "9093c414b5354e1c7e7601e2cfe59d82084b1befc92053f1f2063c2147cd5879"
+    },
+    {
+      "path": "models/axle-end-cap.step",
+      "bytes": 9334,
+      "sha256": "7409159d730b18ead07c7e7aec00bffed2101314da56bef571ac62ccd9420e80"
+    },
+    {
+      "path": "models/axle-end-cap.stl",
+      "bytes": 42084,
+      "sha256": "f1c158b20225129243df51ed8bd91680c4cb12aea6de525bcab9fcf6813833ea"
+    },
+    {
+      "path": "models/board-left.step",
+      "bytes": 459983,
+      "sha256": "a70fae725bc110a96b9938769efc6f2c6deb7831bfc9ad26915b0ea2fdaca120"
+    },
+    {
+      "path": "models/board-left.stl",
+      "bytes": 72384,
+      "sha256": "e46721df2cae1011325f111916fce5609a47c9d14d6b981f4802d3214d0ec8ad"
+    },
+    {
+      "path": "models/board-right.step",
+      "bytes": 442250,
+      "sha256": "26a83fd58d83be0f4ad32d2e031616f10cc9cb2ba2d282157aea83a126c4a283"
+    },
+    {
+      "path": "models/board-right.stl",
+      "bytes": 72384,
+      "sha256": "d93c7f4210b8b92c33e60c0d7cc94c79ee5651483c12cb00cefc6460168d57c2"
+    },
+    {
+      "path": "models/capstone-cat.step",
+      "bytes": 253544,
+      "sha256": "601a4511cbb6a89936a2c8ef48cdac0ebbb62bd9848a9f6e609a038e8f280435"
+    },
+    {
+      "path": "models/capstone-cat.stl",
+      "bytes": 129684,
+      "sha256": "f6ac37f244c2d421a90c8a285957f1518343bf0c9732157e9578e8a3a4f95b07"
+    },
+    {
+      "path": "models/capstone-witch.step",
+      "bytes": 124851,
+      "sha256": "c546ec96ca50e6afa83badabebcb29c3a66723078240d7d9cb128a387dbb5e5f"
+    },
+    {
+      "path": "models/capstone-witch.stl",
+      "bytes": 52084,
+      "sha256": "57f0906dd6716e46db001ae4e8ae23b59d7fddf12f772c615178ed9f489735bf"
+    },
+    {
+      "path": "models/hardware-reference-NOT-PRINTED.step",
+      "bytes": 16997,
+      "sha256": "b22d31d6f75397e0a423bd204460066a5b849e98250b9ca38a7c027ee50dd6e4"
+    },
+    {
+      "path": "models/housing-left.step",
+      "bytes": 567311,
+      "sha256": "26e4bc7f4ad23184be6355e3908c37c48195fd7b6a88ba50456ea0f768a40a99"
+    },
+    {
+      "path": "models/housing-left.stl",
+      "bytes": 1472684,
+      "sha256": "f8bbc443baf588ba8666ac7a905a44d9405fe30121a851b4b882a41148155853"
+    },
+    {
+      "path": "models/housing-right.step",
+      "bytes": 511124,
+      "sha256": "695ca3eba734750058e4bd57433b146342299d71a760e3fb473c44647af89990"
+    },
+    {
+      "path": "models/housing-right.stl",
+      "bytes": 1486284,
+      "sha256": "8a71fb7d2c800d63768386f6b37d863c62c7e213fcd42a895a34a6d75530d172"
+    },
+    {
+      "path": "models/side-hook.step",
+      "bytes": 47287,
+      "sha256": "cbf1d2f33c854d502048b20e1b74bcd90fdb83ef683eac84e74ece7a89549aee"
+    },
+    {
+      "path": "models/side-hook.stl",
+      "bytes": 37084,
+      "sha256": "23d5cef091fcddece4b5e6afc869d4cfba8f26039f1b58ad3a33e5a3bd059403"
+    },
+    {
+      "path": "models/tray-left.step",
+      "bytes": 853909,
+      "sha256": "02a33e022fee5cad1202137f13624fde0323873ed7b736575eb96a91773367aa"
+    },
+    {
+      "path": "models/tray-left.stl",
+      "bytes": 87084,
+      "sha256": "e30f6adde8e20e691d7c2663f446a020b4bd465fb616c99a6dae8853045a58cc"
+    },
+    {
+      "path": "models/tray-loaded-left.step",
+      "bytes": 5157400,
+      "sha256": "9a7964cb686929fe6a4e332c51833ba6c74a7298cb0d81d88cdcfdb5887e4fd1"
+    },
+    {
+      "path": "models/tray-loaded-right.step",
+      "bytes": 4629389,
+      "sha256": "4845a1e28390f6383c23d261d4b86d0dac9d4417ae51ef0bb879c7290f007c33"
+    },
+    {
+      "path": "models/tray-right.step",
+      "bytes": 843932,
+      "sha256": "c62c42b5e9c84778f5ee3c8b0216f6f364ab136d248023f40d3702be9b9e2f0d"
+    },
+    {
+      "path": "models/tray-right.stl",
+      "bytes": 87084,
+      "sha256": "c89465110cfb533af7907b643e0ac7743e9b5fe6b86c41682e7c2cf1dd53d0f4"
+    },
+    {
+      "path": "plates/01-print-in-place-bases.3mf",
+      "bytes": 410184,
+      "sha256": "00e38018d79d6297edd9086a63239d48d29eba90bf88d9e4ec1e1b1fa47a9eb3"
+    },
+    {
+      "path": "plates/02-sliding-board-tops.3mf",
+      "bytes": 24939,
+      "sha256": "07fd741bbd0a67849195ed4e3fa447b7f11fd053ed411d4048fccfd8e30d2c70"
+    },
+    {
+      "path": "plates/03-removable-player-trays.3mf",
+      "bytes": 27594,
+      "sha256": "1087bf9053e8ca05be53678d8d64cfd33698246544959ff7b44f565701284256"
+    },
+    {
+      "path": "plates/04-flat-capstones-hook-and-collar.3mf",
+      "bytes": 42008,
+      "sha256": "8f41469cfa9455d99edd4531de163cea617b9914edcc9eb622cea5d61e9e8012"
+    },
+    {
+      "path": "previews/01-open.png",
+      "bytes": 55842,
+      "sha256": "ccaf750c66064909e08c499cd28e56accddff29b5b88cf6f1a0b37cafd48bcc2"
+    },
+    {
+      "path": "previews/01-print-in-place-bases-layers.png",
+      "bytes": 368741,
+      "sha256": "4d6ddd5f45adee80495bfb2e610c96783eb93ec9fe08356adbc7783650e3c4af"
+    },
+    {
+      "path": "previews/02-closed.png",
+      "bytes": 49821,
+      "sha256": "abfbcd84ff564b6f0ffd6d44860925d6cb2adbffd420d3df525c81c924eccf11"
+    },
+    {
+      "path": "previews/02-sliding-board-tops-layers.png",
+      "bytes": 1130285,
+      "sha256": "a5d0e4e04b799c04589bb2e849ba3ffb6500f3404de220f5476159ea4c15cb9e"
+    },
+    {
+      "path": "previews/03-removable-player-trays-layers.png",
+      "bytes": 303161,
+      "sha256": "c0c07fb5321b211c8b028bc040d2d0ff82223cad42f86fac45b7bfad9ecbf540"
+    },
+    {
+      "path": "previews/03-table-setup.png",
+      "bytes": 80557,
+      "sha256": "7edb5b98bc647103e18ad8ef2e55fc9013bf2e034ac7105168eba80201d6ad88"
+    },
+    {
+      "path": "previews/04-flat-capstones-hook-and-collar-layers.png",
+      "bytes": 486485,
+      "sha256": "a74cac5f01586c168996789695f205eaed318926a1fe1999718fbfc675c9aa38"
+    },
+    {
+      "path": "previews/04-loaded-storage.png",
+      "bytes": 107706,
+      "sha256": "eb95e55db5b32dfe225126db37e6aae24588c89089b0381d237bb517cebdd9de"
+    },
+    {
+      "path": "previews/05-hinge-detail.png",
+      "bytes": 47609,
+      "sha256": "106472df87427ca9e8df1de9473bfa7480b577a093742aea7c6f084b65eff632"
+    },
+    {
+      "path": "previews/06-loaded-trays.png",
+      "bytes": 88882,
+      "sha256": "56237324fcb153e00e329c67dc09ee790e345a89dffc5fdf1c08608a60f9d8f2"
+    },
+    {
+      "path": "previews/06-pin-passages-1.png",
+      "bytes": 218294,
+      "sha256": "e285899345edc86f8630d2af83d54e39ebbf3d364da7df1b7e9cc025ede9aec8"
+    },
+    {
+      "path": "previews/07-captive-hinge-gaps.png",
+      "bytes": 239105,
+      "sha256": "49dd7b479966f4e6c0f90f9f5ceb5b64b38556e5e6abfa3a130023be804fb610"
+    },
+    {
+      "path": "previews/08-trial-hinge-gaps.png",
+      "bytes": 235136,
+      "sha256": "a4074d5aef6426663c994cb78c706104dc6db409dbd3e34821ab0e964dfe201d"
+    },
+    {
+      "path": "profiles/filament-pla.json",
+      "bytes": 4108,
+      "sha256": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+    },
+    {
+      "path": "profiles/machine.json",
+      "bytes": 6300,
+      "sha256": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    {
+      "path": "profiles/process-case.json",
+      "bytes": 5107,
+      "sha256": "d68555941050fd04c5f358566b3428a1286c5c7829558f90a6766a16602106b1"
+    },
+    {
+      "path": "reports/01-print-in-place-bases-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/02-sliding-board-tops-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/03-removable-player-trays-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/04-flat-capstones-hook-and-collar-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/build.log",
+      "bytes": 4498,
+      "sha256": "77cb2e06ad456183dbb9473b6dd01748b209a28b35c072c6d41c6adaa3933f63"
+    },
+    {
+      "path": "reports/captive-hinge-fit-check-slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/field.json",
+      "bytes": 2963,
+      "sha256": "f52f1fbcc6b1f52a7f2072f4417515ff031e4e7c11700185d370458a27106651"
+    },
+    {
+      "path": "reports/fit-check-layers.json",
+      "bytes": 858,
+      "sha256": "ac7b4066472f23425a854a33fed4ebb7dc0a2cf74c70234b90f3296f326550fd"
+    },
+    {
+      "path": "reports/fit-check.json",
+      "bytes": 4255,
+      "sha256": "0af33495d069d6dea27788edc46da38b20bd4db3768e23d0f93118626904e234"
+    },
+    {
+      "path": "reports/geometry.json",
+      "bytes": 12541,
+      "sha256": "233053b4e9712726f7e0687dee993b4f8b97ecc76035412eae569b503c2d4951"
+    },
+    {
+      "path": "reports/hardware.json",
+      "bytes": 2496,
+      "sha256": "57bf5aa1b1a1e61bc5869c058371f1b443ea057acd2b449e2c07dd5c950e1483"
+    },
+    {
+      "path": "reports/hardware.log",
+      "bytes": 83,
+      "sha256": "bb15ccede2fce6bba525dbdb8c1deb4e6904961c551b748d3d6ceca412b95081"
+    },
+    {
+      "path": "reports/hinge-trial-build.log",
+      "bytes": 143,
+      "sha256": "531afa13cc946b6528b4531fdcbeca4da0fd1aff33668e5e7f1f5d7b4651b99f"
+    },
+    {
+      "path": "reports/layer-inspection.json",
+      "bytes": 3429,
+      "sha256": "c8d54749e9412617ebe3dae72f590d5eb10f76746764f7d83f2b44f24589ffed"
+    },
+    {
+      "path": "reports/layers.log",
+      "bytes": 59,
+      "sha256": "155cfbdb0d6969469830ff32790708c78ad24e13e16a49fd64994cd07bf2c530"
+    },
+    {
+      "path": "reports/package.log",
+      "bytes": 59,
+      "sha256": "83d4e6fe7b57299fe8ee904c77850087653be78ed3b88f583dcee14ba1b0faea"
+    },
+    {
+      "path": "reports/pin-paths.log",
+      "bytes": 43,
+      "sha256": "f67120baadd122ac5afba3d2bd3589ad2c57616ee638bcd438d1244aae162044"
+    },
+    {
+      "path": "reports/pin-toolpaths.json",
+      "bytes": 1371,
+      "sha256": "444e1c70fdead642569b59049e2fed86f33e1c79618acf9efd9d8f5f5b77f90b"
+    },
+    {
+      "path": "reports/pip-hinges.json",
+      "bytes": 8677,
+      "sha256": "057a7c77a95788ea777f477aeb73ff7837abe1423220ea398270be471f551009"
+    },
+    {
+      "path": "reports/pip.log",
+      "bytes": 24,
+      "sha256": "238df958f5d0ff0e6e34c342988c8149c807f0fdff5b4084e97f50b8056269e8"
+    },
+    {
+      "path": "reports/plates.json",
+      "bytes": 6526,
+      "sha256": "240ce6e2305a27f0577220bd8e15c9cc4dfb523e599ad465ba4bc8695e6af264"
+    },
+    {
+      "path": "reports/provenance.json",
+      "bytes": 13752,
+      "sha256": "4ca7ada67c211c05e609880555d56a7191981a3cf6d92fb0a58cf52517e3112f"
+    },
+    {
+      "path": "reports/render.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/slice.log",
+      "bytes": 173,
+      "sha256": "7ba4a0739e11ec54e53153885d668e3d79e884211172f282e1eaf7381d5b46ad"
+    },
+    {
+      "path": "reports/slicing.json",
+      "bytes": 8239,
+      "sha256": "a2164b0f682453dbc52156c1f292496868cabc45bc7c941886217c70385c2442"
+    },
+    {
+      "path": "reports/supports.json",
+      "bytes": 5693,
+      "sha256": "9be691cfad9bf11d46e383cedfb266002dee6d7c34e5ba5bdf3825a2ce0a6556"
+    },
+    {
+      "path": "reports/supports.log",
+      "bytes": 1216,
+      "sha256": "5bd4655a64755a52d53fe67abd6f10fec08dc0aea61f1e060a16820142030a65"
+    },
+    {
+      "path": "reports/tray-trial-build.log",
+      "bytes": 127,
+      "sha256": "a250c131d84ded5235e6dd839c50c6be80484dbaa4e17583c5a3fcfdef644e48"
+    },
+    {
+      "path": "reports/tray-trial-layers.json",
+      "bytes": 853,
+      "sha256": "4395811e5fb6e4939f60fb221b50358f9801fa6a15232cfae40121a00ef97250"
+    },
+    {
+      "path": "reports/tray-trial.json",
+      "bytes": 3889,
+      "sha256": "f232b936f0b3ae570275f0ed4dbdbfb7b33224f85e0a4c27a3c30245b94e29e9"
+    },
+    {
+      "path": "reports/trays.json",
+      "bytes": 6501,
+      "sha256": "a7bc1efbc7ab2d7d9650982f572abbd81db9e7554087dfa2ad93b38a0221b850"
+    },
+    {
+      "path": "reports/trays.log",
+      "bytes": 1642,
+      "sha256": "b2c3f33a602a034dd6bd25704254c0e0805856bc3edffc84050f3a91262e83cc"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 736,
+      "sha256": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575"
+    },
+    {
+      "path": "source/build_case.py",
+      "bytes": 9151,
+      "sha256": "00f1d1bafb1cb040d41f0c8f159afffd3789faa9245c68edbd2cfee6be34bda4"
+    },
+    {
+      "path": "source/build_fitcheck.py",
+      "bytes": 3869,
+      "sha256": "29adfd4344aac235328de900d5758c70a692b389c4d6033a0b7bab7c766554a7"
+    },
+    {
+      "path": "source/build_tray_trial.py",
+      "bytes": 3082,
+      "sha256": "746a1f912fbb0fe8e1301275d8a7c135b90b16028e3a6d9619b523e2d1adb08e"
+    },
+    {
+      "path": "source/case.py",
+      "bytes": 9166,
+      "sha256": "879a47ee764f50e7f29d3dea7d79022bd21d0c16a98a3ac90a38745f1b4d34d4"
+    },
+    {
+      "path": "source/flat_capstones.py",
+      "bytes": 1637,
+      "sha256": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693"
+    },
+    {
+      "path": "source/geometry_utils.py",
+      "bytes": 213,
+      "sha256": "c8256a8146a2aaff58e60b47e7f9eb14d0b8401f8bad489112c35849a61f8815"
+    },
+    {
+      "path": "source/inspect_case_layers.py",
+      "bytes": 3486,
+      "sha256": "734e5253d20b26aa7af157fb259b4350e05a6a45b7d5af64eaa7479b30a1b035"
+    },
+    {
+      "path": "source/loaded_pieces.py",
+      "bytes": 838,
+      "sha256": "6a0e4f75e5695e5f74f130ef788950d72d82fe9c5678371515f32276d0d373ee"
+    },
+    {
+      "path": "source/package_case.py",
+      "bytes": 5312,
+      "sha256": "677e7f2bcaa228b53669f66eadf4727c3ea322c64b3e02cabf971a72723168ff"
+    },
+    {
+      "path": "source/package_release.py",
+      "bytes": 2694,
+      "sha256": "630998eea2fc7a020a06382f9054aacc0cd8e3c1dd31241705eb425a691a7e45"
+    },
+    {
+      "path": "source/record_provenance.py",
+      "bytes": 3477,
+      "sha256": "5f8203e3420884b879d28ee935bcf0e80aa1ec35ed832e5171600b41ad488ac0"
+    },
+    {
+      "path": "source/render_revision.py",
+      "bytes": 2486,
+      "sha256": "899b51e26dd634a3d44851acb15eb22df0f7b65718a506cbb079673d6a5ee2ae"
+    },
+    {
+      "path": "source/render_utils.py",
+      "bytes": 1721,
+      "sha256": "622418733e8302253506b06be1cbcb22f08277daf6627b6bc683350726896747"
+    },
+    {
+      "path": "source/slice_case.py",
+      "bytes": 7102,
+      "sha256": "5b1fab4ef54d4071a0638514e11d2bbfb2c1c7cab4e98ca55f7c5a367aa6b3be"
+    },
+    {
+      "path": "source/vendor/body/export_utils.py",
+      "bytes": 5734,
+      "sha256": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e"
+    },
+    {
+      "path": "source/vendor/body/folio.py",
+      "bytes": 3093,
+      "sha256": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7"
+    },
+    {
+      "path": "source/vendor/pieces/cat-flat.stl",
+      "bytes": 217484,
+      "sha256": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1"
+    },
+    {
+      "path": "source/vendor/pieces/tak_pieces.py",
+      "bytes": 10600,
+      "sha256": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+    },
+    {
+      "path": "source/vendor/pieces/witch-flat.stl",
+      "bytes": 131084,
+      "sha256": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba"
+    },
+    {
+      "path": "source/verify_field.py",
+      "bytes": 1128,
+      "sha256": "bff276ff653e7b620fd255eb14b9cc8c9843a1aba346c2819f1a641d8ff3a2da"
+    },
+    {
+      "path": "source/verify_hardware.py",
+      "bytes": 3379,
+      "sha256": "3eb49c80dfe5fa25b9514c3776b418165e064ae6eaa83e077b2c7a88acceec9c"
+    },
+    {
+      "path": "source/verify_pin_toolpaths.py",
+      "bytes": 5241,
+      "sha256": "7e980fc90639e8e2d0f824efefb95449cba0409877b77bde7bba056197b50e95"
+    },
+    {
+      "path": "source/verify_pip_hinges.py",
+      "bytes": 5584,
+      "sha256": "d54b0126f7bb1e1d6b750176ff023755b518403149bba1e9b8df7023a1c271fe"
+    },
+    {
+      "path": "source/verify_supports.py",
+      "bytes": 1995,
+      "sha256": "07e3b11179d83a10fe0aedaaff4dbf33eb16929293bef68d4449f89aa6658ede"
+    },
+    {
+      "path": "source/verify_trays.py",
+      "bytes": 3794,
+      "sha256": "886cba8a46aa60351bc3e771ee393fcd25753f120858c6dbb533f2c822acae24"
+    }
+  ]
+}

@@ -1,17 +1,110 @@
 # Tak project brief
 
-Updated October 6, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 8, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
 
-### Final version decision: v18
+### Weighted sample for the printed V26 case — October 8
+
+The user now requests the same four-piece sample in black and explicitly authorizes its printer dispatch. A [separate black regular PLA slice](../pieces/weighted-flat-capstones-v2/BLACK/README.md) passes eight-object readback and 32 snap-path probes, estimating **36m 32s / 9.57 g**. Stored generic PLA settings are 210/60 °C, slot 1. The user confirms black regular PLA in physical slot 1. Native ElegooSlicer and Finder control timed out; printer-ready state and UI load are unverified. No printer job was submitted. Silk delivery and geometry remain preserved.
+
+**Current physical feedback and selected replacement:** the user printed only the V1 Cat capstone. Regular-flat snaps work in their test; the Cat capstone either seats without clicking or clicks then separates. Witch capstone retention remains untested. V1 digital straight-pull checks did not establish physical retention. Both capstones now use equal-depth external halves meeting at the midpoint, with a hidden aligning lip/recess, positive retaining snaps and an epoxy bond/seal. Outer silhouettes, 8 mm finished height and V26 case geometry are preserved. Cat regular sides get recessed reverse-diamond pockets; their broad stacking faces and the working regular closure stay unchanged. Witch regular finish is retained. Sanding/varnishing happens after assembly and finished tactile contrast/case fit remain physical checks.
+
+The requested delivery is **four assembled sample pieces only**, as one print block containing **eight separate printable components**, all assigned Elegoo silk PLA **slot 3**. No team batches, fused block or printer dispatch. The [V2 midpoint sample](../pieces/weighted-flat-capstones-v2/README.md) has matched 0.860346 mL usable capstone fill after overlap/headroom/glue allowances and 1.165934 mL closed void before adhesive. Saved estimate: 40m 26s / 9.57 g. CAD/mesh/STEP checks, 115 affected V26 fit/slide/fold checks, named 3MF readback and 32 actual sliced-tab path probes pass. New dry retention, shot fit, leakage, stacking and finished texture remain unverified. The user expects steel shot on October 9. The prior sample below is retained as history.
+
+The user reports V26 already printed. Fit in that existing case takes priority over increasing piece height, and they permit redesigning the Witch hat. The new [weighted flat/capstone sample](../pieces/weighted-flat-capstones-v1/README.md) keeps regulars at 20 × 20 × 8 mm and capstones within 26 × 20 × 8 mm. A broader Witch hat matches the Cat's 0.988819 mL usable ballast space and 1.094064 mL complete closed void, with a thicker 1.538 mm roof. Two opposing snap hooks capture each floor behind retaining lips as a mechanical backup to the epoxy seal. The eight-part plate uses the user's Elegoo silk PLA on slots 3/4 and estimates 2h 7m 34s / 26.87 g.
+
+This exact piece package passes solid/mesh/STEP checks, 115 checks against V26's unchanged housings, cover travel and sampled folding, and named saved-3MF readback. The project was visibly loaded in ElegooSlicer; a subsequent native slice request timed out, so the saved CLI slice is the confirmed slice. The inherited vitrification metadata warning remains documented. No printer job was dispatched. The exact physical case revision, new-piece fit, snap strength and sand seal still require the sample trial. Existing V26 plates and older weighted packages are preserved.
+
+### Current V26 captive main hinge — October 7
+
+The user confirms a printed axle permanently fixed between two supports on one half, trapping the opposite half’s moving barrel. V26 now uses this arrangement at both main-hinge stations: 4 mm axles, 2.5 mm fixed supports, 3.2 mm moving barrels, 9 mm outer barrels, full-height 8 mm roots and nominal 0.4 mm radial/face gaps. The rounded revision passes 947 integrated CAD checks, 51 exported audits and 37 sliced hinge/hook checks; sliced main support-face gaps are at least 0.32 mm under the conservative bead-width check. The prior opposing peg/socket full kit is preserved under v26/archive/previous-main-hinge. The modest outside rounding changes the boards’ body margins; inlay geometry remains intact. The current board plates are rebuilt and sliced again. Current complete estimate is 17h 46m / 288.66 g including optional capstones; physical strength remains untested.
+
+The user also requests modest corner rounding while this revision is underway. Use 4 mm outside case corners and 2 mm outside sliding-board corners, preserving the complete field, inlays, guides and hinge supports.
+
+The user reports that pressing a sliding-board tab while pulling was awkward. They approve using the case hook to secure both covers during closed transport and explicitly choose to build full plates before small physical trials. [V26](../v26/START-HERE.md) now removes the flexible catches and restores solid bevelled board margins. A rigid 4 × 6.1 × 4.7 mm seating shoulder outside each playing field meets the front rail to stop inward travel; it moves away freely on outward withdrawal. Open the case hook, then pull either board without pressing a tab.
+
+The kit retains the PIP main hinges, permanent piece guides, 3.4 mm floors, 180 mm / 36 mm-cell field, original independent accent inlays and 102.5 × 200 × 35 mm closed envelope. The captive hook has a 4 mm fixed axle, 2 mm outer cheek, 3.4 mm frame bridge, 0.4 mm radial/face gaps and parked printing foot. No filament hook pivot, loose collar or removable tray. Three full sliced projects are under V26/FULL-PRINT: joined bodies/hook, full-size four-colour boards and optional original flat capstones. Actual silk spool profiles still require matching and reslicing.
+
+New V26 bodies and covers replace the V24/V25 assembly; original 42 flats and supplied flat capstones remain compatible in nominal CAD. The captive side hook is retained; the main hinges replace the earlier opposed-pivot arrangement. Physical strength, hook capture, release comfort, dumping and loaded transport remain unobserved; no printer dispatch. Rounded-cover underside integration remains pending. Earlier V26 clip trials are superseded but preserved in their mechanism-review archive, and all V25/V24 assets and user extractions remain intact.
+
+### Preserved experiment: V25 — October 7
+
+**Latest clarification:** removing the removable tray did **not** mean removing piece guides. The user now explicitly wants **fixed guides built into the case**. The [latest guided PIP bodies](../v25/PIP-FIXED-GUIDES/START-HERE.md) fuse the earlier tray's 21 flat-stone guides and capstone guide into each 3.4 mm floor. Guide tops are Z6.9 mm, leaving 4.5 mm of each nominal stone exposed. There are no separate trays or handles. PIP geometry and body/cover interfaces are unchanged; the empty-well interpretation below is preserved as history. Digital piece seating, upward removal, covered lateral restraint and fingertip access do not establish physical fit, dumping or strength. V26 now supersedes this package for the mechanism review described above.
+
+
+**Controlling decision, October 7:** restore the little square piece holders and use a three-knuckle captive hinge: stationary outer / moving centre / stationary outer. The [current prototype](../v25/PIP-SQUARE-POCKETS/START-HERE.md) has 21 fixed square pockets and one capstone pocket per half; each 4 mm printed post joins both stationary outer knuckles. The moving knuckle surrounds that post with nominal 0.4 mm radial and face gaps. Both halves print together. Integral 3.4 mm floors, original pieces, field, colours and outside size remain. Physical release and strength are open; the exact earlier physically strong version remains unidentified. Broad lip, catch and rounded-cover integration remain pending. Earlier plain-bin and filament kits below are history.
+
+The user reports V24 printed and liked, but loose and barely held together; its thin board clip snaps during cleanup and captive hinges feel loose. They selected **1.75 mm filament axles** for V25 because earlier filament hinges worked well while printed pins broke or failed to hold the assembly. They also selected the rounded underside board treatment they remember from V17. This supersedes the printed-pin proposal in the first V25 coupon kit; that earlier kit is preserved outside this checkout.
+
+The user now explicitly removes **removable piece trays** from V25 and prefers dumping the pieces onto the table. The [fixed-storage prototype](../v25/FIXED-STORAGE/START-HERE.md) has two plain integral wells, no tray handles or pocket dividers, and 3.4 mm case floors replacing the former case-plus-tray floor stack. Keep the same original 42 flats / two flat capstones, full field, four-colour covers and 102.5×200×35 mm outside dimensions. That earlier body prototype used B supported filament hinges; the selected PIP replacement is described above. Pieces are loose and may rattle; spread them flat before closing. Random packing, physical dumping, hinge durability, cover-catch changes and loaded transport remain open. This supersedes the earlier V25 removable-tray direction; historical V24 kits stay unchanged.
+
+The user subsequently reports **thin coupon-body failure** and selects **B, the middle fit**, as the best working assumption. This identifies the fixture as the observed failure location; it does not establish a bearing/head failure or prove that thickness was the only cause. The [reinforced B trial](../v25/REINFORCED-B-TRIAL/START-HERE.md) keeps the Ø2.10 mm moving bore, Ø1.75 mm filament and heated-tool formed heads, and adds backing below the fixture floor for 6 mm sample stock. It is a four-part local trial; the whole case is not thickened. Physical durability is still open.
+
+The preceding [V25 strength trial](../v25/STRENGTH-TRIAL/START-HERE.md) uses a moving knuckle between two rooted fixed knuckles, 1.75 mm filament and two recessed heat-formed heads. The user has selected their heated tool for forming both ends. No printed pin, cap or glue-dependent retention is included in this trial. Three moving bore fits and two rounded board samples make eight parts. The earlier scope retained the full 180 mm / 36 mm field and side-hook backup; its removable-tray direction is superseded above. Whole-case integration, head strength, fatigue, firmness and loaded retention remain unverified. The [earlier bonded-end hinge and lip kit](../v25/START-HERE.md), V24 production geometry and older packages stay unchanged. See [V25_CHECKPOINT.md](V25_CHECKPOINT.md) for commands and evidence.
+
+The user's controlling outcome is **“a strong hinge that won't fall apart.”** Filament remains selected from their physical experience. Prioritize rooted barrel strength, axle retention and a firm fit that still rotates freely. A continuous axle is a possible means, not an acceptance requirement. Reject any coupon that cracks, fractures, lets the filament migrate or escape, or develops increasing wobble after cleanup, formed-head cooling, 20/100 opening cycles, rocking/twisting and recorded axial pulls. A passing coupon is only the first gate: the integrated case must also pass loaded opening/repacking and ordinary transport checks. Physical strength and retention are not yet established.
+
+The user subsequently asked about a continuous full-length filament axle for stability and accepted a motion assessment. [The assessment](../v25/motion-study/README.md) rejects a straight single axle on or below the current axis: exposed seam or folded-face overlap. A two-axis board-only path is possible, but the unchanged case bodies collide and no complete hinge/link solids or loaded motion are verified. That alternative remains unselected; the earlier V25 kit remains preserved. The supported filament trial preceded the current PIP selection.
+
+### Preserved version: V24 — October 6
+
+The user explicitly named the completed reinforced-hinge/removable-tray revision **V24**. The original name correction preserved V23 R2 mechanics. The current accepted follow-up integrates the four-colour playing surface into V24 boards and previews, with new board geometry/slice evidence and no physical acceptance. The V23 R2 kit remains archived in its original package.
+
+The user reports the V23 print broke at the thin bar carrying the main hinge and wants sturdier hinges plus a removable loaded player tray on each side for purse use. Exact fracture location, fused-joint state and breaking action remain unknown. This supersedes blanket unprinted status for that baseline component; other physical acceptance is not inferred.
+
+[V24](../v24/START-HERE.md) preserves the full 180 mm field and original flats/flat capstones. It uses 8 mm full-height hinge supports, 4 mm captive pivots, 9 mm rounded barrels, separate 1.2 mm tray floors, broad pinch handles and low locating stops under sliding covers. The selected closed size is **102.5×200×35 mm**: +1.5 mm at the stronger hinge barrels and +2.4 mm thickness, retaining the 2.2 mm case floors and 4.7 mm boards. Each tray carries 21 flats plus a capstone and rests flat beside the board. Open trays are handled upright.
+
+New paired bases, covers and hook are required; capstones, flats and collar retain geometry. Baseline V23 and all earlier kits remain intact. The accepted artwork now uses actual V24 corner reliefs and Z16.5 faces, with 0.6 mm flush inlays: black body, white grid/stars and independent silk accents in slots 3 and 4. Both silk profiles are placeholders requiring actual spool profiles and reslicing. New CAD, affected loaded slide/fold, multipart readback and colour-deposition checks cover the changed boards and small colour trial. Byte-verified mechanical exports, profiles, base/tray/hardware projects and hinge/tray trials reuse their prior evidence. The historical whole-kit identity and groove-only board checks do not describe the new multipart boards. Strength, printed release/fit, grasp and loaded transport still require physical trials; no printer job or merge is performed. See [checkpoint](V24_CHECKPOINT.md).
+
+Current folder organization: `v24/FULL-PRINT` contains precisely four full-size sliced projects, including the explicitly named four-colour board pair. `v24/SMALL-TRIALS` contains the three small trials. `v24/START-HERE.md` leads with the exact full board link and material mapping; `v24/V24-PRINT-KIT.zip` extracts to the same layout. Engineering files, build-stage exports and older local release copies are under `v24/REFERENCE`. This reorganization preserves accepted project bytes and does not change print geometry or settings. The primary checkout remains on the historical V18 branch with no V24 folder; the current kit is in the managed checkout.
+
+### Preserved version decision: V23
+
+October 5: the user explicitly named the accepted seamless-exterior design **V23**. This changes version identity only; geometry, material/process settings and print behavior remain those accepted at 4859c9c / 19b8773. The hook, pivot/collar and headed catch are recessed together at the middle of the long side opposite the main hinge. Broad rounded thumb access surrounds the hook; two offset recessed finger wells replace each board’s projecting pull tab. Rounded end shoulders replace the projecting rectangular main-hinge roots while retaining captive pivots and full folding motion.
+
+The closed envelope is **101×200×32.6 mm**, compared with 111.8×220.2×32.6 mm for the preserved original V22 kit. The full 180 mm, 5×5 / 36 mm-pitch field, original 42 Cat/Witch 20×20×8 mm flats and solid 8 mm flat Cat/Witch capstones remain. No deeper case, rear compartment, standee or sculpted capstone is introduced. Hook parking at 90° clears both complete outward board paths. Only its pivot uses an inserted 8.6 mm length of 1.75 mm PLA; main hinges print captive.
+
+The revised kit is `v23/release/tak-v23-print-kit.zip`: three full projects, eight parts, estimated 11 h 38 min / 272 g, with optional hinge and closure trials. Replace both bases, both boards, hook and collar together. The capstones match the original V22 CAD. The original V22 ZIP and V18–V21 archives are preserved. Geometry, exact loaded-piece clearance, motion samples, readback, toolpaths and slices pass; physical snag resistance, thumb/grip comfort, release, fit, durability and loaded retention remain unobserved. No printer job or merge is authorized by this preparation.
+
+See [V23 guide](../v23/START-HERE.md) and [checkpoint](V23_CHECKPOINT.md).
+
+### Historical version decision: V22
+
+Original V22 remains the corner-hook design with captive main hinges and solid flat capstones under sliding boards, at 111.8×220.2×32.6 mm. Source and package were restored from 02f8a09; the original ZIP and all 94 payload files are unchanged. The intermediate seamless delivery was subsequently named V23 and is retained in v22/release/archive for recovery. Current download and guide links point to V23.
+
+### Historical version decision: v21
+
+October 5: the user explicitly selected **V21** after asking why the playing board itself could not slide aside. Each board now doubles as its storage cover and slides outward, away from the centre seam. Only the two fixed-pocket bases hinge. The full 180 mm field and 36 mm pitch remain. Front buttons press rearward 2.8 mm to release; outward travel of 106 mm fully removes each board. Rails retain boards vertically and inner stops set their playing position. No captive withdrawal stop or measured release force is claimed.
+
+The side hook moves to the front corner to clear board travel. Main filament pins shorten to 14.9 mm; hatch and hook pins remain 92 mm and 9.6 mm. Bases and boards print flat, eliminating the former broad underside support under the boards. The rear compartment shifts 2 mm for rail clearance; it retains its separate capstone hatch. New bases and boards are required. Four full-build projects contain 11 printed parts, estimated at 12 h 35 min / 287 g. The original Cat/Witch CAD remains the clearance target; weighted and curled sets are unverified.
+
+See [V21 guide](../v21/START-HERE.md) and [checkpoint](V21_CHECKPOINT.md). Physical fit, flex, loaded opening/repacking and transport remain unobserved. V18–V20 remain intact; no printer job was started.
+
+### Historical version decision: v20
+
+October 5: the user rejected the tall housing orientations and explicitly selected **V20** after proposing sliding tops for piece containment. V20 replaces removable drawers with fixed original-piece pockets and separate removable sliding lids. Each broad-bottom base and broad-face lid prints flat; sloped rails retain the lid vertically, a thumb catch blocks withdrawal and the rear wall stops over-insertion. The board leaf lifts for storage access and lowers again for play. Lids must be latched before folding.
+
+The full 180 mm field, four-leaf common hinge axis, 1.75 mm PLA filament hardware and side hook remain. The pockets shift 4 mm inward to provide clearance for the lid button's 4.5 mm nominal release. Release pads are 20×5.6 mm; pull tabs are 31 mm wide. The hatch outer face gains 1.4 mm thickness for flat printing. No hold-open detent or captive lid removal stop is claimed. Original Cat/Witch CAD is the clearance target; weighted and curled sets remain unverified.
+
+See [V20 guide](../v20/START-HERE.md) and [checkpoint](V20_CHECKPOINT.md). Physical fit, release force, durability and loaded transport still require observation. Prior V18/V19 files remain intact. No printer job is authorized by kit preparation.
+
+### V23 multicolour playing-surface option — October 6, 2026
+
+The user selected the V23 sliding boards for a flush black/white inlay option, with two silk PLA accent colours. `v23/board-inlays/` reuses the v17 recessed grid and retained v16 celestial artwork. The full 180 mm field, 36 mm pitch, V23 rails, catches, grips, bases and capstones are preserved. This replaces only board plate 02; the existing complete-kit ZIP stays archived unchanged. Both black/white and four-colour projects include a small physical trial. The two accent colours and actual silk profiles are still to be selected; physical finish and fit remain unobserved. Read the option README and fresh reports before printing.
+
+### Historical version decision: v19
+
+October 5: after seeing several versioned folders inside the v18 ZIP, the user explicitly requested **v19**. The current release is [v19](../v19/START-HERE.md): one ZIP root, one START-HERE guide and exactly five current projects in PRINT. Required CAD dependencies live under source/vendor; old version packages and coupons are excluded. Print projects, exported geometry and settings carry forward unchanged from the checked side-hook build at `1e8944b`. Physical acceptance remains pending. See [V19_CHECKPOINT.md](V19_CHECKPOINT.md).
+
+### Historical v18 decision
 
 The user selected **v18 as the FINAL version** on October 4, 2026 (Chicago).
-Finish the recessed press-and-slide clasp with the retained four-leaf
-common-hinge case architecture. See [V18_FINAL.md](V18_FINAL.md) for the exact
-source freeze, protected choices and remaining release gates. The coupon package
-is pinned by [V18-FREEZE.json](V18-FREEZE.json); the integrated complete case
-and physical acceptance are still pending. Earlier closure trials are historical.
+On October 5, the user explicitly replaced the complicated recessed clasp with a **simple side hook and pin**, retaining v18 and the four-leaf common-hinge architecture. See [V18_FINAL.md](V18_FINAL.md). The original coupon package stays pinned by [V18-FREEZE.json](V18-FREEZE.json).
 
-### v18 recessed press-and-slide clasp coupon
+The user reports the earlier clasp trial printed and requested the **full build**. They selected **1.75 mm PLA filament pins**, reporting an earlier filament hinge held in place. The integrated [v18-case](../v18-case/README.md) now uses a flat printed swivel hook over a headed catch. A bonded filament pivot and lightly contacting collar provide adjustable friction; no spring detent is claimed. Whether this resists accidental opening remains a physical acceptance item.
+
+Five full-case CC2 PLA projects retain board snaps, caught/stopped drawers, the hinged hatch and the **180 mm / 36 mm pitch** field. Actual original flats are **20×20×8 mm**, with 20.7 mm pockets. Main/hatch/hook bores are 2.0 mm; collar bores are 1.9 mm. Pins are retained at designated stationary mounts after dry assembly, keeping adhesive away from moving leaves. The previous 3 mm rod kit is archived. Full-build physical acceptance stays unchecked; see [V18_CHECKPOINT.md](V18_CHECKPOINT.md).
+
+### Historical v18 recessed press-and-slide clasp coupon
 
 Recovered October 4, 2026 in `v18-recessed-clasp`. The complete saved package
 contains CAD sources, three separate printable parts, STEP/STL assemblies,
@@ -25,12 +118,11 @@ The receiver, keeper and rigid sliding bolt separate load-bearing shoulders
 from the recessed press leaf. Both closing and opening require pressing; to
 open, unload the keeper, press approximately 2 mm and slide left 10 mm before
 lifting. The assembled coupon is 78×40×10.1 mm. Prior digital checks are recorded
-in the package; physical fit, force, fatigue, support removal and loaded-bag
-retention remain untested. Supports are required in the provided orientation.
-This is a standalone clasp coupon, not a v18 complete-case release or an
-integrated change to v17. Next trial: print and inspect the small coupon, then
-check assembly, ten gentle cycles and press-only/drag-only retention as described
-in its README before case integration. Earlier closure studies remain history.
+in the package; the user reports the coupon printed; fit, force, fatigue, support removal and
+loaded-bag retention have no recorded acceptance. Supports are required in the provided orientation.
+This retained package is the standalone clasp coupon. The new integrated
+full build is in `v18-case`; complete its physical acceptance sheet. Earlier
+closure studies remain history.
 
 ### v17 common-hinge travel revision
 
@@ -38,8 +130,8 @@ User selected **all four leaves on the same hinge**: two drawer housings
 and two board leaves. `v17-four-leaf` records the architecture and motion
 study. Each housing has a fixed roof above a sliding flat drawer, so rotating
 leaves does not expose pieces. Board leaves will snap to their housings for
-play. The four-part over-center trial was rejected as confusing. The current
-closure trial is `v17-squeeze-latch`: a two-part side-release buckle with
+play. The four-part over-center trial was rejected as confusing. The historical v17
+closure trial was `v17-squeeze-latch`: a two-part side-release buckle with
 broad load-bearing shoulders and two exposed squeeze buttons. Closing
 pushes the clip into its socket; squeeze both buttons to open. Case
 integration and physical spring/strength tests remain unfinished. Closure
@@ -60,7 +152,7 @@ pass. Exact detailed capstone geometry, continuous swept motion, snap/stop
 implementation, capstone hatch and direct case closure remain unresolved.
 No complete-print release, slicing or physical retention is claimed.
 Next small trials: four-family common-axis hinge, board snap and drawer
-release, followed by the two-piece squeeze-buckle coupon before the full case.
+release, after the selected v18 recessed-clasp coupon; the squeeze buckle is historical.
 Weighted flats and curled Fox/Cat pieces are not verified in this package.
 Existing v16 printed interfaces remain incompatible and unchanged.
 

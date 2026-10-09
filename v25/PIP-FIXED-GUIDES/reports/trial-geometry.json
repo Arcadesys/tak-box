@@ -1,0 +1,563 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "left actual production hinge strip",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "left continuous 3.4mm floor and wide spine",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right actual production hinge strip",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "right continuous 3.4mm floor and wide spine",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial opposed axial capture -3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial opposed axial capture 3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial captive pivot clearance 4.5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial captive pivot clearance 195.5",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 108",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 112",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 114",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 116",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 118",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 122",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 124",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 126",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 128",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 132",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 134",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 136",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 138",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 142",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 144",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 146",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 148",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 152",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 154",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 156",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 158",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 162",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 164",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 166",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 168",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 172",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 174",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 176",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 178",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial fold 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial-hinge-left CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial-hinge-left STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.499107360839844,
+          200.0,
+          21.99911117553711
+        ],
+        "volume_mm3": 29406.285526304622
+      }
+    },
+    {
+      "name": "trial-hinge-right CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial-hinge-right STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.499107360839844,
+          200.0,
+          21.99911117553711
+        ],
+        "volume_mm3": 30146.657532181343
+      }
+    },
+    {
+      "name": "3mf-readback-02-V25-PIP-guided-hinge-trial",
+      "pass_": true,
+      "detail": {
+        "objects": [
+          "trial-hinge-left",
+          "trial-hinge-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "02-V25-PIP-guided-hinge-trial joint support and brim overrides",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "printed_parts": 2,
+  "physical_acceptance": false,
+  "printer_started": false,
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/PIP-FIXED-GUIDES/source/trial.py"
+  ],
+  "source_sha256": "d6924b1f0caf31fd55ff46d8de9561940e1010ca3f821ee9ac6d91553328b558",
+  "floor_mm": 3.4,
+  "spine_probe_width_mm": 13.2,
+  "length_mm": 200,
+  "scope": "Exact production hinge ends plus a continuous production-thickness spine. Does not qualify loaded complete-case durability."
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "review": "Viewed current exported-CAD rounded board relief, longitudinal hinge section and 14-part plate. Large high-contrast captions and explicit filament reference/physical-test limitations inspected.",
+  "files": {
+    "02-hinge-closed.png": "466b41a96bd380cde99de3e3426a713acd27d7ff3710fb5dd9706cebd5d53bc3",
+    "04-lip-section.png": "7080cc74c178a8e709aa602b1924fdcb0896213574ed9b1adbf7da7e525089f5",
+    "07-rounded-board-relief.png": "6dd70db1a8fcfda77b57e45e837fb43a8c5a6d210e55d4119ceca8c7b9e30ec1",
+    "01-hinge-open.png": "244755f1fc094b4d176e5f3e49176ba372034f727c4618a573cd0e4aed650cbd",
+    "03-lip.png": "0d4f39450e1b5ae0f8aa0e76f110091c0e486c1c86f724b59f3bb754c17abdf3",
+    "05-print-plate.png": "18f782890bae76adae9f196d2ba478a556e8c7602d8815a934d4b11a9a205f27",
+    "06-hinge-section.png": "267c9154f5a1688c48030be37d6ad4459c4eda3bb5fb01fa8a0dafecdd1786f0"
+  }
+}

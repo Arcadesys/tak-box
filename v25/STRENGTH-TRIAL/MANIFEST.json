@@ -1,0 +1,378 @@
+{
+  "version": "V25 supported filament strength trial",
+  "reference_revision": "8085e9d79ffff3c69f07a1cca67595994237869e",
+  "units": "mm",
+  "geometry_checks": 1167,
+  "printed_parts": 8,
+  "estimated_seconds": 5655,
+  "estimated_grams": 17.75,
+  "physical_acceptance": false,
+  "printer_started": false,
+  "files": [
+    {
+      "path": "STRENGTH-TRIAL/ENGINEERING.md",
+      "bytes": 3807,
+      "sha256": "879e450a6ac05915ce4d2a6d76d396956f0f094c6b3b7aae344e4d177d4da781"
+    },
+    {
+      "path": "STRENGTH-TRIAL/PRINT/01-V25-strength-hinges-CC2-PLA.3mf",
+      "bytes": 1690988,
+      "sha256": "809363d70512908f41772a62068ef37f50145df6889c4f54221f60924d00f32f"
+    },
+    {
+      "path": "STRENGTH-TRIAL/START-HERE.md",
+      "bytes": 3433,
+      "sha256": "dd40bc84f54b2ec1c4da9c0197bd8f6d1fac7e5742ae10d5bf2be1321e2be763"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/BOARD-left.step",
+      "bytes": 53436,
+      "sha256": "451b71f09c676621632e8cc9f149d4480f63356ab0dccea79f9eb716e7944ed3"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/BOARD-left.stl",
+      "bytes": 3884,
+      "sha256": "9bc64caded3eaf5cf641435aa46789ee485d633b5fd02d6b0f6e0decffd56e09"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/BOARD-right.step",
+      "bytes": 56249,
+      "sha256": "3637b78a834cf96bac943ec255f25452c7717885b368b3f1085c87b616e6088d"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/BOARD-right.stl",
+      "bytes": 3884,
+      "sha256": "abba7872af2ad8880f6927af31992caff211ce945e7d1203a36bae57344468e3"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S1-assembly.step",
+      "bytes": 880092,
+      "sha256": "f701d9c331fdbc10c936380f01f0aeb505ccf5dd0a76c8c52a2be3697c15d83a"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S1-fixed.step",
+      "bytes": 429780,
+      "sha256": "5bbc6bb43561572f0ba8977737815efd588c04f2d4c93ca1b8375e2b39a17b35"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S1-fixed.stl",
+      "bytes": 1100884,
+      "sha256": "e33a18a6d5aa2abe300e858e5b977b88620a94b4700f0906fd4acc561959b76d"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S1-moving.step",
+      "bytes": 400632,
+      "sha256": "e8b275a2cf586fd632fad90065ceb2a0c7fdf0342aa07949353608ee2d2cf3e8"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S1-moving.stl",
+      "bytes": 590184,
+      "sha256": "fa443b21e2dfcda663379ff821f4f7c6ac056f3c3780542dcffd56b0e4e84241"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S2-assembly.step",
+      "bytes": 1043506,
+      "sha256": "3d003112dfc224ce13bea12ecfc068094378154c433fbac294890a78c6855c76"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S2-closed.step",
+      "bytes": 1040657,
+      "sha256": "4ff5895c820ae0298d79164cfecda6e3ea30c110788455e4a5fc131020f38689"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S2-fixed.step",
+      "bytes": 509032,
+      "sha256": "239ad494b02fd2d6f78e4c09ad7dbfc92fe12740481c1e686259ceb2f18538b8"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S2-fixed.stl",
+      "bytes": 1147484,
+      "sha256": "e32f2886f72980f9df665dda78ee0e03fe61291d8e73917e7b466c93cbd2e73c"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S2-moving.step",
+      "bytes": 480310,
+      "sha256": "10222d3287f39eb3a5cd3bb156e58f4ed49878766619b423a073192071351c1d"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S2-moving.stl",
+      "bytes": 637284,
+      "sha256": "612fe15ca8116ba231038940ea29b5137b4f8645d7c1fc7470ec6f2c81cab976"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S2-with-boards.step",
+      "bytes": 1166131,
+      "sha256": "85b19ea5f1758df7933fa392b323a8ff6b238bd971917603531cba07be6d93e4"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S3-assembly.step",
+      "bytes": 1148963,
+      "sha256": "48d1b0598b7cbddf6ec6b4a4cba537a3c583f23733c0eeb9fa189cfd9ad4ed5d"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S3-fixed.step",
+      "bytes": 561492,
+      "sha256": "8d95ef964c9232d355041cd15364896d5e1472c9eb90beb4aef2c8b98484b82c"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S3-fixed.stl",
+      "bytes": 1201484,
+      "sha256": "c5a2c64f37aa62fc51287d864d13067d8e9daa7e44db7415260c18f39fb2ce6c"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S3-moving.step",
+      "bytes": 531712,
+      "sha256": "e85ff1d848a9293809bcbea8fc1316b8d39ac01bb5442005875a556f0294a4f4"
+    },
+    {
+      "path": "STRENGTH-TRIAL/models/S3-moving.stl",
+      "bytes": 691084,
+      "sha256": "df9023213ef83b0f613e91218736ed6a2cdf323b1207d960098b85a9c39ce5a3"
+    },
+    {
+      "path": "STRENGTH-TRIAL/plates/01-V25-strength-hinges.3mf",
+      "bytes": 1261857,
+      "sha256": "e36f94adabe3a0d9074f6b4f773ce19c9485d1c9f40d4be3288f13b8986438fc"
+    },
+    {
+      "path": "STRENGTH-TRIAL/previews/01-open.png",
+      "bytes": 50323,
+      "sha256": "db8a021e1df35ffce42375474e717273f34dcc936da422871d74626eb3abb147"
+    },
+    {
+      "path": "STRENGTH-TRIAL/previews/02-closed.png",
+      "bytes": 38525,
+      "sha256": "bb8fb709f50c290eb31b0f9ee5a7ef2ee0637e19ada044f6b88e1e72f956fa16"
+    },
+    {
+      "path": "STRENGTH-TRIAL/previews/03-rounded-boards.png",
+      "bytes": 51215,
+      "sha256": "cb7ae30d4bae75bb1bc3e3f96925630e63857b2041f924db1ea9af8e8350b096"
+    },
+    {
+      "path": "STRENGTH-TRIAL/previews/04-print-plate.png",
+      "bytes": 49558,
+      "sha256": "13453a5ca18d98d8a892930a26c90d5e26b0456155dae77c2f536ef8f8e22bac"
+    },
+    {
+      "path": "STRENGTH-TRIAL/previews/05-axle-section.png",
+      "bytes": 134874,
+      "sha256": "e373bb2c57e2735589819852192c46be7c17813c8e988ab5c79b6cd5155e13d9"
+    },
+    {
+      "path": "STRENGTH-TRIAL/profiles/filament-pla.json",
+      "bytes": 4108,
+      "sha256": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+    },
+    {
+      "path": "STRENGTH-TRIAL/profiles/machine.json",
+      "bytes": 6300,
+      "sha256": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    {
+      "path": "STRENGTH-TRIAL/profiles/process-case.json",
+      "bytes": 5160,
+      "sha256": "aca101ebf11989516b1621732f067658f77bc8deff567b27892771089d805233"
+    },
+    {
+      "path": "STRENGTH-TRIAL/reports/build.log",
+      "bytes": 49,
+      "sha256": "ad32634ba244e641c2d6d27c94385db89089ab149b8526c2f079bc3a7beb5a08"
+    },
+    {
+      "path": "STRENGTH-TRIAL/reports/geometry.json",
+      "bytes": 123315,
+      "sha256": "4db83e2eadb85c5e965e34388395475da1c35acfcd2f5021e487e63857015b36"
+    },
+    {
+      "path": "STRENGTH-TRIAL/reports/render.log",
+      "bytes": 34,
+      "sha256": "31e795f20159c47b7a42f32098dfdfb633953ed724b052ea5b41d14fa1d26931"
+    },
+    {
+      "path": "STRENGTH-TRIAL/reports/slice.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "STRENGTH-TRIAL/reports/slicing.json",
+      "bytes": 4862,
+      "sha256": "d55b34ab2352f3e607f7e14de7a14cb8f9340f40e698281be1e6e8a4b0c49661"
+    },
+    {
+      "path": "STRENGTH-TRIAL/source/build.py",
+      "bytes": 6074,
+      "sha256": "bf8d1aecc2773cb392bf0466feac4285e230b36e5652b8b8dc937aa35b23be40"
+    },
+    {
+      "path": "STRENGTH-TRIAL/source/package.py",
+      "bytes": 3093,
+      "sha256": "18b5042b14dd1b44c2a155c5e8b6d28f545722576ed299fecd08a5806589c9ce"
+    },
+    {
+      "path": "STRENGTH-TRIAL/source/render.py",
+      "bytes": 3330,
+      "sha256": "00efe4c874c178a2fca152737b4ccce5d5df4dd9edc7b89af1520c7859e55eee"
+    },
+    {
+      "path": "STRENGTH-TRIAL/source/reproduce.py",
+      "bytes": 2325,
+      "sha256": "1118738c1d95dbd2252bb17d6241a1ddf085ad82d701972af068b5f94cfce805"
+    },
+    {
+      "path": "STRENGTH-TRIAL/source/slice.py",
+      "bytes": 5359,
+      "sha256": "6c784c841dea46469175c20687eda67db9f298ba21e794bee20d2920841d37e3"
+    },
+    {
+      "path": "reference/v24/source/build_case.py",
+      "bytes": 9148,
+      "sha256": "fab3ee747e32a37b97017e2ec0e769356e95f6ec691cbb28e51e4bbcf411c3b1"
+    },
+    {
+      "path": "reference/v24/source/build_fitcheck.py",
+      "bytes": 3869,
+      "sha256": "29adfd4344aac235328de900d5758c70a692b389c4d6033a0b7bab7c766554a7"
+    },
+    {
+      "path": "reference/v24/source/build_tray_trial.py",
+      "bytes": 3082,
+      "sha256": "746a1f912fbb0fe8e1301275d8a7c135b90b16028e3a6d9619b523e2d1adb08e"
+    },
+    {
+      "path": "reference/v24/source/case.py",
+      "bytes": 9170,
+      "sha256": "84e79ca32468bb2067708e17d953bdd865c4a39e9edd646228299777b0fc1da1"
+    },
+    {
+      "path": "reference/v24/source/delivery.py",
+      "bytes": 1728,
+      "sha256": "08724993c909e680ff92c2e96cfcf0c3b8baf51699c683e0b07cdcc59058d47c"
+    },
+    {
+      "path": "reference/v24/source/flat_capstones.py",
+      "bytes": 1637,
+      "sha256": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693"
+    },
+    {
+      "path": "reference/v24/source/geometry_utils.py",
+      "bytes": 213,
+      "sha256": "c8256a8146a2aaff58e60b47e7f9eb14d0b8401f8bad489112c35849a61f8815"
+    },
+    {
+      "path": "reference/v24/source/inspect_case_layers.py",
+      "bytes": 3490,
+      "sha256": "34bfa8bb03854ba2e668cdcda0547325ecccdc78afc72acb45475b089d324fc0"
+    },
+    {
+      "path": "reference/v24/source/loaded_pieces.py",
+      "bytes": 838,
+      "sha256": "6a0e4f75e5695e5f74f130ef788950d72d82fe9c5678371515f32276d0d373ee"
+    },
+    {
+      "path": "reference/v24/source/package_case.py",
+      "bytes": 5265,
+      "sha256": "dd5b3be14468ab16de3eb8ce4ddf9f6e51e0b07b8c6b3e8936372ed17cdcc860"
+    },
+    {
+      "path": "reference/v24/source/package_release.py",
+      "bytes": 2764,
+      "sha256": "aafc749c0c561a9a134980532992ceeb33ca5477f8cc45a97934e932830b5a6d"
+    },
+    {
+      "path": "reference/v24/source/record_provenance.py",
+      "bytes": 6287,
+      "sha256": "b406910ab17cabc00204a1ed2c1fa0d60549ebaa37877e00e20ab0912ae68a0f"
+    },
+    {
+      "path": "reference/v24/source/render_revision.py",
+      "bytes": 2866,
+      "sha256": "031b65cb99f8691981c4cf5c5458e1e05d5a876e32c62685c26f7617a8e56c8b"
+    },
+    {
+      "path": "reference/v24/source/render_utils.py",
+      "bytes": 2278,
+      "sha256": "cc8baf6d01a3197780dfe929673e6dbd13febc73730856d75f442fee7bf36c1f"
+    },
+    {
+      "path": "reference/v24/source/slice_case.py",
+      "bytes": 7618,
+      "sha256": "053440ec17904cd05aa4c40e3a7f9df1b859926fa0470e86aac8841a1e0a7b19"
+    },
+    {
+      "path": "reference/v24/source/vendor/body/export_utils.py",
+      "bytes": 5734,
+      "sha256": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e"
+    },
+    {
+      "path": "reference/v24/source/vendor/body/folio.py",
+      "bytes": 3093,
+      "sha256": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7"
+    },
+    {
+      "path": "reference/v24/source/vendor/pieces/cat-flat.stl",
+      "bytes": 217484,
+      "sha256": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1"
+    },
+    {
+      "path": "reference/v24/source/vendor/pieces/tak_pieces.py",
+      "bytes": 10600,
+      "sha256": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+    },
+    {
+      "path": "reference/v24/source/vendor/pieces/witch-flat.stl",
+      "bytes": 131084,
+      "sha256": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba"
+    },
+    {
+      "path": "reference/v24/source/verify_field.py",
+      "bytes": 1132,
+      "sha256": "7ca4f1ec49475dfe30e064dd3e7c6cac00a2e6e0b0e341889e8310bef2593863"
+    },
+    {
+      "path": "reference/v24/source/verify_hardware.py",
+      "bytes": 3379,
+      "sha256": "3eb49c80dfe5fa25b9514c3776b418165e064ae6eaa83e077b2c7a88acceec9c"
+    },
+    {
+      "path": "reference/v24/source/verify_identity.py",
+      "bytes": 4559,
+      "sha256": "e83dd8c54edd8888ae2e177ab1d50919bf5c7e9bcd437704c43c3e6d5d20f106"
+    },
+    {
+      "path": "reference/v24/source/verify_pin_toolpaths.py",
+      "bytes": 5241,
+      "sha256": "7e980fc90639e8e2d0f824efefb95449cba0409877b77bde7bba056197b50e95"
+    },
+    {
+      "path": "reference/v24/source/verify_pip_hinges.py",
+      "bytes": 5584,
+      "sha256": "d54b0126f7bb1e1d6b750176ff023755b518403149bba1e9b8df7023a1c271fe"
+    },
+    {
+      "path": "reference/v24/source/verify_supports.py",
+      "bytes": 1995,
+      "sha256": "07e3b11179d83a10fe0aedaaff4dbf33eb16929293bef68d4449f89aa6658ede"
+    },
+    {
+      "path": "reference/v24/source/verify_trays.py",
+      "bytes": 3794,
+      "sha256": "886cba8a46aa60351bc3e771ee393fcd25753f120858c6dbb533f2c822acae24"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 736,
+      "sha256": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575"
+    },
+    {
+      "path": "source/build.py",
+      "bytes": 9744,
+      "sha256": "df80886084ff73786f876c86d1a0fe1da56041fe2434e74c1358dfa77a1f54d8"
+    },
+    {
+      "path": "source/render.py",
+      "bytes": 5892,
+      "sha256": "9c3703cd6e0a35c02b5f2392845080d7717c1cc129bd11aebc86519384ac9824"
+    }
+  ]
+}

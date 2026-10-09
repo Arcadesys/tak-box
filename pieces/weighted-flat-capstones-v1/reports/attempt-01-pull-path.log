@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v1/source/build.py", line 132, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v1/source/build.py", line 95, in main
+    cat=capstone('cat');witch0=capstone('witch')
+        ^^^^^^^^^^^^^^^
+  File "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v1/source/build.py", line 69, in capstone
+    if dz>=.2:assert collision>1e-4,(team,'retaining hooks must block outward translation',dz,collision)
+                     ^^^^^^^^^^^^^^
+AssertionError: ('cat', 'retaining hooks must block outward translation', 0.7, 0.0)

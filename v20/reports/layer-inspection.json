@@ -1,0 +1,198 @@
+{
+  "01-left-housing-hook-pivot-and-cap-compartment": {
+    "levels": 129,
+    "selected_z_mm": [
+      0.2,
+      2.2,
+      3.2,
+      5.8,
+      6.2,
+      7.0,
+      9.2,
+      10.6,
+      11.8,
+      16.4,
+      23.2,
+      25.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        4.644,
+        1.644
+      ],
+      [
+        119.956,
+        248.944
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Broad base floor on first layer; pockets appear above 2.2 mm. Storage opening stays clear above pocket rims; no support forest under the sloped rails. Local support remains around external hardware features. Selected layers visually reviewed.",
+    "gcode_sha256": "55cae61b5684643b910fcfd3b7ec73b30ca124ed6f90d03952d3de8137825bbe"
+  },
+  "02-right-housing-and-hook-pin": {
+    "levels": 96,
+    "selected_z_mm": [
+      0.2,
+      2.2,
+      3.2,
+      5.8,
+      6.2,
+      7.6,
+      9.2,
+      10.6,
+      11.8,
+      16.4,
+      17.4,
+      19.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        7.844,
+        4.644
+      ],
+      [
+        121.922,
+        232.156
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Broad base floor on first layer; fixed pockets and open storage are visible. No broad enclosed bridge or support inside the lid path. External keeper/hinge support is accessible. Selected layers visually reviewed.",
+    "gcode_sha256": "080fad7ef143785f82c5ea668b3912b1eec8089d8efececefd8ef2881bc42fe5"
+  },
+  "03-board-leaves": {
+    "levels": 60,
+    "selected_z_mm": [
+      0.2,
+      3.2,
+      3.6,
+      4.0,
+      5.0,
+      5.4,
+      5.6,
+      7.4,
+      7.6,
+      8.2,
+      9.0,
+      12.0
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        4.672000000000001
+      ],
+      [
+        223.356,
+        226.128
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Boards retain a broad removable support sheet underneath because the clips project below each panel. Playing faces and grooves print upward, with separate hinge and clip features. No tall orientation. Selected layers visually reviewed.",
+    "gcode_sha256": "743ecfa6accbc01536625e1eea14187bc32d486a04abf5d585e9e1b836752dac"
+  },
+  "04-sliding-storage-lids": {
+    "levels": 28,
+    "selected_z_mm": [
+      0.2,
+      0.6,
+      1.2,
+      1.6,
+      2.6,
+      2.8,
+      4.0,
+      5.0,
+      5.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        206.356,
+        207.756
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Both thin lids contact the bed on their broad top faces. Flex slots remain open and button/arm sections continue upward from the first layers. No support deposition shown in selected layers.",
+    "gcode_sha256": "4b3b6f39bd2f8ea8250f23e79c94a867fe9cca90d9bf6649d9e0ed3c69a50937"
+  },
+  "05-hatch-hook-and-five-axle-caps": {
+    "levels": 39,
+    "selected_z_mm": [
+      0.2,
+      1.2,
+      2.0,
+      2.6,
+      3.2,
+      3.4,
+      4.2,
+      5.0,
+      6.0,
+      7.0,
+      7.8
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        3.968,
+        1.644
+      ],
+      [
+        170.356,
+        62.356
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Hatch broad top contacts the bed. Local support remains beneath the external hatch clip; hook and collars print flat with clear bores. Selected layers visually reviewed.",
+    "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+  }
+}

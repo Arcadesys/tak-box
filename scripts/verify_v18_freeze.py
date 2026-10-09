@@ -44,6 +44,17 @@ for name, key in [("validation.json", "build_sha256"),
         errors.append(f"report/source mismatch: {name}")
 if errors:
     raise SystemExit("V18 freeze FAILED\n" + "\n".join(errors))
+integrated = lock.get("integrated_case_manifest")
+if integrated:
+    path = ROOT / integrated["path"]
+    data = path.read_bytes()
+    assert len(data) == integrated["bytes"]
+    assert hashlib.sha256(data).hexdigest() == integrated["sha256"]
+    for entry in json.loads(data)["files"]:
+        payload = (ROOT / entry["path"]).read_bytes()
+        assert len(payload) == entry["bytes"], entry["path"]
+        assert hashlib.sha256(payload).hexdigest() == entry["sha256"], entry["path"]
+    print("Integrated v18 first-print manifest and payload hashes PASS.")
 print(f"V18 freeze PASS: {len(expected)} pinned files; {len(original)} original manifest entries; "
       "ZIP CRC, Python syntax and review/source hashes match.")
 print("Complete-case release and physical acceptance remain pending.")

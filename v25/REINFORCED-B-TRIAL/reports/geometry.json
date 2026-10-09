@@ -1,0 +1,2109 @@
+{
+  "passed": true,
+  "version": "V25 reinforced B trial",
+  "parent_revision": "5ad905e42ad8133c05efbf77971b21f5f3970c43",
+  "user_report": "Thin coupon body fell apart; B middle fit assumed best; hinge durability unproven",
+  "reference_revision": "8085e9d79ffff3c69f07a1cca67595994237869e",
+  "source_sha256": {
+    "REINFORCED-B-TRIAL/source/build.py": "c3aeb2be959e7ea5616bbb774cde51a2df10552d4486b1e1812c7108ef8ba3ed",
+    "source/build.py": "df80886084ff73786f876c86d1a0fe1da56041fe2434e74c1358dfa77a1f54d8",
+    "reference/v24/source/case.py": "84e79ca32468bb2067708e17d953bdd865c4a39e9edd646228299777b0fc1da1",
+    "STRENGTH-TRIAL/source/build.py": "bf8d1aecc2773cb392bf0466feac4285e230b36e5652b8b8dc937aa35b23be40"
+  },
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "cadquery": "2.7.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/REINFORCED-B-TRIAL/source/build.py"
+  ],
+  "units": "mm",
+  "checks": [
+    {
+      "name": "local flat playing-field material unchanged",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B working bearing material unchanged left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B continuous deep fixture spine left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B working bearing material unchanged right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B continuous deep fixture spine right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B static tray clearance",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B filament runs clear",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B both formed heads block axial escape",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B raw filament unretained without both formed heads",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B double supported moving bearing",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B fixed rooted bearing 0.3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B fixed rooted bearing 6.8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 92",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 94",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 96",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 98",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 102",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 104",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 106",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 108",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 108",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 108",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 108",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 112",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 112",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 112",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 112",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 114",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 114",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 114",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 114",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 116",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 116",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 116",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 116",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 118",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 118",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 118",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 118",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 120",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 122",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 122",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 122",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 122",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 124",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 124",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 124",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 124",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 126",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 126",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 126",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 126",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 128",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 128",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 128",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 128",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 130",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 132",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 132",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 132",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 132",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 134",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 134",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 134",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 134",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 136",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 136",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 136",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 136",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 138",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 138",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 138",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 138",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 140",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 142",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 142",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 142",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 142",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 144",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 144",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 144",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 144",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 146",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 146",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 146",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 146",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 148",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 148",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 148",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 148",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 150",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 152",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 152",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 152",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 152",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 154",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 154",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 154",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 154",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 156",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 156",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 156",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 156",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 158",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 158",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 158",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 158",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 160",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 162",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 162",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 162",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 162",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 164",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 164",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 164",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 164",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 166",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 166",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 166",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 166",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 168",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 168",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 168",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 168",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 170",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 172",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 172",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 172",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 172",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 174",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 174",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 174",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 174",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 176",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 176",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 176",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 176",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 178",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 178",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 178",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 178",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B joint sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual V24 board clearance 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B actual tray fold clearance 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B curved board sweep 180",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-fixed CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-fixed STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.49911117553711,
+          26.0,
+          25.79911041259766
+        ],
+        "volume_mm3": 3316.560182719488
+      }
+    },
+    {
+      "name": "B-moving CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-moving STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.49911117553711,
+          26.0,
+          25.799110412597656
+        ],
+        "volume_mm3": 2800.934064593203
+      }
+    },
+    {
+      "name": "BOARD-left CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          21.799999237060547,
+          22.900001525878906,
+          4.699999809265144
+        ],
+        "volume_mm3": 1741.8360994587576
+      }
+    },
+    {
+      "name": "BOARD-right CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          21.799999237060547,
+          22.900001525878906,
+          4.699999809265144
+        ],
+        "volume_mm3": 1741.836094466791
+      }
+    },
+    {
+      "name": "B-fixed on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-fixed plate separation B-moving",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-fixed plate separation BOARD-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-fixed plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-moving on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-moving plate separation BOARD-left",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "B-moving plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-left plate separation BOARD-right",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "BOARD-right on 256mm bed",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "3mf-readback-01-V25-reinforced-B",
+      "pass_": true,
+      "detail": {
+        "objects": [
+          "B-fixed",
+          "B-moving",
+          "BOARD-left",
+          "BOARD-right"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  ],
+  "specifications": {
+    "B-fixed": {
+      "size_mm": [
+        26.49911117553711,
+        26.0,
+        25.79911041259766
+      ],
+      "sha256": "4a92f427aee6a8c9cbbc59eed4ef2e6908ad5a43425a3e6573c90943086bf68a"
+    },
+    "B-moving": {
+      "size_mm": [
+        26.49911117553711,
+        26.0,
+        25.799110412597656
+      ],
+      "sha256": "0ddf268a751f59e4668b1dfc6180f89b6f636672bf2aca566e2f404edeb1f1f6"
+    },
+    "B": {
+      "fixed_bores_mm": 1.95,
+      "moving_bore_mm": 2.1,
+      "fixed_segments_mm": [
+        [
+          0.3,
+          2.8
+        ],
+        [
+          6.8,
+          9.3
+        ]
+      ],
+      "moving_segments_mm": [
+        [
+          3.2,
+          6.4
+        ]
+      ],
+      "barrel_d_mm": 9,
+      "root_width_mm": 8,
+      "gusset_x_start_mm": 88.2,
+      "nominal_filament_d_mm": 1.75,
+      "formed_head_d_mm": 3.2,
+      "formed_head_thickness_mm": 0.6,
+      "head_recess_d_mm": 3.5,
+      "head_axial_clearance_mm": 0.1,
+      "finished_axle_length_mm": 9,
+      "raw_stock_volume_equivalent_length_mm": 11.812244897959182,
+      "retention": "Two formed filament heads; physical forming and pull strength unverified",
+      "printed_pin": false,
+      "fixture_floor_thickness_mm": 6,
+      "fixture_backing_below_case_mm": 3.8
+    },
+    "BOARD-left": {
+      "size_mm": [
+        21.799999237060547,
+        22.900001525878906,
+        4.699999809265144
+      ],
+      "sha256": "9bc64caded3eaf5cf641435aa46789ee485d633b5fd02d6b0f6e0decffd56e09"
+    },
+    "BOARD-right": {
+      "size_mm": [
+        21.799999237060547,
+        22.900001525878906,
+        4.699999809265144
+      ],
+      "sha256": "abba7872af2ad8880f6927af31992caff211ce945e7d1203a36bae57344468e3"
+    }
+  },
+  "rounded_relief_radius_mm": 19.691881404893856,
+  "fixture_running_relief_radius_mm": 23.202802025245155,
+  "printed_parts": 4,
+  "physical_acceptance": false,
+  "full_case_integration": false,
+  "printer_started": false
+}

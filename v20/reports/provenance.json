@@ -1,0 +1,76 @@
+{
+  "source_revision": "be279db7a3d2209e1bebe1ba15c63ca12d8036ef",
+  "runtime_python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "installed_dependencies": {
+    "cadquery": "2.7.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "trimesh": "5.1.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "vtk": "9.3.1",
+    "matplotlib": "3.11.2"
+  },
+  "base_revision": "1091f7348f525d2b72f17cad1f5f8c680509fae0",
+  "recovery_base_revision": "2589129101d6f63533b425bff4855ec84a735904",
+  "python_environment": ".slicer-work/cad-venv (Python 3.12.13; requirements.txt)",
+  "source_and_dependency_sha256": {
+    "source/render_case.py": "4b38b695d413fb0ea230b6b1d198a57e0553f4c5dcbd0481cc409c8587262225",
+    "source/verify_package.py": "3b1a0370298686c5a3ca922a65a1a8e784522d8498163b8925c5ea18dd83f0d0",
+    "source/inspect_case_layers.py": "ce6e1689fcd0757aee1e22e815c00a9ba1297b436331bfe4975d7c1a79595373",
+    "source/build_fitcheck.py": "b3a0bb152612030be475c38d285c4ff17344264e2dad6af3f091de11953e588e",
+    "source/verify_hardware.py": "12bf6b2c29dfb2c2f167aaa4d069a703b40c51a7c72bed0aada864c392180ef1",
+    "source/package_case.py": "db2f715cd7e1c7fb9c1b2208b0e0c58f3a0d569cf837eaf0afbe7120406d667f",
+    "source/build_case.py": "47497c0e181ed186880bb62bee16bef06c7f71e80f300da5d9f8a0c574258605",
+    "source/verify_field.py": "c26a843517ba94f5b5551c1cf8422e66827c511b125329dd6d13614b8108052d",
+    "source/case.py": "d0ff753a5d6b873091c2e846079e5cc5fe57063e6613d821569f7042f2561008",
+    "source/package_release.py": "3bce4a650e103f25a16683f54fd3c1b4a626e127ada7c12cbe8553d5057cdec2",
+    "source/slice_case.py": "99070dcc1d59483814112bd226fbb1dfbbe42cc5e79bd57f8aca22b600b7c265",
+    "source/verify_pin_toolpaths.py": "5d337883a74b6a97358622afa482530fb86bf09ddc69223cc60ed402b93fc252",
+    "source/record_provenance.py": "fea1c072caa92bcd08c4b35cb1afa4b1b4ae4102e8c75076d2311eab2719b0cd",
+    "requirements.txt": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575",
+    "source/vendor/body/export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e",
+    "source/vendor/body/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
+    "source/vendor/pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+  },
+  "cad_validation_snapshot_defining_sources_match": true,
+  "checks": [
+    {
+      "report": "geometry.json",
+      "checks": 56,
+      "pass": true
+    },
+    {
+      "report": "field.json",
+      "checks": 37,
+      "pass": true
+    },
+    {
+      "report": "hardware.json",
+      "checks": 31,
+      "pass": true
+    },
+    {
+      "report": "plates.json",
+      "checks": 43,
+      "pass": true
+    },
+    {
+      "report": "pin-toolpaths.json",
+      "checks": 18,
+      "pass": true
+    },
+    {
+      "report": "fit-check.json",
+      "checks": 6,
+      "pass": true
+    }
+  ],
+  "five_project_input_profile_hashes_match": true,
+  "selected_layer_visual_reviews_recorded": true,
+  "filament_toolpath_scope": "Extrusion centerlines inside a nominal 1.75 mm pin core, cropped at passage ends. No bead-width/force/physical-fit proof.",
+  "closure": "Side swivel hook over a headed printed pin; friction set by bonded pivot collar. No detent/force/physical retention qualification.",
+  "printer_started": false,
+  "physical_acceptance": false,
+  "clasp_trial": "Earlier recessed clasp printed per user; new hook untested.",
+  "earlier_filament_test": "User reports 1.75 mm PLA held in place; exact component revision, load and cycle count unknown."
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "entries": 101,
+  "zip_sha256": "a17e0f3c72a07d5eec62562ba31813165b0ae1383047639712febd2cc6c682e5",
+  "zip_bytes": 13800426,
+  "geometry_checks": 542,
+  "printed_parts": 2,
+  "physical_acceptance": false,
+  "printer_started": false
+}

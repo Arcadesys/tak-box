@@ -1,0 +1,152 @@
+{
+  "01-print-in-place-bases": {
+    "levels": 110,
+    "selected_z_mm": [
+      0.2,
+      2.2,
+      5.8,
+      10.4,
+      13.0,
+      15.0,
+      15.6,
+      16.4,
+      17.6,
+      18.4,
+      20.0,
+      21.8
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        17.21,
+        18.535
+      ],
+      [
+        216.088,
+        223.465
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "Reviewed actual deposition sheets: broad grounded floors, separate captive supports, slider/grid layers, tray pocket walls and grip columns. Joint gaps additionally checked by toolpath probes. Physical release/strength unverified.",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ]
+  },
+  "03-removable-player-trays": {
+    "levels": 46,
+    "selected_z_mm": [
+      0.2,
+      0.6,
+      1.2,
+      1.4,
+      2.0,
+      3.0,
+      4.0,
+      4.6,
+      5.0,
+      7.0,
+      8.0,
+      9.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        186.556,
+        194.456
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "Reviewed actual deposition sheets: broad grounded floors, separate captive supports, slider/grid layers, tray pocket walls and grip columns. Joint gaps additionally checked by toolpath probes. Physical release/strength unverified.",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ]
+  },
+  "02-sliding-board-tops": {
+    "levels": 28,
+    "selected_z_mm": [
+      0.2,
+      0.6,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      4.2,
+      4.6,
+      4.8,
+      5.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        224.156,
+        204.456
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "Reviewed actual deposition sheets: broad grounded floors, separate captive supports, slider/grid layers, tray pocket walls and grip columns. Joint gaps additionally checked by toolpath probes. Physical release/strength unverified.",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ]
+  },
+  "04-flat-capstones-hook-and-collar": {
+    "levels": 40,
+    "selected_z_mm": [
+      0.2,
+      0.6,
+      1.2,
+      2.0,
+      3.2,
+      4.0,
+      5.0,
+      6.0,
+      6.6,
+      7.0,
+      7.4,
+      8.0
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.646,
+        1.644
+      ],
+      [
+        137.343,
+        31.616
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "Reviewed actual deposition sheets: broad grounded floors, separate captive supports, slider/grid layers, tray pocket walls and grip columns. Joint gaps additionally checked by toolpath probes. Physical release/strength unverified.",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "command": [
+    "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+    "--datadir",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/REINFORCED-B-TRIAL/.slicer-work/config",
+    "--load-settings",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/REINFORCED-B-TRIAL/profiles/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/REINFORCED-B-TRIAL/profiles/process-case.json",
+    "--load-filaments",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/REINFORCED-B-TRIAL/profiles/filament-pla.json",
+    "--ensure-on-bed",
+    "--arrange",
+    "0",
+    "--orient",
+    "0",
+    "--slice",
+    "0",
+    "--export-3mf",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/REINFORCED-B-TRIAL/PRINT/01-V25-reinforced-B-CC2-PLA.3mf",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/REINFORCED-B-TRIAL/plates/01-V25-reinforced-B.3mf"
+  ],
+  "exit_code": 0,
+  "slicer": "ElegooSlicer 2.4.2",
+  "input_sha256": "999f2b77381b8b1f7df4b420b36b0317062d865b2fa53eabaadb1a82db29313c",
+  "profiles_sha256": {
+    "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "process-case.json": "c11bc7efcd0afa668efaf929c0df9ec092595d9ecdaf9e7e8fc6ed1231b32b27",
+    "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+  },
+  "physical_acceptance": false,
+  "printer_started": false,
+  "passed": true,
+  "surface_tolerance_mm": 0.002,
+  "mesh_readback": [
+    {
+      "name": "B-fixed",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 2.2378561178533723e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 21230,
+      "sliced_triangles": 21230,
+      "volume_error_mm3": -5.120043351780623e-05
+    },
+    {
+      "name": "B-moving",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 4.076481325331274e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 10948,
+      "sliced_triangles": 10948,
+      "volume_error_mm3": -0.000344211724041088
+    },
+    {
+      "name": "BOARD-left",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 1.799999990836909e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 76,
+      "sliced_triangles": 76,
+      "volume_error_mm3": 4.205876302876277e-05
+    },
+    {
+      "name": "BOARD-right",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 3.770344943720946e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 76,
+      "sliced_triangles": 76,
+      "volume_error_mm3": 3.615362834352709e-05
+    }
+  ],
+  "plate_metadata": {
+    "index": "1",
+    "extruder_type": "0",
+    "nozzle_volume_type": "0",
+    "printer_model_id": "",
+    "nozzle_diameters": "0.4",
+    "timelapse_type": "0",
+    "prediction": "3097",
+    "weight": "10.29",
+    "first_layer_time": "0.000000",
+    "outside": "false",
+    "support_used": "true",
+    "label_object_enabled": "false",
+    "enable_filament_dynamic_map": "false",
+    "has_filament_switcher": "false",
+    "filament_maps": "1",
+    "limit_filament_maps": "0"
+  },
+  "warnings": [
+    {
+      "msg": "bed_temperature_too_high_than_filament",
+      "level": "3",
+      "error_code": "1000C001"
+    }
+  ],
+  "project_sha256": "691f853228f5577e0e741df7b3c4494fedcd318b06a39f7b4427210fd2831dae",
+  "gcode_sha256": "415b5167583142e36d52ca9b274cf0b83510b7e34f7c3608e7b582141f6ff2a6",
+  "embedded_gcode": true
+}

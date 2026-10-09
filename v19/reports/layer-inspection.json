@@ -1,0 +1,196 @@
+{
+  "01-left-housing-hook-pivot-and-cap-compartment": {
+    "levels": 1202,
+    "selected_z_mm": [
+      0.2,
+      2.0,
+      5.8,
+      27.6,
+      29.2,
+      128.4,
+      132.4,
+      190.8,
+      208.0,
+      222.0,
+      240.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        6.878,
+        4.191
+      ],
+      [
+        120.922,
+        36.265
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Housing tunnel clear at selected body layers; support beneath cap-bay floor and outside roots; pivot bore and rear main passage clear in the detailed pin views.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
+  },
+  "02-right-housing-and-hook-pin": {
+    "levels": 1084,
+    "selected_z_mm": [
+      0.2,
+      2.0,
+      5.4,
+      111.8,
+      122.0,
+      126.8,
+      130.8,
+      202.4,
+      214.4,
+      216.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        4.655,
+        4.644
+      ],
+      [
+        121.922,
+        34.653
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Housing tunnel clear at selected body layers; external support retained under the headed catch and roots; rear main passage clear in detailed pin views.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
+  },
+  "03-board-leaves": {
+    "levels": 60,
+    "selected_z_mm": [
+      0.2,
+      3.2,
+      3.6,
+      4.0,
+      5.0,
+      5.4,
+      5.6,
+      7.4,
+      7.6,
+      8.2,
+      9.0,
+      12.0
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        4.672000000000001
+      ],
+      [
+        223.356,
+        226.128
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Broad underside support and dense interface retained; playing faces and recessed grid present; detailed board hinge views clear.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
+  },
+  "04-piece-drawers": {
+    "levels": 447,
+    "selected_z_mm": [
+      0.2,
+      6.2,
+      9.8,
+      10.0,
+      11.0,
+      16.0,
+      81.4,
+      85.2,
+      86.4,
+      89.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        4.489
+      ],
+      [
+        38.156,
+        206.756
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Drawer side orientation retains the catches and stop arms with external accessible support; pocket rows remain distinct.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
+  },
+  "05-hatch-hook-and-five-axle-caps": {
+    "levels": 443,
+    "selected_z_mm": [
+      0.2,
+      2.6,
+      4.4,
+      6.6,
+      9.4,
+      12.0,
+      18.6,
+      24.8,
+      42.2,
+      70.2,
+      88.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        3.044,
+        1.644
+      ],
+      [
+        170.356,
+        62.356
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observation": "Hook prints flat; five collars and vertical hatch hinge present; detailed pin views contain no model/support centerlines inside checked filament cores.",
+    "review_scope": "Selected displayed layers plus detailed pin-passage sheets; no physical support-removal or strength qualification."
+  }
+}

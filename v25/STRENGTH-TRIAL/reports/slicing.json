@@ -1,0 +1,143 @@
+{
+  "command": [
+    "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+    "--datadir",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/STRENGTH-TRIAL/.slicer-work/config",
+    "--load-settings",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/STRENGTH-TRIAL/profiles/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/STRENGTH-TRIAL/profiles/process-case.json",
+    "--load-filaments",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/STRENGTH-TRIAL/profiles/filament-pla.json",
+    "--ensure-on-bed",
+    "--arrange",
+    "0",
+    "--orient",
+    "0",
+    "--slice",
+    "0",
+    "--export-3mf",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/STRENGTH-TRIAL/PRINT/01-V25-strength-hinges-CC2-PLA.3mf",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/STRENGTH-TRIAL/plates/01-V25-strength-hinges.3mf"
+  ],
+  "exit_code": 0,
+  "slicer": "ElegooSlicer 2.4.2",
+  "input_sha256": "e36f94adabe3a0d9074f6b4f773ce19c9485d1c9f40d4be3288f13b8986438fc",
+  "profiles_sha256": {
+    "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "process-case.json": "aca101ebf11989516b1621732f067658f77bc8deff567b27892771089d805233",
+    "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+  },
+  "physical_acceptance": false,
+  "printer_started": false,
+  "passed": true,
+  "surface_tolerance_mm": 0.002,
+  "mesh_readback": [
+    {
+      "name": "S1-fixed",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 2.264619168277401e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 22016,
+      "sliced_triangles": 22016,
+      "volume_error_mm3": -0.00015914288337626203
+    },
+    {
+      "name": "S1-moving",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 3.902576073990143e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 11802,
+      "sliced_triangles": 11802,
+      "volume_error_mm3": -0.00041916110376405413
+    },
+    {
+      "name": "S2-fixed",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 7.66060048832764e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 22948,
+      "sliced_triangles": 22948,
+      "volume_error_mm3": -0.0005471987979035475
+    },
+    {
+      "name": "S2-moving",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 7.343847772530895e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 12744,
+      "sliced_triangles": 12744,
+      "volume_error_mm3": -0.0005196609035920119
+    },
+    {
+      "name": "S3-fixed",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 8.184723585627803e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 24028,
+      "sliced_triangles": 24028,
+      "volume_error_mm3": 0.0005396680548983568
+    },
+    {
+      "name": "S3-moving",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 8.158216727342892e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 13820,
+      "sliced_triangles": 13820,
+      "volume_error_mm3": 0.0005365225576952071
+    },
+    {
+      "name": "BOARD-left",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 1.799999990836909e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 76,
+      "sliced_triangles": 76,
+      "volume_error_mm3": 4.205876302876277e-05
+    },
+    {
+      "name": "BOARD-right",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 3.770344943720946e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 76,
+      "sliced_triangles": 76,
+      "volume_error_mm3": 3.615362834352709e-05
+    }
+  ],
+  "plate_metadata": {
+    "index": "1",
+    "extruder_type": "0",
+    "nozzle_volume_type": "0",
+    "printer_model_id": "",
+    "nozzle_diameters": "0.4",
+    "timelapse_type": "0",
+    "prediction": "5655",
+    "weight": "17.75",
+    "first_layer_time": "0.000000",
+    "outside": "false",
+    "support_used": "true",
+    "label_object_enabled": "false",
+    "enable_filament_dynamic_map": "false",
+    "has_filament_switcher": "false",
+    "filament_maps": "1",
+    "limit_filament_maps": "0"
+  },
+  "warnings": [
+    {
+      "msg": "bed_temperature_too_high_than_filament",
+      "level": "3",
+      "error_code": "1000C001"
+    }
+  ],
+  "project_sha256": "809363d70512908f41772a62068ef37f50145df6889c4f54221f60924d00f32f",
+  "gcode_sha256": "c1f222dad54d8d1143c1000628e26341bb44d447fabb2d918d9fc7310fbbf655",
+  "embedded_gcode": true
+}

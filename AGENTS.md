@@ -1,8 +1,20 @@
 # Tak collaboration instructions
 
+## Current V26 captive main hinge
+
+The user confirms the main hinge arrangement: a printed 4 mm axle permanently joins two 2.5 mm supports on one half, trapping the opposite half’s 3.2 mm moving barrel. The corrected V26 case plate and ZIP now use this arrangement at both end stations, with nominal 0.4 mm radial/face gaps and full-height 8 mm roots. Preserve tab-free boards, fixed guides and the captive side hook. The user also requests modest outer corner rounding: 4 mm case corners and 2 mm board corners, without cutting inlays or hinge supports. The superseded opposed-pivot kit is archived under v26/archive/previous-main-hinge. Read the latest docs/V26_CHECKPOINT.md entry before further CAD changes; digital capture is not physical strength.
+
+The user explicitly approves shared case-hook retention, removes the awkward flexible sliding-board tabs and asks to build the full plates without waiting for small physical trials. Read v26/START-HERE.md, v26/README.md and docs/V26_CHECKPOINT.md. Preserve PIP main hinges, fixed integral guides, no removable trays, full playing field, original inlays and flat-piece package. Rigid seating shoulders stop inward board travel; the opened case hook permits outward withdrawal. Keep the 4 mm captive hook axle and 0.4 mm gaps. Physical strength, handling, loaded retention and rounded-cover underside integration remain unchecked. Preserve all V25 packages, the prior V26 mechanism-review ZIP, user-extracted folders and V24. Do not dispatch printer jobs.
+
+## Preserved version: V24
+
+Read v24/START-HERE.md, v24/BUILD-PROVENANCE.md and docs/V24_CHECKPOINT.md first for the reinforced-hinge/removable-tray revision. The user reports a baseline V23 hinge-support break; the exact failure mechanism is unknown. V24 has a 102.5×200×35 mm envelope, full-height 8 mm supports, captive 4 mm pivots and two loaded lift-out trays. Physical V24 acceptance remains pending. Preserve the original v23 source/kit and its separate board-inlay work; V24 is a distinct package and focused draft review. The user explicitly named the completed V23 R2 revision V24; no geometry/profile/print change is implied. Read v24/reports/identity.json to bridge the preserved 238 checks and six slices, which retain historical labels. Preserve the v23-r2 kit too. Historical text below describes the retained baseline.
+
 ## Start here
 
-Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, the affected package README, and any more specific instructions in that package. The user selected v18 as the FINAL version. Read docs/V18_FINAL.md and docs/V18-FREEZE.json. The selected clasp is v18-recessed-clasp; the case-body baseline is v17-four-leaf, with all four main leaves sharing one hinge axis. Keep completion work within v18; reopening the version or direction requires an explicit user decision. It is a motion study, not a print release. Screw-clamped storage and pin/sleeve closure were rejected; v16-field-book remains the printed baseline. The premium pagoda is separate.
+Read README.md, docs/TAK_PROJECT_BRIEF.md, CODEX.md, v23/START-HERE.md, v23/BUILD-PROVENANCE.md and docs/V23_CHECKPOINT.md. The user named the accepted seamless exterior **V23**: centered fully recessed side hook/catch/pivot, offset recessed board grips and rounded integrated captive-hinge ends. This is an identity-only migration of geometry 4859c9c / artifact 19b8773. Keep 101×200×32.6 mm closed size, the full 180 mm field, original 42 20×20×8 mm flats and the supplied solid flat capstones. Both bases print together as one assembly; the only inserted filament pin is the 8.6 mm hook pivot. Use v23/release/tak-v23-print-kit.zip, with three projects under v23/PRINT. Physical acceptance remains unobserved.
+
+V22 source and guide are restored from 02f8a09 to the original corner-hook design (111.8×220.2×32.6 mm). Preserve its ZIP and all 94 manifest payloads unchanged. The previous seamless ZIP is recoverable under v22/release/archive/tak-v22-seamless-before-v23.zip. V23's accepted CAD/motion/slice receipts retain historical V22 labels; identity equivalence and current hashes are in v23/reports/identity.json and provenance.json. Preserve V18–V21, printed V16 parts, user-extracted directories and the separate premium pagoda.
 
 ## Design priorities
 

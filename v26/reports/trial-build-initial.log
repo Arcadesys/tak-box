@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/trial.py", line 36, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/trial.py", line 19, in main
+    for name,s in items:b.b.export(name,s)
+                        ^^^^^^^^^^^^^^^^^^
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/common.py", line 88, in export
+    check(name+' STEP and watertight STL',back.isValid() and abs(back.Volume()-s.Volume())<.01 and m.is_watertight and m.is_winding_consistent and m.body_count==1 and m.volume>0,dict(size_mm=m.extents.tolist(),volume_mm3=float(m.volume)))
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/trial.py", line 9, in check
+    checks.append(dict(name=name,pass_=bool(ok),detail=detail));assert ok,(name,detail)
+                                                                       ^^
+AssertionError: ('hook-trial-fixture STEP and watertight STL', {'size_mm': [15.0, 54.0, 11.600000381469727], 'volume_mm3': 3631.315160296021})

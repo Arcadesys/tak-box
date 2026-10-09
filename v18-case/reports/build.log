@@ -1,0 +1,52 @@
+housing-left valid single solid PASS 
+housing-left STEP/STL readback PASS {'triangles': 4774, 'cad_volume_mm3': 77014.92894621917}
+board-left valid single solid PASS 
+board-left STEP/STL readback PASS {'triangles': 1880, 'cad_volume_mm3': 57410.41601735478}
+drawer-left valid single solid PASS 
+drawer-left STEP/STL readback PASS {'triangles': 976, 'cad_volume_mm3': 21733.85359999997}
+housing-right valid single solid PASS 
+housing-right STEP/STL readback PASS {'triangles': 2960, 'cad_volume_mm3': 67037.12045374015}
+board-right valid single solid PASS 
+board-right STEP/STL readback PASS {'triangles': 1880, 'cad_volume_mm3': 57410.41601735478}
+drawer-right valid single solid PASS 
+drawer-right STEP/STL readback PASS {'triangles': 976, 'cad_volume_mm3': 21733.853599999984}
+capstone-hatch valid single solid PASS 
+capstone-hatch STEP/STL readback PASS {'triangles': 864, 'cad_volume_mm3': 5229.915703952056}
+side-hook valid single solid PASS 
+side-hook STEP/STL readback PASS {'triangles': 740, 'cad_volume_mm3': 601.9107752869057}
+axle-end-cap valid single solid PASS 
+axle-end-cap STEP/STL readback PASS {'triangles': 436, 'cad_volume_mm3': 184.65885052054085}
+nominal assembled parts disjoint PASS {'max_overlap_mm3': 0, 'at': None}
+full paired fold 0..180 degrees at 5 degree samples PASS {'max_overlap_mm3': 0, 'at': None}
+unlocked case opening at 1 degree samples for first 10 degrees PASS {'max_overlap_mm3': 0, 'at': None}
+locked side hook blocks case opening at 1 degree PASS 
+hook reverse rotation stop PASS 
+hook release 0..65 degrees at 1 degree samples PASS {'max_overlap_mm3': 0, 'at': None}
+hook mouth clearance and headed keeper PASS {'pin_diameter_mm': 4, 'head_diameter_mm': 7, 'hook_thickness_mm': 3.2, 'keeper_head_clearance_mm': 0.4, 'pivot_faces_contact_for_friction': True, 'retention': 'Rigid hook shoulder and reverse rotation stop; set pivot collar for light friction. Unloaded rotation resistance remains physical.'}
+left board snap holds lift PASS 
+left released board motion 0..90 at 5 degree samples PASS {'max_overlap_mm3': 0, 'at': None}
+left drawer catch holds pull PASS 
+left released drawer withdrawal 0..168 at 8 mm samples PASS {'max_overlap_mm3': 0, 'at': None}
+left drawer positive end stop PASS {'169': 0.8004197761194038, '170': 3.2754197761194055, '172': 12.45}
+left deliberate stop release removal PASS {'max_overlap_mm3': 0, 'at': None}
+right board snap holds lift PASS 
+right released board motion 0..90 at 5 degree samples PASS {'max_overlap_mm3': 0, 'at': None}
+right drawer catch holds pull PASS 
+right released drawer withdrawal 0..168 at 8 mm samples PASS {'max_overlap_mm3': 0, 'at': None}
+right drawer positive end stop PASS {'169': 0.8004197761194038, '170': 3.2754197761194055, '172': 12.45}
+right deliberate stop release removal PASS {'max_overlap_mm3': 0, 'at': None}
+capstone hatch catch holds lift PASS 
+released hatch 0..100 at 5 degree samples PASS {'max_overlap_mm3': 0, 'at': None}
+cat flat CAD valid PASS 
+cat capstone CAD valid PASS 
+witch flat CAD valid PASS 
+witch capstone CAD valid PASS 
+left actual original pieces clear assembled storage PASS {'max_overlap_mm3': 0, 'at': None}
+right actual original pieces clear assembled storage PASS {'max_overlap_mm3': 0, 'at': None}
+cap actual original pieces clear assembled storage PASS {'max_overlap_mm3': 0, 'at': None}
+loaded original pieces clear opposite modules during fold at 15 degrees PASS {'max_overlap_mm3': 0, 'at': None}
+loaded capstones clear hatch opening at 5 degrees PASS {'max_overlap_mm3': 0, 'at': None}
+last flat exposed at full drawer stroke PASS 
+roof gap above actual 8 mm flats PASS 
+field remains 5x5 / 180 mm / 36 mm pitch PASS {'field_mm': 180, 'pitch_mm': 36}
+Full integrated v18 digital checks pass
