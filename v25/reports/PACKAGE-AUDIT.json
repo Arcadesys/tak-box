@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "files": 97,
+  "root": "v25",
+  "zip_bytes": 5166492,
+  "zip_sha256": "7075ba1bbb3f7cbd5c867683f46d221b398a2e9b99c92eaa9ec10cae26318cd7",
+  "geometry_checks": 646,
+  "named_printed_parts": 14,
+  "physical_acceptance": false,
+  "printer_started": false
+}

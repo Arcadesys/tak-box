@@ -1,0 +1,89 @@
+{
+  "pass": true,
+  "accepted_revision": "400838890bf62157feb822681c533380c7937767",
+  "accepted_zip_sha256": "077830c82ea61dda62ebe23796b720b6e71a0959e7ece998eb7015794ad209b9",
+  "preserved_binary_data_files": 169,
+  "unchanged_algorithm_sources": 31,
+  "preserved_user_extraction_files": 339,
+  "projects": [
+    {
+      "path": "FULL-PRINT/01-FULL-paired-bases-CC2-PLA.3mf",
+      "accepted_build_output": "REFERENCE/PRINT/01-print-in-place-bases-CC2-PLA.3mf",
+      "sha256": "46eec3c21fc5882ed6ae4095689b0296fe0404cb03582638d7104e2adc6a41a8",
+      "byte_identical_to_accepted": true,
+      "filament_colours": [
+        "#1A1A1A"
+      ],
+      "gcode_sha256": "35133bcbe05fbdc96c2473e2863a9cdbb6de863ae0bb7894bb30a7f4488d4f2e"
+    },
+    {
+      "path": "FULL-PRINT/02-FULL-SIZE-FOUR-COLOUR-inlaid-boards-CC2-PLA.3mf",
+      "accepted_build_output": "REFERENCE/PRINT/02-sliding-board-tops-CC2-PLA.3mf",
+      "sha256": "8f57886f5cafc23856a9933c08611843eaca65d33ec34b117e2e516075f151ca",
+      "byte_identical_to_accepted": true,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF",
+        "#D6A54C",
+        "#B887DD"
+      ],
+      "gcode_sha256": "069ace769aaf3b23db468eb4baf8efdf9d39f7cf76a7db5c8f8b37b8e3f4b20c"
+    },
+    {
+      "path": "FULL-PRINT/03-FULL-removable-player-trays-CC2-PLA.3mf",
+      "accepted_build_output": "REFERENCE/PRINT/03-removable-player-trays-CC2-PLA.3mf",
+      "sha256": "7475557ffbf2041a0be9bf2c706077e07eaa220502f5bcd9527a14273804b127",
+      "byte_identical_to_accepted": true,
+      "filament_colours": [
+        "#1A1A1A"
+      ],
+      "gcode_sha256": "5ae6873409b21f11483800b36e2e4c10da3419b317b9625474cf6532b7898cd7"
+    },
+    {
+      "path": "FULL-PRINT/04-FULL-flat-capstones-hook-and-collar-CC2-PLA.3mf",
+      "accepted_build_output": "REFERENCE/PRINT/04-flat-capstones-hook-and-collar-CC2-PLA.3mf",
+      "sha256": "f059f24d87cbcd63c1f3d12ce01139459c8660b8e4f37b027f0bc2da6c3ae537",
+      "byte_identical_to_accepted": true,
+      "filament_colours": [
+        "#1A1A1A"
+      ],
+      "gcode_sha256": "8a20a8676618f3205c98aec26843e552690d3bf480d1ef8f5da7086d70d83052"
+    },
+    {
+      "path": "SMALL-TRIALS/01-SMALL-hinge-support-trial-CC2-PLA.3mf",
+      "accepted_build_output": "REFERENCE/FIT-CHECK/captive-hinge-fit-check-CC2-PLA.3mf",
+      "sha256": "f4b3a672c1abfa171ce62a4633f5fa07973e37d31405f2131d567b1f9d3e861f",
+      "byte_identical_to_accepted": true,
+      "filament_colours": [
+        "#1A1A1A"
+      ],
+      "gcode_sha256": "1d09e4c4b66aa4a7a7575a274699c9d6f5af9e71451257295e9a9561a41b9f2e"
+    },
+    {
+      "path": "SMALL-TRIALS/02-SMALL-removable-tray-access-trial-CC2-PLA.3mf",
+      "accepted_build_output": "REFERENCE/TRAY-FIT/removable-tray-access-trial-CC2-PLA.3mf",
+      "sha256": "e98710361387a18ce32fce2afa84a4401f8140b39b0b721e34876c51ccf11fa2",
+      "byte_identical_to_accepted": true,
+      "filament_colours": [
+        "#1A1A1A"
+      ],
+      "gcode_sha256": "0eca40171de1189280b26ced0402b186ee53878484039d676588643755565ce1"
+    },
+    {
+      "path": "SMALL-TRIALS/03-SMALL-FOUR-COLOUR-inlay-trial-CC2-PLA.3mf",
+      "accepted_build_output": "REFERENCE/INLAY-FIT/four-colour-inlay-trial-CC2-PLA.3mf",
+      "sha256": "a2de3b8500803430fc8540cabe2fc1aacf58548db2cf0024ae8dad32aea10ef4",
+      "byte_identical_to_accepted": true,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF",
+        "#D6A54C",
+        "#B887DD"
+      ],
+      "gcode_sha256": "8f02dcbca379f652a2cfd48727d5fd5d81a77075d5df5954d39159330ff0b892"
+    }
+  ],
+  "generator_paths_verified": true,
+  "geometry_resliced_or_rebuilt": false,
+  "physical_acceptance": false
+}

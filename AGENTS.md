@@ -1,6 +1,10 @@
 # Tak collaboration instructions
 
-## Current version: V24
+## Current experiment: V25
+
+The user explicitly selected PIP main hinges and plain fixed storage wells, superseding filament axles and removable trays. Read v25/PIP-FIXED-STORAGE/START-HERE.md and docs/V25_CHECKPOINT.md. Both halves print together as an assembly using opposed captive 4 mm pivots with V24 full-height 8 mm roots, and 3.4 mm integral floors. Preserve the full field, original flat-piece capacity, independent accent colours and side-hook backup. The remembered physically strong PIP version is unidentified; fixed floors may increase stiffness but strength remains unverified. B is a historical filament-fit assumption. Broad lip, catch and remembered V17 rounded-cover integration are still pending. Preserve all earlier V25 kits and V24. No printer jobs or physical acceptance claims.
+
+## Preserved version: V24
 
 Read v24/START-HERE.md, v24/BUILD-PROVENANCE.md and docs/V24_CHECKPOINT.md first for the reinforced-hinge/removable-tray revision. The user reports a baseline V23 hinge-support break; the exact failure mechanism is unknown. V24 has a 102.5×200×35 mm envelope, full-height 8 mm supports, captive 4 mm pivots and two loaded lift-out trays. Physical V24 acceptance remains pending. Preserve the original v23 source/kit and its separate board-inlay work; V24 is a distinct package and focused draft review. The user explicitly named the completed V23 R2 revision V24; no geometry/profile/print change is implied. Read v24/reports/identity.json to bridge the preserved 238 checks and six slices, which retain historical labels. Preserve the v23-r2 kit too. Historical text below describes the retained baseline.
 

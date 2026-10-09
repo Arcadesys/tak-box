@@ -57,3 +57,12 @@ v24/**/*.3mf binary linguist-generated=true
 v24/**/*.png binary linguist-generated=true
 v24/release/*.zip binary linguist-generated=true
 v24/reports/*.log -diff linguist-generated=true
+
+# V25 local filament-hinge study: review source and exported CAD previews.
+v25/**/*.step binary linguist-generated=true
+v25/**/*.stl binary linguist-generated=true
+v25/**/*.3mf binary linguist-generated=true
+v25/**/*.png binary linguist-generated=true
+v25/previews/*.svg -diff linguist-generated=true
+v25/*.zip binary linguist-generated=true
+v25/reports/*.log -diff linguist-generated=true
