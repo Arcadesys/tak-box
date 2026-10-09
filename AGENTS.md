@@ -1,8 +1,10 @@
 # Tak collaboration instructions
 
-## Current experiment: V25
+## Current V26 captive main hinge
 
-The user selects fixed individual square pockets and a captive three-knuckle main hinge: stationary outer / moving centre / stationary outer, with an integral 4 mm post joining both stationary knuckles. Read v25/PIP-SQUARE-POCKETS/START-HERE.md and docs/V25_CHECKPOINT.md. Both halves print together as one assembly. Preserve 3.4 mm integral floors, the full field, original flat-piece capacity, independent accent colours and side-hook backup. Physical release and strength remain unverified. Broad lip, catch and remembered V17 rounded-cover integration remain pending. Preserve earlier V25 kits and V24. No printer jobs or physical acceptance claims.
+The user confirms the main hinge arrangement: a printed 4 mm axle permanently joins two 2.5 mm supports on one half, trapping the opposite half’s 3.2 mm moving barrel. The corrected V26 case plate and ZIP now use this arrangement at both end stations, with nominal 0.4 mm radial/face gaps and full-height 8 mm roots. Preserve tab-free boards, fixed guides and the captive side hook. The user also requests modest outer corner rounding: 4 mm case corners and 2 mm board corners, without cutting inlays or hinge supports. The superseded opposed-pivot kit is archived under v26/archive/previous-main-hinge. Read the latest docs/V26_CHECKPOINT.md entry before further CAD changes; digital capture is not physical strength.
+
+The user explicitly approves shared case-hook retention, removes the awkward flexible sliding-board tabs and asks to build the full plates without waiting for small physical trials. Read v26/START-HERE.md, v26/README.md and docs/V26_CHECKPOINT.md. Preserve PIP main hinges, fixed integral guides, no removable trays, full playing field, original inlays and flat-piece package. Rigid seating shoulders stop inward board travel; the opened case hook permits outward withdrawal. Keep the 4 mm captive hook axle and 0.4 mm gaps. Physical strength, handling, loaded retention and rounded-cover underside integration remain unchecked. Preserve all V25 packages, the prior V26 mechanism-review ZIP, user-extracted folders and V24. Do not dispatch printer jobs.
 
 ## Preserved version: V24
 

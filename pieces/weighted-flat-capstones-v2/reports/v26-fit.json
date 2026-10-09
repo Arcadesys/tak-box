@@ -1,0 +1,646 @@
+{
+  "passed": true,
+  "units": "mm",
+  "case_package": "v26",
+  "case_geometry_changed": false,
+  "piece_package": "pieces/weighted-flat-capstones-v2",
+  "checks": [
+    {
+      "name": "cat capstone envelope",
+      "passed": true,
+      "dimensions_mm": [
+        24.647448986165,
+        17.892004476688,
+        8.0
+      ]
+    },
+    {
+      "name": "left housing piece 0",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 0 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 1",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 1 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 2",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 2 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 3",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 3 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 4",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 4 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 5",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 5 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 6",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 6 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 7",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 7 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 8",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 8 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 9",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 9 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 10",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 10 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 11",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 11 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 12",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 12 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 13",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 13 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 14",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 14 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 15",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 15 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 16",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 16 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 17",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 17 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 18",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 18 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 19",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 19 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 20",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 20 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left housing piece 21",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left piece 21 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "left cover slide 0mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left cover slide 2mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left cover slide 10mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left cover slide 53mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left cover slide 106mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "witch capstone envelope",
+      "passed": true,
+      "dimensions_mm": [
+        26.0,
+        19.971691620877003,
+        8.0
+      ]
+    },
+    {
+      "name": "right housing piece 0",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 0 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 1",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 1 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 2",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 2 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 3",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 3 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 4",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 4 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 5",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 5 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 6",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 6 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 7",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 7 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 8",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 8 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 9",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 9 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 10",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 10 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 11",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 11 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 12",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 12 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 13",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 13 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 14",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 14 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 15",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 15 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 16",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 16 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 17",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 17 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 18",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 18 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 19",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 19 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 20",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 20 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right housing piece 21",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right piece 21 roof clearance",
+      "passed": true,
+      "piece_top_mm": 11.4,
+      "nominal_board_bottom_mm": 11.8
+    },
+    {
+      "name": "right cover slide 0mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right cover slide 2mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right cover slide 10mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right cover slide 53mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right cover slide 106mm",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "loaded opposing pieces fold 0deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right pieces against left housing fold 0deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left pieces against right housing fold 0deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "loaded opposing pieces fold 45deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right pieces against left housing fold 45deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left pieces against right housing fold 45deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "loaded opposing pieces fold 90deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right pieces against left housing fold 90deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left pieces against right housing fold 90deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "loaded opposing pieces fold 135deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right pieces against left housing fold 135deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left pieces against right housing fold 135deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "loaded opposing pieces fold 180deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "right pieces against left housing fold 180deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "name": "left pieces against right housing fold 180deg",
+      "passed": true,
+      "intersection_mm3": 0.0
+    }
+  ],
+  "source_sha256": {
+    "v26/models/housing-design-left.step": "addd267ae9501ed5e96aa7aaf089c28fb64960acfe2b95247a5132530cd73d77",
+    "v26/models/board-reference-left.step": "c39d4a44aea2ce3df219f850276b7f4bc2d2feb6f39d2a0c1f15d9cca92f754e",
+    "v26/models/housing-design-right.step": "8cdb9fe2eea5bcf20ef0297f8dd811cd0a01b06efa474d09c10ea774f97ebf3e",
+    "v26/models/board-reference-right.step": "33376dd8790f300441477d447480e6b858b8c24ff0dc723150bdd96bed19f3a1"
+  },
+  "user_reported_v26_printed": true,
+  "exact_print_revision_unknown": true,
+  "physical_fit_verified": false,
+  "physical_acceptance": false
+}

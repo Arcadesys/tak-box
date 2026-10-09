@@ -1,0 +1,11 @@
+Starting integrated fold checks
+Fold 0
+Fold 30
+Fold 60
+Fold 90
+Fold 120
+Fold 150
+Fold 180
+Checking tab-free boards and captive hook
+Exporting final geometry
+PASS 943 V26 tab-free mechanism checks; 3 PIP case components; 44 reference pieces

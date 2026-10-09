@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "scope": "All archive bytes audited; only the two small mechanism trials rebuilt in an isolated extraction, not full CAD or slicer reproduction.",
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/reproduce.py"
+  ],
+  "zip_input_sha256": "9ae5f89f0bd689ce968d0a6d82d0e60f4740e1e19328acfa9aae694154054340",
+  "manifest_files": 125,
+  "mesh_equivalence": [
+    {
+      "name": "hook-trial-fixture",
+      "surface_error_mm": 0.0011045176691492013,
+      "volume_error_mm3": 0.0031280908651751815
+    },
+    {
+      "name": "hook-trial",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    },
+    {
+      "name": "clip-trial-seat",
+      "surface_error_mm": 0.0013156852834902432,
+      "volume_error_mm3": -0.00011233864279347472
+    },
+    {
+      "name": "clip-trial-board",
+      "surface_error_mm": 0.0,
+      "volume_error_mm3": 0.0
+    }
+  ],
+  "physical_acceptance": false
+}

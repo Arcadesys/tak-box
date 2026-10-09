@@ -1,0 +1,518 @@
+{
+  "passed": true,
+  "logical_pieces": 4,
+  "object_count": 8,
+  "used_filament_slots": [
+    3
+  ],
+  "components_separate": true,
+  "full_sets": false,
+  "project_sha256": "aa849c10d47123822b53307811265b7b7ccafede8de6d3af64f91368002c530c",
+  "source_provenance": {
+    "units": "mm",
+    "source_revision": "a5368a5c6be61f961a31f9ca64bc890f311b829e",
+    "logical_piece_count": 4,
+    "object_count": 8,
+    "used_filament_slots": [
+      3
+    ],
+    "components_are_separate": true,
+    "full_sets": false,
+    "sources": [
+      {
+        "name": "SLOT 3 Cat capstone lower",
+        "label": "cat-capstone-lower",
+        "source": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/models/cat-capstone-lower.stl",
+        "source_sha256": "223eaae2cff3add14237681ae08b8ee037f76d0fd9c54a28305a6ae3c085fac0",
+        "slot": 3,
+        "translation_mm": [
+          84.32362842559814,
+          99.30000019073486,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            72.0,
+            90.0,
+            0.0
+          ],
+          [
+            96.64725685119629,
+            107.89190483093262,
+            5.349999904632568
+          ]
+        ],
+        "volume_mm3": 805.1994571929318,
+        "triangles": 1940
+      },
+      {
+        "name": "SLOT 3 Cat capstone upper",
+        "label": "cat-capstone-upper",
+        "source": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/models/cat-capstone-upper.stl",
+        "source_sha256": "f481d5bb26d063e0e2e43f3f38adf643e4c784520af18baf3740cc3c0e07d174",
+        "slot": 3,
+        "translation_mm": [
+          84.32362842559814,
+          133.59190464019775,
+          7.346897101454314e-17
+        ],
+        "bounds_mm": [
+          [
+            72.0,
+            125.0,
+            0.0
+          ],
+          [
+            96.64725685119629,
+            142.89190483093262,
+            3.9749999046325684
+          ]
+        ],
+        "volume_mm3": 506.5755453945349,
+        "triangles": 3568
+      },
+      {
+        "name": "SLOT 3 Witch capstone lower",
+        "label": "witch-capstone-lower",
+        "source": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/models/witch-capstone-lower.stl",
+        "source_sha256": "9a28f5a09fa319211be0e7433107a24fb5f48f0b2ab429363a0a0e2affd7eee1",
+        "slot": 3,
+        "translation_mm": [
+          121.0,
+          100.0,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            108.0,
+            90.0,
+            0.0
+          ],
+          [
+            134.0,
+            109.97158718109131,
+            5.349999904632568
+          ]
+        ],
+        "volume_mm3": 1019.9178720723067,
+        "triangles": 1788
+      },
+      {
+        "name": "SLOT 3 Witch capstone upper",
+        "label": "witch-capstone-upper",
+        "source": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/models/witch-capstone-upper.stl",
+        "source_sha256": "81f2392e3f4159bf7578d9f7693ecbb3d11b0bffa71507198c142586586824be",
+        "slot": 3,
+        "translation_mm": [
+          121.0,
+          134.9715871810913,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            108.0,
+            125.0,
+            0.0
+          ],
+          [
+            134.0,
+            144.9715871810913,
+            3.9749999046325684
+          ]
+        ],
+        "volume_mm3": 672.1635545754026,
+        "triangles": 1452
+      },
+      {
+        "name": "SLOT 3 Cat regular body",
+        "label": "cat-regular-body",
+        "source": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/models/cat-regular-body.stl",
+        "source_sha256": "99d766a8e4ac5da2805967726542fd979904cc513206b990f39b31d249de0030",
+        "slot": 3,
+        "translation_mm": [
+          154.0,
+          100.0,
+          1.97206422537983e-15
+        ],
+        "bounds_mm": [
+          [
+            144.0,
+            90.0,
+            0.0
+          ],
+          [
+            164.0,
+            110.0,
+            8.000000000000002
+          ]
+        ],
+        "volume_mm3": 1676.3274917482177,
+        "triangles": 5308
+      },
+      {
+        "name": "SLOT 3 Cat regular floor",
+        "label": "cat-regular-floor",
+        "source": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/models/cat-regular-floor.stl",
+        "source_sha256": "06c9d185f3fb8272c8c44fbae40114836fd89f4de6052d16aaf727413a8f015c",
+        "slot": 3,
+        "translation_mm": [
+          153.25,
+          133.80000019073486,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            144.0,
+            125.0,
+            0.0
+          ],
+          [
+            162.5,
+            142.60000038146973,
+            1.600000023841858
+          ]
+        ],
+        "volume_mm3": 410.1614676137787,
+        "triangles": 1148
+      },
+      {
+        "name": "SLOT 3 Witch regular body",
+        "label": "witch-regular-body",
+        "source": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/models/witch-regular-body.stl",
+        "source_sha256": "48d70e3839fd85ca7bd919a62b6bf3797178e30963318902eb455bcf33d56a8a",
+        "slot": 3,
+        "translation_mm": [
+          181.0,
+          100.0,
+          1.97206422537983e-15
+        ],
+        "bounds_mm": [
+          [
+            171.0,
+            90.0,
+            0.0
+          ],
+          [
+            191.0,
+            110.0,
+            8.000000000000002
+          ]
+        ],
+        "volume_mm3": 1709.375934092279,
+        "triangles": 3164
+      },
+      {
+        "name": "SLOT 3 Witch regular floor",
+        "label": "witch-regular-floor",
+        "source": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/models/witch-regular-floor.stl",
+        "source_sha256": "06c9d185f3fb8272c8c44fbae40114836fd89f4de6052d16aaf727413a8f015c",
+        "slot": 3,
+        "translation_mm": [
+          180.25,
+          133.80000019073486,
+          0.0
+        ],
+        "bounds_mm": [
+          [
+            171.0,
+            125.0,
+            0.0
+          ],
+          [
+            189.5,
+            142.60000038146973,
+            1.600000023841858
+          ]
+        ],
+        "volume_mm3": 410.1614676137787,
+        "triangles": 1148
+      }
+    ],
+    "profiles_sha256": {
+      "black.json": "19965c7fc6caf54e4d07bc49b3ae9f04766b5bee3a6e9b7e33182c2c8dfedcd1",
+      "silk-orange-placeholder.json": "8388f1e68aa3b44189bd2f0beaedc35c4a4533d7a9d954ff2dc4821ed5050fd4",
+      "white.json": "575dba6347b36bf984a7022111957e5f84fb5c2174ef15fcca8c6f9ecce84588",
+      "silk-purple-placeholder.json": "e2ae6d2a672e17004a0dd0fccdb49717426932e218c9977fd216dea4403908e9",
+      "process.json": "238099ff2968bb706ac02182df0d65859e28aaa363b8e80148e3130c6f7f08dc",
+      "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+    },
+    "geometry_report_sha256": "c5c83e6843b7568a4163b97abba0518d2122341fb5d3f99ec2340375469c69d7",
+    "command": [
+      "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+      "--debug",
+      "3",
+      "--logfile",
+      "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/reports/slicer-debug.log",
+      "--datadir",
+      "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/.slicer-config",
+      "--load-settings",
+      "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/profiles/machine.json;/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/profiles/process.json",
+      "--load-filaments",
+      "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/profiles/black.json;/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/profiles/white.json;/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/profiles/silk-orange-placeholder.json",
+      "--ensure-on-bed",
+      "--arrange",
+      "0",
+      "--orient",
+      "0",
+      "--slice",
+      "0",
+      "--export-3mf",
+      "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/PRINT/Tak-FOUR-PIECE-SAMPLE-MIDPOINT-SLOT-3.3mf",
+      "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/PRINT/Tak-FOUR-PIECE-MIDPOINT-geometry.3mf"
+    ],
+    "saved_project": "/Users/arcades/.codex/worktrees/6eb1/tak-box/pieces/weighted-flat-capstones-v2/PRINT/Tak-FOUR-PIECE-SAMPLE-MIDPOINT-SLOT-3.3mf",
+    "physical_acceptance": false,
+    "printer_started": false,
+    "display_colours_provisional": true,
+    "material": "User confirmed Elegoo silk PLA",
+    "support_reason": "Upper capstone cups have face-down raised features requiring external support. Lower cups and regular body/floors print opening/tongue up. All parts use slot 3; no purge tower needed",
+    "slice_exit_code": 0
+  },
+  "geometry_report_sha256": "c5c83e6843b7568a4163b97abba0518d2122341fb5d3f99ec2340375469c69d7",
+  "mesh_readback": [
+    {
+      "name": "SLOT 3 Cat capstone lower",
+      "label": "cat-capstone-lower",
+      "slot": 3,
+      "surface_vertex_error_mm": 8.527821997426512e-06,
+      "volume_error_mm3": 0.00017248555229798512,
+      "watertight": true,
+      "bodies": 1,
+      "bounds_mm": [
+        [
+          72.0000038,
+          90.00000003,
+          0.0
+        ],
+        [
+          96.6472588,
+          107.89190676999999,
+          5.3499999
+        ]
+      ],
+      "faces": 1940
+    },
+    {
+      "name": "SLOT 3 Cat capstone upper",
+      "label": "cat-capstone-upper",
+      "slot": 3,
+      "surface_vertex_error_mm": 1.1069198378484684e-05,
+      "volume_error_mm3": -0.00021514670248734546,
+      "watertight": true,
+      "bodies": 1,
+      "bounds_mm": [
+        [
+          72.0000038,
+          124.99999963,
+          0.0
+        ],
+        [
+          96.6472588,
+          142.89190637000002,
+          3.9749999
+        ]
+      ],
+      "faces": 3568
+    },
+    {
+      "name": "SLOT 3 Witch capstone lower",
+      "label": "witch-capstone-lower",
+      "slot": 3,
+      "surface_vertex_error_mm": 8.345077671137263e-06,
+      "volume_error_mm3": 0.0004048919582828603,
+      "watertight": true,
+      "bodies": 1,
+      "bounds_mm": [
+        [
+          108.0,
+          90.00000003000001,
+          0.0
+        ],
+        [
+          134.0,
+          109.97158817,
+          5.3499999
+        ]
+      ],
+      "faces": 1788
+    },
+    {
+      "name": "SLOT 3 Witch capstone upper",
+      "label": "witch-capstone-upper",
+      "slot": 3,
+      "surface_vertex_error_mm": 1.0202722258967477e-05,
+      "volume_error_mm3": 8.880583891368588e-06,
+      "watertight": true,
+      "bodies": 1,
+      "bounds_mm": [
+        [
+          108.0,
+          124.99999993,
+          0.0
+        ],
+        [
+          134.0,
+          144.97158807,
+          3.9749999
+        ]
+      ],
+      "faces": 1452
+    },
+    {
+      "name": "SLOT 3 Cat regular body",
+      "label": "cat-regular-body",
+      "slot": 3,
+      "surface_vertex_error_mm": 8.42933272099941e-06,
+      "volume_error_mm3": -0.0006653396851561411,
+      "watertight": true,
+      "bodies": 1,
+      "bounds_mm": [
+        [
+          144.0,
+          90.0,
+          0.0
+        ],
+        [
+          164.0,
+          110.0,
+          8.0
+        ]
+      ],
+      "faces": 5308
+    },
+    {
+      "name": "SLOT 3 Cat regular floor",
+      "label": "cat-regular-floor",
+      "slot": 3,
+      "surface_vertex_error_mm": 9.79156694872126e-06,
+      "volume_error_mm3": 0.00015129217877074552,
+      "watertight": true,
+      "bodies": 1,
+      "bounds_mm": [
+        [
+          144.0,
+          124.99999995,
+          0.0
+        ],
+        [
+          162.5,
+          142.60000605,
+          1.600000024
+        ]
+      ],
+      "faces": 1148
+    },
+    {
+      "name": "SLOT 3 Witch regular body",
+      "label": "witch-regular-body",
+      "slot": 3,
+      "surface_vertex_error_mm": 8.32941078370786e-06,
+      "volume_error_mm3": -0.0004417989573539671,
+      "watertight": true,
+      "bodies": 1,
+      "bounds_mm": [
+        [
+          171.0,
+          90.0,
+          0.0
+        ],
+        [
+          191.0,
+          110.0,
+          8.0
+        ]
+      ],
+      "faces": 3164
+    },
+    {
+      "name": "SLOT 3 Witch regular floor",
+      "label": "witch-regular-floor",
+      "slot": 3,
+      "surface_vertex_error_mm": 9.79156694872126e-06,
+      "volume_error_mm3": 0.0001512921799076139,
+      "watertight": true,
+      "bodies": 1,
+      "bounds_mm": [
+        [
+          171.0,
+          124.99999995,
+          0.0
+        ],
+        [
+          189.5,
+          142.60000605,
+          1.600000024
+        ]
+      ],
+      "faces": 1148
+    }
+  ],
+  "gcode_tools_zero_based": [
+    2
+  ],
+  "plate_metadata": {
+    "index": "1",
+    "extruder_type": "0",
+    "nozzle_volume_type": "0",
+    "printer_model_id": "",
+    "nozzle_diameters": "0.4",
+    "timelapse_type": "0",
+    "prediction": "2426",
+    "weight": "9.57",
+    "first_layer_time": "0.000000",
+    "outside": "false",
+    "support_used": "true",
+    "label_object_enabled": "false",
+    "enable_filament_dynamic_map": "false",
+    "has_filament_switcher": "false",
+    "filament_maps": "1",
+    "limit_filament_maps": "0 0 0"
+  },
+  "slicer_warnings": [
+    {
+      "msg": "bed_temperature_too_high_than_filament",
+      "level": "3",
+      "error_code": "1000C001"
+    }
+  ],
+  "profile_summary": {
+    "printer_model": "Elegoo Centauri Carbon 2",
+    "printer_settings_id": "Elegoo Centauri Carbon 2 0.4 nozzle",
+    "print_settings_id": "Tak four-piece midpoint sample 0.20 Silk PLA S3",
+    "filament_settings_id": [
+      "Tak black PLA @CC2",
+      "Tak white PLA @CC2",
+      "Elegoo Silk PLA SLOT 3 @CC2"
+    ],
+    "filament_colour": [
+      "#111111",
+      "#FFFFFF",
+      "#D6A54C"
+    ],
+    "curr_bed_type": "Textured PEI Plate",
+    "layer_height": "0.2",
+    "sparse_infill_density": "100%",
+    "enable_support": "1",
+    "support_on_build_plate_only": "1",
+    "enable_prime_tower": "0",
+    "nozzle_temperature": [
+      "210",
+      "210",
+      "220"
+    ],
+    "textured_plate_temp": [
+      "60",
+      "60",
+      "55"
+    ],
+    "filament_max_volumetric_speed": [
+      "21",
+      "21",
+      "6"
+    ],
+    "outer_wall_speed": "40"
+  },
+  "physical_acceptance": false,
+  "printer_started": false,
+  "ui_visible_loaded": false
+}

@@ -1,0 +1,497 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13966
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 6,
+        "triangles": 5100
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 5,
+        "triangles": 3396
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13962
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 5,
+        "triangles": 3396
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 6,
+        "triangles": 5096
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13966
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13966
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-body bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-grid bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-stars bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 6,
+        "triangles": 5100
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-orange bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 5,
+        "triangles": 3396
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-purple bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13962
+      }
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 13962
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-body bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 1,
+        "triangles": 292
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-grid bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 7,
+        "triangles": 3500
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-stars bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 5,
+        "triangles": 3396
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-orange bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "mesh topology",
+      "pass_": true,
+      "detail": {
+        "bodies": 6,
+        "triangles": 5096
+      }
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-purple bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards group separation",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards ZIP CRC",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards grouped build readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-body mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-body filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-grid mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-grid filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-stars mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-stars filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-orange mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-orange filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-purple mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-left-purple filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-body mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-body filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-grid mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-grid filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-stars mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-stars filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-orange mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-orange filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-purple mesh readback",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "02-V26-FULL-SIZE-FOUR-COLOUR-tab-free-boards/board-right-purple filament slot",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-cat bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-witch bed bounds",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-cat CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-cat STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          24.647290229797363,
+          17.891841888427734,
+          8.0
+        ],
+        "volume_mm3": 2477.7142623910504
+      }
+    },
+    {
+      "name": "capstone-witch CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-witch STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          26.0,
+          19.268726348876953,
+          8.0
+        ],
+        "volume_mm3": 1508.4049910637684
+      }
+    },
+    {
+      "name": "3mf-readback-03-V26-flat-capstones",
+      "pass_": true,
+      "detail": {
+        "objects": [
+          "capstone-cat",
+          "capstone-witch"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  ],
+  "specifications": {
+    "board-left-body": {
+      "sha256": "73ac84072b22b7143032726e9a7fa4181a0d4f271fca55576bba3f5c6616124d",
+      "watertight": true,
+      "mesh_bodies": 1
+    },
+    "board-left-grid": {
+      "sha256": "b1fda7250497ce7c9162d34960e9eb0cfbb7c236d676aa86589eff003e30c0d1",
+      "watertight": true,
+      "mesh_bodies": 1
+    },
+    "board-left-stars": {
+      "sha256": "0a0864176e988b9f0df0a3ad450613b5d18056f2fdba33e54d7de0c5866356a0",
+      "watertight": true,
+      "mesh_bodies": 7
+    },
+    "board-left-orange": {
+      "sha256": "f85244051c559d68eb88a36c5ed40e93e7f66665054103279e1440176dd5476f",
+      "watertight": true,
+      "mesh_bodies": 6
+    },
+    "board-left-purple": {
+      "sha256": "ee33030de22589ab6e79830d2f450f6b1a4faa2dcc8b12a6a463decd2e07024b",
+      "watertight": true,
+      "mesh_bodies": 5
+    },
+    "board-right-body": {
+      "sha256": "965109875089be5ff34f2c79ba397237697910d12e33754a3a002a9ff1600580",
+      "watertight": true,
+      "mesh_bodies": 1
+    },
+    "board-right-grid": {
+      "sha256": "bd22ea4e4eacd36f24889d1be2d11c9d943bc2fbe24a4be25972d427a2df6111",
+      "watertight": true,
+      "mesh_bodies": 1
+    },
+    "board-right-stars": {
+      "sha256": "8e7b2053632b5773ca91cc13266a19a92f398011585dd1ba2582ecab93be571d",
+      "watertight": true,
+      "mesh_bodies": 7
+    },
+    "board-right-orange": {
+      "sha256": "4849362a139281f17a4ebb5d1f134b059e50a24ab0ba2d7ceb6fc027c7ea0ec8",
+      "watertight": true,
+      "mesh_bodies": 5
+    },
+    "board-right-purple": {
+      "sha256": "d07ea44d1cec596bec246de3e63661f2c78a4ffb152f310a4fd2a180dbfdeb39",
+      "watertight": true,
+      "mesh_bodies": 6
+    },
+    "capstone-cat": {
+      "size_mm": [
+        24.647290229797363,
+        17.891841888427734,
+        8.0
+      ],
+      "sha256": "bbebbe63da86fa04c59ce585296676954ed62a2ad701f9d111d9395ed4f5d1fb"
+    },
+    "capstone-witch": {
+      "size_mm": [
+        26.0,
+        19.268726348876953,
+        8.0
+      ],
+      "sha256": "f3aa038f78a7dc1be3c76d3e4d4915e0e73f8d2784d33c15e2e8adae585eafbd"
+    }
+  },
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/plates_full.py"
+  ],
+  "board_filament_slots": {
+    "body": 1,
+    "grid": 2,
+    "stars": 2,
+    "orange": 3,
+    "purple": 4
+  },
+  "board_origins_mm": [
+    [
+      7,
+      7
+    ],
+    [
+      121,
+      7
+    ]
+  ],
+  "sources_sha256": {
+    "plates_full.py": "12a66950edcf6f908e648ae65856f8868d13516734e8f21b4cc38a907ad7538c",
+    "board_plate.py": "ddf04bf309a13aee6276aec26ca83b72ff97d28f2b5bec7ae49fd280f77e2e38"
+  },
+  "physical_acceptance": false,
+  "printer_started": false
+}

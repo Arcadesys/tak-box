@@ -2,9 +2,19 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## V25 square pockets and captive three-knuckle hinges
+## V26 — captive main hinges and tab-free boards
 
-[The current prototype](v25/PIP-SQUARE-POCKETS/START-HERE.md) restores 21 square stone holders and a capstone holder per half, integrated into the 3.4 mm floor. Each hinge has two stationary outer knuckles joined by a 4 mm integral post, with the moving knuckle captured between them. Both halves print together as one assembly. The full field, pieces and outside size stay the same. Physical release, strength and transport remain unverified; cover-catch, broad lip and rounded-cover integration remain open. Earlier V25 kits and V24 are preserved.
+The corrected main hinges have a printed axle fixed between two supports on one half, trapping the other half’s central moving barrel. [Review the hinge section](v26/previews/17-main-hinge-section.png) and [print guide](v26/START-HERE.md).
+
+[Review V26](v26/START-HERE.md) or inspect [the corrected kit](v26/V26-PRINT-KIT.zip). Three full plates contain the PIP case bodies with fixed guides and a captive hook, the full-size four-colour board pair, and optional matching flat capstones. Open the hook, then pull the boards freely; rigid seating shoulders replace the flexible release tabs. Modest 4 mm case and 2 mm board corner rounds retain the full field and original pieces. The user chose full plates before physical trials; strength, comfort and loaded transport still need observation. Earlier V25 kits and the V26 clip-trial archive are preserved.
+
+## Preserved V25 PIP with fixed piece guides
+
+The latest [fixed-guide prototype](v25/PIP-FIXED-GUIDES/START-HERE.md) has permanent positions for 21 flat stones and a capstone in each case half, joined to 3.4 mm integral floors. No removable trays. The two halves print together with captive 4 mm PIP pivots and full-height 8 mm roots. Original piece capacity, playing field, accent colours and outside size are retained. Digital checks do not establish physical fit, dumping or strength; cover-catch, lip and rounded-cover complete integration remain open. The earlier empty-well PIP plate, filament kits and V24 stay preserved.
+
+## Preserved V25 square pockets and captive three-knuckle hinges
+
+[The preserved prototype](v25/PIP-SQUARE-POCKETS/START-HERE.md) restores 21 square stone holders and a capstone holder per half, integrated into the 3.4 mm floor. Each hinge has two stationary outer knuckles joined by a 4 mm integral post, with the moving knuckle captured between them. Both halves print together as one assembly. The full field, pieces and outside size stay the same. Physical release, strength and transport remain unverified; cover-catch, broad lip and rounded-cover integration remain open. Earlier V25 kits and V24 are preserved.
 
 ## Current print kit: V24
 

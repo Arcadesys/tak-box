@@ -1,6 +1,6 @@
 # V25 — filament hinges and rounded board relief
 
-**Current V25 direction:** [PIP hinges and fixed wells](PIP-FIXED-STORAGE/START-HERE.md). The filament kit below is preserved history.
+**Current V25 direction:** [PIP hinges and fixed piece guides](PIP-FIXED-GUIDES/START-HERE.md). The filament kit below is preserved history.
 
 **Use ordinary 1.75 mm PLA filament as the axle. No pin or collar is printed.**
 

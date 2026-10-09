@@ -1,0 +1,4 @@
+.slicer-config/
+reports/slicer-debug.log
+reports/sample.gcode
+reports/readback-meshes.npz

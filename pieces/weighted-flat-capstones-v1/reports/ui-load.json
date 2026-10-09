@@ -1,0 +1,24 @@
+{
+  "saved_project": "/Users/arcades/Documents/GitHub/tak-box/sample-plates/2026-10-08-flat-cat-witch/Tak-SAMPLE-WEIGHTED-Cat-Witch-slots-3-4.3mf",
+  "observed_project_title": "Tak-SAMPLE-WEIGHTED-Cat-Witch-slots-3-4",
+  "visible_objects": 8,
+  "visible_material_slots": [
+    3,
+    4
+  ],
+  "printer": "Elegoo Centauri Carbon 2",
+  "nozzle_mm": 0.4,
+  "visible_layer_height_mm": 0.2,
+  "ui_visible_loaded": true,
+  "ui_slice_request_timed_out": true,
+  "ui_slice_completion_verified": false,
+  "saved_cli_slice_verified": true,
+  "printer_started": false,
+  "observation_basis": "CUA accessibility title plus native screenshot immediately after opening the saved project; subsequent Slice plate request timed out after 120 seconds",
+  "recorded_at": "2026-10-08T18:39:03.622971+00:00",
+  "project_sha256_at_observed_load": "37f92d74c927ddc50656652e468355ca0e2e80f2080f8f601eecf24c2d111875",
+  "current_saved_project_sha256": "46a7923b5c22d631c3937b2168ad9461df752bed7138e76143373d2ec34c4609",
+  "same_geometry_and_profiles_after_package_rebuild": true,
+  "rebuild_reason": "Make saved profiles independent of the earlier local sample folder; geometry and print settings unchanged",
+  "later_screenshot_request": "Timed out after 10 seconds; computer-use kernel reset. No current native slice status could be retrieved."
+}
