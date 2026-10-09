@@ -1,0 +1,19 @@
+Starting integrated fold checks
+Fold 0
+Fold 30
+Fold 60
+Fold 90
+Fold 120
+Fold 150
+Fold 180
+Checking tab-free boards and captive hook
+Traceback (most recent call last):
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/build.py", line 194, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/build.py", line 154, in main
+    check(side+' inner stop blocks over-insertion',ov(c.slide(boards[side],side,-1),h[side])>.1)
+  File "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/build.py", line 13, in check
+    checks.append(dict(name=name,pass_=bool(ok),detail=detail));assert ok,(name,detail)
+                                                                       ^^
+AssertionError: ('left inner stop blocks over-insertion', None)

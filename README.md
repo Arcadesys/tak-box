@@ -2,30 +2,44 @@
 
 A 3D-printed travel case for a 5 × 5 game of Tak, with interchangeable themed piece sets for custom gifts. The original pieces are Team Cat / Team Witch. Printed in PLA on an Elegoo Centauri Carbon 2.
 
-## Final version direction: v18
+## V26 — captive main hinges and tab-free boards
 
-V18 is the selected FINAL version. The [version freeze and release checklist](docs/V18_FINAL.md)
-pin the recovered clasp package and the common-hinge case baseline. Case integration
-and physical acceptance remain required before a complete-case release.
+The corrected main hinges have a printed axle fixed between two supports on one half, trapping the other half’s central moving barrel. [Review the hinge section](v26/previews/17-main-hinge-section.png) and [print guide](v26/START-HERE.md).
 
-### Selected closure: [v18 recessed press-and-slide clasp](v18-recessed-clasp)
+[Review V26](v26/START-HERE.md) or inspect [the corrected kit](v26/V26-PRINT-KIT.zip). Three full plates contain the PIP case bodies with fixed guides and a captive hook, the full-size four-colour board pair, and optional matching flat capstones. Open the hook, then pull the boards freely; rigid seating shoulders replace the flexible release tabs. Modest 4 mm case and 2 mm board corner rounds retain the full field and original pieces. The user chose full plates before physical trials; strength, comfort and loaded transport still need observation. Earlier V25 kits and the V26 clip-trial archive are preserved.
 
-The recovered v18 package includes reproducible CAD source, STEP/STL parts,
-a three-part 3MF coupon plate, assembled release states, renders, review and
-slicing reports, and the original downloadable kit. [Recovery checks](v18-recessed-clasp/RECOVERY.md)
-confirmed all 67 manifest hashes and both separately saved artifacts.
+## Preserved V25 PIP with fixed piece guides
 
-This is an **unprinted, support-required clasp coupon**, not a complete case.
-Both closing and opening require pressing the recessed button while sliding
-the rigid bolt. Case integration, physical fit, support removal, strength and
-loaded transport retention remain unverified. The v17 body study remains below.
+The latest [fixed-guide prototype](v25/PIP-FIXED-GUIDES/START-HERE.md) has permanent positions for 21 flat stones and a capstone in each case half, joined to 3.4 mm integral floors. No removable trays. The two halves print together with captive 4 mm PIP pivots and full-height 8 mm roots. Original piece capacity, playing field, accent colours and outside size are retained. Digital checks do not establish physical fit, dumping or strength; cover-catch, lip and rounded-cover complete integration remain open. The earlier empty-well PIP plate, filament kits and V24 stay preserved.
 
-## Current v17 direction: [four leaves on one common hinge](v17-four-leaf)
+## Preserved V25 square pockets and captive three-knuckle hinges
+
+[The preserved prototype](v25/PIP-SQUARE-POCKETS/START-HERE.md) restores 21 square stone holders and a capstone holder per half, integrated into the 3.4 mm floor. Each hinge has two stationary outer knuckles joined by a 4 mm integral post, with the moving knuckle captured between them. Both halves print together as one assembly. The full field, pieces and outside size stay the same. Physical release, strength and transport remain unverified; cover-catch, broad lip and rounded-cover integration remain open. Earlier V25 kits and V24 are preserved.
+
+## Current print kit: V24
+
+[Download V24](v24/V24-PRINT-KIT.zip) and read [START-HERE](v24/START-HERE.md). Following the reported V23 hinge-support break, this revision uses broader full-height supports and two removable loaded player trays. The full 180 mm field remains; closed size is **102.5×200×35 mm**, adding 1.5 mm at the larger hinge barrels and 2.4 mm thickness for independent tray floors. Open **v24/FULL-PRINT** for the four sliced projects; **02-FULL-SIZE-FOUR-COLOUR-inlaid-boards-CC2-PLA.3mf** is the full board pair. Small tests are together in **v24/SMALL-TRIALS**. Four CC2 PLA plates include the **four-colour inlaid boards** (black, white and two silk accents), about **17 h 1 min / 327 g** with placeholder silk profiles; select actual silk profiles and reslice before printing. Separate hinge, tray-access and colour trials are included; physical durability and fit remain pending.
+
+Replace both bases, both boards and the hook; add both trays. Existing original flats, supplied flat capstones and hook collar retain their geometry. The accepted celestial artwork is now adapted to V24 corner geometry and included in its default board project and assembled previews. See [the V24 checkpoint](docs/V24_CHECKPOINT.md).
+
+V24 retains the previously delivered V23 R2 mechanics; this surface integration changes its board material geometry and slicing. The [V23 R2 kit](v23-r2/release/tak-v23-r2-print-kit.zip) remains preserved.
+
+## Preserved V23 baseline
+
+[Download the V23 print kit](v23/release/tak-v23-print-kit.zip), then open **v23/START-HERE.md**. Three CC2 PLA projects are together in **v23/PRINT**, with eight parts estimated at **11 h 38 min / 272 g**.
+
+V23 is the accepted seamless-exterior design: centered recessed hook/catch/pivot, recessed board finger wells and rounded integrated hinge ends. It is a version-identity correction of the already checked design; geometry, printer settings and print behavior are unchanged. Closed envelope: **101×200×32.6 mm**, with the full 180 mm field, original 42 flats and solid 8 mm Cat/Witch capstones beneath sliding boards. Main hinges print captive; only the hook uses a filament pivot.
+
+Replace both bases, both boards, hook and collar relative to original V22; flat capstones are unchanged. Prior CAD/motion/slice results are reused with equivalence evidence and a fresh package audit. Physical comfort, snag resistance, release, fit and loaded transport remain untested. The kit includes separate 26-minute hinge and 53-minute closure trials. See the [guide](v23/START-HERE.md) and [checkpoint](docs/V23_CHECKPOINT.md).
+
+[Original V22](v22/START-HERE.md) is restored to the 111.8×220.2×32.6 mm corner-hook design; its [ZIP](v22/release/tak-v22-print-kit.zip) is unchanged. The previously V22-labelled seamless delivery is [archived](v22/release/archive/README.md). [V21](v21/START-HERE.md), [V20](v20/START-HERE.md), [V19](v19/START-HERE.md) and [V18](v18-case/README.md) remain historical and intact.
+
+## Historical v17 architecture study: [four leaves on one common hinge](v17-four-leaf)
 
 Two drawer housings and two board leaves share one hinge axis. Covered
 sliding drawers keep flats enclosed while the leaves rotate. Board leaves
-will snap into their play positions; a [two-piece squeeze buckle](v17-squeeze-latch) is the
-current case-closure trial. The 180 mm field and 36 mm pitch remain.
+snap implementation was completed in v18; the [two-piece squeeze buckle](v17-squeeze-latch)
+is historical. The 180 mm field and 36 mm pitch remain.
 
 This is a CAD motion study, **not a full-print release**. Paired folding,
 independent board rotation, original-flat envelopes, solids and exported

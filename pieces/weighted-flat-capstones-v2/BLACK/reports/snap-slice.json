@@ -1,0 +1,430 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "team": "cat",
+      "hook": 0,
+      "check": "rear relief",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        75.57437003561932,
+        91.59966524378176
+      ],
+      "nearest_bead_edge_mm": 0.1748417343122252,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 0,
+      "check": "side relief",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        77.14977435768775,
+        90.96034824728613
+      ],
+      "nearest_bead_edge_mm": 0.19968920623152966,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 0,
+      "check": "guard flex space",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        76.42511164564051,
+        92.54933029682866
+      ],
+      "nearest_bead_edge_mm": 0.350134110518311,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 0,
+      "check": "rear relief",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        75.57437003561932,
+        91.59966524378176
+      ],
+      "nearest_bead_edge_mm": 0.1748265175276282,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 0,
+      "check": "side relief",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        77.14977435768775,
+        90.96034824728613
+      ],
+      "nearest_bead_edge_mm": 0.19982683618287359,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 0,
+      "check": "guard flex space",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        76.42511164564051,
+        92.54933029682866
+      ],
+      "nearest_bead_edge_mm": 0.350134110518311,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 0,
+      "check": "retaining plateau occupied",
+      "z_mm": 4.4,
+      "probe_command_xy_mm": [
+        75.42423916326265,
+        91.43207729324406
+      ],
+      "bead_edge_signed_distance_mm": -0.18996010890152337,
+      "nearest_role": "Overhang wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 0,
+      "check": "retaining plateau occupied",
+      "z_mm": 4.6,
+      "probe_command_xy_mm": [
+        75.42423916326265,
+        91.43207729324406
+      ],
+      "bead_edge_signed_distance_mm": -0.19996010890152333,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 1,
+      "check": "rear relief",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        93.07288681557696,
+        91.59966524378176
+      ],
+      "nearest_bead_edge_mm": 0.174896784447691,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 1,
+      "check": "side relief",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        93.88095556782234,
+        93.0955428763589
+      ],
+      "nearest_bead_edge_mm": 0.2004016779305525,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 1,
+      "check": "guard flex space",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        92.22214520555578,
+        92.54933029682866
+      ],
+      "nearest_bead_edge_mm": 0.3499133957876672,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 1,
+      "check": "rear relief",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        93.07288681557696,
+        91.59966524378176
+      ],
+      "nearest_bead_edge_mm": 0.17498158944806133,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 1,
+      "check": "side relief",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        93.88095556782234,
+        93.0955428763589
+      ],
+      "nearest_bead_edge_mm": 0.2004016779305525,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 1,
+      "check": "guard flex space",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        92.22214520555578,
+        92.54933029682866
+      ],
+      "nearest_bead_edge_mm": 0.3499133957876672,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 1,
+      "check": "retaining plateau occupied",
+      "z_mm": 4.4,
+      "probe_command_xy_mm": [
+        93.22301768793363,
+        91.43207729324406
+      ],
+      "bead_edge_signed_distance_mm": -0.1901224107331295,
+      "nearest_role": "Overhang wall",
+      "passed": true
+    },
+    {
+      "team": "cat",
+      "hook": 1,
+      "check": "retaining plateau occupied",
+      "z_mm": 4.6,
+      "probe_command_xy_mm": [
+        93.22301768793363,
+        91.43207729324406
+      ],
+      "bead_edge_signed_distance_mm": -0.20010261051859274,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 0,
+      "check": "rear relief",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        114.57566839685843,
+        102.31548374745373
+      ],
+      "nearest_bead_edge_mm": 0.17451491316698856,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 0,
+      "check": "side relief",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        114.20177296479534,
+        100.65692195907128
+      ],
+      "nearest_bead_edge_mm": 0.1998136570013542,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 0,
+      "check": "guard flex space",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        115.65133679371688,
+        101.63096749490744
+      ],
+      "nearest_bead_edge_mm": 0.34965954728165927,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 0,
+      "check": "rear relief",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        114.57566839685843,
+        102.31548374745373
+      ],
+      "nearest_bead_edge_mm": 0.17451491316698856,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 0,
+      "check": "side relief",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        114.20177296479534,
+        100.65692195907128
+      ],
+      "nearest_bead_edge_mm": 0.1998136570013542,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 0,
+      "check": "guard flex space",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        115.65133679371688,
+        101.63096749490744
+      ],
+      "nearest_bead_edge_mm": 0.34965954728165927,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 0,
+      "check": "retaining plateau occupied",
+      "z_mm": 4.4,
+      "probe_command_xy_mm": [
+        114.3858445621187,
+        102.43628073319718
+      ],
+      "bead_edge_signed_distance_mm": -0.19028446998702317,
+      "nearest_role": "Overhang wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 0,
+      "check": "retaining plateau occupied",
+      "z_mm": 4.6,
+      "probe_command_xy_mm": [
+        114.3858445621187,
+        102.43628073319718
+      ],
+      "bead_edge_signed_distance_mm": -0.20028446998702315,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 1,
+      "check": "rear relief",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        129.76306831231472,
+        101.19076707807868
+      ],
+      "nearest_bead_edge_mm": 0.17477176818629833,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 1,
+      "check": "side relief",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        128.817179374673,
+        102.60353709391532
+      ],
+      "nearest_bead_edge_mm": 0.19968105115350074,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 1,
+      "check": "guard flex space",
+      "z_mm": 2.0,
+      "probe_command_xy_mm": [
+        128.5261366246294,
+        100.88153415615736
+      ],
+      "nearest_bead_edge_mm": 0.349791784215864,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 1,
+      "check": "rear relief",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        129.76306831231472,
+        101.19076707807868
+      ],
+      "nearest_bead_edge_mm": 0.17477176818629833,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 1,
+      "check": "side relief",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        128.817179374673,
+        102.60353709391532
+      ],
+      "nearest_bead_edge_mm": 0.19968105115350074,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 1,
+      "check": "guard flex space",
+      "z_mm": 3.2,
+      "probe_command_xy_mm": [
+        128.5261366246294,
+        100.88153415615736
+      ],
+      "nearest_bead_edge_mm": 0.3501164491232004,
+      "nearest_role": "Outer wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 1,
+      "check": "retaining plateau occupied",
+      "z_mm": 4.4,
+      "probe_command_xy_mm": [
+        129.9813503748474,
+        101.24533759371185
+      ],
+      "bead_edge_signed_distance_mm": -0.18975555228046817,
+      "nearest_role": "Overhang wall",
+      "passed": true
+    },
+    {
+      "team": "witch",
+      "hook": 1,
+      "check": "retaining plateau occupied",
+      "z_mm": 4.6,
+      "probe_command_xy_mm": [
+        129.9813503748474,
+        101.24533759371185
+      ],
+      "bead_edge_signed_distance_mm": -0.19975555228046815,
+      "nearest_role": "Outer wall",
+      "passed": true
+    }
+  ],
+  "gcode_sha256": "1b4736819e05a57702265a8ab147b187e3dfe8f6fbeabec172b34f6af5a8ed1d",
+  "physical_nozzle_offset_xy_mm": [
+    0.0,
+    1.5
+  ],
+  "method": "Actual linear extrusion centre lines buffered by the WIDTH values emitted in G-code; sampled slot centres and barb plateau layers",
+  "physical_bead_shape_measured": false,
+  "physical_retention_verified": false,
+  "minimum_sampled_gap_probe_to_bead_edge_mm": 0.17451491316698856
+}

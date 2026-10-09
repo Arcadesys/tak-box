@@ -1,0 +1,14 @@
+{
+  "zip_sha256": "b1c5d147699f1e9eb97ef813c6c12d5f9e8fe3da04d77787d57152ca4a0a1c43",
+  "single_root": "v20",
+  "full_PRINT_projects": 5,
+  "crc_and_payload_hashes_pass": true,
+  "standalone_source_import_and_model_volume_pass": true,
+  "piece_dimensions_mm": [
+    20,
+    20,
+    8
+  ],
+  "local_guide_links_checked": 11,
+  "physical_acceptance": false
+}

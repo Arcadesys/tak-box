@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "scope": "Material-only black PLA variant; geometry unchanged",
+  "commands": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python pieces/weighted-flat-capstones-v2/source/plate.py --black",
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python pieces/weighted-flat-capstones-v2/source/verify_plate.py --black",
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python pieces/weighted-flat-capstones-v2/source/verify_snap_slice.py --black",
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python pieces/weighted-flat-capstones-v2/source/render_plate.py --black"
+  ],
+  "source_scripts_sha256": {
+    "build.py": "e3f1aa93bae0f5b7cbc620c53f980467043eec5664f0d2ed3c04ffce237c4c57",
+    "plate.py": "1b34edfb9a5613c4f22a47ee84809a744a1f6ada001fef33ceb42514190ab519",
+    "render_plate.py": "b1a7c42f8c919654503fccbf200ffa010044df3621f1d09d9e4b4899dd85a835",
+    "render.py": "e1939e6a88a9b60895acb09d845f2a69aba4a7efee99c05d825c4c73b08e1d82",
+    "verify_case.py": "6d62cc3a329f4570a0a23c3d4666cb82524aa23486af0cdacb5e5763cd0f3064",
+    "verify_plate.py": "e1cddfa7743eeedd7d464b05c9a64f0d9c02d07998d58ae874391457d65846b3",
+    "verify_snap_slice.py": "7dbeabf1b5d315b74b7d1609803776631772f38193f05f922999c173778b877c"
+  },
+  "geometry_reused_sha256": "c5c83e6843b7568a4163b97abba0518d2122341fb5d3f99ec2340375469c69d7",
+  "v26_fit_reused_sha256": "1f9abb1813c1f29b039cb619556917bdb441dd3004c64e7ca32322309b76eb23",
+  "environment_provenance": "../reports/verification.json; same retained Python 3.12/CadQuery 2.7 runtime and installed ElegooSlicer",
+  "slice_exit_code": 0,
+  "objects": 8,
+  "used_feed_slots": [
+    1
+  ],
+  "snap_path_checks": 32,
+  "physical_acceptance": false,
+  "ui_visible_loaded": false,
+  "printer_started": false,
+  "current_spool_verified": true,
+  "native_control_failures": [
+    "getApp bundle ID timed out (120s)",
+    "getApp display name timed out (10s, REPL reset)",
+    "Follow-up ElegooSlicer getApp timed out (120s)",
+    "Finder getApp timed out (10s, REPL reset); native failure extends beyond slicer"
+  ],
+  "blocker": "Native control unavailable; live loaded project and printer-ready state unverified",
+  "material": "User confirmed regular PLA, black, slot 1"
+}

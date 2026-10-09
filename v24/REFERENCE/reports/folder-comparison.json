@@ -1,0 +1,52 @@
+{
+  "primary_checkout": "/Users/arcades/Documents/GitHub/tak-box",
+  "primary_commit": "2589129",
+  "primary_branch": "codex/recover-tak-v18-recessed-clasp",
+  "primary_has_v24": false,
+  "primary_unrelated_change_preserved": "v16-field-book/plates/plate01-hinged-bases-black.3mf",
+  "authoritative_checkout": "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box",
+  "baseline_revision": "400838890bf62157feb822681c533380c7937767",
+  "board_files": [
+    {
+      "current_path": "v24/REFERENCE/PRINT/02-sliding-board-tops-CC2-PLA.3mf",
+      "sha256": "8f57886f5cafc23856a9933c08611843eaca65d33ec34b117e2e516075f151ca",
+      "embedded_gcode": true,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF",
+        "#D6A54C",
+        "#B887DD"
+      ],
+      "role": "accepted four-colour board pair"
+    },
+    {
+      "current_path": "v24/REFERENCE/HISTORY/v24/PRINT/02-sliding-board-tops-CC2-PLA.3mf",
+      "sha256": "f4cda11fa4748dad224b63af4223748127940f47487d6c643be23b587823fbcb",
+      "embedded_gcode": true,
+      "filament_colours": [
+        "#1A1A1A"
+      ],
+      "role": "legacy monochrome"
+    },
+    {
+      "current_path": "v24/REFERENCE/HISTORY/v24 2/PRINT/02-sliding-board-tops-CC2-PLA.3mf",
+      "sha256": "8f57886f5cafc23856a9933c08611843eaca65d33ec34b117e2e516075f151ca",
+      "embedded_gcode": true,
+      "filament_colours": [
+        "#111111",
+        "#FFFFFF",
+        "#D6A54C",
+        "#B887DD"
+      ],
+      "role": "accepted four-colour board pair"
+    },
+    {
+      "current_path": "v24/REFERENCE/plates/02-sliding-board-tops.3mf",
+      "sha256": "87f0a0a813cc4f531257fcbfc8a93564d833c4d2a474748485ac0469723be5d2",
+      "embedded_gcode": false,
+      "filament_colours": null,
+      "role": "geometry only"
+    }
+  ],
+  "scope": "Only authoritative V24 delivery reorganized; primary checkout not reset or merged. User extraction contents preserved under REFERENCE/HISTORY."
+}

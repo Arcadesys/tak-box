@@ -1,0 +1,188 @@
+{
+  "slicer": "ElegooSlicer-2.4.2:",
+  "printer": "Elegoo Centauri Carbon 2 0.4 nozzle",
+  "physical_acceptance": false,
+  "printer_started": false,
+  "profiles_sha256": {
+    "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "process-case.json": "b5a2c0b2e6356120bda6262785b4d41c33e299964ebc0979fe72358cbe9426b4",
+    "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+  },
+  "plates": {
+    "01-print-in-place-bases": {
+      "passed": true,
+      "exit_code": 0,
+      "input_sha256": "9b0e47a91db4c82a76d2c24644bac5f008ba1d3a812a4cea8bdf502caf42ce06",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v22/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v22/profiles/machine.json;<repo>/v22/profiles/process-case.json",
+        "--load-filaments",
+        "<repo>/v22/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v22/PRINT/01-print-in-place-bases-CC2-PLA.3mf",
+        "<repo>/v22/plates/01-print-in-place-bases.3mf"
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "objects": [
+        "housing-left",
+        "housing-right"
+      ],
+      "non_printing_support_blockers": [],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "21819",
+        "weight": "141.92",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "project_sha256": "4e1aa5d9cf41212bb65c9e7384699fbc85353d040f8816d36857685cb64329cb",
+      "project": "01-print-in-place-bases-CC2-PLA.3mf",
+      "gcode_sha256": "03cdc4081ac48904da917482a20bd86dbe1bff8f9dcce4467561a626caa9b189"
+    },
+    "02-sliding-board-tops": {
+      "passed": true,
+      "exit_code": 0,
+      "input_sha256": "2d05bbdd4b1e4b34487f129f3062047253ea2633e20782bc11e5846ddb18a258",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v22/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v22/profiles/machine.json;<repo>/v22/profiles/process-case.json",
+        "--load-filaments",
+        "<repo>/v22/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v22/PRINT/02-sliding-board-tops-CC2-PLA.3mf",
+        "<repo>/v22/plates/02-sliding-board-tops.3mf"
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "objects": [
+        "board-left",
+        "board-right"
+      ],
+      "non_printing_support_blockers": [],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "17560",
+        "weight": "120.61",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "project_sha256": "01581e89174a3c74103771eb25118243ece4a710cbc71c82d04a50e4643d866b",
+      "project": "02-sliding-board-tops-CC2-PLA.3mf",
+      "gcode_sha256": "916e23582e4c2b8615a6a95c50e5cf6f4f9d471a906d835af4a97f6c4c7b87e1"
+    },
+    "03-flat-capstones-hook-and-collar": {
+      "passed": true,
+      "exit_code": 0,
+      "input_sha256": "ba668b9a09e39c6bd84fba711fa38d6cc8da0d1422eeee27f2b09aae768a76b1",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v22/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v22/profiles/machine.json;<repo>/v22/profiles/process-case.json",
+        "--load-filaments",
+        "<repo>/v22/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v22/PRINT/03-flat-capstones-hook-and-collar-CC2-PLA.3mf",
+        "<repo>/v22/plates/03-flat-capstones-hook-and-collar.3mf"
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "objects": [
+        "capstone-cat",
+        "capstone-witch",
+        "side-hook",
+        "axle-end-cap"
+      ],
+      "non_printing_support_blockers": [],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "1250",
+        "weight": "5.14",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "project_sha256": "5ac1e6bec8d25e40dbf68b7ca236ab722ec1aa6e221776a31c9cfae32a9ddf75",
+      "project": "03-flat-capstones-hook-and-collar-CC2-PLA.3mf",
+      "gcode_sha256": "bbf43b8083ac1a586a477bfa998fc34a5ebc098cb51deac1adacb28b728d7410"
+    }
+  },
+  "total_estimated_seconds": 40629,
+  "total_estimated_grams": 267.66999999999996
+}

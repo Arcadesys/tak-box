@@ -1,0 +1,90 @@
+{
+  "source_sha256": {
+    "slice.py": "c8b073a4649df0bea685d0afc385a8a47cb801aa7d6a01ced698dc83e05beb5d",
+    "verify_pip_hinges.py": "0be514f9da092abf04945933b5d5e21f131c2538377a31324dce935d79f5e950",
+    "verify_pin_toolpaths.py": "7b7facb82a2ebc341ef74e609200ff343b42f1ec2837585b5659a87ec3a6d444",
+    "inspect_case_layers.py": "ee4662292bb31a7bdbcf986c9a6ed51ace0e00c6c27a7bf8c455d271f4c64aea",
+    "slice_case.py": "053440ec17904cd05aa4c40e3a7f9df1b859926fa0470e86aac8841a1e0a7b19"
+  },
+  "command": [
+    "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+    "--datadir",
+    "/Users/arcades/.codex/worktrees/tak-square-pockets/tak-box/v25/PIP-SQUARE-POCKETS/.slicer-work/config",
+    "--load-settings",
+    "/Users/arcades/.codex/worktrees/tak-square-pockets/tak-box/v25/PIP-SQUARE-POCKETS/profiles/machine.json;/Users/arcades/.codex/worktrees/tak-square-pockets/tak-box/v25/PIP-SQUARE-POCKETS/profiles/process-case.json",
+    "--load-filaments",
+    "/Users/arcades/.codex/worktrees/tak-square-pockets/tak-box/v25/PIP-SQUARE-POCKETS/profiles/filament-pla.json",
+    "--ensure-on-bed",
+    "--arrange",
+    "0",
+    "--orient",
+    "0",
+    "--slice",
+    "0",
+    "--export-3mf",
+    "/Users/arcades/.codex/worktrees/tak-square-pockets/tak-box/v25/PIP-SQUARE-POCKETS/PRINT/02-V25-PIP-hinge-trial-CC2-PLA.3mf",
+    "/Users/arcades/.codex/worktrees/tak-square-pockets/tak-box/v25/PIP-SQUARE-POCKETS/plates/02-V25-PIP-hinge-trial.3mf"
+  ],
+  "exit_code": 0,
+  "slicer": "ElegooSlicer 2.4.2",
+  "input_sha256": "0a8d7d75867708ac8a132036975cd06d444838c59a9671a4c9f1bb3ff0a2e63a",
+  "profiles_sha256": {
+    "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "process-case.json": "d7b38efba6d67d38f441843a8ef78f4c5705d5c2ae06059e2844f32ef0606387",
+    "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+  },
+  "physical_acceptance": false,
+  "printer_started": false,
+  "passed": true,
+  "surface_tolerance_mm": 0.002,
+  "mesh_readback": [
+    {
+      "name": "trial-hinge-left",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 1.0277159144903524e-05,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 37614,
+      "sliced_triangles": 37614,
+      "volume_error_mm3": 0.007702909639192512
+    },
+    {
+      "name": "trial-hinge-right",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 1.1478505997240399e-05,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 19786,
+      "sliced_triangles": 19786,
+      "volume_error_mm3": 0.007528569105488714
+    }
+  ],
+  "plate_metadata": {
+    "index": "1",
+    "extruder_type": "0",
+    "nozzle_volume_type": "0",
+    "printer_model_id": "",
+    "nozzle_diameters": "0.4",
+    "timelapse_type": "0",
+    "prediction": "11351",
+    "weight": "47.12",
+    "first_layer_time": "0.000000",
+    "outside": "false",
+    "support_used": "true",
+    "label_object_enabled": "false",
+    "enable_filament_dynamic_map": "false",
+    "has_filament_switcher": "false",
+    "filament_maps": "1",
+    "limit_filament_maps": "0"
+  },
+  "warnings": [
+    {
+      "msg": "bed_temperature_too_high_than_filament",
+      "level": "3",
+      "error_code": "1000C001"
+    }
+  ],
+  "project_sha256": "67afede11593c39846b15826b3f2f9131a39b3e55573ecceca3172fc6e12b4ca",
+  "gcode_sha256": "7833cea2657965fad8f83c4036f91c712b0c39880cc5d45ddade188603b7e063",
+  "embedded_gcode": true
+}

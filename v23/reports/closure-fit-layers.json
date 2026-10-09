@@ -1,0 +1,39 @@
+{
+  "recessed-closure-fit-check": {
+    "levels": 81,
+    "selected_z_mm": [
+      0.2,
+      1.2,
+      2.2,
+      3.4,
+      5.8,
+      7.8,
+      9.8,
+      10.6,
+      14.8,
+      16.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        7.21,
+        7.21
+      ],
+      [
+        155.78,
+        62.79
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Six parts begin on the bed. Cropped body walls and fixture pillars remain connected through the selected layers. The hook/collar and cropped board-edge strips remain distinct; local external support is visible."
+  }
+}

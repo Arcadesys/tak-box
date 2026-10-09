@@ -1,0 +1,117 @@
+{
+  "01-print-in-place-bases": {
+    "levels": 96,
+    "selected_z_mm": [
+      0.2,
+      2.2,
+      5.8,
+      10.4,
+      13.8,
+      14.4,
+      14.8,
+      15.4,
+      16.4,
+      17.8,
+      18.4,
+      19.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        10.41,
+        3.995
+      ],
+      [
+        223.974,
+        228.205
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Paired floors lie flat with an open centre seam; rear shallow capstone bays visible; external supports remain outside captive bearings."
+  },
+  "02-sliding-board-tops": {
+    "levels": 28,
+    "selected_z_mm": [
+      0.2,
+      0.6,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      4.2,
+      4.6,
+      4.8,
+      5.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        229.156,
+        204.856
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Both board backs start on the bed; catch gaps and upper grid lines remain visible through the selected layers."
+  },
+  "03-flat-capstones-hook-and-collar": {
+    "levels": 40,
+    "selected_z_mm": [
+      0.2,
+      0.6,
+      1.2,
+      2.0,
+      3.2,
+      4.0,
+      5.0,
+      6.0,
+      6.6,
+      7.0,
+      7.4,
+      8.0
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.646,
+        1.644
+      ],
+      [
+        137.356,
+        31.616
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Four separate parts start on the bed; capstone details grow from the continuous body top, with no floating marks."
+  }
+}

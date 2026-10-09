@@ -1,0 +1,194 @@
+{
+  "version": "v23",
+  "source_revision": "ab99d397d1dd4f19f4bc35a7f24de395630c2cf3",
+  "geometry_source_revision": "4859c9cdd515cd7f12324a99423b8795fa7984ac",
+  "validation_artifact_revision": "19b8773d8fbbcb37147f875d68b102b25a3cbc2a",
+  "verification_mode": "Identity-only equivalence; prior CAD, motion and slicing results reused, not rerun.",
+  "accepted_archive_sha256": "d48410b2b090c39770dcf3f2bf56b243482c84fbbc51b89927d7b21dd7d633a4",
+  "identity_evidence_sha256": "06df157ed13ef810405861b220cc1cab595afc59b0af937c1387fb752e3f3ed5",
+  "prior_validation_provenance": "reports/validation-origin.json",
+  "checks_reused": [
+    {
+      "report": "geometry.json",
+      "checks": 59,
+      "pass": true
+    },
+    {
+      "report": "field.json",
+      "checks": 37,
+      "pass": true
+    },
+    {
+      "report": "hardware.json",
+      "checks": 8,
+      "pass": true
+    },
+    {
+      "report": "plates.json",
+      "checks": 20,
+      "pass": true
+    },
+    {
+      "report": "pin-toolpaths.json",
+      "checks": 3,
+      "pass": true
+    },
+    {
+      "report": "pip-hinges.json",
+      "checks": 32,
+      "pass": true
+    },
+    {
+      "report": "flat-capstones.json",
+      "checks": 20,
+      "pass": true
+    },
+    {
+      "report": "exterior.json",
+      "checks": 29,
+      "pass": true
+    },
+    {
+      "report": "exterior-trial.json",
+      "checks": 254,
+      "pass": true
+    },
+    {
+      "report": "fit-check.json",
+      "checks": 8,
+      "pass": true
+    },
+    {
+      "report": "closure-fit.json",
+      "checks": 129,
+      "pass": true
+    }
+  ],
+  "current_source_and_dependency_sha256": {
+    "requirements.txt": "f443f117cb990423cb90812706044ed11bbeff983b85c40034395e0496c1e575",
+    "source/render_case.py": "93c5ec86acb9a1245481f756748f4df3109dcd76b989987c324efbfa4a544a06",
+    "source/verify_package.py": "dae9abb3c0992cf7b56415625be802d25ae284b08cd947ff85901a351e538da9",
+    "source/inspect_case_layers.py": "c275c4bd687437ea83caf5420764b825b5cc1577538267991ebbb0b568095acd",
+    "source/build_fitcheck.py": "d150357c422027ff4478f6975cb09bb798f2b9f606d6f1816d192edacf449064",
+    "source/verify_exterior.py": "e174b8fa2e922f32cd469329c37e001f7490d14d7895e6d436fec407b9eb0251",
+    "source/build_closure_fitcheck.py": "a82e4a15bf2b4af2fcc6d73e5fd818c0c110f7430873f3815df2fbcc4269c122",
+    "source/verify_flat_capstones.py": "7efc7e08c941cdc6e383a4f90221d4e644eb43dfca46e7b760b85e0312b98d72",
+    "source/verify_hardware.py": "3eb49c80dfe5fa25b9514c3776b418165e064ae6eaa83e077b2c7a88acceec9c",
+    "source/package_case.py": "89d3992299d475abdbbcae46bdf7bbed8d48363ac1bf7eba318e1cfb538d0947",
+    "source/build_case.py": "2b63d8483fcfac8a6e12478b79e525229be66e0153047c55215ed480c39fbb5c",
+    "source/verify_field.py": "c26a843517ba94f5b5551c1cf8422e66827c511b125329dd6d13614b8108052d",
+    "source/render_utils.py": "622418733e8302253506b06be1cbcb22f08277daf6627b6bc683350726896747",
+    "source/case.py": "073dbc614c0b71b1e9a2575054ecaba9ad20ef8a5052134636234685affd7c95",
+    "source/build_exterior_trial.py": "3553c5aa0099bfac281433ce1a19fa399653294e5546b312f37658dbf15d96ab",
+    "source/package_release.py": "e11568a4d7de4604fb85d07126eb0be388bb8f48ffd682470b8158e6b9701869",
+    "source/flat_capstones.py": "718de12f820bdf3db8a459a18c3937342643e8543e8174885e86cbadee2f3693",
+    "source/slice_case.py": "5b1fab4ef54d4071a0638514e11d2bbfb2c1c7cab4e98ca55f7c5a367aa6b3be",
+    "source/verify_pin_toolpaths.py": "c3e217ea90348e7d56374729ebc9730b1d3db0dd991dd6e398061acc6e4a5bd5",
+    "source/verify_pip_hinges.py": "425da562d9e0c99ca5dfc6585d75575734ec2ca2f70c06edb9547e6a06093ce9",
+    "source/record_provenance.py": "94c66856ece1bb909c3727625b7b7dcad96a3527bae38e45508253ad321e1fb3",
+    "source/vendor/body/export_utils.py": "9b6686e61b63ead3d7e4a9674e9262665047255b19e26b17ac711a274708953e",
+    "source/vendor/body/folio.py": "0c14929d41d62ca93a8b1dba0613ce2927488b73384c272b30253cfc366258d7",
+    "source/vendor/pieces/witch-flat.stl": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba",
+    "source/vendor/pieces/cat-flat.stl": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1",
+    "source/vendor/pieces/tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3"
+  },
+  "current_profiles_sha256": {
+    "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "process-case.json": "6d448649d404b589a3b4f32db7d6fd60df352efaf80ee8f2b27aa9fc38ddbdec",
+    "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+  },
+  "current_projects": [
+    {
+      "path": "CLOSURE-FIT/recessed-closure-fit-check-CC2-PLA.3mf",
+      "identity_only_entries": [
+        "Metadata/project_settings.config",
+        "Metadata/plate_1.gcode.md5",
+        "Metadata/plate_1.gcode"
+      ],
+      "sha256": "d7c519165ce080c4b2c73de3b73d9695bc72411c276ae33743d3d84bab7ef446",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "CLOSURE-FIT/recessed-closure-fit-check-geometry.3mf",
+      "identity_only_entries": [],
+      "sha256": "d4c34ec0166aed38b3a3c9be6795e65a2e831659282dd0ce975a7593d6e41c73",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "FIT-CHECK/captive-hinge-fit-check-CC2-PLA.3mf",
+      "identity_only_entries": [
+        "Metadata/project_settings.config",
+        "Metadata/plate_1.gcode.md5",
+        "Metadata/plate_1.gcode"
+      ],
+      "sha256": "e0434f663140a6e3540519c32c80446df3d9e7e9299c7321b67d7539da00dc4a",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "FIT-CHECK/captive-hinge-fit-check-geometry.3mf",
+      "identity_only_entries": [],
+      "sha256": "836061b0e5e39529ba34855501f23727f4778c8b1c783d2c0020997c333b026c",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "PRINT/01-print-in-place-bases-CC2-PLA.3mf",
+      "identity_only_entries": [
+        "Metadata/project_settings.config",
+        "Metadata/plate_1.gcode.md5",
+        "Metadata/plate_1.gcode"
+      ],
+      "sha256": "e33e1343c33f062dc4b0991c2f2fb530831db53948b2f2f2d731cfc3507c1a54",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "PRINT/02-sliding-board-tops-CC2-PLA.3mf",
+      "identity_only_entries": [
+        "Metadata/project_settings.config",
+        "Metadata/plate_1.gcode.md5",
+        "Metadata/plate_1.gcode"
+      ],
+      "sha256": "b8f0a496a4abac425ec50c9dd62e40a45c9e7ef44673050afd86ad8240da99ed",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "PRINT/03-flat-capstones-hook-and-collar-CC2-PLA.3mf",
+      "identity_only_entries": [
+        "Metadata/project_settings.config",
+        "Metadata/plate_1.gcode.md5",
+        "Metadata/plate_1.gcode"
+      ],
+      "sha256": "3dc2fab07eaffd3f39bf9d2545bcb834d1a94b09f1cb8a66652d71543c2b8fd8",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "plates/01-print-in-place-bases.3mf",
+      "identity_only_entries": [],
+      "sha256": "c1fe5ef33bb42472656f6061cf3d1552f439ffe7d828bb3f05b22e9ca956bdeb",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "plates/02-sliding-board-tops.3mf",
+      "identity_only_entries": [],
+      "sha256": "0acad8454161c320910f207116c19d7d93fa5d3ba58d47f7a9c4e79cdeb13f0c",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    },
+    {
+      "path": "plates/03-flat-capstones-hook-and-collar.3mf",
+      "identity_only_entries": [],
+      "sha256": "28a5f4e766ed723372193899cf1b3bdeebcbab99bc761815eaba6748ae174a53",
+      "named_meshes_and_world_transforms_byte_identical": true,
+      "executable_Gcode_byte_identical": true
+    }
+  ],
+  "physical_acceptance": false,
+  "printer_started": false
+}

@@ -1,0 +1,303 @@
+{
+  "slicer": "ElegooSlicer-2.4.2:",
+  "printer": "Elegoo Centauri Carbon 2 0.4 nozzle",
+  "physical_acceptance": false,
+  "printer_started": false,
+  "profiles_sha256": {
+    "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "process-case.json": "d9b18bf7a837bd5ac00a9ea442144cc01142252cb018e1abd5d028e9f45f0a5a",
+    "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+  },
+  "plates": {
+    "01-left-housing-hook-pivot-and-cap-compartment": {
+      "passed": true,
+      "exit_code": 0,
+      "input_sha256": "ea946158210491d6cbb4817d499daa4ae71b9023f0731376219ae489193c5d04",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v20/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v20/profiles/machine.json;<repo>/v20/profiles/process-case.json",
+        "--load-filaments",
+        "<repo>/v20/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v20/PRINT/01-left-housing-hook-pivot-and-cap-compartment-CC2-PLA.3mf",
+        "<repo>/v20/plates/01-left-housing-hook-pivot-and-cap-compartment.3mf"
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "objects": [
+        "housing-left"
+      ],
+      "non_printing_support_blockers": [],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "13888",
+        "weight": "82.91",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "project_sha256": "9693f0701877a4f125d67c448f9c1bc4914a5caf67c15efd003413f0c8d91d25",
+      "project": "01-left-housing-hook-pivot-and-cap-compartment-CC2-PLA.3mf",
+      "gcode_sha256": "55cae61b5684643b910fcfd3b7ec73b30ca124ed6f90d03952d3de8137825bbe"
+    },
+    "02-right-housing-and-hook-pin": {
+      "passed": true,
+      "exit_code": 0,
+      "input_sha256": "07cf51b31a0a7ea60a91ce6f48ba7ba599729761fabf715cc15d39f67492325d",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v20/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v20/profiles/machine.json;<repo>/v20/profiles/process-case.json",
+        "--load-filaments",
+        "<repo>/v20/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v20/PRINT/02-right-housing-and-hook-pin-CC2-PLA.3mf",
+        "<repo>/v20/plates/02-right-housing-and-hook-pin.3mf"
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "objects": [
+        "housing-right"
+      ],
+      "non_printing_support_blockers": [],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "10934",
+        "weight": "70.22",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "project_sha256": "8d7ea1646bcebd97489999470a5f4b1c204f27225bb6b37c53aa868efcfb73a3",
+      "project": "02-right-housing-and-hook-pin-CC2-PLA.3mf",
+      "gcode_sha256": "080fad7ef143785f82c5ea668b3912b1eec8089d8efececefd8ef2881bc42fe5"
+    },
+    "03-board-leaves": {
+      "passed": true,
+      "exit_code": 0,
+      "input_sha256": "f7d261ad2f24c6f2c5c95733492dc1e759be40f9d15abc1ae1bbbfb2ad50debf",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v20/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v20/profiles/machine.json;<repo>/v20/profiles/process-case.json",
+        "--load-filaments",
+        "<repo>/v20/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v20/PRINT/03-board-leaves-CC2-PLA.3mf",
+        "<repo>/v20/plates/03-board-leaves.3mf"
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "objects": [
+        "board-left",
+        "board-right"
+      ],
+      "non_printing_support_blockers": [],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "33018",
+        "weight": "188.91",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "project_sha256": "bea42fb1c37abc8dea26ffa5ee8e746921797a96fca4b58df004b7dc065711b3",
+      "project": "03-board-leaves-CC2-PLA.3mf",
+      "gcode_sha256": "743ecfa6accbc01536625e1eea14187bc32d486a04abf5d585e9e1b836752dac"
+    },
+    "04-sliding-storage-lids": {
+      "passed": true,
+      "exit_code": 0,
+      "input_sha256": "57f6f24d3ff0b04bda539f62aef5ae003d43655e89f1d83706159200a17c34b3",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v20/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v20/profiles/machine.json;<repo>/v20/profiles/process-case.json",
+        "--load-filaments",
+        "<repo>/v20/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v20/PRINT/04-sliding-storage-lids-CC2-PLA.3mf",
+        "<repo>/v20/plates/04-sliding-storage-lids.3mf"
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "objects": [
+        "lid-left",
+        "lid-right"
+      ],
+      "non_printing_support_blockers": [],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "6420",
+        "weight": "49.96",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "project_sha256": "648c95a9cc7a750ef0de92b464876875abc00555a86e41954f5abdac47ae2647",
+      "project": "04-sliding-storage-lids-CC2-PLA.3mf",
+      "gcode_sha256": "4b3b6f39bd2f8ea8250f23e79c94a867fe9cca90d9bf6649d9e0ed3c69a50937"
+    },
+    "05-hatch-hook-and-five-axle-caps": {
+      "passed": true,
+      "exit_code": 0,
+      "input_sha256": "b642ad4035eff93727e714926366b7f15d908f02590dbdd4359ccb4eaf05cc18",
+      "command": [
+        "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+        "--datadir",
+        "<repo>/v20/.slicer-work/config",
+        "--load-settings",
+        "<repo>/v20/profiles/machine.json;<repo>/v20/profiles/process-case.json",
+        "--load-filaments",
+        "<repo>/v20/profiles/filament-pla.json",
+        "--ensure-on-bed",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--slice",
+        "0",
+        "--export-3mf",
+        "<repo>/v20/PRINT/05-hatch-hook-and-five-axle-caps-CC2-PLA.3mf",
+        "<repo>/v20/plates/05-hatch-hook-and-five-axle-caps.3mf"
+      ],
+      "warnings": [
+        {
+          "msg": "bed_temperature_too_high_than_filament",
+          "level": "3",
+          "error_code": "1000C001"
+        }
+      ],
+      "objects": [
+        "capstone-hatch",
+        "side-hook",
+        "axle-end-cap-1",
+        "axle-end-cap-2",
+        "axle-end-cap-3",
+        "axle-end-cap-4",
+        "axle-end-cap-5"
+      ],
+      "non_printing_support_blockers": [],
+      "slice_metadata": {
+        "index": "1",
+        "extruder_type": "0",
+        "nozzle_volume_type": "0",
+        "printer_model_id": "",
+        "nozzle_diameters": "0.4",
+        "timelapse_type": "0",
+        "prediction": "2114",
+        "weight": "10.19",
+        "first_layer_time": "0.000000",
+        "outside": "false",
+        "support_used": "true",
+        "label_object_enabled": "false",
+        "enable_filament_dynamic_map": "false",
+        "has_filament_switcher": "false",
+        "filament_maps": "1",
+        "limit_filament_maps": "0"
+      },
+      "project_sha256": "148104f21ca982abd16a9f6141c9f3de2bb2b4169945b39e7deb824b693d6c67",
+      "project": "05-hatch-hook-and-five-axle-caps-CC2-PLA.3mf",
+      "gcode_sha256": "e27943c482a7e62e7dcd9e08e1aae03fe41022715117e2ac9314e58c8a6b4a61"
+    }
+  },
+  "total_estimated_seconds": 66374,
+  "total_estimated_grams": 402.19
+}

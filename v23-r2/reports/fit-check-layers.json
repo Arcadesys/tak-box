@@ -1,0 +1,38 @@
+{
+  "captive-hinge-fit-check": {
+    "levels": 110,
+    "selected_z_mm": [
+      0.2,
+      1.2,
+      13.0,
+      15.0,
+      15.4,
+      16.4,
+      17.6,
+      19.4,
+      20.0,
+      22.0
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        7.211,
+        5.1690000000000005
+      ],
+      [
+        50.791,
+        33.834
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "Reviewed actual deposition sheets: broad grounded floors, separate captive supports, slider/grid layers, tray pocket walls and grip columns. Joint gaps additionally checked by toolpath probes. Physical release/strength unverified.",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ]
+  }
+}

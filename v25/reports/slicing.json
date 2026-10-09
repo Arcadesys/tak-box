@@ -1,0 +1,203 @@
+{
+  "command": [
+    "/Applications/ElegooSlicer.app/Contents/MacOS/ElegooSlicer",
+    "--datadir",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/.slicer-work/config",
+    "--load-settings",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/profiles/machine.json;/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/profiles/process-case.json",
+    "--load-filaments",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/profiles/filament-pla.json",
+    "--ensure-on-bed",
+    "--arrange",
+    "0",
+    "--orient",
+    "0",
+    "--slice",
+    "0",
+    "--export-3mf",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/PRINT/01-V25-hinge-lip-coupons-CC2-PLA.3mf",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v25/plates/01-V25-hinge-lip-coupons.3mf"
+  ],
+  "exit_code": 0,
+  "slicer": "ElegooSlicer 2.4.2",
+  "input_sha256": "78960a9d2ac7ba38ee1f3c5dc8bad5965eb7dcb7ce1b95bce4cb8ebfe5f2370b",
+  "profiles_sha256": {
+    "filament-pla.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "process-case.json": "cc95c4b490c3d6979fe4bf26e435e8c0f49bfd3685b0eff0387c297491b63e2f",
+    "machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193"
+  },
+  "physical_acceptance": false,
+  "printer_started": false,
+  "passed": true,
+  "surface_tolerance_mm": 0.002,
+  "mesh_readback": [
+    {
+      "name": "H1-left",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 2.1668640876840344e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 9950,
+      "sliced_triangles": 9950,
+      "volume_error_mm3": 0.0001535082215013972
+    },
+    {
+      "name": "H1-right",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 3.9062258015555755e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 9896,
+      "sliced_triangles": 9896,
+      "volume_error_mm3": -0.00045076990886627755
+    },
+    {
+      "name": "H2-left",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 7.827291992599517e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 10884,
+      "sliced_triangles": 10884,
+      "volume_error_mm3": -0.0002365285820360441
+    },
+    {
+      "name": "H2-right",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 7.502452922016538e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 10828,
+      "sliced_triangles": 10828,
+      "volume_error_mm3": -0.00041988447583207744
+    },
+    {
+      "name": "H3-left",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 8.267073236870613e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 11982,
+      "sliced_triangles": 11982,
+      "volume_error_mm3": 0.0013529503178233426
+    },
+    {
+      "name": "H3-right",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 8.15195681002983e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 11922,
+      "sliced_triangles": 11922,
+      "volume_error_mm3": 0.0011458090912128682
+    },
+    {
+      "name": "BOARD-left",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 1.799999990836909e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 76,
+      "sliced_triangles": 76,
+      "volume_error_mm3": 4.205876302876277e-05
+    },
+    {
+      "name": "BOARD-right",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 3.770344943720946e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 76,
+      "sliced_triangles": 76,
+      "volume_error_mm3": 3.615362834352709e-05
+    },
+    {
+      "name": "L1-board",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 3.825334104823707e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 700,
+      "sliced_triangles": 700,
+      "volume_error_mm3": 0.00019898001164619927
+    },
+    {
+      "name": "L1-seat",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 7.738197462048809e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 448,
+      "sliced_triangles": 448,
+      "volume_error_mm3": 0.0003386417292858823
+    },
+    {
+      "name": "L2-board",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 5.2310706415811725e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 1548,
+      "sliced_triangles": 1548,
+      "volume_error_mm3": 0.0003219099976377038
+    },
+    {
+      "name": "L2-seat",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 8.282789384359297e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 448,
+      "sliced_triangles": 448,
+      "volume_error_mm3": 0.0001912858401738049
+    },
+    {
+      "name": "L3-board",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 8.473653299963375e-06,
+      "ensure_on_bed_shift_mm": -0.0,
+      "source_triangles": 2562,
+      "sliced_triangles": 2562,
+      "volume_error_mm3": 0.0006500080548903497
+    },
+    {
+      "name": "L3-seat",
+      "watertight": true,
+      "single_body": true,
+      "symmetric_vertex_to_surface_error_mm": 8.489575959997687e-06,
+      "ensure_on_bed_shift_mm": 0.0,
+      "source_triangles": 448,
+      "sliced_triangles": 448,
+      "volume_error_mm3": 0.000128152779325319
+    }
+  ],
+  "plate_metadata": {
+    "index": "1",
+    "extruder_type": "0",
+    "nozzle_volume_type": "0",
+    "printer_model_id": "",
+    "nozzle_diameters": "0.4",
+    "timelapse_type": "0",
+    "prediction": "10470",
+    "weight": "36.47",
+    "first_layer_time": "0.000000",
+    "outside": "false",
+    "support_used": "true",
+    "label_object_enabled": "false",
+    "enable_filament_dynamic_map": "false",
+    "has_filament_switcher": "false",
+    "filament_maps": "1",
+    "limit_filament_maps": "0"
+  },
+  "warnings": [
+    {
+      "msg": "bed_temperature_too_high_than_filament",
+      "level": "3",
+      "error_code": "1000C001"
+    }
+  ],
+  "project_sha256": "fd4013e2493dd7627bfb8e69687fbdf5d0ca81b66296de6d4b1ebbe81717f028",
+  "gcode_sha256": "2049810e8e4a5759069b96bbe47189a4e8bb481d3d27bcacaf8d23f68370e05c",
+  "embedded_gcode": true
+}

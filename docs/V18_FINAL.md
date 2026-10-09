@@ -1,66 +1,32 @@
-# V18 final version
+# V18 historical version
 
-The user selected **v18 as the FINAL version** on October 4, 2026 (Chicago).
-This freezes the design direction: the recessed press-and-slide clasp is the
-selected closure, with the four-leaf common-hinge case architecture retained.
-Finish and verify this version; reopening the version or design direction
-requires an explicit user decision. Measured fit corrections and case integration
-stay within v18 and receive review.
+The user advanced the current build to [v19](../v19/START-HERE.md) on October 5. This page records the retained v18 history.
 
-## Exact baseline
+The user selected **v18 as FINAL** on October 4. On October 5 they explicitly chose a **simple side hook and pin** in place of the recessed press-and-slide latch, and **1.75 mm PLA filament pins**. This is the authorized v18 direction. Preserve the four-leaf common axis, full field and exact original Cat/Witch piece clearance checks.
 
-- V18 clasp recovery commit: `36ffe69465d09e3d64d8873b35efcef5642be556`.
-- Clasp source: [`v18-recessed-clasp/build.py`](../v18-recessed-clasp/build.py).
-- Coupon: [`tak-v18-recessed-clasp.3mf`](../v18-recessed-clasp/plate/tak-v18-recessed-clasp.3mf).
-- Original kit: [`tak-v18-recessed-clasp-coupon-kit.zip`](../v18-recessed-clasp/release/tak-v18-recessed-clasp-coupon-kit.zip).
-- Case-body baseline: `v17-four-leaf` at merged commit
-  `bad9d0f1e4b0ed55a9e6f35ae5434a32523039d1`.
-- [`V18-FREEZE.json`](V18-FREEZE.json) pins every recovered clasp-package file
-  by byte count and SHA-256. Run `python3 scripts/verify_v18_freeze.py` from the
-  repository root to check that the frozen package remains intact.
+The complete first-print kit is in [v18-case](../v18-case/README.md): five CC2 PLA projects, 13 printed parts, four cut filament pins, assembly instructions, actual-geometry previews and digital checks. The user requested the full build; another coupon is not a prerequisite to receiving it. The hook swings toward the drawer end to release. Its collar provides adjustable friction; accidental opening, loaded retention and wear remain physical checks.
 
-The coupon geometry is preserved exactly. The old squeeze buckle and draw-latch
-trials remain historical material. The combined v17 plates still contain the
-old buckle; use the separate v18 coupon plate for the clasp experiment.
-A complete integrated v18 case and its final plates have yet to be produced.
+## Retained baseline
 
-## Fixed design choices
+- Original clasp recovery: `36ffe69465d09e3d64d8873b35efcef5642be556`, retained under `v18-recessed-clasp` with all frozen bytes unchanged. The reported printed clasp trial is historical and is not used in this case.
+- Body architecture: `v17-four-leaf` at `bad9d0f1e4b0ed55a9e6f35ae5434a32523039d1`; all four main leaves share one axis.
+- Prior integrated 3 mm rod kit: `08c663b`, retained in `v18-case/release/archive`.
+- [V18-FREEZE.json](V18-FREEZE.json) keeps original coupon hashes and separately pins the current integrated manifest. `closure_package` names the historical frozen package; `selected_case_closure` records the user's new choice.
 
-- All four main leaves share one hinge axis; covered drawers retain the flats.
-- Preserve the 180 mm 5×5 field, 36 mm pitch, finger access and original
-  Cat/Witch piece envelopes. Weighted and curled sets are not accepted for
-  this case until their exact geometry passes clearance checks.
-- V18 receiver, keeper and rigid sliding bolt form the closure. Unload,
-  press the recessed button, slide 10 mm, then lift. Both closing and opening
-  require pressing. Support is required for the supplied coupon orientation.
-- V16 printed interfaces stay unchanged; the premium pagoda remains separate.
+## Protected choices
 
-## Evidence and release status
+- Full 180 mm 5×5 field at 36 mm pitch; no shrinking for compactness.
+- Covered retained drawers, board clips, captured latched hatch and accessible retrieval.
+- Detailed original Cat/Witch package checks. Weighted/current-insert mismatch stays explicit; curled sets and weighted pieces are not accepted here.
+- V16 printed interfaces and the separate premium pagoda stay unchanged.
 
-Current package integrity checks verify original bytes, hashes, ZIP CRC and
-Python syntax. Retained reports record sampled CAD/path checks, manifold
-exports and an analysis-only support-enabled dry slice. Their scope is the
-standalone coupon; they are not new CAD runs or physical results.
+## Acceptance
 
-**Final direction selected; complete-case release pending.** Keep each gate
-unchecked until the specific result and revision are recorded here.
+Digital evidence covers solid/mesh/3MF readback, original-piece and sampled motion checks, filament hardware and supported local slicing. See [BUILD-PROVENANCE.md](../v18-case/BUILD-PROVENANCE.md), [checkpoint](V18_CHECKPOINT.md) and [physical acceptance sheet](../v18-case/ACCEPTANCE.md).
 
-## Release gates
+- [ ] Full-case physical assembly and comfortable opening.
+- [ ] Reliable hook friction, no accidental opening, repeated-cycle durability.
+- [ ] Pin retention, field alignment and loaded stiffness.
+- [ ] Spill-free opening/repacking and loaded carry/shake/inversion.
 
-- [ ] Coupon assembly and ten gentle cycles pass with removable supports,
-  comfortable finger operation and no cracks, whitening, sticking or bolt loss.
-- [ ] Press-only and drag-only actions remain held; record force, play and
-  guard access. Follow the [coupon experiment](../v18-recessed-clasp/README.md).
-- [ ] Integrate the selected clasp into the case; finish board snaps, drawer
-  catches/releases and rear capstone hatch while preserving retrieval access.
-- [ ] Check actual piece geometry, solids, exported meshes, 3MF readback,
-  assembled clearances and full opening/repacking motion for the integrated case.
-- [ ] Export the complete v18 parts and plates with exact printer/material
-  profiles; inspect critical layers, supports and removal access in the slicer.
-- [ ] Verify physical hinge motion, finger access, loaded retention, repeated
-  operation and transport behavior. Record component revisions and observations.
-- [ ] Pin the accepted integrated sources, exports, build environment and
-  printer profiles; produce the final assembly guide and complete-case kit.
-
-Until these gates pass, the available downloadable kit is the clasp coupon kit.
-The generic analysis profile is not a machine-ready printer profile.
+The earlier filament-hinge observation does not establish acceptance of the revised complete build. No printer job was started. The full kit is prepared for its first physical evaluation, not a physically qualified release.

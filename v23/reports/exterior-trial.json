@@ -1,0 +1,1279 @@
+{
+  "checks": [
+    {
+      "name": "housing-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-cat valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-witch valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "side-hook valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "axle-end-cap valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "hook inside closed side outline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "filament-hook-pivot inside closed side outline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retention-cap-hook inside closed side outline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "closure release 0",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 1",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 2",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 3",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 4",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 5",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 6",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 7",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 8",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 9",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 10",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 11",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 12",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 13",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 14",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 15",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 16",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 17",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 18",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 19",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 20",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 21",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 22",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 23",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 24",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 25",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 26",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 27",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 28",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 29",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 30",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 31",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 32",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 33",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 34",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 35",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 36",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 37",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 38",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 39",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 40",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 41",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 42",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 43",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 44",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 45",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 46",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 47",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 48",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 49",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 50",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 51",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 52",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 53",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 54",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 55",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 56",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 57",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 58",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 59",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 60",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 61",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 62",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 63",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 64",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 65",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 66",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 67",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 68",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 69",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 70",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 71",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 72",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 73",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 74",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 75",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 76",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 77",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 78",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 79",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 80",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 81",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 82",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 83",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 84",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 85",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 86",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 87",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 88",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 89",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "closure release 90",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "locked keeper resists first degree of opening",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "reverse stop",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook above recess floor and below board",
+      "pass": true,
+      "detail": [
+        1.4999999999999991,
+        9.900000000000006
+      ]
+    },
+    {
+      "name": "left slide 0",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 2",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 4",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 6",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 8",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 10",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 12",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 14",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 16",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 18",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 20",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 22",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 24",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 26",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 28",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 30",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 32",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 34",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 36",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 38",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 40",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 42",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 44",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 46",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 48",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 50",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 52",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 54",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 56",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 58",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 60",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 62",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 64",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 66",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 68",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 70",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 72",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 74",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 76",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 78",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 80",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 82",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 84",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 86",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 88",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 90",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 92",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 94",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 96",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 98",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 100",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 102",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 104",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "left slide 106",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 0",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 2",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 4",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 6",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 8",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 10",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 12",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 14",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 16",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 18",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 20",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 22",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 24",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 26",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 28",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 30",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 32",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 34",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 36",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 38",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 40",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 42",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 44",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 46",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 48",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 50",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 52",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 54",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 56",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 58",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 60",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 62",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 64",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 66",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 68",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 70",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 72",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 74",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 76",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 78",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 80",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 82",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 84",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 86",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 88",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 90",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 92",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 94",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 96",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 98",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 100",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 102",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 104",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "right slide 106",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "paired hinge fold 0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 35",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 45",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 50",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 55",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 65",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 70",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 75",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 80",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 85",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 90",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 95",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 100",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 105",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 110",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 115",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 120",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 125",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 130",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 135",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 140",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 145",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 150",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 155",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 160",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 165",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 170",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 175",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired hinge fold 180",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left cropped closure trial connected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left cropped closure trial connected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right cropped closure trial connected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right cropped closure trial connected",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "scope": "Actual source geometry; closed closure STEP roundtrip renders, full hook and slide samples, hinge fold; physical acceptance unobserved.",
+  "physical_acceptance": false
+}

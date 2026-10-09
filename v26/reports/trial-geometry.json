@@ -1,0 +1,546 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "trial hook rotation 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 64",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 66",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 68",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 70",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 72",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 74",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 76",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 78",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 80",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 82",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 84",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 86",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 88",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook rotation 90",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook axial capture -1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "trial hook axial capture 1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial-fixture CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial-fixture STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          15.0,
+          54.0,
+          11.600000381469727
+        ],
+        "volume_mm3": 3564.40632948505
+      }
+    },
+    {
+      "name": "hook-trial CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "hook-trial STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          3.200000762939453,
+          33.499685287475586,
+          11.599411010742188
+        ],
+        "volume_mm3": 503.2956187740674
+      }
+    },
+    {
+      "name": "3mf-readback-01-V26-captive-hook-trial",
+      "pass_": true,
+      "detail": {
+        "objects": [
+          "hook-trial-fixture",
+          "hook-trial"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    },
+    {
+      "name": "01-V26-captive-hook-trial joint support and brim overrides",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip trial retains full arm and root",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip trial seat one solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip trial floor production 3.4mm",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip seated clear",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip blocks one millimetre withdrawal",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 0",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 6",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 8",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 14",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 16",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 18",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 20",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 24",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 26",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 28",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 30",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 32",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 34",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 38",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 40",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 42",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 44",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 46",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 48",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 50",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 52",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 54",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 56",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 58",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 60",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "released trial slide 62",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip-trial-seat CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip-trial-seat STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          66.0,
+          17.0,
+          17.0
+        ],
+        "volume_mm3": 5983.949624226164
+      }
+    },
+    {
+      "name": "clip-trial-board CAD valid single solid",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "clip-trial-board STEP and watertight STL",
+      "pass_": true,
+      "detail": {
+        "size_mm": [
+          62.0,
+          15.799999237060547,
+          5.699999809265137
+        ],
+        "volume_mm3": 3040.9447875553883
+      }
+    },
+    {
+      "name": "3mf-readback-02-V26-board-clip-trial",
+      "pass_": true,
+      "detail": {
+        "objects": [
+          "clip-trial-seat",
+          "clip-trial-board"
+        ],
+        "units": "mm",
+        "sliced": false
+      }
+    }
+  ],
+  "command": [
+    "/Users/arcades/.codex/worktrees/tak-v18-print-final/tak-box/.slicer-work/cad-venv/bin/python",
+    "/Users/arcades/.codex/worktrees/v25-filament-hinge/tak-box/v26/source/trial.py"
+  ],
+  "hook_print_translation_mm": [
+    8,
+    -60,
+    0
+  ],
+  "clip_width_mm": 2.4,
+  "root_width_mm": 3.2,
+  "release_travel_mm": 2.8,
+  "floor_mm": 3.4,
+  "physical_acceptance": false,
+  "printer_started": false,
+  "limitations": [
+    "Trial fixture is thickened outside the hook envelope; whole-case stiffness and loaded transport are not tested.",
+    "Release poses are assumed geometry, not stress or force predictions."
+  ]
+}

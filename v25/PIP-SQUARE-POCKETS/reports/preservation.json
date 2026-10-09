@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "archives": [
+    {
+      "path": "v25/FIXED-STORAGE/V25-FIXED-STORAGE.zip",
+      "sha256": "2e20be6253a648bc97d1ff586b569e7a9526fc28d59383c1fe6030f8e40c1dd0",
+      "unchanged": true
+    },
+    {
+      "path": "v25/PIP-FIXED-STORAGE/V25-PIP-FIXED-STORAGE.zip",
+      "sha256": "6ab929a3ac146cfcc17d7eb8d5181fefd56c9f3c6590bc994f5ac5acf1bcc86d",
+      "unchanged": true
+    },
+    {
+      "path": "v25/REINFORCED-B-TRIAL/V25-REINFORCED-B-TRIAL.zip",
+      "sha256": "8ced9ddb737f98ca3d1ae8244da7c5f2a6d9f21eb6f82ad7a1cdc5bcf0065918",
+      "unchanged": true
+    },
+    {
+      "path": "v25/STRENGTH-TRIAL/V25-STRENGTH-TRIAL.zip",
+      "sha256": "86ece451aa864eb21081b00a71c4a63c0f50f366332ef8c02a6d3b3a40ef0207",
+      "unchanged": true
+    },
+    {
+      "path": "v25/V25-COUPON-KIT.zip",
+      "sha256": "7075ba1bbb3f7cbd5c867683f46d221b398a2e9b99c92eaa9ec10cae26318cd7",
+      "unchanged": true
+    }
+  ]
+}

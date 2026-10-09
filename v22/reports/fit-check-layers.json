@@ -1,0 +1,39 @@
+{
+  "captive-hinge-fit-check": {
+    "levels": 96,
+    "selected_z_mm": [
+      0.2,
+      1.2,
+      13.4,
+      14.4,
+      14.8,
+      15.4,
+      16.4,
+      17.8,
+      18.2,
+      19.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        7.21,
+        4.884
+      ],
+      [
+        26.79,
+        47.319
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Both connected trial leaves start on the bed; external supports stop below the bearings; opposed pivot/socket contours remain separate in the selected layers and enlarged gap plots."
+  }
+}

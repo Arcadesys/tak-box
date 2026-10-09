@@ -1,0 +1,15 @@
+# V18 side-hook full-build checkpoint — October 5, 2026
+
+Outcome: complete the user-selected v18 side-hook case with 1.75 mm PLA filament hinges and a full five-plate first-print kit. Bounded scope: closure replacement, pin interfaces, affected exports/plates, assembly guide and evidence. Preserve the four-leaf common axis, 180 mm field / 36 mm pitch, original Cat/Witch geometry, archives and unrelated v16 changes.
+
+Route: bounded workhorse / medium implementation with local mechanical judgment for the hook. The configured role mapping was read earlier; this desktop execution context was retained. No model switch or delegated enforcement is claimed. No agents were spawned. Usage/cost counters are unavailable.
+
+Current state: 13 printed parts across five CC2 PLA projects. A separate flat-printed swivel hook catches a headed pin integrated into the opposite housing; its bonded filament pivot collar sets friction. The main/hatch/hook bores are 2.0 mm, collars 1.9 mm. Cut pins: 24.9 / 24.9 / 92 / 9.6 mm. Pin bonds are confined to designated fixed mounts, preserving moving joints. The closed hardware envelope is 112.3 × 245.8 × 32.6 mm. Earlier recessed-clasp and 3 mm kit bytes remain preserved; the user-extracted older folder is untouched.
+
+Evidence: 51 geometry/mesh/original-piece/sampled-motion checks, 37 field probes, 31 hardware/bore checks and 18 actual filament-passage centerline checks pass. All five CC2 slices and named-mesh readbacks pass. Housing-only 0.8 mm support side clearance prevents the support stems previously found in rear bores; other parts use 0.35 mm. Five layer sheets, three detailed pin sheets and actual-STEP previews were reviewed. Current estimate: 32 h 18 min 32 s / 499.38 g. The manifest and ZIP are regenerated after final documentation; `package_release.py` verifies payload hashes and CRC, and `verify_v18_freeze.py` verifies the retained coupon plus integrated manifest.
+
+Blocker: none for delivering the full first-print kit. Physical acceptance remains pending: pin retention and stiffness, comfortable hook friction, accidental-opening resistance, wear, loaded spill-free opening/repacking and transport. The hook has no spring detent. The user reports the old clasp printed and an earlier PLA-filament hinge held in place; revision, loads and cycle counts are unknown. No new printer job was started.
+
+Next useful action: print the five current CC2-PLA projects, dry-fit the filament pins, assemble per the guide, then record empty and loaded observations in `v18-case/ACCEPTANCE.md`. No new coupon is required. A short pin pass-through during assembly is a fit check, not a separate print request.
+
+Checkout: `codex/v18-complete-build`, based on first full kit `08c663b` and recovery/freeze `2589129`. Existing draft PR #24 remains stacked on open recovery PR #23. Current source/dependency hashes and commands are in `v18-case/reports/provenance.json` and `BUILD-PROVENANCE.md`. Original v16 interfaces and the premium pagoda remain separate.

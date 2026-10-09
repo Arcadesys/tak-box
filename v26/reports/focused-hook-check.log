@@ -1,0 +1,20 @@
+angle 0 own 0 opposite 0
+angle 5 own 0 opposite 0
+angle 10 own 0 opposite 0
+angle 15 own 0 opposite 0
+angle 20 own 0 opposite 0
+angle 25 own 0 opposite 0
+angle 30 own 0 opposite 0
+angle 35 own 0 opposite 0
+angle 40 own 0 opposite 0
+angle 45 own 0 opposite 0
+angle 50 own 0 opposite 0
+angle 55 own 0 opposite 0
+angle 60 own 0 opposite 0
+angle 65 own 0 opposite 0
+angle 70 own 0 opposite 0
+angle 75 own 0 opposite 0
+angle 80 own 0 opposite 0
+angle 85 own 0 opposite 0
+angle 90 own 0 opposite 0
+boards [('left', 0, 0), ('right', 0, 0)]

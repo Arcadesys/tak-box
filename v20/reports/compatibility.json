@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "name": "board-left unchanged from V19 CAD",
+      "pass": true,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "name": "board-right unchanged from V19 CAD",
+      "pass": true,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "name": "side-hook unchanged from V19 CAD",
+      "pass": true,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "name": "axle-end-cap unchanged from V19 CAD",
+      "pass": true,
+      "symmetric_difference_mm3": 0
+    }
+  ],
+  "new_parts_required": [
+    "housing-left",
+    "housing-right",
+    "lid-left",
+    "lid-right",
+    "capstone-hatch"
+  ],
+  "old_drawers_used": false,
+  "filament_pin_lengths_unchanged": true,
+  "physical_interchangeability_observed": false
+}

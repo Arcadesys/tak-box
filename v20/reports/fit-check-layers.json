@@ -1,0 +1,38 @@
+{
+  "rail-and-catch-fit-check": {
+    "levels": 59,
+    "selected_z_mm": [
+      0.2,
+      1.2,
+      2.2,
+      3.2,
+      5.6,
+      6.2,
+      9.2,
+      10.6,
+      11.8
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        210.256,
+        82.356
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Broad first layers on both cropped parts; lid flex slot open. Local support only at the external board-clip recess on the base. Selected layers inspected; no trapped rail supports seen."
+  }
+}

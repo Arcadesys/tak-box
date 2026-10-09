@@ -1,0 +1,37 @@
+{
+  "archive": "v22/release/tak-v22-print-kit.zip",
+  "bytes": 11200662,
+  "sha256": "3cbc594a9cfe060000433c8eea31bd130a353828b61bc763e506c20b25e9a14b",
+  "payload_files": 94,
+  "single_root": "v22",
+  "print_projects": 3,
+  "fresh_extraction_payload_hashes_and_syntax": true,
+  "relative_markdown_links_checked": 12,
+  "standalone_CAD_rebuild": [
+    {
+      "part": "housing-left",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 2.6193447411060333e-10
+    },
+    {
+      "part": "board-left",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 7.275957614183426e-11
+    },
+    {
+      "part": "capstone-cat",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 1.9736035028472543e-10
+    },
+    {
+      "part": "capstone-witch",
+      "valid_single_solid": true,
+      "volume_difference_mm3": 1.7257661966141313e-10
+    }
+  ],
+  "source_revision": "7b75f6549bf89e7f6d5f77f10ff07ad68d0f7ae0",
+  "command": "Repository CAD Python /tmp/audit-tak-v22.py; fresh temporary extraction, standard-library package verification, local Markdown links, standalone imported CAD reconstruction versus packaged STEP",
+  "physical_acceptance": false,
+  "printer_started": false,
+  "reproduce_with": ".slicer-work/cad-venv/bin/python scripts/audit_v22_release.py"
+}

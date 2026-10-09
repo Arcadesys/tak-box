@@ -1,0 +1,17 @@
+{
+  "status": "complete_first_print_kit",
+  "closed_thickness_mm": 32.6,
+  "deeper_box_rejected": true,
+  "current_geometry": "Thin 32.6 mm body; fully recessed centered side hook; recessed offset board grips; rounded integrated hinge ends; captive main pivots; flat Cat/Witch capstones under sliding boards; no rear compartment",
+  "release_packaging_ready": true,
+  "physical_acceptance": false,
+  "revision": "v23",
+  "closed_envelope_mm": [
+    101,
+    200,
+    32.6
+  ],
+  "version": "v23",
+  "identity_change_only": true,
+  "geometry_unchanged_from": "V22 seamless artifact 19b8773 (now named V23)"
+}
