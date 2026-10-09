@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "gcode_sha256": "7a66a114c5041380360ed0afd612c96069ab8a2041bc2c39e4eef51814391ff0",
+  "physical_nozzle_offset_xy_mm": [
+    0.0,
+    1.5
+  ],
+  "method": "Actual linear extrusion centre lines buffered by the WIDTH values emitted in G-code; sampled slot centres and barb plateau layers",
+  "physical_bead_shape_measured": false,
+  "physical_retention_verified": false,
+  "minimum_sampled_gap_probe_to_bead_edge_mm": 0.17451491316698856
+}

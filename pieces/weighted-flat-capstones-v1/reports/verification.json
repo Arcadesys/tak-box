@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "commands": {
+    "geometry": "source/build.py",
+    "case_fit": "source/verify_case.py",
+    "slice": "source/plate.py",
+    "saved_plate_readback": "source/verify_plate.py",
+    "preview": "source/render.py"
+  },
+  "dependency_environment": "reports/dependencies.json",
+  "base_revision": "7444f978933505b6808003d226c90ff9d503ebc9",
+  "source_hashes": {
+    "source/build.py": "6e53e1a05ce40e10205003f04a7f46923b96b909c28994f4a14567ad9c8e54a4",
+    "source/plate.py": "5ccbeb8acc7c483092e60e14d66c9ff45389b5df70371479f8ee60ee98ee21cc",
+    "source/probe_offsets.py": "c2eca1cbedb4ec22566dc3b61690e97129f9f9a2b8387288c9c8a27691b3343a",
+    "source/render.py": "012167f48783e4a05a9922d18b36f119d248add3be75709e039a793f98451623",
+    "source/vendor/geometry.py": "bf433e6477eff544e89e9a71c61226ddca3df403cd96c98d2ea76b153bc52262",
+    "source/vendor/spec.py": "f7e33e2a122bacf87aab5190e8beddee9a1a74222b8996fcab0f5ff04970107d",
+    "source/vendor/verify.py": "2f6fde6d27f18e7d72d74446432af9adf68435bcdb9562aba8bcf8edbadcf939",
+    "source/verify_case.py": "794d4fc7922f7e807a7390adb66aa97e168d436e3a910575155e0c4314a3f154",
+    "source/verify_plate.py": "560a6aba986eecdaab04c39090d874d2b155beba70c2493564c39be83d4f6347"
+  },
+  "evidence_hashes": {
+    "reports/geometry.json": "ae7287ffba1459855fc63bd1c17d739ed6820a90b0f36d5fd0f5b1d062fd3cbf",
+    "reports/v26-fit.json": "b7c42c9d2ce097d8d56c2b36e80d686050ed36df2eb67a5989d5c21ac6d9aea7",
+    "reports/slicing.json": "6a16615738d945fc427f443a4a1b3cd9dd39753d75bc22ab43ed43833626687f",
+    "reports/ui-load.json": "b7de5a1eedd20b3945ceff774d8dfd272e076307e3b33c014c4c6ec4c839c89f",
+    "previews/weighted-cat-witch.png": "8e1fd30799947dc5fef960c1ae9ebafcfd1fee8a4cf31825f0173c22fb5a9083",
+    "PRINT/Tak-SAMPLE-WEIGHTED-Cat-Witch-slots-3-4.3mf": "46a7923b5c22d631c3937b2168ad9461df752bed7138e76143373d2ec34c4609"
+  },
+  "failure_history": [
+    "Earlier assertion incorrectly required capture after the hook had already passed the lip; corrected to test the retaining portion of withdrawal.",
+    "Complex closed-void cleanup stalled; replaced by outer-minus-body-minus-floor volume after zero-overlap and containment checks.",
+    "Acute hat tip with a 0.6 mm corner fillet was invalid; reduced to 0.4 mm and normalized offset cutter orientation.",
+    "Native Slice plate request timed out; CLI slicing and saved G-code readback passed."
+  ],
+  "physical_acceptance": false,
+  "printer_started": false
+}
