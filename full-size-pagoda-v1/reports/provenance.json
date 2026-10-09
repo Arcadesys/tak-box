@@ -16,15 +16,16 @@
     "python full-size-pagoda-v1/source/slice_check.py"
   ],
   "source_and_profile_sha256": {
-    "full-size-pagoda-v1/source/build.py": "ab2e88d09ca023ae5457c41049d9446d7ba1f34df2177af79ae54aa3eaf199e6",
-    "full-size-pagoda-v1/source/design.py": "3e5395a34760ddadb40552e72afb1893c22b1fe01aa1b2f86004b0ff2b55fbd8",
-    "full-size-pagoda-v1/source/render.py": "1d67323d2a603fa789393f14e57ed382abb89e55314075fc908fa3437ab024fd",
+    "full-size-pagoda-v1/source/build.py": "b4c9c0719e10e187645e25996d0a407b1441c1f67d56208a99684b428c6eed30",
+    "full-size-pagoda-v1/source/design.py": "ce3a2f91237e73944c7a6a4e69608e5325cdcc763b1ac5a9bbbf288dc7856bde",
+    "full-size-pagoda-v1/source/render.py": "0153411a24aed0ec1b6867651b6f7cb2ad0e4526dce9d0fb10b0d384c380d1f1",
     "full-size-pagoda-v1/source/requirements.txt": "371d42747959fe93753e7fc8311527f94fe2083deab7357b6f4ca123ae23923e",
     "full-size-pagoda-v1/source/slice_check.py": "4ea20b0b54fa5a01f4f8eb9708f9ac6bdf8418ad61dbf5c545823904d2cbaf22",
     "pieces/profiles/machine.json": "cb95a056fcc018dba261d50e0cd2fb0358b1cb482f77acead1ca20f3b082a193",
     "pieces/profiles/process-pieces.json": "d4f34c4ecf43e6794e0eafcef3a5420d2a71a95072e5b2c4292044068e6a7cc0",
     "pieces/profiles/filament-orange.json": "669b905aed9bdd63c3b8bff74e3c96cf2e191f60e87c148020ad3dcfcb7a8e4b",
-    "v16-field-book/profiles/filament-pla-black.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7"
+    "v16-field-book/profiles/filament-pla-black.json": "c38b95d929b18d73e36cc6b3307ec93fa9dd4e02e86c87cdb811fc7eb086acf7",
+    "full-size-pagoda-v1/references/cassette-before-comfort.step": "3703276b017f894082cd4b3dd75ff6d0d9d7c9bc3f748cb196a08ca56cb9ee7d"
   },
   "generation_credits_consumed": 0,
   "printed": false,
@@ -49,5 +50,21 @@
     "python full-size-pagoda-v1/source/render.py",
     "python full-size-pagoda-v1/source/slice_check.py --only tray"
   ],
-  "raised_access_render_review": "Actual-mesh cassette view and Cat/Fox front-access close-up inspected. High-contrast labels show flat/rim spacing and broad front openings; real grasp comfort remains untested."
+  "raised_access_render_review": "Actual-mesh cassette view and Cat/Fox front-access close-up inspected. High-contrast labels show flat/rim spacing and broad front openings; real grasp comfort remains untested.",
+  "cassette_comfort": {
+    "baseline_revision": "88bc668a1752b2dbc1a2edfc967dcbb525b6f4d0",
+    "commands": [
+      "python full-size-pagoda-v1/source/build.py",
+      "python full-size-pagoda-v1/source/render.py",
+      "python full-size-pagoda-v1/source/slice_check.py --only tray"
+    ],
+    "environment": "Existing project .venv, Python 3.12/CadQuery dependencies; installed macOS ElegooSlicer, repository CC2 profiles",
+    "resolved_failure": "Combined contact chamfer invalid; cleaned geometry and independently validated groups pass.",
+    "render_review": "Partial cassette, loaded side grip and uncropped Cat/Fox access inspected: clear geometry, large white labels against dark backgrounds. Human grasp not tested.",
+    "compatibility": "Unchanged outside dimensions, seats and registration; old/new stacking orders checked.",
+    "physical_test": false,
+    "python": "3.12.13",
+    "cadquery": "2.8.0",
+    "repeat_build_reason": "Added mixed-pair contact/removal and all-flat envelope removal checks; same design geometry."
+  }
 }

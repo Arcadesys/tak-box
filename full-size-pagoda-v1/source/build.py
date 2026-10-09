@@ -165,6 +165,16 @@ def main():
     # Check all 21 exact piece bodies and closures against the actual tray.
     loaded = {}
     tray = d.tray()
+    # Check the negative finger volumes and solid ledges independently of
+    # rendered access. These certify clear openings, not human grip comfort.
+    pocket = d.lift_pocket()
+    for cut in (pocket, pocket.mirror('YZ').translate((d.TRAY[0],0,0))):
+        assert tray.intersect(cut).val().Volume() < 1e-6
+    for x in (9.5,d.TRAY[0]-9.5):
+        # At 9-10 mm depth the roof is 14-15 mm high. A solid 3 mm witness
+        # remains below the 18 mm seat; the theoretical deepest thickness is 4.
+        witness = d.box(1,10,3,x=x,y=d.LIFT_CENTER_Y,z=15)
+        assert abs(tray.intersect(witness).val().Volume()-witness.val().Volume()) < 1e-6
     positions = d.flat_positions()
     assert d.LANE_COUNTS == (5,5,6,5) and len(positions) == 21
     for (_, _, width, length), count in zip(d.lanes(), d.LANE_COUNTS):
@@ -200,6 +210,23 @@ def main():
         assert base.intersect(placed).val().Volume() < 1e-6
         assert placed.intersect(board).val().Volume() < 1e-6
     assert tray.intersect(tray.translate((0,0,30))).val().Volume() < 1e-6
+    # Retained pre-comfort CAD makes the mixed-pair compatibility check
+    # reproducible even after this change becomes HEAD.
+    previous = cq.importers.importStep(str(PACKAGE/'references/cassette-before-comfort.step'))
+    assert previous.val().isValid()
+    for bottom, top in ((previous,tray),(tray,previous)):
+        assert bottom.intersect(top.translate((0,0,30))).val().Volume() < 1e-6
+        assert bottom.intersect(top.translate((0,0,29.99))).val().Volume() > .1
+        for dx, dy in ((.39,0),(-.39,0),(0,.39),(0,-.39)):
+            assert bottom.intersect(top.translate((dx,dy,30))).val().Volume() < 1e-6
+        for dz in (0,.1,.3,1,3,10,40,80,180):
+            assert bottom.intersect(top.translate((0,0,30+dz))).val().Volume() < 1e-6
+    # Conservative finished-envelope paths include every flat, so accessing
+    # the first, middle or last occupied seat does not introduce a CAD trap.
+    for x,y,z in positions:
+        for dz in (0,1,10):
+            assert tray.intersect(d.box(d.FLAT,d.FLAT,d.HEIGHT,
+                x=x,y=y,z=z+dz)).val().Volume() < 1e-6
     # Witness a support contact, then sample the specified sideways clearance.
     lower = tray.translate((-60,-87,d.TRAY_Z[0]))
     assert base.intersect(lower.translate((0,0,-.01))).val().Volume() > 1
@@ -224,8 +251,18 @@ def main():
         'flat_access':{'seat_z_mm':d.FLAT_SEAT_Z,'top_z_mm':d.FLAT_TOP_Z,
             'below_rim_mm':d.TRAY[2]-d.FLAT_TOP_Z,
             'edge_above_dividers_mm':d.FLAT_TOP_Z-d.DIVIDER_TOP_Z,
-            'front_notch_width_mm':18,'front_edge_exposed_mm':d.FLAT_TOP_Z-d.FINGER_NOTCH_Z,
+            'front_notch_width_mm':d.FINGER_NOTCH_WIDTH,'front_edge_exposed_mm':d.FLAT_TOP_Z-d.FINGER_NOTCH_Z,
             'seat_contact_probes_passed':True},
+        'cassette_comfort':{'contact_chamfer_mm':d.CONTACT_CHAMFER,
+            'side_lift_openings':2,'lift_width_mm':d.LIFT_WIDTH,
+            'lift_depth_mm':d.LIFT_DEPTH,'lift_bottom_z_mm':d.LIFT_BOTTOM_Z,
+            'lift_roof_at_mouth_z_mm':d.LIFT_ROOF_Z,'roof_slope_degrees':45,
+            'rim_above_lift_mouth_mm':d.TRAY[2]-d.LIFT_ROOF_Z,
+            'seat_above_deepest_roof_mm':d.FLAT_SEAT_Z-(d.LIFT_ROOF_Z-d.LIFT_DEPTH),
+            'negative_grip_volume_clear':True,'seat_ledge_witnesses_passed':True,
+            'mixed_previous_current_stacking_orders_passed':2,
+            'all_flat_envelope_removal_paths_passed':21,'flat_removal_offsets_mm':[0,1,10],
+            'human_grasp':'not tested'},
         'capstone_access':{'seat_z_mm':d.CAP_SEAT_Z,
             'front_opening_width_mm':d.CAP_GRIP_WIDTH,
             'front_opening_bottom_z_mm':d.CAP_GRIP_BOTTOM_Z},
@@ -248,7 +285,8 @@ def main():
     (PACKAGE/'models/felt-grid-100-percent.svg').write_text(svg)
     REPORT['source_hashes'] = {str(p.relative_to(d.ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
         for p in [Path(d.weighted.__file__),Path(d.fox.__file__),Path(d.original.__file__),
-                  d.ROOT/'v16-field-book/source/mesh_export.py', *sorted((PACKAGE/'source').glob('*.py'))]}
+                  d.ROOT/'v16-field-book/source/mesh_export.py',
+                  PACKAGE/'references/cassette-before-comfort.step', *sorted((PACKAGE/'source').glob('*.py'))]}
     (PACKAGE/'reports/verification.json').write_text(json.dumps(REPORT,indent=2)+'\n')
     print(json.dumps({'verified_parts':len(REPORT['parts']), 'verified_plates':len(REPORT['plates']),
         'storage':loaded,'platform_mm':[248,240,72]},indent=2),flush=True)

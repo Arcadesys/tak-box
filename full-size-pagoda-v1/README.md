@@ -88,7 +88,7 @@ clearance. The capstone compartment footprint and cassette outside dimensions st
 
 **Raised flat seats:** the lane floors are at z=18 mm rather than z=2 mm.
 Finished flats reach z=28 mm, just **2 mm below the 30 mm perimeter rim**.
-They project 6 mm above the dividers. An 18 mm wide finger notch at the front
+They project 8 mm above the dividers. A 20 mm wide finger notch at the front
 of each row exposes 8 mm of the first stone's edge, so it can be lifted without
 digging into a deep well. Test actual
 finger access, especially after some stones have been removed, before a batch.
@@ -107,6 +107,28 @@ frame. The frame leaves 0.4 mm clearance per side. The upper cassette rests
 on the lower perimeter rim, with four 2 mm square, 1 mm high pins entering
 2.8 mm square, 1.2 mm deep sockets in its underside. These locate the stack
 without a latch; both cassettes lift straight up. There is no cushioning yet.
+
+**Cassette comfort revision:** dividers finish at z=20 mm, leaving 8 mm of
+flat edge exposed as rows empty. The divider tops, row-front openings and
+capstone finger ledge have 0.5 mm chamfers. Two side recesses replace the
+previous shallow dishes: each is nominally 50 mm wide and 10 mm deep, with its
+mouth from z=8 to z=24 mm. The 45-degree roof slopes down inward, leaving a
+4 mm seat thickness at its deepest point and a nominal 6 mm rim above the
+mouth before the 0.5 mm edge chamfer.
+The long upper mouth edges also have 0.5 mm chamfers. These are recessed grips
+for a two-handed lift; they add no outside width.
+
+![Partly emptied cassette with exposed flat edges](previews/07-partial-cassette.png)
+
+![Loaded cassette and broad side grip](previews/08-side-lift.png)
+
+The new cassette retains the previous outside size, capstone seats and stack
+pins/sockets. It digitally registers with the previous cassette and platform;
+printed compatibility remains untested. First print **one revised cassette**,
+load all 21 finished flats and a capstone, then test a two-handed lift, removing
+the first/middle/last stones, capstone body grasp and stacking/release against
+an existing cassette if available. Check for flex at the grip rail before a
+second print; stop if there is cracking, discomfort or unstable retention.
 
 Both capstones lie below the next cassette floor, leaving at least 2.3 mm
 modeled headroom. The upper rim is 2 mm below the board backing, and its
@@ -140,7 +162,9 @@ and zero collision at four sideways offsets of ±0.39 mm within the 0.4 mm
 allowance. Physical registration and release still need a cassette pair test.
 All 21 raised stone seats also pass a contact probe: each piece rests on its
 seat rather than floating above it. No loaded flat extends into the next
-cassette floor.
+cassette floor. Both new grip volumes are clear, solid seat-ledge witnesses
+pass, and old/new cassette pairs pass support/contact, lateral and vertical
+removal checks in both stacking orders.
 
 [Slicer report](reports/slicing.json): the revised raised-seat cassette was
 freshly sliced; eight unchanged plates reuse prior successful evidence with
@@ -152,13 +176,13 @@ supports. Every object is on the bed with no outside-bed condition. Only the
 capstone plate uses supports. Do not reuse profiles blindly for another printer.
 
 The unornamented platform alone is estimated at **491 g PLA and 9 h 30 min**.
-Each raised-seat cassette is estimated at **183 g and 3 h 27 min**; the felt
+Each revised cassette is estimated at **182 g and 3 h 25 min**; the felt
 backing at 185 g and 3 h. Raising the seats adds about 36 g per cassette compared
 with the previous deep-row design. No supports are used in the cassette slice.
 These are slicer estimates, not measured prints. The shell is a stiffness-first
 foundation; material reduction should be considered during ornament design.
 
-All six previews were rendered from the exported meshes. Felt and its grid
+All eight previews were rendered from the exported meshes. Felt and its grid
 are dimensioned visual references to the SVG template. Rendered labels are
 large and high contrast. Digital verification does not establish physical
 fit, rigidity, tactile readability, release, retention, wear or comfort.
