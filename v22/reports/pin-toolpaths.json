@@ -1,0 +1,60 @@
+{
+  "scope": "Extrusion centerlines inside a nominal 1.75 mm pin core, cropped at passage ends. No bead-width/force/physical-fit proof.",
+  "extruder_offset_mm": [
+    0.0,
+    1.5
+  ],
+  "checks": [
+    {
+      "name": "01-print-in-place-bases/hook fixed pivot",
+      "pass": true,
+      "start_mm": [
+        22.5,
+        121.8,
+        5.8
+      ],
+      "end_mm": [
+        26.5,
+        121.8,
+        5.8
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "6a787bedbc7d60e3831407548ab3b2cd3343b0d4a416c2490c18b4f3e3eb86a1"
+    },
+    {
+      "name": "03-flat-capstones-hook-and-collar/moving hook",
+      "pass": true,
+      "start_mm": [
+        89.0,
+        11.299999999999997,
+        2.9000000000000004
+      ],
+      "end_mm": [
+        89.0,
+        11.299999999999997,
+        0.2999999999999998
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "aba001746a4798a6d1ab869bf689385885b0a9f2740f487d814f9daff5597e1d"
+    },
+    {
+      "name": "03-flat-capstones-hook-and-collar/collar",
+      "pass": true,
+      "start_mm": [
+        128.5,
+        10.5,
+        0.4
+      ],
+      "end_mm": [
+        128.5,
+        10.5,
+        1.6
+      ],
+      "intrusions_by_role": {},
+      "gcode_sha256": "aba001746a4798a6d1ab869bf689385885b0a9f2740f487d814f9daff5597e1d"
+    }
+  ],
+  "preview_sheets": [
+    "06-pin-passages-1.png"
+  ]
+}

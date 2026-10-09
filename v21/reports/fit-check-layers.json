@@ -1,0 +1,38 @@
+{
+  "rail-and-catch-fit-check": {
+    "levels": 79,
+    "selected_z_mm": [
+      0.2,
+      1.2,
+      2.2,
+      3.2,
+      4.6,
+      5.6,
+      10.4,
+      13.8,
+      15.8
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        175.356,
+        47.156
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Both shortened fixture parts flat on bed; flex slot and rail sections visible; no trapped internal roof support visible in selected layers."
+  }
+}

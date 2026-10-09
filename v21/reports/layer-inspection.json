@@ -1,0 +1,155 @@
+{
+  "01-left-housing-hook-pivot-and-cap-compartment": {
+    "levels": 129,
+    "selected_z_mm": [
+      0.2,
+      2.2,
+      3.2,
+      5.8,
+      7.0,
+      10.4,
+      11.8,
+      13.8,
+      15.8,
+      16.4,
+      23.2,
+      25.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        4.644,
+        1.644
+      ],
+      [
+        119.956,
+        246.567
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Broad floor directly on bed; fixed pockets and open storage cavity visible; local external hinge/hatch/hook support remains."
+  },
+  "02-right-housing-and-hook-pin": {
+    "levels": 96,
+    "selected_z_mm": [
+      0.2,
+      2.2,
+      3.2,
+      5.8,
+      7.6,
+      10.4,
+      11.8,
+      13.8,
+      15.8,
+      16.4,
+      17.4,
+      19.2
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        7.844,
+        4.644
+      ],
+      [
+        121.922,
+        238.156
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Broad floor directly on bed; fixed pockets and open cavity visible; local external support remains."
+  },
+  "03-sliding-board-tops": {
+    "levels": 28,
+    "selected_z_mm": [
+      0.2,
+      0.6,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      4.2,
+      4.6,
+      4.8,
+      5.6
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        1.644,
+        1.644
+      ],
+      [
+        229.156,
+        204.856
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Broad board underside directly on bed; catch slots, infill and grid layers visible; no broad underside support blanket seen in selected layers."
+  },
+  "04-hatch-hook-and-five-axle-caps": {
+    "levels": 39,
+    "selected_z_mm": [
+      0.2,
+      1.2,
+      2.0,
+      2.6,
+      3.2,
+      3.4,
+      4.2,
+      5.0,
+      6.0,
+      7.0,
+      7.8
+    ],
+    "xy_centerline_bounds_mm": [
+      [
+        3.968,
+        1.644
+      ],
+      [
+        170.356,
+        62.356
+      ]
+    ],
+    "coordinate_frame": "Nozzle deposition; machine extruder_offset applied",
+    "extruder_offset_mm": [
+      0.0,
+      1.5
+    ],
+    "fits_bed_with_half_bead": true,
+    "visual_review": "reviewed",
+    "excluded_roles": [
+      "Custom",
+      "unlabelled start/end purge"
+    ],
+    "observations": "Hatch broad face down, hook flat and five collars bore-up; local hatch support remains."
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "checks": [
+    {
+      "name": "housing-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-left STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 6074,
+        "cad_volume_mm3": 80555.70286645422
+      }
+    },
+    {
+      "name": "board-left valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-left STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 366,
+        "cad_volume_mm3": 86518.42399999993
+      }
+    },
+    {
+      "name": "housing-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "housing-right STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 4294,
+        "cad_volume_mm3": 70366.86645404353
+      }
+    },
+    {
+      "name": "board-right valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "board-right STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 366,
+        "cad_volume_mm3": 86518.4239999998
+      }
+    },
+    {
+      "name": "capstone-hatch valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capstone-hatch STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 696,
+        "cad_volume_mm3": 8120.6400201986435
+      }
+    },
+    {
+      "name": "side-hook valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "side-hook STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 740,
+        "cad_volume_mm3": 601.9107752869057
+      }
+    },
+    {
+      "name": "axle-end-cap valid single solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "axle-end-cap STEP/STL readback",
+      "pass": true,
+      "detail": {
+        "triangles": 436,
+        "cad_volume_mm3": 184.65885052054085
+      }
+    },
+    {
+      "name": "nominal assembled parts disjoint",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "full paired fold 0..180 degrees at 5 degree samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "unlocked case opening at 1 degree samples for first 10 degrees",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "locked side hook blocks case opening at 1 degree",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "hook reverse rotation stop",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "hook release 0..65 degrees at 1 degree samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "hook mouth clearance and headed keeper",
+      "pass": true,
+      "detail": {
+        "pin_diameter_mm": 4,
+        "head_diameter_mm": 7,
+        "hook_thickness_mm": 3.2,
+        "keeper_head_clearance_mm": 0.4,
+        "pivot_faces_contact_for_friction": true,
+        "retention": "Rigid hook shoulder and reverse rotation stop; set pivot collar for light friction. Unloaded rotation resistance remains physical."
+      }
+    },
+    {
+      "name": "left board catch blocks outward slide",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left board inner stops block over-insertion",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left rails prevent lifting board",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left ledges support downward board load",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left catch release clears base",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "left full board slide clears assembled case and parked hook",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right board catch blocks outward slide",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right board inner stops block over-insertion",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right rails prevent lifting board",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right ledges support downward board load",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "right catch release clears base",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right full board slide clears assembled case and parked hook",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "two hinged bases only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "parked hook remains above table",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "capstone hatch catch holds lift",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "released hatch 0..100 at 5 degree samples",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "cat flat CAD valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cat capstone CAD valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "witch flat CAD valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "witch capstone CAD valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "left actual original pieces clear assembled storage",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right actual original pieces clear assembled storage",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "cap actual original pieces clear assembled storage",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "loaded original pieces clear opposite modules during fold at 15 degrees",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "loaded capstones clear hatch opening at 5 degrees",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "left all original flats lift from fixed pockets",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "left sliding board clears loaded pieces",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right all original flats lift from fixed pockets",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "right sliding board clears loaded pieces",
+      "pass": true,
+      "detail": {
+        "max_overlap_mm3": 0,
+        "at": null
+      }
+    },
+    {
+      "name": "roof gap above actual 8 mm flats",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "field remains 5x5 / 180 mm / 36 mm pitch",
+      "pass": true,
+      "detail": {
+        "field_mm": 180,
+        "pitch_mm": 36
+      }
+    }
+  ],
+  "python": "3.12.13 (main, Jun 11 2026, 03:55:21) [Clang 22.1.3 ]",
+  "cadquery": "2.7.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_sha256": {
+    "render_case.py": "8db30b36e04f0253641da737bab027261881cd1e08be6443b36c62a900aa00a0",
+    "verify_package.py": "5b15aa0e71f8ae047d3e4662d61436d4b064269d3a7c1e2331595c701f87a413",
+    "inspect_case_layers.py": "ce6e1689fcd0757aee1e22e815c00a9ba1297b436331bfe4975d7c1a79595373",
+    "build_fitcheck.py": "19b6b1bb140c672169ae7496fd8d9a64a9ad0a9f05b5fc0a69a846157544395c",
+    "verify_hardware.py": "eb773c5efc9c01295c66c15a5a1088ffd69166c4618e5867a138a17b7c4c68e2",
+    "package_case.py": "db2f715cd7e1c7fb9c1b2208b0e0c58f3a0d569cf837eaf0afbe7120406d667f",
+    "build_case.py": "c02a6cf97abd8dc1d295926ff482d4396057fa912de8294ed852e6511cb03289",
+    "verify_field.py": "c26a843517ba94f5b5551c1cf8422e66827c511b125329dd6d13614b8108052d",
+    "case.py": "06c9d0d17f3e079a54c033f3fe877de1765e420b7e93a9c7020f590444821fd5",
+    "package_release.py": "6c1cd551c4cb3acaecd1b0f813268b4a7cb474417a81ade00b19d8d5f23d4713",
+    "slice_case.py": "99070dcc1d59483814112bd226fbb1dfbbe42cc5e79bd57f8aca22b600b7c265",
+    "verify_pin_toolpaths.py": "5d337883a74b6a97358622afa482530fb86bf09ddc69223cc60ed402b93fc252",
+    "record_provenance.py": "fea1c072caa92bcd08c4b35cb1afa4b1b4ae4102e8c75076d2311eab2719b0cd"
+  },
+  "piece_package": {
+    "name": "pieces original Cat/Witch",
+    "flats_mm": [
+      20,
+      20,
+      8
+    ],
+    "source_and_mesh_hashes": {
+      "tak_pieces.py": "a0e3343edf48e50fee17abd002df9db3c1bd96d9a4036f4a2439fe07667990e3",
+      "cat-flat.stl": "c6939ea7138e30698dd24286889b123fad82d03822e6b31257871dd6d8251dd1",
+      "witch-flat.stl": "8d6690e6f4a9c9a0c9e046d1ee1c1d19f1b56b60bf0a656e3950a40d55a3d3ba",
+      "cat-capstone.stl": "d358aefa0c9cc3ae70cd99a2c7e1f8f7038c461fff386d49f30528063948c204",
+      "witch-capstone.stl": "4cd1a3ca3e1f49c6d55ae9caeec03f600335f762fd52725ee47103b2c3a88f1a"
+    },
+    "compatibility": "Detailed current CAD checked; old cat capstone STL is not watertight, so it is not used for volume fit. Original source CAD is valid; no piece exports changed."
+  },
+  "closed_body_and_hook_envelope_mm": [
+    109.80015020028128,
+    240.4010627228925,
+    32.60268550629903
+  ],
+  "physical_acceptance": false,
+  "limitations": [
+    "Motion sampled; not a continuous sweep proof.",
+    "Flex release poses assume cubic deformation, not FEA or measured actuation.",
+    "Hinge/clip/support removal/strength/loaded transport require physical observation.",
+    "Original Cat/Witch set only. Weighted and curled sets unverified.",
+    "PLA filament pins require end retention; printed end caps bond to filament, not sliding case closures. Loaded stiffness and durability remain physical tests."
+  ]
+}

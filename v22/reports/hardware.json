@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "name": "open/filament-hook-pivot",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "side-hook": 0
+      }
+    },
+    {
+      "name": "open/retention-cap-hook",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "side-hook": 0
+      }
+    },
+    {
+      "name": "closed/filament-hook-pivot",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "side-hook": 0
+      }
+    },
+    {
+      "name": "closed/retention-cap-hook",
+      "pass": true,
+      "overlap_mm3": {
+        "housing-left": 0,
+        "board-left": 0,
+        "housing-right": 0,
+        "board-right": 0,
+        "side-hook": 0
+      }
+    },
+    {
+      "name": "filament-hook-pivot clears full paired fold",
+      "pass": true,
+      "maximum_overlap_mm3": 0
+    },
+    {
+      "name": "retention-cap-hook clears full paired fold",
+      "pass": true,
+      "maximum_overlap_mm3": 0
+    },
+    {
+      "name": "hook pivot bore",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    },
+    {
+      "name": "end cap 1.9 mm bore",
+      "pass": true,
+      "passage_overlap_mm3": 0,
+      "wall_fraction": 1.0
+    }
+  ],
+  "closed_envelope_including_hardware_mm": [
+    101.00000010000117,
+    200.00000020000329,
+    32.60000020000023
+  ],
+  "filament_axles_mm": {
+    "material": "PLA",
+    "diameter": 1.75,
+    "hook_pivot_length": 8.6
+  },
+  "hinge_bore_mm": 2.0,
+  "cap_bore_mm": 1.9,
+  "nominal_pin_diametral_clearance_mm": 0.25,
+  "printed_retention_caps": 1,
+  "hook_bearing_endplay_nominal_mm": 0,
+  "rod_in_cap_depth_mm": 1,
+  "retention": "Main folding pivots print captive and take no glue. Bond hook pin at its fixed mount. Bond caps to pins. Keep adhesive out of moving joints. The single hook collar lightly contacts its bearing face.",
+  "physical_acceptance": false,
+  "note": "Filament references are assembly hardware only and excluded from print plates. The closure catch itself is a headed printed pin integrated into the housing."
+}
