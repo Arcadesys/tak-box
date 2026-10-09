@@ -1,0 +1,42 @@
+[tak-v18-recessed-clasp.3mf]
+size_x = 78.000000
+size_y = 10.100000
+size_z = 40.000000
+min_x = -39.000000
+min_y = -5.050000
+min_z = -20.000000
+max_x = 39.000000
+max_y = 5.050000
+max_z = 20.000000
+number_of_facets = 224
+manifold = yes
+number_of_parts =  1
+volume = 11992.648438
+[tak-v18-recessed-clasp.3mf]
+size_x = 44.000000
+size_y = 4.400002
+size_z = 25.200001
+min_x = -22.000000
+min_y = -2.200001
+min_z = -12.600000
+max_x = 22.000000
+max_y = 2.200001
+max_z = 12.600000
+number_of_facets = 108
+manifold = yes
+number_of_parts =  1
+volume = 1674.950439
+[tak-v18-recessed-clasp.3mf]
+size_x = 22.000000
+size_y = 8.500000
+size_z = 30.000000
+min_x = -11.000000
+min_y = -4.250000
+min_z = -15.000000
+max_x = 11.000000
+max_y = 4.250000
+max_z = 15.000000
+number_of_facets = 36
+manifold = yes
+number_of_parts =  1
+volume = 2867.000488

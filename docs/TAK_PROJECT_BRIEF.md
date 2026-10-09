@@ -1,6 +1,36 @@
 # Tak project brief
 
-Updated October 3, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+Updated October 4, 2026. This brief combines the current repository with Austen's recent Tak design conversations. Source files and measured print reports take precedence over concept imagery or older conversation summaries.
+
+### Final version decision: v18
+
+The user selected **v18 as the FINAL version** on October 4, 2026 (Chicago).
+Finish the recessed press-and-slide clasp with the retained four-leaf
+common-hinge case architecture. See [V18_FINAL.md](V18_FINAL.md) for the exact
+source freeze, protected choices and remaining release gates. The coupon package
+is pinned by [V18-FREEZE.json](V18-FREEZE.json); the integrated complete case
+and physical acceptance are still pending. Earlier closure trials are historical.
+
+### v18 recessed press-and-slide clasp coupon
+
+Recovered October 4, 2026 in `v18-recessed-clasp`. The complete saved package
+contains CAD sources, three separate printable parts, STEP/STL assemblies,
+a generic 3MF plate, four release states, actual-geometry renders, review and
+prior slicing evidence. The original ZIP is retained under `release/`.
+Recovery verified ZIP CRC, all 67 manifest byte counts/SHA-256 hashes, matching
+standalone 3MF/image files and Python syntax. No geometry rebuild or new slice
+was performed during recovery.
+
+The receiver, keeper and rigid sliding bolt separate load-bearing shoulders
+from the recessed press leaf. Both closing and opening require pressing; to
+open, unload the keeper, press approximately 2 mm and slide left 10 mm before
+lifting. The assembled coupon is 78×40×10.1 mm. Prior digital checks are recorded
+in the package; physical fit, force, fatigue, support removal and loaded-bag
+retention remain untested. Supports are required in the provided orientation.
+This is a standalone clasp coupon, not a v18 complete-case release or an
+integrated change to v17. Next trial: print and inspect the small coupon, then
+check assembly, ten gentle cycles and press-only/drag-only retention as described
+in its README before case integration. Earlier closure studies remain history.
 
 ### v17 common-hinge travel revision
 

@@ -1,0 +1,31 @@
+{
+  "source_sha256": "5f116585bd24d2ddfac74f463e62e62121bf2af9a84129f7541ff0c5430deadc",
+  "keeper_downward": [
+    {
+      "dz_mm": -0.4,
+      "receiver_overlap_mm3": 0
+    },
+    {
+      "dz_mm": -0.5,
+      "receiver_overlap_mm3": 66.00000000000007
+    },
+    {
+      "dz_mm": -1,
+      "receiver_overlap_mm3": 396.0
+    }
+  ],
+  "upper_float_pressed_slide": [
+    {
+      "retract_mm": 0,
+      "receiver_overlap_mm3": 0
+    },
+    {
+      "retract_mm": 5,
+      "receiver_overlap_mm3": 0
+    },
+    {
+      "retract_mm": 10,
+      "receiver_overlap_mm3": 0
+    }
+  ]
+}

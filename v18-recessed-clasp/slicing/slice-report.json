@@ -1,0 +1,73 @@
+{
+  "categories": {
+    "model_g": 18.03741853097392,
+    "support_g": 5.446425456682201,
+    "brim_g": 0.4366834271673909,
+    "other_g": 0,
+    "total_g": 23.92052741482351
+  },
+  "extrusion_by_role": {
+    "Bridge infill": {
+      "filament_mm": 136.88600999999974,
+      "mass_g": 0.40826930417333523
+    },
+    "External perimeter": {
+      "filament_mm": 1963.4478400000112,
+      "mass_g": 5.856080423539587
+    },
+    "Internal infill": {
+      "filament_mm": 400.76976999998794,
+      "mass_g": 1.1953156873489335
+    },
+    "Overhang perimeter": {
+      "filament_mm": 52.96073999999999,
+      "mass_g": 0.1579580299572247
+    },
+    "Perimeter": {
+      "filament_mm": 2632.40112,
+      "mass_g": 7.851266711386432
+    },
+    "Skirt/Brim": {
+      "filament_mm": 146.41279999999983,
+      "mass_g": 0.4366834271673909
+    },
+    "Solid infill": {
+      "filament_mm": 789.6975699999543,
+      "mass_g": 2.355312112693296
+    },
+    "Support material": {
+      "filament_mm": 1444.951890000011,
+      "mass_g": 4.309640573892476
+    },
+    "Support material interface": {
+      "filament_mm": 381.14535000000143,
+      "mass_g": 1.1367848827897256
+    },
+    "Top solid infill": {
+      "filament_mm": 71.48792000000026,
+      "mass_g": 0.2132162618751121
+    }
+  },
+  "slicer_header": {
+    "filament used [mm]": "8020.16",
+    "filament used [cm3]": "19.29",
+    "filament used [g]": "23.92",
+    "total filament used [g]": "23.92",
+    "total filament used for wipe tower [g]": "0.00",
+    "estimated printing time (normal mode)": "2h 21m 17s",
+    "estimated printing time (silent mode)": "2h 24m 28s"
+  },
+  "layer_count": 404,
+  "first_support_z_mm": 0.2,
+  "extrusion_accounting": {
+    "method": "Sum positive G0/G1 E on XY extrusion moves, using M83 relative mode; excludes E-only retract/unretract. Role from Prusa TYPE comments. Mass uses 1.75 mm filament, 1.24 g/cm3 density.",
+    "parsed_filament_mm": 8020.161009999965,
+    "slicer_header_filament_mm": 8020.16,
+    "difference_mm": 0.001009999965390307,
+    "within_0_05pct": true
+  },
+  "model_3mf_sha256": "a8605154287001023d90cd98d581055a728289186a9f298ce3a30e7acd38df69",
+  "profile_sha256": "34d93e3f00df5666e5bf5d6430cc5c5d4ad2c58048b3642c6f0557817116eb92",
+  "no_printer_started": true,
+  "temporary_machine_code_excluded": true
+}
